@@ -184,8 +184,8 @@ export default function ProcessingPage() {
 
             <div className="mt-6 bg-orange-50 p-6 rounded-lg border-l-4 border-orange-600">
               <p className="text-gray-800 text-sm">
-                <strong>Red Flag:</strong> If a producer doesn't prominently display their harvest-to-mill time,
-                assume it's longer than optimal. Transparency is a quality indicator.
+                <strong>Red Flag:</strong> If a producer doesn&apos;t prominently display their harvest-to-mill time,
+                assume it&apos;s longer than optimal. Transparency is a quality indicator.
               </p>
             </div>
           </div>
@@ -259,14 +259,14 @@ export default function ProcessingPage() {
                 <h4 className="font-bold text-green-800 mb-2">&lt;25°C (77°F) - Elite Standard</h4>
                 <p className="text-gray-700 text-sm">
                   Maximum polyphenol preservation. Premium producers often target &lt;23°C. Lower oil yield but
-                  maximum quality. Look for "cold extracted" or temperature certification on labels.
+                  maximum quality. Look for &quot;cold extracted&quot; or temperature certification on labels.
                 </p>
               </div>
 
               <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-600">
-                <h4 className="font-bold text-yellow-800 mb-2">25-27°C (77-80°F) - Standard "Cold Pressed"</h4>
+                <h4 className="font-bold text-yellow-800 mb-2">25-27°C (77-80°F) - Standard &quot;Cold Pressed&quot;</h4>
                 <p className="text-gray-700 text-sm">
-                  EU legal limit for "cold pressed" designation. Acceptable but near the edge. Some polyphenol loss
+                  EU legal limit for &quot;cold pressed&quot; designation. Acceptable but near the edge. Some polyphenol loss
                   but still produces quality EVOO.
                 </p>
               </div>
@@ -274,7 +274,7 @@ export default function ProcessingPage() {
               <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
                 <h4 className="font-bold text-red-800 mb-2">&gt;27°C (&gt;80°F) - Avoid</h4>
                 <p className="text-gray-700 text-sm">
-                  Significant polyphenol degradation. Enzymes denature. Cannot legally be called "cold pressed".
+                  Significant polyphenol degradation. Enzymes denature. Cannot legally be called &quot;cold pressed&quot;.
                   Common in mass-market production to maximize yield.
                 </p>
               </div>
@@ -386,7 +386,7 @@ export default function ProcessingPage() {
               <div className="flex gap-4 items-start pb-4 border-b border-gray-200">
                 <span className="text-2xl text-green-600">✓</span>
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">"Cold Extracted" or Temperature Certification</h4>
+                  <h4 className="font-bold text-gray-900 mb-1">&quot;Cold Extracted&quot; or Temperature Certification</h4>
                   <p className="text-gray-700 text-sm">
                     Look for &lt;25°C or &lt;27°C certification. Some producers specify exact temperature.
                   </p>
@@ -398,7 +398,7 @@ export default function ProcessingPage() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Harvest-to-Mill Time Statement</h4>
                   <p className="text-gray-700 text-sm">
-                    Elite producers advertise "2-hour harvest-to-press" or similar. Shows quality commitment.
+                    Elite producers advertise &quot;2-hour harvest-to-press&quot; or similar. Shows quality commitment.
                   </p>
                 </div>
               </div>
@@ -418,7 +418,7 @@ export default function ProcessingPage() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Dark Glass or Metal Packaging</h4>
                   <p className="text-gray-700 text-sm">
-                    Protects from light. Clear bottles indicate producer doesn't understand polyphenol preservation.
+                    Protects from light. Clear bottles indicate producer doesn&apos;t understand polyphenol preservation.
                   </p>
                 </div>
               </div>

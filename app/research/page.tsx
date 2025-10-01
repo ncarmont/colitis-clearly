@@ -100,7 +100,7 @@ export default function ResearchPage() {
                 </h2>
                 <p className="text-green-50 mb-6 text-lg">
                   In-depth investigation of verified producers, growing conditions, cultivars, and processing methods
-                  that create the world's healthiest olive oils.
+                  that create the world&apos;s healthiest olive oils.
                 </p>
                 <Link
                   href="/research/overview"
@@ -151,7 +151,7 @@ export default function ResearchPage() {
                 </h3>
                 <p className="text-gray-600 mb-4 text-sm">
                   How altitude, soil, temperature, and water stress create the highest polyphenol levels. Analysis
-                  of Crete, Sierra de Cazorla, and Puglia's elite microclimates.
+                  of Crete, Sierra de Cazorla, and Puglia&apos;s elite microclimates.
                 </p>
                 <div className="text-blue-600 font-semibold">
                   Read More →

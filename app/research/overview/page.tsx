@@ -18,7 +18,7 @@ export default function ResearchOverview() {
             High-Polyphenol EVOO Research Overview
           </h1>
           <p className="text-green-100 text-xl">
-            Understanding what makes the world's healthiest extra virgin olive oils
+            Understanding what makes the world&apos;s healthiest extra virgin olive oils
           </p>
         </div>
       </header>

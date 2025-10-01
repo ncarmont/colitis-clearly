@@ -144,7 +144,7 @@ export default function RegionsPage() {
       {/* Elite Regions */}
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">World's Elite Polyphenol Regions</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">World&apos;s Elite Polyphenol Regions</h2>
 
           {/* Crete, Greece */}
           <div className="bg-white rounded-xl shadow-lg p-8 mb-6">
@@ -238,7 +238,7 @@ export default function RegionsPage() {
                 <ul className="space-y-2 text-gray-700 text-sm">
                   <li>• <strong>Altitude:</strong> 200-500m rolling hills</li>
                   <li>• <strong>Climate:</strong> Hot, dry Mediterranean</li>
-                  <li>• <strong>Soil:</strong> Red "terra rossa" (iron-rich clay)</li>
+                  <li>• <strong>Soil:</strong> Red &quot;terra rossa&quot; (iron-rich clay)</li>
                   <li>• <strong>Rainfall:</strong> 500-600mm, irregular distribution</li>
                   <li>• <strong>Trees:</strong> Many 500+ year old specimens</li>
                 </ul>

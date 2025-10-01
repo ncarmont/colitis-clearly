@@ -29,7 +29,7 @@ export default function ProducersPage() {
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">What Defines a High-Polyphenol Producer?</h2>
             <p className="text-gray-700 mb-4">
-              Not all "extra virgin" olive oil producers are equal. The highest-quality producers share these characteristics:
+              Not all &quot;extra virgin&quot; olive oil producers are equal. The highest-quality producers share these characteristics:
             </p>
             <ul className="space-y-3 text-gray-700">
               <li className="flex gap-3">
@@ -70,7 +70,7 @@ export default function ProducersPage() {
             </div>
             <p className="text-gray-700 mb-6">
               Greek producers, particularly those using <strong>Koroneiki cultivar</strong> from Crete, Peloponnese, and Kalamata,
-              consistently produce the world's highest polyphenol EVOOs. The combination of mountainous terrain, limestone-rich soil,
+              consistently produce the world&apos;s highest polyphenol EVOOs. The combination of mountainous terrain, limestone-rich soil,
               and traditional farming creates exceptional oils.
             </p>
 
@@ -247,7 +247,7 @@ export default function ProducersPage() {
               <div className="flex gap-4 items-start">
                 <span className="text-2xl text-red-600">❌</span>
                 <div>
-                  <h4 className="font-bold text-gray-900 mb-1">"Light" or "Mild" Marketing</h4>
+                  <h4 className="font-bold text-gray-900 mb-1">&quot;Light&quot; or &quot;Mild&quot; Marketing</h4>
                   <p className="text-gray-700">Marketing terms often indicate low polyphenol content (less bitter/pungent).</p>
                 </div>
               </div>
@@ -264,7 +264,7 @@ export default function ProducersPage() {
                 <span className="text-2xl text-red-600">❌</span>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">Blended Origin Countries</h4>
-                  <p className="text-gray-700">"Product of Italy/Greece/Spain" often indicates mixing of lower-quality oils.</p>
+                  <p className="text-gray-700">&quot;Product of Italy/Greece/Spain&quot; often indicates mixing of lower-quality oils.</p>
                 </div>
               </div>
 
