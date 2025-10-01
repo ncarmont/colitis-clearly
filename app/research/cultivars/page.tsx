@@ -35,7 +35,7 @@ export default function CultivarsPage() {
             </p>
             <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
               <p className="text-gray-800">
-                <strong className="text-purple-800">Key Insight:</strong> The world's highest polyphenol EVOOs
+                <strong className="text-purple-800">Key Insight:</strong> The world&apos;s highest polyphenol EVOOs
                 almost exclusively come from <strong>Koroneiki (Greece), Picual (Spain), and Coratina (Italy)</strong>—
                 varieties adapted to harsh Mediterranean environments.
               </p>
@@ -75,7 +75,7 @@ export default function CultivarsPage() {
               <div>
                 <h4 className="font-bold text-gray-900 mb-3">Why It Dominates:</h4>
                 <ul className="space-y-2 text-gray-700 text-sm">
-                  <li>• Evolved in Crete's extreme microclimate</li>
+                  <li>• Evolved in Crete&apos;s extreme microclimate</li>
                   <li>• Highest oleocanthal content of any variety</li>
                   <li>• Drought-resistant (produces more under stress)</li>
                   <li>• 90% of Greek EVOO production</li>
@@ -96,7 +96,7 @@ export default function CultivarsPage() {
             <div className="flex items-start gap-4 mb-6">
               <span className="text-5xl">🥈</span>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Coratina - Italy's Powerhouse</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Coratina - Italy&apos;s Powerhouse</h3>
                 <p className="text-gray-600">Origin: <strong>Italy</strong> (Puglia - Corato region)</p>
                 <p className="text-green-600 font-semibold text-lg">Typical Range: 550-800 mg/kg</p>
               </div>
@@ -138,7 +138,7 @@ export default function CultivarsPage() {
             <div className="flex items-start gap-4 mb-6">
               <span className="text-5xl">🥉</span>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Picual - Spain's Mountain Warrior</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Picual - Spain&apos;s Mountain Warrior</h3>
                 <p className="text-gray-600">Origin: <strong>Spain</strong> (Jaén, Andalusia)</p>
                 <p className="text-green-600 font-semibold text-lg">Typical Range: 500-800 mg/kg</p>
               </div>
@@ -234,7 +234,7 @@ export default function CultivarsPage() {
                   <li>✓ <strong>Astringent:</strong> Mouth-drying sensation</li>
                 </ul>
                 <p className="text-gray-800 text-xs mt-4 italic">
-                  These flavors may seem unpleasant if you're used to mild oils, but they indicate maximum health benefits.
+                  These flavors may seem unpleasant if you&apos;re used to mild oils, but they indicate maximum health benefits.
                 </p>
               </div>
 
@@ -244,7 +244,7 @@ export default function CultivarsPage() {
                   <li>✗ <strong>Buttery/mild:</strong> Often late-harvest or Arbequina</li>
                   <li>✗ <strong>Sweet/fruity only:</strong> No bitterness or pepper</li>
                   <li>✗ <strong>Smooth finish:</strong> No throat sensation</li>
-                  <li>✗ <strong>"Light" marketing:</strong> Specifically bred for mildness</li>
+                  <li>✗ <strong>&quot;Light&quot; marketing:</strong> Specifically bred for mildness</li>
                 </ul>
                 <p className="text-gray-800 text-xs mt-4 italic">
                   Pleasant flavor, but significantly lower antioxidant content and health benefits.
@@ -347,7 +347,7 @@ export default function CultivarsPage() {
               <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
                 <h3 className="font-bold text-yellow-900 mb-3 text-lg">⚠️ Avoid for Health Focus:</h3>
                 <p className="text-gray-800 mb-2">
-                  <strong>Arbequina</strong> and other "mild" varieties marketed for "smooth" flavor typically contain
+                  <strong>Arbequina</strong> and other &quot;mild&quot; varieties marketed for &quot;smooth&quot; flavor typically contain
                   200-350 mg/kg polyphenols—below the threshold for significant health benefits.
                 </p>
               </div>
