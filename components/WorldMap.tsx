@@ -1,12 +1,32 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import dynamic from 'next/dynamic'
+import 'leaflet/dist/leaflet.css'
+
+// Dynamically import map components to avoid SSR issues
+const MapContainer = dynamic(
+  () => import('react-leaflet').then((mod) => mod.MapContainer),
+  { ssr: false }
+)
+const TileLayer = dynamic(
+  () => import('react-leaflet').then((mod) => mod.TileLayer),
+  { ssr: false }
+)
+const CircleMarker = dynamic(
+  () => import('react-leaflet').then((mod) => mod.CircleMarker),
+  { ssr: false }
+)
+const Popup = dynamic(
+  () => import('react-leaflet').then((mod) => mod.Popup),
+  { ssr: false }
+)
 
 type MapLocation = {
   name: string
   country: string
   flag: string
-  coordinates: { x: number; y: number }
+  coordinates: [number, number] // [latitude, longitude]
   oils: Array<{
     brand: string
     polyphenols: number
@@ -22,7 +42,7 @@ const MAP_LOCATIONS: MapLocation[] = [
     name: 'Greece',
     country: 'GR',
     flag: '🇬🇷',
-    coordinates: { x: 54, y: 42 },
+    coordinates: [39.0742, 21.8243],
     peakPolyphenols: 2000,
     color: '#22c55e',
     tagline: 'Koroneiki Capital',
@@ -40,7 +60,7 @@ const MAP_LOCATIONS: MapLocation[] = [
     name: 'Jordan',
     country: 'JO',
     flag: '🇯🇴',
-    coordinates: { x: 58, y: 48 },
+    coordinates: [30.5852, 36.2384],
     peakPolyphenols: 1462,
     color: '#f59e0b',
     tagline: 'Plateau Premium',
@@ -54,7 +74,7 @@ const MAP_LOCATIONS: MapLocation[] = [
     name: 'Spain',
     country: 'ES',
     flag: '🇪🇸',
-    coordinates: { x: 45, y: 42 },
+    coordinates: [40.4637, -3.7492],
     peakPolyphenols: 1059,
     color: '#ef4444',
     tagline: 'Picual Power',
@@ -68,7 +88,7 @@ const MAP_LOCATIONS: MapLocation[] = [
     name: 'Italy',
     country: 'IT',
     flag: '🇮🇹',
-    coordinates: { x: 51, y: 43 },
+    coordinates: [43.7711, 11.2486],
     peakPolyphenols: 900,
     color: '#3b82f6',
     tagline: 'Tuscan Tradition',
@@ -82,7 +102,7 @@ const MAP_LOCATIONS: MapLocation[] = [
     name: 'California',
     country: 'US',
     flag: '🇺🇸',
-    coordinates: { x: 15, y: 38 },
+    coordinates: [36.7783, -119.4179],
     peakPolyphenols: 558,
     color: '#eab308',
     tagline: 'New World Quality',
@@ -94,7 +114,7 @@ const MAP_LOCATIONS: MapLocation[] = [
     name: 'Peru',
     country: 'PE',
     flag: '🇵🇪',
-    coordinates: { x: 25, y: 68 },
+    coordinates: [-9.1900, -75.0152],
     peakPolyphenols: 688,
     color: '#a855f7',
     tagline: 'South American Star',
@@ -106,10 +126,28 @@ const MAP_LOCATIONS: MapLocation[] = [
 
 export default function WorldMap() {
   const [selectedLocation, setSelectedLocation] = useState<MapLocation | null>(null)
-  const [hoveredLocation, setHoveredLocation] = useState<string | null>(null)
+  const [isMounted, setIsMounted] = useState(false)
 
-  const getHeatmapIntensity = (polyphenols: number): number => {
-    return Math.min((polyphenols / 2042) * 100, 100)
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  const getRadius = (polyphenols: number): number => {
+    // Scale radius based on polyphenol content (15-40 pixels)
+    return Math.max(15, Math.min(40, (polyphenols / 2042) * 40))
+  }
+
+  const getOpacity = (polyphenols: number): number => {
+    // Higher polyphenols = more opaque
+    return Math.max(0.5, Math.min(0.9, (polyphenols / 2042)))
+  }
+
+  if (!isMounted) {
+    return (
+      <div className="w-full h-[600px] bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl border border-gray-700/50 flex items-center justify-center">
+        <div className="text-gray-400">Loading map...</div>
+      </div>
+    )
   }
 
   return (
@@ -124,128 +162,67 @@ export default function WorldMap() {
       </div>
 
       {/* Map Container */}
-      <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-700/50 overflow-hidden">
+      <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl p-4 border border-gray-700/50 overflow-hidden">
+        <div className="h-[600px] rounded-2xl overflow-hidden relative z-0">
+          <MapContainer
+            center={[30, 20]}
+            zoom={2}
+            minZoom={2}
+            maxZoom={6}
+            style={{ height: '100%', width: '100%', backgroundColor: '#1e293b' }}
+            zoomControl={true}
+          >
+            {/* Dark theme map tiles */}
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+              url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+            />
 
-        {/* World Map SVG */}
-        <div className="relative aspect-[2/1] w-full max-w-6xl mx-auto">
-          <svg viewBox="0 0 100 50" className="w-full h-full">
-            <defs>
-              {MAP_LOCATIONS.map(location => (
-                <radialGradient key={location.name} id={`heat-${location.name}`}>
-                  <stop offset="0%" stopColor={location.color} stopOpacity={getHeatmapIntensity(location.peakPolyphenols) / 100} />
-                  <stop offset="50%" stopColor={location.color} stopOpacity={getHeatmapIntensity(location.peakPolyphenols) / 200} />
-                  <stop offset="100%" stopColor={location.color} stopOpacity="0" />
-                </radialGradient>
-              ))}
-            </defs>
-
-            {/* Simplified World Map Landmasses */}
-            <g fill="#334155" opacity="0.3">
-              {/* Europe */}
-              <path d="M45,35 L48,34 L52,35 L55,37 L57,40 L56,43 L53,45 L50,45 L47,43 L45,40 Z" />
-
-              {/* Africa */}
-              <path d="M48,45 L52,45 L56,48 L58,52 L58,58 L55,62 L50,64 L46,62 L44,58 L44,52 L46,48 Z" />
-
-              {/* Asia */}
-              <path d="M57,30 L62,28 L68,28 L74,30 L78,34 L80,38 L78,42 L74,44 L68,45 L62,43 L58,40 L57,36 Z" />
-
-              {/* North America */}
-              <path d="M10,28 L15,26 L20,26 L25,28 L28,32 L28,38 L25,42 L20,44 L15,44 L10,42 L8,38 L8,32 Z" />
-
-              {/* South America */}
-              <path d="M22,50 L27,50 L30,54 L30,60 L28,66 L25,70 L22,72 L18,70 L16,66 L16,60 L18,54 Z" />
-
-              {/* Australia */}
-              <path d="M75,58 L80,57 L84,58 L86,61 L85,65 L82,67 L78,67 L75,65 L74,62 Z" />
-            </g>
-
-            {/* Heatmap Circles */}
-            {MAP_LOCATIONS.map(location => (
-              <circle
-                key={`heat-${location.name}`}
-                cx={location.coordinates.x}
-                cy={location.coordinates.y}
-                r="12"
-                fill={`url(#heat-${location.name})`}
-                className="transition-all duration-500"
-                style={{
-                  filter: hoveredLocation === location.name ? 'blur(8px)' : 'blur(12px)',
-                  opacity: hoveredLocation === location.name ? 0.8 : 0.5,
-                }}
-              />
-            ))}
-
-            {/* Location Markers */}
-            {MAP_LOCATIONS.map(location => (
-              <g
+            {/* Location markers with heatmap effect */}
+            {MAP_LOCATIONS.map((location) => (
+              <CircleMarker
                 key={location.name}
-                onClick={() => setSelectedLocation(location)}
-                onMouseEnter={() => setHoveredLocation(location.name)}
-                onMouseLeave={() => setHoveredLocation(null)}
-                className="cursor-pointer transition-transform duration-200"
-                style={{
-                  transform: hoveredLocation === location.name ? 'scale(1.2)' : 'scale(1)',
-                  transformOrigin: `${location.coordinates.x}% ${location.coordinates.y}%`,
+                center={location.coordinates}
+                radius={getRadius(location.peakPolyphenols)}
+                pathOptions={{
+                  color: location.color,
+                  fillColor: location.color,
+                  fillOpacity: getOpacity(location.peakPolyphenols),
+                  weight: 3,
+                  className: 'animate-pulse-slow'
+                }}
+                eventHandlers={{
+                  click: () => setSelectedLocation(location),
                 }}
               >
-                {/* Marker Pin */}
-                <circle
-                  cx={location.coordinates.x}
-                  cy={location.coordinates.y}
-                  r="2"
-                  fill={location.color}
-                  className="drop-shadow-lg"
-                />
-                <circle
-                  cx={location.coordinates.x}
-                  cy={location.coordinates.y}
-                  r="1.5"
-                  fill="white"
-                  className="animate-pulse"
-                />
-
-                {/* Pulsing Ring */}
-                {(hoveredLocation === location.name || selectedLocation?.name === location.name) && (
-                  <circle
-                    cx={location.coordinates.x}
-                    cy={location.coordinates.y}
-                    r="3"
-                    fill="none"
-                    stroke={location.color}
-                    strokeWidth="0.3"
-                    className="animate-ping"
-                  />
-                )}
-              </g>
+                <Popup>
+                  <div className="text-sm">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-2xl">{location.flag}</span>
+                      <div>
+                        <div className="font-bold text-gray-900">{location.name}</div>
+                        <div className="text-xs text-gray-600">{location.tagline}</div>
+                      </div>
+                    </div>
+                    <div className="font-bold" style={{ color: location.color }}>
+                      {location.peakPolyphenols} mg/kg peak
+                    </div>
+                    <div className="text-xs text-gray-600 mt-1">
+                      {location.oils.length} premium oils
+                    </div>
+                    <div className="mt-2 text-xs text-gray-600">
+                      Click marker for details
+                    </div>
+                  </div>
+                </Popup>
+              </CircleMarker>
             ))}
-          </svg>
-
-          {/* Location Labels */}
-          {MAP_LOCATIONS.map(location => (
-            <div
-              key={`label-${location.name}`}
-              className="absolute pointer-events-none transition-opacity duration-200"
-              style={{
-                left: `${location.coordinates.x}%`,
-                top: `${location.coordinates.y}%`,
-                transform: 'translate(-50%, -120%)',
-                opacity: hoveredLocation === location.name ? 1 : 0.7,
-              }}
-            >
-              <div className="bg-gray-900/90 backdrop-blur-sm px-2 py-1 rounded-lg border border-gray-700/50 whitespace-nowrap">
-                <span className="text-xs font-bold text-white flex items-center gap-1">
-                  <span>{location.flag}</span>
-                  <span>{location.name}</span>
-                </span>
-              </div>
-            </div>
-          ))}
+          </MapContainer>
         </div>
 
         {/* Selected Location Card */}
         {selectedLocation && (
-          <div className="mt-8 relative">
+          <div className="mt-6 relative animate-fade-in">
             <div
               className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-sm rounded-2xl p-6 border-2 transition-all duration-300"
               style={{ borderColor: selectedLocation.color }}
@@ -281,7 +258,7 @@ export default function WorldMap() {
                   <div
                     className="h-full rounded-full transition-all duration-1000"
                     style={{
-                      width: `${getHeatmapIntensity(selectedLocation.peakPolyphenols)}%`,
+                      width: `${(selectedLocation.peakPolyphenols / 2042) * 100}%`,
                       backgroundColor: selectedLocation.color,
                     }}
                   ></div>
@@ -296,7 +273,7 @@ export default function WorldMap() {
                   {selectedLocation.oils.map((oil, index) => (
                     <div
                       key={index}
-                      className="bg-gray-800/50 rounded-xl p-4 border border-gray-700/50 hover:border-gray-600 transition-all duration-200 hover:scale-102"
+                      className="bg-gray-800/50 rounded-xl p-4 border border-gray-700/50 hover:border-gray-600 transition-all duration-200 hover:scale-[1.02]"
                     >
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
@@ -319,7 +296,7 @@ export default function WorldMap() {
         )}
 
         {/* Legend */}
-        <div className="mt-8 pt-6 border-t border-gray-700/50">
+        <div className="mt-6 pt-6 border-t border-gray-700/50">
           <div className="flex flex-wrap justify-center gap-6 text-sm">
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#22c55e' }}></div>
@@ -339,10 +316,37 @@ export default function WorldMap() {
             </div>
           </div>
           <p className="text-center text-xs text-gray-500 mt-4">
-            Click any location marker to view detailed information about oils from that region
+            Circle size and opacity represent polyphenol concentration • Click any marker for details
           </p>
         </div>
       </div>
+
+      <style jsx global>{`
+        @keyframes pulse-slow {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.7;
+          }
+        }
+        .animate-pulse-slow {
+          animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fade-in {
+          animation: fade-in 0.3s ease-out;
+        }
+      `}</style>
     </div>
   )
 }
