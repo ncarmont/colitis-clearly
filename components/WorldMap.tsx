@@ -124,22 +124,70 @@ const MAP_LOCATIONS: MapLocation[] = [
   },
 ]
 
+type VisualizationMode = 'peak' | 'average' | 'count'
+
 export default function WorldMap() {
   const [selectedLocation, setSelectedLocation] = useState<MapLocation | null>(null)
   const [isMounted, setIsMounted] = useState(false)
+  const [visualMode, setVisualMode] = useState<VisualizationMode>('peak')
 
   useEffect(() => {
     setIsMounted(true)
   }, [])
 
-  const getRadius = (polyphenols: number): number => {
-    // Scale radius based on polyphenol content (15-40 pixels)
-    return Math.max(15, Math.min(40, (polyphenols / 2042) * 40))
+  const getTop5Average = (location: MapLocation): number => {
+    const top5 = location.oils
+      .sort((a, b) => b.polyphenols - a.polyphenols)
+      .slice(0, Math.min(5, location.oils.length))
+    return Math.round(top5.reduce((sum, oil) => sum + oil.polyphenols, 0) / top5.length)
   }
 
-  const getOpacity = (polyphenols: number): number => {
-    // Higher polyphenols = more opaque
-    return Math.max(0.5, Math.min(0.9, (polyphenols / 2042)))
+  const getMetricValue = (location: MapLocation): number => {
+    switch (visualMode) {
+      case 'peak':
+        return location.peakPolyphenols
+      case 'average':
+        return getTop5Average(location)
+      case 'count':
+        return location.oils.length
+    }
+  }
+
+  const getMaxMetric = (): number => {
+    switch (visualMode) {
+      case 'peak':
+        return Math.max(...MAP_LOCATIONS.map(l => l.peakPolyphenols))
+      case 'average':
+        return Math.max(...MAP_LOCATIONS.map(l => getTop5Average(l)))
+      case 'count':
+        return Math.max(...MAP_LOCATIONS.map(l => l.oils.length))
+    }
+  }
+
+  const getColorFromIntensity = (value: number, max: number): string => {
+    const intensity = value / max
+
+    if (intensity >= 0.9) return '#22c55e' // Bright green
+    if (intensity >= 0.7) return '#84cc16' // Yellow-green
+    if (intensity >= 0.5) return '#eab308' // Yellow
+    if (intensity >= 0.3) return '#f59e0b' // Orange
+    return '#ef4444' // Red (lowest)
+  }
+
+  const getRadius = (location: MapLocation): number => {
+    const value = getMetricValue(location)
+    const max = getMaxMetric()
+    const intensity = value / max
+    // Scale radius based on metric (15-45 pixels)
+    return Math.max(15, Math.min(45, intensity * 45))
+  }
+
+  const getOpacity = (location: MapLocation): number => {
+    const value = getMetricValue(location)
+    const max = getMaxMetric()
+    const intensity = value / max
+    // Higher values = more opaque
+    return Math.max(0.5, Math.min(0.95, 0.5 + (intensity * 0.45)))
   }
 
   if (!isMounted) {
@@ -156,9 +204,43 @@ export default function WorldMap() {
         <h2 className="text-4xl font-bold text-white mb-4">
           Global EVOO Heatmap
         </h2>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-6">
           Click on any location to discover the highest polyphenol olive oils from around the world
         </p>
+
+        {/* Visualization Mode Toggle */}
+        <div className="flex justify-center gap-3 mb-6">
+          <button
+            onClick={() => setVisualMode('peak')}
+            className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+              visualMode === 'peak'
+                ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg scale-105'
+                : 'bg-gray-800/50 text-gray-400 hover:bg-gray-700/50 hover:text-gray-300'
+            }`}
+          >
+            🏆 Peak Polyphenols
+          </button>
+          <button
+            onClick={() => setVisualMode('average')}
+            className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+              visualMode === 'average'
+                ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg scale-105'
+                : 'bg-gray-800/50 text-gray-400 hover:bg-gray-700/50 hover:text-gray-300'
+            }`}
+          >
+            📊 Top 5 Average
+          </button>
+          <button
+            onClick={() => setVisualMode('count')}
+            className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+              visualMode === 'count'
+                ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg scale-105'
+                : 'bg-gray-800/50 text-gray-400 hover:bg-gray-700/50 hover:text-gray-300'
+            }`}
+          >
+            🌍 Producer Count
+          </button>
+        </div>
       </div>
 
       {/* Map Container */}
@@ -179,44 +261,84 @@ export default function WorldMap() {
             />
 
             {/* Location markers with heatmap effect */}
-            {MAP_LOCATIONS.map((location) => (
-              <CircleMarker
-                key={location.name}
-                center={location.coordinates}
-                radius={getRadius(location.peakPolyphenols)}
-                pathOptions={{
-                  color: location.color,
-                  fillColor: location.color,
-                  fillOpacity: getOpacity(location.peakPolyphenols),
-                  weight: 3,
-                  className: 'animate-pulse-slow'
-                }}
-                eventHandlers={{
-                  click: () => setSelectedLocation(location),
-                }}
-              >
-                <Popup>
-                  <div className="text-sm">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="text-2xl">{location.flag}</span>
-                      <div>
-                        <div className="font-bold text-gray-900">{location.name}</div>
-                        <div className="text-xs text-gray-600">{location.tagline}</div>
+            {MAP_LOCATIONS.map((location) => {
+              const metricValue = getMetricValue(location)
+              const maxValue = getMaxMetric()
+              const markerColor = getColorFromIntensity(metricValue, maxValue)
+              const top5Avg = getTop5Average(location)
+
+              return (
+                <CircleMarker
+                  key={location.name}
+                  center={location.coordinates}
+                  radius={getRadius(location)}
+                  pathOptions={{
+                    color: markerColor,
+                    fillColor: markerColor,
+                    fillOpacity: getOpacity(location),
+                    weight: 3,
+                    className: 'animate-pulse-slow'
+                  }}
+                  eventHandlers={{
+                    click: () => setSelectedLocation(location),
+                  }}
+                >
+                  <Popup className="custom-popup">
+                    <div className="min-w-[280px]">
+                      {/* Header */}
+                      <div className="flex items-center gap-3 mb-3 pb-3 border-b border-gray-200">
+                        <span className="text-3xl">{location.flag}</span>
+                        <div className="flex-1">
+                          <div className="font-bold text-gray-900 text-lg">{location.name}</div>
+                          <div className="text-xs text-gray-600">{location.tagline}</div>
+                        </div>
+                      </div>
+
+                      {/* Stats Grid */}
+                      <div className="grid grid-cols-2 gap-3 mb-3">
+                        <div className="bg-gray-50 rounded-lg p-2">
+                          <div className="text-xs text-gray-500 mb-1">Peak</div>
+                          <div className="font-bold text-gray-900">{location.peakPolyphenols} mg/kg</div>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-2">
+                          <div className="text-xs text-gray-500 mb-1">Top 5 Avg</div>
+                          <div className="font-bold text-gray-900">{top5Avg} mg/kg</div>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-2">
+                          <div className="text-xs text-gray-500 mb-1">Producers</div>
+                          <div className="font-bold text-gray-900">{location.oils.length} oils</div>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-2">
+                          <div className="text-xs text-gray-500 mb-1">Intensity</div>
+                          <div className="flex items-center gap-1">
+                            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: markerColor }}></div>
+                            <div className="font-bold text-gray-900">{Math.round((metricValue / maxValue) * 100)}%</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Top 3 Oils Preview */}
+                      <div className="mb-2">
+                        <div className="text-xs font-semibold text-gray-600 mb-2">Top Oils:</div>
+                        <div className="space-y-1">
+                          {location.oils.slice(0, 3).map((oil, idx) => (
+                            <div key={idx} className="flex justify-between items-center text-xs">
+                              <span className="text-gray-700 truncate max-w-[180px]">{oil.brand}</span>
+                              <span className="font-semibold" style={{ color: markerColor }}>{oil.polyphenols}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Click prompt */}
+                      <div className="mt-3 pt-2 border-t border-gray-200 text-center">
+                        <div className="text-xs text-gray-500 italic">Click marker for full details →</div>
                       </div>
                     </div>
-                    <div className="font-bold" style={{ color: location.color }}>
-                      {location.peakPolyphenols} mg/kg peak
-                    </div>
-                    <div className="text-xs text-gray-600 mt-1">
-                      {location.oils.length} premium oils
-                    </div>
-                    <div className="mt-2 text-xs text-gray-600">
-                      Click marker for details
-                    </div>
-                  </div>
-                </Popup>
-              </CircleMarker>
-            ))}
+                  </Popup>
+                </CircleMarker>
+              )
+            })}
           </MapContainer>
         </div>
 
@@ -297,26 +419,57 @@ export default function WorldMap() {
 
         {/* Legend */}
         <div className="mt-6 pt-6 border-t border-gray-700/50">
-          <div className="flex flex-wrap justify-center gap-6 text-sm">
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#22c55e' }}></div>
-              <span className="text-gray-400">2000+ mg/kg</span>
+          <div className="mb-4">
+            <div className="text-center text-sm font-semibold text-gray-300 mb-3">
+              {visualMode === 'peak' && 'Heat Intensity: Peak Polyphenols'}
+              {visualMode === 'average' && 'Heat Intensity: Top 5 Average Polyphenols'}
+              {visualMode === 'count' && 'Heat Intensity: Number of Producers'}
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#f59e0b' }}></div>
-              <span className="text-gray-400">1000-2000 mg/kg</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#eab308' }}></div>
-              <span className="text-gray-400">500-1000 mg/kg</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-4 h-4 rounded-full" style={{ backgroundColor: '#3b82f6' }}></div>
-              <span className="text-gray-400">&lt;500 mg/kg</span>
+
+            {/* Gradient Bar */}
+            <div className="max-w-2xl mx-auto mb-3">
+              <div className="h-8 rounded-lg overflow-hidden flex">
+                <div className="flex-1 flex items-center justify-center text-xs font-bold text-white" style={{ backgroundColor: '#ef4444' }}>Low</div>
+                <div className="flex-1" style={{ backgroundColor: '#f59e0b' }}></div>
+                <div className="flex-1" style={{ backgroundColor: '#eab308' }}></div>
+                <div className="flex-1" style={{ backgroundColor: '#84cc16' }}></div>
+                <div className="flex-1 flex items-center justify-center text-xs font-bold text-white" style={{ backgroundColor: '#22c55e' }}>High</div>
+              </div>
+              <div className="flex justify-between text-xs text-gray-400 mt-2 px-2">
+                <span>30%</span>
+                <span>50%</span>
+                <span>70%</span>
+                <span>90%</span>
+                <span>100%</span>
+              </div>
             </div>
           </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs">
+            {MAP_LOCATIONS.map((location) => {
+              const value = getMetricValue(location)
+              const max = getMaxMetric()
+              const color = getColorFromIntensity(value, max)
+              const top5Avg = getTop5Average(location)
+
+              return (
+                <div key={location.name} className="flex items-center gap-2 bg-gray-800/30 rounded-lg p-2">
+                  <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ backgroundColor: color }}></div>
+                  <div className="flex-1 min-w-0">
+                    <div className="font-semibold text-gray-300 truncate">{location.flag} {location.name}</div>
+                    <div className="text-gray-500">
+                      {visualMode === 'peak' && `${value} mg/kg peak`}
+                      {visualMode === 'average' && `${value} mg/kg avg`}
+                      {visualMode === 'count' && `${value} producer${value > 1 ? 's' : ''}`}
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
           <p className="text-center text-xs text-gray-500 mt-4">
-            Circle size and opacity represent polyphenol concentration • Click any marker for details
+            Circle size and opacity represent intensity • Click any marker for full details
           </p>
         </div>
       </div>
