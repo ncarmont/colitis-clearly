@@ -14,10 +14,82 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'top-10-highest-polyphenol-olive-oils',
+    title: 'Top 10 Highest Polyphenol Olive Oils in 2024 (Lab Verified)',
+    excerpt: 'Complete rankings of the highest polyphenol EVOOs with lab verification. From 1462 mg/kg SP360 to premium Greek Koroneiki oils.',
+    category: 'Rankings',
+    readTime: '10 min read',
+    date: '2024-01-20',
+    image: '🏆'
+  },
+  {
+    slug: 'best-olive-oil-for-longevity',
+    title: 'Best Olive Oil for Longevity: Blue Zones & Anti-Aging Benefits',
+    excerpt: 'Harvard 28-year study shows EVOO reduces mortality by 19%. Discover which oils centenarians use and why polyphenols extend lifespan.',
+    category: 'Health',
+    readTime: '11 min read',
+    date: '2024-01-18',
+    image: '⏳'
+  },
+  {
+    slug: 'best-olive-oil-for-heart-health',
+    title: 'Best Olive Oil for Heart Health: Cardiologist Recommendations',
+    excerpt: 'PREDIMED study: 30% lower cardiovascular events with high polyphenol EVOO. Expert picks for heart disease prevention.',
+    category: 'Health',
+    readTime: '10 min read',
+    date: '2024-01-16',
+    image: '💓'
+  },
+  {
+    slug: 'olive-oil-vs-other-oils',
+    title: 'Olive Oil vs Other Oils: Which is Healthiest? Complete Comparison',
+    excerpt: 'EVOO vs coconut, avocado, canola, seed oils. Compare polyphenols, omega ratios, oxidation resistance. The definitive guide.',
+    category: 'Comparison',
+    readTime: '9 min read',
+    date: '2024-01-15',
+    image: '⚖️'
+  },
+  {
+    slug: 'olive-oil-for-brain-health-dementia',
+    title: 'Olive Oil for Brain Health & Dementia Prevention (Research 2024)',
+    excerpt: 'Oleocanthal clears amyloid-beta plaques. MIND diet reduces Alzheimer\'s risk by 53%. Neuroprotective benefits explained.',
+    category: 'Health',
+    readTime: '9 min read',
+    date: '2024-01-14',
+    image: '🧠'
+  },
+  {
+    slug: 'best-olive-oil-for-cooking',
+    title: 'Best Olive Oil for Cooking: Smoke Point, Heat Stability & Safety',
+    excerpt: 'Smoke point myth debunked. Australian study proves EVOO is most stable for frying. Safe cooking temperatures explained.',
+    category: 'Cooking',
+    readTime: '8 min read',
+    date: '2024-01-12',
+    image: '🔥'
+  },
+  {
+    slug: 'best-affordable-high-polyphenol-olive-oil',
+    title: 'Best Affordable High Polyphenol Olive Oil (Budget-Friendly Picks)',
+    excerpt: 'Cost-per-mg analysis reveals best value EVOOs. Get 500+ mg/kg polyphenols without breaking the bank.',
+    category: 'Buying Guide',
+    readTime: '7 min read',
+    date: '2024-01-10',
+    image: '💰'
+  },
+  {
+    slug: 'how-to-taste-olive-oil-like-expert',
+    title: 'How to Taste Olive Oil Like an Expert: Professional Tasting Guide',
+    excerpt: 'Master the peppery throat test, identify defects, and understand flavor profiles. Professional sommelier techniques.',
+    category: 'Education',
+    readTime: '8 min read',
+    date: '2024-01-08',
+    image: '👅'
+  },
+  {
     slug: 'what-are-polyphenols-olive-oil',
     title: 'What Are Polyphenols in Olive Oil? Complete Guide 2024',
     excerpt: 'Discover everything about polyphenols in EVOO: what they are, health benefits, how much you need, and why they matter for heart health and longevity.',
-    category: 'Health',
+    category: 'Education',
     readTime: '8 min read',
     date: '2024-10-01',
     image: '🧬'
@@ -102,6 +174,15 @@ const blogPosts = [
     readTime: '8 min read',
     date: '2024-09-08',
     image: '🌱'
+  },
+  {
+    slug: 'olive-oil-polyphenol-myths-debunked',
+    title: 'Olive Oil Polyphenol Myths Debunked: What Science Actually Says',
+    excerpt: 'All EVOO is healthy? Cold-pressed means quality? Italian is best? We debunk 10 common olive oil myths with scientific evidence.',
+    category: 'Education',
+    readTime: '10 min read',
+    date: '2024-09-05',
+    image: '❌'
   },
 ]
 
