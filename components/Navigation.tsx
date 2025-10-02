@@ -31,6 +31,16 @@ export default function Navigation() {
               Rankings
             </Link>
             <Link
+              href="/blog"
+              className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                pathname.startsWith('/blog')
+                  ? 'bg-green-100 text-green-700'
+                  : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
+              }`}
+            >
+              Blog
+            </Link>
+            <Link
               href="/research"
               className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
                 pathname.startsWith('/research')
