@@ -130,6 +130,17 @@ npm start       # Start production server
 npm run lint    # Run ESLint
 ```
 
+## 🚨 IMPORTANT: Development Workflow
+
+**AFTER EVERY CHANGE YOU MAKE, YOU MUST:**
+
+1. **Open the browser to view changes**: http://localhost:3000
+2. Navigate to the affected page to verify changes render correctly
+3. Check console for any errors
+4. Test interactive features (clicking, filtering, navigation)
+
+**The dev server is running on localhost:3000** - Always check your work visually!
+
 ## Known Issues
 
 - Next.js 15.5.4 dev tools error: "Cannot read properties of undefined (reading 'includes')" - This is a known Next.js bug that doesn't affect functionality
