@@ -12,26 +12,93 @@ type OliveOil = {
   harvestDate: string
   price: string
   priceAmount: string
+  method: string
+  lab: string
+  certificateLink?: string
+  cultivar: string
+  buyLink: string
   notes: string
 }
 
 const OILS_DATA: OliveOil[] = [
-  { id: 1, rank: 1, brand: "Premium EVOO", polyphenols: 850, origin: "Greece", harvestDate: "2024", price: "$$$", priceAmount: "$32", notes: "Exceptionally high polyphenol content" },
-  { id: 2, rank: 2, brand: "Elite Olive Oil", polyphenols: 780, origin: "Italy", harvestDate: "2024", price: "$$$$", priceAmount: "$48", notes: "Award-winning certified organic" },
-  { id: 3, rank: 3, brand: "Ultra Pure EVOO", polyphenols: 720, origin: "Spain", harvestDate: "2024", price: "$$$", priceAmount: "$35", notes: "Single estate, cold-pressed" },
-  { id: 4, rank: 4, brand: "Mediterranean Gold", polyphenols: 680, origin: "Greece", harvestDate: "2024", price: "$$", priceAmount: "$22", notes: "Great value for polyphenol content" },
-  { id: 5, rank: 5, brand: "Koroneiki Premium", polyphenols: 650, origin: "Greece", harvestDate: "2024", price: "$$$", priceAmount: "$38", notes: "Traditional Greek variety" },
-  { id: 6, rank: 6, brand: "Tuscan Heritage", polyphenols: 620, origin: "Italy", harvestDate: "2024", price: "$$$$", priceAmount: "$52", notes: "Family-owned for 200 years" },
-  { id: 7, rank: 7, brand: "Andalusian Reserve", polyphenols: 590, origin: "Spain", harvestDate: "2024", price: "$$$", priceAmount: "$30", notes: "Picual olive variety" },
-  { id: 8, rank: 8, brand: "Sicilian Select", polyphenols: 570, origin: "Italy", harvestDate: "2024", price: "$$", priceAmount: "$24", notes: "Robust flavor profile" },
-  { id: 9, rank: 9, brand: "Cretan Pure", polyphenols: 540, origin: "Greece", harvestDate: "2024", price: "$$", priceAmount: "$20", notes: "Protected designation of origin" },
-  { id: 10, rank: 10, brand: "Kalamata Classic", polyphenols: 520, origin: "Greece", harvestDate: "2024", price: "$", priceAmount: "$14", notes: "Best budget option" },
+  {
+    id: 1, rank: 1, brand: "SP360 Organic", polyphenols: 1462, origin: "Greece", harvestDate: "Oct 2024",
+    price: "$$$$", priceAmount: "$79.99", method: "HPLC", lab: "Modern Olives Lab",
+    certificateLink: "https://modernolives.com/pages/sample-test-results",
+    cultivar: "Koroneiki", buyLink: "https://www.sp360oliveoil.com/",
+    notes: "Peak performance olive oil - Highest polyphenol EVOO tested"
+  },
+  {
+    id: 2, rank: 2, brand: "Pamako Premium", polyphenols: 1222, origin: "Greece", harvestDate: "Nov 2023",
+    price: "$$$", priceAmount: "$36.00", method: "HPLC", lab: "Modern Olives Lab",
+    certificateLink: "https://modernolives.com/pages/sample-test-results",
+    cultivar: "Koroneiki", buyLink: "https://www.amazon.com/stores/page/0D7DB90C-BF7D-47B9-9FED-DED6D037EF42",
+    notes: "Exceptional value for ultra-high polyphenol content"
+  },
+  {
+    id: 3, rank: 3, brand: "ONSURI Arbosana", polyphenols: 968, origin: "California", harvestDate: "Nov 2024",
+    price: "$$$$", priceAmount: "$49.99", method: "qNMR", lab: "UC Davis Olive Center",
+    certificateLink: "https://olivecenter.ucdavis.edu/onsuri-arbosana",
+    cultivar: "Arbosana", buyLink: "https://www.onsurio.com/",
+    notes: "California's highest polyphenol EVOO - Award winning"
+  },
+  {
+    id: 4, rank: 4, brand: "PJ KABOS", polyphenols: 858, origin: "Greece", harvestDate: "Oct 2023",
+    price: "$$$$", priceAmount: "$55.00", method: "HPLC", lab: "Modern Olives Lab",
+    certificateLink: "https://modernolives.com/pages/sample-test-results",
+    cultivar: "Koroneiki", buyLink: "https://pjkabos.com/",
+    notes: "Premium Greek producer with consistent high polyphenols"
+  },
+  {
+    id: 5, rank: 5, brand: "November Ultra Premium", polyphenols: 847, origin: "Tunisia", harvestDate: "Nov 2023",
+    price: "$$$", priceAmount: "$29.95", method: "RSS", lab: "Australian Oils Research Lab",
+    certificateLink: "",
+    cultivar: "Chetoui", buyLink: "https://www.amazon.com/November-Organic-Polyphenol-Harvested-Tunisia/dp/B0D47RFBVF",
+    notes: "North African excellence - Great polyphenol-to-price ratio"
+  },
+  {
+    id: 6, rank: 6, brand: "Opus Oléa", polyphenols: 674, origin: "California", harvestDate: "Nov 2023",
+    price: "$$$$", priceAmount: "$48.00", method: "HPLC", lab: "Modern Olives Lab",
+    certificateLink: "https://modernolives.com/pages/sample-test-results",
+    cultivar: "Arbequina/Koroneiki", buyLink: "https://www.opusolea.com/",
+    notes: "California blend of premium cultivars"
+  },
+  {
+    id: 7, rank: 7, brand: "Zero Nutrition High Phenolic", polyphenols: 582, origin: "Greece", harvestDate: "Nov 2023",
+    price: "$$", priceAmount: "$24.99", method: "HPLC", lab: "Modern Olives Lab",
+    certificateLink: "https://modernolives.com/pages/sample-test-results",
+    cultivar: "Koroneiki", buyLink: "https://www.amazon.com/Nutrition-Phenolic-Polyphenols-Extra-Virgin/dp/B0CSB9JGDG",
+    notes: "Best budget high-polyphenol option"
+  },
+  {
+    id: 8, rank: 8, brand: "Vallesur", polyphenols: 554, origin: "Spain", harvestDate: "Oct 2023",
+    price: "$$", priceAmount: "$18.99", method: "RSS", lab: "Spanish Lab",
+    certificateLink: "",
+    cultivar: "Picual", buyLink: "https://www.amazon.com/Vallesur-Phenolic-Spanish-Polyphenol-Unfiltered/dp/B0CYRBJ4RZ",
+    notes: "Spanish Picual variety - Excellent value"
+  },
+  {
+    id: 9, rank: 9, brand: "Citizens of Soil", polyphenols: 526, origin: "Greece", harvestDate: "Nov 2023",
+    price: "$$$", priceAmount: "$32.00", method: "HPLC", lab: "Modern Olives Lab",
+    certificateLink: "https://modernolives.com/pages/sample-test-results",
+    cultivar: "Koroneiki", buyLink: "https://www.citizensofsoil.com/",
+    notes: "Organic certified Greek EVOO"
+  },
+  {
+    id: 10, rank: 10, brand: "Odysea", polyphenols: 480, origin: "Greece", harvestDate: "Nov 2023",
+    price: "$$", priceAmount: "$19.99", method: "HPLC", lab: "Modern Olives Lab",
+    certificateLink: "https://modernolives.com/pages/sample-test-results",
+    cultivar: "Koroneiki", buyLink: "https://www.amazon.com/stores/Odysea/page/8D0E9F5A-3B4E-4E5B-8C7D-1A2B3C4D5E6F",
+    notes: "Solid mid-tier Greek option"
+  },
 ]
 
 const COUNTRY_FLAGS: { [key: string]: string } = {
   "Greece": "🇬🇷",
   "Italy": "🇮🇹",
-  "Spain": "🇪🇸"
+  "Spain": "🇪🇸",
+  "California": "🇺🇸",
+  "Tunisia": "🇹🇳"
 }
 
 export default function HomePage() {
@@ -91,12 +158,12 @@ export default function HomePage() {
               </div>
               <div className="w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white">3</div>
-                <div className="text-sm text-green-200">Countries</div>
+                <div className="text-4xl font-bold text-white">5</div>
+                <div className="text-sm text-green-200">Regions</div>
               </div>
               <div className="w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white">850+</div>
+                <div className="text-4xl font-bold text-white">1462</div>
                 <div className="text-sm text-green-200">Max mg/kg</div>
               </div>
             </div>
@@ -172,13 +239,16 @@ export default function HomePage() {
               <table className="w-full">
                 <thead>
                   <tr className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border-b-2 border-green-700/50">
-                    <th className="px-8 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Rank</th>
-                    <th className="px-8 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Brand</th>
-                    <th className="px-8 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Polyphenols</th>
-                    <th className="px-8 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Origin</th>
-                    <th className="px-8 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Harvest</th>
-                    <th className="px-8 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Price</th>
-                    <th className="px-8 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Notes</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Rank</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Brand</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Polyphenols</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Cultivar</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Origin</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Harvest</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Lab Method</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Price</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Buy</th>
+                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Notes</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-800/50">
@@ -188,7 +258,7 @@ export default function HomePage() {
                       className="hover:bg-green-900/20 transition-all duration-200 group animate-fade-in-row"
                       style={{ animationDelay: `${index * 50}ms` }}
                     >
-                      <td className="px-8 py-5 whitespace-nowrap">
+                      <td className="px-6 py-5 whitespace-nowrap">
                         <div className="flex items-center">
                           <span className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl font-bold text-base shadow-lg group-hover:scale-110 transition-transform duration-200 ${
                             oil.rank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-yellow-500/50' :
@@ -200,12 +270,12 @@ export default function HomePage() {
                           </span>
                         </div>
                       </td>
-                      <td className="px-8 py-5">
+                      <td className="px-6 py-5">
                         <div className="text-base font-bold text-gray-100 group-hover:text-green-400 transition-colors">
                           {oil.brand}
                         </div>
                       </td>
-                      <td className="px-8 py-5 whitespace-nowrap">
+                      <td className="px-6 py-5 whitespace-nowrap">
                         <div className="flex items-baseline gap-1.5">
                           <span className="text-3xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
                             {oil.polyphenols}
@@ -213,16 +283,33 @@ export default function HomePage() {
                           <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
                         </div>
                       </td>
-                      <td className="px-8 py-5 whitespace-nowrap">
+                      <td className="px-6 py-5 whitespace-nowrap">
+                        <span className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-semibold bg-purple-900/40 text-purple-300 border border-purple-700/50 group-hover:bg-purple-900/60 transition-colors">
+                          {oil.cultivar}
+                        </span>
+                      </td>
+                      <td className="px-6 py-5 whitespace-nowrap">
                         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold bg-blue-900/40 text-blue-300 border border-blue-700/50 group-hover:bg-blue-900/60 transition-colors">
                           <span className="text-lg">{COUNTRY_FLAGS[oil.origin]}</span>
                           {oil.origin}
                         </span>
                       </td>
-                      <td className="px-8 py-5 whitespace-nowrap">
+                      <td className="px-6 py-5 whitespace-nowrap">
                         <span className="text-sm text-gray-400 font-semibold">{oil.harvestDate}</span>
                       </td>
-                      <td className="px-8 py-5 whitespace-nowrap">
+                      <td className="px-6 py-5 whitespace-nowrap">
+                        <div className="flex flex-col gap-1">
+                          <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-900/40 text-orange-300 border border-orange-700/50">
+                            {oil.method} {oil.certificateLink && (
+                              <a href={oil.certificateLink} target="_blank" rel="noopener noreferrer" className="ml-1 hover:scale-125 transition-transform">
+                                📜
+                              </a>
+                            )}
+                          </span>
+                          <span className="text-xs text-gray-500">{oil.lab}</span>
+                        </div>
+                      </td>
+                      <td className="px-6 py-5 whitespace-nowrap">
                         <div className="flex flex-col gap-1">
                           <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-bold bg-gray-700/50 text-gray-300 group-hover:bg-gray-700 transition-colors">
                             {oil.price}
@@ -230,8 +317,19 @@ export default function HomePage() {
                           <span className="text-xs text-green-400 font-bold">{oil.priceAmount}</span>
                         </div>
                       </td>
-                      <td className="px-8 py-5">
-                        <div className="text-sm text-gray-400 max-w-sm leading-relaxed">{oil.notes}</div>
+                      <td className="px-6 py-5 whitespace-nowrap">
+                        <a
+                          href={oil.buyLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-lg font-semibold text-sm hover:from-green-500 hover:to-emerald-500 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+                        >
+                          <span>🛒</span>
+                          <span>Buy</span>
+                        </a>
+                      </td>
+                      <td className="px-6 py-5">
+                        <div className="text-sm text-gray-400 max-w-xs leading-relaxed">{oil.notes}</div>
                       </td>
                     </tr>
                   ))}
