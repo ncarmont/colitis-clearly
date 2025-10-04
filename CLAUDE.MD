@@ -141,6 +141,27 @@ npm run lint    # Run ESLint
 
 **The dev server is running on localhost:3000** - Always check your work visually!
 
+## 🚨 CRITICAL: Git Workflow - ALWAYS COMMIT AND PUSH
+
+**AFTER TESTING YOUR CHANGES, YOU MUST:**
+
+1. **Add all changes:**
+   ```bash
+   git add .
+   ```
+
+2. **Commit with descriptive message:**
+   ```bash
+   git commit -m "descriptive commit message"
+   ```
+
+3. **Push to remote:**
+   ```bash
+   git push
+   ```
+
+**This is MANDATORY - never skip committing and pushing your changes!**
+
 ## Known Issues
 
 - Next.js 15.5.4 dev tools error: "Cannot read properties of undefined (reading 'includes')" - This is a known Next.js bug that doesn't affect functionality

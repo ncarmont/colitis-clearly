@@ -400,15 +400,21 @@ export default function HomePage() {
             </div>
 
             <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white animate-slide-up">
-              Highest Polyphenol
+              Best Extra Virgin
               <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
-                EVOO Rankings
+                Olive Oils Globally
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-green-50 max-w-3xl mx-auto font-light animate-fade-in-delay">
-              Science-backed rankings verified by independent laboratory testing
+              Science-backed rankings of 30 lab-verified EVOOs ranked by polyphenol content
             </p>
+
+            <div className="text-base md:text-lg text-green-100/90 max-w-4xl mx-auto mt-4 animate-fade-in-delay leading-relaxed">
+              High-polyphenol olive oil reduces cardiovascular disease risk by <span className="font-semibold text-green-200">31%</span> (PREDIMED study),
+              lowers inflammation comparable to ibuprofen, and increases lifespan in Blue Zone populations.
+              Each oil below is independently lab-tested for maximum health benefits.
+            </div>
 
             {/* Stats */}
             <div className="flex justify-center gap-8 mt-8 animate-fade-in-delay-2">
@@ -499,28 +505,29 @@ export default function HomePage() {
               <table className="w-full">
                 <thead>
                   <tr className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border-b-2 border-green-700/50">
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Rank</th>
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Brand</th>
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Polyphenols</th>
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Cultivar</th>
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Origin</th>
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Harvest</th>
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Lab Method</th>
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Price</th>
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Buy</th>
-                    <th className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Notes</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Rank</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Brand</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Polyphenols</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Origin</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Cultivar</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Harvest</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Method</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Price</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Buy</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Notes</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-800/50">
-                  {filteredAndSortedOils.map((oil, index) => (
-                    <tr
-                      key={oil.id}
-                      className="hover:bg-green-900/20 transition-all duration-200 group animate-fade-in-row"
-                      style={{ animationDelay: `${index * 50}ms` }}
-                    >
-                      <td className="px-6 py-5 whitespace-nowrap">
-                        <div className="flex items-center">
-                          <span className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl font-bold text-base shadow-lg group-hover:scale-110 transition-transform duration-200 ${
+                  {filteredAndSortedOils.map((oil, index) => {
+                    const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
+                    return (
+                      <tr
+                        key={oil.id}
+                        className="hover:bg-green-900/20 transition-all duration-200 group animate-fade-in-row"
+                        style={{ animationDelay: `${index * 50}ms` }}
+                      >
+                        <td className="px-3 py-4 whitespace-nowrap">
+                          <span className={`inline-flex items-center justify-center w-10 h-10 rounded-xl font-bold text-sm shadow-md group-hover:scale-110 transition-transform duration-200 ${
                             oil.rank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-yellow-500/50' :
                             oil.rank === 2 ? 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white shadow-gray-400/50' :
                             oil.rank === 3 ? 'bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 text-white shadow-orange-500/50' :
@@ -528,78 +535,103 @@ export default function HomePage() {
                           }`}>
                             {oil.rank}
                           </span>
-                        </div>
-                      </td>
-                      <td className="px-6 py-5">
-                        <div className="text-base font-bold text-gray-100 group-hover:text-green-400 transition-colors">
-                          {oil.brand}
-                        </div>
-                      </td>
-                      <td className="px-6 py-5 whitespace-nowrap">
-                        <div className="flex items-baseline gap-1.5">
-                          <span className="text-3xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
-                            {oil.polyphenols}
+                        </td>
+                        <td className="px-3 py-4">
+                          <div className="text-sm font-bold text-gray-100 group-hover:text-green-400 transition-colors max-w-[180px]">
+                            {oil.brand}
+                          </div>
+                        </td>
+                        <td className="px-3 py-4 whitespace-nowrap">
+                          <div className="flex items-baseline gap-1">
+                            <span className="text-2xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
+                              {oil.polyphenols}
+                            </span>
+                            <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
+                          </div>
+                        </td>
+                        <td className="px-3 py-4 whitespace-nowrap">
+                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-900/40 text-blue-300 border border-blue-700/50">
+                            <span className="text-base">{COUNTRY_FLAGS[oil.origin]}</span>
+                            <span className="hidden lg:inline">{oil.origin}</span>
                           </span>
-                          <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
-                        </div>
-                      </td>
-                      <td className="px-6 py-5 whitespace-nowrap">
-                        <span className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-semibold bg-purple-900/40 text-purple-300 border border-purple-700/50 group-hover:bg-purple-900/60 transition-colors">
-                          {oil.cultivar}
-                        </span>
-                      </td>
-                      <td className="px-6 py-5 whitespace-nowrap">
-                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-semibold bg-blue-900/40 text-blue-300 border border-blue-700/50 group-hover:bg-blue-900/60 transition-colors">
-                          <span className="text-lg">{COUNTRY_FLAGS[oil.origin]}</span>
-                          {oil.origin}
-                        </span>
-                      </td>
-                      <td className="px-6 py-5 whitespace-nowrap">
-                        <span className="text-sm text-gray-400 font-semibold">{oil.harvestDate}</span>
-                      </td>
-                      <td className="px-6 py-5 whitespace-nowrap">
-                        <div className="flex flex-col gap-2">
-                          <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-orange-900/40 text-orange-300 border border-orange-700/50">
-                            {oil.method}
+                        </td>
+                        <td className="px-3 py-4 whitespace-nowrap">
+                          <span className="text-xs text-purple-300 font-medium bg-purple-900/30 px-2 py-1 rounded">
+                            {oil.cultivar}
                           </span>
-                          <span className="text-xs text-gray-500">{oil.lab}</span>
-                          {oil.certificateLink && (
+                        </td>
+                        <td className="px-3 py-4 whitespace-nowrap">
+                          <span className="text-xs text-gray-400 font-medium">{oil.harvestDate}</span>
+                        </td>
+                        <td className="px-3 py-4 whitespace-nowrap">
+                          <div className="flex flex-col gap-1">
+                            <span className="text-xs text-orange-300 font-medium bg-orange-900/30 px-2 py-1 rounded inline-block">
+                              {oil.method.length > 15 ? oil.method.substring(0, 15) + '...' : oil.method}
+                            </span>
+                            {oil.certificateLink && (
+                              <a
+                                href={oil.certificateLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-xs text-blue-400 hover:text-blue-300 underline"
+                                title="View Lab Certificate"
+                              >
+                                📜 COA
+                              </a>
+                            )}
+                          </div>
+                        </td>
+                        <td className="px-3 py-4 whitespace-nowrap">
+                          <div className="flex flex-col gap-0.5">
+                            <span className="text-xs text-gray-400 font-medium">{oil.price}</span>
+                            <span className="text-xs text-green-400 font-bold">{oil.priceAmount}</span>
+                          </div>
+                        </td>
+                        <td className="px-3 py-4 whitespace-nowrap">
+                          <div className="flex flex-col gap-1.5">
                             <a
-                              href={oil.certificateLink}
+                              href={oil.buyLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 px-3 py-2 bg-blue-600/80 hover:bg-blue-500 text-white rounded-lg text-xs font-bold transition-all duration-200 shadow-md hover:shadow-lg hover:scale-105"
+                              className={`inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg font-semibold text-xs transition-all duration-200 shadow-md hover:shadow-lg hover:scale-105 ${
+                                isAmazon
+                                  ? 'bg-[#FF9900] hover:bg-[#FFA724] text-black'
+                                  : 'bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white'
+                              }`}
                             >
-                              <span className="text-base">📜</span>
-                              <span>View Certificate</span>
+                              {isAmazon ? (
+                                <>
+                                  <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 100 30">
+                                    <path d="M60 17c-6 4-14 6-21 6-10 0-19-4-26-10-.5-.5-.1-1.2.6-.8 7.5 4.5 17 7 26.5 7 6.5 0 13.5-1.4 20-4 1-.5 1.8.7.9 1.5zm2.5-3c-.7-1-5-.5-7-.2-.6.1-.7-.5-.2-.8 3.5-2.5 9-1.8 9.5-1 .7.8-.1 6.5-3.5 9.2-.5.4-1 .2-.8-.4.7-1.8 2.3-6 1.6-7z"/>
+                                  </svg>
+                                  <span>Amazon</span>
+                                </>
+                              ) : (
+                                <>
+                                  <span>🛒</span>
+                                  <span>Buy</span>
+                                </>
+                              )}
                             </a>
-                          )}
-                        </div>
-                      </td>
-                      <td className="px-6 py-5 whitespace-nowrap">
-                        <div className="flex flex-col gap-1">
-                          <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-sm font-bold bg-gray-700/50 text-gray-300 group-hover:bg-gray-700 transition-colors">
-                            {oil.price}
-                          </span>
-                          <span className="text-xs text-green-400 font-bold">{oil.priceAmount}</span>
-                        </div>
-                      </td>
-                      <td className="px-6 py-5 whitespace-nowrap">
-                        <a
-                          href={oil.buyLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-lg font-semibold text-sm hover:from-green-500 hover:to-emerald-500 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
-                        >
-                          <span>🛒</span>
-                          <span>Buy</span>
-                        </a>
-                      </td>
-                      <td className="px-6 py-5">
-                        <div className="text-sm text-gray-400 max-w-xs leading-relaxed">{oil.notes}</div>
-                      </td>
-                    </tr>
-                  ))}
+                            {!isAmazon && oil.certificateLink && !oil.certificateLink.includes('amazon') && !oil.certificateLink.includes('oliveoil') && (
+                              <a
+                                href={oil.certificateLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-xs text-blue-400 hover:text-blue-300 text-center underline"
+                                title="Official Website"
+                              >
+                                🌐 Direct
+                              </a>
+                            )}
+                          </div>
+                        </td>
+                        <td className="px-3 py-4">
+                          <div className="text-xs text-gray-400 max-w-[240px] leading-relaxed">{oil.notes}</div>
+                        </td>
+                      </tr>
+                    )
+                  })}
                 </tbody>
               </table>
             </div>

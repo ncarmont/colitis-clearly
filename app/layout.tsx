@@ -67,6 +67,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Preconnect to external domains for faster loading */}
+        <link rel="preconnect" href="https://www.amazon.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://www.amazon.com" />
+
+        {/* Structured Data for Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "EVOO Rankings",
+              "url": baseUrl,
+              "logo": `${baseUrl}/logo.png`,
+              "description": "Science-backed rankings of the highest polyphenol extra virgin olive oils verified by independent laboratory testing.",
+              "sameAs": [
+                "https://twitter.com/EVOORankings",
+                // Add other social profiles when created
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
+                "email": "contact@evoo-rankings.com"
+              }
+            })
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
