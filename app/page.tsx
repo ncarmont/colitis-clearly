@@ -108,7 +108,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$38.95", method: "Not specified", lab: "Retailer HPLC-style",
     certificateLink: "https://www.amazon.com/Atsas-Extremely-Phenolic-Unfiltered-Health-Boosting/dp/B0DB9WBWP8",
     cultivar: "Itrana (Lazio)",
-    buyLink: "https://www.amazon.com/Atsas-Extremely-Phenolic-Unfiltered-Health-Boosting/dp/B0DB9WBWP8",
+    buyLink: "https://www.amazon.com/Atsas-Extremely-Phenolic-Unfiltered-Health-Boosting/dp/B0DB9WBWP8?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=d00e42187d4f784135c4709b6d3e8851&language=en_US&ref_=as_li_ss_tl",
     notes: "OOL discloses numeric polyphenols"
   },
   {
@@ -140,7 +140,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$42.00", method: "Not specified", lab: "Retailer cited",
     certificateLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY",
     cultivar: "Frantoio/Moraiolo/Leccino",
-    buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY",
+    buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=be0189503aadb51434d91e088337e2b5&language=en_US&ref_=as_li_ss_tl",
     notes: "Multiple retailers cite ~650–700 mg/kg"
   },
   {
@@ -228,7 +228,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$45.00", method: "Not specified", lab: "Brand page",
     certificateLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H",
     cultivar: "Tuscan blend",
-    buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H",
+    buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=d74d40c724b766f7434a23e6eba9650a&language=en_US&ref_=as_li_ss_tl",
     notes: "Certified lots from Tuscany; analysis posted"
   },
   {
@@ -252,7 +252,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "Stated",
     certificateLink: "https://www.pjkabos.com/shop-usa",
     cultivar: "Koroneiki",
-    buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF",
+    buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&linkId=1328610a17867326c0d2a26ae73aab6a&language=en_US&ref_=as_li_ss_tl",
     notes: "Daily 'shot' usage suggested by brand; 750+ HPLC"
   },
   {
@@ -260,7 +260,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$39.00", method: "HPLC", lab: "Stated",
     certificateLink: "https://www.pjkabos.com/shop-usa",
     cultivar: "Koroneiki",
-    buyLink: "https://www.amazon.com/Phenolic-Intensity-Extracted-Koroneiki-KABOS/dp/B09P7K1V8K",
+    buyLink: "https://www.amazon.com/Phenolic-Intensity-Extracted-Koroneiki-KABOS/dp/B09P7K1V8K?&linkCode=ll1&tag=bestoliveoilr-20&linkId=7564b9ab453f4acc0ea9f0d679564c96&language=en_US&ref_=as_li_ss_tl",
     notes: "HPLC hydroxytyrosol 7+ mg/20g; 500+ tier"
   },
   {
