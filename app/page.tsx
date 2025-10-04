@@ -52,7 +52,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$45.00", method: "IOC/HPLC", lab: "Per ONSURI FAQ",
     certificateLink: "https://onsurioliveoil.com",
     cultivar: "Arbosana",
-    buyLink: "https://www.amazon.co.uk/ONSURI-Arbosana-Polyphenols-Extra-Virgin/dp/B0DCP9YNBT",
+    buyLink: "https://www.amazon.co.uk/ONSURI-Arbosana-Polyphenols-Extra-Virgin/dp/B0DCP9YNBT?th=1&linkCode=ll1&tag=bestoliveoilr-21&linkId=aaf121f239e3f5482059c533b60377b0&language=en_GB&ref_=as_li_ss_tl",
     notes: "Count on product; method via FAQ"
   },
   {
@@ -244,7 +244,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
     certificateLink: "https://www.pjkabos.com/",
     cultivar: "Koroneiki",
-    buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD",
+    buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
     notes: "1000+ HPLC / 1600+ NMR; Amazon listing states both methods"
   },
   {
@@ -567,6 +567,13 @@ export default function HomePage() {
           <div className="mb-6 text-center">
             <p className="text-sm md:text-base text-gray-300 bg-green-900/20 border border-green-700/30 rounded-lg px-4 py-3 inline-block max-w-3xl">
               <span className="text-green-400 font-semibold">How does it work?</span> Polyphenols and harvest date are key indicators of olive oil health quality. Olive oils above <span className="font-bold text-green-300">250 mg/kg</span> polyphenol content are considered high polyphenol EVOO.
+            </p>
+          </div>
+
+          {/* Affiliate Disclosure */}
+          <div className="mb-4 text-center">
+            <p className="text-xs md:text-sm text-gray-400 italic max-w-2xl mx-auto">
+              This site may contain affiliate links. Affiliates help keep this website and research funded so we can do better work, but do not influence our rankings.
             </p>
           </div>
 
