@@ -199,9 +199,9 @@ export default function WorldMap() {
   }
 
   return (
-    <div className="relative w-full max-w-full overflow-hidden">
+    <div className="relative w-full max-w-full overflow-hidden min-h-screen">
       {/* Animated Blob Background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div className="blob blob-1"></div>
         <div className="blob blob-2"></div>
         <div className="blob blob-3"></div>
