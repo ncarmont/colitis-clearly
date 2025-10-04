@@ -292,21 +292,29 @@ export default function HomePage() {
   const [searchTerm, setSearchTerm] = useState('')
   const [showAll, setShowAll] = useState(false)
 
-  const origins = useMemo(() => ['all', ...Array.from(new Set(OILS_DATA.map(oil => oil.origin)))], [])
+  // Helper function to check if harvest date is 2024 or 2025
+  const isRecentHarvest = (harvestDate: string): boolean => {
+    return harvestDate.includes('2024') || harvestDate.includes('2025')
+  }
 
-  // Calculate dynamic stats
+  // Filter to only recent harvests for stats and display
+  const recentOils = useMemo(() => OILS_DATA.filter(oil => isRecentHarvest(oil.harvestDate)), [])
+
+  const origins = useMemo(() => ['all', ...Array.from(new Set(recentOils.map(oil => oil.origin)))], [recentOils])
+
+  // Calculate dynamic stats from recent oils only
   const stats = useMemo(() => {
-    const uniqueCountries = new Set(OILS_DATA.map(oil => oil.origin)).size
-    const maxPolyphenols = Math.max(...OILS_DATA.map(oil => oil.polyphenols))
+    const uniqueCountries = new Set(recentOils.map(oil => oil.origin)).size
+    const maxPolyphenols = Math.max(...recentOils.map(oil => oil.polyphenols))
     return {
-      totalOils: OILS_DATA.length,
+      totalOils: recentOils.length,
       countries: uniqueCountries,
       maxPolyphenols
     }
-  }, [])
+  }, [recentOils])
 
   const filteredAndSortedOils = useMemo(() => {
-    return OILS_DATA
+    return recentOils
       .filter(oil => {
         const matchesOrigin = filterOrigin === 'all' || oil.origin === filterOrigin
         const matchesSearch = oil.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
