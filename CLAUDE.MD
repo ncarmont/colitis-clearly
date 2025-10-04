@@ -177,10 +177,21 @@ npm run lint    # Run ESLint
    - https://best-olive-oils-git-main-nickcarmont8-gmailcoms-projects.vercel.app
    - https://best-olive-oils-lujkzasdw-nickcarmont8-gmailcoms-projects.vercel.app
 
-6. **If deployment failed:**
+6. **Check your work on the live site:**
+
+   After 4 minutes, your changes should be visible at:
+   **https://www.best-olive-oil-ranked.com**
+
+   Open this URL in your browser to verify:
+   - Changes are deployed correctly
+   - No visual regressions
+   - Mobile responsiveness works
+   - All features function as expected
+
+7. **If deployment failed:**
    - Check the logs output from step 5
    - Fix any errors (build failures, runtime errors, etc.)
-   - Repeat steps 1-5
+   - Repeat steps 1-6
 
 **This is MANDATORY - never skip committing, pushing, and verifying deployment!**
 
