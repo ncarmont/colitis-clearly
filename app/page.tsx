@@ -857,11 +857,13 @@ export default function HomePage() {
           border-radius: 50%;
           position: absolute;
           background: radial-gradient(circle at 30% 30%,
-            rgba(128, 128, 0, 0.6) 0%,
-            rgba(85, 107, 47, 0.7) 40%,
-            rgba(52, 78, 65, 0.8) 100%);
-          box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.15),
-                      0 0 20px rgba(85, 107, 47, 0.3);
+            rgba(154, 205, 50, 0.95) 0%,
+            rgba(85, 107, 47, 0.98) 30%,
+            rgba(45, 69, 27, 0.99) 70%,
+            rgba(25, 45, 15, 1) 100%);
+          box-shadow: inset 0 0 40px rgba(200, 255, 100, 0.3),
+                      0 0 30px rgba(85, 107, 47, 0.6),
+                      0 0 60px rgba(45, 69, 27, 0.4);
         }
 
         .blob.top {
