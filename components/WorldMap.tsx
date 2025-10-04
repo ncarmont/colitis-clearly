@@ -302,9 +302,12 @@ export default function WorldMap() {
                     direction="center"
                     className="map-label-tooltip"
                   >
-                    <div className="text-center">
-                      <div className="font-bold text-white text-sm">{location.flag}</div>
-                      <div className="font-bold text-white text-xs mt-1">Avg: {top5Avg} mg/kg</div>
+                    <div className="text-center leading-none">
+                      <div className="font-bold text-white" style={{ fontSize: '10px' }}>
+                        {visualMode === 'peak' && `${metricValue}`}
+                        {visualMode === 'average' && `${metricValue}`}
+                        {visualMode === 'count' && `${metricValue}`}
+                      </div>
                     </div>
                   </Tooltip>
                   <Popup className="custom-popup">
