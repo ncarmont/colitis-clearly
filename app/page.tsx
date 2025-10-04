@@ -419,7 +419,7 @@ export default function HomePage() {
             <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white animate-slide-up">
               Best Extra Virgin
               <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
-                Olive Oils Globally
+                Olive Oils Ranked
               </span>
             </h1>
 
@@ -810,53 +810,52 @@ export default function HomePage() {
         .header-blob {
           position: absolute;
           border-radius: 50%;
-          filter: blur(120px);
-          opacity: 0.8;
+          filter: blur(80px);
         }
 
         @keyframes header-blob-float-1 {
           0%, 100% { transform: translate(0, 0) scale(1); }
-          33% { transform: translate(40px, -60px) scale(1.2); }
-          66% { transform: translate(-30px, 30px) scale(0.9); }
+          33% { transform: translate(50px, -70px) scale(1.3); }
+          66% { transform: translate(-40px, 40px) scale(0.85); }
         }
 
         @keyframes header-blob-float-2 {
           0%, 100% { transform: translate(0, 0) scale(1); }
-          33% { transform: translate(-50px, 40px) scale(1.1); }
-          66% { transform: translate(40px, -30px) scale(0.95); }
+          33% { transform: translate(-60px, 50px) scale(1.2); }
+          66% { transform: translate(50px, -40px) scale(0.9); }
         }
 
         @keyframes header-blob-float-3 {
           0%, 100% { transform: translate(0, 0) scale(1); }
-          33% { transform: translate(30px, 50px) scale(1.15); }
-          66% { transform: translate(-40px, -40px) scale(0.9); }
+          33% { transform: translate(40px, 60px) scale(1.25); }
+          66% { transform: translate(-50px, -50px) scale(0.85); }
         }
 
         .header-blob-1 {
-          width: 500px;
-          height: 500px;
-          background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
-          top: -150px;
-          left: 10%;
-          animation: header-blob-float-1 25s ease-in-out infinite;
+          width: 700px;
+          height: 700px;
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%);
+          top: -200px;
+          left: 5%;
+          animation: header-blob-float-1 20s ease-in-out infinite;
         }
 
         .header-blob-2 {
-          width: 600px;
-          height: 600px;
-          background: radial-gradient(circle, rgba(254, 243, 199, 0.3) 0%, rgba(254, 243, 199, 0) 70%);
-          top: 50%;
-          right: 5%;
-          animation: header-blob-float-2 30s ease-in-out infinite;
+          width: 800px;
+          height: 800px;
+          background: linear-gradient(135deg, rgba(134, 239, 172, 0.5) 0%, rgba(59, 130, 246, 0.4) 100%);
+          top: 30%;
+          right: -100px;
+          animation: header-blob-float-2 25s ease-in-out infinite;
         }
 
         .header-blob-3 {
-          width: 450px;
-          height: 450px;
-          background: radial-gradient(circle, rgba(134, 239, 172, 0.35) 0%, rgba(134, 239, 172, 0) 70%);
-          bottom: -100px;
-          left: 40%;
-          animation: header-blob-float-3 28s ease-in-out infinite;
+          width: 650px;
+          height: 650px;
+          background: linear-gradient(135deg, rgba(251, 191, 36, 0.5) 0%, rgba(16, 185, 129, 0.4) 100%);
+          bottom: -150px;
+          left: 35%;
+          animation: header-blob-float-3 22s ease-in-out infinite;
         }
       `}</style>
     </main>
