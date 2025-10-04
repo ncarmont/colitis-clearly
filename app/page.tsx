@@ -293,6 +293,17 @@ export default function HomePage() {
 
   const origins = useMemo(() => ['all', ...Array.from(new Set(OILS_DATA.map(oil => oil.origin)))], [])
 
+  // Calculate dynamic stats
+  const stats = useMemo(() => {
+    const uniqueCountries = new Set(OILS_DATA.map(oil => oil.origin)).size
+    const maxPolyphenols = Math.max(...OILS_DATA.map(oil => oil.polyphenols))
+    return {
+      totalOils: OILS_DATA.length,
+      countries: uniqueCountries,
+      maxPolyphenols
+    }
+  }, [])
+
   const filteredAndSortedOils = useMemo(() => {
     return OILS_DATA
       .filter(oil => {
@@ -455,25 +466,25 @@ export default function HomePage() {
               </div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
                 <span className="text-orange-400 text-sm">🧬</span>
-                <span className="text-sm text-orange-100 font-medium">Blue Zone Longevity</span>
+                <span className="text-sm text-orange-100 font-medium">Blue Zone Longevity (PREDIMED Study)</span>
               </div>
             </div>
 
             {/* Stats */}
             <div className="flex justify-center gap-8 mt-8 animate-fade-in-delay-2">
               <div className="text-center">
-                <div className="text-4xl font-bold text-white">{OILS_DATA.length}</div>
+                <div className="text-4xl font-bold text-white">{stats.totalOils}</div>
                 <div className="text-sm text-green-200">Lab-Verified EVOOs</div>
               </div>
               <div className="w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white">8</div>
+                <div className="text-4xl font-bold text-white">{stats.countries}</div>
                 <div className="text-sm text-green-200">Countries</div>
               </div>
               <div className="w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white">1978</div>
-                <div className="text-sm text-green-200">Max mg/kg (NMR)</div>
+                <div className="text-4xl font-bold text-white">{stats.maxPolyphenols}</div>
+                <div className="text-sm text-green-200">Max mg/kg</div>
               </div>
             </div>
           </div>
@@ -543,6 +554,13 @@ export default function HomePage() {
       {/* Rankings Table */}
       <section className="py-8 md:py-12 px-4 md:px-6 w-full">
         <div className="max-w-7xl mx-auto w-full">
+          {/* High Polyphenol Note */}
+          <div className="mb-6 text-center">
+            <p className="text-sm md:text-base text-gray-300 bg-green-900/20 border border-green-700/30 rounded-lg px-4 py-3 inline-block">
+              <span className="text-green-400 font-semibold">✓</span> Olive oils above <span className="font-bold text-green-300">250 mg/kg</span> polyphenol content are considered high polyphenol EVOO
+            </p>
+          </div>
+
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl border border-gray-800/50 overflow-hidden">
             <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
@@ -563,6 +581,7 @@ export default function HomePage() {
                 <tbody className="divide-y divide-gray-800/50">
                   {filteredAndSortedOils.map((oil, index) => {
                     const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
+                    const displayRank = index + 1 // Rank based on current sorted position
                     return (
                       <tr
                         key={oil.id}
@@ -571,12 +590,12 @@ export default function HomePage() {
                       >
                         <td className="px-3 py-4 whitespace-nowrap">
                           <span className={`inline-flex items-center justify-center w-10 h-10 rounded-xl font-bold text-sm shadow-md group-hover:scale-110 transition-transform duration-200 ${
-                            oil.rank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-yellow-500/50' :
-                            oil.rank === 2 ? 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white shadow-gray-400/50' :
-                            oil.rank === 3 ? 'bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 text-white shadow-orange-500/50' :
+                            displayRank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-yellow-500/50' :
+                            displayRank === 2 ? 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white shadow-gray-400/50' :
+                            displayRank === 3 ? 'bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 text-white shadow-orange-500/50' :
                             'bg-gradient-to-br from-green-500 to-emerald-600 text-white shadow-green-500/30'
                           }`}>
-                            {oil.rank}
+                            {displayRank}
                           </span>
                         </td>
                         <td className="px-3 py-4">
