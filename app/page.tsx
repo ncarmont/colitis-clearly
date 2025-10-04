@@ -283,10 +283,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
   "Peru": "🇵🇪",
   "California": "🇺🇸",
   "Tunisia": "🇹🇳",
-  "Jordan": "🇯🇴",
-  "Peru": "🇵🇪",
-  "Cyprus": "🇨🇾",
-  "Morocco": "🇲🇦"
+  "Cyprus": "🇨🇾"
 }
 
 export default function HomePage() {
