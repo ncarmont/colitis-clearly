@@ -130,7 +130,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 13, rank: 13, brand: "Oro del Desierto – Picual (Organic)", polyphenols: 717, origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$32.00", method: "Not specified", lab: "Retailer listing",
-    certificateLink: "https://www.amazon.com/ATSAS-Organic-Polyphenol-Olive-Virgin/dp/B0CG1F2DB8",
+    certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://www.amazon.com/ATSAS-Organic-Polyphenol-Olive-Virgin/dp/B0CG1F2DB8",
     notes: "Early-harvest organic from Almería; OOL shows count"
@@ -138,7 +138,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 14, rank: 14, brand: "Vallesur – Peruvian", polyphenols: 688, origin: "Peru", harvestDate: "2024",
     price: "$$", priceAmount: "$28.00", method: "Not specified", lab: "Curator listing",
-    certificateLink: "https://highpolyphenololiveoil.co.uk/oils/organic/1/",
+    certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://highpolyphenololiveoil.co.uk/oils/organic/1/",
     notes: "Award-winning Peruvian EVOO from Tacna"
@@ -146,15 +146,15 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 15, rank: 15, brand: "Laudemio Frescobaldi (Tuscany)", polyphenols: 675, origin: "Italy", harvestDate: "2024",
     price: "$$", priceAmount: "$42.00", method: "Not specified", lab: "Retailer cited",
-    certificateLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY",
+    certificateLink: "",
     cultivar: "Frantoio/Moraiolo/Leccino",
     buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=be0189503aadb51434d91e088337e2b5&language=en_US&ref_=as_li_ss_tl",
-    notes: "Multiple retailers cite ~650–700 mg/kg"
+    notes: "Multiple retailers cite ~650–700 mg/kg; no public PDF COA"
   },
   {
     id: 16, rank: 16, brand: "Citizens of Soil – Tuscan 'Extra Rare'", polyphenols: 655, origin: "Italy", harvestDate: "Feb 2025",
     price: "$$", priceAmount: "$38.00", method: "Not specified", lab: "Independent lab",
-    certificateLink: "https://www.citizensofsoil.com/products/tuscan-olive-oil-extra-rare",
+    certificateLink: "",
     cultivar: "Blend (Frantoio/Leccino)",
     buyLink: "https://www.citizensofsoil.com/products/tuscan-olive-oil-extra-rare",
     notes: "Page states tested Feb 2025; lab report available"
@@ -162,7 +162,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 17, rank: 17, brand: "Citizens of Soil – Spanish", polyphenols: 661, origin: "Spain", harvestDate: "Nov 2024",
     price: "$$", priceAmount: "$38.00", method: "Not specified", lab: "Independent lab",
-    certificateLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
+    certificateLink: "",
     cultivar: "Hojiblanca/Arbequina/Koroneiki",
     buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
     notes: "Independent lab verified per brand from Sevilla"
@@ -170,7 +170,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 18, rank: 18, brand: "Morocco Gold", polyphenols: 626, origin: "Morocco", harvestDate: "2024/25",
     price: "$$", priceAmount: "$35.00", method: "Not specified", lab: "Brand publishes",
-    certificateLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+    certificateLink: "",
     cultivar: "Picholine Marocaine",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
     notes: "Brand publicizes hydroxytyrosol per 20 g"
@@ -178,7 +178,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 19, rank: 19, brand: "Venta del Barón (DO Priego)", polyphenols: 617, origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$36.00", method: "Not specified", lab: "Ranking page",
-    certificateLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+    certificateLink: "",
     cultivar: "Hojiblanca + Picuda",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
     notes: "DO-protected, high count from Córdoba"
@@ -186,7 +186,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 20, rank: 20, brand: "Castillo de Canena – First Day Harvest Picual", polyphenols: 611, origin: "Spain", harvestDate: "Late 2024",
     price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "Retailer listing",
-    certificateLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
+    certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
     notes: "Premium 'Primer Día de Cosecha' line from Jaén"
@@ -194,7 +194,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 21, rank: 21, brand: "Entimio – INTENSO", polyphenols: 601, origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$50.00", method: "Not specified", lab: "Brand page",
-    certificateLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3",
+    certificateLink: "",
     cultivar: "Frantoio/Leccino/Moraiolo",
     buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3",
     notes: "Certified lots from Tuscany; analysis posted"
@@ -202,7 +202,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 22, rank: 22, brand: "Odysea 'Good For You' (Crete)", polyphenols: 573, origin: "Greece", harvestDate: "2024/25",
     price: "$", priceAmount: "$19.99", method: "Not specified", lab: "Brand listing",
-    certificateLink: "https://www.kosterina.com/products/6bottles",
+    certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/6bottles",
     notes: "Polyphenols posted on Odysea/Kosterina site"
@@ -210,7 +210,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 23, rank: 23, brand: "Kosterina – Original Extra Virgin", polyphenols: 573, origin: "Greece", harvestDate: "2024/25",
     price: "$", priceAmount: "$38.00", method: "Not specified", lab: "Brand FAQ/page",
-    certificateLink: "https://www.kosterina.com/pages/faqs",
+    certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/6bottles",
     notes: "Value posted 'at harvest'"
@@ -218,7 +218,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 24, rank: 24, brand: "True Tuscan (Olive Girl)", polyphenols: 550, origin: "Italy", harvestDate: "2024",
     price: "$$", priceAmount: "$42.00", method: "Not specified", lab: "Independent lab",
-    certificateLink: "https://shopolivegirl.com/products/true-tuscan-extra-virgin-olive-oil",
+    certificateLink: "",
     cultivar: "Italian blend",
     buyLink: "https://shopolivegirl.com/products/true-tuscan-extra-virgin-olive-oil",
     notes: "Boutique producer, posts polyphenols (550 mg/kg independently tested)"
@@ -226,7 +226,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 25, rank: 25, brand: "Citizens of Soil – Greek (Peloponnese)", polyphenols: 526, origin: "Greece", harvestDate: "Dec 2024",
     price: "$", priceAmount: "$32.00", method: "Not specified", lab: "Independent lab",
-    certificateLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
+    certificateLink: "",
     cultivar: "Koroneiki + Athinolia",
     buyLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
     notes: "Small-batch organic; ~500–552 mg/kg cited"
@@ -234,7 +234,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 26, rank: 26, brand: "Entimio – ARDENTE", polyphenols: 516, origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$45.00", method: "Not specified", lab: "Brand page",
-    certificateLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H",
+    certificateLink: "",
     cultivar: "Tuscan blend",
     buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=d74d40c724b766f7434a23e6eba9650a&language=en_US&ref_=as_li_ss_tl",
     notes: "Certified lots from Tuscany; analysis posted"
@@ -242,7 +242,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 27, rank: 27, brand: "Blueprint (Bryan Johnson) – 'Snake Oil' EVOO", polyphenols: 499, origin: "Portugal", harvestDate: "2024",
     price: "$$", priceAmount: "$39.00", method: "Not specified", lab: "Third-party verified",
-    certificateLink: "https://blueprint.bryanjohnson.com/products/extra-virgin-olive-oil",
+    certificateLink: "",
     cultivar: "Portuguese olives",
     buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ",
     notes: "Independent trackers list ~499 mg/kg for 24/25; brand promises >400 mg/kg"
@@ -250,15 +250,15 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 28, rank: 28, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1600, origin: "Greece", harvestDate: "2024/25",
     price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
-    certificateLink: "https://www.pjkabos.com/",
+    certificateLink: "https://m.media-amazon.com/images/I/61EozqBpPRL.pdf",
     cultivar: "Koroneiki",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "1000+ HPLC / 1600+ NMR; Amazon listing states both methods"
+    notes: "1000+ HPLC / 1600+ NMR; physico-chemical PDF COA available"
   },
   {
     id: 29, rank: 29, brand: "P.J. KABOS – Family Reserve (Robust)", polyphenols: 750, origin: "Greece", harvestDate: "2024/25",
     price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "Stated",
-    certificateLink: "https://www.pjkabos.com/shop-usa",
+    certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&linkId=1328610a17867326c0d2a26ae73aab6a&language=en_US&ref_=as_li_ss_tl",
     notes: "Daily 'shot' usage suggested by brand; 750+ HPLC"
@@ -266,7 +266,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 30, rank: 30, brand: "P.J. KABOS – Family Reserve (Medium)", polyphenols: 500, origin: "Greece", harvestDate: "2024/25",
     price: "$$", priceAmount: "$39.00", method: "HPLC", lab: "Stated",
-    certificateLink: "https://www.pjkabos.com/shop-usa",
+    certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.amazon.com/Phenolic-Intensity-Extracted-Koroneiki-KABOS/dp/B09P7K1V8K?&linkCode=ll1&tag=bestoliveoilr-20&linkId=7564b9ab453f4acc0ea9f0d679564c96&language=en_US&ref_=as_li_ss_tl",
     notes: "HPLC hydroxytyrosol 7+ mg/20g; 500+ tier"
@@ -274,7 +274,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 31, rank: 31, brand: "Rincón de la Subbética – Hojiblanca (Organic)", polyphenols: 356, origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$32.95", method: "Not specified", lab: "Retailer listing",
-    certificateLink: "https://atsas.com.cy/products/",
+    certificateLink: "",
     cultivar: "Hojiblanca",
     buyLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
     notes: "Leading PDO producer from Priego de Córdoba; transparent count"
