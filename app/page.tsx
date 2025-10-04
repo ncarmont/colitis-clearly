@@ -24,12 +24,12 @@ type OliveOil = {
 // New OILS_DATA based on verified table
 const OILS_DATA: OliveOil[] = [
   {
-    id: 1, rank: 1, brand: "Laconiko ZOI Ultra High Phenolic", polyphenols: 1799, origin: "Greece", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$75.00", method: "NMR", lab: "qNMR verified",
-    certificateLink: "https://laconiko.com/wp-content/uploads/2025/01/NEW-%E2%80%98ZOI%E2%80%99-ULTRA-HP-EVOO-2024-25-Analysis-min-1.pdf",
-    cultivar: "Kalamon",
-    buyLink: "https://laconiko.com/product/new-zoi-ultra-high-phenolic-2/",
-    notes: "qNMR verified PDF COA with full breakdown"
+    id: 1, rank: 1, brand: "Laconiko Olio Nuovo", polyphenols: 877, origin: "Greece", harvestDate: "2025/26",
+    price: "$$", priceAmount: "$39.95", method: "NMR", lab: "qNMR verified",
+    certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Olio-Nuovo-Certificate-of-Analysis-and-NMR.pdf?v=1741704618",
+    cultivar: "Greek blend",
+    buyLink: "https://laconiko.com/products/laconiko-olio-nuovo-new-2025-harvest",
+    notes: "1st certified high phenolic EVOO in North America; qNMR verified PDF COA"
   },
   {
     id: 2, rank: 2, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1600, origin: "Greece", harvestDate: "2024/25",
@@ -216,7 +216,15 @@ const OILS_DATA: OliveOil[] = [
     notes: "Value posted 'at harvest'"
   },
   {
-    id: 24, rank: 24, brand: "True Tuscan (Olive Girl)", polyphenols: 550, origin: "Italy", harvestDate: "2024",
+    id: 24, rank: 24, brand: "Laconiko Extra Virgin Olive Oil", polyphenols: 538, origin: "Greece", harvestDate: "Nov 2024/Jan 2025",
+    price: "$", priceAmount: "$24.95", method: "NMR", lab: "qNMR verified",
+    certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Koroneiki-Certificate-of-Analysis-and-NMR_214c678d-f473-4f37-9257-322fd3d7e715.pdf?v=1741704340",
+    cultivar: "Koroneiki",
+    buyLink: "https://laconiko.com/products/laconiko-extra-virgin-olive-oil-new-2024-harvest",
+    notes: "qNMR verified PDF COA; great value at $24.95"
+  },
+  {
+    id: 25, rank: 25, brand: "True Tuscan (Olive Girl)", polyphenols: 550, origin: "Italy", harvestDate: "2024",
     price: "$$", priceAmount: "$42.00", method: "Not specified", lab: "Independent lab",
     certificateLink: "",
     cultivar: "Italian blend",
@@ -224,7 +232,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Boutique producer, posts polyphenols (550 mg/kg independently tested)"
   },
   {
-    id: 25, rank: 25, brand: "Citizens of Soil – Greek (Peloponnese)", polyphenols: 526, origin: "Greece", harvestDate: "Dec 2024",
+    id: 26, rank: 26, brand: "Citizens of Soil – Greek (Peloponnese)", polyphenols: 526, origin: "Greece", harvestDate: "Dec 2024",
     price: "$", priceAmount: "$32.00", method: "Not specified", lab: "Independent lab",
     certificateLink: "",
     cultivar: "Koroneiki + Athinolia",
@@ -232,7 +240,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Small-batch organic; ~500–552 mg/kg cited"
   },
   {
-    id: 26, rank: 26, brand: "Entimio – ARDENTE", polyphenols: 516, origin: "Italy", harvestDate: "2024/25",
+    id: 27, rank: 27, brand: "Entimio – ARDENTE", polyphenols: 516, origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$45.00", method: "Not specified", lab: "Brand page",
     certificateLink: "",
     cultivar: "Tuscan blend",
@@ -240,7 +248,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Certified lots from Tuscany; analysis posted"
   },
   {
-    id: 27, rank: 27, brand: "Blueprint (Bryan Johnson) – 'Snake Oil' EVOO", polyphenols: 499, origin: "Portugal", harvestDate: "2024",
+    id: 28, rank: 28, brand: "Blueprint (Bryan Johnson) – 'Snake Oil' EVOO", polyphenols: 499, origin: "Portugal", harvestDate: "2024",
     price: "$$", priceAmount: "$39.00", method: "Not specified", lab: "Third-party verified",
     certificateLink: "",
     cultivar: "Portuguese olives",
@@ -248,7 +256,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Independent trackers list ~499 mg/kg for 24/25; brand promises >400 mg/kg"
   },
   {
-    id: 28, rank: 28, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1600, origin: "Greece", harvestDate: "2024/25",
+    id: 29, rank: 29, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1600, origin: "Greece", harvestDate: "2024/25",
     price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
     certificateLink: "https://m.media-amazon.com/images/I/61EozqBpPRL.pdf",
     cultivar: "Koroneiki",
@@ -256,7 +264,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "1000+ HPLC / 1600+ NMR; physico-chemical PDF COA available"
   },
   {
-    id: 29, rank: 29, brand: "P.J. KABOS – Family Reserve (Robust)", polyphenols: 750, origin: "Greece", harvestDate: "2024/25",
+    id: 30, rank: 30, brand: "P.J. KABOS – Family Reserve (Robust)", polyphenols: 750, origin: "Greece", harvestDate: "2024/25",
     price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "Stated",
     certificateLink: "",
     cultivar: "Koroneiki",
@@ -264,7 +272,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Daily 'shot' usage suggested by brand; 750+ HPLC"
   },
   {
-    id: 30, rank: 30, brand: "P.J. KABOS – Family Reserve (Medium)", polyphenols: 500, origin: "Greece", harvestDate: "2024/25",
+    id: 31, rank: 31, brand: "P.J. KABOS – Family Reserve (Medium)", polyphenols: 500, origin: "Greece", harvestDate: "2024/25",
     price: "$$", priceAmount: "$39.00", method: "HPLC", lab: "Stated",
     certificateLink: "",
     cultivar: "Koroneiki",
@@ -272,7 +280,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "HPLC hydroxytyrosol 7+ mg/20g; 500+ tier"
   },
   {
-    id: 31, rank: 31, brand: "Rincón de la Subbética – Hojiblanca (Organic)", polyphenols: 356, origin: "Spain", harvestDate: "2024/25",
+    id: 32, rank: 32, brand: "Rincón de la Subbética – Hojiblanca (Organic)", polyphenols: 356, origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$32.95", method: "Not specified", lab: "Retailer listing",
     certificateLink: "",
     cultivar: "Hojiblanca",
