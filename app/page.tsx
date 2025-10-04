@@ -84,7 +84,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "3rd-party posted",
     certificateLink: "https://kyoord.com/products/kyoord-high-phenolic-olive-oil",
     cultivar: "Lianolia + Koroneiki",
-    buyLink: "https://www.amazon.com/kyoord-High-Phenolic-Extra-Virgin-Olive/dp/B0CCQQGXRQ",
+    buyLink: "https://www.amazon.com/kyoord-High-Phenolic-Extra-Virgin-Olive/dp/B0CCQQGXRQ?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=cde3cbabfa18ecdacdb34b3f0833d404&language=en_US&ref_=as_li_ss_tl",
     notes: "Site posts per-harvest analysis from Corfu"
   },
   {
