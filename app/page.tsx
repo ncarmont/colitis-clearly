@@ -3,7 +3,6 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import WorldMap from '@/components/WorldMap'
-import VisitorCounter from '@/components/VisitorCounter'
 
 type OliveOil = {
   id: number
@@ -397,9 +396,6 @@ export default function HomePage() {
       />
 
       <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 overflow-x-hidden">
-      {/* Visitor Counter */}
-      <VisitorCounter />
-
       {/* Hero Header */}
       <header className="relative overflow-hidden bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 w-full">
         {/* Animated Blobs */}
