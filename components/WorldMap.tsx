@@ -514,9 +514,9 @@ export default function WorldMap() {
         .blob {
           position: absolute;
           border-radius: 50%;
-          filter: blur(80px);
-          opacity: 0.3;
-          mix-blend-mode: screen;
+          filter: blur(100px);
+          opacity: 0.6;
+          mix-blend-mode: normal;
         }
 
         @keyframes blob-float-1 {
@@ -585,20 +585,20 @@ export default function WorldMap() {
 
         @media (max-width: 768px) {
           .blob {
-            filter: blur(60px);
-            opacity: 0.2;
+            filter: blur(80px);
+            opacity: 0.4;
           }
           .blob-1 {
-            width: 250px;
-            height: 250px;
-          }
-          .blob-2 {
             width: 300px;
             height: 300px;
           }
+          .blob-2 {
+            width: 350px;
+            height: 350px;
+          }
           .blob-3 {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
           }
         }
       `}</style>

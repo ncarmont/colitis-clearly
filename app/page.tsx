@@ -396,7 +396,7 @@ export default function HomePage() {
           <div className="text-center space-y-6">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 animate-fade-in">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-white">Updated 2024</span>
+              <span className="text-sm font-medium text-white">Updated 2025</span>
             </div>
 
             <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white animate-slide-up">
@@ -407,13 +407,27 @@ export default function HomePage() {
             </h1>
 
             <p className="text-xl md:text-2xl text-green-50 max-w-3xl mx-auto font-light animate-fade-in-delay">
-              Science-backed rankings of 30 lab-verified EVOOs ranked by polyphenol content
+              As a European, olive oil is part of my culture. I've made it my personal mission to rank the scientifically healthiest olive oils on the planet.
             </p>
 
-            <div className="text-base md:text-lg text-green-100/90 max-w-4xl mx-auto mt-4 animate-fade-in-delay leading-relaxed">
-              High-polyphenol olive oil reduces cardiovascular disease risk by <span className="font-semibold text-green-200">31%</span> (PREDIMED study),
-              lowers inflammation comparable to ibuprofen, and increases lifespan in Blue Zone populations.
-              Each oil below is independently lab-tested for maximum health benefits.
+            {/* Health Benefit Pills */}
+            <div className="flex flex-wrap justify-center gap-3 mt-6 animate-fade-in-delay">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
+                <span className="text-green-400 text-sm">❤️</span>
+                <span className="text-sm text-green-100 font-medium">31% Lower CVD Risk</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-blue-400/30">
+                <span className="text-blue-400 text-sm">🔬</span>
+                <span className="text-sm text-blue-100 font-medium">PREDIMED Study</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
+                <span className="text-purple-400 text-sm">💪</span>
+                <span className="text-sm text-purple-100 font-medium">Anti-Inflammatory</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
+                <span className="text-orange-400 text-sm">🧬</span>
+                <span className="text-sm text-orange-100 font-medium">Blue Zone Longevity</span>
+              </div>
             </div>
 
             {/* Stats */}
