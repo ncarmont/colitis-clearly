@@ -557,8 +557,8 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto w-full">
           {/* High Polyphenol Note */}
           <div className="mb-6 text-center">
-            <p className="text-sm md:text-base text-gray-300 bg-green-900/20 border border-green-700/30 rounded-lg px-4 py-3 inline-block">
-              <span className="text-green-400 font-semibold">✓</span> Olive oils above <span className="font-bold text-green-300">250 mg/kg</span> polyphenol content are considered high polyphenol EVOO
+            <p className="text-sm md:text-base text-gray-300 bg-green-900/20 border border-green-700/30 rounded-lg px-4 py-3 inline-block max-w-3xl">
+              <span className="text-green-400 font-semibold">How does it work?</span> Polyphenols are a key indicator of the health benefits of an olive oil. Olive oils above <span className="font-bold text-green-300">250 mg/kg</span> polyphenol content are considered high polyphenol EVOO.
             </p>
           </div>
 
