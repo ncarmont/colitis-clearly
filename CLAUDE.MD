@@ -1,8 +1,12 @@
-# EVOO Rankings - Project Documentation
+# EVOO Rankings - Best Olive Oils Ranked by Polyphenols
 
 ## Project Overview
 
+**Live Site:** https://www.best-olive-oil-ranked.com
+
 A Next.js 15 website that ranks Extra Virgin Olive Oils (EVOOs) by their polyphenol content, using lab-verified data from independent testing facilities. The site features a comprehensive rankings table, research sections, and is optimized for SEO with health-focused content.
+
+**Mission:** Help consumers find the highest quality, most health-beneficial olive oils based on scientifically verified polyphenol content.
 
 ## Technology Stack
 
