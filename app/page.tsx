@@ -398,12 +398,28 @@ export default function HomePage() {
       <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 overflow-x-hidden">
       {/* Hero Header */}
       <header className="relative overflow-hidden bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 w-full">
-        {/* Animated Blobs */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
-          <div className="header-blob header-blob-1"></div>
-          <div className="header-blob header-blob-2"></div>
-          <div className="header-blob header-blob-3"></div>
+        {/* Lava Lamp Blobs */}
+        <div className="lava-container">
+          <div className="blob"></div>
+          <div className="blob"></div>
+          <div className="blob"></div>
+          <div className="blob"></div>
+          <div className="blob"></div>
+          <div className="blob"></div>
+          <div className="blob"></div>
+          <div className="blob top"></div>
+          <div className="blob bottom"></div>
         </div>
+
+        <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
 
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4UzAgOC4wNiAwIDE4YzAgNC40MiAxLjYgOC40OCA0LjI0IDExLjZDMi4xMiAzMi45MiAwIDM5LjEyIDAgNDZoMTJjMC02LjYzIDUuMzctMTIgMTItMTJzMTIgNS4zNyAxMiAxMmgxMmMwLTYuODgtMi4xMi0xMy4wOC00LjI0LTE2LjRDNTQuNCAyNi40OCA1NiAyMi40MiA1NiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
@@ -806,116 +822,140 @@ export default function HomePage() {
           animation: fade-in-row 0.4s ease-out both;
         }
 
-        /* Oil Splash Blobs - Highly Visible */
-        .header-blob {
+        /* Lava Lamp Effect */
+        .lava-container {
+          filter: url("#goo");
           position: absolute;
-          filter: blur(60px);
-          border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          pointer-events: none;
+          z-index: 10;
         }
 
-        @keyframes oil-splash-1 {
-          0% {
-            transform: translate(0, 0) scale(1) rotate(0deg);
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-          }
-          25% {
-            transform: translate(80px, -90px) scale(1.4) rotate(90deg);
-            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-          }
-          50% {
-            transform: translate(-50px, -120px) scale(1.1) rotate(180deg);
-            border-radius: 50% 50% 20% 80% / 25% 75% 75% 25%;
-          }
-          75% {
-            transform: translate(-80px, 60px) scale(1.3) rotate(270deg);
-            border-radius: 80% 20% 60% 40% / 70% 40% 60% 30%;
-          }
-          100% {
-            transform: translate(0, 0) scale(1) rotate(360deg);
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-          }
+        .blob {
+          border-radius: 50%;
+          position: absolute;
+          background: rgba(6, 78, 59, 0.4);
         }
 
-        @keyframes oil-splash-2 {
-          0% {
-            transform: translate(0, 0) scale(1) rotate(0deg);
-            border-radius: 40% 60% 60% 40% / 40% 40% 60% 50%;
-          }
-          30% {
-            transform: translate(-90px, 80px) scale(1.3) rotate(120deg);
-            border-radius: 70% 30% 50% 50% / 60% 50% 70% 40%;
-          }
-          60% {
-            transform: translate(70px, -60px) scale(0.9) rotate(240deg);
-            border-radius: 30% 70% 40% 60% / 50% 60% 40% 50%;
-          }
-          100% {
-            transform: translate(0, 0) scale(1) rotate(360deg);
-            border-radius: 40% 60% 60% 40% / 40% 40% 60% 50%;
-          }
+        .blob.top {
+          width: 100%;
+          height: 4%;
+          top: -3%;
+          left: 0;
         }
 
-        @keyframes oil-splash-3 {
-          0% {
-            transform: translate(0, 0) scale(1) rotate(0deg);
-            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-          }
-          20% {
-            transform: translate(60px, 100px) scale(1.5) rotate(72deg);
-            border-radius: 70% 30% 40% 60% / 30% 70% 60% 40%;
-          }
-          40% {
-            transform: translate(-70px, -80px) scale(1.2) rotate(144deg);
-            border-radius: 40% 60% 70% 30% / 60% 40% 30% 70%;
-          }
-          60% {
-            transform: translate(90px, -50px) scale(0.85) rotate(216deg);
-            border-radius: 60% 40% 50% 50% / 70% 30% 40% 60%;
-          }
-          80% {
-            transform: translate(-60px, 70px) scale(1.35) rotate(288deg);
-            border-radius: 30% 70% 60% 40% / 40% 60% 50% 50%;
-          }
-          100% {
-            transform: translate(0, 0) scale(1) rotate(360deg);
-            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-          }
-        }
-
-        .header-blob-1 {
-          width: 600px;
-          height: 600px;
-          background: radial-gradient(circle at 30% 40%,
-            rgba(255, 255, 255, 0.9) 0%,
-            rgba(254, 243, 199, 0.8) 40%,
-            rgba(251, 191, 36, 0.6) 100%);
-          top: -150px;
+        .blob.bottom {
+          width: 110%;
+          height: 4%;
+          bottom: -3%;
           left: -50px;
-          animation: oil-splash-1 18s ease-in-out infinite;
         }
 
-        .header-blob-2 {
-          width: 700px;
-          height: 700px;
-          background: radial-gradient(circle at 60% 50%,
-            rgba(254, 243, 199, 0.85) 0%,
-            rgba(251, 191, 36, 0.75) 35%,
-            rgba(217, 119, 6, 0.55) 100%);
-          top: 20%;
-          right: -80px;
-          animation: oil-splash-2 22s ease-in-out infinite;
+        .blob:nth-child(1) {
+          width: 200px;
+          height: 200px;
+          left: 15%;
+          bottom: -15%;
+          animation: wobble 4s ease-in-out alternate infinite,
+            blob-one ease-in-out 13s infinite;
         }
 
-        .header-blob-3 {
-          width: 550px;
-          height: 550px;
-          background: radial-gradient(circle at 50% 60%,
-            rgba(252, 211, 77, 0.9) 0%,
-            rgba(245, 158, 11, 0.75) 40%,
-            rgba(180, 83, 9, 0.5) 100%);
-          bottom: -120px;
-          left: 30%;
-          animation: oil-splash-3 20s ease-in-out infinite;
+        .blob:nth-child(2) {
+          width: 230px;
+          height: 230px;
+          right: 24%;
+          bottom: -65%;
+          animation: wobble 5s ease-in-out alternate infinite,
+            blob-two ease-in-out 22s infinite;
+        }
+
+        .blob:nth-child(3) {
+          width: 150px;
+          height: 150px;
+          bottom: -15%;
+          left: 50%;
+          animation: wobble 6s ease-in-out alternate infinite,
+            blob-three ease-in-out 16s infinite;
+        }
+
+        .blob:nth-child(4) {
+          width: 135px;
+          height: 135px;
+          bottom: -19%;
+          left: 70%;
+          animation: wobble 7s ease-in-out alternate infinite,
+            blob-four ease-in-out 12s infinite;
+        }
+
+        .blob:nth-child(5) {
+          width: 85px;
+          height: 85px;
+          bottom: -25%;
+          left: 34%;
+          animation: wobble 8s ease-in-out alternate infinite,
+            blob-five ease-in-out 32s infinite;
+        }
+
+        .blob:nth-child(6) {
+          width: 95px;
+          height: 95px;
+          bottom: -35%;
+          right: 45%;
+          animation: wobble 9s ease-in-out alternate infinite,
+            blob-six ease-in-out 18s infinite;
+        }
+
+        .blob:nth-child(7) {
+          width: 180px;
+          height: 180px;
+          bottom: -75%;
+          right: 15%;
+          animation: wobble 10s ease-in-out alternate infinite,
+            blob-seven ease-in-out 25s infinite;
+        }
+
+        @keyframes blob-one {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-700%); }
+        }
+
+        @keyframes blob-two {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-420%); }
+        }
+
+        @keyframes blob-three {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-505%); }
+        }
+
+        @keyframes blob-four {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-605%); }
+        }
+
+        @keyframes blob-five {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-800%); }
+        }
+
+        @keyframes blob-six {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-650%); }
+        }
+
+        @keyframes blob-seven {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-320%); }
+        }
+
+        @keyframes wobble {
+          0% { border-radius: 50%; }
+          50% { border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
+          100% { border-radius: 38% 52% 75% 36% / 50% 40% 50% 60%; }
         }
       `}</style>
     </main>
