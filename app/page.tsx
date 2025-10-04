@@ -837,7 +837,12 @@ export default function HomePage() {
         .blob {
           border-radius: 50%;
           position: absolute;
-          background: rgba(6, 78, 59, 0.4);
+          background: radial-gradient(circle at 30% 30%,
+            rgba(128, 128, 0, 0.6) 0%,
+            rgba(85, 107, 47, 0.7) 40%,
+            rgba(52, 78, 65, 0.8) 100%);
+          box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.15),
+                      0 0 20px rgba(85, 107, 47, 0.3);
         }
 
         .blob.top {
