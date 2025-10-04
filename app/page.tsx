@@ -428,7 +428,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-xl md:text-2xl text-green-50 max-w-3xl mx-auto font-light animate-fade-in-delay">
-              As a European, olive oil is part of my culture. I've made it my personal mission to rank the scientifically healthiest olive oils on the planet.
+              Olive oil is part of our culture. I've made it my personal mission to rank the scientifically healthiest olive oils on the planet.
             </p>
 
             {/* Health Benefit Pills */}
