@@ -21,6 +21,10 @@ const Popup = dynamic(
   () => import('react-leaflet').then((mod) => mod.Popup),
   { ssr: false }
 )
+const Tooltip = dynamic(
+  () => import('react-leaflet').then((mod) => mod.Tooltip),
+  { ssr: false }
+)
 
 type MapLocation = {
   name: string
@@ -293,6 +297,16 @@ export default function WorldMap() {
                     click: () => setSelectedLocation(location),
                   }}
                 >
+                  <Tooltip
+                    permanent
+                    direction="center"
+                    className="map-label-tooltip"
+                  >
+                    <div className="text-center">
+                      <div className="font-bold text-white text-sm">{location.flag}</div>
+                      <div className="font-bold text-white text-xs mt-1">Avg: {top5Avg} mg/kg</div>
+                    </div>
+                  </Tooltip>
                   <Popup className="custom-popup">
                     <div className="min-w-[280px]">
                       {/* Header */}
@@ -600,6 +614,24 @@ export default function WorldMap() {
             width: 250px;
             height: 250px;
           }
+        }
+
+        /* Map Label Tooltip Styles */
+        .map-label-tooltip {
+          background: transparent !important;
+          border: none !important;
+          box-shadow: none !important;
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+        .map-label-tooltip::before {
+          display: none !important;
+        }
+        .leaflet-tooltip-top::before,
+        .leaflet-tooltip-bottom::before,
+        .leaflet-tooltip-left::before,
+        .leaflet-tooltip-right::before {
+          display: none !important;
         }
       `}</style>
     </div>
