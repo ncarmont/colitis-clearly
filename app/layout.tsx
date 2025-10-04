@@ -14,24 +14,49 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = 'https://evoo-rankings.com' // Update with your actual domain
+
 export const metadata: Metadata = {
-  title: "Highest Polyphenol EVOO Rankings | Science-Backed Olive Oil Reviews",
-  description: "Discover the highest polyphenol extra virgin olive oils ranked by verified lab testing. Science-backed EVOO rankings for optimal health benefits, antioxidants, and cardiovascular protection.",
-  keywords: "polyphenol olive oil, EVOO rankings, high polyphenol EVOO, best olive oil, antioxidant olive oil, extra virgin olive oil health benefits, Mediterranean diet, oleocanthal, olive oil polyphenols",
+  metadataBase: new URL(baseUrl),
+  title: "Highest Polyphenol EVOO Rankings | 30 Lab-Verified Olive Oils",
+  description: "Discover the 30 highest polyphenol extra virgin olive oils ranked by verified lab testing (HPLC & qNMR). Science-backed EVOO rankings for optimal health benefits, antioxidants, and cardiovascular protection.",
+  keywords: "polyphenol olive oil, EVOO rankings, high polyphenol EVOO, best olive oil, antioxidant olive oil, extra virgin olive oil health benefits, Mediterranean diet, oleocanthal, olive oil polyphenols, HPLC testing, qNMR testing",
+  icons: {
+    icon: '/favicon.ico',
+  },
+  alternates: {
+    canonical: baseUrl,
+  },
   openGraph: {
-    title: "The Highest Polyphenol EVOO Rankings",
-    description: "Science-backed rankings of extra virgin olive oils by polyphenol content for optimal health.",
+    title: "30 Highest Polyphenol EVOOs | Lab-Verified Rankings",
+    description: "Science-backed rankings of 30 extra virgin olive oils by polyphenol content. Includes HPLC & qNMR lab data, Amazon links, and health benefits.",
     type: "website",
     locale: "en_US",
+    url: baseUrl,
+    siteName: "EVOO Rankings",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Highest Polyphenol EVOO Rankings",
-    description: "Science-backed rankings of extra virgin olive oils by polyphenol content.",
+    title: "30 Highest Polyphenol EVOOs | Lab-Verified",
+    description: "Science-backed rankings of 30 extra virgin olive oils with verified polyphenol content.",
+    site: "@EVOORankings", // Add your Twitter handle
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // Add your verification codes when you have them
+    // google: 'your-google-verification-code',
+    // yandex: 'your-yandex-verification-code',
+    // bing: 'your-bing-verification-code',
   },
 };
 

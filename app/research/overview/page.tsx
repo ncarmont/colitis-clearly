@@ -141,8 +141,25 @@ export default function ResearchOverview() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">🔬 Polyphenol Threshold</h3>
               <p className="text-gray-700">
                 High-quality EVOO contains <strong>250+ mg/kg</strong> polyphenols. Premium oils exceed <strong>500 mg/kg</strong>.
-                The highest verified oils reach <strong>800-1000+ mg/kg</strong>, primarily from early harvest, specific cultivars,
-                and optimal growing conditions.
+                The highest verified oils reach <strong>800-1000+ mg/kg</strong> (HPLC) or <strong>1000-2000 mg/kg</strong> (qNMR),
+                primarily from early harvest, specific cultivars, and optimal growing conditions.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-orange-600">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">🧪 Testing Method Matters: HPLC vs qNMR</h3>
+              <p className="text-gray-700 mb-3">
+                <strong>Methodology significantly affects polyphenol measurements.</strong> qNMR/NMR often reports higher totals by
+                quantifying secoiridoid derivatives (e.g., oleocanthal, oleacein) that classic HPLC protocols may under-estimate
+                depending on standards and hydrolysis. <strong>Expect NMR &gt; HPLC for the same lot.</strong>
+              </p>
+              <p className="text-gray-700 mb-3">
+                <strong>Example:</strong> Rincón de la Subbética Fall 2024 shows <strong>HPLC ≈356 mg/kg</strong>, but some vendors
+                advertise <strong>NMR ~700–900 mg/kg</strong> for the same product—both can be true for the same oil under different assays.
+              </p>
+              <p className="text-gray-700">
+                When dosing to meet EU health claim (≥5 mg hydroxytyrosol+derivatives / 20 g oil), always check the <strong>lab method</strong>
+                on the certificate you receive. Always prefer <strong>latest harvest</strong> with a recent COA and dark, oxygen-minimizing packaging.
               </p>
             </div>
 

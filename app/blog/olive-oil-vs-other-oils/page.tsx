@@ -235,7 +235,7 @@ export default function OilComparisonPage() {
 
             <div className="bg-gray-800/50 border-l-4 border-green-500 p-4 rounded-r-lg">
               <strong className="text-green-400">Verdict:</strong>
-              <p className="text-gray-300 mt-2">Use avocado oil for high-heat cooking (>400°F). Use high polyphenol EVOO for everything else—salads, low-medium heat cooking, finishing, and daily health benefits. If choosing one, EVOO wins for overall health impact.</p>
+              <p className="text-gray-300 mt-2">Use avocado oil for high-heat cooking (&gt;400°F). Use high polyphenol EVOO for everything else—salads, low-medium heat cooking, finishing, and daily health benefits. If choosing one, EVOO wins for overall health impact.</p>
             </div>
           </div>
         </section>
@@ -315,7 +315,7 @@ export default function OilComparisonPage() {
               <div className="bg-gradient-to-br from-purple-900/30 to-purple-800/20 border border-purple-700/40 rounded-xl p-6">
                 <h3 className="text-lg font-bold text-purple-300 mb-3">📊 Longevity Data</h3>
                 <p className="text-sm text-gray-300">
-                  <strong className="text-white">Harvard 28-year study:</strong> >0.5 tbsp EVOO daily = 19% lower CV mortality, 17% lower cancer mortality.
+                  <strong className="text-white">Harvard 28-year study:</strong> &gt;0.5 tbsp EVOO daily = 19% lower CV mortality, 17% lower cancer mortality.
                 </p>
                 <p className="text-sm text-gray-300 mt-2">
                   <strong className="text-white">Blue Zones:</strong> 4 of 5 longevity hotspots use EVOO as primary fat (50-100ml daily).

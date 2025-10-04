@@ -1,13 +1,25 @@
 import Link from 'next/link'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata = {
   title: "Verified High-Polyphenol EVOO Producers | Lab-Tested Rankings",
   description: "Comprehensive database of EVOO producers with verified laboratory testing showing highest polyphenol content. Quality control practices and transparency standards analyzed.",
+  alternates: {
+    canonical: 'https://evoo-rankings.com/research/producers',
+  },
 }
 
 export default function ProducersPage() {
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Research', url: '/research' },
+    { name: 'Producers', url: '/research/producers' },
+  ]
+
   return (
-    <main className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <>
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <main className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Header */}
       <header className="bg-gradient-to-r from-green-600 to-green-700 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -172,6 +184,146 @@ export default function ProducersPage() {
               </div>
             </div>
           </div>
+
+          {/* Tunisia */}
+          <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-4xl">🇹🇳</span>
+              <h3 className="text-2xl font-bold text-gray-900">Tunisia - Chetoui Excellence</h3>
+            </div>
+            <p className="text-gray-700 mb-6">
+              Tunisian producers using <strong>Chetoui cultivar</strong> produce exceptional high-polyphenol oils.
+              The Mediterranean climate combined with traditional farming creates oils with outstanding health benefits.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h4 className="font-bold text-gray-900 mb-2">Key Producer Characteristics:</h4>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• Chetoui variety focus</li>
+                  <li>• Early harvest (October-November)</li>
+                  <li>• Organic cultivation methods</li>
+                  <li>• Cold extraction below 27°C</li>
+                  <li>• Dark bottle packaging</li>
+                  <li>• Polyphenol range: 800-1100+ mg/kg</li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h4 className="font-bold text-gray-900 mb-2">Notable Producers:</h4>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• <strong>November Early Harvest:</strong> ~1073 mg/kg</li>
+                  <li>• Early harvest focus for maximum phenolics</li>
+                  <li>• Transparent lab testing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Cyprus */}
+          <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-4xl">🇨🇾</span>
+              <h3 className="text-2xl font-bold text-gray-900">Cyprus - Kalamon World Records</h3>
+            </div>
+            <p className="text-gray-700 mb-6">
+              Cyprus producers, particularly using <strong>Kalamon cultivar</strong>, have achieved some of the
+              world's highest recorded polyphenol levels. The island's unique terroir and microclimate contribute
+              to exceptional phenolic production.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h4 className="font-bold text-gray-900 mb-2">Key Producer Characteristics:</h4>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• Kalamon variety specialty</li>
+                  <li>• Organic/biodynamic practices</li>
+                  <li>• Ultra-early harvest</li>
+                  <li>• qNMR/NMR testing</li>
+                  <li>• Award-winning oils</li>
+                  <li>• Polyphenol range: 1000-2000 mg/kg (NMR)</li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h4 className="font-bold text-gray-900 mb-2">Notable Producers:</h4>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• <strong>ATSAS:</strong> World-record 1,978 mg/kg (2020 NMR)</li>
+                  <li>• Peer-reviewed research backing</li>
+                  <li>• Seasonally variable—request current COA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Morocco */}
+          <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-4xl">🇲🇦</span>
+              <h3 className="text-2xl font-bold text-gray-900">Morocco - Emerging Excellence</h3>
+            </div>
+            <p className="text-gray-700 mb-6">
+              Moroccan producers are increasingly recognized for high-polyphenol production. The country's diverse
+              microclimates and traditional olive cultivation create oils with strong antioxidant profiles.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h4 className="font-bold text-gray-900 mb-2">Key Producer Characteristics:</h4>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• Blend varieties from Atlas regions</li>
+                  <li>• Independent lab verification</li>
+                  <li>• Cold press extraction</li>
+                  <li>• Growing international recognition</li>
+                  <li>• Polyphenol range: 500-650 mg/kg (HPLC)</li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h4 className="font-bold text-gray-900 mb-2">Notable Producers:</h4>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• <strong>Gundry MD source:</strong> 561-612 mg/kg (independent testing)</li>
+                  <li>• Third-party verification by Olive Oil Times</li>
+                  <li>• Good value for polyphenol content</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Peru */}
+          <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-4xl">🇵🇪</span>
+              <h3 className="text-2xl font-bold text-gray-900">Peru - South American Leader</h3>
+            </div>
+            <p className="text-gray-700 mb-6">
+              Peruvian producers are gaining international recognition for high-polyphenol EVOOs. Using primarily
+              <strong> Picual and Coratina</strong> cultivars transplanted from the Mediterranean, Peru's unique
+              terroir creates distinctive flavor profiles with strong health benefits.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h4 className="font-bold text-gray-900 mb-2">Key Producer Characteristics:</h4>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• Picual and Coratina focus</li>
+                  <li>• Award-winning at international competitions</li>
+                  <li>• Modern extraction facilities</li>
+                  <li>• Excellent value proposition</li>
+                  <li>• Polyphenol range: 550-700 mg/kg</li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h4 className="font-bold text-gray-900 mb-2">Notable Producers:</h4>
+                <ul className="space-y-2 text-gray-700 text-sm">
+                  <li>• <strong>Vallesur:</strong> ~688 mg/kg (retailer lab)</li>
+                  <li>• Three-time World No.1 awards</li>
+                  <li>• Good cost-to-polyphenol ratio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -298,5 +450,6 @@ export default function ProducersPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }
