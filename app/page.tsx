@@ -385,9 +385,9 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListStructuredData) }}
       />
 
-      <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900">
+      <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 overflow-x-hidden">
       {/* Hero Header */}
-      <header className="relative overflow-hidden bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600">
+      <header className="relative overflow-hidden bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 w-full">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4UzAgOC4wNiAwIDE4YzAgNC40MiAxLjYgOC40OCA0LjI0IDExLjZDMi4xMiAzMi45MiAwIDM5LjEyIDAgNDZoMTJjMC02LjYzIDUuMzctMTIgMTItMTJzMTIgNS4zNyAxMiAxMmgxMmMwLTYuODgtMi4xMi0xMy4wOC00LjI0LTE2LjRDNTQuNCAyNi40OCA1NiAyMi40MiA1NiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         </div>
@@ -498,10 +498,10 @@ export default function HomePage() {
       </section>
 
       {/* Rankings Table */}
-      <section className="py-12 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-3xl shadow-2xl border border-gray-800/50 overflow-hidden">
-            <div className="overflow-x-auto">
+      <section className="py-8 md:py-12 px-4 md:px-6 w-full">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl border border-gray-800/50 overflow-hidden">
+            <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
                 <thead>
                   <tr className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border-b-2 border-green-700/50">

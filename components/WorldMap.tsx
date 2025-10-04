@@ -199,65 +199,75 @@ export default function WorldMap() {
   }
 
   return (
-    <div className="relative w-full">
-      <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold text-white mb-4">
+    <div className="relative w-full max-w-full overflow-hidden">
+      {/* Animated Blob Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="blob blob-1"></div>
+        <div className="blob blob-2"></div>
+        <div className="blob blob-3"></div>
+      </div>
+
+      <div className="relative z-10 text-center mb-6 md:mb-8 px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4">
           Global EVOO Heatmap
         </h2>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-6">
+        <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-4 md:mb-6">
           Click on any location to discover the highest polyphenol olive oils from around the world
         </p>
 
         {/* Visualization Mode Toggle */}
-        <div className="flex justify-center gap-3 mb-6">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-4 md:mb-6">
           <button
             onClick={() => setVisualMode('peak')}
-            className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+            className={`px-3 md:px-6 py-2 md:py-3 rounded-xl font-semibold text-xs md:text-sm transition-all duration-200 ${
               visualMode === 'peak'
                 ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg scale-105'
                 : 'bg-gray-800/50 text-gray-400 hover:bg-gray-700/50 hover:text-gray-300'
             }`}
           >
-            🏆 Peak Polyphenols
+            <span className="hidden sm:inline">🏆 Peak Polyphenols</span>
+            <span className="sm:hidden">🏆 Peak</span>
           </button>
           <button
             onClick={() => setVisualMode('average')}
-            className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+            className={`px-3 md:px-6 py-2 md:py-3 rounded-xl font-semibold text-xs md:text-sm transition-all duration-200 ${
               visualMode === 'average'
                 ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg scale-105'
                 : 'bg-gray-800/50 text-gray-400 hover:bg-gray-700/50 hover:text-gray-300'
             }`}
           >
-            📊 Top 5 Average
+            <span className="hidden sm:inline">📊 Top 5 Average</span>
+            <span className="sm:hidden">📊 Avg</span>
           </button>
           <button
             onClick={() => setVisualMode('count')}
-            className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+            className={`px-3 md:px-6 py-2 md:py-3 rounded-xl font-semibold text-xs md:text-sm transition-all duration-200 ${
               visualMode === 'count'
                 ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg scale-105'
                 : 'bg-gray-800/50 text-gray-400 hover:bg-gray-700/50 hover:text-gray-300'
             }`}
           >
-            🌍 Producer Count
+            <span className="hidden sm:inline">🌍 Producer Count</span>
+            <span className="sm:hidden">🌍 Count</span>
           </button>
         </div>
       </div>
 
       {/* Map Container */}
-      <div className="relative bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl p-4 border border-gray-700/50 overflow-hidden">
-        <div className="h-[600px] rounded-2xl overflow-hidden relative z-0">
+      <div className="relative z-10 bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-sm rounded-2xl md:rounded-3xl p-2 md:p-4 border border-gray-700/50 overflow-hidden mx-2 md:mx-0">
+        <div className="h-[400px] md:h-[600px] rounded-xl md:rounded-2xl overflow-hidden relative z-0">
           <MapContainer
             center={[30, 20]}
             zoom={2}
             minZoom={2}
             maxZoom={6}
-            style={{ height: '100%', width: '100%', backgroundColor: '#1e293b' }}
+            style={{ height: '100%', width: '100%', backgroundColor: '#334155' }}
             zoomControl={true}
           >
-            {/* Dark theme map tiles */}
+            {/* Brighter map tiles */}
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-              url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+              url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
             />
 
             {/* Location markers with heatmap effect */}
@@ -418,24 +428,24 @@ export default function WorldMap() {
         )}
 
         {/* Legend */}
-        <div className="mt-6 pt-6 border-t border-gray-700/50">
+        <div className="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-gray-700/50">
           <div className="mb-4">
-            <div className="text-center text-sm font-semibold text-gray-300 mb-3">
+            <div className="text-center text-xs md:text-sm font-semibold text-gray-300 mb-3 px-2">
               {visualMode === 'peak' && 'Heat Intensity: Peak Polyphenols'}
               {visualMode === 'average' && 'Heat Intensity: Top 5 Average Polyphenols'}
               {visualMode === 'count' && 'Heat Intensity: Number of Producers'}
             </div>
 
             {/* Gradient Bar */}
-            <div className="max-w-2xl mx-auto mb-3">
-              <div className="h-8 rounded-lg overflow-hidden flex">
-                <div className="flex-1 flex items-center justify-center text-xs font-bold text-white" style={{ backgroundColor: '#ef4444' }}>Low</div>
+            <div className="max-w-2xl mx-auto mb-3 px-2">
+              <div className="h-6 md:h-8 rounded-lg overflow-hidden flex">
+                <div className="flex-1 flex items-center justify-center text-[10px] md:text-xs font-bold text-white" style={{ backgroundColor: '#ef4444' }}>Low</div>
                 <div className="flex-1" style={{ backgroundColor: '#f59e0b' }}></div>
                 <div className="flex-1" style={{ backgroundColor: '#eab308' }}></div>
                 <div className="flex-1" style={{ backgroundColor: '#84cc16' }}></div>
-                <div className="flex-1 flex items-center justify-center text-xs font-bold text-white" style={{ backgroundColor: '#22c55e' }}>High</div>
+                <div className="flex-1 flex items-center justify-center text-[10px] md:text-xs font-bold text-white" style={{ backgroundColor: '#22c55e' }}>High</div>
               </div>
-              <div className="flex justify-between text-xs text-gray-400 mt-2 px-2">
+              <div className="hidden md:flex justify-between text-xs text-gray-400 mt-2 px-2">
                 <span>30%</span>
                 <span>50%</span>
                 <span>70%</span>
@@ -445,7 +455,7 @@ export default function WorldMap() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 text-xs px-2">
             {MAP_LOCATIONS.map((location) => {
               const value = getMetricValue(location)
               const max = getMaxMetric()
@@ -457,7 +467,7 @@ export default function WorldMap() {
                   <div className="w-3 h-3 rounded-full flex-shrink-0" style={{ backgroundColor: color }}></div>
                   <div className="flex-1 min-w-0">
                     <div className="font-semibold text-gray-300 truncate">{location.flag} {location.name}</div>
-                    <div className="text-gray-500">
+                    <div className="text-gray-500 text-[10px] md:text-xs">
                       {visualMode === 'peak' && `${value} mg/kg peak`}
                       {visualMode === 'average' && `${value} mg/kg avg`}
                       {visualMode === 'count' && `${value} producer${value > 1 ? 's' : ''}`}
@@ -468,7 +478,7 @@ export default function WorldMap() {
             })}
           </div>
 
-          <p className="text-center text-xs text-gray-500 mt-4">
+          <p className="text-center text-[10px] md:text-xs text-gray-500 mt-3 md:mt-4 px-2">
             Circle size and opacity represent intensity • Click any marker for full details
           </p>
         </div>
@@ -498,6 +508,98 @@ export default function WorldMap() {
         }
         .animate-fade-in {
           animation: fade-in 0.3s ease-out;
+        }
+
+        /* Animated Blob Styles */
+        .blob {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(80px);
+          opacity: 0.3;
+          mix-blend-mode: screen;
+        }
+
+        @keyframes blob-float-1 {
+          0%, 100% {
+            transform: translate(0, 0) scale(1);
+          }
+          33% {
+            transform: translate(30px, -50px) scale(1.1);
+          }
+          66% {
+            transform: translate(-20px, 20px) scale(0.9);
+          }
+        }
+
+        @keyframes blob-float-2 {
+          0%, 100% {
+            transform: translate(0, 0) scale(1);
+          }
+          33% {
+            transform: translate(-40px, 30px) scale(0.95);
+          }
+          66% {
+            transform: translate(20px, -40px) scale(1.05);
+          }
+        }
+
+        @keyframes blob-float-3 {
+          0%, 100% {
+            transform: translate(0, 0) scale(1);
+          }
+          33% {
+            transform: translate(20px, 40px) scale(1.08);
+          }
+          66% {
+            transform: translate(-30px, -30px) scale(0.92);
+          }
+        }
+
+        .blob-1 {
+          width: 400px;
+          height: 400px;
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+          top: -100px;
+          left: 10%;
+          animation: blob-float-1 20s ease-in-out infinite;
+        }
+
+        .blob-2 {
+          width: 500px;
+          height: 500px;
+          background: linear-gradient(135deg, #22c55e 0%, #10b981 100%);
+          bottom: -150px;
+          right: 15%;
+          animation: blob-float-2 25s ease-in-out infinite;
+        }
+
+        .blob-3 {
+          width: 350px;
+          height: 350px;
+          background: linear-gradient(135deg, #34d399 0%, #22c55e 100%);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          animation: blob-float-3 18s ease-in-out infinite;
+        }
+
+        @media (max-width: 768px) {
+          .blob {
+            filter: blur(60px);
+            opacity: 0.2;
+          }
+          .blob-1 {
+            width: 250px;
+            height: 250px;
+          }
+          .blob-2 {
+            width: 300px;
+            height: 300px;
+          }
+          .blob-3 {
+            width: 200px;
+            height: 200px;
+          }
         }
       `}</style>
     </div>

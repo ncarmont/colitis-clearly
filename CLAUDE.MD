@@ -164,7 +164,25 @@ npm run lint    # Run ESLint
    git push
    ```
 
-**This is MANDATORY - never skip committing and pushing your changes!**
+4. **WAIT 4 MINUTES for Vercel deployment to complete**
+
+5. **Verify deployment success:**
+   ```bash
+   vercel inspect https://www.best-olive-oil-ranked.com --logs
+   ```
+
+   **Deployment URL:** https://www.best-olive-oil-ranked.com
+
+   **Alternative domains:**
+   - https://best-olive-oils-git-main-nickcarmont8-gmailcoms-projects.vercel.app
+   - https://best-olive-oils-lujkzasdw-nickcarmont8-gmailcoms-projects.vercel.app
+
+6. **If deployment failed:**
+   - Check the logs output from step 5
+   - Fix any errors (build failures, runtime errors, etc.)
+   - Repeat steps 1-5
+
+**This is MANDATORY - never skip committing, pushing, and verifying deployment!**
 
 ## Known Issues
 
