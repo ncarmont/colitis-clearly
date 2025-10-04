@@ -299,6 +299,7 @@ export default function HomePage() {
   const [sortBy, setSortBy] = useState<'rank' | 'polyphenols'>('polyphenols')
   const [searchTerm, setSearchTerm] = useState('')
   const [showAll, setShowAll] = useState(false)
+  const [showRankInfo, setShowRankInfo] = useState(false)
 
   // Helper function to check if harvest date is 2024 or 2025
   const isRecentHarvest = (harvestDate: string): boolean => {
@@ -590,9 +591,33 @@ export default function HomePage() {
               <table className="w-full">
                 <thead>
                   <tr className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border-b-2 border-green-700/50">
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Rank</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider relative">
+                      <button
+                        onClick={() => setShowRankInfo(!showRankInfo)}
+                        className="flex items-center gap-1 hover:text-green-400 transition-colors cursor-help"
+                      >
+                        🏆 Overall Rank
+                      </button>
+                      {showRankInfo && (
+                        <div className="absolute top-full left-0 mt-2 w-72 bg-gray-900 border border-green-700/50 rounded-lg p-4 shadow-xl z-50 text-xs normal-case font-normal">
+                          <button
+                            onClick={() => setShowRankInfo(false)}
+                            className="absolute top-2 right-2 text-gray-400 hover:text-white"
+                          >
+                            ✕
+                          </button>
+                          <h4 className="font-bold text-green-400 mb-2">Ranking Criteria:</h4>
+                          <ul className="space-y-2 text-gray-300">
+                            <li>✓ <span className="font-semibold">HPLC/NMR</span> lab testing</li>
+                            <li>✓ <span className="font-semibold">Official lab PDF</span> results (where available)</li>
+                            <li>✓ <span className="font-semibold">2024-2025 harvest</span> only</li>
+                          </ul>
+                          <p className="mt-3 text-gray-400 text-xs italic">Ranked by polyphenol content (mg/kg)</p>
+                        </div>
+                      )}
+                    </th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Brand</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Polyphenols</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">🧪 Polyphenols</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Origin</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Cultivar</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Harvest</th>
