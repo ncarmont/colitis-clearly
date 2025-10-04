@@ -32,20 +32,20 @@ const OILS_DATA: OliveOil[] = [
     notes: "1st certified high phenolic EVOO in North America; qNMR verified PDF COA"
   },
   {
-    id: 2, rank: 2, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1600, origin: "Greece", harvestDate: "2024/25",
+    id: 2, rank: 2, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1600, origin: "Greece", harvestDate: "Sep/Oct 2024",
     price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
     certificateLink: "https://m.media-amazon.com/images/I/61EozqBpPRL.pdf",
-    cultivar: "Koroneiki",
+    cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "1000+ HPLC / 1600+ NMR; physico-chemical COA PDF available"
+    notes: "1000+ HPLC / 1600+ NMR; Olympia variety from Western Peloponnese; early harvest green olives; 14+ mg/20g Hydroxytyrosol; organic"
   },
   {
-    id: 3, rank: 3, brand: "SP360 (ONSURI)", polyphenols: 1462, origin: "Jordan", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$79.99", method: "Not specified", lab: "Brand claim",
-    certificateLink: "",
-    cultivar: "Arbequina",
-    buyLink: "https://sp360.co.uk/pages/polyphenol-analysis",
-    notes: "Site shows analysis images; no public PDF COA"
+    id: 3, rank: 3, brand: "SP360", polyphenols: 1462, origin: "Jordan", harvestDate: "2024/25",
+    price: "$$", priceAmount: "£38.00", method: "Lab tested", lab: "Certified lab analysis",
+    certificateLink: "https://sp360.co.uk/products/sp-360-500ml-extra-virgin-olive-oil-bottle#popup-1",
+    cultivar: "Jordanian olives",
+    buyLink: "https://sp360.co.uk/products/sp-360-500ml-extra-virgin-olive-oil-bottle",
+    notes: "1,462 mg/kg certified lab analysis; refillable bottle system; subscription £34.20; free UK shipping"
   },
   {
     id: 4, rank: 4, brand: "The Governor – Limited Edition", polyphenols: 1458, origin: "Greece", harvestDate: "Oct 2024",
@@ -57,27 +57,35 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 5, rank: 5, brand: "ONSURI Arbequina (Latest 2024/25)", polyphenols: 1269, origin: "Jordan", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$45.00", method: "IOC/HPLC", lab: "Brand claim",
+    price: "$", priceAmount: "£19.95", method: "RSS", lab: "Royal Scientific Society",
     certificateLink: "",
     cultivar: "Arbequina",
-    buyLink: "https://onsurioliveoil.com",
-    notes: "IOC/HPLC method stated; no public PDF COA"
+    buyLink: "https://onsurioliveoil.com/products/arbequina-extra-virgin-olive-oil-16-9-fl-oz-500ml-latest-2022-harvest",
+    notes: "1269 mg/kg; 405.73 mg/kg oleocanthal (31.9%); 0.19% acidity; Royal Scientific Society certified; 5 awards in 2024; Best EVOO of Jordan 2024; 11th globally for Arbequina; sommelier approved 11/12/2024"
+  },
+  {
+    id: 38, rank: 38, brand: "ONSURI Arbequina 1L (2 x 500ml)", polyphenols: 1269, origin: "Jordan", harvestDate: "2024/25",
+    price: "$$", priceAmount: "£38.00", method: "RSS", lab: "Royal Scientific Society",
+    certificateLink: "",
+    cultivar: "Arbequina",
+    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-arbequina-evoo-1-litre-bulk-offer-polyphenols-1269-mg-kg",
+    notes: "1269 mg/kg; 405.73 mg/kg oleocanthal (31.9%); 0.19% acidity; 1L format (2x500ml); Best value; Royal Scientific Society certified; 5 awards 2024; Best EVOO Jordan 2024; 11th globally for Arbequina; free UK delivery"
   },
   {
     id: 6, rank: 6, brand: "ONSURI Arbosana (Latest 2024/25)", polyphenols: 1255, origin: "Jordan", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$45.00", method: "IOC/HPLC", lab: "Brand claim",
+    price: "$", priceAmount: "£19.95", method: "RSS", lab: "Royal Scientific Society",
     certificateLink: "",
     cultivar: "Arbosana",
-    buyLink: "https://www.amazon.co.uk/ONSURI-Arbosana-Polyphenols-Extra-Virgin/dp/B0DCP9YNBT?th=1&linkCode=ll1&tag=bestoliveoilr-21&linkId=aaf121f239e3f5482059c533b60377b0&language=en_GB&ref_=as_li_ss_tl",
-    notes: "IOC/HPLC method stated; no public PDF COA"
+    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
+    notes: "1255 mg/kg; 425.34 mg/kg oleocanthal (33.9%); 0.17% acidity; Royal Scientific Society certified; 5 awards in 2024; 3rd best Arbosana in the world (EVOOWR); sommelier approved 11/12/2024"
   },
   {
-    id: 7, rank: 7, brand: "The Governor – Premium", polyphenols: 1140, origin: "Greece", harvestDate: "Nov 2024",
-    price: "$$", priceAmount: "$55.00", method: "NMR", lab: "WOCH/Athens",
-    certificateLink: "https://thegovernor.gr/wp-content/uploads/2024/12/2024-25-Premium-COA.pdf",
+    id: 7, rank: 7, brand: "The Governor – Premium Edition", polyphenols: 390, origin: "Greece (Corfu)", harvestDate: "Nov-Dec 2024",
+    price: "$", priceAmount: "€35.00", method: "Folin", lab: "Lab tested",
+    certificateLink: "",
     cultivar: "Lianolia",
-    buyLink: "https://thegovernor.gr/product/premium/",
-    notes: "qNMR PDF COA with D1 index and breakdown"
+    buyLink: "https://www.thegovernor.gr/product/the-governor-premium-edition/",
+    notes: "390 mg/kg Folin Method; centenarian Lianolia variety from Corfu; 100-500 year old trees; 0.17% acidity; family produced"
   },
   {
     id: 8, rank: 8, brand: "Finca La Torre – Hojiblanca (Organic/Biodynamic)", polyphenols: 1059, origin: "Spain", harvestDate: "2024/25",
@@ -88,20 +96,28 @@ const OILS_DATA: OliveOil[] = [
     notes: "Retailer claims 1027-1059 mg/kg; no public PDF COA"
   },
   {
-    id: 9, rank: 9, brand: "Kyoord High-Phenolic", polyphenols: 1007, origin: "Greece", harvestDate: "Nov–Dec 2024",
-    price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "Brand claim",
+    id: 39, rank: 39, brand: "Finca La Torre – Arbequina (Organic/Biodynamic)", polyphenols: 537, origin: "Spain (Málaga)", harvestDate: "2024/25",
+    price: "$$", priceAmount: "€19.63", method: "Stated", lab: "Stated",
+    certificateLink: "",
+    cultivar: "Arbequina",
+    buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-arbequina",
+    notes: "537 mg/kg stated; 0.18% acidity; organic & biodynamic (Demeter); Bobadilla, Málaga; multiple international awards; no public lab analysis URL"
+  },
+  {
+    id: 9, rank: 9, brand: "Kyoord High-Phenolic", polyphenols: 1007, origin: "Greece (Corfu)", harvestDate: "Nov–Dec 2024",
+    price: "$$", priceAmount: "£37.00", method: "3rd party tested", lab: "3rd party lab",
     certificateLink: "",
     cultivar: "Lianolia + Koroneiki",
     buyLink: "https://www.amazon.com/kyoord-High-Phenolic-Extra-Virgin-Olive/dp/B0CCQQGXRQ?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=cde3cbabfa18ecdacdb34b3f0833d404&language=en_US&ref_=as_li_ss_tl",
-    notes: "Site posts analysis from Corfu; no public PDF COA"
+    notes: "1007 mg/kg total polyphenols; 442 mg/kg oleocanthal; 659 mg/kg D1 index (oleocanthal + oleacein); 3rd party tested; founded by Dr. Limor Goren (cancer researcher); small family farm Corfu"
   },
   {
-    id: 10, rank: 10, brand: "ONSURI Signature", polyphenols: 1000, origin: "Jordan", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$42.00", method: "IOC/HPLC", lab: "Brand claim",
+    id: 10, rank: 10, brand: "ONSURI Signature (Latest 2024/25)", polyphenols: 1000, origin: "Jordan", harvestDate: "2024/25",
+    price: "$", priceAmount: "£19.95", method: "Pending RSS", lab: "Certification pending",
     certificateLink: "",
-    cultivar: "Blend (estate)",
-    buyLink: "https://onsurioliveoil.com/en-us",
-    notes: "Site lists ≥1000 mg/kg; no public PDF COA"
+    cultivar: "Arbequina & Arbosana blend",
+    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
+    notes: ">1,000 mg/kg; Arbequina & Arbosana blend; floral & almond notes; buttery smooth; low-medium pungency; sommelier approved 18/12/2024; Royal Scientific Society certification pending"
   },
   {
     id: 11, rank: 11, brand: "Opus Oléa – Organic", polyphenols: 874, origin: "Greece", harvestDate: "2024/25",
@@ -256,14 +272,6 @@ const OILS_DATA: OliveOil[] = [
     notes: "Independent trackers list ~499 mg/kg for 24/25; brand promises >400 mg/kg"
   },
   {
-    id: 29, rank: 29, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1600, origin: "Greece", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
-    certificateLink: "https://m.media-amazon.com/images/I/61EozqBpPRL.pdf",
-    cultivar: "Koroneiki",
-    buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "1000+ HPLC / 1600+ NMR; physico-chemical PDF COA available"
-  },
-  {
     id: 30, rank: 30, brand: "P.J. KABOS – Family Reserve (Robust)", polyphenols: 750, origin: "Greece", harvestDate: "2024/25",
     price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "Stated",
     certificateLink: "",
@@ -272,12 +280,12 @@ const OILS_DATA: OliveOil[] = [
     notes: "Daily 'shot' usage suggested by brand; 750+ HPLC"
   },
   {
-    id: 31, rank: 31, brand: "P.J. KABOS – Family Reserve (Medium)", polyphenols: 500, origin: "Greece", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$39.00", method: "HPLC", lab: "Stated",
+    id: 31, rank: 31, brand: "P.J. KABOS – Family Reserve Organic (Medium)", polyphenols: 500, origin: "Greece", harvestDate: "Oct-Nov 2024",
+    price: "$", priceAmount: "$34.83", method: "Brand claim", lab: "Stated during production",
     certificateLink: "",
     cultivar: "Koroneiki",
-    buyLink: "https://www.amazon.com/Phenolic-Intensity-Extracted-Koroneiki-KABOS/dp/B09P7K1V8K?&linkCode=ll1&tag=bestoliveoilr-20&linkId=7564b9ab453f4acc0ea9f0d679564c96&language=en_US&ref_=as_li_ss_tl",
-    notes: "HPLC hydroxytyrosol 7+ mg/20g; 500+ tier"
+    buyLink: "https://www.pjkabos.com/family-reserve-organic-medium",
+    notes: "500+ mg/kg during production; Koroneiki from Western Peloponnese; medium intensity; organic USDA/EU; aromas of cut grass, basil, artichoke, mint; early harvest green olives"
   },
   {
     id: 32, rank: 32, brand: "Rincón de la Subbética – Hojiblanca (Organic)", polyphenols: 356, origin: "Spain", harvestDate: "2024/25",
@@ -632,7 +640,8 @@ export default function HomePage() {
                       </button>
                     </th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Brand</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Polyphenols</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">HPLC (mg/kg)</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">NMR/Other (mg/kg)</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Origin</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Cultivar</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Harvest</th>
@@ -663,17 +672,38 @@ export default function HomePage() {
                           </span>
                         </td>
                         <td className="px-3 py-4">
-                          <div className="text-sm font-bold text-gray-100 group-hover:text-green-400 transition-colors max-w-[180px]">
+                          <a
+                            href={oil.buyLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-bold text-gray-100 group-hover:text-green-400 transition-colors max-w-[180px] block"
+                          >
                             {oil.brand}
-                          </div>
+                          </a>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
-                          <div className="flex items-baseline gap-1">
-                            <span className="text-2xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
-                              {oil.polyphenols}
-                            </span>
-                            <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
-                          </div>
+                          {oil.method.toLowerCase().includes('hplc') && !oil.method.toLowerCase().includes('nmr') ? (
+                            <div className="flex items-baseline gap-1">
+                              <span className="text-2xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
+                                {oil.polyphenols}
+                              </span>
+                              <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
+                            </div>
+                          ) : (
+                            <span className="text-sm text-gray-600">—</span>
+                          )}
+                        </td>
+                        <td className="px-3 py-4 whitespace-nowrap">
+                          {oil.method.toLowerCase().includes('nmr') || (!oil.method.toLowerCase().includes('hplc')) ? (
+                            <div className="flex items-baseline gap-1">
+                              <span className="text-2xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
+                                {oil.polyphenols}
+                              </span>
+                              <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
+                            </div>
+                          ) : (
+                            <span className="text-sm text-gray-600">—</span>
+                          )}
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
                           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-900/40 text-blue-300 border border-blue-700/50">
@@ -725,19 +755,7 @@ export default function HomePage() {
                                   : 'bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white'
                               }`}
                             >
-                              {isAmazon ? (
-                                <>
-                                  <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 100 30">
-                                    <path d="M60 17c-6 4-14 6-21 6-10 0-19-4-26-10-.5-.5-.1-1.2.6-.8 7.5 4.5 17 7 26.5 7 6.5 0 13.5-1.4 20-4 1-.5 1.8.7.9 1.5zm2.5-3c-.7-1-5-.5-7-.2-.6.1-.7-.5-.2-.8 3.5-2.5 9-1.8 9.5-1 .7.8-.1 6.5-3.5 9.2-.5.4-1 .2-.8-.4.7-1.8 2.3-6 1.6-7z"/>
-                                  </svg>
-                                  <span>Amazon</span>
-                                </>
-                              ) : (
-                                <>
-                                  <span>🛒</span>
-                                  <span>Check Out</span>
-                                </>
-                              )}
+                              <span>Go to Site</span>
                             </a>
                             {!isAmazon && oil.certificateLink && !oil.certificateLink.includes('amazon') && !oil.certificateLink.includes('oliveoil') && (
                               <a
