@@ -401,11 +401,18 @@ export default function HomePage() {
       <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 overflow-x-hidden">
       {/* Hero Header */}
       <header className="relative overflow-hidden bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 w-full">
-        <div className="absolute inset-0">
+        {/* Animated Blobs */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
+          <div className="header-blob header-blob-1"></div>
+          <div className="header-blob header-blob-2"></div>
+          <div className="header-blob header-blob-3"></div>
+        </div>
+
+        <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4UzAgOC4wNiAwIDE4YzAgNC40MiAxLjYgOC40OCA0LjI0IDExLjZDMi4xMiAzMi45MiAwIDM5LjEyIDAgNDZoMTJjMC02LjYzIDUuMzctMTIgMTItMTJzMTIgNS4zNyAxMiAxMmgxMmMwLTYuODgtMi4xMi0xMy4wOC00LjI0LTE2LjRDNTQuNCAyNi40OCA1NiAyMi40MiA1NiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-6 py-16">
+        <div className="relative z-20 max-w-7xl mx-auto px-6 py-16">
           <div className="text-center space-y-6">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 animate-fade-in">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
@@ -428,10 +435,6 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
                 <span className="text-green-400 text-sm">❤️</span>
                 <span className="text-sm text-green-100 font-medium">31% Lower CVD Risk</span>
-              </div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-blue-400/30">
-                <span className="text-blue-400 text-sm">🔬</span>
-                <span className="text-sm text-blue-100 font-medium">PREDIMED Study</span>
               </div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
                 <span className="text-purple-400 text-sm">💪</span>
@@ -804,6 +807,59 @@ export default function HomePage() {
 
         .animate-fade-in-row {
           animation: fade-in-row 0.4s ease-out both;
+        }
+
+        /* Header Blobs */
+        .header-blob {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(120px);
+          opacity: 0.8;
+        }
+
+        @keyframes header-blob-float-1 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(40px, -60px) scale(1.2); }
+          66% { transform: translate(-30px, 30px) scale(0.9); }
+        }
+
+        @keyframes header-blob-float-2 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(-50px, 40px) scale(1.1); }
+          66% { transform: translate(40px, -30px) scale(0.95); }
+        }
+
+        @keyframes header-blob-float-3 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          33% { transform: translate(30px, 50px) scale(1.15); }
+          66% { transform: translate(-40px, -40px) scale(0.9); }
+        }
+
+        .header-blob-1 {
+          width: 500px;
+          height: 500px;
+          background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+          top: -150px;
+          left: 10%;
+          animation: header-blob-float-1 25s ease-in-out infinite;
+        }
+
+        .header-blob-2 {
+          width: 600px;
+          height: 600px;
+          background: radial-gradient(circle, rgba(254, 243, 199, 0.3) 0%, rgba(254, 243, 199, 0) 70%);
+          top: 50%;
+          right: 5%;
+          animation: header-blob-float-2 30s ease-in-out infinite;
+        }
+
+        .header-blob-3 {
+          width: 450px;
+          height: 450px;
+          background: radial-gradient(circle, rgba(134, 239, 172, 0.35) 0%, rgba(134, 239, 172, 0) 70%);
+          bottom: -100px;
+          left: 40%;
+          animation: header-blob-float-3 28s ease-in-out infinite;
         }
       `}</style>
     </main>
