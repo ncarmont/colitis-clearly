@@ -68,6 +68,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ9T4462C0"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LQ9T4462C0');
+            `
+          }}
+        />
+
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://www.amazon.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
