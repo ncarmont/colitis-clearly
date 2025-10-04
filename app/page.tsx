@@ -582,8 +582,8 @@ export default function HomePage() {
 
           {/* Affiliate Disclosure */}
           <div className="mb-4 text-center">
-            <p className="text-xs md:text-sm text-gray-400 italic max-w-2xl mx-auto">
-              This site may contain affiliate links. Affiliates help keep this website and research funded so we can do better work, but do not influence our rankings.
+            <p className="text-xs text-gray-500 italic max-w-xl mx-auto">
+              Contains affiliate links. Rankings are independent.
             </p>
           </div>
 
@@ -620,11 +620,11 @@ export default function HomePage() {
                         }`}
                         title="Filter by HPLC/NMR tested oils from 2024-2025 harvest"
                       >
-                        🏆 Overall Rank {overallRankFilter && '✓'}
+                        Overall Rank {overallRankFilter && '✓'}
                       </button>
                     </th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Brand</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">🧪 Polyphenols</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Polyphenols</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Origin</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Cultivar</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Harvest</th>
