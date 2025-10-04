@@ -32,12 +32,12 @@ const OILS_DATA: OliveOil[] = [
     notes: "1st certified high phenolic EVOO in North America; qNMR verified PDF COA"
   },
   {
-    id: 2, rank: 2, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1600, origin: "Greece", harvestDate: "Sep/Oct 2024",
-    price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
+    id: 2, rank: 2, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1000, origin: "Greece", harvestDate: "Sep/Oct 2024",
+    price: "$$", priceAmount: "$59.83", method: "HPLC", lab: "HPLC verified",
     certificateLink: "https://m.media-amazon.com/images/I/61EozqBpPRL.pdf",
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "1000+ HPLC / 1600+ NMR; Olympia variety from Western Peloponnese; early harvest green olives; 14+ mg/20g Hydroxytyrosol; organic"
+    notes: "1000+ mg/kg HPLC (1600+ NMR); 14+ mg/20g Hydroxytyrosol (HPLC), 32.18 mg/20g (NMR); Olympia variety Western Peloponnese; early harvest green olives; organic USDA/EU"
   },
   {
     id: 3, rank: 3, brand: "SP360", polyphenols: 1462, origin: "Jordan", harvestDate: "2024/25",
