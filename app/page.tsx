@@ -289,7 +289,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
-  const [sortBy, setSortBy] = useState<'rank' | 'polyphenols'>('rank')
+  const [sortBy, setSortBy] = useState<'rank' | 'polyphenols'>('polyphenols')
   const [searchTerm, setSearchTerm] = useState('')
 
   const origins = useMemo(() => ['all', ...Array.from(new Set(OILS_DATA.map(oil => oil.origin)))], [])
@@ -810,56 +810,116 @@ export default function HomePage() {
           animation: fade-in-row 0.4s ease-out both;
         }
 
-        /* Header Blobs */
+        /* Oil Splash Blobs - Highly Visible */
         .header-blob {
           position: absolute;
-          border-radius: 50%;
-          filter: blur(80px);
+          filter: blur(60px);
+          border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         }
 
-        @keyframes header-blob-float-1 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          33% { transform: translate(50px, -70px) scale(1.3); }
-          66% { transform: translate(-40px, 40px) scale(0.85); }
+        @keyframes oil-splash-1 {
+          0% {
+            transform: translate(0, 0) scale(1) rotate(0deg);
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+          }
+          25% {
+            transform: translate(80px, -90px) scale(1.4) rotate(90deg);
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+          }
+          50% {
+            transform: translate(-50px, -120px) scale(1.1) rotate(180deg);
+            border-radius: 50% 50% 20% 80% / 25% 75% 75% 25%;
+          }
+          75% {
+            transform: translate(-80px, 60px) scale(1.3) rotate(270deg);
+            border-radius: 80% 20% 60% 40% / 70% 40% 60% 30%;
+          }
+          100% {
+            transform: translate(0, 0) scale(1) rotate(360deg);
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+          }
         }
 
-        @keyframes header-blob-float-2 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          33% { transform: translate(-60px, 50px) scale(1.2); }
-          66% { transform: translate(50px, -40px) scale(0.9); }
+        @keyframes oil-splash-2 {
+          0% {
+            transform: translate(0, 0) scale(1) rotate(0deg);
+            border-radius: 40% 60% 60% 40% / 40% 40% 60% 50%;
+          }
+          30% {
+            transform: translate(-90px, 80px) scale(1.3) rotate(120deg);
+            border-radius: 70% 30% 50% 50% / 60% 50% 70% 40%;
+          }
+          60% {
+            transform: translate(70px, -60px) scale(0.9) rotate(240deg);
+            border-radius: 30% 70% 40% 60% / 50% 60% 40% 50%;
+          }
+          100% {
+            transform: translate(0, 0) scale(1) rotate(360deg);
+            border-radius: 40% 60% 60% 40% / 40% 40% 60% 50%;
+          }
         }
 
-        @keyframes header-blob-float-3 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          33% { transform: translate(40px, 60px) scale(1.25); }
-          66% { transform: translate(-50px, -50px) scale(0.85); }
+        @keyframes oil-splash-3 {
+          0% {
+            transform: translate(0, 0) scale(1) rotate(0deg);
+            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+          }
+          20% {
+            transform: translate(60px, 100px) scale(1.5) rotate(72deg);
+            border-radius: 70% 30% 40% 60% / 30% 70% 60% 40%;
+          }
+          40% {
+            transform: translate(-70px, -80px) scale(1.2) rotate(144deg);
+            border-radius: 40% 60% 70% 30% / 60% 40% 30% 70%;
+          }
+          60% {
+            transform: translate(90px, -50px) scale(0.85) rotate(216deg);
+            border-radius: 60% 40% 50% 50% / 70% 30% 40% 60%;
+          }
+          80% {
+            transform: translate(-60px, 70px) scale(1.35) rotate(288deg);
+            border-radius: 30% 70% 60% 40% / 40% 60% 50% 50%;
+          }
+          100% {
+            transform: translate(0, 0) scale(1) rotate(360deg);
+            border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+          }
         }
 
         .header-blob-1 {
-          width: 700px;
-          height: 700px;
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(254, 243, 199, 0.5) 100%);
-          top: -200px;
-          left: 5%;
-          animation: header-blob-float-1 20s ease-in-out infinite;
+          width: 600px;
+          height: 600px;
+          background: radial-gradient(circle at 30% 40%,
+            rgba(255, 255, 255, 0.9) 0%,
+            rgba(254, 243, 199, 0.8) 40%,
+            rgba(251, 191, 36, 0.6) 100%);
+          top: -150px;
+          left: -50px;
+          animation: oil-splash-1 18s ease-in-out infinite;
         }
 
         .header-blob-2 {
-          width: 800px;
-          height: 800px;
-          background: linear-gradient(135deg, rgba(134, 239, 172, 0.5) 0%, rgba(59, 130, 246, 0.4) 100%);
-          top: 30%;
-          right: -100px;
-          animation: header-blob-float-2 25s ease-in-out infinite;
+          width: 700px;
+          height: 700px;
+          background: radial-gradient(circle at 60% 50%,
+            rgba(254, 243, 199, 0.85) 0%,
+            rgba(251, 191, 36, 0.75) 35%,
+            rgba(217, 119, 6, 0.55) 100%);
+          top: 20%;
+          right: -80px;
+          animation: oil-splash-2 22s ease-in-out infinite;
         }
 
         .header-blob-3 {
-          width: 650px;
-          height: 650px;
-          background: linear-gradient(135deg, rgba(251, 191, 36, 0.5) 0%, rgba(16, 185, 129, 0.4) 100%);
-          bottom: -150px;
-          left: 35%;
-          animation: header-blob-float-3 22s ease-in-out infinite;
+          width: 550px;
+          height: 550px;
+          background: radial-gradient(circle at 50% 60%,
+            rgba(252, 211, 77, 0.9) 0%,
+            rgba(245, 158, 11, 0.75) 40%,
+            rgba(180, 83, 9, 0.5) 100%);
+          bottom: -120px;
+          left: 30%;
+          animation: oil-splash-3 20s ease-in-out infinite;
         }
       `}</style>
     </main>
