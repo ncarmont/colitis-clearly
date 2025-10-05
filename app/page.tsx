@@ -406,6 +406,30 @@ export default function HomePage() {
   }, [])
   const [overallRankFilter, setOverallRankFilter] = useState(false)
 
+  // Get current month for fresh harvest indicator
+  const getCurrentMonthName = () => {
+    const months = ['January', 'February', 'March', 'April', 'May', 'June',
+                    'July', 'August', 'September', 'October', 'November', 'December']
+    return months[new Date().getMonth()]
+  }
+
+  // Determine fresh harvest based on current month
+  const getFreshHarvestInfo = () => {
+    const month = new Date().getMonth() + 1 // 1-12
+    // Northern harvest: Oct-Jan (months 10, 11, 12, 1)
+    // Southern harvest: Apr-Jul (months 4, 5, 6, 7)
+    if (month >= 10 || month <= 2) {
+      return { region: 'Northern Harvest', flags: ['🇬🇷', '🇪🇸', '🇮🇹', '🇯🇴'] }
+    } else if (month >= 4 && month <= 8) {
+      return { region: 'Southern Harvest', flags: ['🇦🇺', '🇨🇱', '🇦🇷', '🇿🇦'] }
+    } else {
+      return { region: 'Transition Period', flags: ['🌍'] }
+    }
+  }
+
+  const currentMonth = getCurrentMonthName()
+  const freshHarvest = getFreshHarvestInfo()
+
   // Helper function to check if harvest date is 2024 or 2025
   const isRecentHarvest = (harvestDate: string): boolean => {
     return harvestDate.includes('2024') || harvestDate.includes('2025')
@@ -558,7 +582,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListStructuredData) }}
       />
 
-      <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 overflow-x-hidden">
+      <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 overflow-x-hidden w-full max-w-full">
       {/* Hero Header */}
       <header className="relative overflow-hidden bg-gradient-to-r from-emerald-700 via-green-700 to-emerald-800 w-full">
         {/* Lava Lamp Blobs */}
@@ -724,35 +748,20 @@ export default function HomePage() {
       <section className="py-8 md:py-12 px-4 md:px-6 w-full">
         <div className="max-w-7xl mx-auto w-full">
           {/* Freshness & Ranking Guide */}
-          <div className="mb-6 text-center">
-            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-xl px-5 py-4 max-w-4xl backdrop-blur-sm shadow-lg">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm">
-                <div className="flex-1 text-left">
-                  <p className="text-gray-300 leading-relaxed">
-                    <span className="text-green-400 font-semibold">What matters most:</span> Polyphenol content above <span className="font-bold text-green-300">250 mg/kg</span> + freshness.
-                    Oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>. Early harvest is key.
-                  </p>
-                </div>
-                <div className="hidden md:block w-px h-12 bg-slate-600/50"></div>
-                <div className="text-center">
-                  <p className="text-xs text-gray-400 mb-1.5">Fresh Now (Oct 2025)</p>
-                  <div className="flex items-center gap-2 text-base">
-                    <span>🇬🇷</span>
-                    <span>🇪🇸</span>
-                    <span>🇮🇹</span>
-                    <span>🇯🇴</span>
-                    <span className="text-green-400 font-bold text-xs">← Northern Harvest</span>
-                  </div>
+          <div className="mb-6 text-center px-2">
+            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-xl px-4 md:px-5 py-4 max-w-4xl backdrop-blur-sm shadow-lg w-full md:w-auto">
+              <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-3">
+                <span className="text-green-400 font-semibold">How does it work?</span> Polyphenols above <span className="font-bold text-green-300">250 mg/kg</span> + freshness are key.
+                Oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>. Early harvest matters most.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-xs pt-3 border-t border-slate-600/30">
+                <span className="text-gray-400">Fresh now ({currentMonth}):</span>
+                <div className="flex items-center gap-1.5">
+                  {freshHarvest.flags.map((flag, i) => <span key={i}>{flag}</span>)}
+                  <span className="text-green-400 font-semibold ml-1">{freshHarvest.region}</span>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* High Polyphenol Note */}
-          <div className="mb-6 text-center">
-            <p className="text-sm md:text-base text-gray-300 bg-green-900/20 border border-green-700/30 rounded-lg px-4 py-3 inline-block max-w-3xl">
-              <span className="text-green-400 font-semibold">How does it work?</span> Polyphenols and harvest date are key indicators of olive oil health quality. Olive oils above <span className="font-bold text-green-300">250 mg/kg</span> polyphenol content are considered high polyphenol EVOO.
-            </p>
           </div>
 
           {/* Affiliate Disclosure */}

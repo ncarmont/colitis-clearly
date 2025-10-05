@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 
 export async function POST(request: Request) {
   try {
-    const { url, comment } = await request.json()
+    const { comment } = await request.json()
 
     // Validate input
     if (!comment || comment.trim().length === 0) {
@@ -17,8 +17,6 @@ export async function POST(request: Request) {
     const emailBody = `
 New feedback received from best-olive-oil-ranked.com:
 
-${url ? `Product URL: ${url}\n` : ''}
-Comment:
 ${comment}
 
 ---

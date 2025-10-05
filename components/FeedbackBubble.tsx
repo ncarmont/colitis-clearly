@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 export default function FeedbackBubble() {
   const [isOpen, setIsOpen] = useState(false)
-  const [url, setUrl] = useState('')
   const [comment, setComment] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
@@ -20,12 +19,11 @@ export default function FeedbackBubble() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ url, comment }),
+        body: JSON.stringify({ comment }),
       })
 
       if (response.ok) {
         setSubmitStatus('success')
-        setUrl('')
         setComment('')
         setTimeout(() => {
           setIsOpen(false)
@@ -46,12 +44,10 @@ export default function FeedbackBubble() {
       {/* Feedback Bubble Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 left-6 z-50 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-4 rounded-full shadow-2xl hover:shadow-green-500/50 hover:scale-105 transition-all duration-300 font-semibold text-sm max-w-xs flex items-center gap-3 group"
+        className="fixed bottom-4 right-4 z-50 bg-slate-700/80 backdrop-blur-sm text-white p-3 rounded-full shadow-lg hover:bg-slate-600/90 hover:scale-110 transition-all duration-300 border border-slate-600/50"
+        title="Submit feedback"
       >
-        <span className="text-2xl">💡</span>
-        <span className="leading-tight">
-          HAVE WE MISSED AN OLIVE OIL OR GOT SOMETHING INCORRECT? LET US KNOW
-        </span>
+        <span className="text-xl">❓</span>
       </button>
 
       {/* Modal Overlay */}
@@ -82,32 +78,18 @@ export default function FeedbackBubble() {
                 <p className="text-green-400 text-lg font-semibold">Thanks for your feedback!</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="url" className="block text-sm font-medium text-slate-300 mb-2">
-                    Product URL (optional)
-                  </label>
-                  <input
-                    type="url"
-                    id="url"
-                    value={url}
-                    onChange={(e) => setUrl(e.target.value)}
-                    placeholder="https://..."
-                    className="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all"
-                  />
-                </div>
-
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label htmlFor="comment" className="block text-sm font-medium text-slate-300 mb-2">
-                    Your Comment <span className="text-red-400">*</span>
+                    Your Feedback <span className="text-red-400">*</span>
                   </label>
                   <textarea
                     id="comment"
                     value={comment}
                     onChange={(e) => setComment(e.target.value)}
                     required
-                    rows={4}
-                    placeholder="Tell us about a missed olive oil or an error you found..."
+                    rows={5}
+                    placeholder="Tell us about a missed olive oil, an error, or include a product URL..."
                     className="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all resize-none"
                   />
                 </div>
