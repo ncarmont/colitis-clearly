@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import Link from 'next/link'
 import WorldMap from '@/components/WorldMap'
 
@@ -394,6 +394,16 @@ export default function HomePage() {
   const [sortBy, setSortBy] = useState<'rank' | 'polyphenols'>('polyphenols')
   const [searchTerm, setSearchTerm] = useState('')
   const [showAll, setShowAll] = useState(false)
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== 'undefined' ? window.innerWidth < 768 : false
+  )
+
+  useEffect(() => {
+    const updateIsMobile = () => setIsMobile(window.innerWidth < 768)
+    updateIsMobile()
+    window.addEventListener('resize', updateIsMobile)
+    return () => window.removeEventListener('resize', updateIsMobile)
+  }, [])
   const [overallRankFilter, setOverallRankFilter] = useState(false)
 
   // Helper function to check if harvest date is 2024 or 2025
@@ -531,6 +541,11 @@ export default function HomePage() {
     }))
   }
 
+  const initialDisplayCount = isMobile ? 5 : 10
+  const oilsToDisplay = showAll
+    ? filteredAndSortedOils
+    : filteredAndSortedOils.slice(0, initialDisplayCount)
+
   return (
     <>
       {/* JSON-LD Structured Data */}
@@ -573,55 +588,72 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4UzAgOC4wNiAwIDE4YzAgNC40MiAxLjYgOC40OCA0LjI0IDExLjZDMi4xMiAzMi45MiAwIDM5LjEyIDAgNDZoMTJjMC02LjYzIDUuMzctMTIgMTItMTJzMTIgNS4zNyAxMiAxMmgxMmMwLTYuODgtMi4xMi0xMy4wOC00LjI0LTE2LjRDNTQuNCAyNi40OCA1NiAyMi40MiA1NiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         </div>
 
-        <div className="relative z-20 max-w-7xl mx-auto px-6 py-16">
-          <div className="text-center space-y-6">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 animate-fade-in">
+        <Link
+          href="https://www.instagram.com/bestoliveoilranked.com_?igsh=MW81OXFkZW9uNzBnNg%3D%3D&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Best Olive Oils on Instagram"
+          className="absolute top-4 right-4 md:top-6 md:right-6 z-30 inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 border border-white/30 text-white transition-colors duration-200 hover:bg-white/30"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="w-5 h-5"
+          >
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2.2a2.8 2.8 0 110 5.6 2.8 2.8 0 010-5.6zM17.5 5.5a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z" />
+          </svg>
+        </Link>
+
+        <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16">
+          <div className="text-center space-y-5 md:space-y-6">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20 text-xs md:text-sm font-medium animate-fade-in">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-white">Updated 2025</span>
+              <span className="text-white">Updated 2025</span>
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white animate-slide-up">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-white animate-slide-up">
               Best Extra Virgin
               <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
                 Olive Oils Ranked
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-green-50 max-w-3xl mx-auto font-light animate-fade-in-delay">
-              Olive oil is part of our culture. We've made it our personal mission to rank the scientifically healthiest olive oils on the planet.
+            <p className="text-lg md:text-2xl text-green-50 max-w-2xl md:max-w-3xl mx-auto font-light animate-fade-in-delay">
+              Olive oil is our culture. Our personal mission is to rank the scientifically healthiest olive oils on the planet.
             </p>
 
             {/* Health Benefit Pills */}
-            <div className="flex flex-wrap justify-center gap-3 mt-6 animate-fade-in-delay">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
-                <span className="text-green-400 text-sm">❤️</span>
-                <span className="text-sm text-green-100 font-medium">31% Lower CVD Risk</span>
+            <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-6 animate-fade-in-delay">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
+                <span className="text-green-400 text-xs md:text-sm">❤️</span>
+                <span className="text-xs md:text-sm text-green-100 font-medium">31% Lower CVD Risk</span>
               </div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
-                <span className="text-purple-400 text-sm">💪</span>
-                <span className="text-sm text-purple-100 font-medium">Anti-Inflammatory</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
+                <span className="text-purple-400 text-xs md:text-sm">💪</span>
+                <span className="text-xs md:text-sm text-purple-100 font-medium">Anti-Inflammatory</span>
               </div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
-                <span className="text-orange-400 text-sm">🧬</span>
-                <span className="text-sm text-orange-100 font-medium">Blue Zone Longevity (PREDIMED Study)</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
+                <span className="text-orange-400 text-xs md:text-sm">🧬</span>
+                <span className="text-xs md:text-sm text-orange-100 font-medium">Blue Zone Longevity (PREDIMED Study)</span>
               </div>
             </div>
 
             {/* Stats */}
-            <div className="flex justify-center gap-8 mt-8 animate-fade-in-delay-2">
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-6 md:mt-8 animate-fade-in-delay-2">
               <div className="text-center">
-                <div className="text-4xl font-bold text-white">{stats.totalOils}</div>
-                <div className="text-sm text-green-200">Lab-Verified EVOOs</div>
+                <div className="text-3xl md:text-4xl font-bold text-white">{stats.totalOils}</div>
+                <div className="text-xs md:text-sm text-green-200">Lab-Verified EVOOs</div>
               </div>
-              <div className="w-px bg-white/20"></div>
+              <div className="hidden sm:block w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white">{stats.countries}</div>
-                <div className="text-sm text-green-200">Countries</div>
+                <div className="text-3xl md:text-4xl font-bold text-white">{stats.countries}</div>
+                <div className="text-xs md:text-sm text-green-200">Countries</div>
               </div>
-              <div className="w-px bg-white/20"></div>
+              <div className="hidden sm:block w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white">{stats.maxPolyphenols}</div>
-                <div className="text-sm text-green-200">Max mg/kg</div>
+                <div className="text-3xl md:text-4xl font-bold text-white">{stats.maxPolyphenols}</div>
+                <div className="text-xs md:text-sm text-green-200">Max mg/kg</div>
               </div>
             </div>
           </div>
@@ -753,7 +785,7 @@ export default function HomePage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-800/50">
-                  {(showAll ? filteredAndSortedOils : filteredAndSortedOils.slice(0, 10)).map((oil, index) => {
+                  {oilsToDisplay.map((oil, index) => {
                     const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
                     const displayRank = index + 1 // Rank based on current sorted position
                     return (
@@ -884,13 +916,13 @@ export default function HomePage() {
           </div>
 
           {/* Show More/Less Button */}
-          {filteredAndSortedOils.length > 10 && (
+          {filteredAndSortedOils.length > initialDisplayCount && (
             <div className="mt-6 text-center">
               <button
                 onClick={() => setShowAll(!showAll)}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                <span>{showAll ? '▲ Show Top 10' : `▼ Show All ${filteredAndSortedOils.length} EVOOs`}</span>
+                <span>{showAll ? `▲ Show Top ${initialDisplayCount}` : `▼ Show All ${filteredAndSortedOils.length} EVOOs`}</span>
               </button>
             </div>
           )}
