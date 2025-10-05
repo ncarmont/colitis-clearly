@@ -95,7 +95,17 @@ const OILS_DATA: OliveOil[] = [
     notes: "Demeter biodynamic estate oil."
   },
   {
-    id: 8, rank: 8, brand: "Kyoord High-Phenolic",
+    id: 8, rank: 8, brand: "November – Polyphenols Organic Early Harvest",
+    nmrOtherPolyphenols: 1073,
+    origin: "Greece (South)", harvestDate: "Oct–Nov 2024",
+    price: "$$", priceAmount: "£26.90", method: "NMR", lab: "NMR (IOC experimental)",
+    certificateLink: "",
+    cultivar: "Koroneiki",
+    buyLink: "https://www.masworth.co.uk/product/november-early-harvest-organic-olive-oil-500ml/",
+    notes: "500 ml; organic; early-harvest green olives; bundle price ≈ £22.87/bottle (3+)"
+  },
+  {
+    id: 9, rank: 9, brand: "Kyoord High-Phenolic",
     nmrOtherPolyphenols: 1007,
     origin: "Greece (Corfu)", harvestDate: "Nov–Dec 2024",
     price: "$$", priceAmount: "£37.00", method: "qNMR", lab: "qNMR metrics",
@@ -105,7 +115,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Founded by Dr. Goren; small Corfu farm."
   },
   {
-    id: 9, rank: 9, brand: "ONSURI Signature (Arbequina + Arbosana)",
+    id: 10, rank: 10, brand: "ONSURI Signature (Arbequina + Arbosana)",
     nmrOtherPolyphenols: 1000,
     origin: "Jordan", harvestDate: "2024/25",
     price: "$", priceAmount: "£19.95", method: "RSS", lab: "RSS certification pending",
@@ -115,7 +125,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Floral/almond profile; smooth."
   },
   {
-    id: 10, rank: 10, brand: "Laconiko Olio Nuovo",
+    id: 11, rank: 11, brand: "Laconiko Olio Nuovo",
     nmrOtherPolyphenols: 877,
     origin: "Greece", harvestDate: "2025/26",
     price: "$$", priceAmount: "$39.95", method: "qNMR", lab: "qNMR verified",
@@ -125,7 +135,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "First certified 'high phenolic' in North America."
   },
   {
-    id: 11, rank: 11, brand: "Opus Oléa – Organic",
+    id: 12, rank: 12, brand: "Opus Oléa – Organic",
     nmrOtherPolyphenols: 874,
     origin: "Greece", harvestDate: "2024/25",
     price: "$$", priceAmount: "$48.00", method: "Other", lab: "Lab images shown",
@@ -135,7 +145,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Small-batch organic; Messinia/Peloponnese."
   },
   {
-    id: 12, rank: 12, brand: "Zero Nutrition – EVOO100",
+    id: 13, rank: 13, brand: "Zero Nutrition – EVOO100",
     nmrOtherPolyphenols: 813,
     origin: "Italy (Puglia)", harvestDate: "Nov 2024/25",
     price: "$", priceAmount: "$24.99", method: "Other", lab: "Independent tracker",
@@ -145,7 +155,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Tracker shows 813 mg/kg and a posted cert link."
   },
   {
-    id: 13, rank: 13, brand: "Quattrociocchi 'Superbo'",
+    id: 14, rank: 14, brand: "Quattrociocchi 'Superbo'",
     nmrOtherPolyphenols: 800,
     origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$38.95", method: "Other", lab: "Widely cited value",
@@ -155,7 +165,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Needs correct brand link/COA."
   },
   {
-    id: 14, rank: 14, brand: "P.J. KABOS – Family Reserve Robust",
+    id: 15, rank: 15, brand: "P.J. KABOS – Family Reserve Robust",
     hplcPolyphenols: 750,
     origin: "Greece", harvestDate: "2024/25",
     price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "HPLC reported",
@@ -165,7 +175,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "'Daily shot' positioning."
   },
   {
-    id: 15, rank: 15, brand: "Oro del Desierto – Picual (Organic)",
+    id: 16, rank: 16, brand: "Oro del Desierto – Picual (Organic)",
     nmrOtherPolyphenols: 717,
     origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$32.00", method: "Other", lab: "Retailers cited",
@@ -175,7 +185,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Early-harvest organic Picual, Almería."
   },
   {
-    id: 16, rank: 16, brand: "Vallesur – Peruvian",
+    id: 17, rank: 17, brand: "Vallesur – Peruvian",
     nmrOtherPolyphenols: 688,
     origin: "Peru", harvestDate: "2024",
     price: "$$", priceAmount: "$28.00", method: "Other", lab: "Tracker listing",
@@ -185,7 +195,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Award-winning Tacna EVOO."
   },
   {
-    id: 17, rank: 17, brand: "Laudemio Frescobaldi (Tuscany)",
+    id: 18, rank: 18, brand: "Laudemio Frescobaldi (Tuscany)",
     nmrOtherPolyphenols: 675,
     origin: "Italy", harvestDate: "2024",
     price: "$$", priceAmount: "$42.00", method: "Other", lab: "Retailer-cited range",
@@ -195,7 +205,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Classic Tuscan PDO style."
   },
   {
-    id: 18, rank: 18, brand: "Citizens of Soil — Spanish",
+    id: 19, rank: 19, brand: "Citizens of Soil — Spanish",
     nmrOtherPolyphenols: 661,
     origin: "Spain", harvestDate: "Nov 2024",
     price: "$$", priceAmount: "$38.00", method: "Other", lab: "Independent lab",
@@ -205,7 +215,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Small co-op batches."
   },
   {
-    id: 19, rank: 19, brand: "Citizens of Soil — Tuscan 'Extra Rare'",
+    id: 20, rank: 20, brand: "Citizens of Soil — Tuscan 'Extra Rare'",
     nmrOtherPolyphenols: 655,
     origin: "Italy (Tuscany)", harvestDate: "Feb 2025",
     price: "$$", priceAmount: "$38.00", method: "Other", lab: "Independent lab",
@@ -215,7 +225,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Limited release."
   },
   {
-    id: 20, rank: 20, brand: "Morocco Gold",
+    id: 21, rank: 21, brand: "Morocco Gold",
     nmrOtherPolyphenols: 626,
     origin: "Morocco", harvestDate: "2024/25",
     price: "$$", priceAmount: "$35.00", method: "Other", lab: "Tracker listing",
@@ -225,7 +235,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Brand publicizes Htyr/20g."
   },
   {
-    id: 21, rank: 21, brand: "Venta del Barón (DO Priego)",
+    id: 22, rank: 22, brand: "Venta del Barón (DO Priego)",
     nmrOtherPolyphenols: 617,
     origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$36.00", method: "Other", lab: "Tracker listing",
@@ -235,7 +245,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "DO protected."
   },
   {
-    id: 22, rank: 22, brand: "Castillo de Canena – First Day Harvest Picual",
+    id: 23, rank: 23, brand: "Castillo de Canena – First Day Harvest Picual",
     nmrOtherPolyphenols: 611,
     origin: "Spain", harvestDate: "Late 2024",
     price: "$$", priceAmount: "$48.00", method: "Other", lab: "Retailer figure",
@@ -245,7 +255,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "'Primer Día de Cosecha'."
   },
   {
-    id: 23, rank: 23, brand: "Entimio – INTENSO",
+    id: 24, rank: 24, brand: "Entimio – INTENSO",
     nmrOtherPolyphenols: 601,
     origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$50.00", method: "Other", lab: "Brand batch analyses",
@@ -255,7 +265,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Certified Tuscan lots."
   },
   {
-    id: 24, rank: 24, brand: "Odysea 'Good For You' (Crete)",
+    id: 25, rank: 25, brand: "Odysea 'Good For You' (Crete)",
     nmrOtherPolyphenols: 573,
     origin: "Greece", harvestDate: "2024/25",
     price: "$", priceAmount: "$19.99", method: "Other", lab: "Brand posted",
@@ -265,7 +275,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "UK retailer SKU; link in prior list was to Kosterina (wrong)."
   },
   {
-    id: 25, rank: 25, brand: "Kosterina – Original Extra Virgin",
+    id: 26, rank: 26, brand: "Kosterina – Original Extra Virgin",
     nmrOtherPolyphenols: 573,
     origin: "Greece", harvestDate: "2024/25",
     price: "$", priceAmount: "$38.00", method: "Other", lab: "Brand FAQ/page",
@@ -275,7 +285,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "US DTC."
   },
   {
-    id: 26, rank: 26, brand: "True Tuscan (Olive Girl)",
+    id: 27, rank: 27, brand: "True Tuscan (Olive Girl)",
     nmrOtherPolyphenols: 550,
     origin: "Italy", harvestDate: "2024",
     price: "$$", priceAmount: "$42.00", method: "Other", lab: "Independent test",
@@ -285,7 +295,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Boutique producer."
   },
   {
-    id: 27, rank: 27, brand: "Laconiko Extra Virgin (Koroneiki)",
+    id: 28, rank: 28, brand: "Laconiko Extra Virgin (Koroneiki)",
     nmrOtherPolyphenols: 538,
     origin: "Greece", harvestDate: "Nov 2024–Jan 2025",
     price: "$", priceAmount: "$24.95", method: "qNMR", lab: "qNMR verified",
@@ -295,7 +305,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Great value w/ posted NMR."
   },
   {
-    id: 28, rank: 28, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
+    id: 29, rank: 29, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
     nmrOtherPolyphenols: 537,
     origin: "Spain (Málaga)", harvestDate: "2024/25",
     price: "$$", priceAmount: "€19.63", method: "Other", lab: "Retailer-stated",
@@ -305,7 +315,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "0.18% acidity; Demeter."
   },
   {
-    id: 29, rank: 29, brand: "Citizens of Soil — Greek (Peloponnese)",
+    id: 30, rank: 30, brand: "Citizens of Soil — Greek (Peloponnese)",
     nmrOtherPolyphenols: 526,
     origin: "Greece", harvestDate: "Dec 2024",
     price: "$", priceAmount: "$32.00", method: "Other", lab: "Retailer cites",
@@ -315,7 +325,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Small-batch organic."
   },
   {
-    id: 30, rank: 30, brand: "Entimio – ARDENTE",
+    id: 31, rank: 31, brand: "Entimio – ARDENTE",
     nmrOtherPolyphenols: 516,
     origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$45.00", method: "Other", lab: "Brand batch analyses",
@@ -325,7 +335,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Robust profile."
   },
   {
-    id: 31, rank: 31, brand: "P.J. KABOS – Family Reserve Organic (Medium)",
+    id: 32, rank: 32, brand: "P.J. KABOS – Family Reserve Organic (Medium)",
     hplcPolyphenols: 500,
     origin: "Greece", harvestDate: "Oct–Nov 2024",
     price: "$", priceAmount: "$34.83", method: "HPLC", lab: "Brand claims ≥500 mg/kg",
@@ -335,7 +345,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "USDA/EU organic."
   },
   {
-    id: 32, rank: 32, brand: "Blueprint (Bryan Johnson) 'Snake Oil' EVOO",
+    id: 33, rank: 33, brand: "Blueprint (Bryan Johnson) 'Snake Oil' EVOO",
     nmrOtherPolyphenols: 499,
     origin: "Portugal", harvestDate: "2024",
     price: "$$", priceAmount: "$39.00", method: "Other", lab: "Third-party verified",
@@ -345,7 +355,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "DTC & Amazon."
   },
   {
-    id: 33, rank: 33, brand: "The Governor – Premium Edition",
+    id: 34, rank: 34, brand: "The Governor – Premium Edition",
     nmrOtherPolyphenols: 390,
     origin: "Greece (Corfu)", harvestDate: "Nov–Dec 2024",
     price: "$", priceAmount: "€35.00", method: "Folin", lab: "Folin (not HPLC/qNMR)",
@@ -355,7 +365,7 @@ const OILS_DATA: OliveOil[] = [
     notes: "Centenarian trees; 0.17% acidity."
   },
   {
-    id: 34, rank: 34, brand: "Rincón de la Subbética – Hojiblanca (Organic)",
+    id: 35, rank: 35, brand: "Rincón de la Subbética – Hojiblanca (Organic)",
     nmrOtherPolyphenols: 356,
     origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$32.95", method: "Other", lab: "Retailer figure",
@@ -399,6 +409,21 @@ export default function HomePage() {
     return oil.hplcPolyphenols || oil.nmrOtherPolyphenols || 0
   }
 
+  // Helper function to get method badges for an oil
+  const getMethodBadges = (oil: OliveOil): string[] => {
+    const badges: string[] = []
+    if (oil.hplcPolyphenols && oil.nmrOtherPolyphenols) {
+      badges.push('Both')
+    } else if (oil.hplcPolyphenols) {
+      badges.push('HPLC')
+    } else if (oil.method.toLowerCase().includes('nmr') || oil.method.toLowerCase().includes('qnmr')) {
+      badges.push('NMR')
+    } else {
+      badges.push('Other')
+    }
+    return badges
+  }
+
   // Filter to only recent harvests for stats and display
   const recentOils = useMemo(() => OILS_DATA.filter(oil => isRecentHarvest(oil.harvestDate)), [])
 
@@ -421,7 +446,7 @@ export default function HomePage() {
         const matchesOrigin = filterOrigin === 'all' || oil.origin === filterOrigin
         const matchesSearch = oil.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
                             oil.notes.toLowerCase().includes(searchTerm.toLowerCase())
-        const matchesHPLC = !overallRankFilter || oil.method.toLowerCase().includes('hplc') || oil.method.toLowerCase().includes('nmr')
+        const matchesHPLC = !overallRankFilter || oil.hplcPolyphenols !== undefined
         return matchesOrigin && matchesSearch && matchesHPLC
       })
       .sort((a, b) => {
@@ -448,7 +473,7 @@ export default function HomePage() {
   const itemListStructuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Top 34 Highest Polyphenol Extra Virgin Olive Oils",
+    "name": "Top 35 Highest Polyphenol Extra Virgin Olive Oils",
     "description": "Lab-verified rankings of extra virgin olive oils by polyphenol content (HPLC & NMR testing)",
     "numberOfItems": OILS_DATA.length,
     "itemListElement": OILS_DATA.slice(0, 10).map((oil) => ({
@@ -686,7 +711,7 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-900/30 border border-green-700/50 rounded-lg">
                 <span className="text-green-400 font-bold">🏆 Overall Rank Filter Active</span>
                 <span className="text-gray-300 text-sm">|</span>
-                <span className="text-gray-300 text-xs">HPLC/NMR tested • 2024-2025 harvest • Sorted by polyphenols</span>
+                <span className="text-gray-300 text-xs">HPLC tested only • 2024-2025 harvest • Sorted by polyphenols</span>
                 <button
                   onClick={() => setOverallRankFilter(false)}
                   className="ml-2 text-gray-400 hover:text-white transition-colors"
@@ -711,14 +736,13 @@ export default function HomePage() {
                             ? 'text-green-400 font-extrabold'
                             : 'hover:text-green-400'
                         }`}
-                        title="Filter by HPLC/NMR tested oils from 2024-2025 harvest"
+                        title="Filter by HPLC tested oils from 2024-2025 harvest"
                       >
                         Overall Rank {overallRankFilter && '✓'}
                       </button>
                     </th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Brand</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">HPLC (mg/kg)</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">NMR/Other (mg/kg)</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Polyphenols (mg/kg)</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Origin</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Cultivar</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Harvest</th>
@@ -759,28 +783,29 @@ export default function HomePage() {
                           </a>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
-                          {oil.hplcPolyphenols ? (
+                          <div className="flex flex-col gap-1">
                             <div className="flex items-baseline gap-1">
                               <span className="text-2xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
-                                {oil.hplcPolyphenols}
+                                {getMaxPolyphenols(oil)}
                               </span>
                               <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
                             </div>
-                          ) : (
-                            <span className="text-sm text-gray-600">—</span>
-                          )}
-                        </td>
-                        <td className="px-3 py-4 whitespace-nowrap">
-                          {oil.nmrOtherPolyphenols ? (
-                            <div className="flex items-baseline gap-1">
-                              <span className="text-2xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
-                                {oil.nmrOtherPolyphenols}
-                              </span>
-                              <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
+                            <div className="flex gap-1 flex-wrap">
+                              {getMethodBadges(oil).map((badge) => (
+                                <span
+                                  key={badge}
+                                  className={`text-[10px] font-semibold px-1.5 py-0.5 rounded ${
+                                    badge === 'HPLC' ? 'bg-blue-900/40 text-blue-300 border border-blue-700/50' :
+                                    badge === 'NMR' ? 'bg-purple-900/40 text-purple-300 border border-purple-700/50' :
+                                    badge === 'Both' ? 'bg-green-900/40 text-green-300 border border-green-700/50' :
+                                    'bg-orange-900/40 text-orange-300 border border-orange-700/50'
+                                  }`}
+                                >
+                                  {badge}
+                                </span>
+                              ))}
                             </div>
-                          ) : (
-                            <span className="text-sm text-gray-600">—</span>
-                          )}
+                          </div>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
                           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-900/40 text-blue-300 border border-blue-700/50">
