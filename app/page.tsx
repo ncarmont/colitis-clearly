@@ -541,7 +541,7 @@ export default function HomePage() {
     }))
   }
 
-  const initialDisplayCount = isMobile ? 5 : 10
+  const initialDisplayCount = 5
   const oilsToDisplay = showAll
     ? filteredAndSortedOils
     : filteredAndSortedOils.slice(0, initialDisplayCount)
@@ -605,26 +605,26 @@ export default function HomePage() {
           </svg>
         </Link>
 
-        <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16">
-          <div className="text-center space-y-5 md:space-y-6">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-16">
+          <div className="text-center space-y-3 md:space-y-6">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20 text-xs md:text-sm font-medium animate-fade-in">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
               <span className="text-white">Updated 2025</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-white animate-slide-up">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-white animate-slide-up">
               Best Extra Virgin
-              <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
+              <span className="block mt-1 md:mt-2 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
                 Olive Oils Ranked
               </span>
             </h1>
 
-            <p className="text-lg md:text-2xl text-green-50 max-w-2xl md:max-w-3xl mx-auto font-light animate-fade-in-delay">
+            <p className="text-base md:text-2xl text-green-50 max-w-2xl md:max-w-3xl mx-auto font-light animate-fade-in-delay">
               Olive oil is our culture. Our personal mission is to rank the scientifically healthiest olive oils on the planet.
             </p>
 
             {/* Health Benefit Pills */}
-            <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-6 animate-fade-in-delay">
+            <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-3 md:mt-6 animate-fade-in-delay">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
                 <span className="text-green-400 text-xs md:text-sm">❤️</span>
                 <span className="text-xs md:text-sm text-green-100 font-medium">31% Lower CVD Risk</span>
@@ -640,7 +640,7 @@ export default function HomePage() {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-6 md:mt-8 animate-fade-in-delay-2">
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-3 md:mt-8 animate-fade-in-delay-2">
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-white">{stats.totalOils}</div>
                 <div className="text-xs md:text-sm text-green-200">Lab-Verified EVOOs</div>
@@ -723,6 +723,31 @@ export default function HomePage() {
       {/* Rankings Table */}
       <section className="py-8 md:py-12 px-4 md:px-6 w-full">
         <div className="max-w-7xl mx-auto w-full">
+          {/* Freshness & Ranking Guide */}
+          <div className="mb-6 text-center">
+            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-xl px-5 py-4 max-w-4xl backdrop-blur-sm shadow-lg">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm">
+                <div className="flex-1 text-left">
+                  <p className="text-gray-300 leading-relaxed">
+                    <span className="text-green-400 font-semibold">What matters most:</span> Polyphenol content above <span className="font-bold text-green-300">250 mg/kg</span> + freshness.
+                    Oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>. Early harvest is key.
+                  </p>
+                </div>
+                <div className="hidden md:block w-px h-12 bg-slate-600/50"></div>
+                <div className="text-center">
+                  <p className="text-xs text-gray-400 mb-1.5">Fresh Now (Oct 2025)</p>
+                  <div className="flex items-center gap-2 text-base">
+                    <span>🇬🇷</span>
+                    <span>🇪🇸</span>
+                    <span>🇮🇹</span>
+                    <span>🇯🇴</span>
+                    <span className="text-green-400 font-bold text-xs">← Northern Harvest</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* High Polyphenol Note */}
           <div className="mb-6 text-center">
             <p className="text-sm md:text-base text-gray-300 bg-green-900/20 border border-green-700/30 rounded-lg px-4 py-3 inline-block max-w-3xl">
@@ -814,8 +839,8 @@ export default function HomePage() {
                             {oil.brand}
                           </a>
                         </td>
-                        <td className="px-3 py-4 whitespace-nowrap">
-                          <div className="flex flex-col gap-1">
+                        <td className="px-3 py-4">
+                          <div className="flex items-center gap-2 flex-wrap">
                             <div className="flex items-baseline gap-1">
                               <span className="text-2xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
                                 {getMaxPolyphenols(oil)}
@@ -826,7 +851,7 @@ export default function HomePage() {
                               {getMethodBadges(oil).map((badge) => (
                                 <span
                                   key={badge}
-                                  className={`text-[10px] font-semibold px-1.5 py-0.5 rounded ${
+                                  className={`text-[10px] font-semibold px-2 py-1 rounded-full ${
                                     badge === 'HPLC' ? 'bg-blue-900/40 text-blue-300 border border-blue-700/50' :
                                     badge === 'NMR' ? 'bg-purple-900/40 text-purple-300 border border-purple-700/50' :
                                     badge === 'Both' ? 'bg-green-900/40 text-green-300 border border-green-700/50' :
