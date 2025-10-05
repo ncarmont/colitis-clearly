@@ -43,6 +43,22 @@ export default function RankingsPage() {
       return a.rank - b.rank
     })
 
+  const currentMonth = new Date().getMonth()
+  const isNorthernSeason = currentMonth >= 9 || currentMonth <= 2
+  const hemisphereAdvice = isNorthernSeason
+    ? {
+        label: 'Northern harvest window',
+        detail: 'Oct–Mar',
+        flags: '🇬🇷 🇪🇸 🇮🇹',
+        note: 'Lean north right now for just-pressed batches.'
+      }
+    : {
+        label: 'Southern harvest window',
+        detail: 'Apr–Sep',
+        flags: '🇨🇱 🇦🇺 🇿🇦',
+        note: 'Switch south to keep bottles under 90 days old.'
+      }
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-green-50 to-white">
       {/* Header */}
@@ -101,6 +117,18 @@ export default function RankingsPage() {
       {/* Rankings Table */}
       <section className="py-12 px-4">
         <div className="max-w-6xl mx-auto">
+          <div className="mb-6 flex flex-col gap-3 rounded-2xl border border-green-100 bg-white/80 p-4 text-sm text-gray-700 shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <span className="font-semibold text-green-700">What drives these rankings</span>
+              <span className="inline-flex items-center gap-2 rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
+                {hemisphereAdvice.flags} {hemisphereAdvice.label} · {hemisphereAdvice.detail}
+              </span>
+            </div>
+            <p>
+              We highlight early-harvest, freshly bottled EVOOs with verified phenolics above the 250&nbsp;mg/kg threshold (EFSA standard) because freshness keeps polyphenols potent all year.
+            </p>
+            <p className="text-xs text-gray-500">{hemisphereAdvice.note}</p>
+          </div>
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
