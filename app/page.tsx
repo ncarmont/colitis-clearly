@@ -748,20 +748,24 @@ export default function HomePage() {
       <section className="py-8 md:py-12 px-4 md:px-6 w-full">
         <div className="max-w-7xl mx-auto w-full">
           {/* Freshness & Ranking Guide */}
-          <div className="mb-6 text-center px-2">
-            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-xl px-4 md:px-5 py-4 max-w-4xl backdrop-blur-sm shadow-lg w-full md:w-auto">
-              <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-3">
-                <span className="text-green-400 font-semibold">How does it work?</span> Polyphenols above <span className="font-bold text-green-300">250 mg/kg</span> + freshness are key.
-                Oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>. Early harvest matters most.
+          <div className="mb-4 text-center px-2">
+            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-xl px-4 md:px-5 py-3 max-w-4xl backdrop-blur-sm shadow-lg w-full md:w-auto">
+              <p className="text-xs md:text-sm text-gray-300 leading-relaxed">
+                <span className="text-green-400 font-semibold">How it works:</span> Polyphenols above <span className="font-bold text-green-300">250 mg/kg</span> + freshness are key.
+                Oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>. Early harvest matters.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-xs pt-3 border-t border-slate-600/30">
-                <span className="text-gray-400">Fresh now ({currentMonth}):</span>
-                <div className="flex items-center gap-1.5">
-                  {freshHarvest.flags.map((flag, i) => <span key={i}>{flag}</span>)}
-                  <span className="text-green-400 font-semibold ml-1">{freshHarvest.region}</span>
-                </div>
-              </div>
             </div>
+          </div>
+
+          {/* Fresh Harvest Indicator */}
+          <div className="mb-6 text-center px-2">
+            <p className="text-xs text-gray-400 mb-2">Freshest now ({currentMonth}):</p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              {freshHarvest.flags.map((flag, i) => (
+                <span key={i} className="text-2xl">{flag}</span>
+              ))}
+            </div>
+            <p className="text-xs text-green-400 font-semibold mt-2">{freshHarvest.region}</p>
           </div>
 
           {/* Affiliate Disclosure */}
