@@ -918,13 +918,12 @@ export default function HomePage() {
                               <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
                             </div>
                             <div className="flex gap-1 flex-wrap">
-                              {getMethodBadges(oil).map((badge) => (
+                              {getMethodBadges(oil).map((badge, badgeIndex) => (
                                 <span
-                                  key={badge}
+                                  key={`${badge}-${badgeIndex}`}
                                   className={`text-[10px] font-semibold px-2 py-1 rounded-full ${
                                     badge === 'HPLC' ? 'bg-blue-900/40 text-blue-300 border border-blue-700/50' :
                                     badge === 'NMR' ? 'bg-purple-900/40 text-purple-300 border border-purple-700/50' :
-                                    badge === 'Both' ? 'bg-green-900/40 text-green-300 border border-green-700/50' :
                                     'bg-orange-900/40 text-orange-300 border border-orange-700/50'
                                   }`}
                                 >
