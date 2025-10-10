@@ -397,6 +397,8 @@ export default function HomePage() {
   const [isMobile, setIsMobile] = useState(() =>
     typeof window !== 'undefined' ? window.innerWidth < 768 : false
   )
+  const [instagramFollowers, setInstagramFollowers] = useState<number | null>(null)
+  const [totalVisitors, setTotalVisitors] = useState<number | null>(null)
 
   useEffect(() => {
     const updateIsMobile = () => setIsMobile(window.innerWidth < 768)
@@ -404,6 +406,29 @@ export default function HomePage() {
     window.addEventListener('resize', updateIsMobile)
     return () => window.removeEventListener('resize', updateIsMobile)
   }, [])
+
+  useEffect(() => {
+    // Fetch Instagram follower count
+    fetch('/api/instagram-followers')
+      .then(res => res.json())
+      .then(data => {
+        if (data.followers > 0) {
+          setInstagramFollowers(data.followers)
+        }
+      })
+      .catch(err => console.error('Failed to fetch Instagram followers:', err))
+
+    // Fetch Google Analytics visitor count
+    fetch('/api/analytics-visitors')
+      .then(res => res.json())
+      .then(data => {
+        if (data.totalUsers > 0) {
+          setTotalVisitors(data.totalUsers)
+        }
+      })
+      .catch(err => console.error('Failed to fetch analytics data:', err))
+  }, [])
+
   const [overallRankFilter, setOverallRankFilter] = useState(false)
 
   // Get current month for fresh harvest indicator
@@ -447,7 +472,8 @@ export default function HomePage() {
   const getMethodBadges = (oil: OliveOil): string[] => {
     const badges: string[] = []
     if (oil.hplcPolyphenols && oil.nmrOtherPolyphenols) {
-      badges.push('Both')
+      badges.push('HPLC')
+      badges.push('NMR')
     } else if (oil.hplcPolyphenols) {
       badges.push('HPLC')
     } else if (oil.method.toLowerCase().includes('nmr') || oil.method.toLowerCase().includes('qnmr')) {
@@ -612,22 +638,53 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4UzAgOC4wNiAwIDE4YzAgNC40MiAxLjYgOC40OCA0LjI0IDExLjZDMi4xMiAzMi45MiAwIDM5LjEyIDAgNDZoMTJjMC02LjYzIDUuMzctMTIgMTItMTJzMTIgNS4zNyAxMiAxMmgxMmMwLTYuODgtMi4xMi0xMy4wOC00LjI0LTE2LjRDNTQuNCAyNi40OCA1NiAyMi40MiA1NiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         </div>
 
-        <Link
-          href="https://www.instagram.com/bestoliveoilranked.com_?igsh=MW81OXFkZW9uNzBnNg%3D%3D&utm_source=qr"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Best Olive Oils on Instagram"
-          className="absolute top-4 right-4 md:top-6 md:right-6 z-30 inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 border border-white/30 text-white transition-colors duration-200 hover:bg-white/30"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-5 h-5"
+        {/* Top Right Stats */}
+        <div className="absolute top-4 right-4 md:top-6 md:right-6 z-30 flex items-center gap-3">
+          {/* Total Visitors Counter */}
+          {totalVisitors !== null && totalVisitors > 0 && (
+            <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <div className="flex flex-col items-start">
+                <span className="text-xs font-bold text-white">
+                  {totalVisitors >= 1000
+                    ? `${(totalVisitors / 1000).toFixed(1)}K`
+                    : totalVisitors.toLocaleString()}
+                </span>
+                <span className="text-[10px] text-white/80">visitors</span>
+              </div>
+            </div>
+          )}
+
+          {/* Instagram Link */}
+          <Link
+            href="https://www.instagram.com/bestoliveoilranked.com_?igsh=MW81OXFkZW9uNzBnNg%3D%3D&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Best Olive Oils on Instagram"
+            className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white transition-all duration-200 hover:bg-white/30 hover:scale-105"
           >
-            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2.2a2.8 2.8 0 110 5.6 2.8 2.8 0 010-5.6zM17.5 5.5a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z" />
-          </svg>
-        </Link>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-5 h-5"
+            >
+              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2.2a2.8 2.8 0 110 5.6 2.8 2.8 0 010-5.6zM17.5 5.5a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z" />
+            </svg>
+            {instagramFollowers !== null && instagramFollowers > 0 && (
+              <div className="flex flex-col items-start">
+                <span className="text-xs font-bold text-white">
+                  {instagramFollowers >= 1000
+                    ? `${(instagramFollowers / 1000).toFixed(1)}K`
+                    : instagramFollowers.toLocaleString()}
+                </span>
+                <span className="text-[10px] text-white/80">followers</span>
+              </div>
+            )}
+          </Link>
+        </div>
 
         <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-16">
           <div className="text-center space-y-3 md:space-y-6">
@@ -751,8 +808,8 @@ export default function HomePage() {
           <div className="mb-4 text-center px-2">
             <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-xl px-4 md:px-5 py-3 max-w-4xl backdrop-blur-sm shadow-lg w-full md:w-auto">
               <p className="text-xs md:text-sm text-gray-300 leading-relaxed">
-                <span className="text-green-400 font-semibold">How it works:</span> Polyphenols above <span className="font-bold text-green-300">250 mg/kg</span> + freshness are key.
-                Oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>. Early harvest matters.
+                <span className="text-green-400 font-semibold">How it works:</span> High polyphenol oils (+250 mg/kg) offer superior health benefits.
+                Freshness is critical—oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>. Early harvest matters most.
               </p>
             </div>
           </div>
