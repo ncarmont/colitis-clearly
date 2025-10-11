@@ -716,55 +716,55 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-12">
-          <div className="text-center space-y-2 md:space-y-4">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20 text-xs md:text-sm font-medium animate-fade-in">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+        <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-6">
+          <div className="text-center space-y-1.5 md:space-y-3">
+            <div className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20 text-[10px] md:text-xs font-medium animate-fade-in">
+              <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
               <span className="text-white">Updated 2025</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-white animate-slide-up">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white animate-slide-up leading-tight">
               Best Extra Virgin
-              <span className="block mt-1 md:mt-2 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
+              <span className="block mt-0.5 md:mt-1 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
                 Olive Oils Ranked
               </span>
             </h1>
 
-            <p className="text-base md:text-2xl text-green-50 max-w-2xl md:max-w-3xl mx-auto font-light animate-fade-in-delay">
-              Olive oil is our culture. Our personal mission is to rank the scientifically healthiest olive oils on the planet.
+            <p className="text-xs md:text-base text-green-50 max-w-xl md:max-w-2xl mx-auto font-light animate-fade-in-delay">
+              Science-backed rankings of the highest polyphenol olive oils on the planet.
             </p>
 
-            {/* Health Benefit Pills */}
-            <div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-3 md:mt-6 animate-fade-in-delay">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
-                <span className="text-green-400 text-xs md:text-sm">❤️</span>
-                <span className="text-xs md:text-sm text-green-100 font-medium">31% Lower CVD Risk</span>
+            {/* Health Benefit Pills - Condensed */}
+            <div className="flex flex-wrap justify-center gap-1.5 md:gap-2 mt-2 md:mt-3 animate-fade-in-delay">
+              <div className="inline-flex items-center gap-1 px-2 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
+                <span className="text-green-400 text-[10px] md:text-xs">❤️</span>
+                <span className="text-[10px] md:text-xs text-green-100 font-medium">31% Lower CVD</span>
               </div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
-                <span className="text-purple-400 text-xs md:text-sm">💪</span>
-                <span className="text-xs md:text-sm text-purple-100 font-medium">Anti-Inflammatory</span>
+              <div className="inline-flex items-center gap-1 px-2 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
+                <span className="text-purple-400 text-[10px] md:text-xs">💪</span>
+                <span className="text-[10px] md:text-xs text-purple-100 font-medium">Anti-Inflammatory</span>
               </div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
-                <span className="text-orange-400 text-xs md:text-sm">🧬</span>
-                <span className="text-xs md:text-sm text-orange-100 font-medium">Blue Zone Longevity (PREDIMED Study)</span>
+              <div className="inline-flex items-center gap-1 px-2 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
+                <span className="text-orange-400 text-[10px] md:text-xs">🧬</span>
+                <span className="text-[10px] md:text-xs text-orange-100 font-medium">Longevity</span>
               </div>
             </div>
 
-            {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-3 md:mt-8 animate-fade-in-delay-2">
+            {/* Stats - More Compact */}
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-2 md:mt-4 animate-fade-in-delay-2">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white">{stats.totalOils}</div>
-                <div className="text-xs md:text-sm text-green-200">Lab-Verified EVOOs</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">{stats.totalOils}</div>
+                <div className="text-[10px] md:text-xs text-green-200">Lab-Verified</div>
               </div>
               <div className="hidden sm:block w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white">{stats.countries}</div>
-                <div className="text-xs md:text-sm text-green-200">Countries</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">{stats.countries}</div>
+                <div className="text-[10px] md:text-xs text-green-200">Countries</div>
               </div>
               <div className="hidden sm:block w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white">{stats.maxPolyphenols}</div>
-                <div className="text-xs md:text-sm text-green-200">Max mg/kg</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">{stats.maxPolyphenols}</div>
+                <div className="text-[10px] md:text-xs text-green-200">Max mg/kg</div>
               </div>
             </div>
           </div>
@@ -775,7 +775,7 @@ export default function HomePage() {
 
       {/* Filters Section */}
       <section className="sticky top-0 z-20 bg-slate-900/95 backdrop-blur-xl border-b border-gray-800/50 shadow-xl">
-        <div className="max-w-7xl mx-auto px-6 py-5">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-2.5 md:py-3">
           <div className="flex flex-wrap gap-4 items-center justify-between">
             <div className="flex gap-3 items-center flex-wrap">
               {/* Search */}
@@ -832,32 +832,32 @@ export default function HomePage() {
       </section>
 
       {/* Rankings Table */}
-      <section className="py-8 md:py-12 px-4 md:px-6 w-full">
+      <section className="py-3 md:py-6 px-4 md:px-6 w-full">
         <div className="max-w-7xl mx-auto w-full">
-          {/* Freshness & Ranking Guide */}
-          <div className="mb-4 text-center px-2">
-            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-xl px-4 md:px-5 py-3 max-w-4xl backdrop-blur-sm shadow-lg w-full md:w-auto">
-              <p className="text-xs md:text-sm text-gray-300 leading-relaxed">
+          {/* Freshness & Ranking Guide - Condensed */}
+          <div className="mb-2 md:mb-3 text-center px-2">
+            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-lg px-3 md:px-4 py-1.5 md:py-2 max-w-4xl backdrop-blur-sm shadow-lg w-full md:w-auto">
+              <p className="text-[10px] md:text-xs text-gray-300 leading-snug">
                 <span className="text-green-400 font-semibold">How it works:</span> High polyphenol oils (+250 mg/kg) offer superior health benefits.
                 Freshness is critical—oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>. Early harvest matters most.
               </p>
             </div>
           </div>
 
-          {/* Fresh Harvest Indicator */}
-          <div className="mb-6 text-center px-2">
-            <p className="text-xs text-gray-400 mb-2">Freshest now ({currentMonth}):</p>
-            <div className="flex flex-wrap items-center justify-center gap-3">
+          {/* Fresh Harvest Indicator - Condensed */}
+          <div className="mb-3 md:mb-4 text-center px-2">
+            <p className="text-[10px] text-gray-400 mb-1">Freshest now ({currentMonth}):</p>
+            <div className="flex flex-wrap items-center justify-center gap-2">
               {freshHarvest.flags.map((flag, i) => (
-                <span key={i} className="text-2xl">{flag}</span>
+                <span key={i} className="text-lg md:text-xl">{flag}</span>
               ))}
             </div>
-            <p className="text-xs text-green-400 font-semibold mt-2">{freshHarvest.region}</p>
+            <p className="text-[10px] text-green-400 font-semibold mt-1">{freshHarvest.region}</p>
           </div>
 
           {/* Affiliate Disclosure */}
-          <div className="mb-4 text-center">
-            <p className="text-xs text-gray-500 italic max-w-xl mx-auto">
+          <div className="mb-2 md:mb-3 text-center">
+            <p className="text-[10px] text-gray-500 italic max-w-xl mx-auto">
               Contains affiliate links. Rankings are independent.
             </p>
           </div>
