@@ -481,7 +481,6 @@ export default function HomePage() {
   }
 
   const currentMonth = getCurrentMonthName()
-  const freshHarvest = getFreshHarvestInfo()
 
   // Helper function to check if harvest date is 2024 or 2025
   const isRecentHarvest = (harvestDate: string): boolean => {
@@ -514,6 +513,9 @@ export default function HomePage() {
 
   // Filter to only recent harvests for stats and display
   const recentOils = useMemo(() => OILS_DATA.filter(oil => isRecentHarvest(oil.harvestDate)), [])
+
+  // Calculate fresh harvest info based on actual table data
+  const freshHarvest = useMemo(() => getFreshHarvestInfo(), [recentOils])
 
   const origins = useMemo(() => ['all', ...Array.from(new Set(recentOils.map(oil => oil.origin)))], [recentOils])
 
