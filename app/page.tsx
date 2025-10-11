@@ -723,10 +723,10 @@ export default function HomePage() {
               <span className="text-white">Updated 2025</span>
             </div>
 
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white animate-slide-up leading-tight">
-              Best Extra Virgin
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white animate-slide-up leading-tight max-w-5xl mx-auto">
+              Best Extra Virgin Olive Oils Ranked
               <span className="block mt-0.5 md:mt-1 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
-                Olive Oils Ranked
+                Globally
               </span>
             </h1>
 
@@ -775,9 +775,9 @@ export default function HomePage() {
 
       {/* Filters Section */}
       <section className="sticky top-0 z-20 bg-slate-900/95 backdrop-blur-xl border-b border-gray-800/50 shadow-xl">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-2.5 md:py-3">
-          <div className="flex flex-wrap gap-4 items-center justify-between">
-            <div className="flex gap-3 items-center flex-wrap">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-1.5 md:py-2">
+          <div className="flex flex-wrap gap-2 md:gap-3 items-center justify-between">
+            <div className="flex gap-2 items-center flex-wrap">
               {/* Search */}
               <div className="relative">
                 <input
@@ -785,20 +785,20 @@ export default function HomePage() {
                   placeholder="Search brands..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="pl-10 pr-4 py-2.5 w-64 bg-slate-800/50 border border-gray-700 rounded-xl text-sm font-medium text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all placeholder:text-gray-500"
+                  className="pl-8 pr-3 py-1.5 md:py-2 w-48 md:w-64 bg-slate-800/50 border border-gray-700 rounded-lg text-xs md:text-sm font-medium text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all placeholder:text-gray-500"
                 />
-                <svg className="absolute left-3 top-3 w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="absolute left-2.5 top-2 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
 
               {/* Origin Filter */}
-              <div className="flex items-center gap-2">
-                <label className="text-sm font-semibold text-gray-300">Origin:</label>
+              <div className="flex items-center gap-1 md:gap-1.5">
+                <label className="text-xs md:text-sm font-semibold text-gray-300 hidden md:inline">Origin:</label>
                 <select
                   value={filterOrigin}
                   onChange={(e) => setFilterOrigin(e.target.value)}
-                  className="pl-4 pr-10 py-2.5 bg-slate-800/50 border border-gray-700 rounded-xl text-sm font-medium text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all cursor-pointer hover:border-gray-600"
+                  className="pl-2 md:pl-3 pr-6 md:pr-8 py-1.5 md:py-2 bg-slate-800/50 border border-gray-700 rounded-lg text-xs md:text-sm font-medium text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all cursor-pointer hover:border-gray-600"
                 >
                   {origins.map(origin => (
                     <option key={origin} value={origin} className="bg-slate-800">
@@ -809,12 +809,12 @@ export default function HomePage() {
               </div>
 
               {/* Sort */}
-              <div className="flex items-center gap-2">
-                <label className="text-sm font-semibold text-gray-300">Sort:</label>
+              <div className="flex items-center gap-1 md:gap-1.5">
+                <label className="text-xs md:text-sm font-semibold text-gray-300 hidden md:inline">Sort:</label>
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as 'rank' | 'polyphenols')}
-                  className="pl-4 pr-10 py-2.5 bg-slate-800/50 border border-gray-700 rounded-xl text-sm font-medium text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all cursor-pointer hover:border-gray-600"
+                  className="pl-2 md:pl-3 pr-6 md:pr-8 py-1.5 md:py-2 bg-slate-800/50 border border-gray-700 rounded-lg text-xs md:text-sm font-medium text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all cursor-pointer hover:border-gray-600"
                 >
                   <option value="rank" className="bg-slate-800">Overall Rank</option>
                   <option value="polyphenols" className="bg-slate-800">Polyphenol Content</option>
@@ -822,10 +822,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="flex items-center gap-2 text-sm px-4 py-2 bg-green-900/30 rounded-xl border border-green-700/50">
-              <span className="text-gray-400">Showing</span>
-              <span className="font-bold text-green-400 text-lg">{filteredAndSortedOils.length}</span>
-              <span className="text-gray-400">of {OILS_DATA.length}</span>
+            <div className="flex items-center gap-1.5 text-xs px-2 md:px-3 py-1 md:py-1.5 bg-green-900/30 rounded-lg border border-green-700/50">
+              <span className="text-gray-400 text-[10px] md:text-xs">Showing</span>
+              <span className="font-bold text-green-400 text-sm md:text-base">{filteredAndSortedOils.length}</span>
+              <span className="text-gray-400 text-[10px] md:text-xs">of {OILS_DATA.length}</span>
             </div>
           </div>
         </div>
