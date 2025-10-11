@@ -639,48 +639,48 @@ export default function HomePage() {
         </div>
 
         {/* Top Right Stats */}
-        <div className="absolute top-4 right-4 md:top-6 md:right-6 z-30 flex items-center gap-3">
+        <div className="absolute top-4 right-4 md:top-6 md:right-6 z-30 flex items-center gap-2 md:gap-3">
           {/* Total Visitors Counter */}
           {totalVisitors !== null && totalVisitors > 0 && (
-            <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="inline-flex items-center gap-1.5 md:gap-2 px-2 md:px-3 py-1.5 md:py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white">
+              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
               <div className="flex flex-col items-start">
-                <span className="text-xs font-bold text-white">
+                <span className="text-[10px] md:text-xs font-bold text-white">
                   {totalVisitors >= 1000
                     ? `${(totalVisitors / 1000).toFixed(1)}K`
                     : totalVisitors.toLocaleString()}
                 </span>
-                <span className="text-[10px] text-white/80">visitors</span>
+                <span className="text-[8px] md:text-[10px] text-white/80 leading-tight">visitors</span>
               </div>
             </div>
           )}
 
-          {/* Instagram Link */}
+          {/* Instagram Link - Always show */}
           <Link
             href="https://www.instagram.com/bestoliveoilranked.com_?igsh=MW81OXFkZW9uNzBnNg%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Best Olive Oils on Instagram"
-            className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white transition-all duration-200 hover:bg-white/30 hover:scale-105"
+            className="inline-flex items-center gap-1.5 md:gap-2 px-2 md:px-3 py-1.5 md:py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 backdrop-blur-sm border border-white/30 text-white transition-all duration-200 hover:from-purple-600 hover:to-pink-600 hover:scale-105 shadow-lg"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-5 h-5"
+              className="w-4 h-4 md:w-5 md:h-5"
             >
               <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2.2a2.8 2.8 0 110 5.6 2.8 2.8 0 010-5.6zM17.5 5.5a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z" />
             </svg>
             {instagramFollowers !== null && instagramFollowers > 0 && (
               <div className="flex flex-col items-start">
-                <span className="text-xs font-bold text-white">
+                <span className="text-[10px] md:text-xs font-bold text-white">
                   {instagramFollowers >= 1000
                     ? `${(instagramFollowers / 1000).toFixed(1)}K`
                     : instagramFollowers.toLocaleString()}
                 </span>
-                <span className="text-[10px] text-white/80">followers</span>
+                <span className="text-[8px] md:text-[10px] text-white/90 leading-tight">followers</span>
               </div>
             )}
           </Link>
