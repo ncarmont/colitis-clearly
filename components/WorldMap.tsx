@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import dynamic from 'next/dynamic'
 import 'leaflet/dist/leaflet.css'
 
@@ -130,10 +130,100 @@ const MAP_LOCATIONS: MapLocation[] = [
 
 type VisualizationMode = 'peak' | 'average' | 'count'
 
-export default function WorldMap() {
+type OilData = {
+  brand: string
+  hplcPolyphenols?: number
+  nmrOtherPolyphenols?: number
+  origin: string
+  cultivar: string
+}
+
+type WorldMapProps = {
+  oils?: OilData[]
+}
+
+// Country coordinates mapping
+const COUNTRY_COORDS: Record<string, { coords: [number, number], flag: string, tagline: string }> = {
+  'Greece': { coords: [39.0742, 21.8243], flag: '🇬🇷', tagline: 'Koroneiki Capital' },
+  'Greece (Corfu)': { coords: [39.6243, 19.9217], flag: '🇬🇷', tagline: 'Corfu Premium' },
+  'Greece (South)': { coords: [37.0742, 21.8243], flag: '🇬🇷', tagline: 'Southern Excellence' },
+  'Jordan': { coords: [30.5852, 36.2384], flag: '🇯🇴', tagline: 'Plateau Premium' },
+  'Spain': { coords: [40.4637, -3.7492], flag: '🇪🇸', tagline: 'Picual Power' },
+  'Spain (Málaga)': { coords: [36.7213, -4.4214], flag: '🇪🇸', tagline: 'Andalusian Excellence' },
+  'Italy': { coords: [43.7711, 11.2486], flag: '🇮🇹', tagline: 'Tuscan Tradition' },
+  'Italy (Puglia)': { coords: [40.6431, 17.5826], flag: '🇮🇹', tagline: 'Puglia Premium' },
+  'Italy (Tuscany)': { coords: [43.7711, 11.2486], flag: '🇮🇹', tagline: 'Tuscan Heritage' },
+  'Peru': { coords: [-9.1900, -75.0152], flag: '🇵🇪', tagline: 'South American Star' },
+  'Portugal': { coords: [39.3999, -8.2245], flag: '🇵🇹', tagline: 'Atlantic Premium' },
+  'Morocco': { coords: [31.7917, -7.0926], flag: '🇲🇦', tagline: 'North African Gold' },
+}
+
+export default function WorldMap({ oils = [] }: WorldMapProps) {
   const [selectedLocation, setSelectedLocation] = useState<MapLocation | null>(null)
   const [isMounted, setIsMounted] = useState(false)
   const [visualMode, setVisualMode] = useState<VisualizationMode>('peak')
+
+  // Generate map locations from oil data dynamically
+  const mapLocations = useMemo(() => {
+    if (oils.length === 0) return MAP_LOCATIONS // Fallback to hardcoded data
+
+    // Group oils by origin country
+    const oilsByCountry = oils.reduce((acc, oil) => {
+      const getMaxPolyphenols = (oil: OilData): number => {
+        if (oil.hplcPolyphenols && oil.nmrOtherPolyphenols) {
+          return Math.max(oil.hplcPolyphenols, oil.nmrOtherPolyphenols)
+        }
+        return oil.hplcPolyphenols || oil.nmrOtherPolyphenols || 0
+      }
+
+      const origin = oil.origin
+      if (!acc[origin]) {
+        acc[origin] = []
+      }
+      acc[origin].push({
+        brand: oil.brand,
+        polyphenols: getMaxPolyphenols(oil),
+        cultivar: oil.cultivar
+      })
+      return acc
+    }, {} as Record<string, Array<{ brand: string, polyphenols: number, cultivar: string }>>)
+
+    // Transform into MapLocation format
+    return Object.entries(oilsByCountry)
+      .map(([country, countryOils]) => {
+        const coordData = COUNTRY_COORDS[country]
+        if (!coordData) return null // Skip countries without coordinates
+
+        // Sort oils by polyphenols descending
+        const sortedOils = countryOils.sort((a, b) => b.polyphenols - a.polyphenols)
+
+        // Get peak polyphenols
+        const peakPolyphenols = sortedOils[0]?.polyphenols || 0
+
+        // Determine color based on peak
+        let color = '#22c55e' // green
+        if (peakPolyphenols >= 1400) color = '#22c55e'
+        else if (peakPolyphenols >= 1000) color = '#84cc16'
+        else if (peakPolyphenols >= 700) color = '#eab308'
+        else if (peakPolyphenols >= 500) color = '#f59e0b'
+        else color = '#ef4444'
+
+        // Get base country name (remove parentheses)
+        const baseName = country.includes('(') ? country.split('(')[0].trim() : country
+
+        return {
+          name: baseName,
+          country: country,
+          flag: coordData.flag,
+          coordinates: coordData.coords,
+          peakPolyphenols,
+          color,
+          tagline: coordData.tagline,
+          oils: sortedOils
+        }
+      })
+      .filter(Boolean) as MapLocation[]
+  }, [oils])
 
   useEffect(() => {
     setIsMounted(true)
@@ -160,11 +250,11 @@ export default function WorldMap() {
   const getMaxMetric = (): number => {
     switch (visualMode) {
       case 'peak':
-        return Math.max(...MAP_LOCATIONS.map(l => l.peakPolyphenols))
+        return Math.max(...mapLocations.map(l => l.peakPolyphenols))
       case 'average':
-        return Math.max(...MAP_LOCATIONS.map(l => getTop5Average(l)))
+        return Math.max(...mapLocations.map(l => getTop5Average(l)))
       case 'count':
-        return Math.max(...MAP_LOCATIONS.map(l => l.oils.length))
+        return Math.max(...mapLocations.map(l => l.oils.length))
     }
   }
 
@@ -275,7 +365,7 @@ export default function WorldMap() {
             />
 
             {/* Location markers with heatmap effect */}
-            {MAP_LOCATIONS.map((location) => {
+            {mapLocations.map((location) => {
               const metricValue = getMetricValue(location)
               const maxValue = getMaxMetric()
               const markerColor = getColorFromIntensity(metricValue, maxValue)
@@ -473,7 +563,7 @@ export default function WorldMap() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 text-xs px-2">
-            {MAP_LOCATIONS.map((location) => {
+            {mapLocations.map((location) => {
               const value = getMetricValue(location)
               const max = getMaxMetric()
               const color = getColorFromIntensity(value, max)

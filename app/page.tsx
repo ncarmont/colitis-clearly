@@ -438,15 +438,43 @@ export default function HomePage() {
     return months[new Date().getMonth()]
   }
 
-  // Determine fresh harvest based on current month
+  // Determine fresh harvest based on current month and actual countries in table
   const getFreshHarvestInfo = () => {
     const month = new Date().getMonth() + 1 // 1-12
+
+    // Get unique countries from recentOils
+    const countriesInTable = Array.from(new Set(recentOils.map(oil => oil.origin)))
+
+    // Get flags for countries in the table
+    const getFlags = (countries: string[]) => {
+      return countries
+        .map(c => COUNTRY_FLAGS[c])
+        .filter(Boolean) // Remove undefined
+    }
+
+    // Northern Hemisphere countries
+    const northernCountries = countriesInTable.filter(c =>
+      ['Greece', 'Greece (Corfu)', 'Greece (South)', 'Spain', 'Spain (Málaga)', 'Italy', 'Italy (Puglia)',
+       'Italy (Tuscany)', 'Jordan', 'Morocco', 'Portugal'].includes(c)
+    )
+
+    // Southern Hemisphere countries (if any)
+    const southernCountries = countriesInTable.filter(c =>
+      ['Peru', 'Australia', 'Chile', 'Argentina', 'South Africa'].includes(c)
+    )
+
     // Northern harvest: Oct-Jan (months 10, 11, 12, 1)
     // Southern harvest: Apr-Jul (months 4, 5, 6, 7)
     if (month >= 10 || month <= 2) {
-      return { region: 'Northern Harvest', flags: ['🇬🇷', '🇪🇸', '🇮🇹', '🇯🇴'] }
+      return {
+        region: 'Northern Harvest',
+        flags: getFlags(northernCountries).length > 0 ? getFlags(northernCountries) : ['🇬🇷', '🇪🇸', '🇮🇹', '🇯🇴']
+      }
     } else if (month >= 4 && month <= 8) {
-      return { region: 'Southern Harvest', flags: ['🇦🇺', '🇨🇱', '🇦🇷', '🇿🇦'] }
+      return {
+        region: 'Southern Harvest',
+        flags: getFlags(southernCountries).length > 0 ? getFlags(southernCountries) : ['🌍']
+      }
     } else {
       return { region: 'Transition Period', flags: ['🌍'] }
     }
@@ -686,8 +714,8 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-16">
-          <div className="text-center space-y-3 md:space-y-6">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-6 py-4 md:py-12">
+          <div className="text-center space-y-2 md:space-y-4">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20 text-xs md:text-sm font-medium animate-fade-in">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
               <span className="text-white">Updated 2025</span>
@@ -1023,7 +1051,7 @@ export default function HomePage() {
 
           {/* Interactive World Map */}
           <div className="mt-16">
-            <WorldMap />
+            <WorldMap oils={recentOils} />
           </div>
 
           {/* Info Cards */}
