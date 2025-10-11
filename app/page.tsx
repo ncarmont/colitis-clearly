@@ -773,59 +773,53 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
       </header>
 
-      {/* Filters Section */}
+      {/* Filters Section - Ultra Compact */}
       <section className="sticky top-0 z-20 bg-slate-900/95 backdrop-blur-xl border-b border-gray-800/50 shadow-xl">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-1.5 md:py-2">
-          <div className="flex flex-wrap gap-2 md:gap-3 items-center justify-between">
-            <div className="flex gap-2 items-center flex-wrap">
+        <div className="max-w-7xl mx-auto px-3 md:px-6 py-1 md:py-1.5">
+          <div className="flex flex-wrap gap-1.5 md:gap-2 items-center justify-between text-[11px] md:text-xs">
+            <div className="flex gap-1.5 items-center flex-wrap">
               {/* Search */}
               <div className="relative">
                 <input
                   type="text"
-                  placeholder="Search brands..."
+                  placeholder="Search..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="pl-8 pr-3 py-1.5 md:py-2 w-48 md:w-64 bg-slate-800/50 border border-gray-700 rounded-lg text-xs md:text-sm font-medium text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all placeholder:text-gray-500"
+                  className="pl-7 pr-2 py-1 md:py-1.5 w-32 md:w-48 bg-slate-800/50 border border-gray-700 rounded-md text-[11px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 focus:border-transparent transition-all placeholder:text-gray-500"
                 />
-                <svg className="absolute left-2.5 top-2 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="absolute left-2 top-1.5 w-3 h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
 
               {/* Origin Filter */}
-              <div className="flex items-center gap-1 md:gap-1.5">
-                <label className="text-xs md:text-sm font-semibold text-gray-300 hidden md:inline">Origin:</label>
-                <select
-                  value={filterOrigin}
-                  onChange={(e) => setFilterOrigin(e.target.value)}
-                  className="pl-2 md:pl-3 pr-6 md:pr-8 py-1.5 md:py-2 bg-slate-800/50 border border-gray-700 rounded-lg text-xs md:text-sm font-medium text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all cursor-pointer hover:border-gray-600"
-                >
-                  {origins.map(origin => (
-                    <option key={origin} value={origin} className="bg-slate-800">
-                      {origin === 'all' ? 'All Countries' : `${COUNTRY_FLAGS[origin]} ${origin}`}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              <select
+                value={filterOrigin}
+                onChange={(e) => setFilterOrigin(e.target.value)}
+                className="pl-2 pr-6 py-1 md:py-1.5 bg-slate-800/50 border border-gray-700 rounded-md text-[11px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all cursor-pointer"
+              >
+                {origins.map(origin => (
+                  <option key={origin} value={origin} className="bg-slate-800">
+                    {origin === 'all' ? 'All' : `${COUNTRY_FLAGS[origin]} ${origin}`}
+                  </option>
+                ))}
+              </select>
 
               {/* Sort */}
-              <div className="flex items-center gap-1 md:gap-1.5">
-                <label className="text-xs md:text-sm font-semibold text-gray-300 hidden md:inline">Sort:</label>
-                <select
-                  value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value as 'rank' | 'polyphenols')}
-                  className="pl-2 md:pl-3 pr-6 md:pr-8 py-1.5 md:py-2 bg-slate-800/50 border border-gray-700 rounded-lg text-xs md:text-sm font-medium text-gray-100 focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all cursor-pointer hover:border-gray-600"
-                >
-                  <option value="rank" className="bg-slate-800">Overall Rank</option>
-                  <option value="polyphenols" className="bg-slate-800">Polyphenol Content</option>
-                </select>
-              </div>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as 'rank' | 'polyphenols')}
+                className="pl-2 pr-6 py-1 md:py-1.5 bg-slate-800/50 border border-gray-700 rounded-md text-[11px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all cursor-pointer"
+              >
+                <option value="rank" className="bg-slate-800">Rank</option>
+                <option value="polyphenols" className="bg-slate-800">Polyphenols</option>
+              </select>
             </div>
 
-            <div className="flex items-center gap-1.5 text-xs px-2 md:px-3 py-1 md:py-1.5 bg-green-900/30 rounded-lg border border-green-700/50">
-              <span className="text-gray-400 text-[10px] md:text-xs">Showing</span>
-              <span className="font-bold text-green-400 text-sm md:text-base">{filteredAndSortedOils.length}</span>
-              <span className="text-gray-400 text-[10px] md:text-xs">of {OILS_DATA.length}</span>
+            <div className="flex items-center gap-1 px-2 py-0.5 md:py-1 bg-green-900/30 rounded-md border border-green-700/50">
+              <span className="text-gray-400 text-[10px]">Showing</span>
+              <span className="font-bold text-green-400 text-xs md:text-sm">{filteredAndSortedOils.length}</span>
+              <span className="text-gray-400 text-[10px]">of {OILS_DATA.length}</span>
             </div>
           </div>
         </div>
@@ -834,32 +828,35 @@ export default function HomePage() {
       {/* Rankings Table */}
       <section className="py-3 md:py-6 px-4 md:px-6 w-full">
         <div className="max-w-7xl mx-auto w-full">
-          {/* Freshness & Ranking Guide - Condensed */}
-          <div className="mb-2 md:mb-3 text-center px-2">
-            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-lg px-3 md:px-4 py-1.5 md:py-2 max-w-4xl backdrop-blur-sm shadow-lg w-full md:w-auto">
-              <p className="text-[10px] md:text-xs text-gray-300 leading-snug">
-                <span className="text-green-400 font-semibold">How it works:</span> High polyphenol oils (+250 mg/kg) offer superior health benefits.
-                Freshness is critical—oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>. Early harvest matters most.
+          {/* Combined Info Section - Ultra Compact */}
+          <div className="mb-2 text-center px-2">
+            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-lg px-3 py-1.5 max-w-5xl backdrop-blur-sm shadow-lg">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-[10px] md:text-[11px]">
+                {/* How it works */}
+                <p className="text-gray-300">
+                  <span className="text-green-400 font-semibold">How it works:</span> High polyphenol oils (+250 mg/kg) offer superior health benefits. Freshness is critical—oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>.
+                </p>
+
+                {/* Divider */}
+                <span className="hidden md:inline text-gray-600">|</span>
+
+                {/* Fresh Harvest */}
+                <div className="flex items-center gap-1.5">
+                  <span className="text-gray-400">Freshest now ({currentMonth}):</span>
+                  <div className="flex gap-1">
+                    {freshHarvest.flags.map((flag, i) => (
+                      <span key={i} className="text-sm">{flag}</span>
+                    ))}
+                  </div>
+                  <span className="text-green-400 font-semibold">({freshHarvest.region})</span>
+                </div>
+              </div>
+
+              {/* Affiliate Disclosure */}
+              <p className="text-[9px] md:text-[10px] text-gray-500 italic mt-1">
+                Contains affiliate links. Rankings are independent.
               </p>
             </div>
-          </div>
-
-          {/* Fresh Harvest Indicator - Condensed */}
-          <div className="mb-3 md:mb-4 text-center px-2">
-            <p className="text-[10px] text-gray-400 mb-1">Freshest now ({currentMonth}):</p>
-            <div className="flex flex-wrap items-center justify-center gap-2">
-              {freshHarvest.flags.map((flag, i) => (
-                <span key={i} className="text-lg md:text-xl">{flag}</span>
-              ))}
-            </div>
-            <p className="text-[10px] text-green-400 font-semibold mt-1">{freshHarvest.region}</p>
-          </div>
-
-          {/* Affiliate Disclosure */}
-          <div className="mb-2 md:mb-3 text-center">
-            <p className="text-[10px] text-gray-500 italic max-w-xl mx-auto">
-              Contains affiliate links. Rankings are independent.
-            </p>
           </div>
 
           {/* Overall Rank Filter Active Indicator */}
