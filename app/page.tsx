@@ -649,8 +649,8 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListStructuredData) }}
       />
 
-      <main className="min-h-screen bg-gradient-to-br from-slate-950 via-gray-900 to-slate-900 overflow-x-hidden w-full max-w-full relative">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-900/10 via-transparent to-transparent pointer-events-none"></div>
+      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-slate-50 to-gray-100 overflow-x-hidden w-full max-w-full relative">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-100/30 via-transparent to-transparent pointer-events-none"></div>
         <div className="relative z-10">
       {/* Hero Header */}
       <header className="relative overflow-hidden bg-gradient-to-r from-emerald-700 via-green-700 to-emerald-800 w-full">
@@ -787,7 +787,7 @@ export default function HomePage() {
       </header>
 
       {/* Filters Section - Mobile Single Line */}
-      <section className="sticky top-0 z-20 bg-slate-900/95 backdrop-blur-xl border-b border-gray-800/50 shadow-xl">
+      <section className="sticky top-0 z-20 bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-lg">
         <div className="max-w-7xl mx-auto px-2 md:px-6 py-1">
           <div className="flex gap-1 md:gap-2 items-center justify-between overflow-x-auto scrollbar-hide">
             <div className="flex gap-1 md:gap-1.5 items-center shrink-0">
@@ -798,9 +798,9 @@ export default function HomePage() {
                   placeholder="Search..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="pl-6 pr-1.5 py-1 w-20 md:w-48 bg-slate-800/50 border border-gray-700 rounded text-[10px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all placeholder:text-gray-500"
+                  className="pl-6 pr-1.5 py-1 w-20 md:w-48 bg-white border border-gray-300 rounded text-[10px] md:text-xs font-medium text-gray-900 focus:ring-1 focus:ring-green-500 focus:border-green-500 transition-all placeholder:text-gray-400"
                 />
-                <svg className="absolute left-1.5 top-1.5 w-2.5 h-2.5 md:w-3 md:h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="absolute left-1.5 top-1.5 w-2.5 h-2.5 md:w-3 md:h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
@@ -809,10 +809,10 @@ export default function HomePage() {
               <select
                 value={filterOrigin}
                 onChange={(e) => setFilterOrigin(e.target.value)}
-                className="pl-1.5 pr-5 py-1 bg-slate-800/50 border border-gray-700 rounded text-[10px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all cursor-pointer"
+                className="pl-1.5 pr-5 py-1 bg-white border border-gray-300 rounded text-[10px] md:text-xs font-medium text-gray-900 focus:ring-1 focus:ring-green-500 focus:border-green-500 transition-all cursor-pointer"
               >
                 {origins.map(origin => (
-                  <option key={origin} value={origin} className="bg-slate-800">
+                  <option key={origin} value={origin} className="bg-white">
                     {origin === 'all' ? 'All' : `${COUNTRY_FLAGS[origin]} ${origin}`}
                   </option>
                 ))}
@@ -822,17 +822,17 @@ export default function HomePage() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as 'rank' | 'polyphenols')}
-                className="pl-1.5 pr-5 py-1 bg-slate-800/50 border border-gray-700 rounded text-[10px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all cursor-pointer"
+                className="pl-1.5 pr-5 py-1 bg-white border border-gray-300 rounded text-[10px] md:text-xs font-medium text-gray-900 focus:ring-1 focus:ring-green-500 focus:border-green-500 transition-all cursor-pointer"
               >
-                <option value="rank" className="bg-slate-800">Rank</option>
-                <option value="polyphenols" className="bg-slate-800">Polyphenols</option>
+                <option value="rank" className="bg-white">Rank</option>
+                <option value="polyphenols" className="bg-white">Polyphenols</option>
               </select>
             </div>
 
-            <div className="flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2 py-0.5 md:py-1 bg-green-900/30 rounded border border-green-700/50 shrink-0">
-              <span className="text-gray-400 text-[9px] md:text-[10px]">Showing</span>
-              <span className="font-bold text-green-400 text-[10px] md:text-sm">{filteredAndSortedOils.length}</span>
-              <span className="text-gray-400 text-[9px] md:text-[10px]">of {OILS_DATA.length}</span>
+            <div className="flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2 py-0.5 md:py-1 bg-green-50 rounded border border-green-200 shrink-0">
+              <span className="text-gray-600 text-[9px] md:text-[10px]">Showing</span>
+              <span className="font-bold text-green-600 text-[10px] md:text-sm">{filteredAndSortedOils.length}</span>
+              <span className="text-gray-600 text-[9px] md:text-[10px]">of {OILS_DATA.length}</span>
             </div>
           </div>
         </div>
@@ -853,33 +853,33 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto w-full">
           {/* Combined Info Section - Clear & Simple */}
           <div className="mb-2 text-center px-2">
-            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-lg px-4 py-2.5 max-w-5xl backdrop-blur-sm shadow-lg">
+            <div className="inline-block bg-white border border-gray-200 rounded-lg px-4 py-2.5 max-w-5xl shadow-md">
               <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 text-[11px] md:text-xs">
                 {/* What makes a good olive oil - Clearer */}
                 <div className="text-center md:text-left">
-                  <p className="text-green-400 font-bold mb-1.5 text-xs md:text-sm">What makes a good olive oil?</p>
+                  <p className="text-green-600 font-bold mb-1.5 text-xs md:text-sm">What makes a good olive oil?</p>
                   <div className="space-y-0.5">
-                    <p className="text-gray-100">
-                      <span className="text-green-300 font-semibold">High polyphenols</span> <span className="text-gray-400">(250+ mg/kg)</span> → Better health benefits
+                    <p className="text-gray-800">
+                      <span className="text-green-600 font-semibold">High polyphenols</span> <span className="text-gray-500">(250+ mg/kg)</span> → Better health benefits
                     </p>
-                    <p className="text-gray-100">
-                      <span className="text-orange-300 font-semibold">Fresh harvest</span> <span className="text-gray-400">(this year)</span> → Maximum potency
+                    <p className="text-gray-800">
+                      <span className="text-orange-600 font-semibold">Fresh harvest</span> <span className="text-gray-500">(this year)</span> → Maximum potency
                     </p>
                   </div>
                 </div>
 
                 {/* Divider */}
-                <span className="hidden md:inline text-gray-600">|</span>
+                <span className="hidden md:inline text-gray-300">|</span>
 
                 {/* Fresh Harvest - Cleaner */}
                 <div className="flex flex-col items-center gap-1.5">
-                  <span className="text-gray-300 text-[10px] md:text-xs font-medium">Freshest now ({currentMonth}):</span>
+                  <span className="text-gray-700 text-[10px] md:text-xs font-medium">Freshest now ({currentMonth}):</span>
                   <div className="flex items-center gap-1">
                     {freshHarvest.flags.map((flag, i) => (
                       <span key={i} className="text-base md:text-lg">{flag}</span>
                     ))}
                   </div>
-                  <span className="text-green-400 text-[9px] md:text-[10px] font-medium">({freshHarvest.region})</span>
+                  <span className="text-green-600 text-[9px] md:text-[10px] font-medium">({freshHarvest.region})</span>
                 </div>
               </div>
 
@@ -908,43 +908,43 @@ export default function HomePage() {
             </div>
           )}
 
-          <div className="bg-gradient-to-br from-slate-700/90 via-slate-750/85 to-slate-800/90 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
+          <div className="bg-white rounded-2xl md:rounded-3xl shadow-lg border border-gray-200 overflow-hidden">
             <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-gradient-to-r from-green-900/40 via-emerald-800/30 to-green-900/40 border-b-2 border-green-600/40 backdrop-blur-sm">
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider relative">
+                  <tr className="bg-gradient-to-r from-green-50 via-emerald-50 to-green-50 border-b-2 border-green-200">
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider relative">
                       <button
                         onClick={() => setOverallRankFilter(!overallRankFilter)}
                         className={`flex items-center gap-1 transition-all duration-200 ${
                           overallRankFilter
-                            ? 'text-green-400 font-extrabold'
-                            : 'hover:text-green-400'
+                            ? 'text-green-600 font-extrabold'
+                            : 'hover:text-green-600'
                         }`}
                         title="Filter by HPLC tested oils from 2024-2025 harvest"
                       >
                         Overall Rank {overallRankFilter && '✓'}
                       </button>
                     </th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Brand</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Polyphenols (mg/kg)</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Origin</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Cultivar</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Harvest</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Method</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Price</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Buy</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Notes</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Brand</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Polyphenols (mg/kg)</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Origin</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Cultivar</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Harvest</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Method</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Price</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Buy</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Notes</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-800/50">
+                <tbody className="divide-y divide-gray-200">
                   {oilsToDisplay.map((oil, index) => {
                     const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
                     const displayRank = index + 1 // Rank based on current sorted position
                     return (
                       <tr
                         key={oil.id}
-                        className="hover:bg-gradient-to-r hover:from-green-900/20 hover:via-emerald-900/10 hover:to-green-900/20 transition-all duration-300 group animate-fade-in-row relative"
+                        className="hover:bg-green-50 transition-all duration-300 group animate-fade-in-row relative"
                         style={{ animationDelay: `${index * 50}ms` }}
                       >
                         <td className="px-3 py-4 whitespace-nowrap">
@@ -962,7 +962,7 @@ export default function HomePage() {
                             href={oil.buyLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm font-bold text-gray-100 group-hover:text-green-400 transition-colors max-w-[180px] block"
+                            className="text-sm font-bold text-gray-900 group-hover:text-green-600 transition-colors max-w-[180px] block"
                           >
                             {oil.brand}
                           </a>
@@ -970,19 +970,19 @@ export default function HomePage() {
                         <td className="px-3 py-4">
                           <div className="flex items-center gap-2 flex-wrap">
                             <div className="flex items-baseline gap-1">
-                              <span className="text-2xl font-bold text-green-400 group-hover:text-green-300 transition-colors">
+                              <span className="text-2xl font-bold text-green-600 group-hover:text-green-700 transition-colors">
                                 {getMaxPolyphenols(oil)}
                               </span>
-                              <span className="text-xs text-gray-500 font-semibold">mg/kg</span>
+                              <span className="text-xs text-gray-600 font-semibold">mg/kg</span>
                             </div>
                             <div className="flex gap-1 flex-wrap">
                               {getMethodBadges(oil).map((badge, badgeIndex) => (
                                 <span
                                   key={`${badge}-${badgeIndex}`}
                                   className={`text-[10px] font-semibold px-2 py-1 rounded-full ${
-                                    badge === 'HPLC' ? 'bg-gradient-to-r from-blue-900/50 to-blue-800/40 text-blue-200 border border-blue-600/50 shadow-sm shadow-blue-500/20' :
-                                    badge === 'NMR' ? 'bg-gradient-to-r from-purple-900/50 to-purple-800/40 text-purple-200 border border-purple-600/50 shadow-sm shadow-purple-500/20' :
-                                    'bg-gradient-to-r from-orange-900/50 to-orange-800/40 text-orange-200 border border-orange-600/50 shadow-sm shadow-orange-500/20'
+                                    badge === 'HPLC' ? 'bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 border border-blue-300 shadow-sm' :
+                                    badge === 'NMR' ? 'bg-gradient-to-r from-purple-100 to-purple-200 text-purple-700 border border-purple-300 shadow-sm' :
+                                    'bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 border border-orange-300 shadow-sm'
                                   }`}
                                 >
                                   {badge}
@@ -992,22 +992,22 @@ export default function HomePage() {
                           </div>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
-                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-blue-900/50 to-cyan-900/40 text-blue-200 border border-blue-600/50 shadow-sm">
+                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-700 border border-blue-300 shadow-sm">
                             <span className="text-base">{COUNTRY_FLAGS[oil.origin]}</span>
                             <span className="hidden lg:inline">{oil.origin}</span>
                           </span>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
-                          <span className="text-xs text-purple-200 font-medium bg-gradient-to-r from-purple-900/40 to-purple-800/30 px-2 py-1 rounded border border-purple-700/30">
+                          <span className="text-xs text-purple-700 font-medium bg-gradient-to-r from-purple-100 to-purple-200 px-2 py-1 rounded border border-purple-300">
                             {oil.cultivar}
                           </span>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
-                          <span className="text-xs text-gray-400 font-medium">{oil.harvestDate}</span>
+                          <span className="text-xs text-gray-600 font-medium">{oil.harvestDate}</span>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
                           <div className="flex flex-col gap-1">
-                            <span className="text-xs text-orange-300 font-medium bg-orange-900/30 px-2 py-1 rounded inline-block">
+                            <span className="text-xs text-orange-700 font-medium bg-orange-100 px-2 py-1 rounded inline-block border border-orange-200">
                               {oil.method.length > 15 ? oil.method.substring(0, 15) + '...' : oil.method}
                             </span>
                             {oil.certificateLink && (
@@ -1015,7 +1015,7 @@ export default function HomePage() {
                                 href={oil.certificateLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-xs text-blue-400 hover:text-blue-300 underline"
+                                className="text-xs text-blue-600 hover:text-blue-700 underline"
                                 title="View Lab Certificate"
                               >
                                 📜 COA
@@ -1025,8 +1025,8 @@ export default function HomePage() {
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
                           <div className="flex flex-col gap-0.5">
-                            <span className="text-xs text-gray-400 font-medium">{oil.price}</span>
-                            <span className="text-xs text-green-400 font-bold">{oil.priceAmount}</span>
+                            <span className="text-xs text-gray-600 font-medium">{oil.price}</span>
+                            <span className="text-xs text-green-600 font-bold">{oil.priceAmount}</span>
                           </div>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
@@ -1048,7 +1048,7 @@ export default function HomePage() {
                                 href={oil.certificateLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-xs text-blue-400 hover:text-blue-300 text-center underline"
+                                className="text-xs text-blue-600 hover:text-blue-700 text-center underline"
                                 title="Official Website"
                               >
                                 🌐 Direct
@@ -1057,7 +1057,7 @@ export default function HomePage() {
                           </div>
                         </td>
                         <td className="px-3 py-4">
-                          <div className="text-xs text-gray-400 max-w-[240px] leading-relaxed">{oil.notes}</div>
+                          <div className="text-xs text-gray-600 max-w-[240px] leading-relaxed">{oil.notes}</div>
                         </td>
                       </tr>
                     )
@@ -1080,7 +1080,7 @@ export default function HomePage() {
 
             <Link
               href="/shop"
-              className="inline-flex items-center gap-2 px-4 md:px-5 py-2 md:py-2.5 bg-slate-800/50 hover:bg-slate-700/50 text-gray-300 hover:text-white border border-gray-700/50 hover:border-green-600/50 rounded-lg text-xs md:text-sm font-medium transition-all duration-200"
+              className="inline-flex items-center gap-2 px-4 md:px-5 py-2 md:py-2.5 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 border border-gray-300 hover:border-green-500 rounded-lg text-xs md:text-sm font-medium transition-all duration-200 shadow-sm"
             >
               <svg className="w-3.5 h-3.5 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
