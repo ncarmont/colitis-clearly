@@ -301,55 +301,52 @@ export default function WorldMap({ oils = [] }: WorldMapProps) {
         <div className="blob blob-3"></div>
       </div>
 
-      <div className="relative z-10 text-center mb-6 md:mb-8 px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4">
+      <div className="relative z-10 text-center mb-3 md:mb-4 px-4">
+        <h2 className="text-xl md:text-2xl font-bold text-white mb-1 md:mb-2">
           Global EVOO Heatmap
         </h2>
-        <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-4 md:mb-6">
-          Click on any location to discover the highest polyphenol olive oils from around the world
+        <p className="text-gray-400 text-[11px] md:text-sm max-w-2xl mx-auto mb-2 md:mb-3">
+          Click locations to discover high polyphenol oils worldwide
         </p>
 
-        {/* Visualization Mode Toggle */}
-        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-4 md:mb-6">
+        {/* Visualization Mode Toggle - Compact */}
+        <div className="flex flex-wrap justify-center gap-1.5 md:gap-2 mb-2 md:mb-3">
           <button
             onClick={() => setVisualMode('peak')}
-            className={`px-3 md:px-6 py-2 md:py-3 rounded-xl font-semibold text-xs md:text-sm transition-all duration-200 ${
+            className={`px-2.5 md:px-4 py-1.5 md:py-2 rounded-lg font-semibold text-[10px] md:text-xs transition-all duration-200 ${
               visualMode === 'peak'
                 ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg scale-105'
                 : 'bg-gray-800/50 text-gray-400 hover:bg-gray-700/50 hover:text-gray-300'
             }`}
           >
-            <span className="hidden sm:inline">🏆 Peak Polyphenols</span>
-            <span className="sm:hidden">🏆 Peak</span>
+            🏆 Peak
           </button>
           <button
             onClick={() => setVisualMode('average')}
-            className={`px-3 md:px-6 py-2 md:py-3 rounded-xl font-semibold text-xs md:text-sm transition-all duration-200 ${
+            className={`px-2.5 md:px-4 py-1.5 md:py-2 rounded-lg font-semibold text-[10px] md:text-xs transition-all duration-200 ${
               visualMode === 'average'
                 ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg scale-105'
                 : 'bg-gray-800/50 text-gray-400 hover:bg-gray-700/50 hover:text-gray-300'
             }`}
           >
-            <span className="hidden sm:inline">📊 Top 5 Average</span>
-            <span className="sm:hidden">📊 Avg</span>
+            📊 Avg
           </button>
           <button
             onClick={() => setVisualMode('count')}
-            className={`px-3 md:px-6 py-2 md:py-3 rounded-xl font-semibold text-xs md:text-sm transition-all duration-200 ${
+            className={`px-2.5 md:px-4 py-1.5 md:py-2 rounded-lg font-semibold text-[10px] md:text-xs transition-all duration-200 ${
               visualMode === 'count'
                 ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg scale-105'
                 : 'bg-gray-800/50 text-gray-400 hover:bg-gray-700/50 hover:text-gray-300'
             }`}
           >
-            <span className="hidden sm:inline">🌍 Producer Count</span>
-            <span className="sm:hidden">🌍 Count</span>
+            🌍 Count
           </button>
         </div>
       </div>
 
-      {/* Map Container */}
-      <div className="relative z-10 bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-sm rounded-2xl md:rounded-3xl p-2 md:p-4 border border-gray-700/50 overflow-hidden mx-2 md:mx-0">
-        <div className="h-[400px] md:h-[600px] rounded-xl md:rounded-2xl overflow-hidden relative z-0">
+      {/* Map Container - Smaller */}
+      <div className="relative z-10 bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-sm rounded-xl md:rounded-2xl p-2 md:p-3 border border-gray-700/50 overflow-hidden mx-2 md:mx-0">
+        <div className="h-[300px] md:h-[450px] rounded-lg md:rounded-xl overflow-hidden relative z-0">
           <MapContainer
             center={[30, 20]}
             zoom={2}

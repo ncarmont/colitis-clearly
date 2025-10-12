@@ -1060,33 +1060,30 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Show More/Less Button */}
-          {filteredAndSortedOils.length > initialDisplayCount && (
-            <div className="mt-6 text-center">
+          {/* Show More & Shop Buttons - Condensed */}
+          <div className="mt-4 md:mt-6 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
+            {filteredAndSortedOils.length > initialDisplayCount && (
               <button
                 onClick={() => setShowAll(!showAll)}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 md:py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-semibold rounded-lg md:rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
                 <span>{showAll ? `▲ Show Top ${initialDisplayCount}` : `▼ Show All ${filteredAndSortedOils.length} EVOOs`}</span>
               </button>
-            </div>
-          )}
+            )}
 
-          {/* Shop Button - Subtle */}
-          <div className="mt-6 text-center">
             <Link
               href="/shop"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-800/50 hover:bg-slate-700/50 text-gray-300 hover:text-white border border-gray-700/50 hover:border-green-600/50 rounded-lg text-sm font-medium transition-all duration-200"
+              className="inline-flex items-center gap-2 px-4 md:px-5 py-2 md:py-2.5 bg-slate-800/50 hover:bg-slate-700/50 text-gray-300 hover:text-white border border-gray-700/50 hover:border-green-600/50 rounded-lg text-xs md:text-sm font-medium transition-all duration-200"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>
               <span>Shop for these olive oils</span>
             </Link>
           </div>
 
-          {/* Interactive World Map */}
-          <div className="mt-16">
+          {/* Interactive World Map - Condensed */}
+          <div className="mt-8 md:mt-12">
             <WorldMap oils={recentOils} />
           </div>
 
