@@ -851,36 +851,40 @@ export default function HomePage() {
       {/* Rankings Table */}
       <section className="py-3 md:py-6 px-4 md:px-6 w-full">
         <div className="max-w-7xl mx-auto w-full">
-          {/* Combined Info Section - Clean & Simple */}
+          {/* Combined Info Section - Clear & Simple */}
           <div className="mb-2 text-center px-2">
-            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-lg px-4 py-2 max-w-5xl backdrop-blur-sm shadow-lg">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-[10px] md:text-xs">
-                {/* What makes a good olive oil */}
+            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-lg px-4 py-2.5 max-w-5xl backdrop-blur-sm shadow-lg">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 text-[11px] md:text-xs">
+                {/* What makes a good olive oil - Clearer */}
                 <div className="text-center md:text-left">
-                  <p className="text-green-400 font-semibold mb-1">What makes a good olive oil?</p>
-                  <p className="text-gray-200">
-                    <span className="text-green-300 font-medium">+250 mg/kg polyphenols</span> = Health benefits •
-                    <span className="text-orange-300 font-medium"> Fresh harvest</span> = Critical
-                  </p>
+                  <p className="text-green-400 font-bold mb-1.5 text-xs md:text-sm">What makes a good olive oil?</p>
+                  <div className="space-y-0.5">
+                    <p className="text-gray-100">
+                      <span className="text-green-300 font-semibold">High polyphenols</span> <span className="text-gray-400">(250+ mg/kg)</span> → Better health benefits
+                    </p>
+                    <p className="text-gray-100">
+                      <span className="text-orange-300 font-semibold">Fresh harvest</span> <span className="text-gray-400">(this year)</span> → Maximum potency
+                    </p>
+                  </div>
                 </div>
 
                 {/* Divider */}
                 <span className="hidden md:inline text-gray-600">|</span>
 
                 {/* Fresh Harvest - Cleaner */}
-                <div className="flex flex-col md:flex-row items-center gap-1 md:gap-2">
-                  <span className="text-gray-400 text-[10px] md:text-xs">Freshest ({currentMonth}):</span>
+                <div className="flex flex-col items-center gap-1.5">
+                  <span className="text-gray-300 text-[10px] md:text-xs font-medium">Freshest now ({currentMonth}):</span>
                   <div className="flex items-center gap-1">
                     {freshHarvest.flags.map((flag, i) => (
-                      <span key={i} className="text-sm md:text-base">{flag}</span>
+                      <span key={i} className="text-base md:text-lg">{flag}</span>
                     ))}
-                    <span className="text-green-400 text-[10px] md:text-xs ml-1">({freshHarvest.region})</span>
                   </div>
+                  <span className="text-green-400 text-[9px] md:text-[10px] font-medium">({freshHarvest.region})</span>
                 </div>
               </div>
 
               {/* Affiliate Disclosure */}
-              <p className="text-[9px] md:text-[10px] text-gray-500 italic mt-1">
+              <p className="text-[9px] md:text-[10px] text-gray-500 italic mt-2">
                 Affiliate links • Independent rankings
               </p>
             </div>
@@ -904,7 +908,7 @@ export default function HomePage() {
             </div>
           )}
 
-          <div className="bg-gradient-to-br from-slate-800/80 via-slate-800/70 to-slate-850/80 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-700/90 via-slate-750/85 to-slate-800/90 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
             <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
                 <thead>
