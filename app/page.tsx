@@ -739,7 +739,7 @@ export default function HomePage() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white animate-slide-up leading-tight max-w-5xl mx-auto">
               Best Extra Virgin Olive Oils
               <span className="block mt-0.5 md:mt-1 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
-                Ranked Scientifically & Globally
+                Ranked Scientifically
               </span>
             </h1>
 
@@ -747,37 +747,37 @@ export default function HomePage() {
               Science-backed rankings of the highest polyphenol olive oils on the planet.
             </p>
 
-            {/* Health Benefit Pills - Condensed */}
-            <div className="flex flex-wrap justify-center gap-1.5 md:gap-2 mt-2 md:mt-3 animate-fade-in-delay">
-              <div className="inline-flex items-center gap-1 px-2 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
-                <span className="text-green-400 text-[10px] md:text-xs">❤️</span>
-                <span className="text-[10px] md:text-xs text-green-100 font-medium">31% Lower CVD</span>
+            {/* Health Benefit Pills - Mobile Optimized */}
+            <div className="flex flex-wrap justify-center gap-1 md:gap-2 mt-2 md:mt-3 animate-fade-in-delay">
+              <div className="inline-flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
+                <span className="text-green-400 text-[9px] md:text-xs">❤️</span>
+                <span className="text-[9px] md:text-xs text-green-100 font-medium">31% ↓ CVD</span>
               </div>
-              <div className="inline-flex items-center gap-1 px-2 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
-                <span className="text-purple-400 text-[10px] md:text-xs">💪</span>
-                <span className="text-[10px] md:text-xs text-purple-100 font-medium">Anti-Inflammatory</span>
+              <div className="inline-flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
+                <span className="text-purple-400 text-[9px] md:text-xs">💪</span>
+                <span className="text-[9px] md:text-xs text-purple-100 font-medium">Anti-Inflam</span>
               </div>
-              <div className="inline-flex items-center gap-1 px-2 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
-                <span className="text-orange-400 text-[10px] md:text-xs">🧬</span>
-                <span className="text-[10px] md:text-xs text-orange-100 font-medium">Longevity</span>
+              <div className="inline-flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
+                <span className="text-orange-400 text-[9px] md:text-xs">🧬</span>
+                <span className="text-[9px] md:text-xs text-orange-100 font-medium">Longevity</span>
               </div>
             </div>
 
-            {/* Stats - More Compact */}
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-2 md:mt-4 animate-fade-in-delay-2">
+            {/* Stats - Mobile Optimized */}
+            <div className="flex flex-wrap justify-center gap-3 md:gap-6 mt-2 md:mt-4 animate-fade-in-delay-2">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">{stats.totalOils}</div>
-                <div className="text-[10px] md:text-xs text-green-200">Lab-Verified</div>
+                <div className="text-xl md:text-3xl font-bold text-white">{stats.totalOils}</div>
+                <div className="text-[9px] md:text-xs text-green-200">Lab-Verified</div>
               </div>
               <div className="hidden sm:block w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">{stats.countries}</div>
-                <div className="text-[10px] md:text-xs text-green-200">Countries</div>
+                <div className="text-xl md:text-3xl font-bold text-white">{stats.countries}</div>
+                <div className="text-[9px] md:text-xs text-green-200">Countries</div>
               </div>
               <div className="hidden sm:block w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">{stats.maxPolyphenols}</div>
-                <div className="text-[10px] md:text-xs text-green-200">Max mg/kg</div>
+                <div className="text-xl md:text-3xl font-bold text-white">{stats.maxPolyphenols}</div>
+                <div className="text-[9px] md:text-xs text-green-200">Max mg/kg</div>
               </div>
             </div>
           </div>
@@ -786,11 +786,11 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
       </header>
 
-      {/* Filters Section - Ultra Compact */}
+      {/* Filters Section - Mobile Single Line */}
       <section className="sticky top-0 z-20 bg-slate-900/95 backdrop-blur-xl border-b border-gray-800/50 shadow-xl">
-        <div className="max-w-7xl mx-auto px-3 md:px-6 py-1 md:py-1.5">
-          <div className="flex flex-wrap gap-1.5 md:gap-2 items-center justify-between text-[11px] md:text-xs">
-            <div className="flex gap-1.5 items-center flex-wrap">
+        <div className="max-w-7xl mx-auto px-2 md:px-6 py-1">
+          <div className="flex gap-1 md:gap-2 items-center justify-between overflow-x-auto scrollbar-hide">
+            <div className="flex gap-1 md:gap-1.5 items-center shrink-0">
               {/* Search */}
               <div className="relative">
                 <input
@@ -798,9 +798,9 @@ export default function HomePage() {
                   placeholder="Search..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="pl-7 pr-2 py-1 md:py-1.5 w-32 md:w-48 bg-slate-800/50 border border-gray-700 rounded-md text-[11px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 focus:border-transparent transition-all placeholder:text-gray-500"
+                  className="pl-6 pr-1.5 py-1 w-20 md:w-48 bg-slate-800/50 border border-gray-700 rounded text-[10px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all placeholder:text-gray-500"
                 />
-                <svg className="absolute left-2 top-1.5 w-3 h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="absolute left-1.5 top-1.5 w-2.5 h-2.5 md:w-3 md:h-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
@@ -809,7 +809,7 @@ export default function HomePage() {
               <select
                 value={filterOrigin}
                 onChange={(e) => setFilterOrigin(e.target.value)}
-                className="pl-2 pr-6 py-1 md:py-1.5 bg-slate-800/50 border border-gray-700 rounded-md text-[11px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all cursor-pointer"
+                className="pl-1.5 pr-5 py-1 bg-slate-800/50 border border-gray-700 rounded text-[10px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all cursor-pointer"
               >
                 {origins.map(origin => (
                   <option key={origin} value={origin} className="bg-slate-800">
@@ -822,52 +822,63 @@ export default function HomePage() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as 'rank' | 'polyphenols')}
-                className="pl-2 pr-6 py-1 md:py-1.5 bg-slate-800/50 border border-gray-700 rounded-md text-[11px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all cursor-pointer"
+                className="pl-1.5 pr-5 py-1 bg-slate-800/50 border border-gray-700 rounded text-[10px] md:text-xs font-medium text-gray-100 focus:ring-1 focus:ring-green-500 transition-all cursor-pointer"
               >
                 <option value="rank" className="bg-slate-800">Rank</option>
                 <option value="polyphenols" className="bg-slate-800">Polyphenols</option>
               </select>
             </div>
 
-            <div className="flex items-center gap-1 px-2 py-0.5 md:py-1 bg-green-900/30 rounded-md border border-green-700/50">
-              <span className="text-gray-400 text-[10px]">Showing</span>
-              <span className="font-bold text-green-400 text-xs md:text-sm">{filteredAndSortedOils.length}</span>
-              <span className="text-gray-400 text-[10px]">of {OILS_DATA.length}</span>
+            <div className="flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2 py-0.5 md:py-1 bg-green-900/30 rounded border border-green-700/50 shrink-0">
+              <span className="text-gray-400 text-[9px] md:text-[10px]">Showing</span>
+              <span className="font-bold text-green-400 text-[10px] md:text-sm">{filteredAndSortedOils.length}</span>
+              <span className="text-gray-400 text-[9px] md:text-[10px]">of {OILS_DATA.length}</span>
             </div>
           </div>
         </div>
       </section>
 
+      <style jsx>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
+
       {/* Rankings Table */}
       <section className="py-3 md:py-6 px-4 md:px-6 w-full">
         <div className="max-w-7xl mx-auto w-full">
-          {/* Combined Info Section - Ultra Compact */}
+          {/* Combined Info Section - Clean & Simple */}
           <div className="mb-2 text-center px-2">
-            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-lg px-3 py-1.5 max-w-5xl backdrop-blur-sm shadow-lg">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-[10px] md:text-[11px]">
-                {/* How it works */}
-                <p className="text-gray-300">
-                  <span className="text-green-400 font-semibold">How it works:</span> High polyphenol oils (+250 mg/kg) offer superior health benefits. Freshness is critical—oils degrade <span className="text-orange-400 font-semibold">~45%/year</span>.
+            <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-lg px-4 py-2 max-w-5xl backdrop-blur-sm shadow-lg">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-[10px] md:text-xs">
+                {/* How it works - Simplified */}
+                <p className="text-gray-200">
+                  <span className="text-green-400 font-semibold">+250 mg/kg</span> = Health benefits •
+                  <span className="text-orange-400 font-semibold"> Fresh harvest</span> = Critical
                 </p>
 
                 {/* Divider */}
                 <span className="hidden md:inline text-gray-600">|</span>
 
-                {/* Fresh Harvest */}
-                <div className="flex items-center gap-1.5">
-                  <span className="text-gray-400">Freshest now ({currentMonth}):</span>
-                  <div className="flex gap-1">
+                {/* Fresh Harvest - Cleaner */}
+                <div className="flex flex-col md:flex-row items-center gap-1 md:gap-2">
+                  <span className="text-gray-400 text-[10px] md:text-xs">Freshest ({currentMonth}):</span>
+                  <div className="flex items-center gap-1">
                     {freshHarvest.flags.map((flag, i) => (
-                      <span key={i} className="text-sm">{flag}</span>
+                      <span key={i} className="text-sm md:text-base">{flag}</span>
                     ))}
+                    <span className="text-green-400 text-[10px] md:text-xs ml-1">({freshHarvest.region})</span>
                   </div>
-                  <span className="text-green-400 font-semibold">({freshHarvest.region})</span>
                 </div>
               </div>
 
               {/* Affiliate Disclosure */}
               <p className="text-[9px] md:text-[10px] text-gray-500 italic mt-1">
-                Contains affiliate links. Rankings are independent.
+                Affiliate links • Independent rankings
               </p>
             </div>
           </div>
