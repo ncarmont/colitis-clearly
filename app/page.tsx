@@ -621,7 +621,18 @@ export default function HomePage() {
     }))
   }
 
-  const initialDisplayCount = 5
+  // Responsive initial display count
+  const [initialDisplayCount, setInitialDisplayCount] = useState(5)
+
+  useEffect(() => {
+    const updateDisplayCount = () => {
+      setInitialDisplayCount(window.innerWidth >= 768 ? 8 : 5)
+    }
+    updateDisplayCount()
+    window.addEventListener('resize', updateDisplayCount)
+    return () => window.removeEventListener('resize', updateDisplayCount)
+  }, [])
+
   const oilsToDisplay = showAll
     ? filteredAndSortedOils
     : filteredAndSortedOils.slice(0, initialDisplayCount)
@@ -638,7 +649,9 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListStructuredData) }}
       />
 
-      <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 overflow-x-hidden w-full max-w-full">
+      <main className="min-h-screen bg-gradient-to-br from-slate-950 via-gray-900 to-slate-900 overflow-x-hidden w-full max-w-full relative">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-900/10 via-transparent to-transparent pointer-events-none"></div>
+        <div className="relative z-10">
       {/* Hero Header */}
       <header className="relative overflow-hidden bg-gradient-to-r from-emerald-700 via-green-700 to-emerald-800 w-full">
         {/* Lava Lamp Blobs */}
@@ -724,9 +737,9 @@ export default function HomePage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white animate-slide-up leading-tight max-w-5xl mx-auto">
-              Best Extra Virgin Olive Oils Ranked
+              Best Extra Virgin Olive Oils
               <span className="block mt-0.5 md:mt-1 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
-                Globally
+                Ranked Scientifically & Globally
               </span>
             </h1>
 
@@ -877,11 +890,11 @@ export default function HomePage() {
             </div>
           )}
 
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl border border-gray-800/50 overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-800/60 via-slate-800/50 to-slate-900/60 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl border border-gradient-to-r from-green-800/30 via-gray-800/50 to-green-800/30 overflow-hidden ring-1 ring-green-500/10">
             <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 border-b-2 border-green-700/50">
+                  <tr className="bg-gradient-to-r from-green-900/40 via-emerald-800/30 to-green-900/40 border-b-2 border-green-600/40 backdrop-blur-sm">
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-300 uppercase tracking-wider relative">
                       <button
                         onClick={() => setOverallRankFilter(!overallRankFilter)}
@@ -913,7 +926,7 @@ export default function HomePage() {
                     return (
                       <tr
                         key={oil.id}
-                        className="hover:bg-green-900/20 transition-all duration-200 group animate-fade-in-row"
+                        className="hover:bg-gradient-to-r hover:from-green-900/20 hover:via-emerald-900/10 hover:to-green-900/20 transition-all duration-300 group animate-fade-in-row relative"
                         style={{ animationDelay: `${index * 50}ms` }}
                       >
                         <td className="px-3 py-4 whitespace-nowrap">
@@ -949,9 +962,9 @@ export default function HomePage() {
                                 <span
                                   key={`${badge}-${badgeIndex}`}
                                   className={`text-[10px] font-semibold px-2 py-1 rounded-full ${
-                                    badge === 'HPLC' ? 'bg-blue-900/40 text-blue-300 border border-blue-700/50' :
-                                    badge === 'NMR' ? 'bg-purple-900/40 text-purple-300 border border-purple-700/50' :
-                                    'bg-orange-900/40 text-orange-300 border border-orange-700/50'
+                                    badge === 'HPLC' ? 'bg-gradient-to-r from-blue-900/50 to-blue-800/40 text-blue-200 border border-blue-600/50 shadow-sm shadow-blue-500/20' :
+                                    badge === 'NMR' ? 'bg-gradient-to-r from-purple-900/50 to-purple-800/40 text-purple-200 border border-purple-600/50 shadow-sm shadow-purple-500/20' :
+                                    'bg-gradient-to-r from-orange-900/50 to-orange-800/40 text-orange-200 border border-orange-600/50 shadow-sm shadow-orange-500/20'
                                   }`}
                                 >
                                   {badge}
@@ -961,13 +974,13 @@ export default function HomePage() {
                           </div>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
-                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-900/40 text-blue-300 border border-blue-700/50">
+                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-blue-900/50 to-cyan-900/40 text-blue-200 border border-blue-600/50 shadow-sm">
                             <span className="text-base">{COUNTRY_FLAGS[oil.origin]}</span>
                             <span className="hidden lg:inline">{oil.origin}</span>
                           </span>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
-                          <span className="text-xs text-purple-300 font-medium bg-purple-900/30 px-2 py-1 rounded">
+                          <span className="text-xs text-purple-200 font-medium bg-gradient-to-r from-purple-900/40 to-purple-800/30 px-2 py-1 rounded border border-purple-700/30">
                             {oil.cultivar}
                           </span>
                         </td>
@@ -1346,6 +1359,7 @@ export default function HomePage() {
           100% { border-radius: 38% 52% 75% 36% / 50% 40% 50% 60%; }
         }
       `}</style>
+        </div>
     </main>
     </>
   )

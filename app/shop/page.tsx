@@ -493,93 +493,105 @@ export default function ShopPage() {
       {/* Product Cards Grid */}
       <section className="py-8 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredOils.map((oil, index) => (
               <div
                 key={oil.id}
-                className="bg-slate-800/50 backdrop-blur-sm rounded-xl border border-gray-700/50 overflow-hidden hover:border-green-500/50 hover:shadow-lg hover:shadow-green-500/10 transition-all duration-300 flex flex-col animate-fade-in"
+                className="group relative bg-gradient-to-br from-slate-800/90 via-slate-800/70 to-slate-900/90 backdrop-blur-md rounded-2xl border border-gray-700/50 overflow-hidden hover:border-green-500/60 hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-500 flex flex-col animate-fade-in hover:-translate-y-2"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                {/* Rank Badge */}
-                <div className="bg-gradient-to-r from-green-900/40 to-emerald-900/40 px-4 py-3 border-b border-gray-700/50 flex items-center justify-between">
-                  <span className={`inline-flex items-center justify-center w-10 h-10 rounded-lg font-bold text-sm shadow-md ${
-                    oil.rank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 text-white' :
-                    oil.rank === 2 ? 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white' :
-                    oil.rank === 3 ? 'bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 text-white' :
-                    'bg-gradient-to-br from-green-500 to-emerald-600 text-white'
-                  }`}>
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-green-900/0 via-transparent to-emerald-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+                {/* Rank Badge & Flag - More Prominent */}
+                <div className="relative bg-gradient-to-r from-green-900/60 via-emerald-800/50 to-green-900/60 px-5 py-4 border-b border-gray-700/50 flex items-center justify-between backdrop-blur-sm">
+                  <span className={`inline-flex items-center justify-center w-12 h-12 rounded-xl font-bold text-base shadow-xl ${
+                    oil.rank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-600 text-white shadow-yellow-500/50 ring-2 ring-yellow-300/50' :
+                    oil.rank === 2 ? 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-600 text-white shadow-gray-400/50 ring-2 ring-gray-300/50' :
+                    oil.rank === 3 ? 'bg-gradient-to-br from-orange-400 via-orange-500 to-red-600 text-white shadow-orange-500/50 ring-2 ring-orange-300/50' :
+                    'bg-gradient-to-br from-green-500 via-emerald-500 to-emerald-600 text-white shadow-green-500/50'
+                  } group-hover:scale-110 transition-transform duration-300`}>
                     #{oil.rank}
                   </span>
-                  <span className="text-2xl">{COUNTRY_FLAGS[oil.origin]}</span>
+                  <span className="text-3xl group-hover:scale-125 transition-transform duration-300">{COUNTRY_FLAGS[oil.origin]}</span>
                 </div>
 
                 {/* Card Content */}
-                <div className="p-5 flex-grow">
-                  <h3 className="text-lg font-bold text-gray-100 mb-3 leading-tight">
+                <div className="relative p-6 flex-grow">
+                  <h3 className="text-xl font-bold text-white mb-4 leading-tight group-hover:text-green-300 transition-colors duration-300">
                     {oil.brand}
                   </h3>
 
-                  {/* Polyphenol Content */}
-                  <div className="mb-4">
-                    <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-3xl font-bold text-green-400">
-                        {getMaxPolyphenols(oil)}
-                      </span>
-                      <span className="text-sm text-gray-400">mg/kg polyphenols</span>
-                    </div>
-                    <div className="flex gap-2 flex-wrap">
-                      {getMethodBadges(oil).map((badge, badgeIndex) => (
-                        <span
-                          key={`${badge}-${badgeIndex}`}
-                          className={`text-xs font-semibold px-2 py-1 rounded-full ${
-                            badge === 'HPLC' ? 'bg-blue-900/40 text-blue-300 border border-blue-700/50' :
-                            badge === 'NMR' ? 'bg-purple-900/40 text-purple-300 border border-purple-700/50' :
-                            'bg-orange-900/40 text-orange-300 border border-orange-700/50'
-                          }`}
-                        >
-                          {badge}
+                  {/* Polyphenol Content - Hero Feature */}
+                  <div className="mb-5 relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-500/5 to-emerald-500/5 rounded-lg blur-xl"></div>
+                    <div className="relative bg-gradient-to-br from-green-900/30 via-emerald-900/20 to-green-900/30 rounded-xl p-4 border border-green-700/30">
+                      <div className="flex items-baseline gap-2 mb-3">
+                        <span className="text-4xl font-extrabold bg-gradient-to-r from-green-300 via-emerald-300 to-green-400 bg-clip-text text-transparent">
+                          {getMaxPolyphenols(oil)}
                         </span>
-                      ))}
+                        <span className="text-sm text-gray-300 font-medium">mg/kg</span>
+                      </div>
+                      <div className="flex gap-2 flex-wrap">
+                        {getMethodBadges(oil).map((badge, badgeIndex) => (
+                          <span
+                            key={`${badge}-${badgeIndex}`}
+                            className={`text-xs font-bold px-3 py-1.5 rounded-full ${
+                              badge === 'HPLC' ? 'bg-gradient-to-r from-blue-600/40 to-blue-500/30 text-blue-200 border border-blue-500/50 shadow-sm shadow-blue-500/20' :
+                              badge === 'NMR' ? 'bg-gradient-to-r from-purple-600/40 to-purple-500/30 text-purple-200 border border-purple-500/50 shadow-sm shadow-purple-500/20' :
+                              'bg-gradient-to-r from-orange-600/40 to-orange-500/30 text-orange-200 border border-orange-500/50 shadow-sm shadow-orange-500/20'
+                            }`}
+                          >
+                            {badge}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
 
-                  {/* Details Grid */}
-                  <div className="space-y-2 mb-4 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Origin:</span>
-                      <span className="text-gray-200 font-medium">{oil.origin}</span>
+                  {/* Details Grid - Cleaner */}
+                  <div className="space-y-3 mb-5">
+                    <div className="flex justify-between items-center bg-slate-800/50 rounded-lg px-3 py-2">
+                      <span className="text-xs text-gray-400 uppercase tracking-wide">Origin</span>
+                      <span className="text-sm text-white font-semibold">{oil.origin}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Cultivar:</span>
-                      <span className="text-gray-200 font-medium">{oil.cultivar}</span>
+                    <div className="flex justify-between items-center bg-slate-800/50 rounded-lg px-3 py-2">
+                      <span className="text-xs text-gray-400 uppercase tracking-wide">Cultivar</span>
+                      <span className="text-sm text-white font-semibold">{oil.cultivar}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Harvest:</span>
-                      <span className="text-gray-200 font-medium">{oil.harvestDate}</span>
+                    <div className="flex justify-between items-center bg-slate-800/50 rounded-lg px-3 py-2">
+                      <span className="text-xs text-gray-400 uppercase tracking-wide">Harvest</span>
+                      <span className="text-sm text-white font-semibold">{oil.harvestDate}</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-400">Price:</span>
-                      <span className="text-green-400 font-bold">{oil.priceAmount}</span>
+                    <div className="flex justify-between items-center bg-gradient-to-r from-green-900/30 to-emerald-900/30 rounded-lg px-3 py-2 border border-green-700/30">
+                      <span className="text-xs text-gray-300 uppercase tracking-wide font-semibold">Price</span>
+                      <span className="text-lg text-green-400 font-black">{oil.priceAmount}</span>
                     </div>
                   </div>
 
                   {/* Notes */}
                   {oil.notes && (
-                    <p className="text-xs text-gray-400 mb-4 line-clamp-2">
+                    <p className="text-xs text-gray-400 leading-relaxed line-clamp-2 mb-4 italic">
                       {oil.notes}
                     </p>
                   )}
                 </div>
 
-                {/* Buy Button */}
-                <div className="p-4 pt-0">
+                {/* Buy Button - More Prominent */}
+                <div className="relative p-5 pt-0">
                   <a
                     href={oil.buyLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-3 px-4 rounded-lg text-center transition-all duration-200 shadow-lg hover:shadow-green-500/50 hover:scale-105"
+                    className="block w-full bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 hover:from-green-400 hover:via-emerald-400 hover:to-green-500 text-white font-bold py-4 px-6 rounded-xl text-center transition-all duration-300 shadow-xl shadow-green-500/30 hover:shadow-2xl hover:shadow-green-500/50 hover:scale-105 relative overflow-hidden group/btn"
                   >
-                    Shop Now →
+                    <span className="relative z-10 flex items-center justify-center gap-2">
+                      Shop Now
+                      <svg className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700"></div>
                   </a>
                 </div>
               </div>
