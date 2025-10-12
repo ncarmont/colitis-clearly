@@ -908,7 +908,7 @@ export default function HomePage() {
             </div>
           )}
 
-          <div className="bg-white rounded-2xl md:rounded-3xl shadow-lg border border-gray-200 overflow-hidden">
+          <div className="bg-gray-50 rounded-2xl md:rounded-3xl shadow-lg border border-gray-200 overflow-hidden">
             <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
                 <thead>
