@@ -763,21 +763,21 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Stats - Mobile Optimized */}
-            <div className="flex flex-wrap justify-center gap-3 md:gap-6 mt-2 md:mt-4 animate-fade-in-delay-2">
+            {/* Stats - Smaller */}
+            <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-2 md:mt-3 animate-fade-in-delay-2">
               <div className="text-center">
-                <div className="text-xl md:text-3xl font-bold text-white">{stats.totalOils}</div>
-                <div className="text-[9px] md:text-xs text-green-200">Lab-Verified</div>
+                <div className="text-base md:text-2xl font-bold text-white">{stats.totalOils}</div>
+                <div className="text-[8px] md:text-[10px] text-green-200">Lab-Verified</div>
               </div>
               <div className="hidden sm:block w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-xl md:text-3xl font-bold text-white">{stats.countries}</div>
-                <div className="text-[9px] md:text-xs text-green-200">Countries</div>
+                <div className="text-base md:text-2xl font-bold text-white">{stats.countries}</div>
+                <div className="text-[8px] md:text-[10px] text-green-200">Countries</div>
               </div>
               <div className="hidden sm:block w-px bg-white/20"></div>
               <div className="text-center">
-                <div className="text-xl md:text-3xl font-bold text-white">{stats.maxPolyphenols}</div>
-                <div className="text-[9px] md:text-xs text-green-200">Max mg/kg</div>
+                <div className="text-base md:text-2xl font-bold text-white">{stats.maxPolyphenols}</div>
+                <div className="text-[8px] md:text-[10px] text-green-200">Max mg/kg</div>
               </div>
             </div>
           </div>
@@ -855,11 +855,14 @@ export default function HomePage() {
           <div className="mb-2 text-center px-2">
             <div className="inline-block bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-slate-700/50 rounded-lg px-4 py-2 max-w-5xl backdrop-blur-sm shadow-lg">
               <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-[10px] md:text-xs">
-                {/* How it works - Simplified */}
-                <p className="text-gray-200">
-                  <span className="text-green-400 font-semibold">+250 mg/kg</span> = Health benefits •
-                  <span className="text-orange-400 font-semibold"> Fresh harvest</span> = Critical
-                </p>
+                {/* What makes a good olive oil */}
+                <div className="text-center md:text-left">
+                  <p className="text-green-400 font-semibold mb-1">What makes a good olive oil?</p>
+                  <p className="text-gray-200">
+                    <span className="text-green-300 font-medium">+250 mg/kg polyphenols</span> = Health benefits •
+                    <span className="text-orange-300 font-medium"> Fresh harvest</span> = Critical
+                  </p>
+                </div>
 
                 {/* Divider */}
                 <span className="hidden md:inline text-gray-600">|</span>
@@ -901,7 +904,7 @@ export default function HomePage() {
             </div>
           )}
 
-          <div className="bg-gradient-to-br from-slate-800/60 via-slate-800/50 to-slate-900/60 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl border border-gradient-to-r from-green-800/30 via-gray-800/50 to-green-800/30 overflow-hidden ring-1 ring-green-500/10">
+          <div className="bg-gradient-to-br from-slate-800/80 via-slate-800/70 to-slate-850/80 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden">
             <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
                 <thead>
