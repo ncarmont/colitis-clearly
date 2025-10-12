@@ -649,7 +649,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListStructuredData) }}
       />
 
-      <main className="min-h-screen bg-gradient-to-br from-gray-50 via-slate-50 to-gray-100 overflow-x-hidden w-full max-w-full relative">
+      <main className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-slate-200 overflow-x-hidden w-full max-w-full relative">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-100/30 via-transparent to-transparent pointer-events-none"></div>
         <div className="relative z-10">
       {/* Hero Header */}
