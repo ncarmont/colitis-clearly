@@ -861,10 +861,10 @@ export default function HomePage() {
                   <p className="text-green-600 font-bold mb-1.5 text-xs md:text-sm">What makes a good olive oil?</p>
                   <div className="space-y-0.5">
                     <p className="text-gray-800">
-                      <span className="text-green-600 font-semibold">High polyphenols</span> <span className="text-gray-500">(250+ mg/kg)</span> → Better health benefits
+                      <span className="text-gray-800 font-semibold">High polyphenols</span> <span className="text-gray-500">(250+ mg/kg)</span> → Better health benefits
                     </p>
                     <p className="text-gray-800">
-                      <span className="text-orange-600 font-semibold">Fresh harvest</span> <span className="text-gray-500">(this year)</span> → Maximum potency
+                      <span className="text-gray-800 font-semibold">Fresh harvest</span> <span className="text-gray-500">(this year)</span> → Maximum potency
                     </p>
                   </div>
                 </div>
@@ -874,13 +874,13 @@ export default function HomePage() {
 
                 {/* Score Calculation - Updated */}
                 <div className="text-center md:text-left">
-                  <p className="text-blue-600 font-bold mb-1.5 text-xs md:text-sm">How is the score calculated?</p>
+                  <p className="text-green-600 font-bold mb-1.5 text-xs md:text-sm">How is the score calculated?</p>
                   <div className="space-y-0.5">
                     <p className="text-gray-800">
-                      <span className="text-blue-600 font-semibold">HPLC values</span> → Used directly
+                      <span className="text-gray-800 font-semibold">HPLC values</span> → Used directly
                     </p>
                     <p className="text-gray-800">
-                      <span className="text-purple-600 font-semibold">NMR/Other × 0.6</span> → Conversion factor
+                      <span className="text-gray-800 font-semibold">NMR/Other × 0.6</span> → Conversion factor
                     </p>
                   </div>
                 </div>
@@ -1013,10 +1013,11 @@ export default function HomePage() {
                               {getMethodBadges(oil).map((badge, badgeIndex) => (
                                 <span
                                   key={`${badge}-${badgeIndex}`}
-                                  className={`text-[10px] font-semibold px-2 py-1 rounded-full ${
-                                    badge === 'HPLC' ? 'bg-gradient-to-r from-blue-100 to-blue-200 text-blue-700 border border-blue-300 shadow-sm' :
-                                    badge === 'NMR' ? 'bg-gradient-to-r from-purple-100 to-purple-200 text-purple-700 border border-purple-300 shadow-sm' :
-                                    'bg-gradient-to-r from-orange-100 to-orange-200 text-orange-700 border border-orange-300 shadow-sm'
+                                  className={`text-[10px] font-medium px-2 py-1 rounded-full border ${
+                                    displayRank === 1 ? 'bg-yellow-50 text-yellow-700 border-yellow-200' :
+                                    displayRank === 2 ? 'bg-gray-50 text-gray-700 border-gray-200' :
+                                    displayRank === 3 ? 'bg-orange-50 text-orange-700 border-orange-200' :
+                                    'bg-gray-100 text-gray-700 border-gray-200'
                                   }`}
                                 >
                                   {badge}
@@ -1033,7 +1034,12 @@ export default function HomePage() {
                               </span>
                               <span className="text-[10px] text-gray-400 font-medium">mg/kg</span>
                             </div>
-                            <span className="text-[8px] text-gray-500 font-medium bg-gray-50 px-1 py-0.5 rounded text-center">
+                            <span className={`text-[8px] font-medium px-1 py-0.5 rounded text-center ${
+                              displayRank === 1 ? 'bg-yellow-50 text-yellow-600' :
+                              displayRank === 2 ? 'bg-gray-50 text-gray-600' :
+                              displayRank === 3 ? 'bg-orange-50 text-orange-600' :
+                              'bg-gray-50 text-gray-500'
+                            }`}>
                               {oil.hplcPolyphenols ? 'HPLC' :
                                oil.method.toLowerCase().includes('nmr') || oil.method.toLowerCase().includes('qnmr') ? 'NMR' :
                                oil.method.toLowerCase().includes('rss') ? 'RSS' : 'Other'}
@@ -1041,13 +1047,23 @@ export default function HomePage() {
                           </div>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
-                          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-700 border border-blue-300 shadow-sm">
+                          <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border ${
+                            displayRank === 1 ? 'bg-yellow-50 text-yellow-700 border-yellow-200' :
+                            displayRank === 2 ? 'bg-gray-50 text-gray-700 border-gray-200' :
+                            displayRank === 3 ? 'bg-orange-50 text-orange-700 border-orange-200' :
+                            'bg-gray-50 text-gray-700 border-gray-200'
+                          }`}>
                             <span className="text-base">{COUNTRY_FLAGS[oil.origin]}</span>
                             <span className="hidden lg:inline">{oil.origin}</span>
                           </span>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
-                          <span className="text-xs text-purple-700 font-medium bg-gradient-to-r from-purple-100 to-purple-200 px-2 py-1 rounded border border-purple-300">
+                          <span className={`text-xs font-medium px-2 py-1 rounded border ${
+                            displayRank === 1 ? 'bg-yellow-50 text-yellow-700 border-yellow-200' :
+                            displayRank === 2 ? 'bg-gray-50 text-gray-700 border-gray-200' :
+                            displayRank === 3 ? 'bg-orange-50 text-orange-700 border-orange-200' :
+                            'bg-gray-50 text-gray-700 border-gray-200'
+                          }`}>
                             {oil.cultivar}
                           </span>
                         </td>
@@ -1056,7 +1072,12 @@ export default function HomePage() {
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
                           <div className="flex flex-col gap-1">
-                            <span className="text-xs text-orange-700 font-medium bg-orange-100 px-2 py-1 rounded inline-block border border-orange-200">
+                            <span className={`text-xs font-medium px-2 py-1 rounded inline-block border ${
+                              displayRank === 1 ? 'bg-yellow-50 text-yellow-700 border-yellow-200' :
+                              displayRank === 2 ? 'bg-gray-50 text-gray-700 border-gray-200' :
+                              displayRank === 3 ? 'bg-orange-50 text-orange-700 border-orange-200' :
+                              'bg-gray-50 text-gray-700 border-gray-200'
+                            }`}>
                               {oil.method.length > 15 ? oil.method.substring(0, 15) + '...' : oil.method}
                             </span>
                             {oil.certificateLink && (
@@ -1064,7 +1085,7 @@ export default function HomePage() {
                                 href={oil.certificateLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-xs text-blue-600 hover:text-blue-700 underline"
+                                className="text-xs text-green-600 hover:text-green-700 underline"
                                 title="View Lab Certificate"
                               >
                                 📜 COA
@@ -1289,15 +1310,18 @@ export default function HomePage() {
         }
 
         .crown-gold {
-          filter: hue-rotate(45deg) saturate(1.5) brightness(1.2);
+          color: #FFD700;
+          filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.8)) saturate(1.5) brightness(1.1);
         }
 
         .crown-silver {
-          filter: grayscale(1) brightness(1.1);
+          color: #C0C0C0;
+          filter: drop-shadow(0 0 4px rgba(192, 192, 192, 0.8)) brightness(1.2);
         }
 
         .crown-bronze {
-          filter: hue-rotate(15deg) saturate(1.2) brightness(0.9);
+          color: #CD7F32;
+          filter: drop-shadow(0 0 4px rgba(205, 127, 50, 0.8)) saturate(1.3);
         }
 
         @keyframes table-entrance {
