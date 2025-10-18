@@ -850,7 +850,7 @@ export default function HomePage() {
       `}</style>
 
       {/* Rankings Table */}
-      <section className="py-3 md:py-6 px-4 md:px-6 w-full">
+      <section className="py-3 md:py-6 px-4 md:px-6 w-full bg-gradient-to-r from-emerald-700 via-green-700 to-emerald-800">
         <div className="max-w-7xl mx-auto w-full">
           {/* Combined Info Section - Clear & Simple */}
           <div className="mb-2 text-center px-2">
