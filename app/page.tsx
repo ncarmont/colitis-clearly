@@ -1316,12 +1316,12 @@ export default function HomePage() {
 
         .crown-silver {
           color: #C0C0C0;
-          filter: drop-shadow(0 0 4px rgba(192, 192, 192, 0.8)) brightness(1.2);
+          filter: grayscale(1) brightness(1.3) drop-shadow(0 0 4px rgba(192, 192, 192, 0.8));
         }
 
         .crown-bronze {
           color: #CD7F32;
-          filter: drop-shadow(0 0 4px rgba(205, 127, 50, 0.8)) saturate(1.3);
+          filter: hue-rotate(15deg) saturate(1.5) brightness(0.8) contrast(1.2) drop-shadow(0 0 4px rgba(205, 127, 50, 0.8));
         }
 
         @keyframes table-entrance {
