@@ -1004,7 +1004,12 @@ export default function HomePage() {
                         <td className="px-3 py-4">
                           <div className="flex items-center gap-2 flex-wrap">
                             <div className="flex items-baseline gap-1">
-                              <span className="text-2xl font-bold text-green-600 group-hover:text-green-700 transition-colors">
+                              <span className={`text-2xl font-bold transition-colors ${
+                                displayRank === 1 ? 'text-yellow-600 group-hover:text-yellow-700' :
+                                displayRank === 2 ? 'text-gray-600 group-hover:text-gray-700' :
+                                displayRank === 3 ? 'text-orange-600 group-hover:text-orange-700' :
+                                'text-green-600 group-hover:text-green-700'
+                              }`}>
                                 {getMaxPolyphenols(oil)}
                               </span>
                               <span className="text-xs text-gray-600 font-semibold">score</span>
@@ -1085,7 +1090,12 @@ export default function HomePage() {
                                 href={oil.certificateLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-xs text-green-600 hover:text-green-700 underline"
+                                className={`text-xs underline ${
+                                  displayRank === 1 ? 'text-yellow-600 hover:text-yellow-700' :
+                                  displayRank === 2 ? 'text-gray-600 hover:text-gray-700' :
+                                  displayRank === 3 ? 'text-orange-600 hover:text-orange-700' :
+                                  'text-green-600 hover:text-green-700'
+                                }`}
                                 title="View Lab Certificate"
                               >
                                 📜 COA
@@ -1096,7 +1106,12 @@ export default function HomePage() {
                         <td className="px-3 py-4 whitespace-nowrap">
                           <div className="flex flex-col gap-0.5">
                             <span className="text-xs text-gray-600 font-medium">{oil.price}</span>
-                            <span className="text-xs text-green-600 font-bold">{oil.priceAmount}</span>
+                            <span className={`text-xs font-bold ${
+                              displayRank === 1 ? 'text-yellow-600' :
+                              displayRank === 2 ? 'text-gray-600' :
+                              displayRank === 3 ? 'text-orange-600' :
+                              'text-green-600'
+                            }`}>{oil.priceAmount}</span>
                           </div>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
