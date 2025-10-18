@@ -929,30 +929,29 @@ export default function HomePage() {
             <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
                 <thead>
-                  <tr className="bg-gradient-to-r from-green-50 via-emerald-50 to-green-50 border-b-2 border-green-200">
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider relative">
+                  <tr className="bg-gray-700 border-b-2 border-gray-600">
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider relative">
                       <button
                         onClick={() => setOverallRankFilter(!overallRankFilter)}
                         className={`flex items-center gap-1 transition-all duration-200 ${
                           overallRankFilter
-                            ? 'text-green-600 font-extrabold'
-                            : 'hover:text-green-600'
+                            ? 'text-green-400 font-extrabold'
+                            : 'hover:text-green-400'
                         }`}
                         title="Filter by HPLC tested oils from 2024-2025 harvest"
                       >
                         Overall Rank {overallRankFilter && '✓'}
                       </button>
                     </th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Brand</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Polyphenol Score</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Original Value</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Origin</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Cultivar</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Harvest</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Method</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Price</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Buy</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Notes</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Brand</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Polyphenol Score</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Original Value</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Origin</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Cultivar</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Harvest</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Method</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Buy</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Notes</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
@@ -1101,17 +1100,6 @@ export default function HomePage() {
                                 📜 COA
                               </a>
                             )}
-                          </div>
-                        </td>
-                        <td className="px-3 py-4 whitespace-nowrap">
-                          <div className="flex flex-col gap-0.5">
-                            <span className="text-xs text-gray-600 font-medium">{oil.price}</span>
-                            <span className={`text-xs font-bold ${
-                              displayRank === 1 ? 'text-yellow-600' :
-                              displayRank === 2 ? 'text-gray-600' :
-                              displayRank === 3 ? 'text-orange-600' :
-                              'text-green-600'
-                            }`}>{oil.priceAmount}</span>
                           </div>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
