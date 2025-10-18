@@ -27,12 +27,12 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 1, rank: 1, brand: "P.J. KABOS – Family Reserve Phenolic Shot",
     hplcPolyphenols: 1012, nmrOtherPolyphenols: 1600,
-    origin: "Greece", harvestDate: "Sep–Oct 2024",
-    price: "$$", priceAmount: "$59.83", method: "HPLC + qNMR", lab: "HPLC COI/T.20/Doc.29 + qNMR",
+    origin: "Greece", harvestDate: "Oct 2024",
+    price: "$$", priceAmount: "$59.83", method: "HPLC + qNMR", lab: "IOC-certified HPLC + qNMR",
     certificateLink: "",
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "14.4 mg/20g hydroxytyrosol + derivatives (HPLC)."
+    notes: "HPLC (IOC-certified): 1012 mg/kg, 14.4 mg/20g hydroxytyrosol. NMR: 1600 mg/kg, 32.18 mg/20g. 2025 Gold Medal (NY, Italy). USDA Organic."
   },
   {
     id: 2, rank: 2, brand: "SP360",
