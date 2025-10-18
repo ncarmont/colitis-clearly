@@ -487,12 +487,13 @@ export default function HomePage() {
     return harvestDate.includes('2024') || harvestDate.includes('2025')
   }
 
-  // Helper function to get max polyphenol value from either HPLC or NMR/Other
+  // Helper function to get HPLC equivalent polyphenol value
   const getMaxPolyphenols = (oil: OliveOil): number => {
-    if (oil.hplcPolyphenols && oil.nmrOtherPolyphenols) {
-      return Math.max(oil.hplcPolyphenols, oil.nmrOtherPolyphenols)
+    if (oil.hplcPolyphenols) {
+      return oil.hplcPolyphenols
     }
-    return oil.hplcPolyphenols || oil.nmrOtherPolyphenols || 0
+    // Apply 0.6 conversion factor for NMR/Other methods to get HPLC equivalent
+    return oil.nmrOtherPolyphenols ? Math.round(oil.nmrOtherPolyphenols * 0.6) : 0
   }
 
   // Helper function to get method badges for an oil
@@ -871,6 +872,22 @@ export default function HomePage() {
                 {/* Divider */}
                 <span className="hidden md:inline text-gray-300">|</span>
 
+                {/* Score Calculation - Updated */}
+                <div className="text-center md:text-left">
+                  <p className="text-blue-600 font-bold mb-1.5 text-xs md:text-sm">How is the score calculated?</p>
+                  <div className="space-y-0.5">
+                    <p className="text-gray-800">
+                      <span className="text-blue-600 font-semibold">HPLC values</span> → Used directly
+                    </p>
+                    <p className="text-gray-800">
+                      <span className="text-purple-600 font-semibold">NMR/Other × 0.6</span> → Conversion factor
+                    </p>
+                  </div>
+                </div>
+
+                {/* Divider */}
+                <span className="hidden md:inline text-gray-300">|</span>
+
                 {/* Fresh Harvest - Cleaner */}
                 <div className="flex flex-col items-center gap-1.5">
                   <span className="text-gray-700 text-[10px] md:text-xs font-medium">Freshest now ({currentMonth}):</span>
@@ -885,7 +902,7 @@ export default function HomePage() {
 
               {/* Affiliate Disclosure */}
               <p className="text-[9px] md:text-[10px] text-gray-500 italic mt-2">
-                Affiliate links • Independent rankings
+                Affiliate links • Independent rankings • All values shown as HPLC equivalents
               </p>
             </div>
           </div>
@@ -908,7 +925,7 @@ export default function HomePage() {
             </div>
           )}
 
-          <div className="bg-gray-50 rounded-2xl md:rounded-3xl shadow-lg border border-gray-200 overflow-hidden">
+          <div className="bg-gray-50 rounded-2xl md:rounded-3xl shadow-lg border border-gray-200 overflow-hidden animate-table-entrance">
             <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
                 <thead>
@@ -927,7 +944,8 @@ export default function HomePage() {
                       </button>
                     </th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Brand</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Polyphenols (mg/kg)</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Polyphenol Score</th>
+                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Original Value</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Origin</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Cultivar</th>
                     <th className="px-3 py-4 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">Harvest</th>
@@ -944,18 +962,34 @@ export default function HomePage() {
                     return (
                       <tr
                         key={oil.id}
-                        className="hover:bg-green-50 transition-all duration-300 group animate-fade-in-row relative"
+                        className={`transition-all duration-300 group animate-fade-in-row relative ${
+                          displayRank === 1 ? 'bg-gradient-to-r from-yellow-100/90 to-amber-100/80 hover:from-yellow-200/95 hover:to-amber-200/85 border-l-4 border-yellow-400' :
+                          displayRank === 2 ? 'bg-gradient-to-r from-gray-100/90 to-slate-100/80 hover:from-gray-200/95 hover:to-slate-200/85 border-l-4 border-gray-400' :
+                          displayRank === 3 ? 'bg-gradient-to-r from-orange-100/90 to-red-100/80 hover:from-orange-200/95 hover:to-red-200/85 border-l-4 border-orange-400' :
+                          'hover:bg-green-50'
+                        }`}
                         style={{ animationDelay: `${index * 50}ms` }}
                       >
                         <td className="px-3 py-4 whitespace-nowrap">
-                          <span className={`inline-flex items-center justify-center w-10 h-10 rounded-xl font-bold text-sm shadow-md group-hover:scale-110 transition-transform duration-200 ${
-                            displayRank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-yellow-500/50' :
-                            displayRank === 2 ? 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white shadow-gray-400/50' :
-                            displayRank === 3 ? 'bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 text-white shadow-orange-500/50' :
-                            'bg-gradient-to-br from-green-500 to-emerald-600 text-white shadow-green-500/30'
-                          }`}>
-                            {displayRank}
-                          </span>
+                          <div className="flex items-center gap-2">
+                            <span className={`inline-flex items-center justify-center w-10 h-10 rounded-xl font-bold text-sm shadow-md group-hover:scale-110 transition-transform duration-200 ${
+                              displayRank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-yellow-500/50' :
+                              displayRank === 2 ? 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white shadow-gray-400/50' :
+                              displayRank === 3 ? 'bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 text-white shadow-orange-500/50' :
+                              'bg-gradient-to-br from-green-500 to-emerald-600 text-white shadow-green-500/30'
+                            }`}>
+                              {displayRank}
+                            </span>
+                            {displayRank <= 3 && (
+                              <span className={`text-xl animate-crown-bounce ${
+                                displayRank === 1 ? 'crown-gold' :
+                                displayRank === 2 ? 'crown-silver' :
+                                'crown-bronze'
+                              }`}>
+                                👑
+                              </span>
+                            )}
+                          </div>
                         </td>
                         <td className="px-3 py-4">
                           <a
@@ -973,7 +1007,7 @@ export default function HomePage() {
                               <span className="text-2xl font-bold text-green-600 group-hover:text-green-700 transition-colors">
                                 {getMaxPolyphenols(oil)}
                               </span>
-                              <span className="text-xs text-gray-600 font-semibold">mg/kg</span>
+                              <span className="text-xs text-gray-600 font-semibold">score</span>
                             </div>
                             <div className="flex gap-1 flex-wrap">
                               {getMethodBadges(oil).map((badge, badgeIndex) => (
@@ -989,6 +1023,21 @@ export default function HomePage() {
                                 </span>
                               ))}
                             </div>
+                          </div>
+                        </td>
+                        <td className="px-3 py-4">
+                          <div className="flex flex-col gap-0.5">
+                            <div className="flex items-baseline gap-0.5">
+                              <span className="text-sm font-semibold text-gray-600">
+                                {oil.hplcPolyphenols || oil.nmrOtherPolyphenols}
+                              </span>
+                              <span className="text-[10px] text-gray-400 font-medium">mg/kg</span>
+                            </div>
+                            <span className="text-[8px] text-gray-500 font-medium bg-gray-50 px-1 py-0.5 rounded text-center">
+                              {oil.hplcPolyphenols ? 'HPLC' :
+                               oil.method.toLowerCase().includes('nmr') || oil.method.toLowerCase().includes('qnmr') ? 'NMR' :
+                               oil.method.toLowerCase().includes('rss') ? 'RSS' : 'Other'}
+                            </span>
                           </div>
                         </td>
                         <td className="px-3 py-4 whitespace-nowrap">
@@ -1229,6 +1278,52 @@ export default function HomePage() {
 
         .animate-fade-in-row {
           animation: fade-in-row 0.4s ease-out both;
+        }
+
+        .animate-table-entrance {
+          animation: table-entrance 0.8s ease-out;
+        }
+
+        .animate-crown-bounce {
+          animation: crown-bounce 2s ease-in-out infinite;
+        }
+
+        .crown-gold {
+          filter: hue-rotate(45deg) saturate(1.5) brightness(1.2);
+        }
+
+        .crown-silver {
+          filter: grayscale(1) brightness(1.1);
+        }
+
+        .crown-bronze {
+          filter: hue-rotate(15deg) saturate(1.2) brightness(0.9);
+        }
+
+        @keyframes table-entrance {
+          from {
+            opacity: 0;
+            transform: translateY(20px) scale(0.98);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
+        @keyframes crown-bounce {
+          0%, 100% {
+            transform: translateY(0) rotate(-5deg);
+          }
+          25% {
+            transform: translateY(-3px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-1px) rotate(5deg);
+          }
+          75% {
+            transform: translateY(-2px) rotate(0deg);
+          }
         }
 
         /* Lava Lamp Effect */
