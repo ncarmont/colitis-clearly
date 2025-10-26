@@ -399,12 +399,24 @@ export default function HomePage() {
   )
   const [instagramFollowers, setInstagramFollowers] = useState<number | null>(null)
   const [totalVisitors, setTotalVisitors] = useState<number | null>(null)
+  const [showApiKeyInput, setShowApiKeyInput] = useState(false)
+  const [apiKey, setApiKey] = useState('')
+  const [isResearching, setIsResearching] = useState(false)
+  const [researchResults, setResearchResults] = useState<string>('')
 
   useEffect(() => {
     const updateIsMobile = () => setIsMobile(window.innerWidth < 768)
     updateIsMobile()
     window.addEventListener('resize', updateIsMobile)
     return () => window.removeEventListener('resize', updateIsMobile)
+  }, [])
+
+  useEffect(() => {
+    // Load API key from localStorage
+    const savedApiKey = localStorage.getItem('openrouter_api_key')
+    if (savedApiKey) {
+      setApiKey(savedApiKey)
+    }
   }, [])
 
   useEffect(() => {
@@ -510,6 +522,86 @@ export default function HomePage() {
       badges.push('Other')
     }
     return badges
+  }
+
+  // API Key management functions
+  const saveApiKey = (key: string) => {
+    localStorage.setItem('openrouter_api_key', key)
+    setApiKey(key)
+    setShowApiKeyInput(false)
+  }
+
+  const clearApiKey = () => {
+    localStorage.removeItem('openrouter_api_key')
+    setApiKey('')
+    setResearchResults('')
+  }
+
+  // Research function using OpenRouter
+  const researchMissingEVOOs = async () => {
+    if (!apiKey) {
+      setShowApiKeyInput(true)
+      return
+    }
+
+    setIsResearching(true)
+    setResearchResults('')
+
+    try {
+      // Create prompt with current oil names and polyphenol values
+      const currentOils = recentOils.map(oil =>
+        `${oil.brand}: ${getMaxPolyphenols(oil)} mg/kg`
+      ).join('\n')
+
+      const prompt = `You are a research assistant specializing in high-polyphenol extra virgin olive oils. Here is the current list of EVOOs and their polyphenol content:
+
+${currentOils}
+
+Please research online to find additional high-polyphenol extra virgin olive oils (250+ mg/kg polyphenols) that are NOT in the above list. Focus on:
+1. Laboratory-verified polyphenol content (HPLC, NMR, or RSS testing preferred)
+2. Commercially available products
+3. Recent harvest dates (2023-2025)
+
+For each EVOO you find, provide ONLY:
+- Brand/Product Name
+- Polyphenol Content (mg/kg)
+- Purchase URL
+
+Format your response as a concise list. Verify information from reliable sources before including.`
+
+      const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+          'HTTP-Referer': 'https://www.best-olive-oil-ranked.com',
+          'X-Title': 'Best Olive Oil Rankings'
+        },
+        body: JSON.stringify({
+          model: 'openai/gpt-4o-mini',
+          messages: [
+            {
+              role: 'user',
+              content: prompt
+            }
+          ],
+          temperature: 0.3,
+          max_tokens: 2000
+        })
+      })
+
+      if (!response.ok) {
+        throw new Error(`API request failed: ${response.status}`)
+      }
+
+      const data = await response.json()
+      setResearchResults(data.choices[0].message.content)
+    } catch (error) {
+      console.error('Research failed:', error)
+      setResearchResults(`Research failed: ${error instanceof Error ? error.message : 'Unknown error'}`)
+    } finally {
+      setIsResearching(false)
+    }
   }
 
   // Filter to only recent harvests for stats and display
@@ -1138,6 +1230,117 @@ export default function HomePage() {
                 </tbody>
               </table>
             </div>
+          </div>
+
+          {/* AI Research Section */}
+          <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div className="text-center mb-4">
+              <h3 className="text-xl font-bold text-white mb-2">
+                🔬 AI-Powered EVOO Research
+              </h3>
+              <p className="text-gray-200 text-sm mb-4">
+                Use AI to research additional high-polyphenol olive oils not in our current list
+              </p>
+
+              {!apiKey ? (
+                <div className="space-y-4">
+                  {!showApiKeyInput ? (
+                    <button
+                      onClick={() => setShowApiKeyInput(true)}
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                    >
+                      <span>🔑</span>
+                      <span>Add OpenRouter API Key</span>
+                    </button>
+                  ) : (
+                    <div className="max-w-md mx-auto bg-white rounded-lg p-4">
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        OpenRouter API Key
+                      </label>
+                      <input
+                        type="password"
+                        placeholder="Enter your OpenRouter API key"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') {
+                            const target = e.target as HTMLInputElement
+                            if (target.value.trim()) {
+                              saveApiKey(target.value.trim())
+                            }
+                          }
+                        }}
+                      />
+                      <div className="flex gap-2 mt-3">
+                        <button
+                          onClick={(e) => {
+                            const input = e.currentTarget.parentElement?.parentElement?.querySelector('input') as HTMLInputElement
+                            if (input?.value.trim()) {
+                              saveApiKey(input.value.trim())
+                            }
+                          }}
+                          className="px-4 py-2 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700 transition-colors"
+                        >
+                          Save
+                        </button>
+                        <button
+                          onClick={() => setShowApiKeyInput(false)}
+                          className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md text-sm hover:bg-gray-400 transition-colors"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                      <p className="text-xs text-gray-500 mt-2">
+                        Get your free API key at{' '}
+                        <a href="https://openrouter.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                          openrouter.ai
+                        </a>
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <div className="flex items-center justify-center gap-4">
+                    <button
+                      onClick={researchMissingEVOOs}
+                      disabled={isResearching}
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {isResearching ? (
+                        <>
+                          <div className="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent"></div>
+                          <span>Researching...</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>🔍</span>
+                          <span>Research Missing EVOOs</span>
+                        </>
+                      )}
+                    </button>
+                    <button
+                      onClick={clearApiKey}
+                      className="text-xs text-gray-300 hover:text-white underline"
+                    >
+                      Remove API Key
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Research Results */}
+            {researchResults && (
+              <div className="mt-6 bg-white rounded-lg p-4 max-h-96 overflow-y-auto">
+                <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
+                  <span>🧪</span>
+                  Research Results
+                </h4>
+                <div className="text-sm text-gray-700 whitespace-pre-wrap">
+                  {researchResults}
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Show More & Shop Buttons - Condensed */}
