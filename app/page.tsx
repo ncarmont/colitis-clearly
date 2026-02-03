@@ -271,8 +271,8 @@ const OILS_DATA: OliveOil[] = [
     price: "$", priceAmount: "$19.99", method: "Other", lab: "Brand posted",
     certificateLink: "",
     cultivar: "Koroneiki",
-    buyLink: "https://www.kosterina.com/products/6bottles",
-    notes: "UK retailer SKU; link in prior list was to Kosterina (wrong)."
+    buyLink: "https://www.amazon.co.uk/Odysea-Good-Greek-Virgin-Olive/dp/B0C7LBD9Z4",
+    notes: "UK retailer SKU; Cretan Koroneiki with 573 mg/kg polyphenols."
   },
   {
     id: 26, rank: 26, brand: "Kosterina – Original Extra Virgin",
