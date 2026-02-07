@@ -48,12 +48,12 @@ export default function RankingsPage() {
       notes: "Value & COA shown on product page (Polyphenol Analysis)"
     },
     {
-      id: 4, rank: 4, brand: "The Governor – Limited Edition", polyphenols: 1458, origin: "Greece", harvestDate: "Oct 2024",
-      price: "$$", priceAmount: "$65.00", method: "NMR", lab: "WOCH/Univ. Athens",
-      certificateLink: "https://thegovernorevoo.co.uk/pages/shop-extra-virgin-olive-oil",
+      id: 4, rank: 4, brand: "The Governor – Limited Edition", polyphenols: 1316, origin: "Greece", harvestDate: "Oct 2025",
+      price: "$$", priceAmount: "£49.95", method: "NMR", lab: "WOCH/Univ. Athens",
+      certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
       cultivar: "Lianolia",
-      buyLink: "https://kyoord.com/products/the-governor-limited-earliest-harvest-highest-phenolic-concentration",
-      notes: "Explicit NMR totals & oleocanthal from Corfu"
+      buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
+      notes: "2025/26 harvest; 577mg oleocanthal + 298mg oleacein; DIO-certified organic from Corfu"
     },
     {
       id: 5, rank: 5, brand: "ONSURI Arbequina (Latest 2024/25)", polyphenols: 1269, origin: "Jordan", harvestDate: "2024/25",
@@ -72,12 +72,12 @@ export default function RankingsPage() {
       notes: "Count on product; method via FAQ"
     },
     {
-      id: 7, rank: 7, brand: "The Governor – Premium", polyphenols: 1140, origin: "Greece", harvestDate: "Nov 2024",
-      price: "$$", priceAmount: "$55.00", method: "NMR", lab: "WOCH/Athens",
-      certificateLink: "https://thegovernorevoo.co.uk/products/the-governor-premium-unfiltered-extra-virgin-olive-oil",
+      id: 7, rank: 7, brand: "The Governor – Premium", polyphenols: 1174, origin: "Greece", harvestDate: "Oct 2025",
+      price: "$$", priceAmount: "£39.95", method: "NMR", lab: "WOCH/Athens",
+      certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Premium_Certificate_2025.pdf",
       cultivar: "Lianolia",
-      buyLink: "https://kyoord.com/products/the-governor-extra-virgin-olive-oil-i-premium-edition",
-      notes: "Counts and D1 index published, from Corfu"
+      buyLink: "https://thegovernorevoo.co.uk/products/the-governor-premium-unfiltered-extra-virgin-olive-oil",
+      notes: "2025/26 harvest; 476mg oleocanthal + 295mg oleacein; DIO-certified organic from Corfu"
     },
     {
       id: 8, rank: 8, brand: "Finca La Torre – Hojiblanca (Organic/Biodynamic)", polyphenols: 1059, origin: "Spain", harvestDate: "2024/25",
