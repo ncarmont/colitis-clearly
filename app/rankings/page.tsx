@@ -32,12 +32,12 @@ export default function RankingsPage() {
       notes: "Extremely high; retailer shows lab metrics"
     },
     {
-      id: 2, rank: 2, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1600, origin: "Greece", harvestDate: "2024/25",
+      id: 2, rank: 2, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1400, origin: "Greece", harvestDate: "2025/26",
       price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
       certificateLink: "https://www.pjkabos.com/",
       cultivar: "Koroneiki",
       buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD",
-      notes: "1000+ HPLC / 1600+ NMR; Amazon listing states both methods"
+      notes: "900+ HPLC / 1400+ NMR (2025 harvest); USDA Organic certified"
     },
     {
       id: 3, rank: 3, brand: "SP360 (ONSURI)", polyphenols: 1462, origin: "Jordan", harvestDate: "2024/25",
