@@ -36,13 +36,13 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 2, rank: 2, brand: "SP360",
-    hplcPolyphenols: 1462,
-    origin: "Jordan", harvestDate: "2024/25",
-    price: "$$", priceAmount: "£38.00", method: "HPLC", lab: "HPLC-style IOC phenolics",
+    hplcPolyphenols: 1711,
+    origin: "Jordan", harvestDate: "Sep 2025",
+    price: "$$", priceAmount: "£42.00", method: "HPLC", lab: "Lab Certified (single estate)",
     certificateLink: "",
-    cultivar: "—",
-    buyLink: "https://sp360.co.uk/products/sp-360-500ml-extra-virgin-olive-oil-bottle",
-    notes: "Refillable bottle; subscription option."
+    cultivar: "Arbequina",
+    buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
+    notes: "UV-protected refillable bottle; subscription refill pouches save 10%. Herbaceous with green almond & tomato vine notes. Single estate family farm."
   },
   {
     id: 3, rank: 3, brand: "The Governor – Limited Edition",
