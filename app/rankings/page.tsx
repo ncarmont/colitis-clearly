@@ -32,12 +32,12 @@ export default function RankingsPage() {
       notes: "Extremely high; retailer shows lab metrics"
     },
     {
-      id: 2, rank: 2, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1400, origin: "Greece", harvestDate: "2025/26",
-      price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
-      certificateLink: "https://www.pjkabos.com/",
-      cultivar: "Koroneiki",
-      buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD",
-      notes: "900+ HPLC / 1400+ NMR (2025 harvest); USDA Organic certified"
+      id: 2, rank: 2, brand: "ONSURI Arbequina (2025/26 Harvest)", polyphenols: 1504, origin: "Jordan", harvestDate: "2025/26",
+      price: "$", priceAmount: "£25.00", method: "IOC/HPLC", lab: "Per ONSURI",
+      certificateLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
+      cultivar: "Arbequina",
+      buyLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
+      notes: "NEW 2025/26 harvest; ultra-premium, single-estate; herbaceous & vibrant with lingering pungency"
     },
     {
       id: 3, rank: 3, brand: "SP360 (ONSURI)", polyphenols: 1462, origin: "Jordan", harvestDate: "2024/25",
@@ -48,7 +48,15 @@ export default function RankingsPage() {
       notes: "Value & COA shown on product page (Polyphenol Analysis)"
     },
     {
-      id: 4, rank: 4, brand: "The Governor – Limited Edition", polyphenols: 1316, origin: "Greece", harvestDate: "Oct 2025",
+      id: 4, rank: 4, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1400, origin: "Greece", harvestDate: "2025/26",
+      price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
+      certificateLink: "https://www.pjkabos.com/",
+      cultivar: "Koroneiki",
+      buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD",
+      notes: "900+ HPLC / 1400+ NMR (2025 harvest); USDA Organic certified"
+    },
+    {
+      id: 5, rank: 5, brand: "The Governor – Limited Edition", polyphenols: 1316, origin: "Greece", harvestDate: "Oct 2025",
       price: "$$", priceAmount: "£49.95", method: "NMR", lab: "WOCH/Univ. Athens",
       certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
       cultivar: "Lianolia",
@@ -56,19 +64,11 @@ export default function RankingsPage() {
       notes: "2025/26 harvest; 577mg oleocanthal + 298mg oleacein; DIO-certified organic from Corfu"
     },
     {
-      id: 5, rank: 5, brand: "ONSURI Arbequina (Latest 2024/25)", polyphenols: 1269, origin: "Jordan", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$45.00", method: "IOC/HPLC", lab: "Per ONSURI FAQ",
-      certificateLink: "https://onsurioliveoil.com",
-      cultivar: "Arbequina",
-      buyLink: "https://onsurioliveoil.com/en-us/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
-      notes: "Producer states IOC official method; page shows count"
-    },
-    {
       id: 6, rank: 6, brand: "ONSURI Arbosana (Latest 2024/25)", polyphenols: 1255, origin: "Jordan", harvestDate: "2024/25",
       price: "$$", priceAmount: "$45.00", method: "IOC/HPLC", lab: "Per ONSURI FAQ",
       certificateLink: "https://onsurioliveoil.com",
       cultivar: "Arbosana",
-      buyLink: "https://www.amazon.co.uk/ONSURI-Arbosana-Polyphenols-Extra-Virgin/dp/B0DCP9YNBT",
+      buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
       notes: "Count on product; method via FAQ"
     },
     {
@@ -100,7 +100,7 @@ export default function RankingsPage() {
       price: "$$", priceAmount: "$42.00", method: "IOC/HPLC", lab: "Per FAQ",
       certificateLink: "https://onsurioliveoil.com/en-us",
       cultivar: "Blend (estate)",
-      buyLink: "https://onsurioliveoil.com/en-us",
+      buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
       notes: "Site lists >1000 mg/kg"
     },
     {
