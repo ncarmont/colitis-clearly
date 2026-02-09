@@ -106,25 +106,25 @@ export default function RankingsPage() {
     {
       id: 11, rank: 11, brand: "Opus Oléa – Organic", polyphenols: 874, origin: "Greece", harvestDate: "2024/25",
       price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "COA linked",
-      certificateLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
+      certificateLink: "https://opusolea.com/",
       cultivar: "Koroneiki",
-      buyLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
+      buyLink: "https://opusolea.com/products/opus-olea-organic-evoo",
       notes: "Organic lot from higher-elevation plots"
     },
     {
       id: 12, rank: 12, brand: "Zero Nutrition – EVOO100", polyphenols: 813, origin: "Greece", harvestDate: "2024/25",
       price: "$", priceAmount: "$24.99", method: "Not specified", lab: "COA linked",
-      certificateLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
+      certificateLink: "https://zeronutritionolive.com/",
       cultivar: "Koroneiki",
-      buyLink: "https://www.amazon.com/dp/B08EXAMPLE",
+      buyLink: "https://zeronutritionolive.com/products/evoo100-high-polyphenol-olive-oil",
       notes: "High phenolic; UV-protective bottle"
     },
     {
       id: 13, rank: 13, brand: "Quattrociocchi 'Superbo'", polyphenols: 800, origin: "Italy", harvestDate: "2024/25",
       price: "$$", priceAmount: "$38.95", method: "Not specified", lab: "Retailer HPLC-style",
-      certificateLink: "https://www.amazon.com/Atsas-Extremely-Phenolic-Unfiltered-Health-Boosting/dp/B0DB9WBWP8",
+      certificateLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
       cultivar: "Itrana (Lazio)",
-      buyLink: "https://www.amazon.com/Atsas-Extremely-Phenolic-Unfiltered-Health-Boosting/dp/B0DB9WBWP8",
+      buyLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
       notes: "OOL discloses numeric polyphenols"
     },
     {
@@ -138,9 +138,9 @@ export default function RankingsPage() {
     {
       id: 15, rank: 15, brand: "Oro del Desierto – Picual (Organic)", polyphenols: 717, origin: "Spain", harvestDate: "2024/25",
       price: "$$", priceAmount: "$32.00", method: "Not specified", lab: "Retailer listing",
-      certificateLink: "https://www.amazon.com/ATSAS-Organic-Polyphenol-Olive-Virgin/dp/B0CG1F2DB8",
+      certificateLink: "https://oliveoillovers.com/products/oro-del-desierto-organic",
       cultivar: "Picual",
-      buyLink: "https://www.amazon.com/ATSAS-Organic-Polyphenol-Olive-Virgin/dp/B0CG1F2DB8",
+      buyLink: "https://oliveoillovers.com/products/oro-del-desierto-organic",
       notes: "Early-harvest organic from Almería; OOL shows count"
     },
     {
@@ -266,7 +266,7 @@ export default function RankingsPage() {
     {
       id: 31, rank: 31, brand: "Rincón de la Subbética – Hojiblanca (Organic)", polyphenols: 356, origin: "Spain", harvestDate: "2024/25",
       price: "$$", priceAmount: "$32.95", method: "Not specified", lab: "Retailer listing",
-      certificateLink: "https://atsas.com.cy/products/",
+      certificateLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
       cultivar: "Hojiblanca",
       buyLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
       notes: "Leading PDO producer from Priego de Córdoba; transparent count"
