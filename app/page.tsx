@@ -126,13 +126,13 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 11, rank: 11, brand: "Laconiko Olio Nuovo",
-    nmrOtherPolyphenols: 877,
+    nmrOtherPolyphenols: 774,
     origin: "Greece", harvestDate: "2025/26",
     price: "$$", priceAmount: "$39.95", method: "qNMR", lab: "qNMR verified",
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Olio-Nuovo-Certificate-of-Analysis-and-NMR.pdf?v=1741704618",
     cultivar: "Greek blend",
     buyLink: "https://laconiko.com/products/laconiko-olio-nuovo-new-2025-harvest",
-    notes: "First certified 'high phenolic' in North America."
+    notes: "First certified 'high phenolic' in North America. 2025/26 harvest: 774 mg/kg verified."
   },
   {
     id: 12, rank: 12, brand: "Opus Oléa – Organic",
