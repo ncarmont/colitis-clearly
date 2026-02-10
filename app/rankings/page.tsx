@@ -24,7 +24,7 @@ export default function RankingsPage() {
   // Verified olive oil data with lab-tested polyphenol content
   const [oils] = useState<OliveOil[]>([
     {
-      id: 1, rank: 1, brand: "Laconiko ZOI Ultra High Phenolic", polyphenols: 1799, origin: "Greece", harvestDate: "2023/24",
+      id: 1, rank: 1, brand: "Laconiko ZOI Ultra High Phenolic", polyphenols: 1799, origin: "Greece", harvestDate: "2024/25",
       price: "$$", priceAmount: "$75.00", method: "Not specified", lab: "Retailer COA",
       certificateLink: "https://chefshop.com/products/laconiko-high-phenolic-zoi-olive-oil",
       cultivar: "Kalamon",
