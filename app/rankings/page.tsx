@@ -32,20 +32,20 @@ export default function RankingsPage() {
       notes: "Extremely high; retailer shows lab metrics"
     },
     {
-      id: 2, rank: 2, brand: "ONSURI Arbequina (2025/26 Harvest)", polyphenols: 1504, origin: "Jordan", harvestDate: "2025/26",
+      id: 2, rank: 2, brand: "SP360", polyphenols: 1711, origin: "Jordan", harvestDate: "Sep 2025",
+      price: "$$", priceAmount: "£42.00", method: "HPLC", lab: "Lab Certified",
+      certificateLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
+      cultivar: "Arbequina",
+      buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
+      notes: "UV-protected refillable bottle; 1,711 mg/kg verified; herbaceous with green almond & tomato vine notes"
+    },
+    {
+      id: 3, rank: 3, brand: "ONSURI Arbequina (2025/26 Harvest)", polyphenols: 1504, origin: "Jordan", harvestDate: "2025/26",
       price: "$", priceAmount: "£25.00", method: "IOC/HPLC", lab: "Per ONSURI",
       certificateLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
       cultivar: "Arbequina",
       buyLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
       notes: "NEW 2025/26 harvest; ultra-premium, single-estate; herbaceous & vibrant with lingering pungency"
-    },
-    {
-      id: 3, rank: 3, brand: "SP360 (ONSURI)", polyphenols: 1462, origin: "Jordan", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$79.99", method: "Not specified", lab: "COA linked",
-      certificateLink: "https://highpolyphenololiveoil.co.uk/oil/sp360/",
-      cultivar: "Arbequina",
-      buyLink: "https://highpolyphenololiveoil.co.uk/oil/sp360/",
-      notes: "Value & COA shown on product page (Polyphenol Analysis)"
     },
     {
       id: 4, rank: 4, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1400, origin: "Greece", harvestDate: "2025/26",
