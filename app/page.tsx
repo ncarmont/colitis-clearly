@@ -147,7 +147,7 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 13, rank: 13, brand: "Zero Nutrition – EVOO100",
     nmrOtherPolyphenols: 813,
-    origin: "Italy (Puglia)", harvestDate: "Nov 2024/25",
+    origin: "Italy (Puglia)", harvestDate: "Nov 2024",
     price: "$", priceAmount: "$24.99", method: "Other", lab: "Independent tracker",
     certificateLink: "",
     cultivar: "Koroneiki",
