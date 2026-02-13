@@ -14,10 +14,10 @@ export default function ArticleSchema({
   datePublished,
   dateModified,
   url,
-  imageUrl = 'https://evoo-rankings.com/og-image.jpg',
+  imageUrl = 'https://www.best-olive-oil-ranked.com/og-image.jpg',
   authorName = 'EVOO Rankings Team'
 }: ArticleSchemaProps) {
-  const baseUrl = 'https://evoo-rankings.com'
+  const baseUrl = 'https://www.best-olive-oil-ranked.com'
 
   const articleSchema = {
     "@context": "https://schema.org",

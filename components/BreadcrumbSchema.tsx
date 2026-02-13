@@ -8,7 +8,7 @@ type BreadcrumbSchemaProps = {
 }
 
 export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
-  const baseUrl = 'https://evoo-rankings.com'
+  const baseUrl = 'https://www.best-olive-oil-ranked.com'
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

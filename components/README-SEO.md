@@ -30,7 +30,7 @@ export default function BlogPost() {
         title="What Are Polyphenols in Olive Oil?"
         description="Complete guide to understanding polyphenols in extra virgin olive oil"
         datePublished="2024-10-04"
-        url="https://evoo-rankings.com/blog/what-are-polyphenols-olive-oil"
+        url="https://www.best-olive-oil-ranked.com/blog/what-are-polyphenols-olive-oil"
       />
       <main>
         {/* Blog content */}

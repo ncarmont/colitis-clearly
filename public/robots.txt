@@ -6,7 +6,7 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://evoo-rankings.com/sitemap.xml
+Sitemap: https://www.best-olive-oil-ranked.com/sitemap.xml
 
 # Block specific bots if needed
 # User-agent: BadBot

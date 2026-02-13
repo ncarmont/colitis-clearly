@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const baseUrl = 'https://evoo-rankings.com' // Update with your actual domain
+const baseUrl = 'https://www.best-olive-oil-ranked.com' // Update with your actual domain
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -105,7 +105,7 @@ export default function RootLayout({
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Customer Service",
-                "email": "contact@evoo-rankings.com"
+                "email": "contact@best-olive-oil-ranked.com"
               }
             })
           }}

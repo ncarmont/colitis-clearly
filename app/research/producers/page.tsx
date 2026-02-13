@@ -5,7 +5,7 @@ export const metadata = {
   title: "Verified High-Polyphenol EVOO Producers | Lab-Tested Rankings",
   description: "Comprehensive database of EVOO producers with verified laboratory testing showing highest polyphenol content. Quality control practices and transparency standards analyzed.",
   alternates: {
-    canonical: 'https://evoo-rankings.com/research/producers',
+    canonical: 'https://www.best-olive-oil-ranked.com/research/producers',
   },
 }
 

@@ -8,7 +8,7 @@ export const metadata = {
   description: "Discover how high-polyphenol olive oil contributes to longevity in Blue Zones. Scientific evidence from Mediterranean populations living to 100+ with EVOO as a dietary staple.",
   keywords: "olive oil longevity, blue zones olive oil, EVOO lifespan, Mediterranean diet longevity, polyphenols aging, olive oil centenarians",
   alternates: {
-    canonical: 'https://evoo-rankings.com/blog/olive-oil-longevity-blue-zones',
+    canonical: 'https://www.best-olive-oil-ranked.com/blog/olive-oil-longevity-blue-zones',
   },
 }
 
@@ -60,7 +60,7 @@ export default function OliveOilLongevityBlueSones() {
         title="Olive Oil & Longevity: Why Blue Zones Live Longer"
         description="Scientific evidence showing how high-polyphenol olive oil contributes to longevity in Blue Zone populations"
         datePublished="2024-10-04"
-        url="https://evoo-rankings.com/blog/olive-oil-longevity-blue-zones"
+        url="https://www.best-olive-oil-ranked.com/blog/olive-oil-longevity-blue-zones"
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={breadcrumbs} />

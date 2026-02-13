@@ -8,7 +8,7 @@ export const metadata = {
   description: "Discover how oleocanthal in high-polyphenol olive oil acts like ibuprofen to reduce chronic inflammation. Science-backed evidence for fighting inflammaging and disease.",
   keywords: "olive oil anti-inflammatory, oleocanthal ibuprofen, EVOO inflammation, chronic inflammation olive oil, inflammaging, natural anti-inflammatory",
   alternates: {
-    canonical: 'https://evoo-rankings.com/blog/olive-oil-anti-inflammatory',
+    canonical: 'https://www.best-olive-oil-ranked.com/blog/olive-oil-anti-inflammatory',
   },
 }
 
@@ -52,7 +52,7 @@ export default function OliveOilAntiInflammatory() {
         title="Olive Oil's Anti-Inflammatory Power: Oleocanthal vs Ibuprofen"
         description="Clinical evidence showing how oleocanthal in EVOO acts like ibuprofen to reduce chronic inflammation"
         datePublished="2024-10-04"
-        url="https://evoo-rankings.com/blog/olive-oil-anti-inflammatory"
+        url="https://www.best-olive-oil-ranked.com/blog/olive-oil-anti-inflammatory"
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema items={breadcrumbs} />

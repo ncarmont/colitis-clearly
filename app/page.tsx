@@ -554,7 +554,7 @@ export default function HomePage() {
     "@type": "WebSite",
     "name": "Highest Polyphenol EVOO Rankings",
     "description": "Science-backed rankings of the 30 highest polyphenol extra virgin olive oils verified by independent laboratory testing (HPLC & qNMR).",
-    "url": "https://evoo-rankings.com",
+    "url": "https://www.best-olive-oil-ranked.com",
     "publisher": {
       "@type": "Organization",
       "name": "EVOO Rankings"
