@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'best-time-to-take-olive-oil',
+    title: 'Best Time to Take Olive Oil: Morning vs Night for Polyphenol Benefits',
+    excerpt: 'Timing matters less than consistency. Learn the best time to take EVOO, ideal dosage, and how to maximize polyphenol absorption.',
+    category: 'Tips',
+    readTime: '6 min read',
+    date: '2026-02-14',
+    image: '⏰'
+  },
+  {
     slug: 'top-10-highest-polyphenol-olive-oils',
     title: 'Top 10 Highest Polyphenol Olive Oils in 2024 (Lab Verified)',
     excerpt: 'Complete rankings of the highest polyphenol EVOOs with lab verification. From 1462 mg/kg SP360 to premium Greek Koroneiki oils.',
