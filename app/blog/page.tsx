@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'harvest-date-olive-oil',
+    title: 'Harvest Date Olive Oil: Why Freshness Determines Polyphenol Power',
+    excerpt: 'Harvest date is the #1 freshness signal for EVOO. Learn how polyphenols fade over time and how to buy the freshest oil.',
+    category: 'Tips',
+    readTime: '6 min read',
+    date: '2026-02-14',
+    image: '🗓️'
+  },
+  {
     slug: 'best-time-to-take-olive-oil',
     title: 'Best Time to Take Olive Oil: Morning vs Night for Polyphenol Benefits',
     excerpt: 'Timing matters less than consistency. Learn the best time to take EVOO, ideal dosage, and how to maximize polyphenol absorption.',
