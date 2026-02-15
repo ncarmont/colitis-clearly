@@ -492,9 +492,9 @@ export default function HomePage() {
 
   const currentMonth = getCurrentMonthName()
 
-  // Helper function to check if harvest date is 2024 or 2025
+  // Helper function to check if harvest date is 2024, 2025, or 2026
   const isRecentHarvest = (harvestDate: string): boolean => {
-    return harvestDate.includes('2024') || harvestDate.includes('2025')
+    return harvestDate.includes('2024') || harvestDate.includes('2025') || harvestDate.includes('2026')
   }
 
   // Helper function to get HPLC equivalent polyphenol value
@@ -744,7 +744,7 @@ export default function HomePage() {
           <div className="text-center space-y-1.5 md:space-y-3">
             <div className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20 text-[10px] md:text-xs font-medium animate-fade-in">
               <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-white">Updated 2025</span>
+              <span className="text-white">Updated 2026</span>
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white animate-slide-up leading-tight max-w-5xl mx-auto">
@@ -923,7 +923,7 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-900/30 border border-green-700/50 rounded-lg">
                 <span className="text-green-400 font-bold">🏆 Overall Rank Filter Active</span>
                 <span className="text-gray-300 text-sm">|</span>
-                <span className="text-gray-300 text-xs">HPLC tested only • 2024-2025 harvest • Sorted by polyphenols</span>
+                <span className="text-gray-300 text-xs">HPLC tested only • 2024-2026 harvest • Sorted by polyphenols</span>
                 <button
                   onClick={() => setOverallRankFilter(false)}
                   className="ml-2 text-gray-400 hover:text-white transition-colors"
@@ -948,7 +948,7 @@ export default function HomePage() {
                             ? 'text-green-400 font-extrabold'
                             : 'hover:text-green-400'
                         }`}
-                        title="Filter by HPLC tested oils from 2024-2025 harvest"
+                        title="Filter by HPLC tested oils from 2024-2026 harvest"
                       >
                         Overall Rank {overallRankFilter && '✓'}
                       </button>
