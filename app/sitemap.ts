@@ -24,6 +24,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'lab-testing-methods-polyphenol-measurement',
     'olive-oil-polyphenol-myths-debunked',
     'how-much-polyphenol-olive-oil-daily',
+    'harvest-date-olive-oil',
+    'best-time-to-take-olive-oil',
+    'olive-oil-anti-inflammatory',
+    'olive-oil-longevity-blue-zones',
+    'olive-oil-for-cholesterol',
   ]
 
   return [
