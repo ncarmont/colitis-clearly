@@ -766,7 +766,7 @@ export default function HomePage() {
               </div>
               <div className="inline-flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
                 <span className="text-purple-400 text-[9px] md:text-xs">💪</span>
-                <span className="text-[9px] md:text-xs text-purple-100 font-medium">Anti-Inflam</span>
+                <span className="text-[9px] md:text-xs text-purple-100 font-medium">Anti-Inflamm.</span>
               </div>
               <div className="inline-flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
                 <span className="text-orange-400 text-[9px] md:text-xs">🧬</span>
