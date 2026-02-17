@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'olive-oil-for-cholesterol',
+    title: 'Olive Oil for Cholesterol: LDL Reduction, HDL Boost & Best Dosage',
+    excerpt: 'How high-polyphenol EVOO improves LDL quality, raises HDL function, and reduces oxidation for better heart health.',
+    category: 'Health',
+    readTime: '6 min read',
+    date: '2026-02-17',
+    image: '❤️'
+  },
+  {
     slug: 'harvest-date-olive-oil',
     title: 'Harvest Date Olive Oil: Why Freshness Determines Polyphenol Power',
     excerpt: 'Harvest date is the #1 freshness signal for EVOO. Learn how polyphenols fade over time and how to buy the freshest oil.',
