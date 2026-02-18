@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'olive-oil-anti-inflammatory',
     'olive-oil-longevity-blue-zones',
     'olive-oil-for-cholesterol',
+    'olive-oil-for-blood-pressure',
   ]
 
   return [
