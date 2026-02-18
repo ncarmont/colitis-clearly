@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'olive-oil-for-blood-sugar',
+    title: 'Olive Oil for Blood Sugar: EVOO, Insulin Sensitivity & Glycemic Control',
+    excerpt: 'High-polyphenol EVOO can help reduce post-meal glucose spikes and improve insulin sensitivity. Dosage, timing, and best oils inside.',
+    category: 'Health',
+    readTime: '6 min read',
+    date: '2026-02-18',
+    image: '🧪'
+  },
+  {
     slug: 'olive-oil-for-blood-pressure',
     title: 'Olive Oil for Blood Pressure: How EVOO Supports Healthy BP',
     excerpt: 'High-polyphenol EVOO improves endothelial function and nitric oxide. Learn dosage, timing, and how to choose the right oil.',

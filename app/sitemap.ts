@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'olive-oil-longevity-blue-zones',
     'olive-oil-for-cholesterol',
     'olive-oil-for-blood-pressure',
+    'olive-oil-for-blood-sugar',
   ]
 
   return [
