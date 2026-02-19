@@ -69,7 +69,7 @@ export default function RankingsPage() {
       certificateLink: "https://onsurioliveoil.com",
       cultivar: "Arbosana",
       buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
-      notes: "Count on product; method via FAQ"
+      notes: "Count on product page; method via FAQ"
     },
     {
       id: 7, rank: 7, brand: "The Governor – Premium", polyphenols: 1174, origin: "Greece", harvestDate: "Oct 2025",
