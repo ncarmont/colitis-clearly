@@ -99,6 +99,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.75,
     })),
+    // Shop page
+    {
+      url: `${baseUrl}/shop`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
     // About page
     {
       url: `${baseUrl}/about`,
