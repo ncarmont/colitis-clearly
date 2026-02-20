@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'olive-oil-for-joint-pain',
+    title: 'Olive Oil for Joint Pain: Inflammation Relief, Dosage & Best EVOO',
+    excerpt: 'High-polyphenol EVOO can calm inflammatory signaling and support joint comfort. Dosage, timing, and how to choose the right oil.',
+    category: 'Health',
+    readTime: '6 min read',
+    date: '2026-02-20',
+    image: '🦴'
+  },
+  {
     slug: 'olive-oil-for-gut-health',
     title: 'Olive Oil for Gut Health: Microbiome Benefits & Best EVOO Choices',
     excerpt: 'How high-polyphenol EVOO supports a healthier microbiome, calmer digestion, and stronger gut barrier integrity.',
