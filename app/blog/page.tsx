@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'olive-oil-for-gut-health',
+    title: 'Olive Oil for Gut Health: Microbiome Benefits & Best EVOO Choices',
+    excerpt: 'How high-polyphenol EVOO supports a healthier microbiome, calmer digestion, and stronger gut barrier integrity.',
+    category: 'Health',
+    readTime: '7 min read',
+    date: '2026-02-20',
+    image: '🦠'
+  },
+  {
     slug: 'olive-oil-for-blood-sugar',
     title: 'Olive Oil for Blood Sugar: EVOO, Insulin Sensitivity & Glycemic Control',
     excerpt: 'High-polyphenol EVOO can help reduce post-meal glucose spikes and improve insulin sensitivity. Dosage, timing, and best oils inside.',
