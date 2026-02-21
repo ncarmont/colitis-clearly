@@ -312,7 +312,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Koroneiki-Certificate-of-Analysis-and-NMR_214c678d-f473-4f37-9257-322fd3d7e715.pdf?v=1741704340",
     cultivar: "Koroneiki",
     buyLink: "https://laconiko.com/products/laconiko-extra-virgin-olive-oil-new-2024-harvest",
-    notes: "Great value w/ posted NMR."
+    notes: "Great value with posted NMR."
   },
   {
     id: 30, rank: 30, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
