@@ -131,22 +131,31 @@ const blogPosts = [
     image: '🔥'
   },
   {
-    slug: 'best-affordable-high-polyphenol-olive-oil',
-    title: 'Best Affordable High Polyphenol Olive Oil (Budget-Friendly Picks)',
-    excerpt: 'Cost-per-mg analysis reveals best value EVOOs. Get 500+ mg/kg polyphenols without breaking the bank.',
-    category: 'Buying Guide',
-    readTime: '7 min read',
-    date: '2024-01-10',
-    image: '💰'
+    slug: 'olive-oil-anti-inflammatory',
+    title: "Olive Oil's Anti-Inflammatory Power: Oleocanthal vs Ibuprofen",
+    excerpt: 'How oleocanthal in high-polyphenol EVOO works like ibuprofen to reduce chronic inflammation — with the science explained.',
+    category: 'Science',
+    readTime: '10 min read',
+    date: '2024-10-04',
+    image: '💊'
   },
   {
-    slug: 'how-to-taste-olive-oil-like-expert',
-    title: 'How to Taste Olive Oil Like an Expert: Professional Tasting Guide',
-    excerpt: 'Master the peppery throat test, identify defects, and understand flavor profiles. Professional sommelier techniques.',
-    category: 'Education',
-    readTime: '8 min read',
-    date: '2024-01-08',
-    image: '👅'
+    slug: 'olive-oil-longevity-blue-zones',
+    title: 'Olive Oil & Longevity: Why Blue Zones Live Longer',
+    excerpt: 'Blue Zone populations consume EVOO daily. Learn the evidence, dosage, and why polyphenols support longer life.',
+    category: 'Health',
+    readTime: '12 min read',
+    date: '2024-10-04',
+    image: '🌍'
+  },
+  {
+    slug: 'how-to-store-olive-oil-after-opening',
+    title: 'How to Store Olive Oil After Opening: Complete Guide',
+    excerpt: 'Keep EVOO fresh with the right temperature, light protection, and container tips to preserve polyphenols.',
+    category: 'Storage',
+    readTime: '12 min read',
+    date: '2024-10-02',
+    image: '🛡️'
   },
   {
     slug: 'what-are-polyphenols-olive-oil',
