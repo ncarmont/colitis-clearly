@@ -829,7 +829,7 @@ export default function HomePage() {
               >
                 {origins.map(origin => (
                   <option key={origin} value={origin} className="bg-white">
-                    {origin === 'all' ? 'All' : `${COUNTRY_FLAGS[origin]} ${origin}`}
+                    {origin === 'all' ? 'All' : `${COUNTRY_FLAGS[origin] ?? ''} ${origin}`.trim()}
                   </option>
                 ))}
               </select>
