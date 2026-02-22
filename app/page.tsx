@@ -49,10 +49,10 @@ const OILS_DATA: OliveOil[] = [
     nmrOtherPolyphenols: 1458,
     origin: "Greece (Corfu)", harvestDate: "Oct 2024",
     price: "$$", priceAmount: "$65.00", method: "qNMR", lab: "qNMR total phenols",
-    certificateLink: "",
+    certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
     cultivar: "Lianolia",
-    buyLink: "https://www.amazon.com/kyoord-High-Phenolic-Extra-Virgin-Olive/dp/B0CCQQGXRQ?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=cde3cbabfa18ecdacdb34b3f0833d404&language=en_US&ref_=as_li_ss_tl",
-    notes: "Retailer page lists 2024/25 results; NMR-based indices."
+    buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
+    notes: "Limited Edition from Corfu; 2024/25 NMR-based results posted."
   },
   {
     id: 4, rank: 4, brand: "OlvLimits \"Green Machine\"",
