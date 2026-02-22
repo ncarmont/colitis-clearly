@@ -388,8 +388,13 @@ const OILS_DATA: OliveOil[] = [
 
 const COUNTRY_FLAGS: { [key: string]: string } = {
   "Greece": "🇬🇷",
+  "Greece (Corfu)": "🇬🇷",
+  "Greece (South)": "🇬🇷",
   "Italy": "🇮🇹",
+  "Italy (Puglia)": "🇮🇹",
+  "Italy (Tuscany)": "🇮🇹",
   "Spain": "🇪🇸",
+  "Spain (Málaga)": "🇪🇸",
   "Jordan": "🇯🇴",
   "Portugal": "🇵🇹",
   "Morocco": "🇲🇦",
