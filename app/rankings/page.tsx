@@ -304,9 +304,9 @@ export default function RankingsPage() {
       }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+    <main className="min-h-screen bg-slate-50">
       {/* Header */}
-      <header className="bg-green-600 text-white py-6 px-4">
+      <header className="bg-gradient-to-r from-slate-900 via-emerald-900 to-slate-900 text-white py-8 px-4 border-b border-emerald-800/50">
         <div className="max-w-6xl mx-auto">
           <Link href="/" className="text-green-100 hover:text-white mb-4 inline-block">
             ← Back to Home
