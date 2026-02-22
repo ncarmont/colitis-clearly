@@ -104,20 +104,20 @@ export default function RankingsPage() {
       notes: "Site lists >1000 mg/kg"
     },
     {
-      id: 11, rank: 11, brand: "Opus Oléa – Organic", polyphenols: 874, origin: "Greece", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "COA linked",
-      certificateLink: "https://opusolea.com/",
+      id: 11, rank: 11, brand: "Opus Oléa – Organic", polyphenols: 874, origin: "Greece", harvestDate: "Nov 2025",
+      price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "Lab verified",
+      certificateLink: "https://www.opuslivewell.com/products/opus-olea-organic-extra-virgin-olive-oil-500ml",
       cultivar: "Koroneiki",
-      buyLink: "https://opusolea.com/products/opus-olea-organic-evoo",
-      notes: "Organic lot from higher-elevation plots"
+      buyLink: "https://www.opuslivewell.com/products/opus-olea-organic-extra-virgin-olive-oil-500ml",
+      notes: "2025/26 harvest; 874 mg/kg certified, 17.5mg hydroxytyrosol/20g; higher-elevation Messinia plots; ultra-low acidity 0.2%"
     },
     {
       id: 12, rank: 12, brand: "Zero Nutrition – EVOO100", polyphenols: 813, origin: "Greece", harvestDate: "2024/25",
-      price: "$", priceAmount: "$24.99", method: "Not specified", lab: "COA linked",
-      certificateLink: "https://zeronutritionolive.com/",
+      price: "$", priceAmount: "$24.99", method: "Not specified", lab: "COA posted",
+      certificateLink: "https://www.amazon.com/s?k=Zero+Nutrition+EVOO100+high+polyphenol+olive+oil",
       cultivar: "Koroneiki",
-      buyLink: "https://zeronutritionolive.com/products/evoo100-high-polyphenol-olive-oil",
-      notes: "High phenolic; UV-protective bottle"
+      buyLink: "https://www.amazon.com/s?k=Zero+Nutrition+EVOO100+high+polyphenol+olive+oil",
+      notes: "813 mg/kg Koroneiki; UV-protective bottle; brand website temporarily unavailable — search Amazon for current listings"
     },
     {
       id: 13, rank: 13, brand: "Quattrociocchi 'Superbo'", polyphenols: 800, origin: "Italy", harvestDate: "2024/25",
