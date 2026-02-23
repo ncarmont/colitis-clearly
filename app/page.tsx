@@ -485,7 +485,7 @@ export default function HomePage() {
         region: 'Northern Harvest',
         flags: getFlags(northernCountries).length > 0 ? getFlags(northernCountries) : ['🇬🇷', '🇪🇸', '🇮🇹', '🇯🇴']
       }
-    } else if (month >= 4 && month <= 8) {
+    } else if (month >= 4 && month <= 7) {
       return {
         region: 'Southern Harvest',
         flags: getFlags(southernCountries).length > 0 ? getFlags(southernCountries) : ['🌍']
