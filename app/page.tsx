@@ -918,7 +918,106 @@ export default function HomePage() {
           )}
 
           <div className="bg-white/95 backdrop-blur rounded-2xl md:rounded-3xl shadow-2xl border border-slate-200/80 overflow-hidden animate-table-entrance">
-            <div className="overflow-x-auto -mx-2 md:mx-0">
+
+            {/* ── MOBILE CARD LIST (< md) ── */}
+            <div className="block md:hidden divide-y divide-gray-100">
+              {oilsToDisplay.map((oil, index) => {
+                const displayRank = index + 1
+                const score = getMaxPolyphenols(oil)
+                const badges = getMethodBadges(oil)
+                const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
+                const rankGrad =
+                  displayRank === 1 ? 'from-yellow-400 via-yellow-500 to-amber-500 shadow-yellow-500/40' :
+                  displayRank === 2 ? 'from-gray-300 via-gray-400 to-gray-500 shadow-gray-400/40' :
+                  displayRank === 3 ? 'from-orange-400 via-orange-500 to-red-500 shadow-orange-500/40' :
+                  'from-green-500 to-emerald-600 shadow-green-500/20'
+                const scoreColor =
+                  displayRank === 1 ? 'text-yellow-600' :
+                  displayRank === 2 ? 'text-gray-600' :
+                  displayRank === 3 ? 'text-orange-600' :
+                  'text-green-600'
+                const rowBg =
+                  displayRank === 1 ? 'bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-400' :
+                  displayRank === 2 ? 'bg-gradient-to-r from-gray-50 to-slate-50 border-l-4 border-gray-400' :
+                  displayRank === 3 ? 'bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-400' :
+                  'bg-white'
+
+                return (
+                  <div
+                    key={oil.id}
+                    className={`flex items-center gap-3 px-3 py-3 animate-fade-in-row ${rowBg}`}
+                    style={{ animationDelay: `${index * 40}ms` }}
+                  >
+                    {/* Rank badge */}
+                    <div className="flex flex-col items-center gap-0.5 shrink-0 w-9">
+                      <span className={`inline-flex items-center justify-center w-9 h-9 rounded-xl font-bold text-sm text-white shadow-md bg-gradient-to-br ${rankGrad}`}>
+                        {displayRank}
+                      </span>
+                      {displayRank <= 3 && (
+                        <span className={`text-base leading-none animate-crown-bounce ${
+                          displayRank === 1 ? 'crown-gold' :
+                          displayRank === 2 ? 'crown-silver' :
+                          'crown-bronze'
+                        }`}>👑</span>
+                      )}
+                    </div>
+
+                    {/* Main info */}
+                    <div className="flex-1 min-w-0">
+                      <a
+                        href={oil.buyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-bold text-gray-900 leading-tight block line-clamp-2"
+                      >
+                        {oil.brand}
+                      </a>
+                      <div className="flex items-center gap-1.5 mt-1 flex-wrap">
+                        <span className={`text-xl font-extrabold leading-none ${scoreColor}`}>{score}</span>
+                        <span className="text-[10px] text-gray-500 font-medium">mg/kg</span>
+                        {badges.map((b, bi) => (
+                          <span key={bi} className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-gray-100 text-gray-600 border border-gray-200">{b}</span>
+                        ))}
+                      </div>
+                      <div className="flex items-center gap-1.5 mt-0.5 text-[10px] text-gray-500 flex-wrap">
+                        <span>{COUNTRY_FLAGS[oil.origin]} {oil.origin}</span>
+                        <span className="text-gray-300">•</span>
+                        <span>{oil.harvestDate}</span>
+                        <span className="text-gray-300">•</span>
+                        <span className="italic text-gray-400">{oil.cultivar}</span>
+                      </div>
+                    </div>
+
+                    {/* Buy + COA */}
+                    <div className="flex flex-col items-center gap-1 shrink-0">
+                      <a
+                        href={oil.buyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center justify-center px-3 py-2 rounded-lg font-semibold text-[11px] text-white shadow-sm active:scale-95 transition-transform ${
+                          isAmazon ? 'bg-blue-600' : 'bg-gradient-to-r from-green-600 to-emerald-600'
+                        }`}
+                      >
+                        Buy →
+                      </a>
+                      {oil.certificateLink && (
+                        <a
+                          href={oil.certificateLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[9px] text-green-600 underline"
+                        >
+                          📜 COA
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+
+            {/* ── DESKTOP TABLE (≥ md) ── */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="bg-gray-700 border-b-2 border-gray-600">
@@ -949,7 +1048,7 @@ export default function HomePage() {
                 <tbody className="divide-y divide-gray-200">
                   {oilsToDisplay.map((oil, index) => {
                     const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
-                    const displayRank = index + 1 // Rank based on current sorted position
+                    const displayRank = index + 1
                     return (
                       <tr
                         key={oil.id}
