@@ -736,7 +736,7 @@ export default function HomePage() {
               </span>
             </h1>
 
-            <p className="text-xs md:text-base text-green-50 max-w-xl md:max-w-2xl mx-auto font-light animate-fade-in-delay">
+            <p className="text-xs md:text-base text-green-50/95 max-w-xl md:max-w-2xl mx-auto font-light animate-fade-in-delay leading-relaxed">
               Science-backed rankings of the highest polyphenol olive oils on the planet.
             </p>
 
