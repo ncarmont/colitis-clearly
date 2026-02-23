@@ -649,9 +649,7 @@ export default function HomePage() {
     return () => window.removeEventListener('resize', updateDisplayCount)
   }, [])
 
-  const oilsToDisplay = showAll
-    ? filteredAndSortedOils
-    : filteredAndSortedOils.slice(0, initialDisplayCount)
+  const oilsToDisplay = filteredAndSortedOils
 
   return (
     <>
@@ -802,58 +800,20 @@ export default function HomePage() {
       {/* Rankings Table */}
       <section className="py-3 md:py-6 px-4 md:px-6 w-full" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
         <div className="max-w-7xl mx-auto w-full">
-          {/* Combined Info Section - Clear & Simple */}
-          <div className="mb-3 text-center px-2">
-            <div className="inline-block bg-white border border-slate-200 rounded-xl px-4 py-3 max-w-5xl shadow-lg">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 text-[11px] md:text-xs">
-                {/* What makes a good olive oil - Clearer */}
-                <div className="text-center md:text-left">
-                  <p className="text-green-600 font-bold mb-1.5 text-xs md:text-sm">What makes a good olive oil?</p>
-                  <div className="space-y-0.5">
-                    <p className="text-gray-800">
-                      <span className="text-gray-800 font-semibold">High polyphenols</span> <span className="text-gray-500">(250+ mg/kg)</span> → Better health benefits
-                    </p>
-                    <p className="text-gray-800">
-                      <span className="text-gray-800 font-semibold">Fresh harvest</span> <span className="text-gray-500">(this year)</span> → Maximum potency
-                    </p>
-                  </div>
-                </div>
-
-                {/* Divider */}
-                <span className="hidden md:inline text-gray-300">|</span>
-
-                {/* Score Calculation - Updated */}
-                <div className="text-center md:text-left">
-                  <p className="text-green-600 font-bold mb-1.5 text-xs md:text-sm">How is the score calculated?</p>
-                  <div className="space-y-0.5">
-                    <p className="text-gray-800">
-                      <span className="text-gray-800 font-semibold">HPLC values</span> → Used directly
-                    </p>
-                    <p className="text-gray-800">
-                      <span className="text-gray-800 font-semibold">NMR/Other × 0.6</span> → Conversion factor
-                    </p>
-                  </div>
-                </div>
-
-                {/* Divider */}
-                <span className="hidden md:inline text-gray-300">|</span>
-
-                {/* Fresh Harvest - Cleaner */}
-                <div className="flex flex-col items-center gap-1.5">
-                  <span className="text-gray-700 text-[10px] md:text-xs font-medium">Freshest now ({currentMonth}):</span>
-                  <div className="flex items-center gap-1">
-                    {freshHarvest.flags.map((flag, i) => (
-                      <span key={i} className="text-base md:text-lg">{flag}</span>
-                    ))}
-                  </div>
-                  <span className="text-green-600 text-[9px] md:text-[10px] font-medium">({freshHarvest.region})</span>
-                </div>
-              </div>
-
-              {/* Affiliate Disclosure */}
-              <p className="text-[9px] md:text-[10px] text-gray-500 italic mt-2">
-                Affiliate links • Independent rankings • All values shown as HPLC equivalents
-              </p>
+          {/* Info strip — compact */}
+          <div className="mb-3 px-2">
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 px-3 py-2 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm text-[10px] text-white/50">
+              <span className="flex items-center gap-1"><span className="text-emerald-400 font-semibold text-[10px]">250+ mg/kg</span> polyphenols = health benefits</span>
+              <span className="text-white/20 hidden sm:inline">·</span>
+              <span className="flex items-center gap-1"><span className="text-emerald-400 font-semibold text-[10px]">HPLC direct</span> · <span className="text-emerald-400 font-semibold text-[10px]">NMR ×0.6</span> conversion</span>
+              <span className="text-white/20 hidden sm:inline">·</span>
+              <span className="flex items-center gap-1 flex-wrap justify-center">
+                <span className="text-white/40">Freshest ({currentMonth}):</span>
+                {freshHarvest.flags.slice(0, 5).map((flag, i) => <span key={i}>{flag}</span>)}
+                <span className="text-emerald-400/70 italic text-[9px]">{freshHarvest.region}</span>
+              </span>
+              <span className="text-white/20 hidden sm:inline">·</span>
+              <span className="italic text-white/30">Affiliate links · HPLC equivalents</span>
             </div>
           </div>
 
@@ -1189,17 +1149,8 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Show More & Shop Buttons - Condensed */}
-          <div className="mt-4 md:mt-6 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
-            {filteredAndSortedOils.length > initialDisplayCount && (
-              <button
-                onClick={() => setShowAll(!showAll)}
-                className="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 md:py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white font-semibold rounded-lg md:rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
-              >
-                <span>{showAll ? `▲ Show Top ${initialDisplayCount}` : `▼ Show All ${filteredAndSortedOils.length} EVOOs`}</span>
-              </button>
-            )}
-
+          {/* Shop Button */}
+          <div className="mt-4 md:mt-6 flex items-center justify-center">
             <Link
               href="/shop"
               className="inline-flex items-center gap-2 px-4 md:px-5 py-2 md:py-2.5 bg-white hover:bg-gray-50 text-gray-700 hover:text-gray-900 border border-gray-300 hover:border-green-500 rounded-lg text-xs md:text-sm font-medium transition-all duration-200 shadow-sm"
