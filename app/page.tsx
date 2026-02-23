@@ -638,11 +638,11 @@ export default function HomePage() {
   }
 
   // Responsive initial display count
-  const [initialDisplayCount, setInitialDisplayCount] = useState(5)
+  const [initialDisplayCount, setInitialDisplayCount] = useState(20)
 
   useEffect(() => {
     const updateDisplayCount = () => {
-      setInitialDisplayCount(window.innerWidth >= 768 ? 8 : 5)
+      setInitialDisplayCount(window.innerWidth >= 768 ? 20 : 12)
     }
     updateDisplayCount()
     window.addEventListener('resize', updateDisplayCount)
@@ -842,7 +842,7 @@ export default function HomePage() {
       `}</style>
 
       {/* Rankings Table */}
-      <section className="py-3 md:py-6 px-4 md:px-6 w-full" style={{background: 'linear-gradient(to right, #10172B, #1a2332, #10172B)'}}>
+      <section className="py-3 md:py-6 px-4 md:px-6 w-full" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
         <div className="max-w-7xl mx-auto w-full">
           {/* Combined Info Section - Clear & Simple */}
           <div className="mb-2 text-center px-2">
@@ -917,7 +917,7 @@ export default function HomePage() {
             </div>
           )}
 
-          <div className="bg-gray-50 rounded-2xl md:rounded-3xl shadow-lg border border-gray-200 overflow-hidden animate-table-entrance">
+          <div className="bg-white/95 backdrop-blur rounded-2xl md:rounded-3xl shadow-2xl border border-slate-200/80 overflow-hidden animate-table-entrance">
             <div className="overflow-x-auto -mx-2 md:mx-0">
               <table className="w-full">
                 <thead>
