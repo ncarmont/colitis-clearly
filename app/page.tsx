@@ -845,8 +845,8 @@ export default function HomePage() {
       <section className="py-3 md:py-6 px-4 md:px-6 w-full" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
         <div className="max-w-7xl mx-auto w-full">
           {/* Combined Info Section - Clear & Simple */}
-          <div className="mb-2 text-center px-2">
-            <div className="inline-block bg-white border border-gray-200 rounded-lg px-4 py-2.5 max-w-5xl shadow-md">
+          <div className="mb-3 text-center px-2">
+            <div className="inline-block bg-white border border-slate-200 rounded-xl px-4 py-3 max-w-5xl shadow-lg">
               <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 text-[11px] md:text-xs">
                 {/* What makes a good olive oil - Clearer */}
                 <div className="text-center md:text-left">
