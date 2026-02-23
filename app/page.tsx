@@ -527,6 +527,16 @@ export default function HomePage() {
     return badges
   }
 
+  // Progressively darker green for ranks 4+
+  const getGreenShade = (rank: number): string => {
+    if (rank <= 7)  return 'from-green-400 to-green-500'
+    if (rank <= 11) return 'from-green-500 to-green-600'
+    if (rank <= 15) return 'from-green-600 to-green-700'
+    if (rank <= 19) return 'from-green-700 to-green-800'
+    if (rank <= 24) return 'from-green-800 to-green-900'
+    return 'from-green-900 to-slate-800'
+  }
+
   // Filter to only recent harvests for stats and display
   const recentOils = useMemo(() => OILS_DATA.filter(oil => isRecentHarvest(oil.harvestDate)), [])
 
@@ -848,7 +858,7 @@ export default function HomePage() {
                   displayRank === 1 ? 'from-yellow-400 via-yellow-500 to-amber-500 shadow-yellow-500/40' :
                   displayRank === 2 ? 'from-gray-300 via-gray-400 to-gray-500 shadow-gray-400/40' :
                   displayRank === 3 ? 'from-orange-400 via-orange-500 to-red-500 shadow-orange-500/40' :
-                  'from-green-500 to-emerald-600 shadow-green-500/20'
+                  `${getGreenShade(displayRank)} shadow-green-500/20`
                 const scoreColor =
                   displayRank === 1 ? 'text-yellow-600' :
                   displayRank === 2 ? 'text-gray-600' :
@@ -984,7 +994,7 @@ export default function HomePage() {
                               displayRank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-yellow-500/50' :
                               displayRank === 2 ? 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white shadow-gray-400/50' :
                               displayRank === 3 ? 'bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 text-white shadow-orange-500/50' :
-                              'bg-gradient-to-br from-green-500 to-emerald-600 text-white shadow-green-500/30'
+                              `bg-gradient-to-br ${getGreenShade(displayRank)} text-white shadow-green-500/30`
                             }`}>
                               {displayRank}
                             </span>
