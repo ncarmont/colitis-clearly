@@ -669,114 +669,72 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-100/40 via-transparent to-transparent pointer-events-none"></div>
         <div className="relative z-10">
       {/* Hero Header */}
-      <header className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-emerald-900 to-slate-900 w-full border-b border-emerald-800/50">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4UzAgOC4wNiAwIDE4YzAgNC40MiAxLjYgOC40OCA0LjI0IDExLjZDMi4xMiAzMi45MiAwIDM5LjEyIDAgNDZoMTJjMC02LjYzIDUuMzctMTIgMTItMTJzMTIgNS4zNyAxMiAxMmgxMmMwLTYuODgtMi4xMi0xMy4wOC00LjI0LTE2LjRDNTQuNCAyNi40OCA1NiAyMi40MiA1NiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
-        </div>
+      <header className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-emerald-950 w-full">
+        {/* Subtle radial glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(16,185,129,0.18),transparent)] pointer-events-none" />
 
-        {/* Top Right Stats */}
-        <div className="absolute top-4 right-4 md:top-6 md:right-6 z-30 flex items-center gap-2 md:gap-3">
-          {/* Total Visitors Counter */}
-          {totalVisitors !== null && totalVisitors > 0 && (
-            <div className="inline-flex items-center gap-1.5 md:gap-2 px-2 md:px-3 py-1.5 md:py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white">
-              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-              <div className="flex flex-col items-start">
-                <span className="text-[10px] md:text-xs font-bold text-white">
-                  {totalVisitors >= 1000
-                    ? `${(totalVisitors / 1000).toFixed(1)}K`
-                    : totalVisitors.toLocaleString()}
-                </span>
-                <span className="text-[8px] md:text-[10px] text-white/80 leading-tight">visitors</span>
-              </div>
-            </div>
-          )}
-
-          {/* Instagram Link - Always show */}
-          <Link
-            href="https://www.instagram.com/bestoliveoilranked.com_?igsh=MW81OXFkZW9uNzBnNg%3D%3D&utm_source=qr"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Best Olive Oils on Instagram"
-            className="inline-flex items-center gap-1.5 md:gap-2 px-2 md:px-3 py-1.5 md:py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 backdrop-blur-sm border border-white/30 text-white transition-all duration-200 hover:from-purple-600 hover:to-pink-600 hover:scale-105 shadow-lg"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-4 h-4 md:w-5 md:h-5"
-            >
-              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2.2a2.8 2.8 0 110 5.6 2.8 2.8 0 010-5.6zM17.5 5.5a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z" />
-            </svg>
-            {instagramFollowers !== null && instagramFollowers > 0 && (
-              <div className="flex flex-col items-start">
-                <span className="text-[10px] md:text-xs font-bold text-white">
-                  {instagramFollowers >= 1000
-                    ? `${(instagramFollowers / 1000).toFixed(1)}K`
-                    : instagramFollowers.toLocaleString()}
-                </span>
-                <span className="text-[8px] md:text-[10px] text-white/90 leading-tight">followers</span>
-              </div>
-            )}
-          </Link>
-        </div>
-
-        <div className="relative z-20 max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-6">
-          <div className="text-center space-y-1.5 md:space-y-3">
-            <div className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/20 text-[10px] md:text-xs font-medium animate-fade-in">
-              <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-white">Updated 2026</span>
-            </div>
-
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white animate-slide-up leading-tight max-w-5xl mx-auto">
-              Best Extra Virgin Olive Oils
-              <span className="block mt-0.5 md:mt-1 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
-                Ranked Scientifically
+        {/* Top utility bar */}
+        <div className="relative z-30 flex items-center justify-between px-4 md:px-6 py-2 border-b border-white/5">
+          <div className="flex items-center gap-1.5">
+            <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
+            <span className="text-[10px] text-white/50 font-medium tracking-widest uppercase">Updated 2026</span>
+          </div>
+          <div className="flex items-center gap-3">
+            {totalVisitors !== null && totalVisitors > 0 && (
+              <span className="text-[10px] text-white/40">
+                {totalVisitors >= 1000 ? `${(totalVisitors / 1000).toFixed(1)}K` : totalVisitors.toLocaleString()} visitors
               </span>
-            </h1>
+            )}
+            <Link
+              href="https://www.instagram.com/bestoliveoilranked.com_?igsh=MW81OXFkZW9uNzBnNg%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-white/40 hover:text-pink-400 transition-colors duration-200"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2.2a2.8 2.8 0 110 5.6 2.8 2.8 0 010-5.6zM17.5 5.5a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z" />
+              </svg>
+            </Link>
+          </div>
+        </div>
 
-            <p className="text-xs md:text-base text-green-50/95 max-w-xl md:max-w-2xl mx-auto font-light animate-fade-in-delay leading-relaxed">
-              Science-backed rankings of the highest polyphenol olive oils on the planet.
-            </p>
+        {/* Hero content */}
+        <div className="relative z-20 max-w-4xl mx-auto px-4 md:px-6 pt-8 pb-10 md:pt-14 md:pb-14 text-center">
+          <h1 className="text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1] animate-slide-up">
+            Best Extra Virgin Olive Oils
+            <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-300 to-green-300">
+              Ranked Scientifically
+            </span>
+          </h1>
 
-            {/* Health Benefit Pills - Mobile Optimized */}
-            <div className="flex flex-wrap justify-center gap-1 md:gap-2 mt-2 md:mt-3 animate-fade-in-delay">
-              <div className="inline-flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-green-400/30">
-                <span className="text-green-400 text-[9px] md:text-xs">❤️</span>
-                <span className="text-[9px] md:text-xs text-green-100 font-medium">31% ↓ CVD</span>
-              </div>
-              <div className="inline-flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-purple-400/30">
-                <span className="text-purple-400 text-[9px] md:text-xs">💪</span>
-                <span className="text-[9px] md:text-xs text-purple-100 font-medium">Anti-Inflamm.</span>
-              </div>
-              <div className="inline-flex items-center gap-0.5 md:gap-1 px-1.5 md:px-2.5 py-0.5 md:py-1 bg-white/10 backdrop-blur-sm rounded-full border border-orange-400/30">
-                <span className="text-orange-400 text-[9px] md:text-xs">🧬</span>
-                <span className="text-[9px] md:text-xs text-orange-100 font-medium">Longevity</span>
-              </div>
+          <p className="hidden md:block mt-4 text-base text-emerald-100/60 font-light max-w-md mx-auto animate-fade-in-delay">
+            Lab-verified polyphenol rankings — independent &amp; science-backed.
+          </p>
+
+          {/* Benefit line */}
+          <p className="mt-4 md:mt-3 text-[11px] md:text-xs text-white/35 tracking-wide animate-fade-in-delay">
+            ❤️ 31% ↓ CVD risk &nbsp;·&nbsp; 💪 Anti-inflammatory &nbsp;·&nbsp; 🧬 Longevity
+          </p>
+
+          {/* Stats card */}
+          <div className="mt-6 inline-grid grid-cols-3 divide-x divide-white/10 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm animate-fade-in-delay-2">
+            <div className="px-5 py-3 md:px-8 md:py-4 text-center">
+              <div className="text-2xl md:text-3xl font-bold text-white">{stats.totalOils}</div>
+              <div className="text-[9px] md:text-[10px] text-emerald-400/80 uppercase tracking-wider mt-0.5">Lab-Verified</div>
             </div>
-
-            {/* Stats - Smaller */}
-            <div className="flex flex-wrap justify-center gap-2 md:gap-4 mt-2 md:mt-3 animate-fade-in-delay-2">
-              <div className="text-center">
-                <div className="text-base md:text-2xl font-bold text-white">{stats.totalOils}</div>
-                <div className="text-[8px] md:text-[10px] text-green-200">Lab-Verified</div>
-              </div>
-              <div className="hidden sm:block w-px bg-white/20"></div>
-              <div className="text-center">
-                <div className="text-base md:text-2xl font-bold text-white">{stats.countries}</div>
-                <div className="text-[8px] md:text-[10px] text-green-200">Countries</div>
-              </div>
-              <div className="hidden sm:block w-px bg-white/20"></div>
-              <div className="text-center">
-                <div className="text-base md:text-2xl font-bold text-white">{stats.maxPolyphenols}</div>
-                <div className="text-[8px] md:text-[10px] text-green-200">Max mg/kg</div>
-              </div>
+            <div className="px-5 py-3 md:px-8 md:py-4 text-center">
+              <div className="text-2xl md:text-3xl font-bold text-white">{stats.countries}</div>
+              <div className="text-[9px] md:text-[10px] text-emerald-400/80 uppercase tracking-wider mt-0.5">Countries</div>
+            </div>
+            <div className="px-5 py-3 md:px-8 md:py-4 text-center">
+              <div className="text-2xl md:text-3xl font-bold text-white">{stats.maxPolyphenols}</div>
+              <div className="text-[9px] md:text-[10px] text-emerald-400/80 uppercase tracking-wider mt-0.5">Max mg/kg</div>
             </div>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
       </header>
 
       {/* Filters Section - Mobile Single Line */}
