@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'how-to-spot-fake-olive-oil',
+    title: 'How to Spot Fake Olive Oil: 8 Tests That Actually Work (2026)',
+    excerpt: 'Up to 80% of "extra virgin" olive oil sold in supermarkets is adulterated or mislabeled. Learn 8 proven methods to detect fake olive oil and buy only the real thing.',
+    category: 'Buyer\'s Guide',
+    readTime: '9 min read',
+    date: '2026-02-23',
+    image: '🕵️'
+  },
+  {
     slug: 'olive-oil-for-joint-pain',
     title: 'Olive Oil for Joint Pain: Inflammation Relief, Dosage & Best EVOO',
     excerpt: 'High-polyphenol EVOO can calm inflammatory signaling and support joint comfort. Dosage, timing, and how to choose the right oil.',
