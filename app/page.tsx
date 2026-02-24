@@ -287,12 +287,12 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 27, rank: 27, brand: "Kosterina – Original Extra Virgin",
     nmrOtherPolyphenols: 573,
-    origin: "Greece", harvestDate: "2024/25",
-    price: "$", priceAmount: "$38.00", method: "Other", lab: "Brand FAQ/page",
+    origin: "Greece (Southern)", harvestDate: "Nov 2024",
+    price: "$", priceAmount: "$32.00", method: "Other", lab: "Brand FAQ/page",
     certificateLink: "",
     cultivar: "Koroneiki",
-    buyLink: "https://www.kosterina.com/products/6bottles",
-    notes: "US DTC."
+    buyLink: "https://www.kosterina.com/products/singlebottle",
+    notes: "500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best EVOO 2025."
   },
   {
     id: 28, rank: 28, brand: "True Tuscan (Olive Girl)",
