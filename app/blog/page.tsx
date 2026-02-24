@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'olive-oil-for-weight-loss',
+    title: 'Olive Oil for Weight Loss: Does EVOO Help You Lose Weight?',
+    excerpt: 'High-polyphenol EVOO is calorie-dense yet linked to lower body weight. Learn how it suppresses appetite, boosts fat oxidation, and improves insulin sensitivity.',
+    category: 'Health',
+    readTime: '8 min read',
+    date: '2026-02-24',
+    image: '⚖️'
+  },
+  {
     slug: 'how-to-spot-fake-olive-oil',
     title: 'How to Spot Fake Olive Oil: 8 Tests That Actually Work (2026)',
     excerpt: 'Up to 80% of "extra virgin" olive oil sold in supermarkets is adulterated or mislabeled. Learn 8 proven methods to detect fake olive oil and buy only the real thing.',
