@@ -75,13 +75,14 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1361556625262612"
           crossOrigin="anonymous"
         ></script>
-        {/* Configure auto-ads: use in-page formats only (no overlay/anchor blocking content) */}
+        {/* Enable AdSense auto ads explicitly */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              window.adsbygoogle = window.adsbygoogle || [];
-              // Avoid inserting auto ads INSIDE the rankings table
-              // The table has class "no-auto-ads" which we reference in AdSense Excluded Areas
+              (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-1361556625262612",
+                enable_page_level_ads: true
+              });
             `
           }}
         />
