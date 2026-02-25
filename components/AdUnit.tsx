@@ -28,9 +28,10 @@ export default function AdUnit({
     if (pushed.current) return
     pushed.current = true
     try {
-      // @ts-ignore
-      ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
+      const w = window as Window & { adsbygoogle?: unknown[] }
+      w.adsbygoogle = w.adsbygoogle || []
+      w.adsbygoogle.push({})
+    } catch {
       // adsbygoogle not loaded yet — auto ads will handle it
     }
   }, [])
