@@ -14,6 +14,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'hydroxytyrosol-olive-oil',
+    title: 'Hydroxytyrosol: The Most Powerful Antioxidant in Olive Oil',
+    excerpt: 'Hydroxytyrosol is the #1 reason EVOO has an EU health claim — with an ORAC score 15× higher than green tea. Learn its benefits, dosage, and which oils have the most.',
+    category: 'Science',
+    readTime: '10 min read',
+    date: '2026-02-25',
+    image: '⚡'
+  },
+  {
     slug: 'olive-oil-for-weight-loss',
     title: 'Olive Oil for Weight Loss: Does EVOO Help You Lose Weight?',
     excerpt: 'High-polyphenol EVOO is calorie-dense yet linked to lower body weight. Learn how it suppresses appetite, boosts fat oxidation, and improves insulin sensitivity.',
