@@ -827,20 +827,12 @@ export default function HomePage() {
       {/* Rankings Table */}
       <section className="py-3 md:py-6 px-4 md:px-6 w-full no-auto-ads" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
         <div className="max-w-7xl mx-auto w-full">
-          {/* Info strip — compact */}
-          <div className="mb-3 px-2">
-            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 px-3 py-2 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm text-[10px] text-white/50">
-              <span className="flex items-center gap-1"><span className="text-emerald-400 font-semibold text-[10px]">250+ mg/kg</span> polyphenols = health benefits</span>
-              <span className="text-white/20 hidden sm:inline">·</span>
-              <span className="flex items-center gap-1"><span className="text-emerald-400 font-semibold text-[10px]">HPLC direct</span> · <span className="text-emerald-400 font-semibold text-[10px]">NMR ×0.6</span> conversion</span>
-              <span className="text-white/20 hidden sm:inline">·</span>
-              <span className="flex items-center gap-1 flex-wrap justify-center">
-                <span className="text-white/40">Freshest ({currentMonth}):</span>
-                {freshHarvest.flags.slice(0, 5).map((flag, i) => <span key={i}>{flag}</span>)}
-                <span className="text-emerald-400/70 italic text-[9px]">{freshHarvest.region}</span>
-              </span>
-              <span className="text-white/20 hidden sm:inline">·</span>
-              <span className="italic text-white/30">Affiliate links · HPLC equivalents</span>
+          {/* Info strip — ultra-compact (freshest harvest only) */}
+          <div className="mb-2 px-2">
+            <div className="flex items-center justify-center gap-1.5 px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg backdrop-blur-sm text-[10px] text-white/45">
+              <span>Freshest ({currentMonth}):</span>
+              <span className="inline-flex items-center gap-1">{freshHarvest.flags.slice(0, 5).map((flag, i) => <span key={i}>{flag}</span>)}</span>
+              <span className="text-emerald-400/80 italic text-[9px]">{freshHarvest.region}</span>
             </div>
           </div>
 
