@@ -33,3 +33,105 @@ body {
   font-family: var(--font-geist-sans), Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
 }
+
+/* ── AdSense / Auto Ads ───────────────────────────────────────────────────── */
+
+/* Wrapper that creates a clean, contained ad slot */
+.ad-unit-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Anchor/in-page auto ads — ensure they never overflow horizontally */
+ins.adsbygoogle {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* The main ad break zones — nice visual separation */
+.ad-section-break {
+  width: 100%;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 110px;    /* reserve space so ads don't cause big layout shifts */
+}
+
+/* Mobile: tighter padding, never taller than necessary */
+@media (max-width: 767px) {
+  .ad-section-break {
+    padding: 8px 0;
+    min-height: 90px;
+  }
+  /* Prevent any auto-injected ad from exceeding the viewport width */
+  ins.adsbygoogle[data-ad-format="auto"],
+  ins.adsbygoogle[data-ad-format="fluid"] {
+    max-width: calc(100vw - 16px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Desktop: more breathing room */
+@media (min-width: 768px) {
+  .ad-section-break {
+    min-height: 130px;
+  }
+}
+
+/* "Advertisement" micro-label */
+.ad-label {
+  font-size: 9px;
+  color: #9ca3af;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+/* Mid-list ad row in the mobile card view */
+.ad-row-mobile {
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Ensure the table container is clearly separated from ad areas */
+.ad-break-hint {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+/* Prevent content jumping when ads load late */
+.ad-placeholder {
+  min-height: 90px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Anchor/overlay ads from auto ads — prevent them floating over table */
+@media (max-width: 767px) {
+  /* Push body down so sticky anchor ads don't cover nav */
+  body:has(.adsbygoogle[data-anchor-shown="true"]) {
+    padding-bottom: 60px;
+  }
+}

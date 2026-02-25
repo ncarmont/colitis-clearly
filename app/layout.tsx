@@ -69,12 +69,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google AdSense */}
+        {/* Google AdSense — auto ads enabled, manual break zones below */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1361556625262612"
           crossOrigin="anonymous"
         ></script>
+        {/* Configure auto-ads: use in-page formats only (no overlay/anchor blocking content) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.adsbygoogle = window.adsbygoogle || [];
+              // Avoid inserting auto ads INSIDE the rankings table
+              // The table has class "no-auto-ads" which we reference in AdSense Excluded Areas
+            `
+          }}
+        />
 
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ9T4462C0"></script>

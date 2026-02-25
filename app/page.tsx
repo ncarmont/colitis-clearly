@@ -3,6 +3,7 @@
 import { useState, useMemo, useEffect } from 'react'
 import Link from 'next/link'
 import WorldMap from '@/components/WorldMap'
+import AdUnit from '@/components/AdUnit'
 
 type OliveOil = {
   id: number
@@ -26,13 +27,13 @@ type OliveOil = {
 const OILS_DATA: OliveOil[] = [
   {
     id: 1, rank: 1, brand: "P.J. KABOS – Family Reserve Phenolic Shot",
-    hplcPolyphenols: 1012, nmrOtherPolyphenols: 1600,
-    origin: "Greece", harvestDate: "Oct 2024",
-    price: "$$", priceAmount: "$59.83", method: "HPLC + qNMR", lab: "IOC-certified HPLC + qNMR",
+    hplcPolyphenols: 995, nmrOtherPolyphenols: 1473,
+    origin: "Greece", harvestDate: "Sep–Oct 2025",
+    price: "$$", priceAmount: "$59.83", method: "HPLC + qNMR", lab: "Producer-reported HPLC + qNMR",
     certificateLink: "",
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "HPLC (IOC-certified): 1012 mg/kg, 14.4 mg/20g hydroxytyrosol. NMR: 1600 mg/kg, 32.18 mg/20g. 2025 Gold Medal (NY, Italy). USDA Organic."
+    notes: "Verified Feb 2026 against PJ KABOS product page and Amazon listing. Current batch states: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic; buy link active."
   },
   {
     id: 2, rank: 2, brand: "SP360",
@@ -807,8 +808,21 @@ export default function HomePage() {
         }
       `}</style>
 
+      {/* ── AD BREAK 1: between filter bar and rankings table ── */}
+      {/* Best position: user has just engaged with filters, high intent audience */}
+      {/* To activate: add your AdSense slot IDs (AdSense → Ads → By ad unit → Display ads) */}
+      <div className="ad-section-break" data-ad-region="pre-table">
+        <p className="ad-label">Advertisement</p>
+        <AdUnit
+          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_PRE_TABLE}
+          format="auto"
+          className="w-full max-w-[728px] mx-auto"
+          label={false}
+        />
+      </div>
+
       {/* Rankings Table */}
-      <section className="py-3 md:py-6 px-4 md:px-6 w-full" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
+      <section className="py-3 md:py-6 px-4 md:px-6 w-full no-auto-ads" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
         <div className="max-w-7xl mx-auto w-full">
           {/* Info strip — compact */}
           <div className="mb-3 px-2">
@@ -1232,6 +1246,18 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── AD BREAK 2: after rankings table, before CTA ── */}
+      {/* High-intent position: user just compared oils, likely considering a purchase */}
+      <div className="ad-section-break bg-slate-100" data-ad-region="post-table">
+        <p className="ad-label">Advertisement</p>
+        <AdUnit
+          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_POST_TABLE}
+          format="auto"
+          className="w-full max-w-[728px] mx-auto"
+          label={false}
+        />
+      </div>
 
       {/* CTA Section */}
       <section className="py-20 px-6">
