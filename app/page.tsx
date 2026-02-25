@@ -405,6 +405,9 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
   "Cyprus": "🇨🇾"
 }
 
+// Updated daily by cron after verification/search pass (UTC date)
+const LAST_DATA_UPDATE = '2026-02-25'
+
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
   const [sortBy, setSortBy] = useState<'rank' | 'polyphenols'>('polyphenols')
@@ -686,7 +689,7 @@ export default function HomePage() {
         <div className="relative z-30 flex items-center justify-between px-4 md:px-6 py-2 border-b border-white/5">
           <div className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
-            <span className="text-[10px] text-white/50 font-medium tracking-widest uppercase">Updated 2026</span>
+            <span className="text-[10px] text-white/50 font-medium tracking-widest uppercase">Updated {LAST_DATA_UPDATE}</span>
           </div>
           <div className="flex items-center gap-3">
             {totalVisitors !== null && totalVisitors > 0 && (
@@ -809,17 +812,17 @@ export default function HomePage() {
       `}</style>
 
       {/* ── AD BREAK 1: between filter bar and rankings table ── */}
-      {/* Best position: user has just engaged with filters, high intent audience */}
-      {/* To activate: add your AdSense slot IDs (AdSense → Ads → By ad unit → Display ads) */}
-      <div className="ad-section-break" data-ad-region="pre-table">
-        <p className="ad-label">Advertisement</p>
-        <AdUnit
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_PRE_TABLE}
-          format="auto"
-          className="w-full max-w-[728px] mx-auto"
-          label={false}
-        />
-      </div>
+      {process.env.NEXT_PUBLIC_ADSENSE_SLOT_PRE_TABLE && (
+        <div className="ad-section-break" data-ad-region="pre-table">
+          <p className="ad-label">Advertisement</p>
+          <AdUnit
+            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_PRE_TABLE}
+            format="auto"
+            className="w-full max-w-[728px] mx-auto"
+            label={false}
+          />
+        </div>
+      )}
 
       {/* Rankings Table */}
       <section className="py-3 md:py-6 px-4 md:px-6 w-full no-auto-ads" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
@@ -1248,16 +1251,17 @@ export default function HomePage() {
       </section>
 
       {/* ── AD BREAK 2: after rankings table, before CTA ── */}
-      {/* High-intent position: user just compared oils, likely considering a purchase */}
-      <div className="ad-section-break bg-slate-100" data-ad-region="post-table">
-        <p className="ad-label">Advertisement</p>
-        <AdUnit
-          slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_POST_TABLE}
-          format="auto"
-          className="w-full max-w-[728px] mx-auto"
-          label={false}
-        />
-      </div>
+      {process.env.NEXT_PUBLIC_ADSENSE_SLOT_POST_TABLE && (
+        <div className="ad-section-break bg-slate-100" data-ad-region="post-table">
+          <p className="ad-label">Advertisement</p>
+          <AdUnit
+            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_POST_TABLE}
+            format="auto"
+            className="w-full max-w-[728px] mx-auto"
+            label={false}
+          />
+        </div>
+      )}
 
       {/* CTA Section */}
       <section className="py-20 px-6">
@@ -1285,6 +1289,19 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── AD BREAK 3: lower-page placement (after long-form sections) ── */}
+      {process.env.NEXT_PUBLIC_ADSENSE_SLOT_BOTTOM && (
+        <div className="ad-section-break bg-slate-100" data-ad-region="page-bottom">
+          <p className="ad-label">Advertisement</p>
+          <AdUnit
+            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BOTTOM}
+            format="auto"
+            className="w-full max-w-[728px] mx-auto"
+            label={false}
+          />
+        </div>
+      )}
 
       <style jsx>{`
         @keyframes fade-in {
