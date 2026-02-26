@@ -46,14 +46,14 @@ const OILS_DATA: OliveOil[] = [
     notes: "UV-protected refillable bottle; subscription refill pouches save 10%. Herbaceous with green almond & tomato vine notes. Single estate family farm."
   },
   {
-    id: 3, rank: 3, brand: "The Governor – Limited Edition",
-    nmrOtherPolyphenols: 1458,
-    origin: "Greece (Corfu)", harvestDate: "Oct 2024",
-    price: "$$", priceAmount: "$65.00", method: "qNMR", lab: "qNMR total phenols",
+    id: 3, rank: 5, brand: "The Governor – Limited Edition",
+    nmrOtherPolyphenols: 1316,
+    origin: "Greece (Corfu)", harvestDate: "Oct 2025",
+    price: "$$", priceAmount: "£49.95", method: "qNMR", lab: "qNMR total phenols",
     certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
-    notes: "Limited Edition from Corfu; 2024/25 NMR-based results posted."
+    notes: "2025/26 harvest (Oct 2025); updated to 1,316 mg/kg per current product page (was 1,458 prior harvest). Currently pre-order, back in stock ~9 Mar 2026. Centenarian Lianolia trees, Corfu. Unfiltered."
   },
   {
     id: 4, rank: 4, brand: "OlvLimits \"Green Machine\"",
@@ -66,14 +66,14 @@ const OILS_DATA: OliveOil[] = [
     notes: "Lab analysis shows total polyphenols 1,378 mg/kg; early-harvest Coratina; World Olive Center for Health watermark."
   },
   {
-    id: 5, rank: 5, brand: "ONSURI Arbequina",
-    nmrOtherPolyphenols: 1269,
-    origin: "Jordan", harvestDate: "2024/25",
-    price: "$", priceAmount: "£19.95", method: "RSS", lab: "Jordan Royal Scientific Society",
+    id: 5, rank: 3, brand: "ONSURI Arbequina",
+    nmrOtherPolyphenols: 1504,
+    origin: "Jordan", harvestDate: "Sep 2025",
+    price: "$$", priceAmount: "£25.00", method: "RSS", lab: "Jordan Royal Scientific Society",
     certificateLink: "",
     cultivar: "Arbequina",
-    buyLink: "https://onsurioliveoil.com/products/arbequina-extra-virgin-olive-oil-16-9-fl-oz-500ml-latest-2022-harvest",
-    notes: "Oleocanthal ~406 mg/kg stated."
+    buyLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
+    notes: "2025/26 harvest; lab-certified 1,504.42 mg/kg polyphenols (up from 1,269 prior year). Single-estate Jordan family farm. Herbaceous with grassy, herbal, and floral notes. Feb 2026 verified on producer site."
   },
   {
     id: 6, rank: 6, brand: "ONSURI Arbequina 1L (2×500 ml)",
@@ -148,12 +148,12 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 13, rank: 13, brand: "Opus Oléa – Organic",
     nmrOtherPolyphenols: 874,
-    origin: "Greece", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$48.00", method: "Other", lab: "Lab images shown",
+    origin: "Greece", harvestDate: "Nov 2025",
+    price: "$$", priceAmount: "$48.00", method: "Other", lab: "Independent lab (images on site)",
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.opuslivewell.com/products/opus-olea-organic-extra-virgin-olive-oil-500ml",
-    notes: "Small-batch organic; Messinia/Peloponnese."
+    notes: "Nov 2025 harvest confirmed Feb 2026. 874 mg/kg total polyphenols; 20g delivers 17.5mg hydroxytyrosol (>3× EU health claim minimum). Ultra low acidity 0.2%. Messinia/Peloponnese, sustainably farmed."
   },
   {
     id: 14, rank: 14, brand: "Zero Nutrition – EVOO100",
@@ -307,13 +307,13 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 29, rank: 29, brand: "Laconiko Extra Virgin (Koroneiki)",
-    nmrOtherPolyphenols: 538,
+    nmrOtherPolyphenols: 578,
     origin: "Greece", harvestDate: "Nov 2024–Jan 2025",
-    price: "$", priceAmount: "$24.95", method: "qNMR", lab: "qNMR verified",
+    price: "$", priceAmount: "$24.95", method: "qNMR", lab: "qNMR verified (Aristoleo protocol)",
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Koroneiki-Certificate-of-Analysis-and-NMR_214c678d-f473-4f37-9257-322fd3d7e715.pdf?v=1741704340",
     cultivar: "Koroneiki",
     buyLink: "https://laconiko.com/products/laconiko-extra-virgin-olive-oil-new-2024-harvest",
-    notes: "Great value with posted NMR."
+    notes: "Updated Feb 2026 per posted COA: 578 mg/kg (was 538). Oleic acid 77.36%; acidity 0.17%. Certificate link active. Great value with full posted NMR."
   },
   {
     id: 30, rank: 30, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
@@ -406,7 +406,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-02-25'
+const LAST_DATA_UPDATE = '2026-02-26'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
