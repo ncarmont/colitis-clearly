@@ -703,20 +703,26 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-100/40 via-transparent to-transparent pointer-events-none"></div>
         <div className="relative z-10">
       {/* Hero Header */}
-      <header className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-emerald-950 w-full">
-        {/* Subtle radial glow */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(16,185,129,0.18),transparent)] pointer-events-none" />
+      <header className="relative overflow-hidden bg-gradient-to-br from-[#061226] via-[#0a1f3a] to-[#07382d] w-full border-b border-white/10">
+        {/* layered glow + texture */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,rgba(16,185,129,0.26),transparent)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_15%,rgba(45,212,191,0.16),transparent_40%)] pointer-events-none" />
 
         {/* Top utility bar */}
-        <div className="relative z-30 flex items-center justify-between px-3 md:px-6 py-1.5 md:py-2 border-b border-white/5">
+        <div className="relative z-30 flex items-center justify-between px-4 md:px-8 py-2 md:py-2.5 border-b border-white/10 bg-black/10 backdrop-blur-sm">
           <div className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
-            <span className="text-[9px] md:text-[10px] text-white/50 font-medium tracking-widest uppercase">Updated {LAST_DATA_UPDATE}</span>
+            <span className="text-[9px] md:text-[10px] text-emerald-100/80 font-semibold tracking-[0.18em] uppercase">Updated {LAST_DATA_UPDATE}</span>
           </div>
           <div className="flex items-center gap-3">
             {totalVisitors !== null && totalVisitors > 0 && (
-              <span className="text-[10px] text-white/40">
+              <span className="hidden md:inline-flex text-[10px] text-white/60 bg-white/10 border border-white/15 rounded-full px-2 py-0.5">
                 {totalVisitors >= 1000 ? `${(totalVisitors / 1000).toFixed(1)}K` : totalVisitors.toLocaleString()} visitors
+              </span>
+            )}
+            {instagramFollowers && instagramFollowers > 0 && (
+              <span className="hidden md:inline-flex text-[10px] text-pink-100 bg-pink-500/15 border border-pink-300/20 rounded-full px-2 py-0.5">
+                {instagramFollowers >= 1000 ? `${(instagramFollowers / 1000).toFixed(1)}K` : instagramFollowers.toLocaleString()} IG
               </span>
             )}
             <Link
@@ -724,7 +730,7 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-white/40 hover:text-pink-400 transition-colors duration-200"
+              className="inline-flex items-center justify-center rounded-lg p-1.5 bg-white/10 border border-white/15 text-white/70 hover:text-pink-300 hover:bg-white/20 transition-colors duration-200"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                 <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2.2a2.8 2.8 0 110 5.6 2.8 2.8 0 010-5.6zM17.5 5.5a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z" />
@@ -734,10 +740,10 @@ export default function HomePage() {
         </div>
 
         {/* Hero content */}
-        <div className="relative z-20 max-w-4xl mx-auto px-3 md:px-6 pt-5 pb-5 md:pt-14 md:pb-14 text-center">
-          <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.08] animate-slide-up">
+        <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-7 pb-7 md:pt-14 md:pb-14 text-center">
+          <h1 className="text-[1.95rem] sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.05] animate-slide-up">
             Best Extra Virgin Olive Oils
-            <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-300 to-green-300">
+            <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-lime-300">
               Ranked Scientifically
             </span>
           </h1>
@@ -747,23 +753,27 @@ export default function HomePage() {
           </p>
 
           {/* Benefit line */}
-          <p className="mt-2.5 md:mt-3 text-[10px] md:text-xs text-white/35 tracking-wide animate-fade-in-delay">
-            ❤️ 31% ↓ CVD risk &nbsp;·&nbsp; 💪 Anti-inflammatory &nbsp;·&nbsp; 🧬 Longevity
+          <p className="mt-3 inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-[10px] md:text-xs text-white/80 tracking-wide animate-fade-in-delay">
+            <span>❤️ 31% ↓ CVD risk</span>
+            <span className="text-white/35">•</span>
+            <span>💪 Anti-inflammatory</span>
+            <span className="text-white/35">•</span>
+            <span>🧬 Longevity</span>
           </p>
 
           {/* Stats card */}
-          <div className="mt-4 inline-grid grid-cols-3 divide-x divide-white/10 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm animate-fade-in-delay-2">
+          <div className="mt-5 inline-grid grid-cols-3 divide-x divide-white/15 bg-white/10 border border-white/15 rounded-2xl md:rounded-3xl backdrop-blur-md shadow-[0_10px_40px_rgba(16,185,129,0.18)] animate-fade-in-delay-2 overflow-hidden">
             <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
-              <div className="text-xl md:text-3xl font-bold text-white">{stats.totalOils}</div>
-              <div className="text-[8px] md:text-[10px] text-emerald-400/80 uppercase tracking-wider mt-0.5">Lab-Verified</div>
+              <div className="text-xl md:text-3xl font-black text-white">{stats.totalOils}</div>
+              <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Lab-Verified</div>
             </div>
             <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
-              <div className="text-xl md:text-3xl font-bold text-white">{stats.countries}</div>
-              <div className="text-[8px] md:text-[10px] text-emerald-400/80 uppercase tracking-wider mt-0.5">Countries</div>
+              <div className="text-xl md:text-3xl font-black text-white">{stats.countries}</div>
+              <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Countries</div>
             </div>
             <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
-              <div className="text-xl md:text-3xl font-bold text-white">{stats.maxPolyphenols}</div>
-              <div className="text-[8px] md:text-[10px] text-emerald-400/80 uppercase tracking-wider mt-0.5">Max mg/kg</div>
+              <div className="text-xl md:text-3xl font-black text-white">{stats.maxPolyphenols}</div>
+              <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Max mg/kg</div>
             </div>
           </div>
         </div>

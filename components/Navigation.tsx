@@ -9,56 +9,63 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <nav className="bg-white/80 backdrop-blur-lg border-b border-gray-200/50 sticky top-0 z-50 shadow-lg">
-      <div className="max-w-7xl mx-auto px-3 md:px-6 py-2 md:py-4">
+    <nav className="sticky top-0 z-50 border-b border-emerald-100/70 bg-white/85 backdrop-blur-xl shadow-[0_8px_30px_rgba(15,23,42,0.06)]">
+      <div className="max-w-7xl mx-auto px-3 md:px-6 py-2.5 md:py-3.5">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-1.5 md:gap-3 group">
-            <div className="w-7 h-7 md:w-10 md:h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg md:rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-200">
-              <span className="text-lg md:text-2xl">🫒</span>
+          <Link href="/" className="flex items-center gap-2.5 md:gap-3.5 group">
+            <div className="relative w-11 h-11 md:w-12 md:h-12 rounded-2xl p-[2px] bg-gradient-to-br from-emerald-400 via-green-500 to-teal-600 shadow-md group-hover:shadow-lg transition-all duration-300">
+              <div className="w-full h-full rounded-[14px] bg-white flex items-center justify-center overflow-hidden">
+                <img src="/favicon.svg" alt="Best Olive Oil Ranked" className="w-8 h-8 md:w-9 md:h-9" />
+              </div>
             </div>
-            <span className="text-[11px] sm:text-xs md:text-xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent leading-none">
-              best-olive-oil-ranked.com
-            </span>
+            <div className="leading-tight">
+              <div className="text-[12px] md:text-[18px] font-extrabold tracking-tight bg-gradient-to-r from-emerald-700 via-green-600 to-teal-600 bg-clip-text text-transparent">
+                best-olive-oil-ranked.com
+              </div>
+              <div className="hidden md:block text-[11px] text-emerald-700/70 font-medium">
+                Lab-verified EVOO rankings
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-2 items-center">
+          <div className="hidden md:flex gap-2 items-center rounded-2xl border border-emerald-100 bg-emerald-50/50 p-1.5">
             <Link
               href="/"
-              className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              className={`px-4 py-2 rounded-xl font-semibold transition-all duration-200 ${
                 pathname === '/'
-                  ? 'bg-green-100 text-green-700'
-                  : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
+                  ? 'bg-white text-emerald-700 shadow-sm border border-emerald-100'
+                  : 'text-gray-700 hover:bg-white/80 hover:text-emerald-700'
               }`}
             >
               Rankings
             </Link>
             <Link
               href="/blog"
-              className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              className={`px-4 py-2 rounded-xl font-semibold transition-all duration-200 ${
                 pathname.startsWith('/blog')
-                  ? 'bg-green-100 text-green-700'
-                  : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
+                  ? 'bg-white text-emerald-700 shadow-sm border border-emerald-100'
+                  : 'text-gray-700 hover:bg-white/80 hover:text-emerald-700'
               }`}
             >
               Blog
             </Link>
             <Link
               href="/research"
-              className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              className={`px-4 py-2 rounded-xl font-semibold transition-all duration-200 ${
                 pathname.startsWith('/research')
-                  ? 'bg-green-100 text-green-700'
-                  : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
+                  ? 'bg-white text-emerald-700 shadow-sm border border-emerald-100'
+                  : 'text-gray-700 hover:bg-white/80 hover:text-emerald-700'
               }`}
             >
               Research
             </Link>
             <Link
               href="/about"
-              className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              className={`px-4 py-2 rounded-xl font-semibold transition-all duration-200 ${
                 pathname === '/about'
-                  ? 'bg-green-100 text-green-700'
-                  : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
+                  ? 'bg-white text-emerald-700 shadow-sm border border-emerald-100'
+                  : 'text-gray-700 hover:bg-white/80 hover:text-emerald-700'
               }`}
             >
               About
@@ -68,14 +75,14 @@ export default function Navigation() {
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-gray-700 hover:bg-green-50 rounded-lg transition-colors"
+            className="md:hidden p-2.5 text-slate-700 bg-white border border-emerald-100 shadow-sm hover:bg-emerald-50 rounded-xl transition-colors"
             aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.3} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.3} d="M4 7h16M4 12h16M4 17h16" />
               )}
             </svg>
           </button>
@@ -83,14 +90,14 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-3 pb-2 space-y-1">
+          <div className="md:hidden mt-3 pb-1 space-y-1.5 rounded-2xl border border-emerald-100 bg-white/90 p-2 animate-fade-in">
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              className={`block px-4 py-2.5 rounded-xl font-semibold transition-all duration-200 ${
                 pathname === '/'
-                  ? 'bg-green-100 text-green-700'
-                  : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
+                  ? 'bg-emerald-100 text-emerald-800'
+                  : 'text-gray-700 hover:bg-emerald-50 hover:text-emerald-700'
               }`}
             >
               Rankings
@@ -98,10 +105,10 @@ export default function Navigation() {
             <Link
               href="/blog"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              className={`block px-4 py-2.5 rounded-xl font-semibold transition-all duration-200 ${
                 pathname.startsWith('/blog')
-                  ? 'bg-green-100 text-green-700'
-                  : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
+                  ? 'bg-emerald-100 text-emerald-800'
+                  : 'text-gray-700 hover:bg-emerald-50 hover:text-emerald-700'
               }`}
             >
               Blog
@@ -109,10 +116,10 @@ export default function Navigation() {
             <Link
               href="/research"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              className={`block px-4 py-2.5 rounded-xl font-semibold transition-all duration-200 ${
                 pathname.startsWith('/research')
-                  ? 'bg-green-100 text-green-700'
-                  : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
+                  ? 'bg-emerald-100 text-emerald-800'
+                  : 'text-gray-700 hover:bg-emerald-50 hover:text-emerald-700'
               }`}
             >
               Research
@@ -120,10 +127,10 @@ export default function Navigation() {
             <Link
               href="/about"
               onClick={() => setMobileMenuOpen(false)}
-              className={`block px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              className={`block px-4 py-2.5 rounded-xl font-semibold transition-all duration-200 ${
                 pathname === '/about'
-                  ? 'bg-green-100 text-green-700'
-                  : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
+                  ? 'bg-emerald-100 text-emerald-800'
+                  : 'text-gray-700 hover:bg-emerald-50 hover:text-emerald-700'
               }`}
             >
               About
