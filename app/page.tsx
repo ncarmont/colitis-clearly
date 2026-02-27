@@ -21,6 +21,7 @@ type OliveOil = {
   cultivar: string
   buyLink: string
   notes: string
+  productImage?: string  // Hero product photo path (public/img/)
 }
 
 // Updated OILS_DATA with HPLC and NMR/Other split columns - 36 entries
@@ -33,7 +34,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified Feb 2026 against PJ KABOS product page and Amazon listing. Current batch states: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic; buy link active."
+    notes: "Verified Feb 2026 against PJ KABOS product page and Amazon listing. Current batch states: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic; buy link active.",
+    productImage: "/img/kabos-phenolic-shot.jpg"
   },
   {
     id: 2, rank: 2, brand: "SP360",
@@ -43,7 +45,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
-    notes: "Verified Feb 2026: bottle listed as sold out (delivery from Jan 29 2026); refill subscription pouches (10% saving) still available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan."
+    notes: "Verified Feb 2026: bottle listed as sold out (delivery from Jan 29 2026); refill subscription pouches (10% saving) still available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan.",
+    productImage: "/img/sp360-bottle.jpg"
   },
   {
     id: 3, rank: 5, brand: "The Governor – Limited Edition",
@@ -63,7 +66,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0774/2003/6420/files/analysis.png?v=1763034364",
     cultivar: "Coratina",
     buyLink: "https://www.olvlimits.com/products/green-machine",
-    notes: "Lab analysis shows total polyphenols 1,378 mg/kg; early-harvest Coratina; World Olive Center for Health watermark."
+    notes: "Lab analysis shows total polyphenols 1,378 mg/kg; early-harvest Coratina; World Olive Center for Health watermark.",
+    productImage: "/img/olvlimits-green-machine.png"
   },
   {
     id: 5, rank: 3, brand: "ONSURI Arbequina",
@@ -879,6 +883,106 @@ export default function HomePage() {
                   displayRank === 3 ? 'bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-400' :
                   'bg-white'
 
+                // ── FEATURED CARD for top 3 with product image ──
+                if (displayRank <= 3 && oil.productImage) {
+                  const borderColor =
+                    displayRank === 1 ? 'border-yellow-400' :
+                    displayRank === 2 ? 'border-gray-400' :
+                    'border-orange-400'
+                  const infoBg =
+                    displayRank === 1 ? 'bg-gradient-to-r from-yellow-50 to-amber-50' :
+                    displayRank === 2 ? 'bg-gradient-to-r from-gray-50 to-slate-50' :
+                    'bg-gradient-to-r from-orange-50 to-red-50'
+                  return (
+                    <div
+                      key={oil.id}
+                      className={`relative overflow-hidden border-l-4 ${borderColor} animate-fade-in-row`}
+                      style={{ animationDelay: `${index * 40}ms` }}
+                    >
+                      {/* Product image — tall, fills width */}
+                      <a href={oil.buyLink} target="_blank" rel="noopener noreferrer" className="block relative h-52 w-full overflow-hidden">
+                        <img
+                          src={oil.productImage}
+                          alt={oil.brand}
+                          className="w-full h-full object-cover object-center"
+                          loading="lazy"
+                        />
+                        {/* Gradient overlay at bottom so info is readable */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
+                        {/* Rank badge + crown — top-left overlay */}
+                        <div className="absolute top-2.5 left-2.5 flex flex-col items-center gap-0.5">
+                          <span className={`inline-flex items-center justify-center w-10 h-10 rounded-xl font-bold text-base text-white shadow-lg bg-gradient-to-br ${rankGrad} ring-2 ring-white/60`}>
+                            {displayRank}
+                          </span>
+                          <span className={`text-lg leading-none drop-shadow animate-crown-bounce ${
+                            displayRank === 1 ? 'crown-gold' :
+                            displayRank === 2 ? 'crown-silver' :
+                            'crown-bronze'
+                          }`}>👑</span>
+                        </div>
+
+                        {/* Score overlaid at bottom-left of image */}
+                        <div className="absolute bottom-2.5 left-3">
+                          <span className={`text-3xl font-extrabold leading-none drop-shadow-lg ${
+                            displayRank === 1 ? 'text-yellow-300' :
+                            displayRank === 2 ? 'text-gray-200' :
+                            'text-orange-300'
+                          }`}>{score}</span>
+                          <span className="text-white/80 text-xs font-semibold ml-1">mg/kg</span>
+                          {badges.map((b, bi) => (
+                            <span key={bi} className="ml-1 text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-white/20 text-white backdrop-blur-sm border border-white/30">{b}</span>
+                          ))}
+                        </div>
+                      </a>
+
+                      {/* Info row below image */}
+                      <div className={`flex items-center gap-3 px-3 py-2.5 ${infoBg}`}>
+                        <div className="flex-1 min-w-0">
+                          <a
+                            href={oil.buyLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm font-bold text-gray-900 leading-tight block line-clamp-1"
+                          >
+                            {oil.brand}
+                          </a>
+                          <div className="flex items-center gap-1.5 mt-0.5 text-[10px] text-gray-500 flex-wrap">
+                            <span>{COUNTRY_FLAGS[oil.origin]} {oil.origin}</span>
+                            <span className="text-gray-300">•</span>
+                            <span>{oil.harvestDate}</span>
+                            <span className="text-gray-300">•</span>
+                            <span className="italic text-gray-400">{oil.cultivar}</span>
+                          </div>
+                        </div>
+                        <div className="flex flex-col items-center gap-1 shrink-0">
+                          <a
+                            href={oil.buyLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`inline-flex items-center justify-center px-3 py-2 rounded-lg font-semibold text-[11px] text-white shadow-sm active:scale-95 transition-transform ${
+                              isAmazon ? 'bg-blue-600' : 'bg-gradient-to-r from-green-600 to-emerald-600'
+                            }`}
+                          >
+                            Buy →
+                          </a>
+                          {oil.certificateLink && (
+                            <a
+                              href={oil.certificateLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[9px] text-green-600 underline"
+                            >
+                              📜 COA
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  )
+                }
+
+                // ── NORMAL CARD for ranks 4+ ──
                 return (
                   <div
                     key={oil.id}
