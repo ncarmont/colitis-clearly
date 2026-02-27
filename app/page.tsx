@@ -122,7 +122,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.masworth.co.uk/product/november-early-harvest-organic-olive-oil-500ml/",
-    notes: "500 ml; organic; early-harvest green olives; bundle price ≈ £22.87/bottle (3+)"
+    notes: "500 ml; organic; early-harvest green olives; bundle price ≈ £22.87/bottle (3+)",
+    productImage: "/img/oil-9.jpg"
   },
   {
     id: 10, rank: 10, brand: "Kyoord High-Phenolic",
@@ -132,7 +133,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Lianolia + Koroneiki",
     buyLink: "https://www.amazon.com/kyoord-High-Phenolic-Extra-Virgin-Olive/dp/B0CCQQGXRQ?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=cde3cbabfa18ecdacdb34b3f0833d404&language=en_US&ref_=as_li_ss_tl",
-    notes: "Founded by Dr. Goren; small Corfu farm."
+    notes: "Founded by Dr. Goren; small Corfu farm.",
+    productImage: "/img/oil-10.jpg"
   },
   {
     id: 11, rank: 11, brand: "ONSURI Signature (Arbequina + Arbosana)",
@@ -175,7 +177,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
-    notes: "Tracker shows 813 mg/kg and a posted cert link."
+    notes: "Tracker shows 813 mg/kg and a posted cert link.",
+    productImage: "/img/oil-14.png"
   },
   {
     id: 15, rank: 15, brand: "Quattrociocchi 'Superbo'",
@@ -185,7 +188,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Itrana/Moraiolo",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
-    notes: "Needs correct brand link/COA."
+    notes: "Needs correct brand link/COA.",
+    productImage: "/img/oil-23.jpg"
   },
   {
     id: 16, rank: 16, brand: "P.J. KABOS – Family Reserve Robust",
@@ -195,7 +199,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Olympia + Koroneiki",
     buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&linkId=1328610a17867326c0d2a26ae73aab6a&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified Feb 2026 on PJ KABOS site. Oct 2025 harvest; HPLC 699 mg/kg (updated from 750, prior batch). Hydroxytyrosol (and derivatives) 10 mg/20g. Olympia + Koroneiki blend. USDA & EU organic. Under 0.29% acidity. $39.83 (1 bottle). Best before Dec 2027."
+    notes: "Verified Feb 2026 on PJ KABOS site. Oct 2025 harvest; HPLC 699 mg/kg (updated from 750, prior batch). Hydroxytyrosol (and derivatives) 10 mg/20g. Olympia + Koroneiki blend. USDA & EU organic. Under 0.29% acidity. $39.83 (1 bottle). Best before Dec 2027.",
+    productImage: "/img/oil-16.jpg"
   },
   {
     id: 17, rank: 17, brand: "Oro del Desierto – Picual (Organic)",
@@ -205,7 +210,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
-    notes: "Early-harvest organic Picual, Almería."
+    notes: "Early-harvest organic Picual, Almería.",
+    productImage: "/img/oil-23.jpg"
   },
   {
     id: 18, rank: 18, brand: "Vallesur – Peruvian",
@@ -215,7 +221,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
-    notes: "Award-winning Tacna EVOO."
+    notes: "Award-winning Tacna EVOO.",
+    productImage: "/img/oil-18.jpg"
   },
   {
     id: 19, rank: 19, brand: "Laudemio Frescobaldi (Tuscany)",
@@ -225,7 +232,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Frantoio/Moraiolo/Leccino",
     buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=be0189503aadb51434d91e088337e2b5&language=en_US&ref_=as_li_ss_tl",
-    notes: "Classic Tuscan PDO style."
+    notes: "Classic Tuscan PDO style.",
+    productImage: "/img/oil-19.jpg"
   },
   {
     id: 20, rank: 20, brand: "Citizens of Soil — Spanish",
@@ -257,7 +265,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Picholine Marocaine",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
-    notes: "Brand publicizes Htyr/20g."
+    notes: "Brand publicizes Htyr/20g.",
+    productImage: "/img/oil-22.jpg"
   },
   {
     id: 23, rank: 23, brand: "Venta del Barón (DO Priego)",
@@ -267,7 +276,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca + Picuda",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
-    notes: "DO protected."
+    notes: "DO protected.",
+    productImage: "/img/oil-23.jpg"
   },
   {
     id: 24, rank: 24, brand: "Castillo de Canena – First Day Harvest Picual",
@@ -288,7 +298,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Frantoio/Leccino/Moraiolo",
     buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3",
-    notes: "Certified Tuscan lots."
+    notes: "Certified Tuscan lots.",
+    productImage: "/img/oil-25.jpg"
   },
   {
     id: 26, rank: 26, brand: "Odysea 'Good For You' (Crete)",
@@ -298,7 +309,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.amazon.co.uk/Odysea-Good-Greek-Virgin-Olive/dp/B0C7LBD9Z4",
-    notes: "UK retailer SKU; Cretan Koroneiki with 573 mg/kg polyphenols."
+    notes: "UK retailer SKU; Cretan Koroneiki with 573 mg/kg polyphenols.",
+    productImage: "/img/oil-18.jpg"
   },
   {
     id: 27, rank: 27, brand: "Kosterina – Original Extra Virgin",
@@ -363,7 +375,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Tuscan blend",
     buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=d74d40c724b766f7434a23e6eba9650a&language=en_US&ref_=as_li_ss_tl",
-    notes: "Robust profile."
+    notes: "Robust profile.",
+    productImage: "/img/oil-32.jpg"
   },
   {
     id: 33, rank: 33, brand: "P.J. KABOS – Family Reserve Organic (Medium)",
@@ -373,7 +386,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.pjkabos.com/family-reserve-organic-medium",
-    notes: "USDA/EU organic."
+    notes: "USDA/EU organic.",
+    productImage: "/img/kabos-phenolic-shot.jpg"
   },
   {
     id: 34, rank: 34, brand: "Blueprint (Bryan Johnson) 'Snake Oil' EVOO",
@@ -383,7 +397,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "—",
     buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ",
-    notes: "DTC & Amazon."
+    notes: "DTC & Amazon.",
+    productImage: "/img/oil-34.jpg"
   },
   {
     id: 35, rank: 35, brand: "The Governor – Premium Edition",
