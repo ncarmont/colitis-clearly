@@ -15,7 +15,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center gap-2.5 md:gap-3.5 group">
             <div className="relative w-11 h-11 md:w-12 md:h-12 rounded-2xl p-[2px] bg-gradient-to-br from-emerald-400 via-green-500 to-teal-600 shadow-md group-hover:shadow-lg transition-all duration-300">
               <div className="w-full h-full rounded-[14px] bg-white flex items-center justify-center overflow-hidden">
-                <img src="/favicon.svg" alt="Best Olive Oil Ranked" className="w-8 h-8 md:w-9 md:h-9" />
+                <img src="/ig-profile.jpg" alt="Best Olive Oil Ranked" className="w-8 h-8 md:w-9 md:h-9 rounded-full object-cover" />
               </div>
             </div>
             <div className="leading-tight">
