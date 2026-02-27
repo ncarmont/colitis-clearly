@@ -22,14 +22,14 @@ export default function Footer() {
               Science-backed rankings of the highest polyphenol extra virgin olive oils for optimal health.
             </p>
             <div className="flex gap-3 pt-2">
-              <a href="#" className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-green-600 flex items-center justify-center transition-all duration-200 hover:scale-110">
-                <span className="text-sm">𝕏</span>
-              </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-green-600 flex items-center justify-center transition-all duration-200 hover:scale-110">
-                <span className="text-sm">in</span>
-              </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-green-600 flex items-center justify-center transition-all duration-200 hover:scale-110">
-                <span className="text-sm">f</span>
+              <a
+                href="https://www.instagram.com/bestoliveoilranked.com_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-green-600 flex items-center justify-center transition-all duration-200 hover:scale-110"
+                aria-label="Instagram"
+              >
+                <span className="text-sm">IG</span>
               </a>
             </div>
           </div>
@@ -108,15 +108,18 @@ export default function Footer() {
           <p className="text-gray-400 text-sm">
             © 2026 EVOO Rankings. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm">
-            <Link href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
+          <div className="flex gap-6 text-sm flex-wrap justify-center">
+            <Link href="/privacy-policy" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
+            <Link href="/terms" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
               Terms of Service
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
+            <Link href="/contact" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
               Contact
+            </Link>
+            <Link href="/editorial-policy" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
+              Editorial Policy
             </Link>
           </div>
         </div>
