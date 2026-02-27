@@ -886,7 +886,7 @@ export default function HomePage() {
             </div>
           )}
 
-          <div className="bg-white/95 backdrop-blur rounded-2xl md:rounded-3xl shadow-2xl border border-slate-200/80 overflow-hidden animate-table-entrance">
+          <div className="bg-transparent md:bg-white/95 backdrop-blur rounded-2xl md:rounded-3xl shadow-none md:shadow-2xl border-0 md:border md:border-slate-200/80 overflow-visible md:overflow-hidden animate-table-entrance">
 
             {/* ── MOBILE CARD LIST (< md) ── */}
             <div className="block md:hidden space-y-3">
@@ -901,15 +901,15 @@ export default function HomePage() {
                   displayRank === 3 ? 'from-orange-400 via-orange-500 to-red-500 shadow-orange-500/40' :
                   `${getGreenShade(displayRank)} shadow-green-500/20`
                 const scoreColor =
-                  displayRank === 1 ? 'text-yellow-600' :
-                  displayRank === 2 ? 'text-gray-600' :
-                  displayRank === 3 ? 'text-orange-600' :
-                  'text-green-600'
+                  displayRank === 1 ? 'text-yellow-300' :
+                  displayRank === 2 ? 'text-slate-200' :
+                  displayRank === 3 ? 'text-orange-300' :
+                  'text-emerald-300'
                 const rowBg =
-                  displayRank === 1 ? 'bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-400' :
-                  displayRank === 2 ? 'bg-gradient-to-r from-gray-50 to-slate-50 border-l-4 border-gray-400' :
-                  displayRank === 3 ? 'bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-400' :
-                  'bg-white'
+                  displayRank === 1 ? 'bg-gradient-to-r from-[#1b2438] to-[#0d1b34] border-l-4 border-yellow-400' :
+                  displayRank === 2 ? 'bg-gradient-to-r from-[#1b2438] to-[#12233f] border-l-4 border-gray-400' :
+                  displayRank === 3 ? 'bg-gradient-to-r from-[#1c2336] to-[#182a4a] border-l-4 border-orange-400' :
+                  'bg-gradient-to-r from-[#0f1f39] to-[#123055] border-l-4 border-green-400'
 
                 // ── FEATURED CARD for any oil with product image ──
                 if (oil.productImage) {
@@ -919,10 +919,10 @@ export default function HomePage() {
                     displayRank === 3 ? 'border-orange-400' :
                     'border-green-300'
                   const infoBg =
-                    displayRank === 1 ? 'bg-gradient-to-r from-yellow-50 to-amber-50' :
-                    displayRank === 2 ? 'bg-gradient-to-r from-gray-50 to-slate-50' :
-                    displayRank === 3 ? 'bg-gradient-to-r from-orange-50 to-red-50' :
-                    'bg-gradient-to-r from-green-50 to-emerald-50'
+                    displayRank === 1 ? 'bg-gradient-to-r from-[#1b2438] to-[#0d1b34]' :
+                    displayRank === 2 ? 'bg-gradient-to-r from-[#1b2438] to-[#12233f]' :
+                    displayRank === 3 ? 'bg-gradient-to-r from-[#1c2336] to-[#182a4a]' :
+                    'bg-gradient-to-r from-[#0f1f39] to-[#123055]'
                   return (
                     <div
                       key={oil.id}
@@ -962,7 +962,7 @@ export default function HomePage() {
                             displayRank === 3 ? 'text-orange-300' :
                             'text-emerald-200'
                           }`}>{score}</span>
-                          <span className="text-white/80 text-xs font-semibold ml-1">mg/kg</span>
+                          <span className="text-white/90 text-xs font-semibold ml-1">mg/kg polyphenols</span>
                           {badges.map((b, bi) => (
                             <span key={bi} className="ml-1 text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-white/20 text-white backdrop-blur-sm border border-white/30">{b}</span>
                           ))}
@@ -976,16 +976,16 @@ export default function HomePage() {
                             href={oil.buyLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm font-bold text-gray-900 leading-tight block line-clamp-1"
+                            className="text-sm font-bold text-white leading-tight block line-clamp-1"
                           >
                             {oil.brand}
                           </a>
-                          <div className="flex items-center gap-1.5 mt-0.5 text-[10px] text-gray-500 flex-wrap">
+                          <div className="flex items-center gap-1.5 mt-0.5 text-[10px] text-white/75 flex-wrap">
                             <span>{COUNTRY_FLAGS[oil.origin]} {oil.origin}</span>
-                            <span className="text-gray-300">•</span>
+                            <span className="text-white/40">•</span>
                             <span>{oil.harvestDate}</span>
-                            <span className="text-gray-300">•</span>
-                            <span className="italic text-gray-400">{oil.cultivar}</span>
+                            <span className="text-white/40">•</span>
+                            <span className="italic text-white/60">{oil.cultivar}</span>
                           </div>
                         </div>
                         <div className="flex flex-col items-center gap-1 shrink-0">
@@ -1004,7 +1004,7 @@ export default function HomePage() {
                               href={oil.certificateLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-[9px] text-green-600 underline"
+                              className="text-[9px] text-emerald-300 underline"
                             >
                               📜 COA
                             </a>
@@ -1019,7 +1019,7 @@ export default function HomePage() {
                 return (
                   <div
                     key={oil.id}
-                    className={`flex items-center gap-3 px-3 py-3 rounded-2xl border border-gray-100 shadow-sm animate-fade-in-row ${rowBg}`}
+                    className={`flex items-center gap-3 px-3 py-3 rounded-2xl border border-white/10 shadow-sm animate-fade-in-row ${rowBg}`}
                     style={{ animationDelay: `${index * 40}ms` }}
                   >
                     {/* Rank badge */}
@@ -1042,23 +1042,23 @@ export default function HomePage() {
                         href={oil.buyLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm font-bold text-gray-900 leading-tight block line-clamp-2"
+                        className="text-sm font-bold text-white leading-tight block line-clamp-2"
                       >
                         {oil.brand}
                       </a>
                       <div className="flex items-center gap-1.5 mt-1 flex-wrap">
                         <span className={`text-xl font-extrabold leading-none ${scoreColor}`}>{score}</span>
-                        <span className="text-[10px] text-gray-500 font-medium">mg/kg</span>
+                        <span className="text-[10px] text-white/80 font-medium">mg/kg polyphenols</span>
                         {badges.map((b, bi) => (
-                          <span key={bi} className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-gray-100 text-gray-600 border border-gray-200">{b}</span>
+                          <span key={bi} className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-white/15 text-white/85 border border-white/20">{b}</span>
                         ))}
                       </div>
-                      <div className="flex items-center gap-1.5 mt-0.5 text-[10px] text-gray-500 flex-wrap">
+                      <div className="flex items-center gap-1.5 mt-0.5 text-[10px] text-white/70 flex-wrap">
                         <span>{COUNTRY_FLAGS[oil.origin]} {oil.origin}</span>
-                        <span className="text-gray-300">•</span>
+                        <span className="text-white/35">•</span>
                         <span>{oil.harvestDate}</span>
-                        <span className="text-gray-300">•</span>
-                        <span className="italic text-gray-400">{oil.cultivar}</span>
+                        <span className="text-white/35">•</span>
+                        <span className="italic text-white/55">{oil.cultivar}</span>
                       </div>
                     </div>
 
@@ -1201,7 +1201,7 @@ export default function HomePage() {
                               <span className="text-sm font-semibold text-gray-600">
                                 {oil.hplcPolyphenols || oil.nmrOtherPolyphenols}
                               </span>
-                              <span className="text-[10px] text-gray-400 font-medium">mg/kg</span>
+                              <span className="text-[10px] text-gray-400 font-medium">mg/kg polyphenols</span>
                             </div>
                             <span className={`text-[8px] font-medium px-1 py-0.5 rounded text-center ${
                               displayRank === 1 ? 'bg-yellow-50 text-yellow-600' :
