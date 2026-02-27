@@ -767,28 +767,24 @@ export default function HomePage() {
             Lab-verified polyphenol rankings — independent &amp; science-backed.
           </p>
 
-          {/* Benefit line */}
-          <p className="mt-3 inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/15 text-[10px] md:text-xs text-white/80 tracking-wide animate-fade-in-delay">
-            <span>❤️ 31% ↓ CVD risk</span>
-            <span className="text-white/35">•</span>
-            <span>💪 Anti-inflammatory</span>
-            <span className="text-white/35">•</span>
-            <span>🧬 Longevity</span>
-          </p>
-
-          {/* Stats card */}
-          <div className="mt-5 inline-grid grid-cols-3 divide-x divide-white/15 bg-white/10 border border-white/15 rounded-2xl md:rounded-3xl backdrop-blur-md shadow-[0_10px_40px_rgba(16,185,129,0.18)] animate-fade-in-delay-2 overflow-hidden">
-            <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
-              <div className="text-xl md:text-3xl font-black text-white">{stats.totalOils}</div>
-              <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Lab-Verified</div>
+          {/* Unified value + stats card (simplified) */}
+          <div className="mt-5 mx-auto max-w-3xl bg-white/10 border border-white/15 rounded-2xl md:rounded-3xl backdrop-blur-md shadow-[0_10px_40px_rgba(16,185,129,0.14)] animate-fade-in-delay-2 overflow-hidden">
+            <div className="px-4 py-2 text-center border-b border-white/10 text-[11px] md:text-xs text-white/85">
+              ❤️ <span className="font-semibold">Lab-verified heart-health ranking</span> · 31% ↓ CVD risk
             </div>
-            <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
-              <div className="text-xl md:text-3xl font-black text-white">{stats.countries}</div>
-              <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Countries</div>
-            </div>
-            <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
-              <div className="text-xl md:text-3xl font-black text-white">{stats.maxPolyphenols}</div>
-              <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Max mg/kg</div>
+            <div className="grid grid-cols-3 divide-x divide-white/15">
+              <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
+                <div className="text-xl md:text-3xl font-black text-white">{stats.totalOils}</div>
+                <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Lab-Verified</div>
+              </div>
+              <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
+                <div className="text-xl md:text-3xl font-black text-white">{stats.countries}</div>
+                <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Countries</div>
+              </div>
+              <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
+                <div className="text-xl md:text-3xl font-black text-white">{stats.maxPolyphenols}</div>
+                <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Max mg/kg</div>
+              </div>
             </div>
           </div>
         </div>
@@ -796,8 +792,8 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
       </header>
 
-      {/* Filters Section - Mobile Single Line */}
-      <section className="sticky top-0 z-20 bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-lg">
+      {/* Filters Section (hidden to reduce visual load) */}
+      <section className="hidden">
         <div className="max-w-7xl mx-auto px-2 md:px-6 py-1">
           <div className="flex gap-1 md:gap-2 items-center justify-between overflow-x-auto scrollbar-hide">
             <div className="flex gap-1 md:gap-1.5 items-center shrink-0">
