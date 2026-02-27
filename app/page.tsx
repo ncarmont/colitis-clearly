@@ -56,7 +56,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
-    notes: "2025/26 harvest (Oct 2025); updated to 1,316 mg/kg per current product page (was 1,458 prior harvest). Currently pre-order, back in stock ~9 Mar 2026. Centenarian Lianolia trees, Corfu. Unfiltered."
+    notes: "2025/26 harvest (Oct 2025); updated to 1,316 mg/kg per current product page (was 1,458 prior harvest). Currently pre-order, back in stock ~9 Mar 2026. Centenarian Lianolia trees, Corfu. Unfiltered.",
+    productImage: "/img/oil-3.jpg"
   },
   {
     id: 4, rank: 4, brand: "OlvLimits \"Green Machine\"",
@@ -77,7 +78,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
-    notes: "2025/26 harvest; lab-certified 1,504.42 mg/kg polyphenols (up from 1,269 prior year). Single-estate Jordan family farm. Herbaceous with grassy, herbal, and floral notes. Feb 2026 verified on producer site."
+    notes: "2025/26 harvest; lab-certified 1,504.42 mg/kg polyphenols (up from 1,269 prior year). Single-estate Jordan family farm. Herbaceous with grassy, herbal, and floral notes. Feb 2026 verified on producer site.",
+    productImage: "/img/oil-5.jpg"
   },
   {
     id: 6, rank: 6, brand: "ONSURI Arbequina 1L (2×500 ml)",
@@ -87,7 +89,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-arbequina-evoo-1-litre-bulk-offer-polyphenols-1269-mg-kg",
-    notes: "Best value (1 L)."
+    notes: "Best value (1 L).",
+    productImage: "/img/oil-6.png"
   },
   {
     id: 7, rank: 7, brand: "ONSURI Arbosana",
@@ -97,7 +100,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbosana",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
-    notes: "Oleocanthal ~425 mg/kg stated."
+    notes: "Oleocanthal ~425 mg/kg stated.",
+    productImage: "/img/oil-7.png"
   },
   {
     id: 8, rank: 8, brand: "Finca La Torre — Hojiblanca (Organic/Biodynamic)",
@@ -107,7 +111,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca",
     buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
-    notes: "Demeter biodynamic estate oil."
+    notes: "Demeter biodynamic estate oil.",
+    productImage: "/img/oil-8.jpg"
   },
   {
     id: 9, rank: 9, brand: "November – Polyphenols Organic Early Harvest",
@@ -137,7 +142,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Blend",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
-    notes: "Floral/almond profile; smooth."
+    notes: "Floral/almond profile; smooth.",
+    productImage: "/img/oil-11.png"
   },
   {
     id: 12, rank: 12, brand: "Laconiko Olio Nuovo",
@@ -147,7 +153,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Olio-Nuovo-Certificate-of-Analysis-and-NMR.pdf?v=1741704618",
     cultivar: "Greek blend",
     buyLink: "https://laconiko.com/products/laconiko-olio-nuovo-new-2025-harvest",
-    notes: "First certified 'high phenolic' in North America. 2025/26 harvest: 774 mg/kg verified."
+    notes: "First certified 'high phenolic' in North America. 2025/26 harvest: 774 mg/kg verified.",
+    productImage: "/img/oil-12.png"
   },
   {
     id: 13, rank: 13, brand: "Opus Oléa – Organic",
@@ -157,7 +164,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.opuslivewell.com/products/opus-olea-organic-extra-virgin-olive-oil-500ml",
-    notes: "Nov 2025 harvest confirmed Feb 2026. 874 mg/kg total polyphenols; 20g delivers 17.5mg hydroxytyrosol (>3× EU health claim minimum). Ultra low acidity 0.2%. Messinia/Peloponnese, sustainably farmed."
+    notes: "Nov 2025 harvest confirmed Feb 2026. 874 mg/kg total polyphenols; 20g delivers 17.5mg hydroxytyrosol (>3× EU health claim minimum). Ultra low acidity 0.2%. Messinia/Peloponnese, sustainably farmed.",
+    productImage: "/img/oil-13.png"
   },
   {
     id: 14, rank: 14, brand: "Zero Nutrition – EVOO100",
@@ -227,7 +235,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca/Arbequina/Koroneiki",
     buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
-    notes: "Small co-op batches."
+    notes: "Small co-op batches.",
+    productImage: "/img/oil-20.png"
   },
   {
     id: 21, rank: 21, brand: "Citizens of Soil — Tuscan 'Extra Rare'",
@@ -237,7 +246,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Frantoio/Leccino blend",
     buyLink: "https://www.citizensofsoil.com/products/tuscan-olive-oil-extra-rare",
-    notes: "Limited release."
+    notes: "Limited release.",
+    productImage: "/img/oil-21.png"
   },
   {
     id: 22, rank: 22, brand: "Morocco Gold",
@@ -267,7 +277,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
-    notes: "'Primer Día de Cosecha'."
+    notes: "'Primer Día de Cosecha'.",
+    productImage: "/img/oil-24.jpg"
   },
   {
     id: 25, rank: 25, brand: "Entimio – INTENSO",
@@ -297,7 +308,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/singlebottle",
-    notes: "500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best EVOO 2025."
+    notes: "500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best EVOO 2025.",
+    productImage: "/img/oil-27.png"
   },
   {
     id: 28, rank: 28, brand: "True Tuscan (Olive Girl)",
@@ -307,7 +319,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Blend",
     buyLink: "https://shopolivegirl.com/products/true-tuscan-extra-virgin-olive-oil",
-    notes: "Boutique producer."
+    notes: "Boutique producer.",
+    productImage: "/img/oil-28.jpg"
   },
   {
     id: 29, rank: 29, brand: "Laconiko Extra Virgin (Koroneiki)",
@@ -317,7 +330,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Koroneiki-Certificate-of-Analysis-and-NMR_214c678d-f473-4f37-9257-322fd3d7e715.pdf?v=1741704340",
     cultivar: "Koroneiki",
     buyLink: "https://laconiko.com/products/laconiko-extra-virgin-olive-oil-new-2024-harvest",
-    notes: "Updated Feb 2026 per posted COA: 578 mg/kg (was 538). Oleic acid 77.36%; acidity 0.17%. Certificate link active. Great value with full posted NMR."
+    notes: "Updated Feb 2026 per posted COA: 578 mg/kg (was 538). Oleic acid 77.36%; acidity 0.17%. Certificate link active. Great value with full posted NMR.",
+    productImage: "/img/oil-29.png"
   },
   {
     id: 30, rank: 30, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
@@ -327,7 +341,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-arbequina",
-    notes: "0.18% acidity; Demeter."
+    notes: "0.18% acidity; Demeter.",
+    productImage: "/img/oil-30.jpg"
   },
   {
     id: 31, rank: 31, brand: "Citizens of Soil — Greek (Peloponnese)",
@@ -337,7 +352,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki + Athinolia",
     buyLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
-    notes: "Small-batch organic."
+    notes: "Small-batch organic.",
+    productImage: "/img/oil-31.webp"
   },
   {
     id: 32, rank: 32, brand: "Entimio – ARDENTE",
@@ -377,7 +393,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Lianolia",
     buyLink: "https://www.thegovernor.gr/product/the-governor-premium-edition/",
-    notes: "Centenarian trees; 0.17% acidity."
+    notes: "Centenarian trees; 0.17% acidity.",
+    productImage: "/img/oil-35.png"
   },
   {
     id: 36, rank: 36, brand: "Rincón de la Subbética – Hojiblanca (Organic)",
@@ -428,6 +445,7 @@ export default function HomePage() {
     updateIsMobile()
     window.addEventListener('resize', updateIsMobile)
     return () => window.removeEventListener('resize', updateIsMobile)
+    productImage: "/img/oil-36.jpg"
   }, [])
 
   useEffect(() => {
@@ -861,7 +879,7 @@ export default function HomePage() {
           <div className="bg-white/95 backdrop-blur rounded-2xl md:rounded-3xl shadow-2xl border border-slate-200/80 overflow-hidden animate-table-entrance">
 
             {/* ── MOBILE CARD LIST (< md) ── */}
-            <div className="block md:hidden divide-y divide-gray-100">
+            <div className="block md:hidden space-y-3">
               {oilsToDisplay.map((oil, index) => {
                 const displayRank = index + 1
                 const score = getMaxPolyphenols(oil)
@@ -883,20 +901,22 @@ export default function HomePage() {
                   displayRank === 3 ? 'bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-400' :
                   'bg-white'
 
-                // ── FEATURED CARD for top 3 with product image ──
-                if (displayRank <= 3 && oil.productImage) {
+                // ── FEATURED CARD for any oil with product image ──
+                if (oil.productImage) {
                   const borderColor =
                     displayRank === 1 ? 'border-yellow-400' :
                     displayRank === 2 ? 'border-gray-400' :
-                    'border-orange-400'
+                    displayRank === 3 ? 'border-orange-400' :
+                    'border-green-300'
                   const infoBg =
                     displayRank === 1 ? 'bg-gradient-to-r from-yellow-50 to-amber-50' :
                     displayRank === 2 ? 'bg-gradient-to-r from-gray-50 to-slate-50' :
-                    'bg-gradient-to-r from-orange-50 to-red-50'
+                    displayRank === 3 ? 'bg-gradient-to-r from-orange-50 to-red-50' :
+                    'bg-gradient-to-r from-green-50 to-emerald-50'
                   return (
                     <div
                       key={oil.id}
-                      className={`relative overflow-hidden border-l-4 ${borderColor} animate-fade-in-row`}
+                      className={`relative overflow-hidden rounded-2xl border border-gray-100 border-l-4 ${borderColor} shadow-sm animate-fade-in-row`}
                       style={{ animationDelay: `${index * 40}ms` }}
                     >
                       {/* Product image — tall, fills width */}
@@ -915,11 +935,13 @@ export default function HomePage() {
                           <span className={`inline-flex items-center justify-center w-10 h-10 rounded-xl font-bold text-base text-white shadow-lg bg-gradient-to-br ${rankGrad} ring-2 ring-white/60`}>
                             {displayRank}
                           </span>
-                          <span className={`text-lg leading-none drop-shadow animate-crown-bounce ${
-                            displayRank === 1 ? 'crown-gold' :
-                            displayRank === 2 ? 'crown-silver' :
-                            'crown-bronze'
-                          }`}>👑</span>
+                          {displayRank <= 3 && (
+                            <span className={`text-lg leading-none drop-shadow animate-crown-bounce ${
+                              displayRank === 1 ? 'crown-gold' :
+                              displayRank === 2 ? 'crown-silver' :
+                              'crown-bronze'
+                            }`}>👑</span>
+                          )}
                         </div>
 
                         {/* Score overlaid at bottom-left of image */}
@@ -927,7 +949,8 @@ export default function HomePage() {
                           <span className={`text-3xl font-extrabold leading-none drop-shadow-lg ${
                             displayRank === 1 ? 'text-yellow-300' :
                             displayRank === 2 ? 'text-gray-200' :
-                            'text-orange-300'
+                            displayRank === 3 ? 'text-orange-300' :
+                            'text-emerald-200'
                           }`}>{score}</span>
                           <span className="text-white/80 text-xs font-semibold ml-1">mg/kg</span>
                           {badges.map((b, bi) => (
@@ -986,7 +1009,7 @@ export default function HomePage() {
                 return (
                   <div
                     key={oil.id}
-                    className={`flex items-center gap-3 px-3 py-3 animate-fade-in-row ${rowBg}`}
+                    className={`flex items-center gap-3 px-3 py-3 rounded-2xl border border-gray-100 shadow-sm animate-fade-in-row ${rowBg}`}
                     style={{ animationDelay: `${index * 40}ms` }}
                   >
                     {/* Rank badge */}
