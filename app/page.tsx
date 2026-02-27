@@ -43,7 +43,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
-    notes: "UV-protected refillable bottle; subscription refill pouches save 10%. Herbaceous with green almond & tomato vine notes. Single estate family farm."
+    notes: "Verified Feb 2026: bottle listed as sold out (delivery from Jan 29 2026); refill subscription pouches (10% saving) still available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan."
   },
   {
     id: 3, rank: 5, brand: "The Governor – Limited Edition",
@@ -177,13 +177,13 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 16, rank: 16, brand: "P.J. KABOS – Family Reserve Robust",
-    hplcPolyphenols: 750,
-    origin: "Greece", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "HPLC reported",
+    hplcPolyphenols: 699,
+    origin: "Greece", harvestDate: "Oct 2025",
+    price: "$$", priceAmount: "$39.83", method: "HPLC", lab: "HPLC (producer-reported)",
     certificateLink: "",
-    cultivar: "Koroneiki",
+    cultivar: "Olympia + Koroneiki",
     buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&linkId=1328610a17867326c0d2a26ae73aab6a&language=en_US&ref_=as_li_ss_tl",
-    notes: "'Daily shot' positioning."
+    notes: "Verified Feb 2026 on PJ KABOS site. Oct 2025 harvest; HPLC 699 mg/kg (updated from 750, prior batch). Hydroxytyrosol (and derivatives) 10 mg/20g. Olympia + Koroneiki blend. USDA & EU organic. Under 0.29% acidity. $39.83 (1 bottle). Best before Dec 2027."
   },
   {
     id: 17, rank: 17, brand: "Oro del Desierto – Picual (Organic)",
@@ -406,7 +406,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-02-26'
+const LAST_DATA_UPDATE = '2026-02-27'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
