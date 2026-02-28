@@ -237,13 +237,13 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 20, rank: 20, brand: "Citizens of Soil — Spanish",
-    nmrOtherPolyphenols: 661,
-    origin: "Spain", harvestDate: "Nov 2024",
+    nmrOtherPolyphenols: 642,
+    origin: "Spain", harvestDate: "Nov 2025",
     price: "$$", priceAmount: "$38.00", method: "Other", lab: "Independent lab",
     certificateLink: "",
     cultivar: "Hojiblanca/Arbequina/Koroneiki",
     buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
-    notes: "Small co-op batches.",
+    notes: "Verified Feb 2026: 2025 harvest now live (Nov 2025). Polyphenols updated to 642 mg/kg (was 661 in 2024 harvest). Origin: Pedrera, Sevilla, Andalucía. Acidity 0.14%. Mobile milling within 1 hour of picking. Awarded 'Best Organic EVOO in Sevilla' (Ecotrama gold star).",
     productImage: "/img/oil-20.png"
   },
   {
@@ -282,12 +282,12 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 24, rank: 24, brand: "Castillo de Canena – First Day Harvest Picual",
     nmrOtherPolyphenols: 611,
-    origin: "Spain", harvestDate: "Late 2024",
-    price: "$$", priceAmount: "$48.00", method: "Other", lab: "Retailer figure",
+    origin: "Spain", harvestDate: "Fall 2025",
+    price: "$$", priceAmount: "$49.95", method: "Other", lab: "Retailer figure",
     certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
-    notes: "'Primer Día de Cosecha'.",
+    notes: "'Primer Día de Cosecha'. Verified Feb 2026: Fall 2025 new harvest in stock at Olive Oil Lovers ($49.95). Mild intensity; aromas of banana, almond, apple; Andalusia.",
     productImage: "/img/oil-24.jpg"
   },
   {
@@ -358,13 +358,13 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 31, rank: 31, brand: "Citizens of Soil — Greek (Peloponnese)",
-    nmrOtherPolyphenols: 526,
+    nmrOtherPolyphenols: 552,
     origin: "Greece", harvestDate: "Dec 2024",
-    price: "$", priceAmount: "$32.00", method: "Other", lab: "Retailer cites",
+    price: "$", priceAmount: "£17.99", method: "Other", lab: "Retailer cites",
     certificateLink: "",
-    cultivar: "Koroneiki + Athinolia",
+    cultivar: "Koroneiki",
     buyLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
-    notes: "Small-batch organic.",
+    notes: "Verified Feb 2026 via healthysupplies.co.uk: 552 mg/kg (was 526). Sparta, Peloponnese; 100% Koroneiki. 0.21% acidity. Milled within 24h. £17.99 via UK retailer.",
     productImage: "/img/oil-31.webp"
   },
   {
@@ -420,6 +420,17 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Hojiblanca",
     buyLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
     notes: "PDO Priego de Córdoba."
+  },
+  {
+    id: 37, rank: 37, brand: "P.J. KABOS – Family Reserve Robust (Non-Organic)",
+    hplcPolyphenols: 750,
+    origin: "Greece", harvestDate: "Oct 2024",
+    price: "$", priceAmount: "$29.90", method: "HPLC", lab: "HPLC (producer-reported)",
+    certificateLink: "",
+    cultivar: "Olympia + Koroneiki",
+    buyLink: "https://www.pjkabos.com/product-page/family-reserve-robust-750-mg-kg-phenols-500ml-tin",
+    notes: "NEW (added Feb 2026). Non-organic counterpart to KABOS Organic Robust. HPLC-verified 750+ mg/kg; Oct 2024 harvest; best before Jun 2026. Hydroxytyrosol (and derivatives) 10+ mg/20g. Acidity <0.29%. 500ml tin. $29.90/bottle ($26.91 on monthly subscription). Currently out of stock on producer site — check back.",
+    productImage: "/img/oil-16.jpg"
   }
 ]
 
@@ -442,7 +453,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-02-27'
+const LAST_DATA_UPDATE = '2026-02-28'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
