@@ -34,7 +34,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified Feb 2026 against PJ KABOS product page and Amazon listing. Current batch states: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic; buy link active.",
+    notes: "Verified Mar 2026 against PJ KABOS product page and Amazon listing. Current batch: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic; buy link active. Product page title shows 995 mg/kg for Sep–Oct 2025 batch.",
     productImage: "/img/kabos-phenolic-shot.jpg"
   },
   {
@@ -45,7 +45,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
-    notes: "Verified Feb 2026: bottle listed as sold out (delivery from Jan 29 2026); refill subscription pouches (10% saving) still available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan.",
+    notes: "Verified Mar 2026: bottle sold out (delivery from Jan 29 2026); refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle purchase.",
     productImage: "/img/sp360-bottle.jpg"
   },
   {
@@ -56,7 +56,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
-    notes: "2025/26 harvest (Oct 2025); updated to 1,316 mg/kg per current product page (was 1,458 prior harvest). Currently pre-order, back in stock ~9 Mar 2026. Centenarian Lianolia trees, Corfu. Unfiltered.",
+    notes: "2025/26 harvest (Oct 2025); 1,316 mg/kg per current product page (was 1,458 prior harvest). Currently pre-order/backordered, back in stock 9 Mar 2026. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered. 101 reviews. Certificate: cdn.shopify.com (linked).",
     productImage: "/img/oil-3.jpg"
   },
   {
@@ -144,7 +144,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Blend",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
-    notes: "Floral/almond profile; smooth.",
+    notes: "Floral/almond profile; smooth. Currently SOLD OUT (Mar 2026) — 2024/25 harvest stock exhausted. Check back for 2025/26 batch.",
     productImage: "/img/oil-11.png"
   },
   {
@@ -199,7 +199,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Olympia + Koroneiki",
     buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&linkId=1328610a17867326c0d2a26ae73aab6a&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified Feb 2026 on PJ KABOS site. Oct 2025 harvest; HPLC 699 mg/kg (updated from 750, prior batch). Hydroxytyrosol (and derivatives) 10 mg/20g. Olympia + Koroneiki blend. USDA & EU organic. Under 0.29% acidity. $39.83 (1 bottle). Best before Dec 2027.",
+    notes: "Verified Mar 2026 on PJ KABOS site. Oct 2025 harvest; HPLC 699 mg/kg. Hydroxytyrosol (and derivatives) 10 mg/20g. Olympia + Koroneiki blend. USDA & EU organic. Under 0.29% acidity. $39.83 (1 bottle). Best before Dec 2027. Currently OUT OF STOCK on producer site (warehouse delays noted); check Amazon link for availability.",
     productImage: "/img/oil-16.jpg"
   },
   {
@@ -453,7 +453,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-02-28'
+const LAST_DATA_UPDATE = '2026-03-01'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
