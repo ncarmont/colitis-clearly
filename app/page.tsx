@@ -53,10 +53,10 @@ const OILS_DATA: OliveOil[] = [
     nmrOtherPolyphenols: 1316,
     origin: "Greece (Corfu)", harvestDate: "Oct 2025",
     price: "$$", priceAmount: "£49.95", method: "qNMR", lab: "qNMR total phenols",
-    certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
+    certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf?v=1763979500",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
-    notes: "2025/26 harvest (Oct 2025); 1,316 mg/kg per current product page (was 1,458 prior harvest). Currently pre-order/backordered, back in stock 9 Mar 2026. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered. 101 reviews. Certificate: cdn.shopify.com (linked).",
+    notes: "2025/26 harvest (Oct 2025); 1,316 mg/kg per current product page (was 1,458 prior harvest). Currently backordered, back in stock 9 Mar 2026. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered. 101 reviews. Verified Mar 2026. Certificate: cdn.shopify.com (linked).",
     productImage: "/img/oil-3.jpg"
   },
   {
@@ -453,7 +453,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-03-01'
+const LAST_DATA_UPDATE = '2026-03-02'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
