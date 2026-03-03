@@ -56,7 +56,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf?v=1763979500",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
-    notes: "2025/26 harvest (Oct 2025); 1,316 mg/kg per current product page (was 1,458 prior harvest). Currently backordered, back in stock 9 Mar 2026. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered. 101 reviews. Verified Mar 2026. Certificate: cdn.shopify.com (linked).",
+    notes: "Verified 3 Mar 2026: 1,316 mg/kg confirmed on product page (certified PDF linked). 2025/26 harvest (Oct 2025). Backordered — back in stock 9 Mar 2026. 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, organic. 101 reviews. £49.95.",
     productImage: "/img/oil-3.jpg"
   },
   {
@@ -106,12 +106,12 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 8, rank: 8, brand: "Finca La Torre — Hojiblanca (Organic/Biodynamic)",
     nmrOtherPolyphenols: 1059,
-    origin: "Spain", harvestDate: "2024/25",
-    price: "$$", priceAmount: "$38.00", method: "Other", lab: "Retailer-stated phenols",
+    origin: "Spain", harvestDate: "2025/26",
+    price: "$$", priceAmount: "€19.63", method: "Other", lab: "Retailer-stated phenols",
     certificateLink: "",
     cultivar: "Hojiblanca",
     buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
-    notes: "Demeter biodynamic estate oil.",
+    notes: "Verified Mar 2026: 2025/26 harvest now live. Demeter biodynamic estate oil. €19.63 (500ml). Winner of 'Premio Alimentos de España'. Green almond, apple, banana skin notes. 16 reviews (4.7★ avg).",
     productImage: "/img/oil-8.jpg"
   },
   {
@@ -155,7 +155,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Olio-Nuovo-Certificate-of-Analysis-and-NMR.pdf?v=1741704618",
     cultivar: "Greek blend",
     buyLink: "https://laconiko.com/products/laconiko-olio-nuovo-new-2025-harvest",
-    notes: "First certified 'high phenolic' in North America. 2025/26 harvest: 774 mg/kg verified.",
+    notes: "Verified Mar 2026: First certified 'high phenolic' in North America (Aristoleo Data-Locked Protocol). 2025/26 harvest back in stock Feb 2026. 774 mg/kg qNMR verified. $39.95.",
     productImage: "/img/oil-12.png"
   },
   {
@@ -320,7 +320,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/singlebottle",
-    notes: "500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best EVOO 2025.",
+    notes: "Verified Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,052 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off).",
     productImage: "/img/oil-27.png"
   },
   {
@@ -348,12 +348,12 @@ const OILS_DATA: OliveOil[] = [
   {
     id: 30, rank: 30, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
     nmrOtherPolyphenols: 537,
-    origin: "Spain (Málaga)", harvestDate: "2024/25",
+    origin: "Spain (Málaga)", harvestDate: "2025/26",
     price: "$$", priceAmount: "€19.63", method: "Other", lab: "Retailer-stated",
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-arbequina",
-    notes: "0.18% acidity; Demeter.",
+    notes: "Verified Mar 2026: 2025/26 harvest. 0.18% acidity; Demeter biodynamic.",
     productImage: "/img/oil-30.jpg"
   },
   {
@@ -453,7 +453,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-03-02'
+const LAST_DATA_UPDATE = '2026-03-03'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
