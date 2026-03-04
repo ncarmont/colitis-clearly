@@ -34,7 +34,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified Mar 2026 against PJ KABOS product page and Amazon listing. Current batch: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic; buy link active. Product page title shows 995 mg/kg for Sep–Oct 2025 batch.",
+    notes: "Verified 4 Mar 2026: Amazon listing active (title: '900+ mg/kg'). Current batch: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic. Sep–Oct 2025 harvest.",
     productImage: "/img/kabos-phenolic-shot.jpg"
   },
   {
@@ -45,7 +45,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
-    notes: "Verified Mar 2026: bottle sold out (delivery from Jan 29 2026); refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle purchase.",
+    notes: "Verified 4 Mar 2026: bottle sold out; refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan.",
     productImage: "/img/sp360-bottle.jpg"
   },
   {
@@ -56,7 +56,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf?v=1763979500",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
-    notes: "Verified 3 Mar 2026: 1,316 mg/kg confirmed on product page (certified PDF linked). 2025/26 harvest (Oct 2025). Backordered — back in stock 9 Mar 2026. 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, organic. 101 reviews. £49.95.",
+    notes: "Verified 4 Mar 2026: 1,316 mg/kg confirmed on product page (certified PDF linked). 2025/26 harvest (Oct 2025). Backordered — back in stock 9 Mar 2026. 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, organic. 101 reviews. £49.95.",
     productImage: "/img/oil-3.jpg"
   },
   {
@@ -138,13 +138,13 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 11, rank: 11, brand: "ONSURI Signature (Arbequina + Arbosana)",
-    nmrOtherPolyphenols: 1000,
-    origin: "Jordan", harvestDate: "2024/25",
-    price: "$", priceAmount: "£19.95", method: "RSS", lab: "RSS certification pending",
+    nmrOtherPolyphenols: 975,
+    origin: "Jordan", harvestDate: "2025/26",
+    price: "$", priceAmount: "£22.50", method: "RSS", lab: "RSS certified",
     certificateLink: "",
     cultivar: "Blend",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
-    notes: "Floral/almond profile; smooth. Currently SOLD OUT (Mar 2026) — 2024/25 harvest stock exhausted. Check back for 2025/26 batch.",
+    notes: "Verified Mar 2026: 2025/26 harvest now live. Polyphenols updated to 975 mg/kg (was 1,000 in 2024/25 batch). Floral/almond profile; smooth and versatile. £22.50. Back in stock.",
     productImage: "/img/oil-11.png"
   },
   {
@@ -453,7 +453,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-03-03'
+const LAST_DATA_UPDATE = '2026-03-04'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
