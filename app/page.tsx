@@ -34,7 +34,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified 5 Mar 2026: Amazon listing active (title: '900+ mg/kg'). Current batch: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic. Sep–Oct 2025 harvest.",
+    notes: "Verified 6 Mar 2026: Amazon listing active (title: '900+ mg/kg'). Current batch: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic. Sep–Oct 2025 harvest. Producer site confirms four intensities available.",
     productImage: "/img/kabos-phenolic-shot.jpg"
   },
   {
@@ -45,7 +45,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
-    notes: "Verified 5 Mar 2026: bottle sold out; refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan.",
+    notes: "Verified 6 Mar 2026: bottle sold out; refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle.",
     productImage: "/img/sp360-bottle.jpg"
   },
   {
@@ -56,7 +56,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf?v=1763979500",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
-    notes: "Verified 5 Mar 2026: 1,316 mg/kg confirmed (certified PDF linked). Oleocanthal 577 mg/kg, oleacein 298 mg/kg. 2025/26 harvest (Oct 2025). Backordered — back in stock 9 Mar 2026. 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, DIO-certified organic. 180 reviews. £49.95.",
+    notes: "Verified 6 Mar 2026: 1,316 mg/kg confirmed (certified PDF linked). Oleocanthal 577 mg/kg, oleacein 298 mg/kg. 2025/26 harvest (Oct 2025). Currently out of stock — back in stock 9 Mar 2026 (pre-orders open). 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, DIO-certified organic. 101 reviews. £49.95.",
     productImage: "/img/oil-3.jpg"
   },
   {
@@ -111,7 +111,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca",
     buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
-    notes: "Verified 5 Mar 2026: 2025/26 harvest live. Demeter biodynamic estate oil. €19.63 (500ml). Winner of 'Premio Alimentos de España'. Green almond, apple, banana skin notes. 16 reviews (4.7★ avg).",
+    notes: "Verified 6 Mar 2026: 2025/26 harvest live. Demeter biodynamic estate oil. €19.63 (500ml). Winner of 'Premio Alimentos de España'. Green almond, apple, banana skin notes. 16 reviews (4.7★ avg). Free shipping on orders over €70.",
     productImage: "/img/oil-8.jpg"
   },
   {
@@ -144,7 +144,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Blend",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
-    notes: "Verified 5 Mar 2026: 2025/26 harvest live. Polyphenols 975 mg/kg (was 1,000 in 2024/25 batch). Floral/almond profile; smooth and versatile. £22.50. Subscribe & 5th order free.",
+    notes: "Verified 6 Mar 2026: 2025/26 harvest live. Polyphenols 975 mg/kg (was 1,000 in 2024/25 batch). Buttery smooth texture, mild yet complex; floral/almond profile. £22.50. Subscribe & 5th order free.",
     productImage: "/img/oil-11.png"
   },
   {
@@ -155,7 +155,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Olio-Nuovo-Certificate-of-Analysis-and-NMR.pdf?v=1741704618",
     cultivar: "Greek blend",
     buyLink: "https://laconiko.com/products/laconiko-olio-nuovo-new-2025-harvest",
-    notes: "Verified 5 Mar 2026: First certified 'high phenolic' in North America (Aristoleo Data-Locked Protocol). 2025/26 harvest back in stock Feb 2026. 774 mg/kg qNMR verified. Acidity 0.28%; oleic acid 78%. $39.95.",
+    notes: "Verified 6 Mar 2026: First certified 'high phenolic' in North America (Aristoleo Data-Locked Protocol). 2025/26 harvest back in stock Feb 2026. 774 mg/kg qNMR verified. Acidity 0.28%; oleic acid 78%. $39.95. Phenolic compounds verified to deteriorate slower under controlled 12.5–15°C storage.",
     productImage: "/img/oil-12.png"
   },
   {
@@ -320,7 +320,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/singlebottle",
-    notes: "Verified 5 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,052 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off).",
+    notes: "Verified 6 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,056 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off).",
     productImage: "/img/oil-27.png"
   },
   {
@@ -453,7 +453,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-03-05'
+const LAST_DATA_UPDATE = '2026-03-06'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
