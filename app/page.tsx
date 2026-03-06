@@ -22,6 +22,7 @@ type OliveOil = {
   buyLink: string
   notes: string
   productImage?: string  // Hero product photo path (public/img/)
+  instagram?: string  // Producer Instagram handle (without @)
 }
 
 // Updated OILS_DATA with HPLC and NMR/Other split columns - 36 entries
@@ -35,7 +36,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
     notes: "Verified 6 Mar 2026: Amazon listing active (title: '900+ mg/kg'). Current batch: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic. Sep–Oct 2025 harvest. Producer site confirms four intensities available.",
-    productImage: "/img/kabos-phenolic-shot.jpg"
+    productImage: "/img/kabos-phenolic-shot.jpg",
+    instagram: "pjkabos"
   },
   {
     id: 2, rank: 2, brand: "SP360",
@@ -46,7 +48,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
     notes: "Verified 6 Mar 2026: bottle sold out; refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle.",
-    productImage: "/img/sp360-bottle.jpg"
+    productImage: "/img/sp360-bottle.jpg",
+    instagram: "sp360evoo"
   },
   {
     id: 3, rank: 5, brand: "The Governor – Limited Edition",
@@ -57,7 +60,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
     notes: "Verified 6 Mar 2026: 1,316 mg/kg confirmed (certified PDF linked). Oleocanthal 577 mg/kg, oleacein 298 mg/kg. 2025/26 harvest (Oct 2025). Currently out of stock — back in stock 9 Mar 2026 (pre-orders open). 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, DIO-certified organic. 101 reviews. £49.95.",
-    productImage: "/img/oil-3.jpg"
+    productImage: "/img/oil-3.jpg",
+    instagram: "the_governor_evoo"
   },
   {
     id: 4, rank: 4, brand: "OlvLimits \"Green Machine\"",
@@ -68,7 +72,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Coratina",
     buyLink: "https://www.olvlimits.com/products/green-machine",
     notes: "Lab analysis shows total polyphenols 1,378 mg/kg; early-harvest Coratina; World Olive Center for Health watermark.",
-    productImage: "/img/olvlimits-green-machine.png"
+    productImage: "/img/olvlimits-green-machine.png",
+    instagram: "olvlimits"
   },
   {
     id: 5, rank: 3, brand: "ONSURI Arbequina",
@@ -79,7 +84,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Arbequina",
     buyLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
     notes: "2025/26 harvest; lab-certified 1,504.42 mg/kg polyphenols (up from 1,269 prior year). Single-estate Jordan family farm. Herbaceous with grassy, herbal, and floral notes. Feb 2026 verified on producer site.",
-    productImage: "/img/oil-5.jpg"
+    productImage: "/img/oil-5.jpg",
+    instagram: "onsurioliveoil"
   },
   {
     id: 6, rank: 6, brand: "ONSURI Arbequina 1L (2×500 ml)",
@@ -90,7 +96,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Arbequina",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-arbequina-evoo-1-litre-bulk-offer-polyphenols-1269-mg-kg",
     notes: "Best value (1 L).",
-    productImage: "/img/oil-6.png"
+    productImage: "/img/oil-6.png",
+    instagram: "onsurioliveoil"
   },
   {
     id: 7, rank: 7, brand: "ONSURI Arbosana",
@@ -101,7 +108,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Arbosana",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
     notes: "Oleocanthal ~425 mg/kg stated.",
-    productImage: "/img/oil-7.png"
+    productImage: "/img/oil-7.png",
+    instagram: "onsurioliveoil"
   },
   {
     id: 8, rank: 8, brand: "Finca La Torre — Hojiblanca (Organic/Biodynamic)",
@@ -112,7 +120,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Hojiblanca",
     buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
     notes: "Verified 6 Mar 2026: 2025/26 harvest live. Demeter biodynamic estate oil. €19.63 (500ml). Winner of 'Premio Alimentos de España'. Green almond, apple, banana skin notes. 16 reviews (4.7★ avg). Free shipping on orders over €70.",
-    productImage: "/img/oil-8.jpg"
+    productImage: "/img/oil-8.jpg",
+    instagram: "fincalatorre"
   },
   {
     id: 9, rank: 9, brand: "November – Polyphenols Organic Early Harvest",
@@ -123,7 +132,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Koroneiki",
     buyLink: "https://www.masworth.co.uk/product/november-early-harvest-organic-olive-oil-500ml/",
     notes: "500 ml; organic; early-harvest green olives; bundle price ≈ £22.87/bottle (3+)",
-    productImage: "/img/oil-9.jpg"
+    productImage: "/img/oil-9.jpg",
+    instagram: "novemberoliveoil"
   },
   {
     id: 10, rank: 10, brand: "Kyoord High-Phenolic",
@@ -134,7 +144,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Lianolia + Koroneiki",
     buyLink: "https://www.amazon.com/kyoord-High-Phenolic-Extra-Virgin-Olive/dp/B0CCQQGXRQ?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=cde3cbabfa18ecdacdb34b3f0833d404&language=en_US&ref_=as_li_ss_tl",
     notes: "Founded by Dr. Goren; small Corfu farm.",
-    productImage: "/img/oil-10.jpg"
+    productImage: "/img/oil-10.jpg",
+    instagram: "kyoord"
   },
   {
     id: 11, rank: 11, brand: "ONSURI Signature (Arbequina + Arbosana)",
@@ -145,7 +156,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Blend",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
     notes: "Verified 6 Mar 2026: 2025/26 harvest live. Polyphenols 975 mg/kg (was 1,000 in 2024/25 batch). Buttery smooth texture, mild yet complex; floral/almond profile. £22.50. Subscribe & 5th order free.",
-    productImage: "/img/oil-11.png"
+    productImage: "/img/oil-11.png",
+    instagram: "onsurioliveoil"
   },
   {
     id: 12, rank: 12, brand: "Laconiko Olio Nuovo",
@@ -156,7 +168,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Greek blend",
     buyLink: "https://laconiko.com/products/laconiko-olio-nuovo-new-2025-harvest",
     notes: "Verified 6 Mar 2026: First certified 'high phenolic' in North America (Aristoleo Data-Locked Protocol). 2025/26 harvest back in stock Feb 2026. 774 mg/kg qNMR verified. Acidity 0.28%; oleic acid 78%. $39.95. Phenolic compounds verified to deteriorate slower under controlled 12.5–15°C storage.",
-    productImage: "/img/oil-12.png"
+    productImage: "/img/oil-12.png",
+    instagram: "laconiko"
   },
   {
     id: 13, rank: 13, brand: "Opus Oléa – Organic",
@@ -167,7 +180,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Koroneiki",
     buyLink: "https://www.opuslivewell.com/products/opus-olea-organic-extra-virgin-olive-oil-500ml",
     notes: "Nov 2025 harvest confirmed Feb 2026. 874 mg/kg total polyphenols; 20g delivers 17.5mg hydroxytyrosol (>3× EU health claim minimum). Ultra low acidity 0.2%. Messinia/Peloponnese, sustainably farmed.",
-    productImage: "/img/oil-13.png"
+    productImage: "/img/oil-13.png",
+    instagram: "opus_olea"
   },
   {
     id: 14, rank: 14, brand: "Zero Nutrition – EVOO100",
@@ -178,7 +192,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Koroneiki",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
     notes: "Tracker shows 813 mg/kg and a posted cert link.",
-    productImage: "/img/oil-14.png"
+    productImage: "/img/oil-14.png",
+    instagram: "zero.nutrition"
   },
   {
     id: 15, rank: 15, brand: "Quattrociocchi 'Superbo'",
@@ -189,7 +204,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Itrana/Moraiolo",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
     notes: "Needs correct brand link/COA.",
-    productImage: "/img/oil-23.jpg"
+    productImage: "/img/oil-23.jpg",
+    instagram: "quattrociocchiolio"
   },
   {
     id: 16, rank: 16, brand: "P.J. KABOS – Family Reserve Robust",
@@ -200,7 +216,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Olympia + Koroneiki",
     buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&linkId=1328610a17867326c0d2a26ae73aab6a&language=en_US&ref_=as_li_ss_tl",
     notes: "Verified Mar 2026 on PJ KABOS site. Oct 2025 harvest; HPLC 699 mg/kg. Hydroxytyrosol (and derivatives) 10 mg/20g. Olympia + Koroneiki blend. USDA & EU organic. Under 0.29% acidity. $39.83 (1 bottle). Best before Dec 2027. Currently OUT OF STOCK on producer site (warehouse delays noted); check Amazon link for availability.",
-    productImage: "/img/oil-16.jpg"
+    productImage: "/img/oil-16.jpg",
+    instagram: "pjkabos"
   },
   {
     id: 17, rank: 17, brand: "Oro del Desierto – Picual (Organic)",
@@ -211,7 +228,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Picual",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
     notes: "Early-harvest organic Picual, Almería.",
-    productImage: "/img/oil-23.jpg"
+    productImage: "/img/oil-23.jpg",
+    instagram: "orodeldesierto"
   },
   {
     id: 18, rank: 18, brand: "Vallesur – Peruvian",
@@ -222,7 +240,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Picual",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
     notes: "Award-winning Tacna EVOO.",
-    productImage: "/img/oil-18.jpg"
+    productImage: "/img/oil-18.jpg",
+    instagram: "vallesur.pe"
   },
   {
     id: 19, rank: 19, brand: "Laudemio Frescobaldi (Tuscany)",
@@ -233,7 +252,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Frantoio/Moraiolo/Leccino",
     buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=be0189503aadb51434d91e088337e2b5&language=en_US&ref_=as_li_ss_tl",
     notes: "Classic Tuscan PDO style.",
-    productImage: "/img/oil-19.jpg"
+    productImage: "/img/oil-19.jpg",
+    instagram: "laudemioevo"
   },
   {
     id: 20, rank: 20, brand: "Citizens of Soil — Spanish",
@@ -244,7 +264,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Hojiblanca/Arbequina/Koroneiki",
     buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
     notes: "Verified Feb 2026: 2025 harvest now live (Nov 2025). Polyphenols updated to 642 mg/kg (was 661 in 2024 harvest). Origin: Pedrera, Sevilla, Andalucía. Acidity 0.14%. Mobile milling within 1 hour of picking. Awarded 'Best Organic EVOO in Sevilla' (Ecotrama gold star).",
-    productImage: "/img/oil-20.png"
+    productImage: "/img/oil-20.png",
+    instagram: "citizensofsoil"
   },
   {
     id: 21, rank: 21, brand: "Citizens of Soil — Tuscan 'Extra Rare'",
@@ -255,7 +276,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Frantoio/Leccino blend",
     buyLink: "https://www.citizensofsoil.com/products/tuscan-olive-oil-extra-rare",
     notes: "Limited release.",
-    productImage: "/img/oil-21.png"
+    productImage: "/img/oil-21.png",
+    instagram: "citizensofsoil"
   },
   {
     id: 22, rank: 22, brand: "Morocco Gold",
@@ -266,7 +288,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Picholine Marocaine",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
     notes: "Brand publicizes Htyr/20g.",
-    productImage: "/img/oil-22.jpg"
+    productImage: "/img/oil-22.jpg",
+    instagram: "moroccogold"
   },
   {
     id: 23, rank: 23, brand: "Venta del Barón (DO Priego)",
@@ -277,7 +300,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Hojiblanca + Picuda",
     buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
     notes: "DO protected.",
-    productImage: "/img/oil-23.jpg"
+    productImage: "/img/oil-23.jpg",
+    instagram: "ventadelbaron"
   },
   {
     id: 24, rank: 24, brand: "Castillo de Canena – First Day Harvest Picual",
@@ -288,7 +312,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Picual",
     buyLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
     notes: "'Primer Día de Cosecha'. Verified Feb 2026: Fall 2025 new harvest in stock at Olive Oil Lovers ($49.95). Mild intensity; aromas of banana, almond, apple; Andalusia.",
-    productImage: "/img/oil-24.jpg"
+    productImage: "/img/oil-24.jpg",
+    instagram: "castillodecanena"
   },
   {
     id: 25, rank: 25, brand: "Entimio – INTENSO",
@@ -299,7 +324,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Frantoio/Leccino/Moraiolo",
     buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3",
     notes: "Certified Tuscan lots.",
-    productImage: "/img/oil-25.jpg"
+    productImage: "/img/oil-25.jpg",
+    instagram: "entimioevoo"
   },
   {
     id: 26, rank: 26, brand: "Odysea 'Good For You' (Crete)",
@@ -310,7 +336,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Koroneiki",
     buyLink: "https://www.amazon.co.uk/Odysea-Good-Greek-Virgin-Olive/dp/B0C7LBD9Z4",
     notes: "UK retailer SKU; Cretan Koroneiki with 573 mg/kg polyphenols.",
-    productImage: "/img/oil-18.jpg"
+    productImage: "/img/oil-18.jpg",
+    instagram: "odysea_food"
   },
   {
     id: 27, rank: 27, brand: "Kosterina – Original Extra Virgin",
@@ -321,7 +348,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/singlebottle",
     notes: "Verified 6 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,056 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off).",
-    productImage: "/img/oil-27.png"
+    productImage: "/img/oil-27.png",
+    instagram: "kosterina"
   },
   {
     id: 28, rank: 28, brand: "True Tuscan (Olive Girl)",
@@ -332,7 +360,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Blend",
     buyLink: "https://shopolivegirl.com/products/true-tuscan-extra-virgin-olive-oil",
     notes: "Boutique producer.",
-    productImage: "/img/oil-28.jpg"
+    productImage: "/img/oil-28.jpg",
+    instagram: "shopolivegirl"
   },
   {
     id: 29, rank: 29, brand: "Laconiko Extra Virgin (Koroneiki)",
@@ -343,7 +372,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Koroneiki",
     buyLink: "https://laconiko.com/products/laconiko-extra-virgin-olive-oil-new-2024-harvest",
     notes: "Updated Feb 2026 per posted COA: 578 mg/kg (was 538). Oleic acid 77.36%; acidity 0.17%. Certificate link active. Great value with full posted NMR.",
-    productImage: "/img/oil-29.png"
+    productImage: "/img/oil-29.png",
+    instagram: "laconiko"
   },
   {
     id: 30, rank: 30, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
@@ -354,7 +384,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Arbequina",
     buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-arbequina",
     notes: "Verified Mar 2026: 2025/26 harvest. 0.18% acidity; Demeter biodynamic.",
-    productImage: "/img/oil-30.jpg"
+    productImage: "/img/oil-30.jpg",
+    instagram: "fincalatorre"
   },
   {
     id: 31, rank: 31, brand: "Citizens of Soil — Greek (Peloponnese)",
@@ -365,7 +396,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Koroneiki",
     buyLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
     notes: "Verified Feb 2026 via healthysupplies.co.uk: 552 mg/kg (was 526). Sparta, Peloponnese; 100% Koroneiki. 0.21% acidity. Milled within 24h. £17.99 via UK retailer.",
-    productImage: "/img/oil-31.webp"
+    productImage: "/img/oil-31.webp",
+    instagram: "citizensofsoil"
   },
   {
     id: 32, rank: 32, brand: "Entimio – ARDENTE",
@@ -376,7 +408,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Tuscan blend",
     buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=d74d40c724b766f7434a23e6eba9650a&language=en_US&ref_=as_li_ss_tl",
     notes: "Robust profile.",
-    productImage: "/img/oil-32.jpg"
+    productImage: "/img/oil-32.jpg",
+    instagram: "entimioevoo"
   },
   {
     id: 33, rank: 33, brand: "P.J. KABOS – Family Reserve Organic (Medium)",
@@ -387,7 +420,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Koroneiki",
     buyLink: "https://www.pjkabos.com/family-reserve-organic-medium",
     notes: "USDA/EU organic.",
-    productImage: "/img/kabos-phenolic-shot.jpg"
+    productImage: "/img/kabos-phenolic-shot.jpg",
+    instagram: "pjkabos"
   },
   {
     id: 34, rank: 34, brand: "Blueprint (Bryan Johnson) 'Snake Oil' EVOO",
@@ -398,7 +432,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "—",
     buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ",
     notes: "DTC & Amazon.",
-    productImage: "/img/oil-34.jpg"
+    productImage: "/img/oil-34.jpg",
+    instagram: "blueprintlongevity"
   },
   {
     id: 35, rank: 35, brand: "The Governor – Premium Edition",
@@ -409,7 +444,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Lianolia",
     buyLink: "https://www.thegovernor.gr/product/the-governor-premium-edition/",
     notes: "Centenarian trees; 0.17% acidity.",
-    productImage: "/img/oil-35.png"
+    productImage: "/img/oil-35.png",
+    instagram: "the_governor_evoo"
   },
   {
     id: 36, rank: 36, brand: "Rincón de la Subbética – Hojiblanca (Organic)",
@@ -419,7 +455,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca",
     buyLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
-    notes: "PDO Priego de Córdoba."
+    notes: "PDO Priego de Córdoba.",
+    instagram: "almasubbetica"
   },
   {
     id: 37, rank: 37, brand: "P.J. KABOS – Family Reserve Robust (Non-Organic)",
@@ -430,7 +467,8 @@ const OILS_DATA: OliveOil[] = [
     cultivar: "Olympia + Koroneiki",
     buyLink: "https://www.pjkabos.com/product-page/family-reserve-robust-750-mg-kg-phenols-500ml-tin",
     notes: "NEW (added Feb 2026). Non-organic counterpart to KABOS Organic Robust. HPLC-verified 750+ mg/kg; Oct 2024 harvest; best before Jun 2026. Hydroxytyrosol (and derivatives) 10+ mg/20g. Acidity <0.29%. 500ml tin. $29.90/bottle ($26.91 on monthly subscription). Currently out of stock on producer site — check back.",
-    productImage: "/img/oil-16.jpg"
+    productImage: "/img/oil-16.jpg",
+    instagram: "pjkabos"
   }
 ]
 
@@ -1031,6 +1069,17 @@ export default function HomePage() {
                               📜 COA
                             </a>
                           )}
+                          {oil.instagram && (
+                            <a
+                              href={`https://instagram.com/${oil.instagram}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[9px] text-pink-300 hover:text-pink-200 transition-colors"
+                              title={`@${oil.instagram}`}
+                            >
+                              📸 @{oil.instagram}
+                            </a>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -1104,6 +1153,17 @@ export default function HomePage() {
                           className="text-[9px] text-green-600 underline"
                         >
                           📜 COA
+                        </a>
+                      )}
+                      {oil.instagram && (
+                        <a
+                          href={`https://instagram.com/${oil.instagram}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[9px] text-pink-300 hover:text-pink-200 transition-colors"
+                          title={`@${oil.instagram}`}
+                        >
+                          📸 @{oil.instagram}
                         </a>
                       )}
                     </div>
