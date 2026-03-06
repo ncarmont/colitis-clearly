@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ArticleSchema from '@/components/ArticleSchema'
 import FAQSchema from '@/components/FAQSchema'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata = {
   title: 'Olive Oil for Weight Loss: Does EVOO Help You Lose Weight?',
@@ -164,6 +165,11 @@ export default function OliveOilForWeightLoss() {
                 </p>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* Polyphenols matter */}
             <div className="bg-gradient-to-br from-amber-900/30 to-yellow-900/30 border border-amber-700/40 rounded-2xl p-8 mb-12">
@@ -239,6 +245,11 @@ export default function OliveOilForWeightLoss() {
                 </div>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* Comparison with other diets */}
             <h2 className="text-3xl font-bold text-white mb-6">📊 EVOO vs. Other Dietary Fats for Weight Loss</h2>

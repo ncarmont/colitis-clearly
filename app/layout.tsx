@@ -75,17 +75,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1361556625262612"
           crossOrigin="anonymous"
         ></script>
-        {/* Enable AdSense auto ads explicitly */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (adsbygoogle = window.adsbygoogle || []).push({
-                google_ad_client: "ca-pub-1361556625262612",
-                enable_page_level_ads: true
-              });
-            `
-          }}
-        />
+        {/* AdSense: page-level auto ads DISABLED — we place small inline ads manually for a cleaner UX */}
 
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ9T4462C0"></script>

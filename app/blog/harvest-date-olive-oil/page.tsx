@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ArticleSchema from '@/components/ArticleSchema'
 import FAQSchema from '@/components/FAQSchema'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata = {
   title: 'Harvest Date Olive Oil: Why Freshness Determines Polyphenol Power',
@@ -100,6 +101,11 @@ export default function HarvestDateOliveOil() {
                 <p className="text-gray-300">Noticeable drop in bitterness and peppery “throat burn.” Use for cooking, not for polyphenol goals.</p>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* How to read labels */}
             <div className="bg-gradient-to-br from-slate-800/70 to-slate-900/70 border border-gray-700/40 rounded-2xl p-8 mb-10">
@@ -133,6 +139,11 @@ export default function HarvestDateOliveOil() {
                 <p><strong className="text-white">Smell and taste:</strong> fresh high‑polyphenol EVOO is grassy, bitter, and peppery in the throat.</p>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* FAQ */}
             <div className="bg-gradient-to-br from-blue-900/30 to-purple-900/30 border border-blue-700/40 rounded-2xl p-8 mb-12">

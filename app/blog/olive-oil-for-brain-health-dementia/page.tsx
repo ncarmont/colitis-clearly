@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata: Metadata = {
   title: 'Olive Oil for Brain Health & Dementia Prevention (Research 2024)',
@@ -145,6 +146,11 @@ export default function BrainHealthOliveOilPage() {
             </div>
           </div>
         </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
         {/* Oleocanthal Research */}
         <section className="mb-12">
@@ -289,6 +295,11 @@ export default function BrainHealthOliveOilPage() {
             </div>
           </div>
         </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
         {/* Best Oils for Brain Health */}
         <section className="mb-12">

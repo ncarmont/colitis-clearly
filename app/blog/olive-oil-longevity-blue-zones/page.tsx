@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ArticleSchema from '@/components/ArticleSchema'
 import FAQSchema from '@/components/FAQSchema'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata = {
   title: "Olive Oil & Longevity: Why Blue Zones Live Longer | Science-Backed Evidence",
@@ -156,6 +157,11 @@ export default function OliveOilLongevityBlueSones() {
                 </ul>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* Harvard Study */}
             <div className="bg-gradient-to-br from-red-900/30 to-orange-900/30 border border-red-700/40 rounded-2xl p-8 mb-12">
@@ -272,6 +278,11 @@ export default function OliveOilLongevityBlueSones() {
                 </p>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* Practical Application */}
             <div className="bg-gradient-to-br from-green-900/40 to-teal-900/40 border border-green-700/40 rounded-2xl p-8 mb-12">

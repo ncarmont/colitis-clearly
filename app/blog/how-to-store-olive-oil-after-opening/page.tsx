@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata: Metadata = {
   title: 'How to Store Olive Oil After Opening: Complete Guide (2024)',
@@ -178,6 +179,11 @@ export default function StoreOliveOilAfterOpeningPage() {
             </div>
           </div>
         </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
         {/* Optimal Storage Conditions */}
         <section className="mb-12">
@@ -411,6 +417,11 @@ export default function StoreOliveOilAfterOpeningPage() {
             </div>
           </div>
         </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
         {/* Container Guide */}
         <section className="mb-12">

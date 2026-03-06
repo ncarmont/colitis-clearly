@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata: Metadata = {
   title: 'EVOO Health & Research Blog | High Polyphenol Olive Oil Guides',

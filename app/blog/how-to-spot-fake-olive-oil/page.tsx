@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata: Metadata = {
   title: 'How to Spot Fake Olive Oil: 8 Tests That Actually Work (2026)',
@@ -121,6 +122,11 @@ export default function FakeOliveOilPage() {
               </div>
             </div>
           </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
           {/* 8 Tests */}
           <section>
@@ -239,6 +245,11 @@ export default function FakeOliveOilPage() {
               </ul>
             </div>
           </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
           {/* Common Frauds */}
           <section>

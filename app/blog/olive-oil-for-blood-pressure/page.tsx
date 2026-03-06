@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ArticleSchema from '@/components/ArticleSchema'
 import FAQSchema from '@/components/FAQSchema'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata = {
   title: 'Olive Oil for Blood Pressure: How EVOO Supports Healthy BP (Science-Backed)',
@@ -107,6 +108,11 @@ export default function OliveOilForBloodPressure() {
                 </p>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* How much */}
             <div className="bg-gradient-to-br from-slate-800/70 to-slate-900/70 border border-gray-700/40 rounded-2xl p-8 mb-10">
@@ -151,6 +157,11 @@ export default function OliveOilForBloodPressure() {
                 </ul>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* CTA */}
             <div className="bg-gradient-to-r from-emerald-900/50 to-blue-900/50 border border-emerald-600/30 rounded-2xl p-8">

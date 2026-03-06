@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect } from 'react'
 import Link from 'next/link'
 import WorldMap from '@/components/WorldMap'
 import AdUnit from '@/components/AdUnit'
+import SmallAd from '@/components/SmallAd'
 
 type OliveOil = {
   id: number
@@ -903,16 +904,10 @@ export default function HomePage() {
         }
       `}</style>
 
-      {/* ── AD BREAK 1: between filter bar and rankings table ── */}
+      {/* ── Small ad before rankings ── */}
       {process.env.NEXT_PUBLIC_ADSENSE_SLOT_PRE_TABLE && (
-        <div className="ad-section-break" data-ad-region="pre-table">
-          <p className="ad-label">Advertisement</p>
-          <AdUnit
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_PRE_TABLE}
-            format="auto"
-            className="w-full max-w-[728px] mx-auto"
-            label={false}
-          />
+        <div className="max-w-3xl mx-auto px-4">
+          <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_PRE_TABLE} variant="banner" />
         </div>
       )}
 
@@ -1461,16 +1456,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── AD BREAK 2: after rankings table, before CTA ── */}
+      {/* ── Small ad after rankings ── */}
       {process.env.NEXT_PUBLIC_ADSENSE_SLOT_POST_TABLE && (
-        <div className="ad-section-break bg-slate-100" data-ad-region="post-table">
-          <p className="ad-label">Advertisement</p>
-          <AdUnit
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_POST_TABLE}
-            format="auto"
-            className="w-full max-w-[728px] mx-auto"
-            label={false}
-          />
+        <div className="max-w-3xl mx-auto px-4">
+          <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_POST_TABLE} variant="banner" />
         </div>
       )}
 
@@ -1501,16 +1490,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── AD BREAK 3: lower-page placement (after long-form sections) ── */}
+      {/* ── Small ad at page bottom ── */}
       {process.env.NEXT_PUBLIC_ADSENSE_SLOT_BOTTOM && (
-        <div className="ad-section-break bg-slate-100" data-ad-region="page-bottom">
-          <p className="ad-label">Advertisement</p>
-          <AdUnit
-            slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BOTTOM}
-            format="auto"
-            className="w-full max-w-[728px] mx-auto"
-            label={false}
-          />
+        <div className="max-w-3xl mx-auto px-4">
+          <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BOTTOM} variant="banner" />
         </div>
       )}
 

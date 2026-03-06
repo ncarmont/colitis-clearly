@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ArticleSchema from '@/components/ArticleSchema'
 import FAQSchema from '@/components/FAQSchema'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata = {
   title: "Olive Oil's Anti-Inflammatory Power: Oleocanthal vs Ibuprofen | Clinical Evidence",
@@ -135,6 +136,11 @@ export default function OliveOilAntiInflammatory() {
                 </p>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* Clinical Evidence */}
             <div className="bg-gradient-to-br from-purple-900/30 to-blue-900/30 border border-purple-700/40 rounded-2xl p-8 mb-12">
@@ -262,6 +268,11 @@ export default function OliveOilAntiInflammatory() {
                 </ul>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* How to Use */}
             <div className="bg-gradient-to-br from-green-900/40 to-emerald-900/40 border border-green-700/40 rounded-2xl p-8 mb-12">

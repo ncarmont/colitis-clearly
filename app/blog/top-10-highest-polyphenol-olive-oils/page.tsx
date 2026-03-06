@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata: Metadata = {
   title: 'Top 10 Highest Polyphenol Olive Oils in 2024 (Lab Verified)',
@@ -177,6 +178,11 @@ export default function Top10PolyphenolOilsPage() {
             </div>
           </div>
         </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
         {/* The Top 10 Rankings */}
         <section className="mb-12">
@@ -627,6 +633,11 @@ export default function Top10PolyphenolOilsPage() {
             </p>
           </div>
         </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
         {/* Testing Methods */}
         <section className="mb-12">

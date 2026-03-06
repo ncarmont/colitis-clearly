@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ArticleSchema from '@/components/ArticleSchema'
 import FAQSchema from '@/components/FAQSchema'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata = {
   title: 'Olive Oil for Blood Sugar: EVOO, Insulin Sensitivity & Glycemic Control',
@@ -107,6 +108,11 @@ export default function OliveOilForBloodSugar() {
                 </p>
               </div>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* How much */}
             <div className="bg-gradient-to-br from-slate-800/70 to-slate-900/70 border border-gray-700/40 rounded-2xl p-8 mb-10">
@@ -144,6 +150,11 @@ export default function OliveOilForBloodSugar() {
                 <li>• Cold-extracted, extra virgin, and single-estate when possible</li>
               </ul>
             </div>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
             {/* Practical tips */}
             <div className="bg-gradient-to-br from-emerald-900/30 to-blue-900/30 border border-emerald-700/30 rounded-2xl p-8 mb-12">

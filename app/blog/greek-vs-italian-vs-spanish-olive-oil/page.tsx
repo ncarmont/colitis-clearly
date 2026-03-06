@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import SmallAd from '@/components/SmallAd'
 
 export const metadata: Metadata = {
   title: 'Greek vs Italian vs Spanish Olive Oil: Polyphenol Comparison 2024',
@@ -181,6 +182,11 @@ export default function GreekVsItalianVsSpanishPage() {
             </div>
           </div>
         </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
         {/* Section 2 */}
         <section className="mb-12">
@@ -399,6 +405,11 @@ export default function GreekVsItalianVsSpanishPage() {
             </div>
           </div>
         </section>
+            {/* Small tasteful ad */}
+            <div className="max-w-2xl mx-auto my-6">
+              <SmallAd slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_INLINE || ""} variant="inline" />
+            </div>
+
 
         {/* Section 4 - Comparison Table */}
         <section className="mb-12">
