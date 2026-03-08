@@ -47,7 +47,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "£42.00", method: "HPLC", lab: "Lab Certified (single estate)",
     certificateLink: "",
     cultivar: "Arbequina",
-    buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
+    buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij",
     notes: "Verified 7 Mar 2026: bottle sold out; refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle.",
     productImage: "/img/sp360-bottle.jpg",
     instagram: "sp360evoo"
