@@ -26,10 +26,22 @@ type OliveOil = {
   instagram?: string  // Producer Instagram handle (without @)
 }
 
-// Updated OILS_DATA with HPLC and NMR/Other split columns - 36 entries
+// Updated OILS_DATA with HPLC and NMR/Other split columns - 38 entries
 const OILS_DATA: OliveOil[] = [
   {
-    id: 1, rank: 1, brand: "P.J. KABOS – Family Reserve Phenolic Shot",
+    id: 38, rank: 1, brand: "Pamako Monovarietal",
+    nmrOtherPolyphenols: 2000,
+    origin: "Greece (Crete)", harvestDate: "2024",
+    price: "$$$", priceAmount: "~€45.00", method: "qNMR", lab: "World Olive Center for Health, University of Athens (Prof. Magiatis)",
+    certificateLink: "https://www.pamako.gr/wp-content/uploads/2025/02/pamako-monovarietal-high-phenolic-analysis.pdf",
+    cultivar: "Tsounati",
+    buyLink: "https://www.pamako.gr/contact/",
+    notes: "Verified 8 Mar 2026: 2,000 mg/kg total polyphenols (qNMR). Oleocanthal 372 mg/kg, Oleacein 262 mg/kg — both far above international averages (135 & 105 mg/kg). Certified organic (EU). Acidity 0.15%. Lab: World Olive Center for Health, Univ. of Athens, Certificate C2425-00285. Also tested by Multichrom.LAB (IOC-accredited), Certificate H-8634. Single-estate, centuries-old mountain groves in Selino, SW Crete. Dark bottles with mirrored UV layer + natural cork. EU health claim certified (Reg. 432/2012). Awards 2017–2024. Founded 2014 by Eftihis Androulakis.",
+    productImage: "/img/pamako-monovarietal.jpg",
+    instagram: "pamako"
+  },
+  {
+    id: 1, rank: 2, brand: "P.J. KABOS – Family Reserve Phenolic Shot",
     hplcPolyphenols: 995, nmrOtherPolyphenols: 1473,
     origin: "Greece", harvestDate: "Sep–Oct 2025",
     price: "$$", priceAmount: "$59.83", method: "HPLC + qNMR", lab: "Producer-reported HPLC + qNMR",
@@ -41,7 +53,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "pjkabos"
   },
   {
-    id: 2, rank: 2, brand: "SP360",
+    id: 2, rank: 3, brand: "SP360",
     hplcPolyphenols: 1711,
     origin: "Jordan", harvestDate: "Sep 2025",
     price: "$$", priceAmount: "£42.00", method: "HPLC", lab: "Lab Certified (single estate)",
@@ -53,7 +65,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "sp360evoo"
   },
   {
-    id: 3, rank: 5, brand: "The Governor – Limited Edition",
+    id: 3, rank: 6, brand: "The Governor – Limited Edition",
     nmrOtherPolyphenols: 1316,
     origin: "Greece (Corfu)", harvestDate: "Oct 2025",
     price: "$$", priceAmount: "£49.95", method: "qNMR", lab: "qNMR total phenols",
@@ -65,7 +77,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "the_governor_evoo"
   },
   {
-    id: 4, rank: 4, brand: "OlvLimits \"Green Machine\"",
+    id: 4, rank: 5, brand: "OlvLimits \"Green Machine\"",
     hplcPolyphenols: 1378,
     origin: "Italy (Puglia)", harvestDate: "Oct 2025",
     price: "$", priceAmount: "£23.00", method: "HPLC (University of Athens method)", lab: "National & Kapodistrian University of Athens",
@@ -77,7 +89,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "olvlimits"
   },
   {
-    id: 5, rank: 3, brand: "ONSURI Arbequina",
+    id: 5, rank: 4, brand: "ONSURI Arbequina",
     nmrOtherPolyphenols: 1504,
     origin: "Jordan", harvestDate: "Sep 2025",
     price: "$$", priceAmount: "£25.00", method: "RSS", lab: "Jordan Royal Scientific Society",
@@ -89,7 +101,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "onsurioliveoil"
   },
   {
-    id: 6, rank: 6, brand: "ONSURI Arbequina 1L (2×500 ml)",
+    id: 6, rank: 7, brand: "ONSURI Arbequina 1L (2×500 ml)",
     nmrOtherPolyphenols: 1269,
     origin: "Jordan", harvestDate: "2024/25",
     price: "$$", priceAmount: "£38.00", method: "RSS", lab: "Jordan Royal Scientific Society",
@@ -101,7 +113,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "onsurioliveoil"
   },
   {
-    id: 7, rank: 7, brand: "ONSURI Arbosana",
+    id: 7, rank: 8, brand: "ONSURI Arbosana",
     nmrOtherPolyphenols: 1255,
     origin: "Jordan", harvestDate: "2024/25",
     price: "$", priceAmount: "£19.95", method: "RSS", lab: "Jordan Royal Scientific Society",
@@ -113,7 +125,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "onsurioliveoil"
   },
   {
-    id: 8, rank: 8, brand: "Finca La Torre — Hojiblanca (Organic/Biodynamic)",
+    id: 8, rank: 9, brand: "Finca La Torre — Hojiblanca (Organic/Biodynamic)",
     nmrOtherPolyphenols: 1059,
     origin: "Spain", harvestDate: "2025/26",
     price: "$$", priceAmount: "€19.63", method: "Other", lab: "Retailer-stated phenols",
@@ -125,7 +137,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "fincalatorre"
   },
   {
-    id: 9, rank: 9, brand: "November – Polyphenols Organic Early Harvest",
+    id: 9, rank: 10, brand: "November – Polyphenols Organic Early Harvest",
     nmrOtherPolyphenols: 1200,
     origin: "Greece (South)", harvestDate: "Oct–Nov 2024",
     price: "$$", priceAmount: "£26.90", method: "NMR", lab: "NMR (IOC experimental)",
@@ -137,7 +149,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "novemberoliveoil"
   },
   {
-    id: 10, rank: 10, brand: "Kyoord High-Phenolic",
+    id: 10, rank: 11, brand: "Kyoord High-Phenolic",
     nmrOtherPolyphenols: 1007,
     origin: "Greece (Corfu)", harvestDate: "Nov–Dec 2024",
     price: "$$", priceAmount: "£37.00", method: "qNMR", lab: "qNMR metrics",
@@ -149,7 +161,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "kyoord"
   },
   {
-    id: 11, rank: 11, brand: "ONSURI Signature (Arbequina + Arbosana)",
+    id: 11, rank: 12, brand: "ONSURI Signature (Arbequina + Arbosana)",
     nmrOtherPolyphenols: 975,
     origin: "Jordan", harvestDate: "2025/26",
     price: "$", priceAmount: "£22.50", method: "RSS", lab: "RSS certified",
@@ -161,7 +173,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "onsurioliveoil"
   },
   {
-    id: 12, rank: 12, brand: "Laconiko Olio Nuovo",
+    id: 12, rank: 13, brand: "Laconiko Olio Nuovo",
     nmrOtherPolyphenols: 774,
     origin: "Greece", harvestDate: "2025/26",
     price: "$$", priceAmount: "$39.95", method: "qNMR", lab: "qNMR verified",
@@ -173,7 +185,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "laconiko"
   },
   {
-    id: 13, rank: 13, brand: "Opus Oléa – Organic",
+    id: 13, rank: 14, brand: "Opus Oléa – Organic",
     nmrOtherPolyphenols: 874,
     origin: "Greece", harvestDate: "Nov 2025",
     price: "$$", priceAmount: "$48.00", method: "Other", lab: "Independent lab (images on site)",
@@ -185,7 +197,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "opus_olea"
   },
   {
-    id: 14, rank: 14, brand: "Zero Nutrition – EVOO100",
+    id: 14, rank: 15, brand: "Zero Nutrition – EVOO100",
     nmrOtherPolyphenols: 813,
     origin: "Italy (Puglia)", harvestDate: "Nov 2024",
     price: "$", priceAmount: "$24.99", method: "Other", lab: "Independent tracker",
@@ -197,7 +209,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "zero.nutrition"
   },
   {
-    id: 15, rank: 15, brand: "Quattrociocchi 'Superbo'",
+    id: 15, rank: 16, brand: "Quattrociocchi 'Superbo'",
     nmrOtherPolyphenols: 800,
     origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$38.95", method: "Other", lab: "Widely cited value",
@@ -209,7 +221,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "quattrociocchiolio"
   },
   {
-    id: 16, rank: 16, brand: "P.J. KABOS – Family Reserve Robust",
+    id: 16, rank: 17, brand: "P.J. KABOS – Family Reserve Robust",
     hplcPolyphenols: 699,
     origin: "Greece", harvestDate: "Oct 2025",
     price: "$$", priceAmount: "$39.83", method: "HPLC", lab: "HPLC (producer-reported)",
@@ -221,7 +233,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "pjkabos"
   },
   {
-    id: 17, rank: 17, brand: "Oro del Desierto – Picual (Organic)",
+    id: 17, rank: 18, brand: "Oro del Desierto – Picual (Organic)",
     nmrOtherPolyphenols: 717,
     origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$32.00", method: "Other", lab: "Retailers cited",
@@ -233,7 +245,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "orodeldesierto"
   },
   {
-    id: 18, rank: 18, brand: "Vallesur – Peruvian",
+    id: 18, rank: 19, brand: "Vallesur – Peruvian",
     nmrOtherPolyphenols: 688,
     origin: "Peru", harvestDate: "2024",
     price: "$$", priceAmount: "$28.00", method: "Other", lab: "Tracker listing",
@@ -245,7 +257,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "vallesur.pe"
   },
   {
-    id: 19, rank: 19, brand: "Laudemio Frescobaldi (Tuscany)",
+    id: 19, rank: 20, brand: "Laudemio Frescobaldi (Tuscany)",
     nmrOtherPolyphenols: 675,
     origin: "Italy", harvestDate: "2024",
     price: "$$", priceAmount: "$42.00", method: "Other", lab: "Retailer-cited range",
@@ -257,7 +269,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "laudemioevo"
   },
   {
-    id: 20, rank: 20, brand: "Citizens of Soil — Spanish",
+    id: 20, rank: 21, brand: "Citizens of Soil — Spanish",
     nmrOtherPolyphenols: 642,
     origin: "Spain", harvestDate: "Nov 2025",
     price: "$$", priceAmount: "$38.00", method: "Other", lab: "Independent lab",
@@ -269,7 +281,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "citizensofsoil"
   },
   {
-    id: 21, rank: 21, brand: "Citizens of Soil — Tuscan 'Extra Rare'",
+    id: 21, rank: 22, brand: "Citizens of Soil — Tuscan 'Extra Rare'",
     nmrOtherPolyphenols: 655,
     origin: "Italy (Tuscany)", harvestDate: "Feb 2025",
     price: "$$", priceAmount: "$38.00", method: "Other", lab: "Independent lab",
@@ -281,7 +293,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "citizensofsoil"
   },
   {
-    id: 22, rank: 22, brand: "Morocco Gold",
+    id: 22, rank: 23, brand: "Morocco Gold",
     nmrOtherPolyphenols: 626,
     origin: "Morocco", harvestDate: "2024/25",
     price: "$$", priceAmount: "$35.00", method: "Other", lab: "Tracker listing",
@@ -293,7 +305,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "moroccogold"
   },
   {
-    id: 23, rank: 23, brand: "Venta del Barón (DO Priego)",
+    id: 23, rank: 24, brand: "Venta del Barón (DO Priego)",
     nmrOtherPolyphenols: 617,
     origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$36.00", method: "Other", lab: "Tracker listing",
@@ -305,7 +317,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "ventadelbaron"
   },
   {
-    id: 24, rank: 24, brand: "Castillo de Canena – First Day Harvest Picual",
+    id: 24, rank: 25, brand: "Castillo de Canena – First Day Harvest Picual",
     nmrOtherPolyphenols: 611,
     origin: "Spain", harvestDate: "Fall 2025",
     price: "$$", priceAmount: "$49.95", method: "Other", lab: "Retailer figure",
@@ -317,7 +329,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "castillodecanena"
   },
   {
-    id: 25, rank: 25, brand: "Entimio – INTENSO",
+    id: 25, rank: 26, brand: "Entimio – INTENSO",
     nmrOtherPolyphenols: 601,
     origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$50.00", method: "Other", lab: "Brand batch analyses",
@@ -329,7 +341,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "entimioevoo"
   },
   {
-    id: 26, rank: 26, brand: "Odysea 'Good For You' (Crete)",
+    id: 26, rank: 27, brand: "Odysea 'Good For You' (Crete)",
     nmrOtherPolyphenols: 573,
     origin: "Greece", harvestDate: "2024/25",
     price: "$", priceAmount: "$19.99", method: "Other", lab: "Brand posted",
@@ -341,7 +353,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "odysea_food"
   },
   {
-    id: 27, rank: 27, brand: "Kosterina – Original Extra Virgin",
+    id: 27, rank: 28, brand: "Kosterina – Original Extra Virgin",
     nmrOtherPolyphenols: 573,
     origin: "Greece (Southern)", harvestDate: "Nov 2024",
     price: "$", priceAmount: "$32.00", method: "Other", lab: "Brand FAQ/page",
@@ -353,7 +365,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "kosterina"
   },
   {
-    id: 28, rank: 28, brand: "True Tuscan (Olive Girl)",
+    id: 28, rank: 29, brand: "True Tuscan (Olive Girl)",
     nmrOtherPolyphenols: 550,
     origin: "Italy", harvestDate: "2024",
     price: "$$", priceAmount: "$42.00", method: "Other", lab: "Independent test",
@@ -365,7 +377,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "shopolivegirl"
   },
   {
-    id: 29, rank: 29, brand: "Laconiko Extra Virgin (Koroneiki)",
+    id: 29, rank: 30, brand: "Laconiko Extra Virgin (Koroneiki)",
     nmrOtherPolyphenols: 578,
     origin: "Greece", harvestDate: "Nov 2024–Jan 2025",
     price: "$", priceAmount: "$24.95", method: "qNMR", lab: "qNMR verified (Aristoleo protocol)",
@@ -377,7 +389,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "laconiko"
   },
   {
-    id: 30, rank: 30, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
+    id: 30, rank: 31, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
     nmrOtherPolyphenols: 537,
     origin: "Spain (Málaga)", harvestDate: "2025/26",
     price: "$$", priceAmount: "€19.63", method: "Other", lab: "Retailer-stated",
@@ -389,7 +401,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "fincalatorre"
   },
   {
-    id: 31, rank: 31, brand: "Citizens of Soil — Greek (Peloponnese)",
+    id: 31, rank: 32, brand: "Citizens of Soil — Greek (Peloponnese)",
     nmrOtherPolyphenols: 552,
     origin: "Greece", harvestDate: "Dec 2024",
     price: "$", priceAmount: "£17.99", method: "Other", lab: "Retailer cites",
@@ -401,7 +413,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "citizensofsoil"
   },
   {
-    id: 32, rank: 32, brand: "Entimio – ARDENTE",
+    id: 32, rank: 33, brand: "Entimio – ARDENTE",
     nmrOtherPolyphenols: 516,
     origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$45.00", method: "Other", lab: "Brand batch analyses",
@@ -413,7 +425,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "entimioevoo"
   },
   {
-    id: 33, rank: 33, brand: "P.J. KABOS – Family Reserve Organic (Medium)",
+    id: 33, rank: 34, brand: "P.J. KABOS – Family Reserve Organic (Medium)",
     hplcPolyphenols: 500,
     origin: "Greece", harvestDate: "Oct–Nov 2024",
     price: "$", priceAmount: "$34.83", method: "HPLC", lab: "Brand claims ≥500 mg/kg",
@@ -425,7 +437,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "pjkabos"
   },
   {
-    id: 34, rank: 34, brand: "Blueprint (Bryan Johnson) 'Snake Oil' EVOO",
+    id: 34, rank: 35, brand: "Blueprint (Bryan Johnson) 'Snake Oil' EVOO",
     nmrOtherPolyphenols: 400,
     origin: "Portugal", harvestDate: "Nov 2025",
     price: "$$", priceAmount: "$39.00", method: "Other", lab: "Third-party tested",
@@ -437,7 +449,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "blueprintlongevity"
   },
   {
-    id: 35, rank: 35, brand: "The Governor – Premium Edition",
+    id: 35, rank: 36, brand: "The Governor – Premium Edition",
     nmrOtherPolyphenols: 390,
     origin: "Greece (Corfu)", harvestDate: "Nov–Dec 2024",
     price: "$", priceAmount: "€35.00", method: "Folin", lab: "Folin (not HPLC/qNMR)",
@@ -449,7 +461,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "the_governor_evoo"
   },
   {
-    id: 36, rank: 36, brand: "Rincón de la Subbética – Hojiblanca (Organic)",
+    id: 36, rank: 37, brand: "Rincón de la Subbética – Hojiblanca (Organic)",
     nmrOtherPolyphenols: 356,
     origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$32.95", method: "Other", lab: "Retailer figure",
@@ -460,7 +472,7 @@ const OILS_DATA: OliveOil[] = [
     instagram: "almasubbetica"
   },
   {
-    id: 37, rank: 37, brand: "P.J. KABOS – Family Reserve Robust (Non-Organic)",
+    id: 37, rank: 38, brand: "P.J. KABOS – Family Reserve Robust (Non-Organic)",
     hplcPolyphenols: 750,
     origin: "Greece", harvestDate: "Oct 2024",
     price: "$", priceAmount: "$29.90", method: "HPLC", lab: "HPLC (producer-reported)",
