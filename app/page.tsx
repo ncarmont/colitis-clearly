@@ -607,11 +607,8 @@ export default function HomePage() {
 
   // Helper function to get HPLC equivalent polyphenol value
   const getMaxPolyphenols = (oil: OliveOil): number => {
-    if (oil.hplcPolyphenols) {
-      return oil.hplcPolyphenols
-    }
-    // Apply 0.6 conversion factor for NMR/Other methods to get HPLC equivalent
-    return oil.nmrOtherPolyphenols ? Math.round(oil.nmrOtherPolyphenols * 0.6) : 0
+    // Use raw mg/kg regardless of method; if both methods available, pick the higher value
+    return Math.max(oil.hplcPolyphenols || 0, oil.nmrOtherPolyphenols || 0)
   }
 
   // Helper function to get method badges for an oil
