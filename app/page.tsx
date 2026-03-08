@@ -30,13 +30,13 @@ type OliveOil = {
 const OILS_DATA: OliveOil[] = [
   {
     id: 38, rank: 1, brand: "Pamako Monovarietal",
-    nmrOtherPolyphenols: 2000,
-    origin: "Greece (Crete)", harvestDate: "2024",
-    price: "$$$", priceAmount: "~€45.00", method: "qNMR", lab: "World Olive Center for Health, University of Athens (Prof. Magiatis)",
+    nmrOtherPolyphenols: 2081,
+    origin: "Greece (Crete)", harvestDate: "Nov 2025",
+    price: "$$$", priceAmount: "~£45.00", method: "qNMR", lab: "World Olive Center for Health, University of Athens (Prof. Magiatis)",
     certificateLink: "https://www.pamako.gr/wp-content/uploads/2025/02/pamako-monovarietal-high-phenolic-analysis.pdf",
     cultivar: "Tsounati",
-    buyLink: "https://www.pamako.gr/contact/",
-    notes: "Verified 8 Mar 2026: 2,000 mg/kg total polyphenols (qNMR). Oleocanthal 372 mg/kg, Oleacein 262 mg/kg — both far above international averages (135 & 105 mg/kg). Certified organic (EU). Acidity 0.15%. Lab: World Olive Center for Health, Univ. of Athens, Certificate C2425-00285. Also tested by Multichrom.LAB (IOC-accredited), Certificate H-8634. Single-estate, centuries-old mountain groves in Selino, SW Crete. Dark bottles with mirrored UV layer + natural cork. EU health claim certified (Reg. 432/2012). Awards 2017–2024. Founded 2014 by Eftihis Androulakis.",
+    buyLink: "https://www.pamako.co.uk/?ref=roaqpdtk",
+    notes: "Verified 8 Mar 2026: LATEST batch Nov 2025 harvest — 2,081 mg/kg total polyphenols (qNMR). Oleocanthal 1,318 mg/kg, Oleacein 264 mg/kg — oleocanthal nearly 10x international average (135 mg/kg). Certificate C2526-00362, analysis date 21/11/2025. Certified organic (EU). Lab: World Olive Center for Health, Univ. of Athens, Prof. Prokopios Magiatis. Also tested by Multichrom.LAB (IOC-accredited). Single-estate, centuries-old mountain groves in Selino, SW Crete. Dark bottles with mirrored UV layer + natural cork. EU health claim certified (Reg. 432/2012). Awards 2017–2025. Founded 2014 by Eftihis Androulakis.",
     productImage: "/img/pamako-monovarietal.jpg",
     instagram: "pamako"
   },
