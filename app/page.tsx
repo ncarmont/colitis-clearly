@@ -953,7 +953,7 @@ export default function HomePage() {
             </div>
           )}
 
-          <div className="bg-transparent md:bg-white/95 backdrop-blur rounded-2xl md:rounded-3xl shadow-none md:shadow-2xl border-0 md:border md:border-slate-200/80 overflow-visible md:overflow-hidden animate-table-entrance">
+          <div className="bg-transparent backdrop-blur rounded-2xl md:rounded-3xl shadow-none overflow-visible md:overflow-hidden animate-table-entrance">
 
             {/* ── MOBILE CARD LIST (< md) ── */}
             <div className="block md:hidden space-y-3">
@@ -1179,218 +1179,173 @@ export default function HomePage() {
               })}
             </div>
 
-            {/* ── DESKTOP TABLE (≥ md) ── */}
-            <div className="hidden md:block overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-gray-700 border-b-2 border-gray-600">
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider relative">
-                      <button
-                        onClick={() => setOverallRankFilter(!overallRankFilter)}
-                        className={`flex items-center gap-1 transition-all duration-200 ${
-                          overallRankFilter
-                            ? 'text-green-400 font-extrabold'
-                            : 'hover:text-green-400'
-                        }`}
-                        title="Filter by HPLC tested oils from 2024-2026 harvest"
-                      >
-                        Overall Rank {overallRankFilter && '✓'}
-                      </button>
-                    </th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Brand</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Polyphenol Score</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Original Value</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Origin</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Cultivar</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Harvest</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Method</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Buy</th>
-                    <th className="px-3 py-4 text-left text-xs font-bold text-gray-100 uppercase tracking-wider">Notes</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  {oilsToDisplay.map((oil, index) => {
-                    const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
-                    const displayRank = index + 1
-                    return (
-                      <tr
-                        key={oil.id}
-                        className={`transition-all duration-300 group animate-fade-in-row relative ${
-                          displayRank === 1 ? 'bg-gradient-to-r from-yellow-100/90 to-amber-100/80 hover:from-yellow-200/95 hover:to-amber-200/85 border-l-4 border-yellow-400' :
-                          displayRank === 2 ? 'bg-gradient-to-r from-gray-100/90 to-slate-100/80 hover:from-gray-200/95 hover:to-slate-200/85 border-l-4 border-gray-400' :
-                          displayRank === 3 ? 'bg-gradient-to-r from-orange-100/90 to-red-100/80 hover:from-orange-200/95 hover:to-red-200/85 border-l-4 border-orange-400' :
-                          'hover:bg-green-50'
-                        }`}
-                        style={{ animationDelay: `${index * 50}ms` }}
-                      >
-                        <td className="px-3 py-4 whitespace-nowrap">
-                          <div className="flex items-center gap-2">
-                            <span className={`inline-flex items-center justify-center w-10 h-10 rounded-xl font-bold text-sm shadow-md group-hover:scale-110 transition-transform duration-200 ${
-                              displayRank === 1 ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 text-white shadow-yellow-500/50' :
-                              displayRank === 2 ? 'bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 text-white shadow-gray-400/50' :
-                              displayRank === 3 ? 'bg-gradient-to-br from-orange-400 via-orange-500 to-red-500 text-white shadow-orange-500/50' :
-                              `bg-gradient-to-br ${getGreenShade(displayRank)} text-white shadow-green-500/30`
-                            }`}>
+            {/* ── DESKTOP CARD GRID (≥ md) ── */}
+            <div className="hidden md:block">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
+                {oilsToDisplay.map((oil, index) => {
+                  const displayRank = index + 1
+                  const score = getMaxPolyphenols(oil)
+                  const badges = getMethodBadges(oil)
+                  const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
+                  const rankGrad =
+                    displayRank === 1 ? 'from-yellow-400 via-yellow-500 to-amber-500 shadow-yellow-500/40' :
+                    displayRank === 2 ? 'from-gray-300 via-gray-400 to-gray-500 shadow-gray-400/40' :
+                    displayRank === 3 ? 'from-orange-400 via-orange-500 to-red-500 shadow-orange-500/40' :
+                    `${getGreenShade(displayRank)} shadow-green-500/20`
+                  const scoreColor =
+                    displayRank === 1 ? 'text-yellow-300' :
+                    displayRank === 2 ? 'text-slate-200' :
+                    displayRank === 3 ? 'text-orange-300' :
+                    'text-emerald-300'
+                  const cardBorder =
+                    displayRank === 1 ? 'border-yellow-400/60 hover:border-yellow-400' :
+                    displayRank === 2 ? 'border-gray-400/60 hover:border-gray-400' :
+                    displayRank === 3 ? 'border-orange-400/60 hover:border-orange-400' :
+                    'border-white/10 hover:border-emerald-400/50'
+                  const cardBg =
+                    displayRank === 1 ? 'bg-gradient-to-br from-[#1b2438] to-[#0d1b34]' :
+                    displayRank === 2 ? 'bg-gradient-to-br from-[#1b2438] to-[#12233f]' :
+                    displayRank === 3 ? 'bg-gradient-to-br from-[#1c2336] to-[#182a4a]' :
+                    'bg-gradient-to-br from-[#0f1f39] to-[#123055]'
+
+                  // Hero card for #1 spans 2 columns
+                  const isHero = displayRank === 1
+
+                  return (
+                    <div
+                      key={oil.id}
+                      className={`relative overflow-hidden rounded-2xl border ${cardBorder} ${cardBg} shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-fade-in-row ${isHero ? 'md:col-span-2 lg:col-span-2' : ''}`}
+                      style={{ animationDelay: `${index * 40}ms` }}
+                    >
+                      {/* Product image area */}
+                      {oil.productImage ? (
+                        <a href={oil.buyLink} target="_blank" rel="noopener noreferrer" className={`block relative ${isHero ? 'h-72' : 'h-52'} w-full overflow-hidden`}>
+                          <img
+                            src={oil.productImage}
+                            alt={oil.brand}
+                            className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+
+                          {/* Rank badge overlay */}
+                          <div className="absolute top-3 left-3 flex flex-col items-center gap-0.5">
+                            <span className={`inline-flex items-center justify-center ${isHero ? 'w-14 h-14 text-xl' : 'w-11 h-11 text-base'} rounded-xl font-bold text-white shadow-lg bg-gradient-to-br ${rankGrad} ring-2 ring-white/60`}>
                               {displayRank}
                             </span>
                             {displayRank <= 3 && (
-                              <span className={`text-xl animate-crown-bounce ${
+                              <span className={`${isHero ? 'text-xl' : 'text-lg'} leading-none drop-shadow animate-crown-bounce ${
                                 displayRank === 1 ? 'crown-gold' :
                                 displayRank === 2 ? 'crown-silver' :
                                 'crown-bronze'
-                              }`}>
-                                👑
-                              </span>
+                              }`}>👑</span>
                             )}
                           </div>
-                        </td>
-                        <td className="px-3 py-4">
-                          <a
-                            href={oil.buyLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm font-bold text-gray-900 group-hover:text-green-600 transition-colors max-w-[180px] block"
-                          >
-                            {oil.brand}
-                          </a>
-                        </td>
-                        <td className="px-3 py-4">
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <div className="flex items-baseline gap-1">
-                              <span className={`text-2xl font-bold transition-colors ${
-                                displayRank === 1 ? 'text-yellow-600 group-hover:text-yellow-700' :
-                                displayRank === 2 ? 'text-gray-600 group-hover:text-gray-700' :
-                                displayRank === 3 ? 'text-orange-600 group-hover:text-orange-700' :
-                                'text-green-600 group-hover:text-green-700'
+
+                          {/* Score overlay bottom-left */}
+                          <div className="absolute bottom-3 left-3">
+                            <span className={`${isHero ? 'text-4xl' : 'text-3xl'} font-extrabold leading-none drop-shadow-lg ${scoreColor}`}>{score}</span>
+                            <span className="text-white/90 text-xs font-semibold ml-1.5">mg/kg</span>
+                            {badges.map((b, bi) => (
+                              <span key={bi} className="ml-1.5 text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-white/20 text-white backdrop-blur-sm border border-white/30">{b}</span>
+                            ))}
+                          </div>
+
+                          {/* Original value — top right */}
+                          <div className="absolute top-3 right-3">
+                            <div className="bg-black/50 backdrop-blur-sm rounded-lg px-2.5 py-1.5 border border-white/20">
+                              <span className="text-white font-bold text-sm">{oil.hplcPolyphenols || oil.nmrOtherPolyphenols}</span>
+                              <span className="text-white/70 text-[10px] ml-1">mg/kg</span>
+                              <span className={`block text-[8px] font-medium mt-0.5 ${
+                                oil.hplcPolyphenols ? 'text-emerald-300' : 'text-blue-300'
                               }`}>
-                                {getMaxPolyphenols(oil)}
+                                {oil.hplcPolyphenols ? 'HPLC' :
+                                 oil.method.toLowerCase().includes('nmr') || oil.method.toLowerCase().includes('qnmr') ? 'qNMR' :
+                                 oil.method.toLowerCase().includes('rss') ? 'RSS' : oil.method}
                               </span>
-                              <span className="text-xs text-gray-600 font-semibold">score</span>
-                            </div>
-                            <div className="flex gap-1 flex-wrap">
-                              {getMethodBadges(oil).map((badge, badgeIndex) => (
-                                <span
-                                  key={`${badge}-${badgeIndex}`}
-                                  className={`text-[10px] font-medium px-2 py-1 rounded-full border ${
-                                    displayRank === 1 ? 'bg-yellow-50 text-yellow-700 border-yellow-200' :
-                                    displayRank === 2 ? 'bg-gray-50 text-gray-700 border-gray-200' :
-                                    displayRank === 3 ? 'bg-orange-50 text-orange-700 border-orange-200' :
-                                    'bg-gray-100 text-gray-700 border-gray-200'
-                                  }`}
-                                >
-                                  {badge}
-                                </span>
-                              ))}
                             </div>
                           </div>
-                        </td>
-                        <td className="px-3 py-4">
-                          <div className="flex flex-col gap-0.5">
-                            <div className="flex items-baseline gap-0.5">
-                              <span className="text-sm font-semibold text-gray-600">
-                                {oil.hplcPolyphenols || oil.nmrOtherPolyphenols}
-                              </span>
-                              <span className="text-[10px] text-gray-400 font-medium">mg/kg polyphenols</span>
+                        </a>
+                      ) : (
+                        /* No image — compact header */
+                        <div className={`relative px-4 pt-4 pb-3 ${isHero ? 'pb-4' : ''}`}>
+                          <div className="flex items-center gap-3">
+                            <span className={`inline-flex items-center justify-center w-11 h-11 rounded-xl font-bold text-base text-white shadow-lg bg-gradient-to-br ${rankGrad}`}>
+                              {displayRank}
+                            </span>
+                            <div>
+                              <span className={`text-2xl font-extrabold ${scoreColor}`}>{score}</span>
+                              <span className="text-white/70 text-xs ml-1">mg/kg</span>
                             </div>
-                            <span className={`text-[8px] font-medium px-1 py-0.5 rounded text-center ${
-                              displayRank === 1 ? 'bg-yellow-50 text-yellow-600' :
-                              displayRank === 2 ? 'bg-gray-50 text-gray-600' :
-                              displayRank === 3 ? 'bg-orange-50 text-orange-600' :
-                              'bg-gray-50 text-gray-500'
-                            }`}>
-                              {oil.hplcPolyphenols ? 'HPLC' :
-                               oil.method.toLowerCase().includes('nmr') || oil.method.toLowerCase().includes('qnmr') ? 'NMR' :
-                               oil.method.toLowerCase().includes('rss') ? 'RSS' : 'Other'}
-                            </span>
+                            {badges.map((b, bi) => (
+                              <span key={bi} className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-white/15 text-white/85 border border-white/20">{b}</span>
+                            ))}
                           </div>
-                        </td>
-                        <td className="px-3 py-4 whitespace-nowrap">
-                          <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border ${
-                            displayRank === 1 ? 'bg-yellow-50 text-yellow-700 border-yellow-200' :
-                            displayRank === 2 ? 'bg-gray-50 text-gray-700 border-gray-200' :
-                            displayRank === 3 ? 'bg-orange-50 text-orange-700 border-orange-200' :
-                            'bg-gray-50 text-gray-700 border-gray-200'
-                          }`}>
-                            <span className="text-base">{COUNTRY_FLAGS[oil.origin]}</span>
-                            <span className="hidden lg:inline">{oil.origin}</span>
+                        </div>
+                      )}
+
+                      {/* Info section */}
+                      <div className="px-4 py-3">
+                        <a
+                          href={oil.buyLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`${isHero ? 'text-lg' : 'text-sm'} font-bold text-white hover:text-emerald-300 transition-colors leading-tight block`}
+                        >
+                          {oil.brand}
+                        </a>
+                        <div className="flex items-center gap-2 mt-1.5 text-xs text-white/70 flex-wrap">
+                          <span className="inline-flex items-center gap-1">
+                            <span className="text-sm">{COUNTRY_FLAGS[oil.origin]}</span>
+                            {oil.origin}
                           </span>
-                        </td>
-                        <td className="px-3 py-4 whitespace-nowrap">
-                          <span className={`text-xs font-medium px-2 py-1 rounded border ${
-                            displayRank === 1 ? 'bg-yellow-50 text-yellow-700 border-yellow-200' :
-                            displayRank === 2 ? 'bg-gray-50 text-gray-700 border-gray-200' :
-                            displayRank === 3 ? 'bg-orange-50 text-orange-700 border-orange-200' :
-                            'bg-gray-50 text-gray-700 border-gray-200'
-                          }`}>
-                            {oil.cultivar}
-                          </span>
-                        </td>
-                        <td className="px-3 py-4 whitespace-nowrap">
-                          <span className="text-xs text-gray-600 font-medium">{oil.harvestDate}</span>
-                        </td>
-                        <td className="px-3 py-4 whitespace-nowrap">
-                          <div className="flex flex-col gap-1">
-                            <span className={`text-xs font-medium px-2 py-1 rounded inline-block border ${
-                              displayRank === 1 ? 'bg-yellow-50 text-yellow-700 border-yellow-200' :
-                              displayRank === 2 ? 'bg-gray-50 text-gray-700 border-gray-200' :
-                              displayRank === 3 ? 'bg-orange-50 text-orange-700 border-orange-200' :
-                              'bg-gray-50 text-gray-700 border-gray-200'
-                            }`}>
-                              {oil.method.length > 15 ? oil.method.substring(0, 15) + '...' : oil.method}
-                            </span>
+                          <span className="text-white/30">•</span>
+                          <span>{oil.harvestDate}</span>
+                          <span className="text-white/30">•</span>
+                          <span className="italic text-white/55">{oil.cultivar}</span>
+                        </div>
+
+                        {/* Price + actions row */}
+                        <div className="flex items-center justify-between mt-3 pt-3 border-t border-white/10">
+                          <div className="flex items-center gap-2">
+                            <span className="text-sm font-semibold text-emerald-300">{oil.priceAmount || oil.price}</span>
                             {oil.certificateLink && (
                               <a
                                 href={oil.certificateLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`text-xs underline ${
-                                  displayRank === 1 ? 'text-yellow-600 hover:text-yellow-700' :
-                                  displayRank === 2 ? 'text-gray-600 hover:text-gray-700' :
-                                  displayRank === 3 ? 'text-orange-600 hover:text-orange-700' :
-                                  'text-green-600 hover:text-green-700'
-                                }`}
-                                title="View Lab Certificate"
+                                className="text-[10px] text-emerald-400 hover:text-emerald-300 underline transition-colors"
                               >
                                 📜 COA
                               </a>
                             )}
-                          </div>
-                        </td>
-                        <td className="px-3 py-4 whitespace-nowrap">
-                          <div className="flex flex-col gap-1.5">
-                            <a
-                              href={oil.buyLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className={`inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg font-semibold text-xs transition-all duration-200 shadow-md hover:shadow-lg hover:scale-105 ${
-                                isAmazon
-                                  ? 'bg-blue-600 hover:bg-blue-500 text-white'
-                                  : 'bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white'
-                              }`}
-                            >
-                              <span>Go to Site</span>
-                            </a>
-                            {!isAmazon && oil.certificateLink && !oil.certificateLink.includes('amazon') && !oil.certificateLink.includes('oliveoil') && (
+                            {oil.instagram && (
                               <a
-                                href={oil.certificateLink}
+                                href={`https://instagram.com/${oil.instagram}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-xs text-blue-600 hover:text-blue-700 text-center underline"
-                                title="Official Website"
+                                className="text-[10px] text-pink-300 hover:text-pink-200 transition-colors"
                               >
-                                🌐 Direct
+                                📸 @{oil.instagram}
                               </a>
                             )}
                           </div>
-                        </td>
-                        <td className="px-3 py-4">
-                          <div className="text-xs text-gray-600 max-w-[240px] leading-relaxed">{oil.notes}</div>
-                        </td>
-                      </tr>
-                    )
-                  })}
-                </tbody>
-              </table>
+                          <a
+                            href={oil.buyLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold text-xs text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 ${
+                              isAmazon ? 'bg-blue-600 hover:bg-blue-500' : 'bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500'
+                            }`}
+                          >
+                            {isAmazon ? 'Amazon →' : 'Buy →'}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </div>
 
