@@ -15,6 +15,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'olive-oil-for-liver-health',
+    title: 'Olive Oil for Liver Health: Can EVOO Help Fatty Liver Disease?',
+    excerpt: '1 in 4 adults has fatty liver disease. High-polyphenol EVOO reduces liver fat, lowers ALT/AST enzymes, and activates AMPK fat oxidation in liver cells. Science, dosage, and best oils.',
+    category: 'Health',
+    readTime: '9 min read',
+    date: '2026-03-09',
+    image: '🫀'
+  },
+  {
     slug: 'hydroxytyrosol-olive-oil',
     title: 'Hydroxytyrosol: The Most Powerful Antioxidant in Olive Oil',
     excerpt: 'Hydroxytyrosol is the #1 reason EVOO has an EU health claim — with an ORAC score 15× higher than green tea. Learn its benefits, dosage, and which oils have the most.',
