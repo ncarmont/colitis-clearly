@@ -103,6 +103,13 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Affiliate Disclosure */}
+        <div className="border-t border-gray-800 pt-6 pb-2">
+          <p className="text-gray-500 text-xs leading-relaxed text-center max-w-2xl mx-auto">
+            Some links on this site are affiliate links. We may earn a small commission if you purchase through them, at no extra cost to you. This helps us maintain the site and continue independent research. Our rankings are based solely on lab-verified data and are never influenced by affiliate relationships.
+          </p>
+        </div>
+
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">

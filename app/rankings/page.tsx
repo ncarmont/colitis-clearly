@@ -372,6 +372,7 @@ export default function RankingsPage() {
               We highlight early-harvest, freshly bottled EVOOs with verified phenolics above the 250&nbsp;mg/kg threshold (EFSA standard) because freshness keeps polyphenols potent all year.
             </p>
             <p className="text-xs text-gray-500">{hemisphereAdvice.note}</p>
+            <p className="text-xs text-gray-400 mt-1">Some links on this page are affiliate links — we may earn a small commission at no extra cost to you. This helps keep the site running. Our rankings are never influenced by affiliate partnerships.</p>
           </div>
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
             <div className="overflow-x-auto">
