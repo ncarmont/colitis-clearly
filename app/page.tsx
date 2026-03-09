@@ -32,11 +32,11 @@ const OILS_DATA: OliveOil[] = [
     id: 38, rank: 1, brand: "Pamako Monovarietal",
     nmrOtherPolyphenols: 2081,
     origin: "Greece (Crete)", harvestDate: "Nov 2025",
-    price: "$$$", priceAmount: "~£45.00", method: "qNMR", lab: "World Olive Center for Health, University of Athens (Prof. Magiatis)",
+    price: "$$$", priceAmount: "£44.99", method: "qNMR", lab: "World Olive Center for Health, University of Athens (Prof. Magiatis)",
     certificateLink: "https://www.pamako.gr/wp-content/uploads/2025/02/pamako-monovarietal-high-phenolic-analysis.pdf",
     cultivar: "Tsounati",
     buyLink: "https://www.pamako.co.uk/?ref=roaqpdtk",
-    notes: "Verified 8 Mar 2026: LATEST batch Nov 2025 harvest — 2,081 mg/kg total polyphenols (qNMR). Oleocanthal 1,318 mg/kg, Oleacein 264 mg/kg — oleocanthal nearly 10x international average (135 mg/kg). Certificate C2526-00362, analysis date 21/11/2025. Certified organic (EU). Lab: World Olive Center for Health, Univ. of Athens, Prof. Prokopios Magiatis. Also tested by Multichrom.LAB (IOC-accredited). Single-estate, centuries-old mountain groves in Selino, SW Crete. Dark bottles with mirrored UV layer + natural cork. EU health claim certified (Reg. 432/2012). Awards 2017–2025. Founded 2014 by Eftihis Androulakis.",
+    notes: "Verified 9 Mar 2026: LATEST batch Nov 2025 harvest — 2,081 mg/kg total polyphenols (qNMR). Oleocanthal 1,318 mg/kg, Oleacein 264 mg/kg — oleocanthal nearly 10x international average (135 mg/kg). Certificate C2526-00362, analysis date 21/11/2025. Certified organic (EU). Lab: World Olive Center for Health, Univ. of Athens, Prof. Prokopios Magiatis. Also tested by Multichrom.LAB (IOC-accredited). Single-estate, centuries-old mountain groves in Selino, SW Crete. Dark bottles with mirrored UV layer + natural cork. EU health claim certified (Reg. 432/2012). Awards 2017–2025. Founded 2014 by Eftihis Androulakis. £44.99 (500ml).",
     productImage: "/img/pamako-monovarietal.jpg",
     instagram: "pamako"
   },
@@ -48,7 +48,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified 8 Mar 2026: Amazon listing active (title: '900+ mg/kg'). Current batch: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic. Sep–Oct 2025 harvest. Producer site confirms four intensities available.",
+    notes: "Verified 9 Mar 2026: PJ KABOS site confirms 900+ mg/kg (HPLC) and 1400+ (NMR). Current batch: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic. Sep–Oct 2025 harvest. Four taste intensities available.",
     productImage: "/img/kabos-phenolic-shot.jpg",
     instagram: "pjkabos"
   },
@@ -60,7 +60,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij",
-    notes: "Verified 8 Mar 2026: bottle sold out; refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle.",
+    notes: "Verified 9 Mar 2026: bottle sold out; refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle. Free UK shipping.",
     productImage: "/img/sp360-bottle.jpg",
     instagram: "sp360evoo"
   },
@@ -72,7 +72,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf?v=1763979500",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
-    notes: "Verified 8 Mar 2026: 1,316 mg/kg confirmed (certified PDF linked). Oleocanthal 577 mg/kg, oleacein 298 mg/kg. 2025/26 harvest (Oct 2025). In stock. 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, DIO-certified organic. 101 reviews. £49.95.",
+    notes: "Verified 9 Mar 2026: 1,316 mg/kg confirmed (certified PDF linked). Oleocanthal 577 mg/kg, oleacein 298 mg/kg. 2025/26 harvest (Oct 2025). In stock. 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, DIO-certified organic. 101 reviews. £49.95. First-batch limited edition.",
     productImage: "/img/oil-3.jpg",
     instagram: "the_governor_evoo"
   },
@@ -119,8 +119,8 @@ const OILS_DATA: OliveOil[] = [
     price: "$", priceAmount: "£19.95", method: "RSS", lab: "Jordan Royal Scientific Society",
     certificateLink: "",
     cultivar: "Arbosana",
-    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
-    notes: "Oleocanthal ~425 mg/kg stated.",
+    buyLink: "https://onsurioliveoil.com/collections/all",
+    notes: "Verified 9 Mar 2026: Original product URL retired (404). Oleocanthal ~425 mg/kg stated. Check ONSURI collections for 2025/26 Arbosana availability.",
     productImage: "/img/oil-7.png",
     instagram: "onsurioliveoil"
   },
@@ -132,7 +132,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca",
     buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
-    notes: "Verified 8 Mar 2026: 2025/26 harvest live. Demeter biodynamic estate oil. €19.63 (500ml). Winner of 'Premio Alimentos de España'. Green almond, apple, banana skin notes. 16 reviews (4.7★ avg). Free shipping on orders over €70.",
+    notes: "Verified 9 Mar 2026: 2025/26 harvest live. Demeter biodynamic estate oil. €19.63 (500ml); bulk pricing from €17.66/bottle (12 units). Winner of 'Premio Alimentos de España'. Green almond, apple, banana skin notes. 16 reviews. Free shipping on orders over €70.",
     productImage: "/img/oil-8.jpg",
     instagram: "fincalatorre"
   },
@@ -144,7 +144,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.masworth.co.uk/product/november-early-harvest-organic-olive-oil-500ml/",
-    notes: "Verified 8 Mar 2026: Latest lab analysis shows polyphenols above 1,200 mg/kg (up from 1,073). 500 ml; organic; early-harvest green olives; bundle price ≈ £22.87/bottle (3+).",
+    notes: "Verified 9 Mar 2026: Latest lab analysis shows polyphenols above 1,200 mg/kg (up from 1,073). 500 ml; organic; early-harvest green olives from southern Greece. 100% Koroneiki. Bundle price ≈ £22.87/bottle (3+). Heart health & anti-inflammatory benefits highlighted.",
     productImage: "/img/oil-9.jpg",
     instagram: "novemberoliveoil"
   },
@@ -168,7 +168,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Blend",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
-    notes: "Verified 8 Mar 2026: 2025/26 harvest live. Polyphenols 975 mg/kg (was 1,000 in 2024/25 batch). Buttery smooth texture, mild yet complex; floral/almond profile. £22.50. Subscribe & 5th order free.",
+    notes: "Verified 9 Mar 2026: 2025/26 harvest live. Polyphenols 975 mg/kg (was 1,000 in 2024/25 batch). Buttery smooth texture, mild yet complex; floral/almond profile. £22.50. Subscribe & 5th order free. Ships from UK warehouse (£2.50).",
     productImage: "/img/oil-11.png",
     instagram: "onsurioliveoil"
   },
@@ -360,7 +360,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/singlebottle",
-    notes: "Verified 8 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,056 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off). Nov 2024 harvest.",
+    notes: "Verified 9 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,056 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off). Nov 2024 harvest. High polyphenol content with robust peppery finish.",
     productImage: "/img/oil-27.png",
     instagram: "kosterina"
   },
@@ -444,7 +444,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Portuguese blend",
     buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ",
-    notes: "Verified 8 Mar 2026: Nov 2025 harvest now live. 400 mg polyphenols (down from 499 in 2024 batch). Rich in oleic acid. UV-protected glass. 599 reviews (4.9★). DTC & Amazon. 15% of Bryan Johnson's daily caloric intake.",
+    notes: "Verified 9 Mar 2026: Nov 2025 harvest now live. 400 mg polyphenols (down from 499 in 2024 batch). Rich in oleic acid. UV-protected glass. DTC & Amazon. Part of Bryan Johnson's daily longevity protocol.",
     productImage: "/img/oil-34.jpg",
     instagram: "blueprintlongevity"
   },
@@ -504,7 +504,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-03-08'
+const LAST_DATA_UPDATE = '2026-03-09'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
