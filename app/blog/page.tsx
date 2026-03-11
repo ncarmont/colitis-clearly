@@ -15,6 +15,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'olive-oil-for-skin',
+    title: 'Olive Oil for Skin: Benefits, How to Use & Best EVOO for Your Face',
+    excerpt: 'High-polyphenol EVOO contains hydroxytyrosol, squalene, and oleocanthal — proven to fight UV damage, stimulate collagen, reduce inflammation, and slow aging both topically and from within.',
+    category: 'Skin Health',
+    readTime: '10 min read',
+    date: '2026-03-11',
+    image: '✨'
+  },
+  {
     slug: 'olive-oil-for-liver-health',
     title: 'Olive Oil for Liver Health: Can EVOO Help Fatty Liver Disease?',
     excerpt: '1 in 4 adults has fatty liver disease. High-polyphenol EVOO reduces liver fat, lowers ALT/AST enzymes, and activates AMPK fat oxidation in liver cells. Science, dosage, and best oils.',
