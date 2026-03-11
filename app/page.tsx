@@ -36,7 +36,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://www.pamako.gr/wp-content/uploads/2025/02/pamako-monovarietal-high-phenolic-analysis.pdf",
     cultivar: "Tsounati",
     buyLink: "https://www.pamako.co.uk/?ref=roaqpdtk",
-    notes: "Verified 10 Mar 2026: LATEST batch Nov 2025 harvest — 2,081 mg/kg total polyphenols (qNMR). Oleocanthal 1,318 mg/kg, Oleacein 264 mg/kg — oleocanthal nearly 10x international average (135 mg/kg). Certificate C2526-00362, analysis date 21/11/2025. Certified organic (EU). Lab: World Olive Center for Health, Univ. of Athens, Prof. Prokopios Magiatis. Also tested by Multichrom.LAB (IOC-accredited). Single-estate, centuries-old mountain groves in Selino, SW Crete. Dark bottles with mirrored UV layer + natural cork. EU health claim certified (Reg. 432/2012). Awards 2017–2025. Founded 2014 by Eftihis Androulakis. £44.99 (500ml).",
+    notes: "Verified 11 Mar 2026: LATEST batch Nov 2025 harvest — 2,081 mg/kg total polyphenols (qNMR). Oleocanthal 1,318 mg/kg, Oleacein 264 mg/kg — oleocanthal nearly 10x international average (135 mg/kg). Certificate C2526-00362, analysis date 21/11/2025. Certified organic (EU). Lab: World Olive Center for Health, Univ. of Athens, Prof. Prokopios Magiatis. Also tested by Multichrom.LAB (IOC-accredited). Single-estate, centuries-old mountain groves in Selino, SW Crete. Dark bottles with mirrored UV layer + natural cork. EU health claim certified (Reg. 432/2012). Awards 2017–2025. Founded 2014 by Eftihis Androulakis. £44.99 (500ml).",
     productImage: "/img/pamako-monovarietal.jpg",
     instagram: "pamako"
   },
@@ -60,7 +60,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij",
-    notes: "Verified 10 Mar 2026: bottle sold out; refill subscription pouches (10% saving) available. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle. Free UK shipping.",
+    notes: "Verified 11 Mar 2026: 500ml bottle currently sold out; refill subscription pouches (10% saving) available — pair with original bottle. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle. Free UK shipping.",
     productImage: "/img/sp360-bottle.jpg",
     instagram: "sp360evoo"
   },
@@ -84,7 +84,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0774/2003/6420/files/analysis.png?v=1763034364",
     cultivar: "Coratina",
     buyLink: "https://www.olvlimits.com/products/green-machine",
-    notes: "Lab analysis shows total polyphenols 1,378 mg/kg; early-harvest Coratina; World Olive Center for Health watermark.",
+    notes: "Verified 11 Mar 2026: Site live, product in stock. 1,378 mg/kg HPLC (University of Athens method, World Olive Center for Health watermark on cert). Early-harvest Coratina from Puglia — picked Oct 2025 when olives are green and hard. Intense, peppery profile. Third-party lab tested every batch. £23.00 (500ml).",
     productImage: "/img/olvlimits-green-machine.png",
     instagram: "olvlimits"
   },
@@ -144,7 +144,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.masworth.co.uk/product/november-early-harvest-organic-olive-oil-500ml/",
-    notes: "Verified 10 Mar 2026: Lab-certified +1,200 mg/kg — producer site now confirms Oct–Nov 2025 harvest live. 500ml; certified organic; early-harvest 100% Koroneiki from southern Greece. Filtered for stability. Bundle price ≈ £22.87/bottle (3+). EU health claim certified.",
+    notes: "Verified 11 Mar 2026: Lab-certified +1,200 mg/kg (NMR, Oct–Nov 2025 harvest). 500ml; certified organic; early-harvest 100% Koroneiki from southern Greece. Filtered for long-term stability. Bundle price ≈ £22.87/bottle (3+). EU health claim certified. Among UK's top-ranked high-polyphenol oils on third-party trackers.",
     productImage: "/img/oil-9.jpg",
     instagram: "novemberoliveoil"
   },
@@ -360,7 +360,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/singlebottle",
-    notes: "Verified 10 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,057 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off). Nov 2024 harvest. High polyphenol content with robust peppery finish.",
+    notes: "Verified 11 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,058 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off). Nov 2024 harvest. High polyphenol content with robust peppery finish.",
     productImage: "/img/oil-27.png",
     instagram: "kosterina"
   },
@@ -504,7 +504,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-03-10'
+const LAST_DATA_UPDATE = '2026-03-11'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
