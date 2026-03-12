@@ -15,6 +15,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'olive-oil-for-hair',
+    title: 'Olive Oil for Hair: Does It Actually Grow Hair? (Science & Tips)',
+    excerpt: 'Hydroxytyrosol in high-polyphenol EVOO inhibits 5-alpha reductase — the enzyme that produces DHT, the hormone behind pattern hair loss. Plus oleuropein, squalene, and deep conditioning science.',
+    category: 'Hair Health',
+    readTime: '9 min read',
+    date: '2026-03-12',
+    image: '💆'
+  },
+  {
     slug: 'olive-oil-for-skin',
     title: 'Olive Oil for Skin: Benefits, How to Use & Best EVOO for Your Face',
     excerpt: 'High-polyphenol EVOO contains hydroxytyrosol, squalene, and oleocanthal — proven to fight UV damage, stimulate collagen, reduce inflammation, and slow aging both topically and from within.',
