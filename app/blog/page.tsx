@@ -15,6 +15,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'olive-oil-for-cancer-prevention',
+    title: 'Olive Oil for Cancer Prevention: Oleocanthal, Polyphenols & the Research (2026)',
+    excerpt: 'High-polyphenol EVOO contains oleocanthal — a compound that selectively kills cancer cells via lysosomal rupture. PREDIMED showed a 62% breast cancer risk reduction. Here\'s what the peer-reviewed science says.',
+    category: 'Health',
+    readTime: '11 min read',
+    date: '2026-03-13',
+    image: '🛡️'
+  },
+  {
     slug: 'olive-oil-for-hair',
     title: 'Olive Oil for Hair: Does It Actually Grow Hair? (Science & Tips)',
     excerpt: 'Hydroxytyrosol in high-polyphenol EVOO inhibits 5-alpha reductase — the enzyme that produces DHT, the hormone behind pattern hair loss. Plus oleuropein, squalene, and deep conditioning science.',
