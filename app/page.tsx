@@ -60,7 +60,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij",
-    notes: "Verified 11 Mar 2026: 500ml bottle currently sold out; refill subscription pouches (10% saving) available — pair with original bottle. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle. Free UK shipping.",
+    notes: "Verified 13 Mar 2026: 500ml bottle currently sold out; refill subscription pouches (10% saving) available — pair with original bottle. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle. Free UK shipping.",
     productImage: "/img/sp360-bottle.jpg",
     instagram: "sp360evoo"
   },
@@ -276,7 +276,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca/Arbequina/Koroneiki",
     buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
-    notes: "Verified Feb 2026: 2025 harvest now live (Nov 2025). Polyphenols updated to 642 mg/kg (was 661 in 2024 harvest). Origin: Pedrera, Sevilla, Andalucía. Acidity 0.14%. Mobile milling within 1 hour of picking. Awarded 'Best Organic EVOO in Sevilla' (Ecotrama gold star).",
+    notes: "Checked 13 Mar 2026: currently OUT OF STOCK on producer website. Verified Feb 2026: 2025 harvest now live (Nov 2025). Polyphenols updated to 642 mg/kg (was 661 in 2024 harvest). Origin: Pedrera, Sevilla, Andalucía. Acidity 0.14%. Mobile milling within 1 hour of picking. Awarded 'Best Organic EVOO in Sevilla' (Ecotrama gold star).",
     productImage: "/img/oil-20.png",
     instagram: "citizensofsoil"
   },
@@ -504,7 +504,7 @@ const COUNTRY_FLAGS: { [key: string]: string } = {
 }
 
 // Updated daily by cron after verification/search pass (UTC date)
-const LAST_DATA_UPDATE = '2026-03-11'
+const LAST_DATA_UPDATE = '2026-03-13'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
