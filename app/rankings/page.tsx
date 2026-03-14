@@ -37,7 +37,7 @@ export default function RankingsPage() {
       certificateLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
       cultivar: "Arbequina",
       buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
-      notes: "UV-protected refillable bottle; 1,711 mg/kg verified; herbaceous with green almond & tomato vine notes"
+      notes: "⚠️ Currently sold out. UV-protected refillable bottle; 1,711 mg/kg verified; herbaceous with green almond & tomato vine notes"
     },
     {
       id: 3, rank: 3, brand: "ONSURI Arbequina (2025/26 Harvest)", polyphenols: 1504, origin: "Jordan", harvestDate: "2025/26",
@@ -65,7 +65,7 @@ export default function RankingsPage() {
     },
     {
       id: 6, rank: 6, brand: "ONSURI Arbosana (Latest 2024/25)", polyphenols: 1255, origin: "Jordan", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$45.00", method: "IOC/HPLC", lab: "Per ONSURI FAQ",
+      price: "$", priceAmount: "£19.95", method: "IOC/HPLC", lab: "Per ONSURI FAQ",
       certificateLink: "https://onsurioliveoil.com",
       cultivar: "Arbosana",
       buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
@@ -121,7 +121,7 @@ export default function RankingsPage() {
     },
     {
       id: 13, rank: 13, brand: "Quattrociocchi 'Superbo'", polyphenols: 800, origin: "Italy", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$38.95", method: "Not specified", lab: "Retailer HPLC-style",
+      price: "$$", priceAmount: "$40.95", method: "Not specified", lab: "Retailer HPLC-style",
       certificateLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
       cultivar: "Itrana (Lazio)",
       buyLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
@@ -160,7 +160,7 @@ export default function RankingsPage() {
       notes: "Multiple retailers cite ~650–700 mg/kg"
     },
     {
-      id: 18, rank: 18, brand: "Citizens of Soil – Spanish", polyphenols: 661, origin: "Spain", harvestDate: "Nov 2024",
+      id: 18, rank: 18, brand: "Citizens of Soil – Spanish", polyphenols: 642, origin: "Spain", harvestDate: "Nov 2025",
       price: "$$", priceAmount: "$38.00", method: "Not specified", lab: "Independent lab",
       certificateLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
       cultivar: "Hojiblanca/Arbequina/Koroneiki",
@@ -192,8 +192,8 @@ export default function RankingsPage() {
       notes: "DO-protected, high count from Córdoba"
     },
     {
-      id: 22, rank: 22, brand: "Castillo de Canena – First Day Harvest Picual", polyphenols: 611, origin: "Spain", harvestDate: "Late 2024",
-      price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "Retailer listing",
+      id: 22, rank: 22, brand: "Castillo de Canena – First Day Harvest Picual", polyphenols: 611, origin: "Spain", harvestDate: "Fall 2025",
+      price: "$$", priceAmount: "$49.95", method: "Not specified", lab: "Retailer listing",
       certificateLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
       cultivar: "Picual",
       buyLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
