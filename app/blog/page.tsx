@@ -15,6 +15,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'oleocanthal-vs-ibuprofen',
+    title: 'Oleocanthal vs. Ibuprofen: Olive Oil\'s Natural Anti-Inflammatory Explained',
+    excerpt: 'A phenolic compound in fresh-pressed EVOO inhibits the exact same COX-1 and COX-2 enzymes as ibuprofen — discovered by accident in 2005 at the Monell Chemical Senses Center. Here\'s the dosage math, safety comparison, and which oils deliver the most.',
+    category: 'Science',
+    readTime: '12 min read',
+    date: '2026-03-14',
+    image: '🌶️'
+  },
+  {
     slug: 'olive-oil-for-cancer-prevention',
     title: 'Olive Oil for Cancer Prevention: Oleocanthal, Polyphenols & the Research (2026)',
     excerpt: 'High-polyphenol EVOO contains oleocanthal — a compound that selectively kills cancer cells via lysosomal rupture. PREDIMED showed a 62% breast cancer risk reduction. Here\'s what the peer-reviewed science says.',
