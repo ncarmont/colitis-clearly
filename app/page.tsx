@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import researchPapers from './research-carousel.json'
 import ResearchCarousel from './ResearchCarousel'
+import HeroBackground from './HeroBackground'
 import WorldMap from '@/components/WorldMap'
 import AdUnit from '@/components/AdUnit'
 import SmallAd from '@/components/SmallAd'
@@ -786,42 +787,41 @@ export default function HomePage() {
         <div className="absolute top-[30vh] right-0 w-[400px] h-[400px] bg-emerald-200/10 rounded-full blur-[150px] animate-float-orb pointer-events-none" />
         <div className="absolute top-[60vh] left-0 w-[300px] h-[300px] bg-teal-200/8 rounded-full blur-[120px] animate-float-orb-2 pointer-events-none" />
         <div className="relative z-10">
-      {/* Hero Header */}
-      <header className="relative overflow-hidden bg-gradient-to-br from-[#061226] via-[#0a1f3a] to-[#07382d] w-full border-b border-white/10 dot-grid-pattern hero-entrance">
-        {/* Animated aurora gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/40 via-cyan-900/10 to-teal-900/30 animate-aurora pointer-events-none" />
-        {/* Floating orbs — larger, more visible */}
-        <div className="absolute top-[5%] left-[10%] w-[200px] md:w-[350px] h-[200px] md:h-[350px] bg-emerald-400/15 rounded-full blur-[80px] md:blur-[120px] animate-float-orb pointer-events-none" />
-        <div className="absolute top-[15%] right-[5%] w-[180px] md:w-[300px] h-[180px] md:h-[300px] bg-teal-400/12 rounded-full blur-[70px] md:blur-[100px] animate-float-orb-2 pointer-events-none" />
-        <div className="absolute bottom-[0%] left-[30%] w-[160px] md:w-[250px] h-[160px] md:h-[250px] bg-cyan-400/10 rounded-full blur-[60px] md:blur-[90px] animate-float-orb-3 pointer-events-none" />
-        {/* Static radial glows — enhanced */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,rgba(16,185,129,0.22),transparent)] pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(45,212,191,0.15),transparent_50%)] pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(52,211,153,0.08),transparent_40%)] pointer-events-none" />
+      {/* ══════════════════════════════════════════════════════
+           HERO HEADER — Dark premium (matches research page)
+           ══════════════════════════════════════════════════════ */}
+      <header className="relative overflow-hidden w-full hero-entrance bg-gradient-to-br from-[#061226] via-[#0a1f3a] to-[#07382d]">
 
-        {/* Top utility bar */}
+        {/* Subtle ambient glow — NOT bright, just depth */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-emerald-500/[0.05] rounded-full blur-[120px] pointer-events-none" />
+
+        {/* Canvas particles + light rays */}
+        <HeroBackground />
+
+        {/* Dot grid texture */}
+        <div className="absolute inset-0 dot-grid-pattern pointer-events-none z-[2]" />
+
+        {/* ── Top utility bar ── */}
         <div className="relative z-30 flex items-center justify-between px-4 md:px-8 py-2 md:py-2.5 border-b border-white/10 bg-black/10 backdrop-blur-sm utility-bar-entrance">
           <div className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
-            <span className="text-[9px] md:text-[10px] text-emerald-100/80 font-semibold tracking-[0.18em] uppercase">Updated {LAST_DATA_UPDATE}</span>
+            <span className="text-[9px] md:text-[10px] text-emerald-200/70 font-semibold tracking-[0.18em] uppercase">Updated {LAST_DATA_UPDATE}</span>
           </div>
           <div className="flex items-center gap-3">
             {totalVisitors !== null && totalVisitors > 0 && (
-              <span className="hidden md:inline-flex text-[10px] text-white/60 bg-white/10 border border-white/15 rounded-full px-2 py-0.5">
+              <span className="hidden md:inline-flex text-[10px] text-white/50 bg-white/[0.06] border border-white/10 rounded-full px-2 py-0.5">
                 {totalVisitors >= 1000 ? `${(totalVisitors / 1000).toFixed(1)}K` : totalVisitors.toLocaleString()} visitors
               </span>
             )}
             {instagramFollowers && instagramFollowers > 0 && (
-              <span className="hidden md:inline-flex text-[10px] text-pink-100 bg-pink-500/15 border border-pink-300/20 rounded-full px-2 py-0.5">
+              <span className="hidden md:inline-flex text-[10px] text-pink-200/70 bg-pink-500/10 border border-pink-300/15 rounded-full px-2 py-0.5">
                 {instagramFollowers >= 1000 ? `${(instagramFollowers / 1000).toFixed(1)}K` : instagramFollowers.toLocaleString()} IG
               </span>
             )}
             <Link
               href="https://www.instagram.com/bestoliveoilranked.com_?igsh=MW81OXFkZW9uNzBnNg%3D%3D&utm_source=qr"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="inline-flex items-center justify-center rounded-lg p-1.5 bg-white/10 border border-white/15 text-white/70 hover:text-pink-300 hover:bg-white/20 transition-colors duration-200"
+              target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+              className="inline-flex items-center justify-center rounded-lg p-1.5 bg-white/[0.06] border border-white/10 text-white/60 hover:text-pink-300 hover:bg-white/[0.12] transition-all duration-200"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
                 <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm5 3a5 5 0 100 10 5 5 0 000-10zm0 2.2a2.8 2.8 0 110 5.6 2.8 2.8 0 010-5.6zM17.5 5.5a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z" />
@@ -830,33 +830,33 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Hero content — cinematic entrance sequence */}
-        <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-4 pb-4 md:pt-6 md:pb-6 text-center">
+        {/* ── Hero content ── */}
+        <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-4 pb-5 md:pt-6 md:pb-7 text-center">
           <h1 className="title-entrance">
             <span className="block text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.08]">
               Best Extra Virgin Olive Oils
             </span>
-            <span className="block mt-0.5 text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.08] text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-lime-300 animate-shimmer-text animate-text-glow subtitle-entrance">
+            <span className="block mt-0.5 text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.08] text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-300 animate-shimmer-text subtitle-entrance">
               Ranked by Science
             </span>
           </h1>
 
-          <p className="mt-1 text-[9px] md:text-[10px] text-white/40 font-medium tracking-[0.25em] uppercase tagline-entrance">
+          <p className="mt-1.5 text-[9px] md:text-[10px] text-white/40 font-medium tracking-[0.25em] uppercase tagline-entrance">
             The Home of Olive Oil Science
           </p>
 
-          {/* Stats — cinematic pop-in */}
+          {/* Stats — compact inline */}
           <div className="mt-3 flex items-center justify-center gap-4 md:gap-6 stats-entrance">
             <div className="text-center stat-item-1">
               <span className="text-lg md:text-xl font-bold text-white">{stats.totalOils}</span>
               <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">oils</span>
             </div>
-            <span className="text-white/15 text-sm stats-entrance">|</span>
+            <span className="text-white/15 text-sm">|</span>
             <div className="text-center stat-item-2">
               <span className="text-lg md:text-xl font-bold text-white">{stats.countries}</span>
               <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">countries</span>
             </div>
-            <span className="text-white/15 text-sm stats-entrance">|</span>
+            <span className="text-white/15 text-sm">|</span>
             <div className="text-center stat-item-3">
               <span className="text-lg md:text-xl font-bold text-white">{stats.maxPolyphenols}</span>
               <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">max mg/kg</span>
@@ -864,20 +864,24 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent line-sweep origin-center" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
       </header>
 
       {/* Research Carousel — auto-scrolling client component */}
       <ResearchCarousel papers={researchPapers} />
 
       {/* Rankings Section Banner */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-[#0a1628] via-[#0d3b2e] to-[#0a1628] py-3 md:py-4 text-center border-t border-emerald-500/10">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/10 via-teal-800/20 to-emerald-900/10 animate-aurora pointer-events-none" />
+      <div className="relative overflow-hidden bg-[#0a1628] py-4 md:py-5 text-center">
+        {/* Glow line at top */}
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-400/30 to-transparent" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-8 bg-emerald-400/10 blur-[20px] pointer-events-none" />
         <div className="absolute inset-0 dot-grid-pattern pointer-events-none" />
-        <h2 className="relative text-base md:text-xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-teal-300 animate-shimmer-text animate-text-glow">
+        <h2 className="relative text-lg md:text-2xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-300 animate-shimmer-text" style={{ filter: 'drop-shadow(0 0 20px rgba(16,185,129,0.2))' }}>
           Top Polyphenol EVOO Rankings
         </h2>
-        <p className="relative text-[9px] md:text-[10px] text-white/30 mt-0.5 tracking-wide">Lab-verified · Ranked by mg/kg polyphenol content</p>
+        <p className="relative text-[9px] md:text-[10px] text-white/25 mt-1 tracking-widest uppercase font-medium">Lab-verified · Ranked by mg/kg polyphenol content</p>
+        {/* Glow line at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-400/20 to-transparent" />
       </div>
 
       {/* Filters Section (hidden to reduce visual load) */}
@@ -950,10 +954,11 @@ export default function HomePage() {
       )}
 
       {/* Rankings Table */}
-      <section className="relative py-3 md:py-6 px-4 md:px-6 w-full no-auto-ads overflow-hidden" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
-        {/* Subtle floating orbs behind rankings */}
-        <div className="absolute top-[20%] right-[5%] w-[200px] h-[200px] bg-emerald-600/5 rounded-full blur-[80px] animate-float-orb pointer-events-none" />
-        <div className="absolute bottom-[30%] left-[3%] w-[250px] h-[250px] bg-teal-500/4 rounded-full blur-[100px] animate-float-orb-2 pointer-events-none" />
+      <section className="relative py-3 md:py-6 px-4 md:px-6 w-full no-auto-ads overflow-hidden" style={{background: 'linear-gradient(135deg, #0a1628 0%, #111d32 25%, #0d2a3a 50%, #111d32 75%, #0a1628 100%)'}}>
+        {/* Ambient glow behind cards */}
+        <div className="absolute top-[10%] right-[10%] w-[250px] h-[250px] bg-emerald-500/[0.04] rounded-full blur-[100px] animate-float-orb pointer-events-none" />
+        <div className="absolute bottom-[20%] left-[5%] w-[300px] h-[300px] bg-teal-500/[0.03] rounded-full blur-[120px] animate-float-orb-2 pointer-events-none" />
+        <div className="absolute top-[50%] left-[50%] w-[200px] h-[200px] bg-cyan-500/[0.02] rounded-full blur-[80px] animate-float-orb-3 pointer-events-none" />
         <div className="max-w-7xl mx-auto w-full">
           {/* Info strip — ultra-compact (freshest harvest only) */}
           <div className="mb-2 px-2">

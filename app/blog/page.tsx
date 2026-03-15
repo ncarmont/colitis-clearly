@@ -342,30 +342,24 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 py-20">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4UzAgOC4wNiAwIDE4YzAgNC40MiAxLjYgOC40OCA0LjI0IDExLjZDMi4xMiAzMi45MiAwIDM5LjEyIDAgNDZoMTJjMC02LjYzIDUuMzctMTIgMTItMTJzMTIgNS4zNyAxMiAxMmgxMmMwLTYuODgtMi4xMi0xMy4wOC00LjI0LTE2LjRDNTQuNCAyNi40OCA1NiAyMi40MiA1NiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-10"></div>
-
-        <div className="relative max-w-7xl mx-auto px-6">
-          <div className="text-center space-y-6">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-              <span className="text-sm font-medium text-white">Expert EVOO Guides & Research</span>
-            </div>
-
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white">
-              High Polyphenol
-              <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200">
-                Olive Oil Blog
-              </span>
-            </h1>
-
-            <p className="text-xl md:text-2xl text-green-50 max-w-3xl mx-auto font-light">
-              Science-backed guides, health research, and expert tips on choosing the healthiest extra virgin olive oil
-            </p>
-          </div>
+    <main className="min-h-screen bg-[#060e1a]">
+      {/* Hero Section — dark, matches research/about */}
+      <header className="relative overflow-hidden bg-gradient-to-br from-[#061226] via-[#0a1f3a] to-[#07382d] border-b border-white/10">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-emerald-500/[0.05] rounded-full blur-[100px]" />
+        <div className="absolute inset-0 dot-grid-pattern pointer-events-none" />
+        <div className="relative max-w-5xl mx-auto px-4 pt-6 pb-8 md:pt-8 md:pb-10 text-center">
+          <Link href="/" className="inline-flex items-center gap-1.5 text-emerald-400/50 hover:text-emerald-400 text-xs transition-colors mb-4 group">
+            <svg className="w-3 h-3 group-hover:-translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
+            Back to Rankings
+          </Link>
+          <h1 className="text-2xl md:text-4xl font-black tracking-tight text-white">
+            Olive Oil <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-teal-300">Blog</span>
+          </h1>
+          <p className="text-white/35 text-sm mt-2 max-w-lg mx-auto">
+            Science-backed guides, health research, and expert tips on high polyphenol EVOO
+          </p>
         </div>
-      </section>
+      </header>
 
       {/* Blog Posts Grid */}
       <section className="py-16 px-6">
@@ -375,72 +369,44 @@ export default function BlogPage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-2xl border border-gray-700/50 overflow-hidden hover:border-green-500/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/20"
+                className="group bg-white/[0.03] rounded-xl border border-white/[0.06] overflow-hidden hover:bg-white/[0.05] hover:border-emerald-500/20 transition-all duration-200"
               >
                 <div className="p-6">
                   {/* Icon */}
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <span className="text-3xl">{post.image}</span>
-                  </div>
-
                   {/* Category & Date */}
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-bold text-green-400 uppercase tracking-wider">{post.category}</span>
-                    <span className="text-xs text-gray-500">{post.readTime}</span>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-lg">{post.image}</span>
+                    <span className="text-[9px] font-bold text-emerald-400/60 uppercase tracking-wider">{post.category}</span>
+                    <span className="text-[9px] text-white/20">{post.readTime}</span>
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors">
+                  <h2 className="text-sm font-bold text-white/90 mb-2 group-hover:text-emerald-300 transition-colors leading-snug">
                     {post.title}
                   </h2>
 
                   {/* Excerpt */}
-                  <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                  <p className="text-white/30 text-xs leading-relaxed mb-3 line-clamp-3">
                     {post.excerpt}
                   </p>
 
                   {/* Read More */}
-                  <div className="flex items-center gap-2 text-green-400 font-semibold text-sm group-hover:gap-4 transition-all">
-                    <span>Read Article</span>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </div>
+                  <span className="text-[10px] text-emerald-500/60 font-medium group-hover:text-emerald-400 transition-colors">Read →</span>
                 </div>
-
-                <div className="h-1 bg-gradient-to-r from-green-600 to-emerald-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="relative overflow-hidden bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 rounded-3xl shadow-2xl border border-green-700/50 p-12 text-center">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4UzAgOC4wNiAwIDE4YzAgNC40MiAxLjYgOC40OCA0LjI0IDExLjZDMi4xMiAzMi45MiAwIDM5LjEyIDAgNDZoMTJjMC02LjYzIDUuMzctMTIgMTItMTJzMTIgNS4zNyAxMiAxMmgxMmMwLTYuODgtMi4xMi0xMy4wOC00LjI0LTE2LjRDNTQuNCAyNi40OCA1NiAyMi40MiA1NiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-50"></div>
-
-            <div className="relative">
-              <h2 className="text-4xl font-bold text-white mb-4">
-                Ready to Find Your Perfect EVOO?
-              </h2>
-              <p className="text-xl text-green-50 mb-8">
-                Explore our complete rankings of lab-verified high polyphenol olive oils
-              </p>
-              <Link
-                href="/"
-                className="inline-flex items-center gap-3 bg-white text-green-700 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-green-50 transition-all duration-200 shadow-2xl hover:shadow-3xl hover:scale-105"
-              >
-                <span>View Rankings</span>
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* CTA */}
+      <div className="py-10 text-center">
+        <p className="text-xs text-white/20 mb-4">New articles published weekly</p>
+        <Link href="/" className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-sm font-semibold rounded-xl hover:from-emerald-500 hover:to-teal-500 transition-all">
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
+          View Oil Rankings
+        </Link>
+      </div>
     </main>
   )
 }
