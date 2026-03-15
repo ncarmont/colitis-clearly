@@ -3,9 +3,8 @@
 import { useEffect, useRef } from 'react'
 
 /**
- * HeroBackground — subtle particle starfield effect.
- * Small white particles float gently. No green blobs.
- * Pure canvas, GPU-composited, minimal performance impact.
+ * HeroBackground — floating particle starfield.
+ * Larger glowing dots that drift gently. White + subtle emerald tint on some.
  */
 export default function HeroBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -17,32 +16,35 @@ export default function HeroBackground() {
     if (!ctx) return
 
     let raf: number
-    let time = 0
+    let w = 0, h = 0
 
-    const particles: { x: number; y: number; vx: number; vy: number; size: number; alpha: number; pulse: number }[] = []
+    type Particle = { x: number; y: number; vx: number; vy: number; size: number; alpha: number; pulse: number; glow: boolean }
+    const particles: Particle[] = []
 
     const resize = () => {
       const dpr = Math.min(window.devicePixelRatio || 1, 2)
       const rect = canvas.parentElement?.getBoundingClientRect()
       if (!rect) return
-      canvas.width = rect.width * dpr
-      canvas.height = rect.height * dpr
-      canvas.style.width = rect.width + 'px'
-      canvas.style.height = rect.height + 'px'
-      ctx.scale(dpr, dpr)
+      w = rect.width
+      h = rect.height
+      canvas.width = w * dpr
+      canvas.height = h * dpr
+      canvas.style.width = w + 'px'
+      canvas.style.height = h + 'px'
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
 
-      // Init particles
       particles.length = 0
-      const count = Math.min(50, Math.floor(rect.width / 20))
+      const count = Math.min(60, Math.floor(w / 18))
       for (let i = 0; i < count; i++) {
         particles.push({
-          x: Math.random() * rect.width,
-          y: Math.random() * rect.height,
-          vx: (Math.random() - 0.5) * 0.15,
-          vy: (Math.random() - 0.5) * 0.1 - 0.05,
-          size: Math.random() * 1.2 + 0.4,
-          alpha: Math.random() * 0.3 + 0.05,
+          x: Math.random() * w,
+          y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.2,
+          vy: (Math.random() - 0.5) * 0.15 - 0.03,
+          size: Math.random() * 2.5 + 1.0,  // bigger: 1-3.5px radius
+          alpha: Math.random() * 0.45 + 0.1,
           pulse: Math.random() * Math.PI * 2,
+          glow: Math.random() < 0.3, // 30% get a soft glow halo
         })
       }
     }
@@ -51,33 +53,42 @@ export default function HeroBackground() {
     window.addEventListener('resize', resize)
 
     const draw = () => {
-      time += 0.003
-      const w = canvas.width / Math.min(window.devicePixelRatio || 1, 2)
-      const h = canvas.height / Math.min(window.devicePixelRatio || 1, 2)
       ctx.clearRect(0, 0, w, h)
 
-      // Particles only — subtle white dots
       for (const p of particles) {
         p.x += p.vx
         p.y += p.vy
-        p.pulse += 0.012
+        p.pulse += 0.008
 
-        if (p.x < 0) p.x = w
-        if (p.x > w) p.x = 0
-        if (p.y < 0) p.y = h
-        if (p.y > h) p.y = 0
+        if (p.x < -5) p.x = w + 5
+        if (p.x > w + 5) p.x = -5
+        if (p.y < -5) p.y = h + 5
+        if (p.y > h + 5) p.y = -5
 
-        const alpha = p.alpha * (0.5 + 0.5 * Math.sin(p.pulse))
+        const a = p.alpha * (0.5 + 0.5 * Math.sin(p.pulse))
+
+        // Glow halo for some particles
+        if (p.glow) {
+          const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size * 4)
+          grad.addColorStop(0, `rgba(110, 231, 183, ${a * 0.3})`)
+          grad.addColorStop(1, 'rgba(110, 231, 183, 0)')
+          ctx.beginPath()
+          ctx.arc(p.x, p.y, p.size * 4, 0, Math.PI * 2)
+          ctx.fillStyle = grad
+          ctx.fill()
+        }
+
+        // Core dot
         ctx.beginPath()
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`
+        ctx.fillStyle = `rgba(255, 255, 255, ${a})`
         ctx.fill()
       }
 
       raf = requestAnimationFrame(draw)
     }
 
-    const timer = setTimeout(() => { raf = requestAnimationFrame(draw) }, 300)
+    const timer = setTimeout(() => { raf = requestAnimationFrame(draw) }, 200)
 
     return () => {
       clearTimeout(timer)

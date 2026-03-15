@@ -5,6 +5,7 @@ import Link from 'next/link'
 import researchPapers from './research-carousel.json'
 import ResearchCarousel from './ResearchCarousel'
 import HeroBackground from './HeroBackground'
+import ScrollReveal from './ScrollReveal'
 import WorldMap from '@/components/WorldMap'
 import AdUnit from '@/components/AdUnit'
 import SmallAd from '@/components/SmallAd'
@@ -492,6 +493,48 @@ const OILS_DATA: OliveOil[] = [
     instagram: "pjkabos"
   }
 ]
+
+// Short taglines for each oil — shown on cards
+const OIL_TAGLINES: Record<number, string> = {
+  38: 'Single-estate Tsounati from ancient Cretan mountain groves',
+  1: 'Ultra-high phenolic shot from Koroneiki olives, early harvest',
+  2: 'Premium Slovenian blend, award-winning Istrian EVOO',
+  3: 'Limited edition Lianolia from historic Corfu estate',
+  4: 'Wild Arbequina pressed within hours, California-grown',
+  5: 'Single-variety Arbequina, cold-pressed in Andalusia',
+  6: 'Andalusian Arbequina in generous 1L format',
+  7: 'Rare Arbosana cultivar from southern Spain',
+  8: 'Biodynamic Hojiblanca from Málaga highlands',
+  9: 'Turkish organic early harvest, robust and peppery',
+  10: 'High-phenolic Koroneiki from Peloponnese, Greece',
+  11: 'Arbequina-Arbosana signature blend from Spain',
+  12: 'Olio Nuovo Koroneiki, fresh-pressed in Greece',
+  13: 'Organic Picual from Jaén, Spain — intense and fruity',
+  14: 'Science-backed EVOO, optimized for health benefits',
+  15: 'Traditional Itrana cultivar from Lazio, Italy',
+  16: 'Robust Koroneiki blend from family groves in Greece',
+  17: 'Organic Picual from Almería desert, biodynamic estate',
+  18: 'Rare Peruvian EVOO from ancient olive groves',
+  19: 'Noble Tuscan blend from the Frescobaldi estate',
+  20: 'Bold Spanish EVOO from sun-drenched Andalusia',
+  21: 'Extra rare Tuscan Moraiolo-Frantoio blend',
+  22: 'Picholine from the Atlas Mountains of Morocco',
+  23: 'PDO Priego Picuda-Hojiblanca, multi-award winner',
+  24: 'First Day Harvest Picual from Jaén, ultra-fresh',
+  25: 'Robust Moraiolo-Frantoio blend from Umbria, Italy',
+  26: 'Cretan Koroneiki from Sfakiá, rich in antioxidants',
+  27: 'Premium Greek Koroneiki, smooth and balanced',
+  28: 'Small-batch Tuscan from artisan groves in Chianti',
+  29: 'Estate Koroneiki from Laconia, Peloponnese',
+  30: 'Organic Arbequina from biodynamic Málaga estate',
+  31: 'Peloponnese Koroneiki, fruity and herbaceous',
+  32: 'Bold Tuscan blend with Leccino and Pendolino',
+  33: 'Organic medium-intensity Koroneiki from Greece',
+  34: 'Bryan Johnson\'s longevity-focused EVOO blend',
+  35: 'Premium Lianolia from the Governor\'s Corfu estate',
+  36: 'PDO Priego Hojiblanca, organic and award-winning',
+  37: 'Non-organic robust Koroneiki, bold peppery finish',
+}
 
 const COUNTRY_FLAGS: { [key: string]: string } = {
   "Greece": "🇬🇷",
@@ -1025,10 +1068,9 @@ export default function HomePage() {
                     displayRank === 3 ? 'bg-gradient-to-r from-[#1c2336] to-[#182a4a]' :
                     'bg-gradient-to-r from-[#0f1f39] to-[#123055]'
                   return (
+                    <ScrollReveal key={oil.id} delay={Math.min(index * 60, 300)}>
                     <div
-                      key={oil.id}
-                      className={`relative overflow-hidden rounded-2xl border border-gray-100 border-l-4 ${borderColor} shadow-sm animate-fade-in-row`}
-                      style={{ animationDelay: `${index * 40}ms` }}
+                      className={`relative overflow-hidden rounded-2xl border border-gray-100 border-l-4 ${borderColor} shadow-sm`}
                     >
                       {/* Product image — tall, fills width */}
                       <a href={oil.buyLink} target="_blank" rel="noopener noreferrer" className="block relative h-52 w-full overflow-hidden">
@@ -1081,6 +1123,9 @@ export default function HomePage() {
                           >
                             {oil.brand}
                           </a>
+                          {OIL_TAGLINES[oil.id] && (
+                            <p className="text-[9px] text-white/30 mt-0.5 line-clamp-1 italic">{OIL_TAGLINES[oil.id]}</p>
+                          )}
                           <div className="flex items-center gap-1.5 mt-0.5 text-[10px] text-white/75 flex-wrap">
                             <span>{COUNTRY_FLAGS[oil.origin]} {oil.origin}</span>
                             <span className="text-white/40">•</span>
@@ -1132,15 +1177,15 @@ export default function HomePage() {
                         </div>
                       </div>
                     </div>
+                    </ScrollReveal>
                   )
                 }
 
                 // ── NORMAL CARD for ranks 4+ ──
                 return (
+                  <ScrollReveal key={oil.id} delay={Math.min(index * 60, 300)}>
                   <div
-                    key={oil.id}
-                    className={`flex items-center gap-3 px-3 py-3 rounded-2xl border border-white/10 shadow-sm animate-fade-in-row ${rowBg}`}
-                    style={{ animationDelay: `${index * 40}ms` }}
+                    className={`flex items-center gap-3 px-3 py-3 rounded-2xl border border-white/10 shadow-sm ${rowBg}`}
                   >
                     {/* Rank badge */}
                     <div className="flex flex-col items-center gap-0.5 shrink-0 w-9">
@@ -1166,6 +1211,9 @@ export default function HomePage() {
                       >
                         {oil.brand}
                       </a>
+                      {OIL_TAGLINES[oil.id] && (
+                        <p className="text-[9px] text-white/30 mt-0.5 line-clamp-1 italic">{OIL_TAGLINES[oil.id]}</p>
+                      )}
                       <div className="flex items-center gap-1.5 mt-1 flex-wrap">
                         <span className={`text-xl font-extrabold leading-none ${scoreColor}`}>{score}</span>
                         <span className="text-[10px] text-white/80 font-medium">mg/kg polyphenols</span>
@@ -1225,6 +1273,7 @@ export default function HomePage() {
                       )}
                     </div>
                   </div>
+                  </ScrollReveal>
                 )
               })}
             </div>
@@ -1262,10 +1311,9 @@ export default function HomePage() {
                   const isHero = displayRank === 1
 
                   return (
+                    <ScrollReveal key={oil.id} delay={Math.min(index * 80, 400)} className={isHero ? 'md:col-span-2 lg:col-span-2' : ''}>
                     <div
-                      key={oil.id}
-                      className={`relative overflow-hidden rounded-2xl border ${cardBorder} ${cardBg} shadow-lg card-hover animate-glow-pulse ranking-card-enter ${isHero ? 'md:col-span-2 lg:col-span-2' : ''}`}
-                      style={{ animationDelay: `${index * 60}ms` }}
+                      className={`relative overflow-hidden rounded-2xl border ${cardBorder} ${cardBg} shadow-lg card-hover h-full`}
                     >
                       {/* Product image area */}
                       {oil.productImage ? (
@@ -1344,6 +1392,9 @@ export default function HomePage() {
                         >
                           {oil.brand}
                         </a>
+                        {OIL_TAGLINES[oil.id] && (
+                          <p className="text-[10px] text-white/35 mt-0.5 line-clamp-1 italic">{OIL_TAGLINES[oil.id]}</p>
+                        )}
                         <div className="flex items-center gap-2 mt-1.5 text-xs text-white/70 flex-wrap">
                           <span className="inline-flex items-center gap-1">
                             <span className="text-sm">{COUNTRY_FLAGS[oil.origin]}</span>
@@ -1403,6 +1454,7 @@ export default function HomePage() {
                         </div>
                       </div>
                     </div>
+                    </ScrollReveal>
                   )
                 })}
               </div>
