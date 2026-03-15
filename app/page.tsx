@@ -828,8 +828,8 @@ export default function HomePage() {
             </span>
           </h1>
 
-          <p className="hidden md:block mt-2.5 text-sm text-emerald-100/60 font-light max-w-md mx-auto animate-fade-in-delay">
-            Lab-verified polyphenol rankings — independent &amp; peer-reviewed.
+          <p className="mt-1.5 text-[10px] md:text-xs text-emerald-300/80 font-semibold uppercase tracking-[0.2em] animate-fade-in-delay">
+            The Home of Olive Oil Science
           </p>
 
           {/* Unified value + stats card (simplified) */}
