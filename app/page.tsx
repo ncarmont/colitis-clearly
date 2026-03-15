@@ -3,6 +3,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import researchPapers from './research-carousel.json'
+import ResearchCarousel from './ResearchCarousel'
 import WorldMap from '@/components/WorldMap'
 import AdUnit from '@/components/AdUnit'
 import SmallAd from '@/components/SmallAd'
@@ -854,82 +855,8 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
       </header>
 
-      {/* Research Carousel — auto-scrolling */}
-      {(() => {
-        const CATEGORY_ICONS: Record<string, string> = {
-          Heart: '❤️', Brain: '🧠', Gut: '🦠', Cancer: '🔬',
-          Inflammation: '🔥', Metabolism: '⚡', Longevity: '🧬', Skin: '✨',
-        }
-        // eslint-disable-next-line react-hooks/rules-of-hooks
-        const scrollRef = useRef<HTMLDivElement>(null)
-        // eslint-disable-next-line react-hooks/rules-of-hooks
-        useEffect(() => {
-          const el = scrollRef.current
-          if (!el) return
-          let raf: number
-          let paused = false
-          const speed = 0.3 // px per frame — slow gentle drift
-          const scroll = () => {
-            if (!paused && el) {
-              el.scrollLeft += speed
-              if (el.scrollLeft >= el.scrollWidth - el.clientWidth) {
-                el.scrollLeft = 0
-              }
-            }
-            raf = requestAnimationFrame(scroll)
-          }
-          raf = requestAnimationFrame(scroll)
-          const pause = () => { paused = true }
-          const resume = () => { paused = false }
-          el.addEventListener('mouseenter', pause)
-          el.addEventListener('mouseleave', resume)
-          el.addEventListener('touchstart', pause)
-          el.addEventListener('touchend', () => setTimeout(resume, 3000))
-          return () => {
-            cancelAnimationFrame(raf)
-            el.removeEventListener('mouseenter', pause)
-            el.removeEventListener('mouseleave', resume)
-          }
-        }, [])
-        return (
-          <section className="bg-[#0a1628] pt-3 pb-3 md:pt-3 md:pb-4 border-t border-white/5">
-            <div className="max-w-7xl mx-auto px-3 md:px-6">
-              <div className="flex items-center justify-between mb-2">
-                <h2 className="text-[11px] font-semibold text-white/60 uppercase tracking-[0.12em]">Latest Olive Oil Research Papers</h2>
-                <Link href="/blog" className="text-[10px] text-white/30 hover:text-white/50 font-medium transition-colors">
-                  All research →
-                </Link>
-              </div>
-              <div className="relative">
-              <div className="absolute left-0 top-0 bottom-0 w-3 bg-gradient-to-r from-[#0a1628] to-transparent z-10 pointer-events-none" />
-              <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#0a1628] to-transparent z-10 pointer-events-none" />
-              <div ref={scrollRef} className="flex gap-2.5 overflow-x-auto scrollbar-hide pb-1">
-                {researchPapers.map((paper) => (
-                  <Link
-                    key={paper.slug}
-                    href={`/blog/${paper.slug}`}
-                    className="shrink-0 w-[210px] md:w-[220px] group"
-                  >
-                    <div className="h-full bg-white/[0.06] border border-white/[0.08] rounded-lg px-2.5 py-2 hover:bg-white/[0.1] hover:border-white/[0.15] transition-all duration-150">
-                      <div className="flex items-center gap-1.5 mb-1">
-                        <span className="text-[8px]">{CATEGORY_ICONS[paper.category] || '📄'}</span>
-                        <span className="text-[7px] font-semibold text-white/30 uppercase tracking-wider">{paper.category}</span>
-                      </div>
-                      <h3 className="text-[11px] font-medium text-white/80 leading-snug line-clamp-2 group-hover:text-emerald-300 transition-colors">
-                        {paper.title}
-                      </h3>
-                      <p className="mt-1 text-[8px] text-white/25 italic truncate">
-                        {paper.paper}
-                      </p>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-              </div>
-            </div>
-          </section>
-        )
-      })()}
+      {/* Research Carousel — auto-scrolling client component */}
+      <ResearchCarousel papers={researchPapers} />
 
       {/* Rankings Section Banner */}
       <div className="bg-gradient-to-r from-[#0a1628] via-[#0d3b2e] to-[#0a1628] py-3 md:py-4 text-center border-t border-emerald-500/10">
