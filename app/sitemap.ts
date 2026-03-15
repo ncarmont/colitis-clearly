@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Blog posts
   const blogPosts = [
+    'best-olive-oil-brand-2026',
     'what-are-polyphenols-olive-oil',
     'health-benefits-high-polyphenol-evoo',
     'top-10-highest-polyphenol-olive-oils',

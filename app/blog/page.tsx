@@ -15,6 +15,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'best-olive-oil-brand-2026',
+    title: 'Best Olive Oil Brand 2026: Lab-Tested, Ranked & Reviewed',
+    excerpt: 'The only 2026 olive oil brand ranking backed by independent polyphenol lab data. We tested 10 brands with HPLC and qNMR — here\'s who actually delivers on the health claims, plus 2026 drought impact on prices and availability.',
+    category: 'Rankings',
+    readTime: '15 min read',
+    date: '2026-03-15',
+    image: '🏆'
+  },
+  {
     slug: 'oleocanthal-vs-ibuprofen',
     title: 'Oleocanthal vs. Ibuprofen: Olive Oil\'s Natural Anti-Inflammatory Explained',
     excerpt: 'A phenolic compound in fresh-pressed EVOO inhibits the exact same COX-1 and COX-2 enzymes as ibuprofen — discovered by accident in 2005 at the Monell Chemical Senses Center. Here\'s the dosage math, safety comparison, and which oils deliver the most.',
