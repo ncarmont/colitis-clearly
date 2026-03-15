@@ -1,72 +1,146 @@
 [
   {
+    "slug": "olive-oil-vs-avocado-oil",
+    "title": "Olive Oil vs Avocado Oil: Which Is Actually Healthier?",
+    "paper": "Multiple studies meta-analysis",
+    "finding": "EVOO wins on polyphenols and anti-inflammatory compounds; avocado oil wins on smoke point",
+    "category": "Comparison",
+    "date": "2026-03-15"
+  },
+  {
+    "slug": "best-olive-oil-brand-2026",
+    "title": "Best Olive Oil Brand 2026: Lab-Tested and Ranked",
+    "paper": "Original lab data analysis — 38 oils tested",
+    "finding": "Pamako Monovarietal leads with 2,081 mg/kg polyphenols verified by qNMR",
+    "category": "Rankings",
+    "date": "2026-03-15"
+  },
+  {
     "slug": "oleocanthal-vs-ibuprofen",
     "title": "Can Olive Oil Replace Ibuprofen?",
     "paper": "Beauchamp et al., Nature (2005)",
-    "finding": "Oleocanthal inhibits the same COX enzymes as ibuprofen",
-    "category": "Inflammation"
-  },
-  {
-    "slug": "olive-oil-for-brain-health-dementia",
-    "title": "What 28 Years of Data Say About Olive Oil & Your Brain",
-    "paper": "Harvard T.H. Chan School of Public Health (2024)",
-    "finding": "Higher olive oil intake linked to 28% lower dementia mortality",
-    "category": "Brain"
+    "finding": "Oleocanthal inhibits the same COX-1 and COX-2 enzymes as ibuprofen",
+    "category": "Inflammation",
+    "date": "2026-03-14"
   },
   {
     "slug": "olive-oil-for-cancer-prevention",
     "title": "The Compound in EVOO That Kills Cancer Cells",
     "paper": "Celano et al., Int J Mol Sci (2020)",
-    "finding": "Oleocanthal triggers cancer cell death within 30 minutes",
-    "category": "Cancer"
+    "finding": "Oleocanthal triggers cancer cell death within 30 minutes in vitro",
+    "category": "Cancer",
+    "date": "2026-03-13"
+  },
+  {
+    "slug": "olive-oil-for-brain-health-dementia",
+    "title": "What 28 Years of Data Say About Olive Oil and Your Brain",
+    "paper": "Harvard T.H. Chan School of Public Health (2024)",
+    "finding": "Higher olive oil intake linked to 28% lower dementia mortality risk",
+    "category": "Brain",
+    "date": "2026-03-12"
   },
   {
     "slug": "olive-oil-for-gut-health",
     "title": "How Olive Oil Polyphenols Reshape Your Microbiome",
     "paper": "Ferraris et al., Nutrients (2023)",
-    "finding": "EVOO polyphenols increase Bifidobacteria and reduce gut inflammation",
-    "category": "Gut"
+    "finding": "EVOO polyphenols increase Bifidobacteria and reduce gut inflammation markers",
+    "category": "Gut",
+    "date": "2026-03-11"
+  },
+  {
+    "slug": "olive-oil-for-skin",
+    "title": "What Dermatology Research Says About Olive Oil for Skin",
+    "paper": "Multiple dermatology studies review",
+    "finding": "Hydroxytyrosol in EVOO shows UV-protective and anti-aging properties",
+    "category": "Skin",
+    "date": "2026-03-11"
+  },
+  {
+    "slug": "olive-oil-for-hair",
+    "title": "Can Olive Oil Actually Help Your Hair? The Evidence",
+    "paper": "Trichology and nutrition studies",
+    "finding": "Oleic acid penetrates the hair shaft; polyphenols reduce scalp inflammation",
+    "category": "Skin",
+    "date": "2026-03-12"
   },
   {
     "slug": "health-benefits-high-polyphenol-evoo",
     "title": "The EU's Only Approved Health Claim for Olive Oil",
     "paper": "EU Regulation 432/2012, EFSA Panel",
-    "finding": "250mg/kg polyphenols proven to protect blood lipids from oxidation",
-    "category": "Heart"
+    "finding": "250mg/kg polyphenols proven to protect blood lipids from oxidative stress",
+    "category": "Heart",
+    "date": "2026-03-10"
   },
   {
     "slug": "olive-oil-longevity-blue-zones",
     "title": "Why Blue Zone Centenarians Drink Olive Oil Daily",
     "paper": "Buettner, National Geographic Blue Zones Project",
-    "finding": "Populations consuming 40-60ml EVOO daily live 8-10 years longer",
-    "category": "Longevity"
+    "finding": "Populations consuming 40-60ml EVOO daily live 8-10 years longer on average",
+    "category": "Longevity",
+    "date": "2026-03-09"
   },
   {
     "slug": "olive-oil-for-blood-pressure",
     "title": "2 Tablespoons a Day Dropped Blood Pressure by 7 Points",
     "paper": "Doménech et al., PREDIMED Trial (2014)",
-    "finding": "Mediterranean diet with EVOO reduced systolic BP by 7.1 mmHg",
-    "category": "Heart"
+    "finding": "Mediterranean diet with EVOO reduced systolic BP by 7.1 mmHg vs control",
+    "category": "Heart",
+    "date": "2026-03-08"
   },
   {
     "slug": "olive-oil-for-cholesterol",
     "title": "The Science Behind EVOO's Effect on LDL Cholesterol",
     "paper": "Covas et al., Annals of Internal Medicine (2006)",
-    "finding": "High-polyphenol EVOO increased HDL and reduced oxidized LDL",
-    "category": "Heart"
+    "finding": "High-polyphenol EVOO increased HDL and reduced oxidized LDL significantly",
+    "category": "Heart",
+    "date": "2026-03-07"
   },
   {
     "slug": "hydroxytyrosol-olive-oil",
     "title": "Hydroxytyrosol: The Most Powerful Antioxidant in Food",
     "paper": "Visioli et al., European Journal of Nutrition (2019)",
     "finding": "Hydroxytyrosol has 10x the antioxidant capacity of green tea catechins",
-    "category": "Metabolism"
+    "category": "Metabolism",
+    "date": "2026-03-06"
   },
   {
     "slug": "olive-oil-for-liver-health",
     "title": "Can Olive Oil Reverse Fatty Liver Disease?",
     "paper": "Priore et al., Frontiers in Nutrition (2022)",
-    "finding": "EVOO polyphenols reduced hepatic fat by 30% in 12-week trial",
-    "category": "Metabolism"
+    "finding": "EVOO polyphenols reduced hepatic fat accumulation by 30% in 12-week trial",
+    "category": "Metabolism",
+    "date": "2026-03-05"
+  },
+  {
+    "slug": "olive-oil-anti-inflammatory",
+    "title": "How EVOO Fights Chronic Inflammation at the Cellular Level",
+    "paper": "Lucas et al., Current Pharmaceutical Design (2011)",
+    "finding": "EVOO phenolics downregulate NF-kB and COX-2 inflammatory pathways",
+    "category": "Inflammation",
+    "date": "2026-03-04"
+  },
+  {
+    "slug": "olive-oil-for-weight-loss",
+    "title": "Does Olive Oil Help or Hurt Weight Loss?",
+    "paper": "Beulen et al., European Journal of Nutrition (2018)",
+    "finding": "Mediterranean diets rich in EVOO do not cause weight gain despite high fat content",
+    "category": "Metabolism",
+    "date": "2026-03-03"
+  },
+  {
+    "slug": "olive-oil-for-blood-sugar",
+    "title": "How Olive Oil Polyphenols Stabilize Blood Sugar",
+    "paper": "Schwingshackl et al., Nutrition & Metabolism (2017)",
+    "finding": "EVOO improved insulin sensitivity and reduced HbA1c in type 2 diabetes patients",
+    "category": "Metabolism",
+    "date": "2026-03-02"
+  },
+  {
+    "slug": "olive-oil-for-joint-pain",
+    "title": "Oleocanthal for Joint Pain: What Rheumatology Studies Show",
+    "paper": "Scotece et al., Life Sciences (2013)",
+    "finding": "Oleocanthal inhibited cartilage degradation enzymes in osteoarthritis models",
+    "category": "Inflammation",
+    "date": "2026-03-01"
   }
 ]
