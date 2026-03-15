@@ -59,55 +59,7 @@
 
 /* ── 2. AMBIENT BACKGROUND EFFECTS ──────────────────────────────────────── */
 
-/* Aurora mesh background — the hero gradient that visibly shifts */
-@keyframes aurora-mesh-shift {
-  0%   { background-position: 0% 50%; }
-  25%  { background-position: 60% 20%; }
-  50%  { background-position: 100% 50%; }
-  75%  { background-position: 40% 80%; }
-  100% { background-position: 0% 50%; }
-}
-
-.aurora-mesh {
-  background: linear-gradient(
-    125deg,
-    #030b15 0%,
-    #07301e 14%,
-    #0a4a2e 26%,
-    #072040 38%,
-    #0c3545 50%,
-    #083325 62%,
-    #030b15 75%,
-    #0a4a2e 88%,
-    #030b15 100%
-  );
-  background-size: 400% 400%;
-  animation: aurora-mesh-shift 18s ease infinite;
-}
-
-/* Blob animations */
-@keyframes blob-1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33%  { transform: translate(60px, -40px) scale(1.1); }
-  66%  { transform: translate(-30px, 30px) scale(0.95); }
-}
-
-@keyframes blob-2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33%  { transform: translate(-70px, 50px) scale(1.08); }
-  66%  { transform: translate(40px, -60px) scale(1.05); }
-}
-
-@keyframes blob-3 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(30px, -50px) scale(1.12); }
-}
-
-.blob-1 { animation: blob-1 18s ease-in-out infinite; }
-.blob-2 { animation: blob-2 22s ease-in-out infinite; }
-.blob-3 { animation: blob-3 15s ease-in-out infinite; }
-
-/* Legacy float-orb classes (used on other sections) */
+/* Float-orb classes (used on ranking section) */
 @keyframes float-orb {
   0%, 100% { transform: translate(0, 0) scale(1); }
   33%  { transform: translate(40px, -30px) scale(1.1); }
