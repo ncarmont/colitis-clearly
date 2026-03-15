@@ -73,6 +73,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf?v=1763979500",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
+    amazonLink: "https://www.amazon.com/dp/B0BFRRPR6R?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
     notes: "Verified 10 Mar 2026: 1,316 mg/kg confirmed (certified PDF linked). Oleocanthal 577 mg/kg, oleacein 298 mg/kg. 2025/26 harvest (Oct 2025). In stock. 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, DIO-certified organic. 101 reviews. £49.95. First-batch limited edition.",
     productImage: "/img/oil-3.jpg",
     instagram: "the_governor_evoo"
@@ -301,6 +302,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Picholine Marocaine",
     buyLink: "https://www.moroccogold.com",
+    amazonLink: "https://www.amazon.co.uk/dp/B07GBJLFFQ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "Brand publicizes Htyr/20g.",
     productImage: "/img/oil-22.jpg",
     instagram: "moroccogold"
@@ -458,6 +460,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Lianolia",
     buyLink: "https://www.thegovernor.gr/product/the-governor-premium-edition/",
+    amazonLink: "https://www.amazon.com/dp/B0BFRRPR6R?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
     notes: "Centenarian trees; 0.17% acidity.",
     productImage: "/img/oil-35.png",
     instagram: "the_governor_evoo"
