@@ -69,13 +69,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google AdSense — auto ads enabled, manual break zones below */}
+        {/* Google AdSense — manual placements ONLY, auto ads disabled via CSS exclusions */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1361556625262612"
           crossOrigin="anonymous"
         ></script>
-        {/* AdSense: page-level auto ads DISABLED — we place small inline ads manually for a cleaner UX */}
+        <meta name="google-adsense-account" content="ca-pub-1361556625262612" />
+        {/* Hide intrusive auto-inserted ad containers — keep only our manual SmallAd components */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          /* Hide Google auto-ads (vignette, anchor, in-content auto placements) */
+          ins.adsbygoogle[data-ad-status="unfilled"],
+          ins.adsbygoogle:not([data-ad-slot]) {
+            display: none !important;
+            height: 0 !important;
+            max-height: 0 !important;
+            overflow: hidden !important;
+          }
+          /* Limit ALL ad units to max 90px height */
+          ins.adsbygoogle {
+            max-height: 90px !important;
+            overflow: hidden !important;
+          }
+        `}} />
 
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ9T4462C0"></script>
