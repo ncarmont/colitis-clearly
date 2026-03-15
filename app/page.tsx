@@ -179,8 +179,8 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$39.95", method: "qNMR", lab: "qNMR verified",
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Olio-Nuovo-Certificate-of-Analysis-and-NMR.pdf?v=1741704618",
     cultivar: "Greek blend",
-    buyLink: "https://laconiko.com/products/laconiko-olio-nuovo-new-2025-harvest",
-    notes: "Verified 8 Mar 2026: First certified 'high phenolic' in North America (Aristoleo Data-Locked Protocol). 2025/26 harvest back in stock Feb 2026. 774 mg/kg qNMR verified. Acidity 0.28%; oleic acid 78%. $39.95. Phenolic compounds verified to deteriorate slower under controlled 12.5–15°C storage.",
+    buyLink: "https://laconiko.com/products/laconiko-olio-nuovo",
+    notes: "Verified 15 Mar 2026: First certified 'high phenolic' in North America (Aristoleo Data-Locked Protocol). 2025/26 harvest in stock. 774 mg/kg qNMR verified. Acidity 0.28%; oleic acid 78%. $39.95. Phenolic compounds verified to deteriorate slower under controlled 12.5–15°C storage. URL updated to canonical link.",
     productImage: "/img/oil-12.png",
     instagram: "laconiko"
   },
@@ -276,7 +276,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca/Arbequina/Koroneiki",
     buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
-    notes: "Checked 13 Mar 2026: currently OUT OF STOCK on producer website. Verified Feb 2026: 2025 harvest now live (Nov 2025). Polyphenols updated to 642 mg/kg (was 661 in 2024 harvest). Origin: Pedrera, Sevilla, Andalucía. Acidity 0.14%. Mobile milling within 1 hour of picking. Awarded 'Best Organic EVOO in Sevilla' (Ecotrama gold star).",
+    notes: "Verified 15 Mar 2026: Back in stock on producer website (was OUT OF STOCK 13 Mar 2026). 2025 harvest (Nov 2025). Polyphenols 642 mg/kg (was 661 in 2024 harvest). Origin: Pedrera, Sevilla, Andalucía. Acidity 0.14%. Mobile milling within 1 hour of picking. Awarded 'Best Organic EVOO in Sevilla' (Ecotrama gold star).",
     productImage: "/img/oil-20.png",
     instagram: "citizensofsoil"
   },
@@ -360,7 +360,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/singlebottle",
-    notes: "Verified 11 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,058 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off). Nov 2024 harvest. High polyphenol content with robust peppery finish.",
+    notes: "Verified 15 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,062 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off). Nov 2024 harvest. High polyphenol content with robust peppery finish.",
     productImage: "/img/oil-27.png",
     instagram: "kosterina"
   },
