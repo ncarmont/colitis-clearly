@@ -203,7 +203,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$", priceAmount: "$24.99", method: "Other", lab: "Independent tracker",
     certificateLink: "",
     cultivar: "Koroneiki",
-    buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+    buyLink: "https://zeronutrition.co.uk",
     notes: "Tracker shows 813 mg/kg and a posted cert link.",
     productImage: "/img/oil-14.png",
     instagram: "zero.nutrition"
@@ -215,7 +215,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$38.95", method: "Other", lab: "Widely cited value",
     certificateLink: "",
     cultivar: "Itrana/Moraiolo",
-    buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+    buyLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
     notes: "Needs correct brand link/COA.",
     productImage: "/img/oil-23.jpg",
     instagram: "quattrociocchiolio"
@@ -239,7 +239,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$32.00", method: "Other", lab: "Retailers cited",
     certificateLink: "",
     cultivar: "Picual",
-    buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+    buyLink: "https://orodeldesierto.com/en/shop-2/",
     notes: "Early-harvest organic Picual, Almería.",
     productImage: "/img/oil-23.jpg",
     instagram: "orodeldesierto"
@@ -251,8 +251,8 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$28.00", method: "Other", lab: "Tracker listing",
     certificateLink: "",
     cultivar: "Picual",
-    buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
-    notes: "Award-winning Tacna EVOO.",
+    buyLink: "https://www.instagram.com/vallesur.pe/",
+    notes: "Award-winning Tacna EVOO. No international DTC shop found; IG is best contact.",
     productImage: "/img/oil-18.jpg",
     instagram: "vallesur.pe"
   },
@@ -299,7 +299,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$35.00", method: "Other", lab: "Tracker listing",
     certificateLink: "",
     cultivar: "Picholine Marocaine",
-    buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+    buyLink: "https://www.moroccogold.com",
     notes: "Brand publicizes Htyr/20g.",
     productImage: "/img/oil-22.jpg",
     instagram: "moroccogold"
@@ -311,7 +311,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$36.00", method: "Other", lab: "Tracker listing",
     certificateLink: "",
     cultivar: "Hojiblanca + Picuda",
-    buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+    buyLink: "https://www.ventadelbaron.com/en/collections/all",
     notes: "DO protected.",
     productImage: "/img/oil-23.jpg",
     instagram: "ventadelbaron"
@@ -335,7 +335,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$50.00", method: "Other", lab: "Brand batch analyses",
     certificateLink: "",
     cultivar: "Frantoio/Leccino/Moraiolo",
-    buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3",
+    buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
     notes: "Certified Tuscan lots.",
     productImage: "/img/oil-25.jpg",
     instagram: "entimioevoo"
@@ -443,7 +443,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "$39.00", method: "Other", lab: "Third-party tested",
     certificateLink: "",
     cultivar: "Portuguese blend",
-    buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ",
+    buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
     notes: "Verified 9 Mar 2026: Nov 2025 harvest now live. 400 mg polyphenols (down from 499 in 2024 batch). Rich in oleic acid. UV-protected glass. DTC & Amazon. Part of Bryan Johnson's daily longevity protocol.",
     productImage: "/img/oil-34.jpg",
     instagram: "blueprintlongevity"

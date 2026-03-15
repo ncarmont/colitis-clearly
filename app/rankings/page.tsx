@@ -52,7 +52,7 @@ export default function RankingsPage() {
       price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
       certificateLink: "https://www.pjkabos.com/",
       cultivar: "Koroneiki",
-      buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD",
+      buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "900+ HPLC / 1400+ NMR (2025 harvest); USDA Organic certified"
     },
     {
@@ -92,7 +92,7 @@ export default function RankingsPage() {
       price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "3rd-party posted",
       certificateLink: "https://kyoord.com/products/kyoord-high-phenolic-olive-oil",
       cultivar: "Lianolia + Koroneiki",
-      buyLink: "https://www.amazon.com/kyoord-High-Phenolic-Extra-Virgin-Olive/dp/B0CCQQGXRQ",
+      buyLink: "https://www.amazon.com/kyoord-High-Phenolic-Extra-Virgin-Olive/dp/B0CCQQGXRQ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "Site posts per-harvest analysis from Corfu"
     },
     {
@@ -114,9 +114,9 @@ export default function RankingsPage() {
     {
       id: 12, rank: 12, brand: "Zero Nutrition – EVOO100", polyphenols: 813, origin: "Greece", harvestDate: "2024/25",
       price: "$", priceAmount: "$24.99", method: "Not specified", lab: "COA posted",
-      certificateLink: "https://www.amazon.com/s?k=Zero+Nutrition+EVOO100+high+polyphenol+olive+oil",
+      certificateLink: "",
       cultivar: "Koroneiki",
-      buyLink: "https://www.amazon.com/s?k=Zero+Nutrition+EVOO100+high+polyphenol+olive+oil",
+      buyLink: "https://zeronutrition.co.uk",
       notes: "813 mg/kg Koroneiki; UV-protective bottle; brand website temporarily unavailable — search Amazon for current listings"
     },
     {
@@ -132,7 +132,7 @@ export default function RankingsPage() {
       price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "Stated",
       certificateLink: "https://www.pjkabos.com/shop-usa",
       cultivar: "Koroneiki",
-      buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF",
+      buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "Daily 'shot' usage suggested by brand; 750+ HPLC"
     },
     {
@@ -146,17 +146,17 @@ export default function RankingsPage() {
     {
       id: 16, rank: 16, brand: "Vallesur – Peruvian", polyphenols: 688, origin: "Peru", harvestDate: "2024",
       price: "$$", priceAmount: "$28.00", method: "Not specified", lab: "Curator listing",
-      certificateLink: "https://highpolyphenololiveoil.co.uk/oils/organic/1/",
+      certificateLink: "",
       cultivar: "Picual",
-      buyLink: "https://highpolyphenololiveoil.co.uk/oils/organic/1/",
+      buyLink: "https://www.instagram.com/vallesur.pe/",
       notes: "Award-winning Peruvian EVOO from Tacna"
     },
     {
       id: 17, rank: 17, brand: "Laudemio Frescobaldi (Tuscany)", polyphenols: 675, origin: "Italy", harvestDate: "2024",
       price: "$$", priceAmount: "$42.00", method: "Not specified", lab: "Retailer cited",
-      certificateLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY",
+      certificateLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       cultivar: "Frantoio/Moraiolo/Leccino",
-      buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY",
+      buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "Multiple retailers cite ~650–700 mg/kg"
     },
     {
@@ -178,17 +178,17 @@ export default function RankingsPage() {
     {
       id: 20, rank: 20, brand: "Morocco Gold", polyphenols: 626, origin: "Morocco", harvestDate: "2024/25",
       price: "$$", priceAmount: "$35.00", method: "Not specified", lab: "Brand publishes",
-      certificateLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+      certificateLink: "",
       cultivar: "Picholine Marocaine",
-      buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+      buyLink: "https://www.moroccogold.com",
       notes: "Brand publicizes hydroxytyrosol per 20 g"
     },
     {
       id: 21, rank: 21, brand: "Venta del Barón (DO Priego)", polyphenols: 617, origin: "Spain", harvestDate: "2024/25",
       price: "$$", priceAmount: "$36.00", method: "Not specified", lab: "Ranking page",
-      certificateLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+      certificateLink: "",
       cultivar: "Hojiblanca + Picuda",
-      buyLink: "https://highpolyphenololiveoil.co.uk/evooscore/rankings/",
+      buyLink: "https://www.ventadelbaron.com/en/collections/all",
       notes: "DO-protected, high count from Córdoba"
     },
     {
@@ -202,9 +202,9 @@ export default function RankingsPage() {
     {
       id: 23, rank: 23, brand: "Entimio – INTENSO", polyphenols: 601, origin: "Italy", harvestDate: "2024/25",
       price: "$$", priceAmount: "$50.00", method: "Not specified", lab: "Brand page",
-      certificateLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3",
+      certificateLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       cultivar: "Frantoio/Leccino/Moraiolo",
-      buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3",
+      buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "Certified lots from Tuscany; analysis posted"
     },
     {
@@ -242,9 +242,9 @@ export default function RankingsPage() {
     {
       id: 28, rank: 28, brand: "Entimio – ARDENTE", polyphenols: 516, origin: "Italy", harvestDate: "2024/25",
       price: "$$", priceAmount: "$45.00", method: "Not specified", lab: "Brand page",
-      certificateLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H",
+      certificateLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       cultivar: "Tuscan blend",
-      buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H",
+      buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "Certified lots from Tuscany; analysis posted"
     },
     {
@@ -252,7 +252,7 @@ export default function RankingsPage() {
       price: "$$", priceAmount: "$39.00", method: "HPLC", lab: "Stated",
       certificateLink: "https://www.pjkabos.com/shop-usa",
       cultivar: "Koroneiki",
-      buyLink: "https://www.amazon.com/Phenolic-Intensity-Extracted-Koroneiki-KABOS/dp/B09P7K1V8K",
+      buyLink: "https://www.amazon.com/Phenolic-Intensity-Extracted-Koroneiki-KABOS/dp/B09P7K1V8K?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "HPLC hydroxytyrosol 7+ mg/20g; 500+ tier"
     },
     {
@@ -260,7 +260,7 @@ export default function RankingsPage() {
       price: "$$", priceAmount: "$39.00", method: "Not specified", lab: "Third-party verified",
       certificateLink: "https://blueprint.bryanjohnson.com/products/extra-virgin-olive-oil",
       cultivar: "Portuguese olives",
-      buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ",
+      buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "Independent trackers list ~499 mg/kg for 24/25; brand promises >400 mg/kg"
     },
     {
