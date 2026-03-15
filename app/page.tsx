@@ -832,24 +832,21 @@ export default function HomePage() {
             The Home of Olive Oil Science
           </p>
 
-          {/* Unified value + stats card (simplified) */}
-          <div className="mt-4 mx-auto max-w-3xl bg-white/10 border border-white/15 rounded-2xl md:rounded-3xl backdrop-blur-md shadow-[0_10px_40px_rgba(16,185,129,0.14)] animate-fade-in-delay-2 overflow-hidden">
-            <div className="px-4 py-1.5 text-center border-b border-white/10 text-[11px] md:text-xs text-white/85">
-              ❤️ <span className="font-semibold">Lab-verified heart-health ranking</span> · 31% ↓ CVD risk
+          {/* Stats — compact inline */}
+          <div className="mt-3 flex items-center justify-center gap-4 md:gap-6 animate-fade-in-delay-2">
+            <div className="text-center">
+              <span className="text-lg md:text-xl font-bold text-white">{stats.totalOils}</span>
+              <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">oils</span>
             </div>
-            <div className="grid grid-cols-3 divide-x divide-white/15">
-              <div className="px-4 py-2 md:px-8 md:py-3 text-center">
-                <div className="text-xl md:text-2xl font-black text-white">{stats.totalOils}</div>
-                <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Lab-Verified</div>
-              </div>
-              <div className="px-4 py-2 md:px-8 md:py-3 text-center">
-                <div className="text-xl md:text-2xl font-black text-white">{stats.countries}</div>
-                <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Countries</div>
-              </div>
-              <div className="px-4 py-2 md:px-8 md:py-3 text-center">
-                <div className="text-xl md:text-3xl font-black text-white">{stats.maxPolyphenols}</div>
-                <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Max mg/kg</div>
-              </div>
+            <span className="text-white/15 text-sm">|</span>
+            <div className="text-center">
+              <span className="text-lg md:text-xl font-bold text-white">{stats.countries}</span>
+              <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">countries</span>
+            </div>
+            <span className="text-white/15 text-sm">|</span>
+            <div className="text-center">
+              <span className="text-lg md:text-xl font-bold text-white">{stats.maxPolyphenols}</span>
+              <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">max mg/kg</span>
             </div>
           </div>
         </div>
@@ -871,7 +868,7 @@ export default function HomePage() {
           if (!el) return
           let raf: number
           let paused = false
-          const speed = 0.5 // px per frame
+          const speed = 0.3 // px per frame — slow gentle drift
           const scroll = () => {
             if (!paused && el) {
               el.scrollLeft += speed
@@ -903,6 +900,9 @@ export default function HomePage() {
                   All research →
                 </Link>
               </div>
+              <div className="relative">
+              <div className="absolute left-0 top-0 bottom-0 w-3 bg-gradient-to-r from-[#0a1628] to-transparent z-10 pointer-events-none" />
+              <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#0a1628] to-transparent z-10 pointer-events-none" />
               <div ref={scrollRef} className="flex gap-2.5 overflow-x-auto scrollbar-hide pb-1">
                 {researchPapers.map((paper) => (
                   <Link
@@ -925,15 +925,18 @@ export default function HomePage() {
                   </Link>
                 ))}
               </div>
+              </div>
             </div>
           </section>
         )
       })()}
 
-      {/* Rankings Section Title */}
-      <div className="bg-slate-50 pt-4 pb-2 md:pt-5 md:pb-3 text-center">
-        <h2 className="text-sm md:text-base font-bold text-gray-800 tracking-tight">Top Polyphenol EVOO Rankings</h2>
-        <p className="text-[10px] text-gray-400 mt-0.5">Lab-verified · Ranked by mg/kg polyphenol content</p>
+      {/* Rankings Section Banner */}
+      <div className="bg-gradient-to-r from-[#0a1628] via-[#0d3b2e] to-[#0a1628] py-3 md:py-4 text-center border-t border-emerald-500/10">
+        <h2 className="text-base md:text-xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-teal-300">
+          Top Polyphenol EVOO Rankings
+        </h2>
+        <p className="text-[9px] md:text-[10px] text-white/30 mt-0.5 tracking-wide">Lab-verified · Ranked by mg/kg polyphenol content</p>
       </div>
 
       {/* Filters Section (hidden to reduce visual load) */}
