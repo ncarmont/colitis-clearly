@@ -787,19 +787,20 @@ export default function HomePage() {
         <div className="absolute top-[60vh] left-0 w-[300px] h-[300px] bg-teal-200/8 rounded-full blur-[120px] animate-float-orb-2 pointer-events-none" />
         <div className="relative z-10">
       {/* Hero Header */}
-      <header className="relative overflow-hidden bg-gradient-to-br from-[#061226] via-[#0a1f3a] to-[#07382d] w-full border-b border-white/10 dot-grid-pattern">
+      <header className="relative overflow-hidden bg-gradient-to-br from-[#061226] via-[#0a1f3a] to-[#07382d] w-full border-b border-white/10 dot-grid-pattern hero-entrance">
         {/* Animated aurora gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/30 via-transparent to-teal-900/20 animate-aurora pointer-events-none" />
-        {/* Floating orbs */}
-        <div className="absolute top-[10%] left-[15%] w-[300px] h-[300px] bg-emerald-500/10 rounded-full blur-[100px] animate-float-orb pointer-events-none" />
-        <div className="absolute top-[20%] right-[10%] w-[250px] h-[250px] bg-teal-400/8 rounded-full blur-[80px] animate-float-orb-2 pointer-events-none" />
-        <div className="absolute bottom-[5%] left-[40%] w-[200px] h-[200px] bg-cyan-500/6 rounded-full blur-[90px] animate-float-orb-3 pointer-events-none" />
-        {/* Static radial glows */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,rgba(16,185,129,0.18),transparent)] pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_15%,rgba(45,212,191,0.12),transparent_40%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/40 via-cyan-900/10 to-teal-900/30 animate-aurora pointer-events-none" />
+        {/* Floating orbs — larger, more visible */}
+        <div className="absolute top-[5%] left-[10%] w-[200px] md:w-[350px] h-[200px] md:h-[350px] bg-emerald-400/15 rounded-full blur-[80px] md:blur-[120px] animate-float-orb pointer-events-none" />
+        <div className="absolute top-[15%] right-[5%] w-[180px] md:w-[300px] h-[180px] md:h-[300px] bg-teal-400/12 rounded-full blur-[70px] md:blur-[100px] animate-float-orb-2 pointer-events-none" />
+        <div className="absolute bottom-[0%] left-[30%] w-[160px] md:w-[250px] h-[160px] md:h-[250px] bg-cyan-400/10 rounded-full blur-[60px] md:blur-[90px] animate-float-orb-3 pointer-events-none" />
+        {/* Static radial glows — enhanced */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,rgba(16,185,129,0.22),transparent)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(45,212,191,0.15),transparent_50%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(52,211,153,0.08),transparent_40%)] pointer-events-none" />
 
         {/* Top utility bar */}
-        <div className="relative z-30 flex items-center justify-between px-4 md:px-8 py-2 md:py-2.5 border-b border-white/10 bg-black/10 backdrop-blur-sm">
+        <div className="relative z-30 flex items-center justify-between px-4 md:px-8 py-2 md:py-2.5 border-b border-white/10 bg-black/10 backdrop-blur-sm utility-bar-entrance">
           <div className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
             <span className="text-[9px] md:text-[10px] text-emerald-100/80 font-semibold tracking-[0.18em] uppercase">Updated {LAST_DATA_UPDATE}</span>
@@ -829,39 +830,41 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Hero content — compact */}
+        {/* Hero content — cinematic entrance sequence */}
         <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-4 pb-4 md:pt-6 md:pb-6 text-center">
-          <h1 className="text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.08] animate-slide-up">
-            Best Extra Virgin Olive Oils
-            <span className="block mt-0.5 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-lime-300 animate-shimmer-text">
+          <h1 className="title-entrance">
+            <span className="block text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.08]">
+              Best Extra Virgin Olive Oils
+            </span>
+            <span className="block mt-0.5 text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.08] text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-lime-300 animate-shimmer-text animate-text-glow subtitle-entrance">
               Ranked by Science
             </span>
           </h1>
 
-          <p className="mt-1 text-[9px] md:text-[10px] text-white/40 font-medium tracking-[0.25em] uppercase animate-fade-in-delay">
+          <p className="mt-1 text-[9px] md:text-[10px] text-white/40 font-medium tracking-[0.25em] uppercase tagline-entrance">
             The Home of Olive Oil Science
           </p>
 
-          {/* Stats — compact inline */}
-          <div className="mt-3 flex items-center justify-center gap-4 md:gap-6 animate-fade-in-delay-2">
-            <div className="text-center">
+          {/* Stats — cinematic pop-in */}
+          <div className="mt-3 flex items-center justify-center gap-4 md:gap-6 stats-entrance">
+            <div className="text-center stat-item-1">
               <span className="text-lg md:text-xl font-bold text-white">{stats.totalOils}</span>
               <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">oils</span>
             </div>
-            <span className="text-white/15 text-sm">|</span>
-            <div className="text-center">
+            <span className="text-white/15 text-sm stats-entrance">|</span>
+            <div className="text-center stat-item-2">
               <span className="text-lg md:text-xl font-bold text-white">{stats.countries}</span>
               <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">countries</span>
             </div>
-            <span className="text-white/15 text-sm">|</span>
-            <div className="text-center">
+            <span className="text-white/15 text-sm stats-entrance">|</span>
+            <div className="text-center stat-item-3">
               <span className="text-lg md:text-xl font-bold text-white">{stats.maxPolyphenols}</span>
               <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">max mg/kg</span>
             </div>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent line-sweep origin-center" />
       </header>
 
       {/* Research Carousel — auto-scrolling client component */}
@@ -869,8 +872,9 @@ export default function HomePage() {
 
       {/* Rankings Section Banner */}
       <div className="relative overflow-hidden bg-gradient-to-r from-[#0a1628] via-[#0d3b2e] to-[#0a1628] py-3 md:py-4 text-center border-t border-emerald-500/10">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/10 via-teal-800/15 to-emerald-900/10 animate-aurora pointer-events-none" />
-        <h2 className="relative text-base md:text-xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-teal-300 animate-shimmer-text">
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/10 via-teal-800/20 to-emerald-900/10 animate-aurora pointer-events-none" />
+        <div className="absolute inset-0 dot-grid-pattern pointer-events-none" />
+        <h2 className="relative text-base md:text-xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-teal-300 animate-shimmer-text animate-text-glow">
           Top Polyphenol EVOO Rankings
         </h2>
         <p className="relative text-[9px] md:text-[10px] text-white/30 mt-0.5 tracking-wide">Lab-verified · Ranked by mg/kg polyphenol content</p>
@@ -1516,109 +1520,28 @@ export default function HomePage() {
       )}
 
       <style jsx>{`
+        .animate-fade-in { animation: fade-in 0.6s ease-out; }
+        .animate-fade-in-row { animation: fade-in-row 0.4s ease-out both; }
+
         @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-
-        @keyframes slide-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
         @keyframes fade-in-row {
-          from {
-            opacity: 0;
-            transform: translateX(-20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
+          from { opacity: 0; transform: translateX(-20px); }
+          to { opacity: 1; transform: translateX(0); }
         }
 
-        .animate-fade-in {
-          animation: fade-in 0.6s ease-out;
-        }
-
-        .animate-fade-in-delay {
-          animation: fade-in 0.8s ease-out 0.2s both;
-        }
-
-        .animate-fade-in-delay-2 {
-          animation: fade-in 0.8s ease-out 0.4s both;
-        }
-
-        .animate-slide-up {
-          animation: slide-up 0.8s ease-out;
-        }
-
-        .animate-fade-in-row {
-          animation: fade-in-row 0.4s ease-out both;
-        }
-
-        .animate-table-entrance {
-          animation: table-entrance 0.8s ease-out;
-        }
-
-        .animate-crown-bounce {
-          animation: crown-bounce 2s ease-in-out infinite;
-        }
-
-        .crown-gold {
-          color: #FFD700;
-          filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.8)) saturate(1.5) brightness(1.1);
-        }
-
-        .crown-silver {
-          color: #C0C0C0;
-          filter: grayscale(1) brightness(1.3) drop-shadow(0 0 4px rgba(192, 192, 192, 0.8));
-        }
-
-        .crown-bronze {
-          color: #CD7F32;
-          filter: hue-rotate(15deg) saturate(1.5) brightness(0.8) contrast(1.2) drop-shadow(0 0 4px rgba(205, 127, 50, 0.8));
-        }
-
-        @keyframes table-entrance {
-          from {
-            opacity: 0;
-            transform: translateY(20px) scale(0.98);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-          }
-        }
-
+        .animate-crown-bounce { animation: crown-bounce 2s ease-in-out infinite; }
+        .crown-gold { color: #FFD700; filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.8)) saturate(1.5) brightness(1.1); }
+        .crown-silver { color: #C0C0C0; filter: grayscale(1) brightness(1.3) drop-shadow(0 0 4px rgba(192, 192, 192, 0.8)); }
+        .crown-bronze { color: #CD7F32; filter: hue-rotate(15deg) saturate(1.5) brightness(0.8) contrast(1.2) drop-shadow(0 0 4px rgba(205, 127, 50, 0.8)); }
         @keyframes crown-bounce {
-          0%, 100% {
-            transform: translateY(0) rotate(-5deg);
-          }
-          25% {
-            transform: translateY(-3px) rotate(0deg);
-          }
-          50% {
-            transform: translateY(-1px) rotate(5deg);
-          }
-          75% {
-            transform: translateY(-2px) rotate(0deg);
-          }
+          0%, 100% { transform: translateY(0) rotate(-5deg); }
+          25% { transform: translateY(-3px) rotate(0deg); }
+          50% { transform: translateY(-1px) rotate(5deg); }
+          75% { transform: translateY(-2px) rotate(0deg); }
         }
-
-
       `}</style>
         </div>
     </main>
