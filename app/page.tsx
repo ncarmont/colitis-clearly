@@ -21,6 +21,7 @@ type OliveOil = {
   certificateLink?: string
   cultivar: string
   buyLink: string
+  amazonLink?: string  // Amazon affiliate link (shown as separate yellow button)
   notes: string
   productImage?: string  // Hero product photo path (public/img/)
   instagram?: string  // Producer Instagram handle (without @)
@@ -347,7 +348,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$", priceAmount: "$19.99", method: "Other", lab: "Brand posted",
     certificateLink: "",
     cultivar: "Koroneiki",
-    buyLink: "https://www.amazon.co.uk/Odysea-Good-Greek-Virgin-Olive/dp/B0C7LBD9Z4",
+    buyLink: "https://www.amazon.co.uk/Odysea-Good-Greek-Virgin-Olive/dp/B0C7LBD9Z4?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "UK retailer SKU; Cretan Koroneiki with 573 mg/kg polyphenols.",
     productImage: "/img/oil-18.jpg",
     instagram: "odysea_food"
@@ -360,6 +361,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/singlebottle",
+    amazonLink: "https://www.amazon.com/Kosterina-Cold-Pressed-Koroneiki-Incredible-Superfood/dp/B087MT3TC7?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
     notes: "Verified 15 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,062 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off). Nov 2024 harvest. High polyphenol content with robust peppery finish.",
     productImage: "/img/oil-27.png",
     instagram: "kosterina"
@@ -1057,12 +1059,21 @@ export default function HomePage() {
                             href={oil.buyLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`inline-flex items-center justify-center px-3 py-2 rounded-lg font-semibold text-[11px] text-white shadow-sm active:scale-95 transition-transform ${
-                              isAmazon ? 'bg-blue-600' : 'bg-gradient-to-r from-green-600 to-emerald-600'
-                            }`}
+                            className="inline-flex items-center justify-center px-3 py-2 rounded-lg font-semibold text-[11px] text-white shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-green-600 to-emerald-600"
                           >
                             Buy →
                           </a>
+                          {(oil.amazonLink || isAmazon) && (
+                            <a
+                              href={oil.amazonLink || oil.buyLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFD814] to-[#FF9900]"
+                            >
+                              <svg viewBox="0 0 448 512" className="w-3 h-3" fill="currentColor"><path d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.3c0 34-30.1 44.4-61.3 44.4-38.2 0-52.7-27.6-52.7-50.2 0-31.2 23.1-59.1 114-62.4v68.2zm186.3 119.8c-7.7 6.5-19.6 3-22-5-13-44.4-46.3-73.2-79.5-73.2-13.2 0-26.5 4.5-40 13.5V512l96 64V368.8z"/></svg>
+                              Amazon
+                            </a>
+                          )}
                           {oil.certificateLink && (
                             <a
                               href={oil.certificateLink}
@@ -1137,18 +1148,27 @@ export default function HomePage() {
                       </div>
                     </div>
 
-                    {/* Buy + COA */}
+                    {/* Buy + Amazon + COA */}
                     <div className="flex flex-col items-center gap-1 shrink-0">
                       <a
                         href={oil.buyLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`inline-flex items-center justify-center px-3 py-2 rounded-lg font-semibold text-[11px] text-white shadow-sm active:scale-95 transition-transform ${
-                          isAmazon ? 'bg-blue-600' : 'bg-gradient-to-r from-green-600 to-emerald-600'
-                        }`}
+                        className="inline-flex items-center justify-center px-3 py-2 rounded-lg font-semibold text-[11px] text-white shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-green-600 to-emerald-600"
                       >
                         Buy →
                       </a>
+                      {(oil.amazonLink || isAmazon) && (
+                        <a
+                          href={oil.amazonLink || oil.buyLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFD814] to-[#FF9900]"
+                        >
+                          <svg viewBox="0 0 448 512" className="w-3 h-3" fill="currentColor"><path d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.3c0 34-30.1 44.4-61.3 44.4-38.2 0-52.7-27.6-52.7-50.2 0-31.2 23.1-59.1 114-62.4v68.2zm186.3 119.8c-7.7 6.5-19.6 3-22-5-13-44.4-46.3-73.2-79.5-73.2-13.2 0-26.5 4.5-40 13.5V512l96 64V368.8z"/></svg>
+                          Amazon
+                        </a>
+                      )}
                       {oil.certificateLink && (
                         <a
                           href={oil.certificateLink}
@@ -1327,16 +1347,27 @@ export default function HomePage() {
                               </a>
                             )}
                           </div>
-                          <a
-                            href={oil.buyLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold text-xs text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 ${
-                              isAmazon ? 'bg-blue-600 hover:bg-blue-500' : 'bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500'
-                            }`}
-                          >
-                            {isAmazon ? 'Amazon →' : 'Buy →'}
-                          </a>
+                          <div className="flex flex-col items-end gap-1.5">
+                            <a
+                              href={oil.buyLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold text-xs text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500"
+                            >
+                              Buy →
+                            </a>
+                            {(oil.amazonLink || isAmazon) && (
+                              <a
+                                href={oil.amazonLink || oil.buyLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg font-bold text-xs text-gray-900 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-r from-[#FFD814] to-[#FF9900] hover:from-[#F7CA00] hover:to-[#FF8C00]"
+                              >
+                                <svg viewBox="0 0 448 512" className="w-3.5 h-3.5" fill="currentColor"><path d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.3c0 34-30.1 44.4-61.3 44.4-38.2 0-52.7-27.6-52.7-50.2 0-31.2 23.1-59.1 114-62.4v68.2zm186.3 119.8c-7.7 6.5-19.6 3-22-5-13-44.4-46.3-73.2-79.5-73.2-13.2 0-26.5 4.5-40 13.5V512l96 64V368.8z"/></svg>
+                                Amazon
+                              </a>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
