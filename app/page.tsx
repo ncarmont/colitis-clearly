@@ -820,7 +820,7 @@ export default function HomePage() {
         </div>
 
         {/* Hero content — compact */}
-        <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-5 pb-5 md:pt-8 md:pb-8 text-center">
+        <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-4 pb-4 md:pt-6 md:pb-6 text-center">
           <h1 className="text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.08] animate-slide-up">
             Best Extra Virgin Olive Oils
             <span className="block mt-0.5 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-lime-300">
@@ -857,52 +857,68 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
       </header>
 
-      {/* Research Carousel */}
+      {/* Research Carousel — auto-scrolling */}
       {(() => {
-        const CATEGORY_COLORS: Record<string, string> = {
-          Heart: 'bg-red-100 text-red-700 border-red-200',
-          Brain: 'bg-purple-100 text-purple-700 border-purple-200',
-          Gut: 'bg-amber-100 text-amber-700 border-amber-200',
-          Cancer: 'bg-blue-100 text-blue-700 border-blue-200',
-          Inflammation: 'bg-orange-100 text-orange-700 border-orange-200',
-          Metabolism: 'bg-teal-100 text-teal-700 border-teal-200',
-          Longevity: 'bg-emerald-100 text-emerald-700 border-emerald-200',
-          Skin: 'bg-pink-100 text-pink-700 border-pink-200',
-        }
         const CATEGORY_ICONS: Record<string, string> = {
           Heart: '❤️', Brain: '🧠', Gut: '🦠', Cancer: '🔬',
           Inflammation: '🔥', Metabolism: '⚡', Longevity: '🧬', Skin: '✨',
         }
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        const scrollRef = useRef<HTMLDivElement>(null)
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        useEffect(() => {
+          const el = scrollRef.current
+          if (!el) return
+          let raf: number
+          let paused = false
+          const speed = 0.5 // px per frame
+          const scroll = () => {
+            if (!paused && el) {
+              el.scrollLeft += speed
+              if (el.scrollLeft >= el.scrollWidth - el.clientWidth) {
+                el.scrollLeft = 0
+              }
+            }
+            raf = requestAnimationFrame(scroll)
+          }
+          raf = requestAnimationFrame(scroll)
+          const pause = () => { paused = true }
+          const resume = () => { paused = false }
+          el.addEventListener('mouseenter', pause)
+          el.addEventListener('mouseleave', resume)
+          el.addEventListener('touchstart', pause)
+          el.addEventListener('touchend', () => setTimeout(resume, 3000))
+          return () => {
+            cancelAnimationFrame(raf)
+            el.removeEventListener('mouseenter', pause)
+            el.removeEventListener('mouseleave', resume)
+          }
+        }, [])
         return (
-          <section className="bg-gradient-to-b from-[#061226] to-slate-50 pt-3 pb-5 md:pt-4 md:pb-6">
+          <section className="bg-[#0a1628] pt-3 pb-3 md:pt-3 md:pb-4 border-t border-white/5">
             <div className="max-w-7xl mx-auto px-3 md:px-6">
-              <div className="flex items-center justify-between mb-2.5">
-                <div className="flex items-center gap-2">
-                  <span className="text-[10px] font-semibold text-white/50 uppercase tracking-[0.15em]">Latest Research</span>
-                </div>
-                <Link href="/blog" className="text-[10px] text-white/40 hover:text-white/60 font-medium transition-colors">
+              <div className="flex items-center justify-between mb-2">
+                <h2 className="text-[11px] font-semibold text-white/60 uppercase tracking-[0.12em]">Latest Olive Oil Research Papers</h2>
+                <Link href="/blog" className="text-[10px] text-white/30 hover:text-white/50 font-medium transition-colors">
                   All research →
                 </Link>
               </div>
-              <div className="flex gap-3 overflow-x-auto scrollbar-hide pb-2 snap-x snap-mandatory">
-                {researchPapers.map((paper, i) => (
+              <div ref={scrollRef} className="flex gap-2.5 overflow-x-auto scrollbar-hide pb-1">
+                {researchPapers.map((paper) => (
                   <Link
                     key={paper.slug}
                     href={`/blog/${paper.slug}`}
-                    className="snap-start shrink-0 w-[230px] md:w-[240px] group"
+                    className="shrink-0 w-[210px] md:w-[220px] group"
                   >
-                    <div className="h-full bg-white border border-gray-100 rounded-lg px-3 py-2.5 hover:border-gray-200 hover:shadow-sm transition-all duration-150">
-                      <div className="flex items-center gap-1.5 mb-1.5">
-                        <span className="text-[9px]">{CATEGORY_ICONS[paper.category] || '📄'}</span>
-                        <span className="text-[8px] font-semibold text-gray-400 uppercase tracking-wider">{paper.category}</span>
+                    <div className="h-full bg-white/[0.06] border border-white/[0.08] rounded-lg px-2.5 py-2 hover:bg-white/[0.1] hover:border-white/[0.15] transition-all duration-150">
+                      <div className="flex items-center gap-1.5 mb-1">
+                        <span className="text-[8px]">{CATEGORY_ICONS[paper.category] || '📄'}</span>
+                        <span className="text-[7px] font-semibold text-white/30 uppercase tracking-wider">{paper.category}</span>
                       </div>
-                      <h3 className="text-[12px] font-semibold text-gray-800 leading-snug line-clamp-2 group-hover:text-emerald-700 transition-colors">
+                      <h3 className="text-[11px] font-medium text-white/80 leading-snug line-clamp-2 group-hover:text-emerald-300 transition-colors">
                         {paper.title}
                       </h3>
-                      <p className="mt-1 text-[9px] text-gray-400 leading-relaxed line-clamp-2">
-                        {paper.finding}
-                      </p>
-                      <p className="mt-1.5 text-[8px] text-gray-300 italic truncate">
+                      <p className="mt-1 text-[8px] text-white/25 italic truncate">
                         {paper.paper}
                       </p>
                     </div>
@@ -913,6 +929,12 @@ export default function HomePage() {
           </section>
         )
       })()}
+
+      {/* Rankings Section Title */}
+      <div className="bg-slate-50 pt-4 pb-2 md:pt-5 md:pb-3 text-center">
+        <h2 className="text-sm md:text-base font-bold text-gray-800 tracking-tight">Top Polyphenol EVOO Rankings</h2>
+        <p className="text-[10px] text-gray-400 mt-0.5">Lab-verified · Ranked by mg/kg polyphenol content</p>
+      </div>
 
       {/* Filters Section (hidden to reduce visual load) */}
       <section className="hidden">
