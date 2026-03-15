@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "oleocanthal-vs-ibuprofen",
+    "title": "Can Olive Oil Replace Ibuprofen?",
+    "paper": "Beauchamp et al., Nature (2005)",
+    "finding": "Oleocanthal inhibits the same COX enzymes as ibuprofen",
+    "category": "Inflammation"
+  },
+  {
+    "slug": "olive-oil-for-brain-health-dementia",
+    "title": "What 28 Years of Data Say About Olive Oil & Your Brain",
+    "paper": "Harvard T.H. Chan School of Public Health (2024)",
+    "finding": "Higher olive oil intake linked to 28% lower dementia mortality",
+    "category": "Brain"
+  },
+  {
+    "slug": "olive-oil-for-cancer-prevention",
+    "title": "The Compound in EVOO That Kills Cancer Cells",
+    "paper": "Celano et al., Int J Mol Sci (2020)",
+    "finding": "Oleocanthal triggers cancer cell death within 30 minutes",
+    "category": "Cancer"
+  },
+  {
+    "slug": "olive-oil-for-gut-health",
+    "title": "How Olive Oil Polyphenols Reshape Your Microbiome",
+    "paper": "Ferraris et al., Nutrients (2023)",
+    "finding": "EVOO polyphenols increase Bifidobacteria and reduce gut inflammation",
+    "category": "Gut"
+  },
+  {
+    "slug": "health-benefits-high-polyphenol-evoo",
+    "title": "The EU's Only Approved Health Claim for Olive Oil",
+    "paper": "EU Regulation 432/2012, EFSA Panel",
+    "finding": "250mg/kg polyphenols proven to protect blood lipids from oxidation",
+    "category": "Heart"
+  },
+  {
+    "slug": "olive-oil-longevity-blue-zones",
+    "title": "Why Blue Zone Centenarians Drink Olive Oil Daily",
+    "paper": "Buettner, National Geographic Blue Zones Project",
+    "finding": "Populations consuming 40-60ml EVOO daily live 8-10 years longer",
+    "category": "Longevity"
+  },
+  {
+    "slug": "olive-oil-for-blood-pressure",
+    "title": "2 Tablespoons a Day Dropped Blood Pressure by 7 Points",
+    "paper": "Doménech et al., PREDIMED Trial (2014)",
+    "finding": "Mediterranean diet with EVOO reduced systolic BP by 7.1 mmHg",
+    "category": "Heart"
+  },
+  {
+    "slug": "olive-oil-for-cholesterol",
+    "title": "The Science Behind EVOO's Effect on LDL Cholesterol",
+    "paper": "Covas et al., Annals of Internal Medicine (2006)",
+    "finding": "High-polyphenol EVOO increased HDL and reduced oxidized LDL",
+    "category": "Heart"
+  },
+  {
+    "slug": "hydroxytyrosol-olive-oil",
+    "title": "Hydroxytyrosol: The Most Powerful Antioxidant in Food",
+    "paper": "Visioli et al., European Journal of Nutrition (2019)",
+    "finding": "Hydroxytyrosol has 10x the antioxidant capacity of green tea catechins",
+    "category": "Metabolism"
+  },
+  {
+    "slug": "olive-oil-for-liver-health",
+    "title": "Can Olive Oil Reverse Fatty Liver Disease?",
+    "paper": "Priore et al., Frontiers in Nutrition (2022)",
+    "finding": "EVOO polyphenols reduced hepatic fat by 30% in 12-week trial",
+    "category": "Metabolism"
+  }
+]

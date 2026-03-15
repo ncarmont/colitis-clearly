@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import researchPapers from './research-carousel.json'
 import WorldMap from '@/components/WorldMap'
 import AdUnit from '@/components/AdUnit'
 import SmallAd from '@/components/SmallAd'
@@ -818,34 +819,34 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Hero content */}
-        <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-7 pb-7 md:pt-14 md:pb-14 text-center">
-          <h1 className="text-[1.95rem] sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.05] animate-slide-up">
+        {/* Hero content — compact */}
+        <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-5 pb-5 md:pt-8 md:pb-8 text-center">
+          <h1 className="text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.08] animate-slide-up">
             Best Extra Virgin Olive Oils
-            <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-lime-300">
-              Ranked Scientifically
+            <span className="block mt-0.5 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-lime-300">
+              Ranked by Science
             </span>
           </h1>
 
-          <p className="hidden md:block mt-4 text-base text-emerald-100/60 font-light max-w-md mx-auto animate-fade-in-delay">
-            Lab-verified polyphenol rankings — independent &amp; science-backed.
+          <p className="hidden md:block mt-2.5 text-sm text-emerald-100/60 font-light max-w-md mx-auto animate-fade-in-delay">
+            Lab-verified polyphenol rankings — independent &amp; peer-reviewed.
           </p>
 
           {/* Unified value + stats card (simplified) */}
-          <div className="mt-5 mx-auto max-w-3xl bg-white/10 border border-white/15 rounded-2xl md:rounded-3xl backdrop-blur-md shadow-[0_10px_40px_rgba(16,185,129,0.14)] animate-fade-in-delay-2 overflow-hidden">
-            <div className="px-4 py-2 text-center border-b border-white/10 text-[11px] md:text-xs text-white/85">
+          <div className="mt-4 mx-auto max-w-3xl bg-white/10 border border-white/15 rounded-2xl md:rounded-3xl backdrop-blur-md shadow-[0_10px_40px_rgba(16,185,129,0.14)] animate-fade-in-delay-2 overflow-hidden">
+            <div className="px-4 py-1.5 text-center border-b border-white/10 text-[11px] md:text-xs text-white/85">
               ❤️ <span className="font-semibold">Lab-verified heart-health ranking</span> · 31% ↓ CVD risk
             </div>
             <div className="grid grid-cols-3 divide-x divide-white/15">
-              <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
-                <div className="text-xl md:text-3xl font-black text-white">{stats.totalOils}</div>
+              <div className="px-4 py-2 md:px-8 md:py-3 text-center">
+                <div className="text-xl md:text-2xl font-black text-white">{stats.totalOils}</div>
                 <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Lab-Verified</div>
               </div>
-              <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
-                <div className="text-xl md:text-3xl font-black text-white">{stats.countries}</div>
+              <div className="px-4 py-2 md:px-8 md:py-3 text-center">
+                <div className="text-xl md:text-2xl font-black text-white">{stats.countries}</div>
                 <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Countries</div>
               </div>
-              <div className="px-4 py-2.5 md:px-8 md:py-4 text-center">
+              <div className="px-4 py-2 md:px-8 md:py-3 text-center">
                 <div className="text-xl md:text-3xl font-black text-white">{stats.maxPolyphenols}</div>
                 <div className="text-[8px] md:text-[10px] text-emerald-200/90 uppercase tracking-[0.18em] mt-0.5">Max mg/kg</div>
               </div>
@@ -855,6 +856,65 @@ export default function HomePage() {
 
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
       </header>
+
+      {/* Research Carousel */}
+      {(() => {
+        const CATEGORY_COLORS: Record<string, string> = {
+          Heart: 'bg-red-100 text-red-700 border-red-200',
+          Brain: 'bg-purple-100 text-purple-700 border-purple-200',
+          Gut: 'bg-amber-100 text-amber-700 border-amber-200',
+          Cancer: 'bg-blue-100 text-blue-700 border-blue-200',
+          Inflammation: 'bg-orange-100 text-orange-700 border-orange-200',
+          Metabolism: 'bg-teal-100 text-teal-700 border-teal-200',
+          Longevity: 'bg-emerald-100 text-emerald-700 border-emerald-200',
+          Skin: 'bg-pink-100 text-pink-700 border-pink-200',
+        }
+        const CATEGORY_ICONS: Record<string, string> = {
+          Heart: '❤️', Brain: '🧠', Gut: '🦠', Cancer: '🔬',
+          Inflammation: '🔥', Metabolism: '⚡', Longevity: '🧬', Skin: '✨',
+        }
+        return (
+          <section className="bg-gradient-to-b from-[#061226] to-slate-50 pt-4 pb-6 md:pt-5 md:pb-8">
+            <div className="max-w-7xl mx-auto px-3 md:px-6">
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-bold text-emerald-300 uppercase tracking-[0.15em]">📊 Latest Research</span>
+                  <span className="text-[10px] text-white/50">What the science says</span>
+                </div>
+                <Link href="/blog" className="text-[10px] text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
+                  View all →
+                </Link>
+              </div>
+              <div className="flex gap-3 overflow-x-auto scrollbar-hide pb-2 snap-x snap-mandatory">
+                {researchPapers.map((paper, i) => (
+                  <Link
+                    key={paper.slug}
+                    href={`/blog/${paper.slug}`}
+                    className="snap-start shrink-0 w-[260px] md:w-[280px] group"
+                  >
+                    <div className="h-full bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl p-3.5 shadow-sm hover:shadow-md hover:border-emerald-300 hover:-translate-y-0.5 transition-all duration-200">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full border ${CATEGORY_COLORS[paper.category] || 'bg-gray-100 text-gray-700 border-gray-200'}`}>
+                          {CATEGORY_ICONS[paper.category] || '📄'} {paper.category}
+                        </span>
+                      </div>
+                      <h3 className="text-[13px] font-bold text-gray-900 leading-snug line-clamp-2 group-hover:text-emerald-700 transition-colors">
+                        {paper.title}
+                      </h3>
+                      <p className="mt-1.5 text-[10px] text-gray-500 leading-relaxed line-clamp-2">
+                        {paper.finding}
+                      </p>
+                      <p className="mt-2 text-[9px] text-gray-400 font-medium italic truncate">
+                        {paper.paper}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )
+      })()}
 
       {/* Filters Section (hidden to reduce visual load) */}
       <section className="hidden">
