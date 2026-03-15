@@ -1313,7 +1313,7 @@ export default function HomePage() {
                   return (
                     <ScrollReveal key={oil.id} delay={Math.min(index * 80, 400)} className={isHero ? 'md:col-span-2 lg:col-span-2' : ''}>
                     <div
-                      className={`relative overflow-hidden rounded-2xl border ${cardBorder} ${cardBg} shadow-lg card-hover h-full`}
+                      className={`relative overflow-hidden rounded-2xl border ${cardBorder} ${cardBg} shadow-lg hover:shadow-xl hover:shadow-emerald-900/10 transition-all duration-300 group/card h-full`}
                     >
                       {/* Product image area */}
                       {oil.productImage ? (
