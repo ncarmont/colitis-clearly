@@ -828,7 +828,7 @@ export default function HomePage() {
             </span>
           </h1>
 
-          <p className="mt-1.5 text-[10px] md:text-xs text-emerald-300/80 font-semibold uppercase tracking-[0.2em] animate-fade-in-delay">
+          <p className="mt-1 text-[9px] md:text-[10px] text-white/40 font-medium tracking-[0.25em] uppercase animate-fade-in-delay">
             The Home of Olive Oil Science
           </p>
 
@@ -874,15 +874,14 @@ export default function HomePage() {
           Inflammation: '🔥', Metabolism: '⚡', Longevity: '🧬', Skin: '✨',
         }
         return (
-          <section className="bg-gradient-to-b from-[#061226] to-slate-50 pt-4 pb-6 md:pt-5 md:pb-8">
+          <section className="bg-gradient-to-b from-[#061226] to-slate-50 pt-3 pb-5 md:pt-4 md:pb-6">
             <div className="max-w-7xl mx-auto px-3 md:px-6">
-              <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center justify-between mb-2.5">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-bold text-emerald-300 uppercase tracking-[0.15em]">📊 Latest Research</span>
-                  <span className="text-[10px] text-white/50">What the science says</span>
+                  <span className="text-[10px] font-semibold text-white/50 uppercase tracking-[0.15em]">Latest Research</span>
                 </div>
-                <Link href="/blog" className="text-[10px] text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
-                  View all →
+                <Link href="/blog" className="text-[10px] text-white/40 hover:text-white/60 font-medium transition-colors">
+                  All research →
                 </Link>
               </div>
               <div className="flex gap-3 overflow-x-auto scrollbar-hide pb-2 snap-x snap-mandatory">
@@ -890,21 +889,20 @@ export default function HomePage() {
                   <Link
                     key={paper.slug}
                     href={`/blog/${paper.slug}`}
-                    className="snap-start shrink-0 w-[260px] md:w-[280px] group"
+                    className="snap-start shrink-0 w-[230px] md:w-[240px] group"
                   >
-                    <div className="h-full bg-white/95 backdrop-blur-sm border border-gray-200 rounded-xl p-3.5 shadow-sm hover:shadow-md hover:border-emerald-300 hover:-translate-y-0.5 transition-all duration-200">
-                      <div className="flex items-center gap-2 mb-2">
-                        <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full border ${CATEGORY_COLORS[paper.category] || 'bg-gray-100 text-gray-700 border-gray-200'}`}>
-                          {CATEGORY_ICONS[paper.category] || '📄'} {paper.category}
-                        </span>
+                    <div className="h-full bg-white border border-gray-100 rounded-lg px-3 py-2.5 hover:border-gray-200 hover:shadow-sm transition-all duration-150">
+                      <div className="flex items-center gap-1.5 mb-1.5">
+                        <span className="text-[9px]">{CATEGORY_ICONS[paper.category] || '📄'}</span>
+                        <span className="text-[8px] font-semibold text-gray-400 uppercase tracking-wider">{paper.category}</span>
                       </div>
-                      <h3 className="text-[13px] font-bold text-gray-900 leading-snug line-clamp-2 group-hover:text-emerald-700 transition-colors">
+                      <h3 className="text-[12px] font-semibold text-gray-800 leading-snug line-clamp-2 group-hover:text-emerald-700 transition-colors">
                         {paper.title}
                       </h3>
-                      <p className="mt-1.5 text-[10px] text-gray-500 leading-relaxed line-clamp-2">
+                      <p className="mt-1 text-[9px] text-gray-400 leading-relaxed line-clamp-2">
                         {paper.finding}
                       </p>
-                      <p className="mt-2 text-[9px] text-gray-400 font-medium italic truncate">
+                      <p className="mt-1.5 text-[8px] text-gray-300 italic truncate">
                         {paper.paper}
                       </p>
                     </div>
