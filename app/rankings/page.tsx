@@ -17,6 +17,7 @@ type OliveOil = {
   certificateLink: string
   cultivar: string
   buyLink: string
+  amazonLink?: string
   notes: string
 }
 
@@ -425,14 +426,27 @@ export default function RankingsPage() {
                         <div className="text-gray-900 font-medium">{oil.priceAmount}</div>
                       </td>
                       <td className="px-4 py-4">
-                        <a
-                          href={oil.buyLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center px-3 py-1.5 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition"
-                        >
-                          Buy →
-                        </a>
+                        <div className="flex flex-col gap-1.5">
+                          <a
+                            href={oil.buyLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-3 py-1.5 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition"
+                          >
+                            Buy →
+                          </a>
+                          {(oil.amazonLink || oil.buyLink.toLowerCase().includes('amazon')) && (
+                            <a
+                              href={oil.amazonLink || oil.buyLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-[#FFD814] to-[#FF9900] text-gray-900 text-sm font-bold rounded-lg hover:from-[#F7CA00] hover:to-[#FF8C00] transition"
+                            >
+                              <svg viewBox="0 0 448 512" className="w-3.5 h-3.5" fill="currentColor"><path d="M257.2 162.7c-48.7 1.8-169.5 15.5-169.5 117.5 0 109.5 138.3 114 183.5 43.2 6.5 10.2 35.4 37.5 45.3 46.8l56.8-56S341 288.9 341 261.4V114.3C341 89 316.5 32 228.7 32 140.7 32 94 87 94 136.3l73.5 6.8c16.3-49.5 54.2-49.5 54.2-49.5 40.7-.1 35.5 29.8 35.5 69.1zm0 86.3c0 34-30.1 44.4-61.3 44.4-38.2 0-52.7-27.6-52.7-50.2 0-31.2 23.1-59.1 114-62.4v68.2zm186.3 119.8c-7.7 6.5-19.6 3-22-5-13-44.4-46.3-73.2-79.5-73.2-13.2 0-26.5 4.5-40 13.5V512l96 64V368.8z"/></svg>
+                              Amazon
+                            </a>
+                          )}
+                        </div>
                       </td>
                     </tr>
                   ))}
