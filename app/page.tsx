@@ -781,13 +781,22 @@ export default function HomePage() {
       />
 
       <main className="min-h-screen bg-slate-50 overflow-x-hidden w-full max-w-full relative">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-100/40 via-transparent to-transparent pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-100/30 via-transparent to-transparent pointer-events-none"></div>
+        {/* Subtle ambient gradient that shifts */}
+        <div className="absolute top-[30vh] right-0 w-[400px] h-[400px] bg-emerald-200/10 rounded-full blur-[150px] animate-float-orb pointer-events-none" />
+        <div className="absolute top-[60vh] left-0 w-[300px] h-[300px] bg-teal-200/8 rounded-full blur-[120px] animate-float-orb-2 pointer-events-none" />
         <div className="relative z-10">
       {/* Hero Header */}
-      <header className="relative overflow-hidden bg-gradient-to-br from-[#061226] via-[#0a1f3a] to-[#07382d] w-full border-b border-white/10">
-        {/* layered glow + texture */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,rgba(16,185,129,0.26),transparent)] pointer-events-none" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_15%,rgba(45,212,191,0.16),transparent_40%)] pointer-events-none" />
+      <header className="relative overflow-hidden bg-gradient-to-br from-[#061226] via-[#0a1f3a] to-[#07382d] w-full border-b border-white/10 dot-grid-pattern">
+        {/* Animated aurora gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/30 via-transparent to-teal-900/20 animate-aurora pointer-events-none" />
+        {/* Floating orbs */}
+        <div className="absolute top-[10%] left-[15%] w-[300px] h-[300px] bg-emerald-500/10 rounded-full blur-[100px] animate-float-orb pointer-events-none" />
+        <div className="absolute top-[20%] right-[10%] w-[250px] h-[250px] bg-teal-400/8 rounded-full blur-[80px] animate-float-orb-2 pointer-events-none" />
+        <div className="absolute bottom-[5%] left-[40%] w-[200px] h-[200px] bg-cyan-500/6 rounded-full blur-[90px] animate-float-orb-3 pointer-events-none" />
+        {/* Static radial glows */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_50%_0%,rgba(16,185,129,0.18),transparent)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_15%,rgba(45,212,191,0.12),transparent_40%)] pointer-events-none" />
 
         {/* Top utility bar */}
         <div className="relative z-30 flex items-center justify-between px-4 md:px-8 py-2 md:py-2.5 border-b border-white/10 bg-black/10 backdrop-blur-sm">
@@ -824,7 +833,7 @@ export default function HomePage() {
         <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-4 pb-4 md:pt-6 md:pb-6 text-center">
           <h1 className="text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.08] animate-slide-up">
             Best Extra Virgin Olive Oils
-            <span className="block mt-0.5 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-lime-300">
+            <span className="block mt-0.5 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-lime-300 animate-shimmer-text">
               Ranked by Science
             </span>
           </h1>
@@ -859,11 +868,12 @@ export default function HomePage() {
       <ResearchCarousel papers={researchPapers} />
 
       {/* Rankings Section Banner */}
-      <div className="bg-gradient-to-r from-[#0a1628] via-[#0d3b2e] to-[#0a1628] py-3 md:py-4 text-center border-t border-emerald-500/10">
-        <h2 className="text-base md:text-xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-teal-300">
+      <div className="relative overflow-hidden bg-gradient-to-r from-[#0a1628] via-[#0d3b2e] to-[#0a1628] py-3 md:py-4 text-center border-t border-emerald-500/10">
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/10 via-teal-800/15 to-emerald-900/10 animate-aurora pointer-events-none" />
+        <h2 className="relative text-base md:text-xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-300 to-teal-300 animate-shimmer-text">
           Top Polyphenol EVOO Rankings
         </h2>
-        <p className="text-[9px] md:text-[10px] text-white/30 mt-0.5 tracking-wide">Lab-verified · Ranked by mg/kg polyphenol content</p>
+        <p className="relative text-[9px] md:text-[10px] text-white/30 mt-0.5 tracking-wide">Lab-verified · Ranked by mg/kg polyphenol content</p>
       </div>
 
       {/* Filters Section (hidden to reduce visual load) */}
@@ -936,7 +946,10 @@ export default function HomePage() {
       )}
 
       {/* Rankings Table */}
-      <section className="py-3 md:py-6 px-4 md:px-6 w-full no-auto-ads" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
+      <section className="relative py-3 md:py-6 px-4 md:px-6 w-full no-auto-ads overflow-hidden" style={{background: 'linear-gradient(to right, #0f172a, #1e293b, #0f172a)'}}>
+        {/* Subtle floating orbs behind rankings */}
+        <div className="absolute top-[20%] right-[5%] w-[200px] h-[200px] bg-emerald-600/5 rounded-full blur-[80px] animate-float-orb pointer-events-none" />
+        <div className="absolute bottom-[30%] left-[3%] w-[250px] h-[250px] bg-teal-500/4 rounded-full blur-[100px] animate-float-orb-2 pointer-events-none" />
         <div className="max-w-7xl mx-auto w-full">
           {/* Info strip — ultra-compact (freshest harvest only) */}
           <div className="mb-2 px-2">
@@ -1242,8 +1255,8 @@ export default function HomePage() {
                   return (
                     <div
                       key={oil.id}
-                      className={`relative overflow-hidden rounded-2xl border ${cardBorder} ${cardBg} shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 animate-fade-in-row ${isHero ? 'md:col-span-2 lg:col-span-2' : ''}`}
-                      style={{ animationDelay: `${index * 40}ms` }}
+                      className={`relative overflow-hidden rounded-2xl border ${cardBorder} ${cardBg} shadow-lg card-hover animate-glow-pulse ranking-card-enter ${isHero ? 'md:col-span-2 lg:col-span-2' : ''}`}
+                      style={{ animationDelay: `${index * 60}ms` }}
                     >
                       {/* Product image area */}
                       {oil.productImage ? (

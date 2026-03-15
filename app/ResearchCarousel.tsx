@@ -54,7 +54,9 @@ export default function ResearchCarousel({ papers }: { papers: Paper[] }) {
   }, [])
 
   return (
-    <section className="bg-[#0a1628] pt-3 pb-3 md:pt-3 md:pb-4 border-t border-white/5">
+    <section className="relative bg-[#0a1628] pt-3 pb-3 md:pt-3 md:pb-4 border-t border-white/5 overflow-hidden">
+      {/* Subtle ambient glow */}
+      <div className="absolute top-0 left-[30%] w-[200px] h-[100px] bg-emerald-500/5 rounded-full blur-[60px] animate-float-orb-3 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-3 md:px-6">
         <div className="flex items-center justify-between mb-2">
           <h2 className="text-[11px] md:text-xs font-bold text-white/40 tracking-[0.15em] uppercase">
@@ -72,7 +74,7 @@ export default function ResearchCarousel({ papers }: { papers: Paper[] }) {
               <Link
                 key={paper.slug}
                 href={`/blog/${paper.slug}`}
-                className="shrink-0 w-[210px] md:w-[220px] bg-white/[0.06] border border-white/[0.08] rounded-lg p-3 hover:bg-white/[0.1] transition-colors"
+                className="shrink-0 w-[210px] md:w-[220px] bg-white/[0.06] border border-white/[0.08] rounded-lg p-3 hover:bg-white/[0.1] hover:border-emerald-500/20 transition-all duration-300"
               >
                 <div className="flex items-center gap-1 mb-1.5">
                   <span className="text-[10px]">{CATEGORY_ICONS[paper.category] || '📄'}</span>
