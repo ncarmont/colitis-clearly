@@ -65,7 +65,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij",
-    notes: "Verified 16 Mar 2026: 500ml bottle still sold out (confirmed); refill subscription pouches (10% saving) remain available — pair with original bottle for eco refill system. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle. Free UK shipping.",
+    amazonLink: "https://www.amazon.co.uk/dp/B0FBMFH4J3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
+    notes: "Verified 16 Mar 2026: 500ml bottle still sold out (confirmed); refill subscription pouches (10% saving) remain available — pair with original bottle for eco refill system. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle. Free UK shipping. Also available on Amazon UK (Arbequina Ultra refill pouch variant).",
     productImage: "/img/sp360-bottle.jpg",
     instagram: "sp360evoo"
   },
@@ -225,6 +226,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Itrana/Moraiolo",
     buyLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
+    amazonLink: "https://www.amazon.com/dp/B07984JN3L?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
     notes: "Needs correct brand link/COA.",
     productImage: "/img/oil-23.jpg",
     instagram: "quattrociocchiolio"
@@ -446,6 +448,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.pjkabos.com/family-reserve-organic-medium",
+    amazonLink: "https://www.amazon.com/dp/B0CHTVMXZJ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
     notes: "USDA/EU organic.",
     productImage: "/img/kabos-phenolic-shot.jpg",
     instagram: "pjkabos"
