@@ -76,20 +76,12 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
         <meta name="google-adsense-account" content="ca-pub-1361556625262612" />
-        {/* Hide intrusive auto-inserted ad containers — keep only our manual SmallAd components */}
+        {/* AdSense: only block vignette/overlay ads, allow in-content and manual units */}
         <style dangerouslySetInnerHTML={{ __html: `
-          /* Hide Google auto-ads (vignette, anchor, in-content auto placements) */
-          ins.adsbygoogle[data-ad-status="unfilled"],
-          ins.adsbygoogle:not([data-ad-slot]) {
+          /* Block vignette (full-screen interstitial) ads only */
+          ins.adsbygoogle[data-ad-format="interstitial"],
+          ins.adsbygoogle[data-ad-format="vignette"] {
             display: none !important;
-            height: 0 !important;
-            max-height: 0 !important;
-            overflow: hidden !important;
-          }
-          /* Limit ALL ad units to max 90px height */
-          ins.adsbygoogle {
-            max-height: 90px !important;
-            overflow: hidden !important;
           }
         `}} />
 

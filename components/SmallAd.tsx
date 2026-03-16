@@ -42,7 +42,8 @@ export default function SmallAd({
     }
   }, [])
 
-  if (!slot) return null
+  // If no specific slot, render an auto-format ad unit
+  const adSlot = slot || undefined
 
   const maxHeights = {
     banner: '90px',
@@ -73,8 +74,8 @@ export default function SmallAd({
           className="adsbygoogle"
           style={{ display: 'block', textAlign: 'center' }}
           data-ad-client={PUB_ID}
-          data-ad-slot={slot}
-          data-ad-format="horizontal"
+          {...(adSlot ? { 'data-ad-slot': adSlot } : {})}
+          data-ad-format={adSlot ? 'horizontal' : 'auto'}
           data-full-width-responsive="true"
         />
       </div>
