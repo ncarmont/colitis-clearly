@@ -528,7 +528,7 @@ export default function OliveOilVsAvocadoOilPage() {
                 tag: '🥇 Highest polyphenols',
                 tagColor: 'from-yellow-600 to-amber-500',
                 price: '$79.99',
-                link: 'https://sp360uk.goaffpro.com/',
+                link: 'https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij',
                 note: 'Best for: daily therapeutic dose, raw consumption, anti-inflammatory protocol',
                 border: 'border-yellow-700/50',
                 bg: 'bg-yellow-900/15'

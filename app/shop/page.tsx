@@ -58,7 +58,7 @@ const OILS_DATA: OliveOil[] = [
     price: "$$", priceAmount: "£38.00", method: "HPLC", lab: "HPLC-style IOC phenolics",
     certificateLink: "",
     cultivar: "—",
-    buyLink: "https://sp360.co.uk/products/sp-360-500ml-extra-virgin-olive-oil-bottle",
+    buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij",
     notes: "Refillable bottle; subscription option."
   },
   {

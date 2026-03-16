@@ -37,7 +37,7 @@ export default function RankingsPage() {
       price: "$$", priceAmount: "£42.00", method: "HPLC", lab: "Lab Certified",
       certificateLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
       cultivar: "Arbequina",
-      buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
+      buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij",
       notes: "⚠️ Currently sold out. UV-protected refillable bottle; 1,711 mg/kg verified; herbaceous with green almond & tomato vine notes"
     },
     {
