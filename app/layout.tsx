@@ -69,21 +69,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google AdSense — manual placements ONLY, auto ads disabled via CSS exclusions */}
+        {/* Google AdSense — auto ads enabled, controlled via adsense.google.com dashboard */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1361556625262612"
           crossOrigin="anonymous"
         ></script>
         <meta name="google-adsense-account" content="ca-pub-1361556625262612" />
-        {/* AdSense: only block vignette/overlay ads, allow in-content and manual units */}
-        <style dangerouslySetInnerHTML={{ __html: `
-          /* Block vignette (full-screen interstitial) ads only */
-          ins.adsbygoogle[data-ad-format="interstitial"],
-          ins.adsbygoogle[data-ad-format="vignette"] {
-            display: none !important;
-          }
-        `}} />
 
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ9T4462C0"></script>
