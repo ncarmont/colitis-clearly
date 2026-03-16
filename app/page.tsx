@@ -102,6 +102,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
+    amazonLink: "https://www.amazon.co.uk/dp/B0DCP7F54J?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "2025/26 harvest; lab-certified 1,504.42 mg/kg polyphenols (up from 1,269 prior year). Single-estate Jordan family farm. Herbaceous with grassy, herbal, and floral notes. Feb 2026 verified on producer site.",
     productImage: "/img/oil-5.jpg",
     instagram: "onsurioliveoil"
@@ -150,6 +151,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.masworth.co.uk/product/november-early-harvest-organic-olive-oil-500ml/",
+    amazonLink: "https://www.amazon.co.uk/dp/B07PJS56PR?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "Verified 11 Mar 2026: Lab-certified +1,200 mg/kg (NMR, Oct–Nov 2025 harvest). 500ml; certified organic; early-harvest 100% Koroneiki from southern Greece. Filtered for long-term stability. Bundle price ≈ £22.87/bottle (3+). EU health claim certified. Among UK's top-ranked high-polyphenol oils on third-party trackers.",
     productImage: "/img/oil-9.jpg",
     instagram: "novemberoliveoil"
@@ -174,6 +176,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Blend",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
+    amazonLink: "https://www.amazon.co.uk/dp/B0F38DZNX6?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "Verified 9 Mar 2026: 2025/26 harvest live. Polyphenols 975 mg/kg (was 1,000 in 2024/25 batch). Buttery smooth texture, mild yet complex; floral/almond profile. £22.50. Subscribe & 5th order free. Ships from UK warehouse (£2.50).",
     productImage: "/img/oil-11.png",
     instagram: "onsurioliveoil"
@@ -282,6 +285,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca/Arbequina/Koroneiki",
     buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
+    amazonLink: "https://www.amazon.co.uk/dp/B0G2MHQB98?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "Verified 15 Mar 2026: Back in stock on producer website (was OUT OF STOCK 13 Mar 2026). 2025 harvest (Nov 2025). Polyphenols 642 mg/kg (was 661 in 2024 harvest). Origin: Pedrera, Sevilla, Andalucía. Acidity 0.14%. Mobile milling within 1 hour of picking. Awarded 'Best Organic EVOO in Sevilla' (Ecotrama gold star).",
     productImage: "/img/oil-20.png",
     instagram: "citizensofsoil"
@@ -319,6 +323,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca + Picuda",
     buyLink: "https://www.ventadelbaron.com/en/collections/all",
+    amazonLink: "https://www.amazon.co.uk/dp/B00FMMATCA?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "DO protected.",
     productImage: "/img/oil-23.jpg",
     instagram: "ventadelbaron"
@@ -416,6 +421,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
+    amazonLink: "https://www.amazon.co.uk/dp/B0FZKWVCXF?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "Verified Feb 2026 via healthysupplies.co.uk: 552 mg/kg (was 526). Sparta, Peloponnese; 100% Koroneiki. 0.21% acidity. Milled within 24h. £17.99 via UK retailer.",
     productImage: "/img/oil-31.webp",
     instagram: "citizensofsoil"
