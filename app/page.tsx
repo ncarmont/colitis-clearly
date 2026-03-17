@@ -128,6 +128,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbosana",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
+    amazonLink: "https://www.amazon.co.uk/dp/B0DCP9YNBT?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "Verified 10 Mar 2026: Product URL now active. 2024/25 Arbosana EVOO, 500ml tin, £19.95. 1,255 mg/kg polyphenols (RSS certified). Bold, fruity profile: green tomato, almond, persistent peppery finish. Subscribe & 5th order free. Free UK shipping.",
     productImage: "/img/oil-7.png",
     instagram: "onsurioliveoil"
@@ -251,6 +252,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://orodeldesierto.com/en/shop-2/",
+    amazonLink: "https://www.amazon.co.uk/dp/B00D1AAOLG?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "Early-harvest organic Picual, Almería.",
     productImage: "/img/oil-23.jpg",
     instagram: "orodeldesierto"
