@@ -3,14 +3,10 @@
 import { useEffect, useRef } from 'react'
 
 /**
- * SmallAd — A compact, tasteful inline ad unit.
- * Designed to blend with the site's dark aesthetic.
- * Max height constrained to keep it subtle.
- * 
- * Variants:
- * - "banner" (default): Slim horizontal banner, max 90px tall
- * - "inline": Slightly taller, fits between content sections, max 120px
- * - "sidebar": For desktop sidebars or in-content placements, max 250px
+ * SmallAd — Inline AdSense ad unit.
+ * When a slot ID is provided: renders a manual ad unit.
+ * When no slot ID: renders a multiplex/auto ad that Google fills.
+ * No height restrictions — let Google's responsive system handle sizing.
  */
 
 const PUB_ID = 'ca-pub-1361556625262612'
@@ -24,10 +20,11 @@ interface SmallAdProps {
 
 export default function SmallAd({
   slot,
-  variant = 'banner',
+  variant = 'inline',
   className = '',
   dark = true,
 }: SmallAdProps) {
+  const adRef = useRef<HTMLModElement>(null)
   const pushed = useRef(false)
 
   useEffect(() => {
@@ -38,44 +35,33 @@ export default function SmallAd({
       w.adsbygoogle = w.adsbygoogle || []
       w.adsbygoogle.push({})
     } catch {
-      // adsbygoogle not loaded
+      // adsbygoogle not loaded yet
     }
   }, [])
 
-  // If no specific slot, render an auto-format ad unit
-  const adSlot = slot || undefined
-
-  const maxHeights = {
-    banner: '90px',
-    inline: '120px',
-    sidebar: '250px',
-  }
-
   const bgClass = dark
-    ? 'bg-white/[0.03] border-white/[0.06]'
-    : 'bg-gray-50/80 border-gray-200/50'
+    ? 'border-white/[0.04]'
+    : 'border-gray-200/30'
 
-  const labelClass = dark
-    ? 'text-white/20'
-    : 'text-gray-400'
+  const labelClass = dark ? 'text-white/15' : 'text-gray-400'
 
   return (
     <div
-      className={`w-full overflow-hidden rounded-xl border ${bgClass} my-3 ${className}`}
-      style={{ maxHeight: maxHeights[variant] }}
+      className={`w-full my-4 ${className}`}
       aria-label="Advertisement"
       data-nosnippet
     >
-      <p className={`text-[8px] ${labelClass} text-center pt-1 uppercase tracking-[0.15em] font-medium`}>
-        Ad
+      <p className={`text-[7px] ${labelClass} text-center uppercase tracking-[0.2em] font-medium mb-1`}>
+        Advertisement
       </p>
-      <div className="px-2 pb-1" style={{ maxHeight: `calc(${maxHeights[variant]} - 20px)`, overflow: 'hidden' }}>
+      <div className={`w-full border ${bgClass} rounded-lg overflow-hidden`}>
         <ins
+          ref={adRef}
           className="adsbygoogle"
-          style={{ display: 'block', textAlign: 'center' }}
+          style={{ display: 'block', width: '100%', minHeight: '50px' }}
           data-ad-client={PUB_ID}
-          {...(adSlot ? { 'data-ad-slot': adSlot } : {})}
-          data-ad-format={adSlot ? 'horizontal' : 'auto'}
+          {...(slot ? { 'data-ad-slot': slot } : {})}
+          data-ad-format="auto"
           data-full-width-responsive="true"
         />
       </div>

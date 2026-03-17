@@ -36,8 +36,6 @@ export default function AdUnit({
     }
   }, [])
 
-  if (!slot) return null  // Don't render until slot ID is configured
-
   return (
     <div
       ref={adRef}
@@ -46,15 +44,15 @@ export default function AdUnit({
       data-nosnippet
     >
       {label && (
-        <p className="text-[9px] text-gray-400 text-center mb-1 uppercase tracking-widest font-medium">
+        <p className="text-[7px] text-white/15 text-center mb-1 uppercase tracking-[0.2em] font-medium">
           Advertisement
         </p>
       )}
       <ins
         className="adsbygoogle"
-        style={{ display: 'block', textAlign: 'center' }}
+        style={{ display: 'block', textAlign: 'center', width: '100%', minHeight: '50px' }}
         data-ad-client={PUB_ID}
-        data-ad-slot={slot}
+        {...(slot ? { 'data-ad-slot': slot } : {})}
         data-ad-format={format}
         {...(layout ? { 'data-ad-layout': layout } : {})}
         data-full-width-responsive="true"
