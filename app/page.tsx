@@ -141,6 +141,7 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca",
     buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
+    amazonLink: "https://www.amazon.co.uk/dp/B0G34X8MSZ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
     notes: "Verified 9 Mar 2026: 2025/26 harvest live. Demeter biodynamic estate oil. €19.63 (500ml); bulk pricing from €17.66/bottle (12 units). Winner of 'Premio Alimentos de España'. Green almond, apple, banana skin notes. 16 reviews. Free shipping on orders over €70.",
     productImage: "/img/oil-8.jpg",
     instagram: "fincalatorre"
@@ -340,7 +341,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
-    notes: "'Primer Día de Cosecha'. Verified Feb 2026: Fall 2025 new harvest in stock at Olive Oil Lovers ($49.95). Mild intensity; aromas of banana, almond, apple; Andalusia.",
+    amazonLink: "https://www.amazon.co.uk/dp/B00ZRFFAZI?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
+    notes: "'Primer Día de Cosecha'. Verified Feb 2026: Fall 2025 new harvest in stock at Olive Oil Lovers ($49.95). Also on Amazon UK. Mild intensity; aromas of banana, almond, apple; Andalusia.",
     productImage: "/img/oil-24.jpg",
     instagram: "castillodecanena"
   },
@@ -488,7 +490,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Hojiblanca",
     buyLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
-    notes: "PDO Priego de Córdoba.",
+    amazonLink: "https://www.amazon.co.uk/dp/B0DHL4SF2F?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
+    notes: "PDO Priego de Córdoba. New harvest 25/26 available on Amazon UK.",
     instagram: "almasubbetica"
   },
   {

@@ -86,6 +86,7 @@ export default function RankingsPage() {
       certificateLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
       cultivar: "Hojiblanca",
       buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
+      amazonLink: "https://www.amazon.co.uk/dp/B0G34X8MSZ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "Biodynamic from Málaga; unusually high count this season"
     },
     {
@@ -198,6 +199,7 @@ export default function RankingsPage() {
       certificateLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
       cultivar: "Picual",
       buyLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
+      amazonLink: "https://www.amazon.co.uk/dp/B00ZRFFAZI?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "Premium 'Primer Día de Cosecha' line from Jaén"
     },
     {
@@ -270,7 +272,8 @@ export default function RankingsPage() {
       certificateLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
       cultivar: "Hojiblanca",
       buyLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
-      notes: "Leading PDO producer from Priego de Córdoba; transparent count"
+      amazonLink: "https://www.amazon.co.uk/dp/B0DHL4SF2F?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
+      notes: "Leading PDO producer from Priego de Córdoba; transparent count. New harvest 25/26 on Amazon UK."
     }
   ])
 
