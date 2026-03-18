@@ -63,6 +63,7 @@ export default function ResearchPage() {
     { stat: '30%', label: 'hepatic fat reduction', source: 'Priore et al.' },
     { stat: 'P=.008', label: 'depression score reduction', source: 'Foshati et al.' },
     { stat: 'P=.005', label: 'bone density protection in women', source: 'PREDIMED-Plus' },
+    { stat: '47%', label: 'psoriasis remission rate (PASI 75)', source: 'MEDIPSO Trial' },
   ]
 
   return (

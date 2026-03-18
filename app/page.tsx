@@ -547,6 +547,13 @@ const OIL_TAGLINES: Record<number, string> = {
   37: 'Non-organic robust Koroneiki, bold peppery finish',
 }
 
+// Accolade labels for top 3 — shown prominently on cards
+const RANK_ACCOLADES: Record<number, string> = {
+  1: '#1 Highest Polyphenol Olive Oil Globally',
+  2: '#2 Highest Polyphenol Olive Oil Globally',
+  3: '#3 Highest Polyphenol Olive Oil Globally',
+}
+
 const COUNTRY_FLAGS: { [key: string]: string } = {
   "Greece": "🇬🇷",
   "Greece (Corfu)": "🇬🇷",
@@ -1126,6 +1133,11 @@ export default function HomePage() {
                       {/* Info row below image */}
                       <div className={`flex items-center gap-3 px-3 py-2.5 ${infoBg}`}>
                         <div className="flex-1 min-w-0">
+                          {RANK_ACCOLADES[displayRank] && (
+                            <p className={`text-[8px] font-bold uppercase tracking-wider mb-0.5 ${
+                              displayRank === 1 ? 'text-yellow-400' : displayRank === 2 ? 'text-gray-300' : 'text-orange-400'
+                            }`}>{RANK_ACCOLADES[displayRank]}</p>
+                          )}
                           <a
                             href={oil.buyLink}
                             target="_blank"
@@ -1135,7 +1147,7 @@ export default function HomePage() {
                             {oil.brand}
                           </a>
                           {OIL_TAGLINES[oil.id] && (
-                            <p className="text-[9px] text-white/30 mt-0.5 line-clamp-1 italic">{OIL_TAGLINES[oil.id]}</p>
+                            <p className="text-[10px] text-white/35 mt-0.5 leading-relaxed line-clamp-2">{OIL_TAGLINES[oil.id]}</p>
                           )}
                           <div className="flex items-center gap-1.5 mt-0.5 text-[10px] text-white/75 flex-wrap">
                             <span>{COUNTRY_FLAGS[oil.origin]} {oil.origin}</span>
@@ -1150,18 +1162,18 @@ export default function HomePage() {
                             href={oil.buyLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center px-3 py-2 rounded-lg font-semibold text-[11px] text-white shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-green-600 to-emerald-600"
+                            className="inline-flex items-center justify-center px-2.5 py-1.5 rounded-lg font-medium text-[10px] text-white/70 border border-white/15 active:scale-95 transition-transform"
                           >
-                            Buy →
+                            Producer →
                           </a>
                           {(oil.amazonLink || isAmazon) && (
                             <a
                               href={oil.amazonLink || oil.buyLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFD814] to-[#FF9900]"
+                              className="inline-flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFD814] to-[#FF9900]"
                             >
-                              <img src="/img/amazon-logo.svg" alt="Amazon" className="h-4 w-auto" />
+                              See on <img src="/img/amazon-logo.svg" alt="Amazon" className="h-3 w-auto" />
                             </a>
                           )}
                           {oil.certificateLink && (
@@ -1222,8 +1234,13 @@ export default function HomePage() {
                       >
                         {oil.brand}
                       </a>
+                      {RANK_ACCOLADES[displayRank] && (
+                        <p className={`text-[8px] font-bold uppercase tracking-wider mt-0.5 ${
+                          displayRank === 1 ? 'text-yellow-400' : displayRank === 2 ? 'text-gray-300' : 'text-orange-400'
+                        }`}>{RANK_ACCOLADES[displayRank]}</p>
+                      )}
                       {OIL_TAGLINES[oil.id] && (
-                        <p className="text-[9px] text-white/30 mt-0.5 line-clamp-1 italic">{OIL_TAGLINES[oil.id]}</p>
+                        <p className="text-[10px] text-white/35 mt-0.5 leading-relaxed line-clamp-2">{OIL_TAGLINES[oil.id]}</p>
                       )}
                       <div className="flex items-center gap-1.5 mt-1 flex-wrap">
                         <span className={`text-xl font-extrabold leading-none ${scoreColor}`}>{score}</span>
@@ -1395,6 +1412,13 @@ export default function HomePage() {
 
                       {/* Info section */}
                       <div className="px-4 py-3">
+                        {RANK_ACCOLADES[displayRank] && (
+                          <p className={`text-[9px] font-bold uppercase tracking-wider mb-1 ${
+                            displayRank === 1 ? 'text-yellow-400' :
+                            displayRank === 2 ? 'text-gray-300' :
+                            'text-orange-400'
+                          }`}>{RANK_ACCOLADES[displayRank]}</p>
+                        )}
                         <a
                           href={oil.buyLink}
                           target="_blank"
@@ -1404,7 +1428,7 @@ export default function HomePage() {
                           {oil.brand}
                         </a>
                         {OIL_TAGLINES[oil.id] && (
-                          <p className="text-[10px] text-white/35 mt-0.5 line-clamp-1 italic">{OIL_TAGLINES[oil.id]}</p>
+                          <p className="text-xs text-white/40 mt-1 leading-relaxed line-clamp-2">{OIL_TAGLINES[oil.id]}</p>
                         )}
                         <div className="flex items-center gap-2 mt-1.5 text-xs text-white/70 flex-wrap">
                           <span className="inline-flex items-center gap-1">
@@ -1447,18 +1471,18 @@ export default function HomePage() {
                               href={oil.buyLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center justify-center px-4 py-2 rounded-lg font-semibold text-xs text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500"
+                              className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg font-medium text-[11px] text-white/70 hover:text-white border border-white/15 hover:border-white/30 transition-all duration-200"
                             >
-                              Buy →
+                              See Producer →
                             </a>
                             {(oil.amazonLink || isAmazon) && (
                               <a
                                 href={oil.amazonLink || oil.buyLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg font-bold text-xs text-gray-900 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-r from-[#FFD814] to-[#FF9900] hover:from-[#F7CA00] hover:to-[#FF8C00]"
+                                className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg font-bold text-[11px] text-gray-900 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-r from-[#FFD814] to-[#FF9900] hover:from-[#F7CA00] hover:to-[#FF8C00]"
                               >
-                                <img src="/img/amazon-logo.svg" alt="Amazon" className="h-4 w-auto" />
+                                See on <img src="/img/amazon-logo.svg" alt="Amazon" className="h-3.5 w-auto" />
                               </a>
                             )}
                           </div>
