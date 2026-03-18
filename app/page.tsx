@@ -547,11 +547,18 @@ const OIL_TAGLINES: Record<number, string> = {
   37: 'Non-organic robust Koroneiki, bold peppery finish',
 }
 
-// Accolade labels for top 3 — shown prominently on cards
+// Accolade labels — shown prominently on cards
 const RANK_ACCOLADES: Record<number, string> = {
-  1: '#1 Highest Polyphenol Olive Oil Globally',
-  2: '#2 Highest Polyphenol Olive Oil Globally',
-  3: '#3 Highest Polyphenol Olive Oil Globally',
+  1: '#1 Highest Polyphenol Olive Oil in the World',
+  2: '#2 Highest Polyphenol Olive Oil in the World',
+  3: '#3 Highest Polyphenol Olive Oil in the World',
+  4: '#4 Ranked Worldwide',
+  5: '#5 Ranked Worldwide',
+  6: '#6 Ranked Worldwide',
+  7: '#7 Ranked Worldwide',
+  8: '#8 Ranked Worldwide',
+  9: '#9 Ranked Worldwide',
+  10: '#10 Ranked Worldwide',
 }
 
 const COUNTRY_FLAGS: { [key: string]: string } = {
@@ -1135,7 +1142,7 @@ export default function HomePage() {
                         <div className="flex-1 min-w-0">
                           {RANK_ACCOLADES[displayRank] && (
                             <p className={`text-[11px] font-bold uppercase tracking-wider mb-0.5 ${
-                              displayRank === 1 ? 'text-yellow-400' : displayRank === 2 ? 'text-gray-300' : 'text-orange-400'
+                              displayRank === 1 ? 'text-yellow-400' : displayRank === 2 ? 'text-gray-300' : displayRank === 3 ? 'text-orange-400' : 'text-emerald-400/60'
                             }`}>{RANK_ACCOLADES[displayRank]}</p>
                           )}
                           <a
@@ -1236,7 +1243,7 @@ export default function HomePage() {
                       </a>
                       {RANK_ACCOLADES[displayRank] && (
                         <p className={`text-[11px] font-bold uppercase tracking-wider mt-0.5 ${
-                          displayRank === 1 ? 'text-yellow-400' : displayRank === 2 ? 'text-gray-300' : 'text-orange-400'
+                          displayRank === 1 ? 'text-yellow-400' : displayRank === 2 ? 'text-gray-300' : displayRank === 3 ? 'text-orange-400' : 'text-emerald-400/60'
                         }`}>{RANK_ACCOLADES[displayRank]}</p>
                       )}
                       {OIL_TAGLINES[oil.id] && (
@@ -1416,7 +1423,8 @@ export default function HomePage() {
                           <p className={`text-xs font-bold uppercase tracking-wider mb-1 ${
                             displayRank === 1 ? 'text-yellow-400' :
                             displayRank === 2 ? 'text-gray-300' :
-                            'text-orange-400'
+                            displayRank === 3 ? 'text-orange-400' :
+                            'text-emerald-400/60'
                           }`}>{RANK_ACCOLADES[displayRank]}</p>
                         )}
                         <a
