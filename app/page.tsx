@@ -1134,7 +1134,7 @@ export default function HomePage() {
                       <div className={`flex items-center gap-3 px-3 py-2.5 ${infoBg}`}>
                         <div className="flex-1 min-w-0">
                           {RANK_ACCOLADES[displayRank] && (
-                            <p className={`text-[8px] font-bold uppercase tracking-wider mb-0.5 ${
+                            <p className={`text-[11px] font-bold uppercase tracking-wider mb-0.5 ${
                               displayRank === 1 ? 'text-yellow-400' : displayRank === 2 ? 'text-gray-300' : 'text-orange-400'
                             }`}>{RANK_ACCOLADES[displayRank]}</p>
                           )}
@@ -1235,7 +1235,7 @@ export default function HomePage() {
                         {oil.brand}
                       </a>
                       {RANK_ACCOLADES[displayRank] && (
-                        <p className={`text-[8px] font-bold uppercase tracking-wider mt-0.5 ${
+                        <p className={`text-[11px] font-bold uppercase tracking-wider mt-0.5 ${
                           displayRank === 1 ? 'text-yellow-400' : displayRank === 2 ? 'text-gray-300' : 'text-orange-400'
                         }`}>{RANK_ACCOLADES[displayRank]}</p>
                       )}
@@ -1413,7 +1413,7 @@ export default function HomePage() {
                       {/* Info section */}
                       <div className="px-4 py-3">
                         {RANK_ACCOLADES[displayRank] && (
-                          <p className={`text-[9px] font-bold uppercase tracking-wider mb-1 ${
+                          <p className={`text-xs font-bold uppercase tracking-wider mb-1 ${
                             displayRank === 1 ? 'text-yellow-400' :
                             displayRank === 2 ? 'text-gray-300' :
                             'text-orange-400'
