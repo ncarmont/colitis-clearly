@@ -1181,7 +1181,7 @@ export default function HomePage() {
                               href={oil.amazonLink || oil.buyLink}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFD814] to-[#FF9900]"
+                              className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFF3C4] to-[#FFD814]"
                             >
                               <span>See on</span> <img src="/img/amazon-logo.svg" alt="Amazon" className="h-3 w-auto inline-block align-middle" />
                             </a>
@@ -1283,7 +1283,7 @@ export default function HomePage() {
                           href={oil.amazonLink || oil.buyLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFD814] to-[#FF9900]"
+                          className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFF3C4] to-[#FFD814]"
                         >
                           <span>See on</span> <img src="/img/amazon-logo.svg" alt="Amazon" className="h-3 w-auto inline-block align-middle" />
                         </a>
@@ -1491,7 +1491,7 @@ export default function HomePage() {
                                 href={oil.amazonLink || oil.buyLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center gap-1 px-4 py-2 rounded-lg font-bold text-[11px] text-gray-900 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-r from-[#FFD814] to-[#FF9900] hover:from-[#F7CA00] hover:to-[#FF8C00]"
+                                className="inline-flex items-center justify-center gap-1 px-4 py-2 rounded-lg font-bold text-[11px] text-gray-900 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 bg-gradient-to-r from-[#FFF3C4] to-[#FFD814] hover:from-[#FFE98A] hover:to-[#FFC107]"
                               >
                                 <span>See on</span> <img src="/img/amazon-logo.svg" alt="Amazon" className="h-3.5 w-auto inline-block align-middle" />
                               </a>
