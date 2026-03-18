@@ -1264,18 +1264,18 @@ export default function HomePage() {
                         href={oil.buyLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-3 py-2 rounded-lg font-semibold text-[11px] text-white shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-green-600 to-emerald-600"
+                        className="inline-flex items-center justify-center px-2.5 py-1.5 rounded-lg font-medium text-[10px] text-white/70 border border-white/15 active:scale-95 transition-transform"
                       >
-                        Buy →
+                        Producer →
                       </a>
                       {(oil.amazonLink || isAmazon) && (
                         <a
                           href={oil.amazonLink || oil.buyLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-1 px-3 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFD814] to-[#FF9900]"
+                          className="inline-flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-lg font-bold text-[10px] text-gray-900 shadow-sm active:scale-95 transition-transform bg-gradient-to-r from-[#FFD814] to-[#FF9900]"
                         >
-                          <img src="/img/amazon-logo.svg" alt="Amazon" className="h-4 w-auto" />
+                          See on <img src="/img/amazon-logo.svg" alt="Amazon" className="h-3 w-auto" />
                         </a>
                       )}
                       {oil.certificateLink && (
