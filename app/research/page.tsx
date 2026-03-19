@@ -64,6 +64,7 @@ export default function ResearchPage() {
     { stat: 'P=.008', label: 'depression score reduction', source: 'Foshati et al.' },
     { stat: 'P=.005', label: 'bone density protection in women', source: 'PREDIMED-Plus' },
     { stat: '47%', label: 'psoriasis remission rate (PASI 75)', source: 'MEDIPSO Trial' },
+    { stat: '−0.79', label: 'mg/L CRP reduction in CKD', source: 'Zhou et al. 2026' },
   ]
 
   return (
@@ -128,7 +129,7 @@ export default function ResearchPage() {
               </p>
 
               {/* Key findings grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 mb-6">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
                 {keyFindings.map((f, i) => (
                   <div key={i} className="bg-white/[0.03] border border-white/[0.06] rounded-xl px-3 py-3 text-center hover:bg-white/[0.05] transition-colors">
                     <div className="text-xl md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60">{f.stat}</div>
