@@ -26,11 +26,11 @@ export default function RankingsPage() {
   const [oils] = useState<OliveOil[]>([
     {
       id: 1, rank: 1, brand: "Laconiko ZOI Ultra High Phenolic", polyphenols: 1799, origin: "Greece", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$75.00", method: "Not specified", lab: "Retailer COA",
+      price: "$$", priceAmount: "$58.95", method: "Not specified", lab: "Retailer COA",
       certificateLink: "https://chefshop.com/products/laconiko-high-phenolic-zoi-olive-oil",
       cultivar: "Kalamon",
       buyLink: "https://chefshop.com/products/laconiko-high-phenolic-zoi-olive-oil",
-      notes: "Extremely high; retailer shows lab metrics"
+      notes: "⚠️ Currently restocking — choose 'Notify Me'. Price dropped to $58.95. Retailer shows lab metrics"
     },
     {
       id: 2, rank: 2, brand: "SP360", polyphenols: 1711, origin: "Jordan", harvestDate: "Sep 2025",
@@ -125,25 +125,25 @@ export default function RankingsPage() {
       id: 13, rank: 13, brand: "Quattrociocchi 'Superbo'", polyphenols: 800, origin: "Italy", harvestDate: "2024/25",
       price: "$$", priceAmount: "$40.95", method: "Not specified", lab: "Retailer HPLC-style",
       certificateLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
-      cultivar: "Itrana (Lazio)",
+      cultivar: "Moraiolo (Lazio)",
       buyLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
-      notes: "OOL discloses numeric polyphenols"
+      notes: "OOL discloses numeric polyphenols; extreme-intensity organic"
     },
     {
-      id: 14, rank: 14, brand: "P.J. KABOS – Family Reserve (Robust)", polyphenols: 750, origin: "Greece", harvestDate: "2024/25",
+      id: 14, rank: 14, brand: "P.J. KABOS – Family Reserve (Robust)", polyphenols: 699, origin: "Greece", harvestDate: "2024/25",
       price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "Stated",
       certificateLink: "https://www.pjkabos.com/shop-usa",
       cultivar: "Koroneiki",
       buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "Daily 'shot' usage suggested by brand; 750+ HPLC"
+      notes: "Daily 'shot' usage suggested by brand; 699 mg/kg HPLC; 10+mg hydroxytyrosol/20g; USDA Organic"
     },
     {
       id: 15, rank: 15, brand: "Oro del Desierto – Picual (Organic)", polyphenols: 717, origin: "Spain", harvestDate: "2024/25",
       price: "$$", priceAmount: "$32.00", method: "Not specified", lab: "Retailer listing",
-      certificateLink: "https://oliveoillovers.com/products/oro-del-desierto-organic",
+      certificateLink: "https://www.spanish-oil.com/en/organic-olive-oil/oro-del-desierto",
       cultivar: "Picual",
-      buyLink: "https://oliveoillovers.com/products/oro-del-desierto-organic",
-      notes: "Early-harvest organic from Almería; OOL shows count"
+      buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/oro-del-desierto",
+      notes: "Early-harvest organic from Almería; OOL listing removed — check Spanish-Oil.com for current availability"
     },
     {
       id: 16, rank: 16, brand: "Vallesur – Peruvian", polyphenols: 688, origin: "Peru", harvestDate: "2024",
@@ -268,12 +268,12 @@ export default function RankingsPage() {
     },
     {
       id: 31, rank: 31, brand: "Rincón de la Subbética – Hojiblanca (Organic)", polyphenols: 356, origin: "Spain", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$32.95", method: "Not specified", lab: "Retailer listing",
+      price: "$$", priceAmount: "$37.95", method: "Not specified", lab: "Retailer listing",
       certificateLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
       cultivar: "Hojiblanca",
       buyLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
       amazonLink: "https://www.amazon.co.uk/dp/B0DHL4SF2F?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Leading PDO producer from Priego de Córdoba; transparent count. New harvest 25/26 on Amazon UK."
+      notes: "Gold award NYIOOC 2025. Leading PDO producer from Priego de Córdoba; transparent count. New harvest 25/26 on Amazon UK."
     }
   ])
 
