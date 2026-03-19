@@ -2,15 +2,15 @@
   {
     "slug": "olive-oil-kidney-function-ckd-meta-analysis",
     "title": "Can High-Phenolic Olive Oil Slow Chronic Kidney Disease?",
-    "paper": "Zhou et al., Frontiers in Nutrition (2026) — Meta-analysis, 1,073 CKD patients",
-    "finding": "High-phenolic EVOO reduced CRP by 0.79 mg/L and improved eGFR by +2.44 mL/min/1.73 m² in nondialysis CKD patients — benefit specific to high-polyphenol oils, not generic olive oil",
+    "paper": "Zhou et al., Frontiers in Nutrition (2026) \u2014 Meta-analysis, 1,073 CKD patients",
+    "finding": "High-phenolic EVOO reduced CRP by 0.79 mg/L and improved eGFR by +2.44 mL/min/1.73 m\u00b2 in nondialysis CKD patients \u2014 benefit specific to high-polyphenol oils, not generic olive oil",
     "category": "Inflammation",
     "date": "2026-03-19"
   },
   {
     "slug": "olive-oil-psoriasis-skin-inflammation-rct",
     "title": "Can an Anti-Inflammatory Diet with Olive Oil Actually Treat Psoriasis?",
-    "paper": "Perez-Bootello et al., JAMA Dermatology (2025) — MEDIPSO Trial",
+    "paper": "Perez-Bootello et al., JAMA Dermatology (2025) \u2014 MEDIPSO Trial",
     "finding": "16-week Mediterranean diet with EVOO achieved PASI 75 remission in 47.4% of psoriasis patients vs 0% in controls (P < .001)",
     "category": "Inflammation",
     "date": "2026-03-18"
@@ -18,7 +18,7 @@
   {
     "slug": "olive-oil-for-bone-health-osteoporosis",
     "title": "Can an Olive Oil-Rich Diet Prevent Bone Loss as You Age?",
-    "paper": "Vázquez-Lorente et al., JAMA Netw Open (2025)",
+    "paper": "V\u00e1zquez-Lorente et al., JAMA Netw Open (2025)",
     "finding": "924-person RCT: EVOO-rich Mediterranean diet protected lumbar spine BMD in women (P = .005) over 3 years",
     "category": "Longevity",
     "date": "2026-03-17"
@@ -42,7 +42,7 @@
   {
     "slug": "best-olive-oil-brand-2026",
     "title": "Best Olive Oil Brand 2026: Lab-Tested and Ranked",
-    "paper": "Original lab data analysis — 38 oils tested",
+    "paper": "Original lab data analysis \u2014 38 oils tested",
     "finding": "Pamako Monovarietal leads with 2,081 mg/kg polyphenols verified by qNMR",
     "category": "Rankings",
     "date": "2026-03-15"
@@ -114,7 +114,7 @@
   {
     "slug": "olive-oil-for-blood-pressure",
     "title": "2 Tablespoons a Day Dropped Blood Pressure by 7 Points",
-    "paper": "Doménech et al., PREDIMED Trial (2014)",
+    "paper": "Dom\u00e9nech et al., PREDIMED Trial (2014)",
     "finding": "Mediterranean diet with EVOO reduced systolic BP by 7.1 mmHg vs control",
     "category": "Heart",
     "date": "2026-03-08"
@@ -174,5 +174,13 @@
     "finding": "Oleocanthal inhibited cartilage degradation enzymes in osteoarthritis models",
     "category": "Inflammation",
     "date": "2026-03-01"
+  },
+  {
+    "slug": "olive-oil-testosterone-hormonal-health",
+    "title": "Can EVOO Raise Testosterone? A Clinical Trial on 60 Men",
+    "paper": "Derouiche et al., Natural Product Communications (2013)",
+    "finding": "Extra virgin olive oil raised testosterone by 17.4% and LH by 42.6% in 3 weeks (p < 0.0001)",
+    "category": "Metabolism",
+    "date": "2026-03-19"
   }
 ]

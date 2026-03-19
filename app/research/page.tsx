@@ -65,6 +65,7 @@ export default function ResearchPage() {
     { stat: 'P=.005', label: 'bone density protection in women', source: 'PREDIMED-Plus' },
     { stat: '47%', label: 'psoriasis remission rate (PASI 75)', source: 'MEDIPSO Trial' },
     { stat: '−0.79', label: 'mg/L CRP reduction in CKD', source: 'Zhou et al. 2026' },
+    { stat: '+17%', label: 'testosterone increase in 3 weeks', source: 'Derouiche et al.' },
   ]
 
   return (
