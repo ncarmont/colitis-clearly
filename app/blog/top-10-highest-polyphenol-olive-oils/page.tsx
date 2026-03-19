@@ -3,12 +3,12 @@ import type { Metadata } from 'next'
 import SmallAd from '@/components/SmallAd'
 
 export const metadata: Metadata = {
-  title: 'Top 10 Highest Polyphenol Olive Oils in 2024 (Lab Verified)',
-  description: 'Complete rankings of the highest polyphenol EVOO brands with verified lab test results. Compare mg/kg levels, prices, and where to buy the best olive oil in 2024.',
-  keywords: 'top 10 olive oils, highest polyphenol EVOO, best olive oil 2024, lab tested olive oil, polyphenol content rankings',
+  title: 'Top 10 Highest Polyphenol Olive Oils in 2026 (Lab Verified)',
+  description: 'Complete rankings of the highest polyphenol EVOO brands with verified lab test results. Compare mg/kg levels, prices, and where to buy the best olive oil in 2026.',
+  keywords: 'top 10 olive oils, highest polyphenol EVOO, best olive oil 2026, lab tested olive oil, polyphenol content rankings',
   openGraph: {
-    title: 'Top 10 Highest Polyphenol Olive Oils in 2024 (Lab Verified)',
-    description: 'Lab-verified rankings of the best high polyphenol olive oils',
+    title: 'Top 10 Highest Polyphenol Olive Oils in 2026 (Lab Verified)',
+    description: 'Lab-verified rankings of the best high polyphenol olive oils — updated March 2026',
     type: 'article',
   }
 }
@@ -35,11 +35,11 @@ export default function Top10PolyphenolOilsPage() {
               Rankings
             </span>
             <span className="text-gray-500 text-sm">18 min read</span>
-            <span className="text-gray-500 text-sm">Oct 2, 2024</span>
+            <span className="text-gray-500 text-sm">Updated March 2026</span>
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Top 10 Highest Polyphenol Olive Oils in 2024 (Lab Verified)
+            Top 10 Highest Polyphenol Olive Oils in 2026 (Lab Verified)
           </h1>
 
           <p className="text-xl text-gray-300 leading-relaxed">
@@ -54,16 +54,23 @@ export default function Top10PolyphenolOilsPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Article",
-              "headline": "Top 10 Highest Polyphenol Olive Oils in 2024 (Lab Verified)",
+              "headline": "Top 10 Highest Polyphenol Olive Oils in 2026 (Lab Verified)",
               "datePublished": "2024-10-02",
+              "dateModified": "2026-03-19",
               "author": {
                 "@type": "Organization",
                 "name": "EVOO Rankings"
               },
-              "description": "Lab-verified rankings of the best high polyphenol olive oils"
+              "description": "Lab-verified rankings of the best high polyphenol olive oils — updated March 2026"
             })
           }}
         />
+
+        {/* Updated notice */}
+        <div className="bg-green-900/20 border border-green-700/40 rounded-xl px-5 py-3 mb-8 flex items-center gap-3 text-sm text-green-300">
+          <span className="text-green-400 text-base">🔄</span>
+          <span><strong className="text-green-200">Updated March 2026</strong> — Rankings refreshed with the latest lab-verified polyphenol data and 2025/26 harvest results.</span>
+        </div>
 
         {/* Quick Summary */}
         <div className="bg-gradient-to-br from-yellow-900/30 to-orange-900/20 border border-yellow-700/40 rounded-2xl p-8 mb-12">

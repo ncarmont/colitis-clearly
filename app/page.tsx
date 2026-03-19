@@ -116,7 +116,8 @@ const OILS_DATA: OliveOil[] = [
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://onsurioliveoil.com/products/latest-2024-25-arbequina-evoo-1-litre-bulk-offer-polyphenols-1269-mg-kg",
-    notes: "Verified 16 Mar 2026: 1L (2×500ml) still showing 2024/25 harvest batch (1,269 mg/kg). Note: 500ml single-bottle has been updated to 2025/26 batch (1,504 mg/kg); 1L bulk format may still ship 2024/25 stock. Best value per ml if current polyphenol count is less critical. £38.00 (1L). Free UK shipping.",
+    amazonLink: "https://www.amazon.co.uk/dp/B0DCP7F54J?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
+    notes: "Verified 16 Mar 2026: 1L (2×500ml) still showing 2024/25 harvest batch (1,269 mg/kg). Note: 500ml single-bottle has been updated to 2025/26 batch (1,504 mg/kg); 1L bulk format may still ship 2024/25 stock. Best value per ml if current polyphenol count is less critical. £38.00 (1L). Free UK shipping. Also available on Amazon (500ml single tin).",
     productImage: "/img/oil-6.png",
     instagram: "onsurioliveoil"
   },
