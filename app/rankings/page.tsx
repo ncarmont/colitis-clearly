@@ -46,6 +46,7 @@ export default function RankingsPage() {
       certificateLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
       cultivar: "Arbequina",
       buyLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
+      amazonLink: "https://www.amazon.co.uk/dp/B0DCP7F54J?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "NEW 2025/26 harvest; ultra-premium, single-estate; herbaceous & vibrant with lingering pungency"
     },
     {
@@ -62,6 +63,7 @@ export default function RankingsPage() {
       certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
       cultivar: "Lianolia",
       buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
+      amazonLink: "https://www.amazon.com/dp/B0BFRRPR6R?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "2025/26 harvest; 577mg oleocanthal + 298mg oleacein; DIO-certified organic from Corfu"
     },
     {
@@ -70,6 +72,7 @@ export default function RankingsPage() {
       certificateLink: "https://onsurioliveoil.com",
       cultivar: "Arbosana",
       buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
+      amazonLink: "https://www.amazon.co.uk/dp/B0DCP9YNBT?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "Count on product page; method via FAQ"
     },
     {
@@ -78,6 +81,7 @@ export default function RankingsPage() {
       certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Premium_Certificate_2025.pdf",
       cultivar: "Lianolia",
       buyLink: "https://thegovernorevoo.co.uk/products/the-governor-premium-unfiltered-extra-virgin-olive-oil",
+      amazonLink: "https://www.amazon.com/dp/B0BFRRPR6R?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "2025/26 harvest; 476mg oleocanthal + 295mg oleacein; DIO-certified organic from Corfu"
     },
     {
@@ -103,6 +107,7 @@ export default function RankingsPage() {
       certificateLink: "https://onsurioliveoil.com/en-us",
       cultivar: "Blend (estate)",
       buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
+      amazonLink: "https://www.amazon.co.uk/dp/B0F38DZNX6?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "Site lists >1000 mg/kg"
     },
     {
@@ -127,6 +132,7 @@ export default function RankingsPage() {
       certificateLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
       cultivar: "Moraiolo (Lazio)",
       buyLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
+      amazonLink: "https://www.amazon.com/dp/B07984JN3L?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "OOL discloses numeric polyphenols; extreme-intensity organic"
     },
     {
@@ -143,6 +149,7 @@ export default function RankingsPage() {
       certificateLink: "https://www.spanish-oil.com/en/organic-olive-oil/oro-del-desierto",
       cultivar: "Picual",
       buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/oro-del-desierto",
+      amazonLink: "https://www.amazon.co.uk/dp/B00D1AAOLG?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "Early-harvest organic from Almería; OOL listing removed — check Spanish-Oil.com for current availability"
     },
     {
@@ -167,6 +174,7 @@ export default function RankingsPage() {
       certificateLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
       cultivar: "Hojiblanca/Arbequina/Koroneiki",
       buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
+      amazonLink: "https://www.amazon.co.uk/dp/B0G2MHQB98?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "Independent lab verified per brand from Sevilla"
     },
     {
@@ -183,6 +191,7 @@ export default function RankingsPage() {
       certificateLink: "",
       cultivar: "Picholine Marocaine",
       buyLink: "https://www.moroccogold.com",
+      amazonLink: "https://www.amazon.co.uk/dp/B07GBJLFFQ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "Brand publicizes hydroxytyrosol per 20 g"
     },
     {
@@ -191,6 +200,7 @@ export default function RankingsPage() {
       certificateLink: "",
       cultivar: "Hojiblanca + Picuda",
       buyLink: "https://www.ventadelbaron.com/en/collections/all",
+      amazonLink: "https://www.amazon.co.uk/dp/B00FMMATCA?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "DO-protected, high count from Córdoba"
     },
     {
@@ -224,6 +234,7 @@ export default function RankingsPage() {
       certificateLink: "https://www.kosterina.com/pages/faqs",
       cultivar: "Koroneiki",
       buyLink: "https://www.kosterina.com/products/6bottles",
+      amazonLink: "https://www.amazon.com/Kosterina-Cold-Pressed-Koroneiki-Incredible-Superfood/dp/B087MT3TC7?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       notes: "Value posted 'at harvest'"
     },
     {
@@ -240,6 +251,7 @@ export default function RankingsPage() {
       certificateLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
       cultivar: "Koroneiki + Athinolia",
       buyLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
+      amazonLink: "https://www.amazon.co.uk/dp/B0FZKWVCXF?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "Small-batch organic; ~500–552 mg/kg cited"
     },
     {
