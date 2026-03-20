@@ -66,6 +66,7 @@ export default function ResearchPage() {
     { stat: '47%', label: 'psoriasis remission rate (PASI 75)', source: 'MEDIPSO Trial' },
     { stat: '−0.79', label: 'mg/L CRP reduction in CKD', source: 'Zhou et al. 2026' },
     { stat: '+17%', label: 'testosterone increase in 3 weeks', source: 'Derouiche et al.' },
+    { stat: '32,141', label: 'cancer DNA sites epigenetically altered', source: 'Del Saz-Lara et al. 2023' },
   ]
 
   return (
