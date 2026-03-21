@@ -11,7 +11,7 @@ export const metadata = {
 const CAT_ICON: Record<string, string> = {
   Heart: '❤️', Brain: '🧠', Gut: '🦠', Cancer: '🔬',
   Inflammation: '🔥', Metabolism: '⚡', Longevity: '🧬', Skin: '✨',
-  Comparison: '⚖️', Rankings: '🏆',
+  Comparison: '⚖️', Rankings: '🏆', 'Eye Health': '👁️',
 }
 
 const CAT_GRADIENT: Record<string, string> = {
@@ -25,6 +25,7 @@ const CAT_GRADIENT: Record<string, string> = {
   Skin: 'from-pink-400 to-rose-500',
   Comparison: 'from-indigo-400 to-blue-600',
   Rankings: 'from-amber-400 to-yellow-500',
+  'Eye Health': 'from-sky-400 to-blue-600',
 }
 
 const CAT_BG: Record<string, string> = {
@@ -38,6 +39,7 @@ const CAT_BG: Record<string, string> = {
   Skin: 'bg-pink-500/10 text-pink-400 border-pink-500/20',
   Comparison: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20',
   Rankings: 'bg-amber-500/10 text-amber-400 border-amber-500/20',
+  'Eye Health': 'bg-sky-500/10 text-sky-400 border-sky-500/20',
 }
 
 export default function ResearchPage() {
@@ -67,6 +69,7 @@ export default function ResearchPage() {
     { stat: '−0.79', label: 'mg/L CRP reduction in CKD', source: 'Zhou et al. 2026' },
     { stat: '+17%', label: 'testosterone increase in 3 weeks', source: 'Derouiche et al.' },
     { stat: '32,141', label: 'cancer DNA sites epigenetically altered', source: 'Del Saz-Lara et al. 2023' },
+    { stat: '7.4×', label: 'selectivity of EVOO polyphenols for pathological vs. normal cells (AMD model)', source: 'Marrero et al. 2024' },
   ]
 
   return (

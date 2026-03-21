@@ -2,8 +2,8 @@
   {
     "slug": "olive-oil-epigenetics-hydroxytyrosol-dna-methylation",
     "title": "The Compound in Olive Oil That Rewrites Cancer Cell DNA",
-    "paper": "Del Saz-Lara et al., Pharmacological Research (2023) — In-vitro epigenomics, 850K CpG sites",
-    "finding": "Hydroxytyrosol altered 32,141 DNA methylation sites in colorectal cancer cells, silencing the EDNRA oncogene overexpressed in 60–80% of colorectal cancers — the largest polyphenol-driven methylomic footprint ever documented",
+    "paper": "Del Saz-Lara et al., Pharmacological Research (2023) \u2014 In-vitro epigenomics, 850K CpG sites",
+    "finding": "Hydroxytyrosol altered 32,141 DNA methylation sites in colorectal cancer cells, silencing the EDNRA oncogene overexpressed in 60\u201380% of colorectal cancers \u2014 the largest polyphenol-driven methylomic footprint ever documented",
     "category": "Cancer",
     "date": "2026-03-20"
   },
@@ -190,5 +190,13 @@
     "finding": "Extra virgin olive oil raised testosterone by 17.4% and LH by 42.6% in 3 weeks (p < 0.0001)",
     "category": "Metabolism",
     "date": "2026-03-19"
+  },
+  {
+    "slug": "olive-oil-evoo-eye-health-macular-degeneration-amd",
+    "title": "EVOO Phenolics Shut Down the Blood Vessel Growth That Causes Wet AMD",
+    "paper": "Marrero et al., J Agric Food Chem (2024)",
+    "finding": "Picual EVOO extract completely abrogated retinal-mimicking tube formation at 20 \u03bcg/mL (p < 0.0001), with 7.4\u00d7 selectivity for pathological vs. normal cells \u2014 implicating EVOO polyphenols in AMD prevention via ERK/EGFR suppression.",
+    "category": "Eye Health",
+    "date": "2026-03-21"
   }
 ]
