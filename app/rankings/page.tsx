@@ -102,13 +102,13 @@ export default function RankingsPage() {
       notes: "Site posts per-harvest analysis from Corfu"
     },
     {
-      id: 10, rank: 10, brand: "ONSURI Signature", polyphenols: 1000, origin: "Jordan", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$42.00", method: "IOC/HPLC", lab: "Per FAQ",
+      id: 10, rank: 10, brand: "ONSURI Signature", polyphenols: 975, origin: "Jordan", harvestDate: "2025/26",
+      price: "$", priceAmount: "£22.50", method: "IOC/HPLC", lab: "Per ONSURI",
       certificateLink: "https://onsurioliveoil.com/en-us",
       cultivar: "Blend (estate)",
       buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
       amazonLink: "https://www.amazon.co.uk/dp/B0F38DZNX6?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Site lists >1000 mg/kg"
+      notes: "2025/26 harvest; 975 mg/kg; butter-smooth mild profile; versatile everyday oil"
     },
     {
       id: 11, rank: 11, brand: "Opus Oléa – Organic", polyphenols: 874, origin: "Greece", harvestDate: "Nov 2025",
@@ -124,7 +124,7 @@ export default function RankingsPage() {
       certificateLink: "",
       cultivar: "Koroneiki",
       buyLink: "https://zeronutrition.co.uk",
-      notes: "813 mg/kg Koroneiki; UV-protective bottle; brand website temporarily unavailable — search Amazon for current listings"
+      notes: "813 mg/kg Koroneiki; UV-protective bottle; ⚠️ zeronutrition.co.uk now sells sports supplements — search Amazon for olive oil listing"
     },
     {
       id: 13, rank: 13, brand: "Quattrociocchi 'Superbo'", polyphenols: 800, origin: "Italy", harvestDate: "2024/25",
