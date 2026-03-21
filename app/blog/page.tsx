@@ -15,6 +15,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'where-to-buy-high-polyphenol-olive-oil',
+    title: 'Where to Buy High Polyphenol Olive Oil: Lab-Verified Guide (2026)',
+    excerpt: 'Most "high polyphenol" olive oils never disclose a lab number. We tested 38 oils. Here\'s exactly where to buy verified high-phenolic EVOO in the US, UK & EU — with cost-per-100mg polyphenols compared.',
+    category: 'Buyer\'s Guide',
+    readTime: '14 min read',
+    date: '2026-03-21',
+    image: '🛒'
+  },
+  {
     slug: 'best-olive-oil-brand-2026',
     title: 'Best Olive Oil Brand 2026: Lab-Tested, Ranked & Reviewed',
     excerpt: 'The only 2026 olive oil brand ranking backed by independent polyphenol lab data. We tested 10 brands with HPLC and qNMR — here\'s who actually delivers on the health claims, plus 2026 drought impact on prices and availability.',
