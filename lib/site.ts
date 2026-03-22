@@ -30,24 +30,24 @@ export const HOME_STATS = [
 
 export const QUICK_NAV_CARDS = [
   {
-    title: 'Treatments',
+    title: 'Rankings',
     href: '/rankings',
     description: 'Compare 5-ASA drugs, biologics, JAK inhibitors, S1P modulators, steroids, and surgery in one evidence table.',
   },
   {
-    title: 'Flare Management',
-    href: '/blog/uc-flare-management',
-    description: 'What to track during a flare, when to call your team, and which red flags need urgent care.',
-  },
-  {
-    title: 'Diet & Lifestyle',
-    href: '/blog/uc-diet-guide',
-    description: 'See where diet can improve symptoms, where evidence is weak, and how to avoid overpromising food cures.',
+    title: 'Blog',
+    href: '/blog',
+    description: 'Read practical UC explainers on flare management, diet, biomarkers, and treatment decisions.',
   },
   {
     title: 'Research',
     href: '/research',
     description: 'Follow pivotal trials, biomarkers, pathophysiology, and the next wave of UC therapies.',
+  },
+  {
+    title: 'Shop',
+    href: '/shop',
+    description: 'Browse science-backed diet, supplement, gut health, and lifestyle recommendations in one place.',
   },
 ] as const
 
