@@ -1,8 +1,80 @@
 [
   {
+    "slug": "accure-appendectomy-rct-2025",
+    "href": "/research/clinical-trials",
+    "title": "ACCURE RCT: Appendectomy reduces UC relapse by 35% \u2014 first surgical RCT for UC",
+    "paper": "ACCURE Trial. Lancet Gastro Hepatol. 2025",
+    "finding": "Therapeutic appendectomy + standard therapy reduced 12-month relapse to 33% vs >50% with standard therapy alone (RR 0.65). Earlier meta-analyses showed OR 0.31 for UC risk when appendectomy performed before age 20.",
+    "category": "Surgery",
+    "date": "2025-01-15"
+  },
+  {
+    "slug": "guselkumab-3-year-durability",
+    "href": "/research/clinical-trials",
+    "title": "Guselkumab (anti-IL-23): >80% sustained clinical remission at 3 years",
+    "paper": "QUASAR/ASTRO Extension. FDA approved Sept 2025",
+    "finding": "Guselkumab achieved 27.6% induction remission and >80% sustained remission at 3 years \u2014 the strongest durability signal among IL-23 inhibitors. Now FDA-approved for UC.",
+    "category": "Biologics",
+    "date": "2025-09-01"
+  },
+  {
+    "slug": "2025-nma-upadacitinib-first",
+    "href": "/blog/jak-inhibitors-uc",
+    "title": "2025 NMA (36 RCTs, 14,270 patients): Upadacitinib ranked #1 for UC remission",
+    "paper": "Shehab et al. 2025 Network Meta-Analysis",
+    "finding": "Upadacitinib ranked first for clinical remission (34% induction, 54% maintenance), endoscopic improvement, and histological remission across 36 RCTs. Symptom relief from day 1.",
+    "category": "Small Molecules",
+    "date": "2025-06-01"
+  },
+  {
+    "slug": "vega-dual-biologic-therapy",
+    "href": "/research/emerging",
+    "title": "VEGA: Dual biologic therapy (guselkumab + golimumab) hits 83% response",
+    "paper": "VEGA Trial",
+    "finding": "Combining guselkumab + golimumab achieved 83% clinical response vs 61-75% with monotherapy. Dual targeted therapy may break the ~50% monotherapy remission ceiling.",
+    "category": "Emerging",
+    "date": "2025-03-01"
+  },
+  {
+    "slug": "tulisokibart-anti-tl1a-artemis",
+    "href": "/research/emerging",
+    "title": "Tulisokibart (anti-TL1A): 26% vs 1% remission \u2014 first precision medicine UC drug",
+    "paper": "ARTEMIS-UC Phase 2 (Merck). Phase 3 ATLAS-UC underway",
+    "finding": "First UC therapy with a companion diagnostic to identify responders. TL1A regulates both inflammation and fibrosis, suggesting potential disease-modifying properties beyond symptom control.",
+    "category": "Pipeline",
+    "date": "2025-08-01"
+  },
+  {
+    "slug": "red-meat-or-519-relapse",
+    "href": "/blog/uc-diet-guide",
+    "title": "Red and processed meat: OR 5.19 for UC relapse in highest consumption tertile",
+    "paper": "Prospective cohort + dose-response meta-analysis",
+    "finding": "The single most impactful dietary trigger. Sulfur amino acids metabolized into hydrogen sulfide \u2014 directly toxic to colonocytes and impairs butyrate oxidation. UC patients already have elevated colonic H2S.",
+    "category": "Diet",
+    "date": "2025-01-01"
+  },
+  {
+    "slug": "air-pollution-pm25-uc-risk",
+    "href": "/research/emerging",
+    "title": "Air pollution (PM2.5): Mendelian randomization suggests OR 3.6 for UC risk",
+    "paper": "UK Biobank (455,210 participants); MR analysis",
+    "finding": "PM2.5, PM10, NO2 all significantly increased UC risk (notably not Crohns). Mechanism: particles reach colon via mucociliary clearance, disrupt tight junctions, induce oxidative stress.",
+    "category": "Environment",
+    "date": "2025-04-01"
+  },
+  {
+    "slug": "vsl3-probiotic-or-385",
+    "href": "/research/clinical-trials",
+    "title": "Multi-strain probiotics: OR 3.85 for remission induction (NMA of 20 RCTs)",
+    "paper": "Network Meta-Analysis of 20 RCTs",
+    "finding": "Lactobacillus + Bifidobacterium combinations achieved OR 3.85 vs placebo. VSL#3/Visbiome (8-strain) showed 42.9% vs 15.7% remission. Probiotics 66% lower relapse in maintenance (OR 0.34).",
+    "category": "Microbiome",
+    "date": "2025-02-01"
+  },
+  {
     "slug": "fmt-anti-inflammatory-diet-uc-remission",
     "href": "/blog/fmt-anti-inflammatory-diet-uc-remission",
-    "title": "FMT + anti-inflammatory diet hit 3.5× higher clinical response than standard therapy in mild-moderate UC",
+    "title": "FMT + anti-inflammatory diet hit 3.5\u00d7 higher clinical response than standard therapy in mild-moderate UC",
     "paper": "Kedia et al. Gut. 2022 Dec;71(12):2401-2413. PMID: 35973787",
     "finding": "Combining multidonor FMT with an anti-inflammatory diet produced 60% remission and 36.4% deep remission at 8 weeks. Diet alone then maintained deep remission in 25% of patients at 48 weeks versus 0% in the standard-therapy group.",
     "category": "Diet & Microbiome",
@@ -11,18 +83,18 @@
   {
     "slug": "predicct-calprotectin-flare-prediction",
     "href": "/research/biomarkers",
-    "title": "PREdiCCt: Faecal calprotectin ≥250 predicts objective flare with aHR 3.25",
+    "title": "PREdiCCt: Faecal calprotectin \u2265250 predicts objective flare with aHR 3.25",
     "paper": "PREdiCCt cohort. Gut 2025. PMID: 41554630",
-    "finding": "In the largest prospective IBD flare-prediction cohort, FC ≥250 µg/g vs <50 predicted objective UC flare with aHR 3.25 — even in patients reporting remission.",
+    "finding": "In the largest prospective IBD flare-prediction cohort, FC \u2265250 \u00b5g/g vs <50 predicted objective UC flare with aHR 3.25 \u2014 even in patients reporting remission.",
     "category": "Biomarkers",
     "date": "2025-07-01"
   },
   {
     "slug": "mesalamine-adherence-hr-5-5",
     "href": "/blog/understanding-ulcerative-colitis",
-    "title": "Mesalamine non-adherence multiplies relapse risk by 5.5×",
+    "title": "Mesalamine non-adherence multiplies relapse risk by 5.5\u00d7",
     "paper": "Kane et al. Am J Med. 2003. PMID: 12543288",
-    "finding": "Prospective data showed non-adherent UC patients had HR 5.5 for relapse — making medication adherence the single highest-leverage modifiable factor.",
+    "finding": "Prospective data showed non-adherent UC patients had HR 5.5 for relapse \u2014 making medication adherence the single highest-leverage modifiable factor.",
     "category": "Treatment",
     "date": "2003-01-01"
   },
@@ -40,7 +112,7 @@
     "href": "/research/clinical-trials",
     "title": "BSG 2025: Comprehensive adult IBD guideline with treat-to-target monitoring",
     "paper": "British Society of Gastroenterology. Gut 2025",
-    "finding": "BSG pragmatic thresholds: FC <100 likely endoscopic remission; FC >200 low likelihood. Symptoms by 3 months, biomarkers 3–6 months, endoscopy 6–12 months.",
+    "finding": "BSG pragmatic thresholds: FC <100 likely endoscopic remission; FC >200 low likelihood. Symptoms by 3 months, biomarkers 3\u20136 months, endoscopy 6\u201312 months.",
     "category": "Guidelines",
     "date": "2025-01-01"
   },
@@ -49,16 +121,16 @@
     "href": "/blog/uc-diet-guide",
     "title": "PREdiCCt: Highest meat intake quartile doubles objective flare risk",
     "paper": "PREdiCCt cohort. Gut 2025. PMID: 41554630",
-    "finding": "Highest vs lowest quartile total meat intake in UC was associated with aHR 1.95 for objective flare — one of the strongest dietary signals.",
+    "finding": "Highest vs lowest quartile total meat intake in UC was associated with aHR 1.95 for objective flare \u2014 one of the strongest dietary signals.",
     "category": "Diet",
     "date": "2025-07-01"
   },
   {
     "slug": "stress-3-6x-flare-risk",
     "href": "/blog/uc-and-mental-health",
-    "title": "High perceived stress linked to 3.6× higher odds of UC flare",
+    "title": "High perceived stress linked to 3.6\u00d7 higher odds of UC flare",
     "paper": "Sauk et al. Clin Gastroenterol Hepatol. 2023",
-    "finding": "Stress was the #1 patient-reported flare trigger (37.9% of 27,000+ forum posts), and prospective data showed 3.6× flare odds with high perceived stress.",
+    "finding": "Stress was the #1 patient-reported flare trigger (37.9% of 27,000+ forum posts), and prospective data showed 3.6\u00d7 flare odds with high perceived stress.",
     "category": "Mental Health",
     "date": "2023-06-01"
   },
@@ -85,7 +157,7 @@
     "href": "/research/clinical-trials",
     "title": "Antivirals in CMV+ steroid-refractory UC reduce colectomy odds by 80%",
     "paper": "Meta-analysis. PMID: 29392650",
-    "finding": "Antiviral therapy in CMV-positive steroid-refractory UC associated with colectomy OR 0.20 — a dramatic reduction in surgical need.",
+    "finding": "Antiviral therapy in CMV-positive steroid-refractory UC associated with colectomy OR 0.20 \u2014 a dramatic reduction in surgical need.",
     "category": "Treatment",
     "date": "2018-02-01"
   },
@@ -101,9 +173,9 @@
   {
     "slug": "u-achieve-upadacitinib",
     "href": "/blog/jak-inhibitors-uc",
-    "title": "U-ACHIEVE: Upadacitinib delivers 26–34% remission at week 8 (NNT ≈ 3–5)",
+    "title": "U-ACHIEVE: Upadacitinib delivers 26\u201334% remission at week 8 (NNT \u2248 3\u20135)",
     "paper": "Danese et al. Lancet. 2022. PMID: 35644166",
-    "finding": "Upadacitinib reached 74% response and 26% remission at week 8, with maintenance at 42–52% vs 12% — one of the strongest oral signals in UC.",
+    "finding": "Upadacitinib reached 74% response and 26% remission at week 8, with maintenance at 42\u201352% vs 12% \u2014 one of the strongest oral signals in UC.",
     "category": "Small Molecules",
     "date": "2022-06-04"
   },
@@ -121,7 +193,7 @@
     "href": "/blog/biologics-for-uc-compared",
     "title": "LUCENT: Mirikizumab maintenance remission 49.9% at week 40",
     "paper": "D'Haens et al. Lancet. 2023",
-    "finding": "Mirikizumab produced about 63% response with 24% remission at week 12 and 49.9% maintenance remission — strongest IL-23 maintenance signal.",
+    "finding": "Mirikizumab produced about 63% response with 24% remission at week 12 and 49.9% maintenance remission \u2014 strongest IL-23 maintenance signal.",
     "category": "Biologics",
     "date": "2023-05-13"
   },
@@ -130,7 +202,7 @@
     "href": "/blog/jak-inhibitors-uc",
     "title": "OCTAVE: Tofacitinib oral JAK inhibitor with rapid symptom control",
     "paper": "Sandborn et al. N Engl J Med. 2017. PMID: 28467869",
-    "finding": "Tofacitinib reached about 59% response and 19% remission at week 8, with maintenance at 34–41% vs 11%.",
+    "finding": "Tofacitinib reached about 59% response and 19% remission at week 8, with maintenance at 34\u201341% vs 11%.",
     "category": "Small Molecules",
     "date": "2017-05-04"
   },
@@ -148,7 +220,7 @@
     "href": "/rankings",
     "title": "TRUE NORTH: Ozanimod S1P modulation for moderate-to-severe UC",
     "paper": "Sandborn et al. N Engl J Med. 2021. PMID: 34587385",
-    "finding": "Ozanimod delivered about 18% remission at week 10 and 37% maintenance among responders (NNT ≈ 5).",
+    "finding": "Ozanimod delivered about 18% remission at week 10 and 37% maintenance among responders (NNT \u2248 5).",
     "category": "Small Molecules",
     "date": "2021-10-14"
   },
@@ -157,16 +229,16 @@
     "href": "/rankings",
     "title": "ELEVATE: Etrasimod confirmed as second oral S1P option",
     "paper": "Sandborn et al. Lancet. 2023. PMID: 36871574",
-    "finding": "Etrasimod showed around 53% response at week 12 (NNT ≈ 10 induction) and expanded the S1P class after 2023 approval.",
+    "finding": "Etrasimod showed around 53% response at week 12 (NNT \u2248 10 induction) and expanded the S1P class after 2023 approval.",
     "category": "Small Molecules",
     "date": "2023-03-11"
   },
   {
     "slug": "vitamin-d-ibd-meta-analysis",
     "href": "/research/emerging",
-    "title": "Vitamin D supplementation reduces IBD relapse (RR 0.64) — UC subgroup needs more data",
+    "title": "Vitamin D supplementation reduces IBD relapse (RR 0.64) \u2014 UC subgroup needs more data",
     "paper": "RCT meta-analysis. PMID: 36579768",
-    "finding": "Across IBD, vitamin D supplementation reduced relapse RR to 0.64. UC-specific evidence remains underpowered but 45–50% of UC patients are deficient.",
+    "finding": "Across IBD, vitamin D supplementation reduced relapse RR to 0.64. UC-specific evidence remains underpowered but 45\u201350% of UC patients are deficient.",
     "category": "Supplements",
     "date": "2023-01-01"
   }

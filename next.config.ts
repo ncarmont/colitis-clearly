@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
+  experimental: {
+    webpackBuildWorker: false,
+  },
 };
 
 export default nextConfig;
