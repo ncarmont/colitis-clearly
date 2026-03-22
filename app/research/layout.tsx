@@ -1,12 +1,12 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "EVOO Research & Health Benefits | Polyphenol Science & Studies",
-  description: "Evidence-based research on extra virgin olive oil polyphenols, cardiovascular health, anti-inflammatory properties, and Mediterranean diet benefits. Scientific articles and studies.",
-  keywords: "EVOO research, polyphenol studies, olive oil health benefits, cardiovascular health, anti-inflammatory, Mediterranean diet research, oleocanthal studies",
+  title: "Ulcerative Colitis Research | Trials, Biomarkers, and Emerging Therapies",
+  description: "Evidence-based UC research covering pathophysiology, biomarkers, pivotal trials, and the next generation of ulcerative colitis therapies.",
+  keywords: "ulcerative colitis research, UC clinical trials, fecal calprotectin, vedolizumab, ustekinumab, JAK inhibitors, IL-23 ulcerative colitis",
   openGraph: {
-    title: "EVOO Research & Health Benefits",
-    description: "Evidence-based research on extra virgin olive oil polyphenols and health benefits",
+    title: "Ulcerative Colitis Research",
+    description: "Evidence-based UC trials, biomarkers, and emerging treatment science",
     type: "website",
   },
 }

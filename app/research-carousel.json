@@ -1,210 +1,92 @@
 [
   {
-    "slug": "olive-oil-epigenetics-hydroxytyrosol-dna-methylation",
-    "title": "The Compound in Olive Oil That Rewrites Cancer Cell DNA",
-    "paper": "Del Saz-Lara et al., Pharmacological Research (2023) \u2014 In-vitro epigenomics, 850K CpG sites",
-    "finding": "Hydroxytyrosol altered 32,141 DNA methylation sites in colorectal cancer cells, silencing the EDNRA oncogene overexpressed in 60\u201380% of colorectal cancers \u2014 the largest polyphenol-driven methylomic footprint ever documented",
-    "category": "Cancer",
-    "date": "2026-03-20"
+    "slug": "act-trials-infliximab",
+    "href": "/blog/biologics-for-uc-compared",
+    "title": "Infliximab established anti-TNF induction and maintenance benefit in ACT 1 and ACT 2",
+    "paper": "Rutgeerts et al. N Engl J Med. 2005. PMID: 16339095",
+    "finding": "Infliximab delivered roughly 30-35% remission at week 8 in moderate to severe UC and became a benchmark rescue and maintenance biologic.",
+    "category": "Biologics",
+    "date": "2005-12-08"
   },
   {
-    "slug": "olive-oil-kidney-function-ckd-meta-analysis",
-    "title": "Can High-Phenolic Olive Oil Slow Chronic Kidney Disease?",
-    "paper": "Zhou et al., Frontiers in Nutrition (2026) \u2014 Meta-analysis, 1,073 CKD patients",
-    "finding": "High-phenolic EVOO reduced CRP by 0.79 mg/L and improved eGFR by +2.44 mL/min/1.73 m\u00b2 in nondialysis CKD patients \u2014 benefit specific to high-polyphenol oils, not generic olive oil",
-    "category": "Inflammation",
-    "date": "2026-03-19"
+    "slug": "ultra-adalimumab",
+    "href": "/blog/biologics-for-uc-compared",
+    "title": "ULTRA trials defined adalimumab's place as a self-injected anti-TNF option",
+    "paper": "Sandborn et al. Gastroenterology. 2012. PMID: 22062358",
+    "finding": "Week-8 remission reached about 17-19%, giving patients an at-home anti-TNF pathway for moderate to severe UC.",
+    "category": "Biologics",
+    "date": "2012-02-01"
   },
   {
-    "slug": "olive-oil-psoriasis-skin-inflammation-rct",
-    "title": "Can an Anti-Inflammatory Diet with Olive Oil Actually Treat Psoriasis?",
-    "paper": "Perez-Bootello et al., JAMA Dermatology (2025) \u2014 MEDIPSO Trial",
-    "finding": "16-week Mediterranean diet with EVOO achieved PASI 75 remission in 47.4% of psoriasis patients vs 0% in controls (P < .001)",
-    "category": "Inflammation",
-    "date": "2026-03-18"
+    "slug": "gemini-1-vedolizumab",
+    "href": "/blog/biologics-for-uc-compared",
+    "title": "GEMINI 1 put gut-selective trafficking blockade into mainstream UC care",
+    "paper": "Feagan et al. N Engl J Med. 2013. PMID: 23964932",
+    "finding": "Vedolizumab produced about 17% remission at week 6 and around 42% remission at week 52 with a favorable safety profile.",
+    "category": "Biologics",
+    "date": "2013-08-22"
   },
   {
-    "slug": "olive-oil-for-bone-health-osteoporosis",
-    "title": "Can an Olive Oil-Rich Diet Prevent Bone Loss as You Age?",
-    "paper": "V\u00e1zquez-Lorente et al., JAMA Netw Open (2025)",
-    "finding": "924-person RCT: EVOO-rich Mediterranean diet protected lumbar spine BMD in women (P = .005) over 3 years",
-    "category": "Longevity",
-    "date": "2026-03-17"
+    "slug": "unifi-ustekinumab",
+    "href": "/blog/biologics-for-uc-compared",
+    "title": "UNIFI validated IL-12/23 blockade for ulcerative colitis",
+    "paper": "Sands et al. N Engl J Med. 2019. PMID: 31553833",
+    "finding": "Ustekinumab showed about 62% response with roughly 16% remission at week 8 in moderate to severe disease.",
+    "category": "Biologics",
+    "date": "2019-09-26"
   },
   {
-    "slug": "olive-oil-for-depression-mental-health",
-    "title": "Can Two Tablespoons of Olive Oil a Day Treat Depression?",
-    "paper": "Foshati et al., J Acad Nutr Diet (2022)",
-    "finding": "25 mL/day EVOO significantly reduced depression scores in severe MDD patients (P = .008)",
-    "category": "Brain",
-    "date": "2026-03-16"
+    "slug": "octave-tofacitinib",
+    "href": "/blog/jak-inhibitors-uc",
+    "title": "OCTAVE showed that an oral JAK inhibitor could induce remission quickly",
+    "paper": "Sandborn et al. N Engl J Med. 2017. PMID: 28467869",
+    "finding": "Tofacitinib reached about 59% response and around 19% remission at week 8, changing the conversation about fast oral rescue.",
+    "category": "Small Molecules",
+    "date": "2017-05-04"
   },
   {
-    "slug": "olive-oil-vs-avocado-oil",
-    "title": "Olive Oil vs Avocado Oil: Which Is Actually Healthier?",
-    "paper": "Multiple studies meta-analysis",
-    "finding": "EVOO wins on polyphenols and anti-inflammatory compounds; avocado oil wins on smoke point",
-    "category": "Comparison",
-    "date": "2026-03-15"
+    "slug": "u-achieve-upadacitinib",
+    "href": "/blog/jak-inhibitors-uc",
+    "title": "U-ACHIEVE pushed oral efficacy higher with selective JAK1 inhibition",
+    "paper": "Danese et al. Lancet. 2022. PMID: 35644166",
+    "finding": "Upadacitinib reached roughly 74% response and 26% remission at week 8, one of the strongest oral induction signals in UC.",
+    "category": "Small Molecules",
+    "date": "2022-06-04"
   },
   {
-    "slug": "best-olive-oil-brand-2026",
-    "title": "Best Olive Oil Brand 2026: Lab-Tested and Ranked",
-    "paper": "Original lab data analysis \u2014 38 oils tested",
-    "finding": "Pamako Monovarietal leads with 2,081 mg/kg polyphenols verified by qNMR",
-    "category": "Rankings",
-    "date": "2026-03-15"
+    "slug": "true-north-ozanimod",
+    "href": "/rankings",
+    "title": "TRUE NORTH established oral S1P modulation as another advanced-therapy pathway",
+    "paper": "Sandborn et al. N Engl J Med. 2021. PMID: 34587385",
+    "finding": "Ozanimod delivered about 18% remission at week 10 and helped broaden non-biologic, non-JAK options for moderate to severe UC.",
+    "category": "Small Molecules",
+    "date": "2021-10-14"
   },
   {
-    "slug": "oleocanthal-vs-ibuprofen",
-    "title": "Can Olive Oil Replace Ibuprofen?",
-    "paper": "Beauchamp et al., Nature (2005)",
-    "finding": "Oleocanthal inhibits the same COX-1 and COX-2 enzymes as ibuprofen",
-    "category": "Inflammation",
-    "date": "2026-03-14"
+    "slug": "lucent-mirikizumab",
+    "href": "/blog/biologics-for-uc-compared",
+    "title": "LUCENT brought IL-23 p19 targeting into the UC biologic era",
+    "paper": "D'Haens et al. Lancet. 2023",
+    "finding": "Mirikizumab produced about 63% response with around 24% remission at week 12, reinforcing the shift toward IL-23-specific therapy.",
+    "category": "Biologics",
+    "date": "2023-05-13"
   },
   {
-    "slug": "olive-oil-for-cancer-prevention",
-    "title": "The Compound in EVOO That Kills Cancer Cells",
-    "paper": "Celano et al., Int J Mol Sci (2020)",
-    "finding": "Oleocanthal triggers cancer cell death within 30 minutes in vitro",
-    "category": "Cancer",
-    "date": "2026-03-13"
+    "slug": "elevate-etrasimod",
+    "href": "/rankings",
+    "title": "ELEVATE UC 12 and UC 52 confirmed etrasimod as an oral S1P option",
+    "paper": "Sandborn et al. Lancet. 2023. PMID: 36871574",
+    "finding": "Etrasimod showed around 53% response at week 12 and expanded the S1P class soon after its 2023 approval.",
+    "category": "Small Molecules",
+    "date": "2023-03-11"
   },
   {
-    "slug": "olive-oil-for-brain-health-dementia",
-    "title": "What 28 Years of Data Say About Olive Oil and Your Brain",
-    "paper": "Harvard T.H. Chan School of Public Health (2024)",
-    "finding": "Higher olive oil intake linked to 28% lower dementia mortality risk",
-    "category": "Brain",
-    "date": "2026-03-12"
-  },
-  {
-    "slug": "olive-oil-for-gut-health",
-    "title": "How Olive Oil Polyphenols Reshape Your Microbiome",
-    "paper": "Ferraris et al., Nutrients (2023)",
-    "finding": "EVOO polyphenols increase Bifidobacteria and reduce gut inflammation markers",
-    "category": "Gut",
-    "date": "2026-03-11"
-  },
-  {
-    "slug": "olive-oil-for-skin",
-    "title": "What Dermatology Research Says About Olive Oil for Skin",
-    "paper": "Multiple dermatology studies review",
-    "finding": "Hydroxytyrosol in EVOO shows UV-protective and anti-aging properties",
-    "category": "Skin",
-    "date": "2026-03-11"
-  },
-  {
-    "slug": "olive-oil-for-hair",
-    "title": "Can Olive Oil Actually Help Your Hair? The Evidence",
-    "paper": "Trichology and nutrition studies",
-    "finding": "Oleic acid penetrates the hair shaft; polyphenols reduce scalp inflammation",
-    "category": "Skin",
-    "date": "2026-03-12"
-  },
-  {
-    "slug": "health-benefits-high-polyphenol-evoo",
-    "title": "The EU's Only Approved Health Claim for Olive Oil",
-    "paper": "EU Regulation 432/2012, EFSA Panel",
-    "finding": "250mg/kg polyphenols proven to protect blood lipids from oxidative stress",
-    "category": "Heart",
-    "date": "2026-03-10"
-  },
-  {
-    "slug": "olive-oil-longevity-blue-zones",
-    "title": "Why Blue Zone Centenarians Drink Olive Oil Daily",
-    "paper": "Buettner, National Geographic Blue Zones Project",
-    "finding": "Populations consuming 40-60ml EVOO daily live 8-10 years longer on average",
-    "category": "Longevity",
-    "date": "2026-03-09"
-  },
-  {
-    "slug": "olive-oil-for-blood-pressure",
-    "title": "2 Tablespoons a Day Dropped Blood Pressure by 7 Points",
-    "paper": "Dom\u00e9nech et al., PREDIMED Trial (2014)",
-    "finding": "Mediterranean diet with EVOO reduced systolic BP by 7.1 mmHg vs control",
-    "category": "Heart",
-    "date": "2026-03-08"
-  },
-  {
-    "slug": "olive-oil-for-cholesterol",
-    "title": "The Science Behind EVOO's Effect on LDL Cholesterol",
-    "paper": "Covas et al., Annals of Internal Medicine (2006)",
-    "finding": "High-polyphenol EVOO increased HDL and reduced oxidized LDL significantly",
-    "category": "Heart",
-    "date": "2026-03-07"
-  },
-  {
-    "slug": "hydroxytyrosol-olive-oil",
-    "title": "Hydroxytyrosol: The Most Powerful Antioxidant in Food",
-    "paper": "Visioli et al., European Journal of Nutrition (2019)",
-    "finding": "Hydroxytyrosol has 10x the antioxidant capacity of green tea catechins",
-    "category": "Metabolism",
-    "date": "2026-03-06"
-  },
-  {
-    "slug": "olive-oil-for-liver-health",
-    "title": "Can Olive Oil Reverse Fatty Liver Disease?",
-    "paper": "Priore et al., Frontiers in Nutrition (2022)",
-    "finding": "EVOO polyphenols reduced hepatic fat accumulation by 30% in 12-week trial",
-    "category": "Metabolism",
-    "date": "2026-03-05"
-  },
-  {
-    "slug": "olive-oil-anti-inflammatory",
-    "title": "How EVOO Fights Chronic Inflammation at the Cellular Level",
-    "paper": "Lucas et al., Current Pharmaceutical Design (2011)",
-    "finding": "EVOO phenolics downregulate NF-kB and COX-2 inflammatory pathways",
-    "category": "Inflammation",
-    "date": "2026-03-04"
-  },
-  {
-    "slug": "olive-oil-for-weight-loss",
-    "title": "Does Olive Oil Help or Hurt Weight Loss?",
-    "paper": "Beulen et al., European Journal of Nutrition (2018)",
-    "finding": "Mediterranean diets rich in EVOO do not cause weight gain despite high fat content",
-    "category": "Metabolism",
-    "date": "2026-03-03"
-  },
-  {
-    "slug": "olive-oil-for-blood-sugar",
-    "title": "How Olive Oil Polyphenols Stabilize Blood Sugar",
-    "paper": "Schwingshackl et al., Nutrition & Metabolism (2017)",
-    "finding": "EVOO improved insulin sensitivity and reduced HbA1c in type 2 diabetes patients",
-    "category": "Metabolism",
-    "date": "2026-03-02"
-  },
-  {
-    "slug": "olive-oil-for-joint-pain",
-    "title": "Oleocanthal for Joint Pain: What Rheumatology Studies Show",
-    "paper": "Scotece et al., Life Sciences (2013)",
-    "finding": "Oleocanthal inhibited cartilage degradation enzymes in osteoarthritis models",
-    "category": "Inflammation",
-    "date": "2026-03-01"
-  },
-  {
-    "slug": "olive-oil-testosterone-hormonal-health",
-    "title": "Can EVOO Raise Testosterone? A Clinical Trial on 60 Men",
-    "paper": "Derouiche et al., Natural Product Communications (2013)",
-    "finding": "Extra virgin olive oil raised testosterone by 17.4% and LH by 42.6% in 3 weeks (p < 0.0001)",
-    "category": "Metabolism",
-    "date": "2026-03-19"
-  },
-  {
-    "slug": "olive-oil-evoo-eye-health-macular-degeneration-amd",
-    "title": "EVOO Phenolics Shut Down the Blood Vessel Growth That Causes Wet AMD",
-    "paper": "Marrero et al., J Agric Food Chem (2024)",
-    "finding": "Picual EVOO extract completely abrogated retinal-mimicking tube formation at 20 \u03bcg/mL (p < 0.0001), with 7.4\u00d7 selectivity for pathological vs. normal cells \u2014 implicating EVOO polyphenols in AMD prevention via ERK/EGFR suppression.",
-    "category": "Eye Health",
-    "date": "2026-03-21"
-  },
-  {
-    "slug": "olive-oil-evoo-exercise-performance-recovery",
-    "title": "Why Olive Oil's Polyphenols Are Smarter Than Antioxidant Supplements for Athletes",
-    "paper": "Annunziata et al., Antioxidants (Basel) (2025)",
-    "finding": "EVOO phenolics (hydroxytyrosol, oleuropein) activate Nrf2 and suppress NF-\u03baB while preserving PGC-1\u03b1-driven mitochondrial biogenesis \u2014 unlike high-dose vitamins C/E, which blunt training adaptations",
-    "category": "Sports Nutrition",
-    "date": "2026-03-22"
+    "slug": "uc-systematic-review-2023",
+    "href": "/research/clinical-trials",
+    "title": "Systematic review data now frame how biologics and small molecules are sequenced",
+    "paper": "Ungaro et al. Aliment Pharmacol Ther. 2023",
+    "finding": "Comparative reviews emphasize that efficacy, prior exposure, safety, and speed all matter when positioning advanced UC therapies.",
+    "category": "Trials",
+    "date": "2023-11-01"
   }
 ]

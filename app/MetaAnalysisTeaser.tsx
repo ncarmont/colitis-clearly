@@ -24,7 +24,7 @@ export default function MetaAnalysisTeaser({ findings, studyCount }: { findings:
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
             <span className="text-[11px] md:text-xs font-bold text-emerald-400/70 uppercase tracking-[0.12em]">
-              Proven Health Benefits
+              UC Evidence Snapshot
             </span>
           </div>
           <Link
@@ -40,7 +40,7 @@ export default function MetaAnalysisTeaser({ findings, studyCount }: { findings:
 
         {/* Subtitle — explains what this data actually is */}
         <p className="text-[9px] md:text-[10px] text-white/25 mb-3">
-          Aggregated from {studyCount} peer-reviewed studies · {findings.length} key findings · Updated weekly
+          Aggregated from {studyCount} pivotal papers and reviews · {findings.length} key findings
         </p>
 
         {/* Stats ribbon — compact cards, horizontal scroll mobile, grid desktop */}

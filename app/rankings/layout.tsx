@@ -1,12 +1,12 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Complete EVOO Rankings by Polyphenol Content | Olive Oil Health Database",
-  description: "Full rankings of extra virgin olive oils sorted by polyphenol levels. Compare brands, origins, and health benefits. Updated regularly with verified lab test results.",
-  keywords: "EVOO rankings, polyphenol content, olive oil comparison, best EVOO brands, highest antioxidant olive oil",
+  title: "UC Treatment Rankings | Evidence-Based Comparison of Therapies",
+  description: "Compare ulcerative colitis treatments by class, route, response data, remission rates, safety profile, and therapeutic role.",
+  keywords: "ulcerative colitis treatment rankings, mesalamine, vedolizumab, infliximab, upadacitinib, ulcerative colitis biologics, UC JAK inhibitors",
   openGraph: {
-    title: "Complete EVOO Rankings by Polyphenol Content",
-    description: "Full rankings of extra virgin olive oils sorted by polyphenol levels",
+    title: "UC Treatment Rankings",
+    description: "Evidence-based comparison of ulcerative colitis therapies",
     type: "website",
   },
 }

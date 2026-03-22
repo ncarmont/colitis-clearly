@@ -13,14 +13,12 @@ const PUB_ID = 'ca-pub-1361556625262612'
 
 interface SmallAdProps {
   slot?: string
-  variant?: 'banner' | 'inline' | 'sidebar'
   className?: string
   dark?: boolean
 }
 
 export default function SmallAd({
   slot,
-  variant = 'inline',
   className = '',
   dark = true,
 }: SmallAdProps) {

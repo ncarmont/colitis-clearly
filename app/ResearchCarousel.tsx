@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 type Paper = {
   slug: string
+  href?: string
   title: string
   paper: string
   finding: string
@@ -13,9 +14,14 @@ type Paper = {
 }
 
 const CATEGORY_ICONS: Record<string, string> = {
-  Heart: '❤️', Brain: '🧠', Gut: '🦠', Cancer: '🔬',
-  Inflammation: '🔥', Metabolism: '⚡', Longevity: '🧬', Skin: '✨',
-  Comparison: '⚖️', Rankings: '🏆',
+  Biologics: '🧬',
+  'Small Molecules': '💊',
+  Biomarkers: '🧪',
+  Surgery: '🏥',
+  Microbiome: '🦠',
+  Monitoring: '📈',
+  Lifestyle: '🥗',
+  Trials: '📚',
 }
 
 /**
@@ -60,7 +66,7 @@ export default function ResearchCarousel({ papers }: { papers: Paper[] }) {
       <div className="max-w-7xl mx-auto px-3 md:px-6">
         <div className="flex items-center justify-between mb-2">
           <h2 className="text-[11px] md:text-xs font-bold text-white/40 tracking-[0.15em] uppercase">
-            Latest Olive Oil Research Papers
+            Pivotal Ulcerative Colitis Research
           </h2>
           <Link href="/research" className="text-[10px] text-emerald-400/40 hover:text-emerald-400/70 transition-colors">
             All research →
@@ -83,7 +89,7 @@ export default function ResearchCarousel({ papers }: { papers: Paper[] }) {
             {displayPapers.map((paper, i) => (
               <Link
                 key={`${paper.slug}-${i}`}
-                href={`/blog/${paper.slug}`}
+                href={paper.href || `/blog/${paper.slug}`}
                 className="shrink-0 w-[210px] md:w-[220px] bg-white/[0.06] border border-white/[0.08] rounded-lg p-3 hover:bg-white/[0.1] hover:border-emerald-500/20 transition-all duration-300"
               >
                 <div className="flex items-center gap-1 mb-1.5">

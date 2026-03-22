@@ -1,139 +1,103 @@
 import { MetadataRoute } from 'next'
+import { BLOG_ARTICLES } from '@/lib/blog-articles'
+import { BASE_URL } from '@/lib/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.best-olive-oil-ranked.com' // Update with your actual domain
   const currentDate = new Date()
 
-  // Blog posts
-  const blogPosts = [
-    'best-olive-oil-brand-2026',
-    'what-are-polyphenols-olive-oil',
-    'health-benefits-high-polyphenol-evoo',
-    'top-10-highest-polyphenol-olive-oils',
-    'how-to-choose-high-polyphenol-olive-oil',
-    'best-olive-oil-for-heart-health',
-    'olive-oil-vs-other-oils',
-    'greek-vs-italian-vs-spanish-olive-oil',
-    'best-olive-cultivars-high-polyphenols',
-    'early-harvest-vs-late-harvest-olive-oil',
-    'how-to-store-olive-oil-after-opening',
-    'how-to-store-high-polyphenol-olive-oil',
-    'best-olive-oil-for-cooking',
-    'best-olive-oil-for-longevity',
-    'olive-oil-for-brain-health-dementia',
-    'oleocanthal-oleacein-explained',
-    'lab-testing-methods-polyphenol-measurement',
-    'olive-oil-polyphenol-myths-debunked',
-    'how-much-polyphenol-olive-oil-daily',
-    'harvest-date-olive-oil',
-    'best-time-to-take-olive-oil',
-    'olive-oil-anti-inflammatory',
-    'olive-oil-longevity-blue-zones',
-    'olive-oil-for-cholesterol',
-    'olive-oil-for-blood-pressure',
-    'olive-oil-for-blood-sugar',
-  ]
-
   return [
-    // Homepage - Highest priority, updated weekly
     {
-      url: baseUrl,
+      url: BASE_URL,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 1,
     },
-    // Rankings page - Very high priority, updated weekly
     {
-      url: `${baseUrl}/rankings`,
+      url: `${BASE_URL}/rankings`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.95,
     },
-    // Research section - High priority
     {
-      url: `${baseUrl}/research`,
+      url: `${BASE_URL}/research`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/research/overview`,
+      url: `${BASE_URL}/research/overview`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/research/producers`,
+      url: `${BASE_URL}/research/pathophysiology`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/research/regions`,
+      url: `${BASE_URL}/research/clinical-trials`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/research/cultivars`,
+      url: `${BASE_URL}/research/biomarkers`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/research/processing`,
+      url: `${BASE_URL}/research/emerging`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,
     },
-    // Blog landing page
     {
-      url: `${baseUrl}/blog`,
+      url: `${BASE_URL}/blog`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    // Individual blog posts - Good priority for SEO content
-    ...blogPosts.map(slug => ({
-      url: `${baseUrl}/blog/${slug}`,
+    ...BLOG_ARTICLES.map((article) => ({
+      url: `${BASE_URL}/blog/${article.slug}`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.75,
     })),
-    // Shop page
     {
-      url: `${baseUrl}/shop`,
+      url: `${BASE_URL}/shop`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.7,
     },
-    // About + trust/legal pages
     {
-      url: `${baseUrl}/about`,
+      url: `${BASE_URL}/about`,
       lastModified: currentDate,
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${BASE_URL}/contact`,
       lastModified: currentDate,
       changeFrequency: 'yearly',
       priority: 0.45,
     },
     {
-      url: `${baseUrl}/privacy-policy`,
+      url: `${BASE_URL}/privacy-policy`,
       lastModified: currentDate,
       changeFrequency: 'yearly',
       priority: 0.4,
     },
     {
-      url: `${baseUrl}/terms`,
+      url: `${BASE_URL}/terms`,
       lastModified: currentDate,
       changeFrequency: 'yearly',
       priority: 0.4,
     },
     {
-      url: `${baseUrl}/editorial-policy`,
+      url: `${BASE_URL}/editorial-policy`,
       lastModified: currentDate,
       changeFrequency: 'yearly',
       priority: 0.45,

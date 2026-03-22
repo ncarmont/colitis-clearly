@@ -1,56 +1,28 @@
 import Link from 'next/link'
+import type { Metadata } from 'next'
 
-export const metadata = {
-  title: 'Terms of Use | Best Olive Oil Ranked',
-  description: 'Terms of use for best-olive-oil-ranked.com.'
+export const metadata: Metadata = {
+  title: 'Terms of Use | Colitis Clearly',
+  description: 'Terms of use for Colitis Clearly.',
 }
 
 export default function TermsPage() {
-  const updated = '2026-02-27'
-
   return (
-    <main className="min-h-screen bg-white">
-      <section className="max-w-4xl mx-auto px-4 py-12 prose prose-slate max-w-none">
-        <Link href="/" className="text-green-700 hover:underline no-underline">← Back to rankings</Link>
-        <h1>Terms of Use</h1>
-        <p><strong>Last updated:</strong> {updated}</p>
-
-        <p>
-          By using best-olive-oil-ranked.com, you agree to these Terms.
-        </p>
-
-        <h2>Informational content only</h2>
-        <p>
-          Content is provided for general informational purposes and does not constitute medical advice.
-          Always consult a qualified professional for medical decisions.
-        </p>
-
-        <h2>Ranking methodology</h2>
-        <p>
-          Rankings are based on available evidence (e.g., published lab values, harvest details, and source reliability).
-          We may update entries at any time as new information appears.
-        </p>
-
-        <h2>Affiliate disclosure</h2>
-        <p>
-          Some links are affiliate links. We may earn a commission at no additional cost to you.
-          Affiliate relationships do not guarantee ranking position.
-        </p>
-
-        <h2>External websites</h2>
-        <p>
-          We are not responsible for the content, pricing, policies, or availability of third-party websites.
-        </p>
-
-        <h2>Limitation of liability</h2>
-        <p>
-          To the fullest extent permitted by law, we disclaim liability for losses arising from use of this website.
-        </p>
-
-        <h2>Contact</h2>
-        <p>
-          For legal or policy questions: <a href="mailto:contact@best-olive-oil-ranked.com">contact@best-olive-oil-ranked.com</a>
-        </p>
+    <main className="min-h-screen bg-[#060e1a] text-white">
+      <section className="mx-auto max-w-4xl px-4 py-12 md:px-6 md:py-16">
+        <Link href="/" className="inline-flex items-center gap-2 text-sm text-emerald-300/70 transition hover:text-emerald-200">
+          <span>←</span>
+          Back to home
+        </Link>
+        <h1 className="mt-6 text-4xl font-black tracking-tight">Terms of Use</h1>
+        <p className="mt-3 text-sm text-slate-400">Last updated: March 22, 2026</p>
+        <div className="mt-8 space-y-5 text-sm leading-relaxed text-slate-300">
+          <p>Content on Colitis Clearly is provided for educational and informational purposes only.</p>
+          <p>Nothing on this site is medical advice, diagnosis, or treatment. Treatment decisions should be made with a qualified clinician.</p>
+          <p>We aim for accuracy, but medical evidence evolves. We may update content, remove material, or revise interpretations without notice.</p>
+          <p>External links are provided for context. We are not responsible for third-party content, pricing, availability, or policies.</p>
+          <p>By using this site, you agree that Colitis Clearly is not liable for losses arising from reliance on website content.</p>
+        </div>
       </section>
     </main>
   )

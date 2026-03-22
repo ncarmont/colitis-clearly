@@ -1,3 +1,5 @@
+import { BASE_URL, SITE_NAME } from '@/lib/site'
+
 type ArticleSchemaProps = {
   title: string
   description: string
@@ -14,11 +16,9 @@ export default function ArticleSchema({
   datePublished,
   dateModified,
   url,
-  imageUrl = 'https://www.best-olive-oil-ranked.com/og-image.jpg',
-  authorName = 'EVOO Rankings Team'
+  imageUrl = `${BASE_URL}/icon.svg`,
+  authorName = `${SITE_NAME} Editorial Team`
 }: ArticleSchemaProps) {
-  const baseUrl = 'https://www.best-olive-oil-ranked.com'
-
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -33,10 +33,10 @@ export default function ArticleSchema({
     },
     "publisher": {
       "@type": "Organization",
-      "name": "EVOO Rankings",
+      "name": SITE_NAME,
       "logo": {
         "@type": "ImageObject",
-        "url": `${baseUrl}/logo.png`
+        "url": `${BASE_URL}/icon.svg`
       }
     },
     "mainEntityOfPage": {

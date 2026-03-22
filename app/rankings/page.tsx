@@ -1,533 +1,193 @@
-'use client'
-
-import { useState } from 'react'
 import Link from 'next/link'
+import type { Metadata } from 'next'
+import SmallAd from '@/components/SmallAd'
+import MedicalDisclaimer from '@/components/MedicalDisclaimer'
+import { TREATMENTS, type Treatment } from '@/lib/treatments'
 
-type OliveOil = {
-  id: number
-  rank: number
-  brand: string
-  efficacys: number
-  origin: string
-  harvestDate: string
-  price: string
-  priceAmount: string
-  method: string
-  lab: string
-  certificateLink: string
-  cultivar: string
-  buyLink: string
-  amazonLink?: string
-  notes: string
+export const metadata: Metadata = {
+  title: 'UC Treatment Rankings | Colitis Clearly',
+  description: 'Compare UC therapies across 5-ASA drugs, biologics, JAK inhibitors, S1P modulators, steroids, immunomodulators, rectal therapy, and surgery.',
 }
 
+const sections: { id: string; title: string; description: string; items: Treatment[] }[] = [
+  {
+    id: 'five-asa',
+    title: '5-ASA / Aminosalicylates',
+    description: 'First-line therapy for mild to moderate disease, especially when the goal is mucosal control without escalating immediately to systemic immunosuppression.',
+    items: TREATMENTS.filter((item) => item.className === '5-ASA / Aminosalicylate'),
+  },
+  {
+    id: 'biologics',
+    title: 'Biologics',
+    description: 'Advanced therapies for moderate to severe UC. Cross-trial comparisons are imperfect, but these studies set the modern benchmark for response and remission.',
+    items: TREATMENTS.filter((item) => item.className.startsWith('Biologic')),
+  },
+  {
+    id: 'small-molecules',
+    title: 'Small Molecules',
+    description: 'Oral advanced therapies with different tradeoffs around speed, systemic safety, and baseline monitoring.',
+    items: TREATMENTS.filter((item) => item.className.startsWith('Small molecule')),
+  },
+  {
+    id: 'steroids',
+    title: 'Corticosteroids',
+    description: 'Bridge therapy for induction. Useful when disease is active, but not a maintenance plan.',
+    items: TREATMENTS.filter((item) => item.className === 'Corticosteroid'),
+  },
+  {
+    id: 'immunomodulators',
+    title: 'Immunomodulators',
+    description: 'Older steroid-sparing tools with slower onset and a narrower role in the modern era.',
+    items: TREATMENTS.filter((item) => item.className === 'Immunomodulator'),
+  },
+  {
+    id: 'rectal',
+    title: 'Rectal Therapies',
+    description: 'Often underused, even though distal disease responds especially well to local treatment.',
+    items: TREATMENTS.filter((item) => item.className === 'Rectal therapy'),
+  },
+  {
+    id: 'surgery',
+    title: 'Surgical Option',
+    description: 'The curative pathway when medical therapy fails or dysplasia changes the risk-benefit equation.',
+    items: TREATMENTS.filter((item) => item.className === 'Surgical'),
+  },
+]
+
+const quickPicks = [
+  {
+    title: 'Mild to moderate first-line',
+    detail: 'Mesalamine remains the anchor first-line therapy, often with rectal mesalamine when the distal colon is involved.',
+  },
+  {
+    title: 'Best local therapy for proctitis',
+    detail: 'Rectal mesalamine can reach about 65-75% remission for distal disease and deserves more attention than it gets.',
+  },
+  {
+    title: 'Fastest oral advanced option in the brief',
+    detail: 'Upadacitinib posts the highest week-8 response signal in the supplied dataset, but safety warnings remain central.',
+  },
+  {
+    title: 'Definitive rescue pathway',
+    detail: 'Proctocolectomy with IPAA is curative for colonic disease and belongs in every serious UC treatment discussion.',
+  },
+]
+
 export default function RankingsPage() {
-  // Verified UC treatment data with lab-tested efficacy content
-  const [oils] = useState<OliveOil[]>([
-    {
-      id: 1, rank: 1, brand: "Laconiko ZOI Ultra High Phenolic", efficacys: 1799, origin: "Greece", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$58.95", method: "Not specified", lab: "Retailer COA",
-      certificateLink: "https://chefshop.com/products/laconiko-high-phenolic-zoi-olive-oil",
-      cultivar: "Kalamon",
-      buyLink: "https://chefshop.com/products/laconiko-high-phenolic-zoi-olive-oil",
-      notes: "⚠️ Currently restocking — choose 'Notify Me'. Price dropped to $58.95. Retailer shows lab metrics"
-    },
-    {
-      id: 2, rank: 2, brand: "SP360", efficacys: 1711, origin: "Jordan", harvestDate: "Sep 2025",
-      price: "$$", priceAmount: "£42.00", method: "HPLC", lab: "Lab Certified",
-      certificateLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
-      cultivar: "Arbequina",
-      buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij",
-      notes: "⚠️ Currently sold out. UV-protected refillable bottle; 1,711 mg/kg verified; herbaceous with green almond & tomato vine notes"
-    },
-    {
-      id: 3, rank: 3, brand: "ONSURI Arbequina (2025/26 Harvest)", efficacys: 1504, origin: "Jordan", harvestDate: "2025/26",
-      price: "$", priceAmount: "£25.00", method: "IOC/HPLC", lab: "Per ONSURI",
-      certificateLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
-      cultivar: "Arbequina",
-      buyLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
-      amazonLink: "https://www.amazon.co.uk/dp/B0DCP7F54J?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "NEW 2025/26 harvest; ultra-premium, single-estate; herbaceous & vibrant with lingering pungency"
-    },
-    {
-      id: 4, rank: 4, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", efficacys: 1400, origin: "Greece", harvestDate: "2025/26",
-      price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
-      certificateLink: "https://www.pjkabos.com/",
-      cultivar: "Koroneiki",
-      buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "900+ HPLC / 1400+ NMR (2025 harvest); USDA Organic certified"
-    },
-    {
-      id: 5, rank: 5, brand: "The Governor – Limited Edition", efficacys: 1316, origin: "Greece", harvestDate: "Oct 2025",
-      price: "$$", priceAmount: "£49.95", method: "NMR", lab: "WOCH/Univ. Athens",
-      certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
-      cultivar: "Lianolia",
-      buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
-      amazonLink: "https://www.amazon.com/dp/B0BFRRPR6R?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "2025/26 harvest; 577mg oleocanthal + 298mg oleacein; DIO-certified organic from Corfu"
-    },
-    {
-      id: 6, rank: 6, brand: "ONSURI Arbosana (Latest 2024/25)", efficacys: 1255, origin: "Jordan", harvestDate: "2024/25",
-      price: "$", priceAmount: "£19.95", method: "IOC/HPLC", lab: "Per ONSURI FAQ",
-      certificateLink: "https://onsurioliveoil.com",
-      cultivar: "Arbosana",
-      buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-efficacys-1255-mg-kg",
-      amazonLink: "https://www.amazon.co.uk/dp/B0DCP9YNBT?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Count on product page; method via FAQ"
-    },
-    {
-      id: 7, rank: 7, brand: "The Governor – Premium", efficacys: 1174, origin: "Greece", harvestDate: "Oct 2025",
-      price: "$$", priceAmount: "£39.95", method: "NMR", lab: "WOCH/Athens",
-      certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Premium_Certificate_2025.pdf",
-      cultivar: "Lianolia",
-      buyLink: "https://thegovernorevoo.co.uk/products/the-governor-premium-unfiltered-extra-virgin-olive-oil",
-      amazonLink: "https://www.amazon.com/dp/B0BFRRPR6R?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "2025/26 harvest; 476mg oleocanthal + 295mg oleacein; DIO-certified organic from Corfu"
-    },
-    {
-      id: 8, rank: 8, brand: "Finca La Torre – Hojiblanca (Organic/Biodynamic)", efficacys: 1059, origin: "Spain", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$38.00", method: "Not specified", lab: "Retailer listing",
-      certificateLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
-      cultivar: "Hojiblanca",
-      buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
-      amazonLink: "https://www.amazon.co.uk/dp/B0G34X8MSZ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Biodynamic from Málaga; unusually high count this season"
-    },
-    {
-      id: 9, rank: 9, brand: "Kyoord High-Phenolic", efficacys: 1007, origin: "Greece", harvestDate: "Nov–Dec 2024",
-      price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "3rd-party posted",
-      certificateLink: "https://kyoord.com/products/kyoord-high-phenolic-olive-oil",
-      cultivar: "Lianolia + Koroneiki",
-      buyLink: "https://www.amazon.com/kyoord-High-Phenolic-Extra-Virgin-Olive/dp/B0CCQQGXRQ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "Site posts per-harvest analysis from Corfu"
-    },
-    {
-      id: 10, rank: 10, brand: "ONSURI Signature", efficacys: 975, origin: "Jordan", harvestDate: "2025/26",
-      price: "$", priceAmount: "£22.50", method: "IOC/HPLC", lab: "Per ONSURI",
-      certificateLink: "https://onsurioliveoil.com/en-us",
-      cultivar: "Blend (estate)",
-      buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-efficacys-1000-mg-kg",
-      amazonLink: "https://www.amazon.co.uk/dp/B0F38DZNX6?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "2025/26 harvest; 975 mg/kg; butter-smooth mild profile; versatile everyday oil"
-    },
-    {
-      id: 11, rank: 11, brand: "Opus Oléa – Organic", efficacys: 874, origin: "Greece", harvestDate: "Nov 2025",
-      price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "Lab verified",
-      certificateLink: "https://www.opuslivewell.com/products/opus-olea-organic-extra-virgin-olive-oil-500ml",
-      cultivar: "Koroneiki",
-      buyLink: "https://www.opuslivewell.com/products/opus-olea-organic-extra-virgin-olive-oil-500ml",
-      notes: "2025/26 harvest; 874 mg/kg certified, 17.5mg hydroxytyrosol/20g; higher-elevation Messinia plots; ultra-low acidity 0.2%"
-    },
-    {
-      id: 12, rank: 12, brand: "Zero Nutrition – UC100", efficacys: 813, origin: "Greece", harvestDate: "2024/25",
-      price: "$", priceAmount: "$24.99", method: "Not specified", lab: "COA posted",
-      certificateLink: "",
-      cultivar: "Koroneiki",
-      buyLink: "https://zeronutrition.co.uk",
-      notes: "813 mg/kg Koroneiki; UV-protective bottle; ⚠️ zeronutrition.co.uk now sells sports supplements — search Amazon for UC treatment listing"
-    },
-    {
-      id: 13, rank: 13, brand: "Quattrociocchi 'Superbo'", efficacys: 800, origin: "Italy", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$40.95", method: "Not specified", lab: "Retailer HPLC-style",
-      certificateLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
-      cultivar: "Moraiolo (Lazio)",
-      buyLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
-      amazonLink: "https://www.amazon.com/dp/B07984JN3L?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "OOL discloses numeric efficacys; extreme-intensity organic"
-    },
-    {
-      id: 14, rank: 14, brand: "P.J. KABOS – Family Reserve (Robust)", efficacys: 699, origin: "Greece", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "Stated",
-      certificateLink: "https://www.pjkabos.com/shop-usa",
-      cultivar: "Koroneiki",
-      buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "Daily 'shot' usage suggested by brand; 699 mg/kg HPLC; 10+mg hydroxytyrosol/20g; USDA Organic"
-    },
-    {
-      id: 15, rank: 15, brand: "Oro del Desierto – Picual (Organic)", efficacys: 717, origin: "Spain", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$32.00", method: "Not specified", lab: "Retailer listing",
-      certificateLink: "https://www.spanish-oil.com/en/organic-olive-oil/oro-del-desierto",
-      cultivar: "Picual",
-      buyLink: "https://www.spanish-oil.com/en/organic-olive-oil/oro-del-desierto",
-      amazonLink: "https://www.amazon.co.uk/dp/B00D1AAOLG?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Early-harvest organic from Almería; OOL listing removed — check Spanish-Oil.com for current availability"
-    },
-    {
-      id: 16, rank: 16, brand: "Vallesur – Peruvian", efficacys: 688, origin: "Peru", harvestDate: "2024",
-      price: "$$", priceAmount: "$28.00", method: "Not specified", lab: "Curator listing",
-      certificateLink: "",
-      cultivar: "Picual",
-      buyLink: "https://www.instagram.com/vallesur.pe/",
-      notes: "Award-winning Peruvian UC from Tacna"
-    },
-    {
-      id: 17, rank: 17, brand: "Laudemio Frescobaldi (Tuscany)", efficacys: 675, origin: "Italy", harvestDate: "2024",
-      price: "$$", priceAmount: "$42.00", method: "Not specified", lab: "Retailer cited",
-      certificateLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      cultivar: "Frantoio/Moraiolo/Leccino",
-      buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "Multiple retailers cite ~650–700 mg/kg"
-    },
-    {
-      id: 18, rank: 18, brand: "Citizens of Soil – Spanish", efficacys: 642, origin: "Spain", harvestDate: "Nov 2025",
-      price: "$$", priceAmount: "$38.00", method: "Not specified", lab: "Independent lab",
-      certificateLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
-      cultivar: "Hojiblanca/Arbequina/Koroneiki",
-      buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
-      amazonLink: "https://www.amazon.co.uk/dp/B0G2MHQB98?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Independent lab verified per brand from Sevilla"
-    },
-    {
-      id: 19, rank: 19, brand: "Citizens of Soil – Tuscan 'Extra Rare'", efficacys: 655, origin: "Italy", harvestDate: "Feb 2025",
-      price: "$$", priceAmount: "$38.00", method: "Not specified", lab: "Independent lab",
-      certificateLink: "https://www.citizensofsoil.com/products/tuscan-olive-oil-extra-rare",
-      cultivar: "Blend (Frantoio/Leccino)",
-      buyLink: "https://www.citizensofsoil.com/products/tuscan-olive-oil-extra-rare",
-      notes: "Page states tested Feb 2025; lab report available"
-    },
-    {
-      id: 20, rank: 20, brand: "Morocco Gold", efficacys: 626, origin: "Morocco", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$35.00", method: "Not specified", lab: "Brand publishes",
-      certificateLink: "",
-      cultivar: "Picholine Marocaine",
-      buyLink: "https://www.moroccogold.com",
-      amazonLink: "https://www.amazon.co.uk/dp/B07GBJLFFQ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Brand publicizes hydroxytyrosol per 20 g"
-    },
-    {
-      id: 21, rank: 21, brand: "Venta del Barón (DO Priego)", efficacys: 617, origin: "Spain", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$36.00", method: "Not specified", lab: "Ranking page",
-      certificateLink: "",
-      cultivar: "Hojiblanca + Picuda",
-      buyLink: "https://www.ventadelbaron.com/en/collections/all",
-      amazonLink: "https://www.amazon.co.uk/dp/B00FMMATCA?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "DO-protected, high count from Córdoba"
-    },
-    {
-      id: 22, rank: 22, brand: "Castillo de Canena – First Day Harvest Picual", efficacys: 611, origin: "Spain", harvestDate: "Fall 2025",
-      price: "$$", priceAmount: "$49.95", method: "Not specified", lab: "Retailer listing",
-      certificateLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
-      cultivar: "Picual",
-      buyLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
-      amazonLink: "https://www.amazon.co.uk/dp/B00ZRFFAZI?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Premium 'Primer Día de Cosecha' line from Jaén"
-    },
-    {
-      id: 23, rank: 23, brand: "Entimio – INTENSO", efficacys: 601, origin: "Italy", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$50.00", method: "Not specified", lab: "Brand page",
-      certificateLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      cultivar: "Frantoio/Leccino/Moraiolo",
-      buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "Certified lots from Tuscany; analysis posted"
-    },
-    {
-      id: 24, rank: 24, brand: "Odysea 'Good For You' (Crete)", efficacys: 573, origin: "Greece", harvestDate: "2024/25",
-      price: "$", priceAmount: "$19.99", method: "Not specified", lab: "Brand listing",
-      certificateLink: "https://www.kosterina.com/products/6bottles",
-      cultivar: "Koroneiki",
-      buyLink: "https://www.kosterina.com/products/6bottles",
-      notes: "Polyphenols posted on Odysea/Kosterina site"
-    },
-    {
-      id: 25, rank: 25, brand: "Kosterina – Original Extra Virgin", efficacys: 573, origin: "Greece", harvestDate: "2024/25",
-      price: "$", priceAmount: "$38.00", method: "Not specified", lab: "Brand FAQ/page",
-      certificateLink: "https://www.kosterina.com/pages/faqs",
-      cultivar: "Koroneiki",
-      buyLink: "https://www.kosterina.com/products/6bottles",
-      amazonLink: "https://www.amazon.com/Kosterina-Cold-Pressed-Koroneiki-Incredible-Superfood/dp/B087MT3TC7?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "Value posted 'at harvest'"
-    },
-    {
-      id: 26, rank: 26, brand: "True Tuscan (Olive Girl)", efficacys: 550, origin: "Italy", harvestDate: "2024",
-      price: "$$", priceAmount: "$42.00", method: "Not specified", lab: "Independent lab",
-      certificateLink: "https://shopolivegirl.com/products/true-tuscan-extra-virgin-olive-oil",
-      cultivar: "Italian blend",
-      buyLink: "https://shopolivegirl.com/products/true-tuscan-extra-virgin-olive-oil",
-      notes: "Boutique producer, posts efficacys (550 mg/kg independently tested)"
-    },
-    {
-      id: 27, rank: 27, brand: "Citizens of Soil – Greek (Peloponnese)", efficacys: 526, origin: "Greece", harvestDate: "Dec 2024",
-      price: "$", priceAmount: "$32.00", method: "Not specified", lab: "Independent lab",
-      certificateLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
-      cultivar: "Koroneiki + Athinolia",
-      buyLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
-      amazonLink: "https://www.amazon.co.uk/dp/B0FZKWVCXF?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Small-batch organic; ~500–552 mg/kg cited"
-    },
-    {
-      id: 28, rank: 28, brand: "Entimio – ARDENTE", efficacys: 516, origin: "Italy", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$45.00", method: "Not specified", lab: "Brand page",
-      certificateLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      cultivar: "Tuscan blend",
-      buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "Certified lots from Tuscany; analysis posted"
-    },
-    {
-      id: 29, rank: 29, brand: "P.J. KABOS – Family Reserve (Medium)", efficacys: 500, origin: "Greece", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$39.00", method: "HPLC", lab: "Stated",
-      certificateLink: "https://www.pjkabos.com/shop-usa",
-      cultivar: "Koroneiki",
-      buyLink: "https://www.amazon.com/Phenolic-Intensity-Extracted-Koroneiki-KABOS/dp/B09P7K1V8K?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "HPLC hydroxytyrosol 7+ mg/20g; 500+ tier"
-    },
-    {
-      id: 30, rank: 30, brand: "Blueprint (Bryan Johnson) – 'Snake Oil' UC", efficacys: 499, origin: "Portugal", harvestDate: "2024",
-      price: "$$", priceAmount: "$39.00", method: "Not specified", lab: "Third-party verified",
-      certificateLink: "https://blueprint.bryanjohnson.com/products/extra-virgin-olive-oil",
-      cultivar: "Portuguese olives",
-      buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "Independent trackers list ~499 mg/kg for 24/25; brand promises >400 mg/kg"
-    },
-    {
-      id: 31, rank: 31, brand: "Rincón de la Subbética – Hojiblanca (Organic)", efficacys: 356, origin: "Spain", harvestDate: "2024/25",
-      price: "$$", priceAmount: "$37.95", method: "Not specified", lab: "Retailer listing",
-      certificateLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
-      cultivar: "Hojiblanca",
-      buyLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
-      amazonLink: "https://www.amazon.co.uk/dp/B0DHL4SF2F?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-      notes: "Gold award NYIOOC 2025. Leading PDO producer from Priego de Córdoba; transparent count. New harvest 25/26 on Amazon UK."
-    }
-  ])
-
-  const [filterOrigin, setFilterOrigin] = useState<string>('all')
-  const [sortBy, setSortBy] = useState<'rank' | 'efficacys'>('rank')
-
-  const origins = ['all', ...Array.from(new Set(oils.map(oil => oil.origin)))]
-
-  const filteredAndSortedOils = oils
-    .filter(oil => filterOrigin === 'all' || oil.origin === filterOrigin)
-    .sort((a, b) => {
-      if (sortBy === 'efficacys') {
-        return b.efficacys - a.efficacys
-      }
-      return a.rank - b.rank
-    })
-
-  const currentMonth = new Date().getMonth()
-  const isNorthernSeason = currentMonth >= 9 || currentMonth <= 2
-  const hemisphereAdvice = isNorthernSeason
-    ? {
-        label: 'Northern harvest window',
-        detail: 'Oct–Mar',
-        flags: '🇬🇷 🇪🇸 🇮🇹',
-        note: 'Lean north right now for just-pressed batches.'
-      }
-    : {
-        label: 'Southern harvest window',
-        detail: 'Apr–Sep',
-        flags: '🇨🇱 🇦🇺 🇿🇦',
-        note: 'Switch south to keep bottles under 90 days old.'
-      }
-
   return (
-    <main className="min-h-screen bg-slate-50">
-      {/* Header */}
-      <header className="bg-gradient-to-r from-slate-900 via-emerald-900 to-slate-900 text-white py-8 px-4 border-b border-emerald-800/50">
-        <div className="max-w-6xl mx-auto">
-          <Link href="/" className="text-green-100 hover:text-white mb-4 inline-block">
-            ← Back to Home
+    <main className="min-h-screen bg-[#060e1a] text-white">
+      <section className="relative overflow-hidden border-b border-white/8 bg-gradient-to-br from-[#071426] via-[#0b1830] to-[#0d2638]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(45,212,191,0.15),_transparent_55%)]" />
+        <div className="relative mx-auto max-w-7xl px-4 pb-12 pt-12 md:px-6 md:pb-16 md:pt-16">
+          <Link href="/" className="inline-flex items-center gap-2 text-sm text-emerald-300/70 transition hover:text-emerald-200">
+            <span>←</span>
+            Back to home
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">
-            Complete UC Rankings
-          </h1>
-          <p className="text-green-100 text-lg">
-            Ranked by verified efficacy content • {oils.length} UCs with lab-tested data
-          </p>
-        </div>
-      </header>
-
-      {/* Filters & Controls */}
-      <section className="bg-white border-b border-gray-200 py-6 px-4 sticky top-0 z-10 shadow-sm">
-        <div className="max-w-6xl mx-auto flex flex-wrap gap-4 items-center justify-between">
-          <div className="flex gap-4 items-center flex-wrap">
-            <div>
-              <label className="text-sm font-semibold text-gray-700 mr-2">Filter by Origin:</label>
-              <select
-                value={filterOrigin}
-                onChange={(e) => setFilterOrigin(e.target.value)}
-                className="border border-gray-300 rounded-lg px-4 py-2 bg-white text-gray-900 font-medium"
-              >
-                {origins.map(origin => (
-                  <option key={origin} value={origin}>
-                    {origin === 'all' ? 'All Countries' : origin}
-                  </option>
-                ))}
-              </select>
+          <div className="mt-6 max-w-4xl">
+            <div className="inline-flex rounded-full border border-emerald-300/20 bg-emerald-300/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-200/80">
+              Flagship Comparison
             </div>
-
-            <div>
-              <label className="text-sm font-semibold text-gray-700 mr-2">Sort by:</label>
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as 'rank' | 'efficacys')}
-                className="border border-gray-300 rounded-lg px-4 py-2 bg-white text-gray-900 font-medium"
-              >
-                <option value="rank">Overall Rank</option>
-                <option value="efficacys">Polyphenol Content</option>
-              </select>
-            </div>
-          </div>
-
-          <div className="text-sm text-gray-600">
-            Showing <span className="font-bold text-green-600">{filteredAndSortedOils.length}</span> UCs
-          </div>
-        </div>
-      </section>
-
-      {/* Rankings Table */}
-      <section className="py-12 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-6 flex flex-col gap-3 rounded-2xl border border-green-100 bg-white/80 p-4 text-sm text-gray-700 shadow-sm">
-            <div className="flex flex-wrap items-center justify-between gap-2">
-              <span className="font-semibold text-green-700">What drives these rankings</span>
-              <span className="inline-flex items-center gap-2 rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
-                {hemisphereAdvice.flags} {hemisphereAdvice.label} · {hemisphereAdvice.detail}
-              </span>
-            </div>
-            <p>
-              We highlight early-harvest, freshly bottled UCs with verified phenolics above the 250&nbsp;mg/kg threshold (EFSA standard) because freshness keeps efficacys potent all year.
+            <h1 className="mt-5 text-4xl font-black tracking-tight md:text-6xl">
+              Evidence-based UC treatment rankings and comparison.
+            </h1>
+            <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">
+              This page compares the treatments named in the brief across clinical role, route, pivotal trials, response data, remission data, side effects, approval timing, and practical notes. The ranking mirrors the supplied dataset, but cross-trial comparisons still need caution.
             </p>
-            <p className="text-xs text-gray-500">{hemisphereAdvice.note}</p>
-            <p className="text-xs text-gray-400 mt-1">Some links on this page are affiliate links — we may earn a small commission at no extra cost to you. This helps keep the site running. Our rankings are never influenced by affiliate partnerships.</p>
           </div>
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-green-600 text-white">
-                  <tr>
-                    <th className="px-4 py-4 text-left font-semibold">Rank</th>
-                    <th className="px-4 py-4 text-left font-semibold">Brand</th>
-                    <th className="px-4 py-4 text-left font-semibold">Polyphenols</th>
-                    <th className="px-4 py-4 text-left font-semibold">Origin</th>
-                    <th className="px-4 py-4 text-left font-semibold">Cultivar</th>
-                    <th className="px-4 py-4 text-left font-semibold">Harvest</th>
-                    <th className="px-4 py-4 text-left font-semibold">Price</th>
-                    <th className="px-4 py-4 text-left font-semibold">Buy</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {filteredAndSortedOils.map((oil, idx) => (
-                    <tr
-                      key={oil.id}
-                      className={`border-b border-gray-200 hover:bg-green-50 transition ${
-                        idx < 3 ? 'bg-green-50/50' : ''
-                      }`}
-                    >
-                      <td className="px-4 py-4">
-                        <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full font-bold ${
-                          oil.rank === 1 ? 'bg-yellow-500 text-white' :
-                          oil.rank === 2 ? 'bg-gray-400 text-white' :
-                          oil.rank === 3 ? 'bg-orange-600 text-white' :
-                          'bg-green-600 text-white'
-                        }`}>
-                          {oil.rank}
-                        </span>
-                      </td>
-                      <td className="px-4 py-4">
-                        <div className="font-semibold text-gray-900">{oil.brand}</div>
-                        <div className="text-xs text-gray-500 mt-1">{oil.notes}</div>
-                      </td>
-                      <td className="px-4 py-4">
-                        <span className="text-green-700 font-bold text-lg">{oil.efficacys}</span>
-                        <span className="text-gray-500 text-sm ml-1">mg/kg</span>
-                        {oil.method !== 'Not specified' && (
-                          <div className="text-xs text-blue-600 mt-1">{oil.method}</div>
-                        )}
-                      </td>
-                      <td className="px-4 py-4 text-gray-600">{oil.origin}</td>
-                      <td className="px-4 py-4 text-gray-600 text-sm">{oil.cultivar}</td>
-                      <td className="px-4 py-4 text-gray-600">{oil.harvestDate}</td>
-                      <td className="px-4 py-4">
-                        <div className="text-gray-900 font-medium">{oil.priceAmount}</div>
-                      </td>
-                      <td className="px-4 py-4">
-                        <div className="flex flex-col gap-1.5">
-                          <a
-                            href={oil.buyLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center px-3 py-1.5 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition"
-                          >
-                            Buy →
-                          </a>
-                          {(oil.amazonLink || oil.buyLink.toLowerCase().includes('amazon')) && (
-                            <a
-                              href={oil.amazonLink || oil.buyLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-[#FFD814] to-[#FF9900] text-gray-900 text-sm font-bold rounded-lg hover:from-[#F7CA00] hover:to-[#FF8C00] transition"
-                            >
-                              <img src="/img/amazon-logo.svg" alt="Amazon" className="h-4 w-auto" />
-                            </a>
-                          )}
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          {/* Info Boxes */}
-          <div className="grid md:grid-cols-2 gap-6 mt-12">
-            <div className="bg-green-100 border-l-4 border-green-600 p-6 rounded-r-lg">
-              <h3 className="font-bold text-green-900 mb-2 text-lg">About Our Rankings</h3>
-              <p className="text-gray-800">
-                Our rankings are based on verified third-party laboratory tests measuring total efficacy content.
-                All {oils.length} oils listed have documented efficacy data from COAs, HPLC, or NMR testing.
-                We prioritize oils with efficacy levels above 250 mg/kg, the EFSA threshold for health claims.
-              </p>
-            </div>
-
-            <div className="bg-blue-100 border-l-4 border-blue-600 p-6 rounded-r-lg">
-              <h3 className="font-bold text-blue-900 mb-2 text-lg">Why These Numbers Matter</h3>
-              <p className="text-gray-800">
-                Higher efficacy content means stronger antioxidant properties, better anti-inflammatory effects,
-                and greater cardiovascular benefits. Oils above 500 mg/kg are considered exceptional, and our top picks
-                exceed 1000 mg/kg — verified by lab testing.
-              </p>
-            </div>
-          </div>
-
-          {/* Testing Methods */}
-          <div className="mt-8 bg-gray-50 p-6 rounded-xl">
-            <h3 className="font-bold text-gray-900 mb-4">Testing Methods Explained</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-              <div>
-                <span className="font-bold text-blue-700">HPLC</span>
-                <p className="text-gray-600">High-Performance Liquid Chromatography — gold standard for individual phenolic compounds</p>
-              </div>
-              <div>
-                <span className="font-bold text-blue-700">NMR</span>
-                <p className="text-gray-600">Nuclear Magnetic Resonance — provides detailed molecular fingerprint of phenolics</p>
-              </div>
-              <div>
-                <span className="font-bold text-blue-700">IOC Method</span>
-                <p className="text-gray-600">International Olive Council official testing protocol for total efficacys</p>
-              </div>
-            </div>
+          <div className="mt-8 max-w-3xl">
+            <MedicalDisclaimer compact />
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 px-4 bg-green-600 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Want to Learn More?
-          </h2>
-          <p className="text-xl text-green-50 mb-8">
-            Dive into the science behind efficacys and UC health benefits
-          </p>
-          <Link
-            href="/research"
-            className="inline-block bg-white text-green-700 px-10 py-4 rounded-lg font-semibold text-lg hover:bg-green-50 transition"
-          >
-            Read Research & Articles
-          </Link>
+      <section className="mx-auto max-w-7xl px-4 py-8 md:px-6">
+        <div className="rounded-[28px] border border-cyan-300/15 bg-cyan-300/10 p-5 text-sm leading-relaxed text-cyan-50">
+          <strong className="font-semibold">How to read this page:</strong> a 74% response rate in one advanced-therapy trial is not automatically &quot;better&quot; than a 45% remission rate in a different population. UC trials use different endpoints, time points, prior-exposure mixes, and maintenance designs. Use these numbers as structured context, not as a one-column leaderboard.
         </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 pb-6 md:px-6">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {quickPicks.map((pick) => (
+            <div key={pick.title} className="rounded-[24px] border border-white/8 bg-white/[0.03] p-5">
+              <h2 className="text-lg font-bold text-white">{pick.title}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-slate-300">{pick.detail}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 pb-8 md:px-6">
+        <div className="flex flex-wrap gap-3">
+          {sections.map((section) => (
+            <a
+              key={section.id}
+              href={`#${section.id}`}
+              className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-semibold text-slate-200 transition hover:bg-white/[0.08]"
+            >
+              {section.title}
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 pb-8 md:px-6">
+        <SmallAd />
+      </section>
+
+      <section className="mx-auto max-w-7xl space-y-10 px-4 pb-14 md:px-6 md:pb-20">
+        {sections.map((section) => (
+          <section key={section.id} id={section.id} className="scroll-mt-28">
+            <div className="max-w-3xl">
+              <h2 className="text-3xl font-bold text-white">{section.title}</h2>
+              <p className="mt-3 text-sm leading-relaxed text-slate-300">{section.description}</p>
+            </div>
+            <div className="mt-6 grid gap-5">
+              {section.items.map((treatment) => (
+                <article key={treatment.id} className="rounded-[30px] border border-white/8 bg-gradient-to-br from-white/[0.05] to-white/[0.02] p-6 md:p-7">
+                  <div className="flex flex-col gap-5 lg:flex-row lg:justify-between">
+                    <div className="max-w-2xl">
+                      <div className="text-sm font-semibold text-slate-400">#{treatment.rank}</div>
+                      <h3 className="mt-2 text-2xl font-bold text-white">
+                        {treatment.name}
+                        {treatment.brandNames ? <span className="text-lg font-medium text-slate-400"> ({treatment.brandNames})</span> : null}
+                      </h3>
+                      <p className="mt-2 text-sm text-emerald-200/80">{treatment.className}</p>
+                      <p className="mt-4 text-sm leading-relaxed text-slate-300">{treatment.notes}</p>
+                    </div>
+                    <div className="rounded-3xl border border-white/8 bg-[#091528] px-5 py-4 lg:w-[260px]">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">Best Use</p>
+                      <p className="mt-3 text-sm leading-relaxed text-white">{treatment.severity}</p>
+                      <div className="mt-5 text-sm text-slate-300">
+                        <div>Route: {treatment.route}</div>
+                        <div className="mt-2">Approved: {treatment.yearApproved}</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                    <DetailCard label="Clinical trial(s)" value={treatment.trials} />
+                    <DetailCard label="Response rate" value={treatment.responseRate} />
+                    <DetailCard label="Remission rate" value={treatment.remissionRate} />
+                    <DetailCard label="Key side effects" value={treatment.keySideEffects} />
+                    <DetailCard label="Route" value={treatment.route} />
+                    <DetailCard label="Year approved" value={treatment.yearApproved} />
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
       </section>
     </main>
+  )
+}
+
+function DetailCard({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-3xl border border-white/8 bg-[#091528] p-4">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">{label}</p>
+      <p className="mt-3 text-sm leading-relaxed text-slate-200">{value}</p>
+    </div>
   )
 }

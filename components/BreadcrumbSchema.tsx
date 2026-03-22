@@ -1,3 +1,5 @@
+import { BASE_URL } from '@/lib/site'
+
 type BreadcrumbItem = {
   name: string
   url: string
@@ -8,8 +10,6 @@ type BreadcrumbSchemaProps = {
 }
 
 export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
-  const baseUrl = 'https://www.best-olive-oil-ranked.com'
-
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -17,7 +17,7 @@ export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `${baseUrl}${item.url}`
+      "item": `${BASE_URL}${item.url}`
     }))
   }
 

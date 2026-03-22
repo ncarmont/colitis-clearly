@@ -1,131 +1,136 @@
 import Link from 'next/link'
+import { MEDICAL_DISCLAIMER, SITE_NAME, SITE_TAGLINE } from '@/lib/site'
 
 export default function Footer() {
   return (
     <footer className="relative bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 text-gray-300">
-      {/* Decorative top border */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-2xl">🫒</span>
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-300 to-cyan-300 text-sm font-black tracking-[0.2em] text-slate-950 shadow-lg">
+                CC
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
-                EVOO Rankings
+              <span className="text-xl font-bold bg-gradient-to-r from-emerald-300 to-cyan-200 bg-clip-text text-transparent">
+                {SITE_NAME}
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Science-backed rankings of the highest polyphenol extra virgin olive oils for optimal health.
+              {SITE_TAGLINE}. We synthesize trial data, biomarkers, and guideline-based UC care for patients, caregivers, and trainees.
             </p>
-            <div className="flex gap-3 pt-2">
-              <a
-                href="https://www.instagram.com/bestoliveoilranked.com_/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-gray-800 hover:bg-green-600 flex items-center justify-center transition-all duration-200 hover:scale-110"
-                aria-label="Instagram"
-              >
-                <span className="text-sm">IG</span>
-              </a>
+            <div className="rounded-2xl border border-amber-400/20 bg-amber-400/10 px-4 py-3 text-xs leading-relaxed text-amber-100/85">
+              {MEDICAL_DISCLAIMER}
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-white font-bold mb-4 text-lg">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-green-400 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-green-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Rankings
+                <Link href="/" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href="/research" className="text-gray-400 hover:text-green-400 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-green-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <Link href="/rankings" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Treatments
+                </Link>
+              </li>
+              <li>
+                <Link href="/research" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Research
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-green-400 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-green-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <Link href="/blog" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   About
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Resources */}
           <div>
-            <h3 className="text-white font-bold mb-4 text-lg">Resources</h3>
+            <h3 className="text-white font-bold mb-4 text-lg">Research Tracks</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/research/overview" className="text-gray-400 hover:text-green-400 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-green-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                <Link href="/research/overview" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Research Overview
                 </Link>
               </li>
               <li>
-                <Link href="/research/producers" className="text-gray-400 hover:text-green-400 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-green-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Top Producers
+                <Link href="/research/pathophysiology" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Pathophysiology
                 </Link>
               </li>
               <li>
-                <Link href="/research/cultivars" className="text-gray-400 hover:text-green-400 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-green-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Olive Cultivars
+                <Link href="/research/clinical-trials" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Clinical Trials
+                </Link>
+              </li>
+              <li>
+                <Link href="/research/biomarkers" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Biomarkers
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Newsletter */}
           <div>
-            <h3 className="text-white font-bold mb-4 text-lg">Stay Updated</h3>
+            <h3 className="text-white font-bold mb-4 text-lg">Read Next</h3>
             <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-              Get the latest rankings and research insights
+              Start with the flagship treatment comparison or the flare-management guide.
             </p>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 px-4 py-2.5 rounded-lg bg-gray-800/50 border border-gray-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all placeholder:text-gray-500"
-              />
-              <button className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-5 py-2.5 rounded-lg hover:from-green-500 hover:to-emerald-500 transition-all duration-200 text-sm font-semibold shadow-lg hover:shadow-xl hover:scale-105">
-                Join
-              </button>
+            <div className="space-y-3">
+              <Link href="/rankings" className="block rounded-xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-white transition hover:border-emerald-300/30 hover:bg-white/[0.06]">
+                UC treatment rankings
+              </Link>
+              <Link href="/blog/uc-flare-management" className="block rounded-xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-white transition hover:border-emerald-300/30 hover:bg-white/[0.06]">
+                What to do during a flare
+              </Link>
+              <Link href="/blog/fecal-calprotectin-explained" className="block rounded-xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-white transition hover:border-emerald-300/30 hover:bg-white/[0.06]">
+                Calprotectin explained
+              </Link>
             </div>
           </div>
         </div>
 
-        {/* Affiliate Disclosure */}
         <div className="border-t border-gray-800 pt-6 pb-2">
           <p className="text-gray-500 text-xs leading-relaxed text-center max-w-2xl mx-auto">
-            Some links on this site are affiliate links. We may earn a small commission if you purchase through them, at no extra cost to you. This helps us maintain the site and continue independent research. Our rankings are based solely on lab-verified data and are never influenced by affiliate relationships.
+            Colitis Clearly is editorially independent. Pages summarize published trials, reviews, and guideline-informed practice. We do not provide personal medical advice or replace clinician care.
           </p>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            © 2026 EVOO Rankings. All rights reserved.
+            © 2026 {SITE_NAME}. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm flex-wrap justify-center">
-            <Link href="/privacy-policy" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
+            <Link href="/privacy-policy" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
+            <Link href="/terms" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200">
               Terms of Service
             </Link>
-            <Link href="/contact" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
+            <Link href="/contact" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200">
               Contact
             </Link>
-            <Link href="/editorial-policy" className="text-gray-400 hover:text-green-400 transition-colors duration-200">
+            <Link href="/editorial-policy" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200">
               Editorial Policy
             </Link>
           </div>

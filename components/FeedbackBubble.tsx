@@ -32,7 +32,7 @@ export default function FeedbackBubble() {
       } else {
         setSubmitStatus('error')
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
@@ -45,7 +45,7 @@ export default function FeedbackBubble() {
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-4 right-4 z-50 bg-slate-700/80 backdrop-blur-sm text-white p-3 rounded-full shadow-lg hover:bg-slate-600/90 hover:scale-110 transition-all duration-300 border border-slate-600/50"
-        title="Submit feedback"
+        title="Submit feedback about Colitis Clearly"
       >
         <span className="text-xl">❓</span>
       </button>
@@ -62,7 +62,7 @@ export default function FeedbackBubble() {
           >
             <div className="flex justify-between items-center mb-6">
               <h3 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
-                Submit Feedback
+                Report a Correction
               </h3>
               <button
                 onClick={() => setIsOpen(false)}
@@ -81,7 +81,7 @@ export default function FeedbackBubble() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label htmlFor="comment" className="block text-sm font-medium text-slate-300 mb-2">
-                    Your Feedback <span className="text-red-400">*</span>
+                    Your Note <span className="text-red-400">*</span>
                   </label>
                   <textarea
                     id="comment"
@@ -89,7 +89,7 @@ export default function FeedbackBubble() {
                     onChange={(e) => setComment(e.target.value)}
                     required
                     rows={5}
-                    placeholder="Tell us about a missed olive oil, an error, or include a product URL..."
+                    placeholder="Flag an outdated trial result, a UC treatment error, a broken citation, or unclear wording..."
                     className="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all resize-none"
                   />
                 </div>
