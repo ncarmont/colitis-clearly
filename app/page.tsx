@@ -8,223 +8,383 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer'
 import CountUpMetric from '@/components/CountUpMetric'
 import ScrollReveal from '@/components/ScrollReveal'
 import { QUICK_NAV_CARDS } from '@/lib/site'
-import HarmfulFactorsTable from '@/components/HarmfulFactorsTable'
 import { TREATMENTS } from '@/lib/treatments'
+
+type HeroStat = {
+  value: number
+  prefix?: string
+  suffix?: string
+  decimals?: number
+  label: string
+  detail: string
+}
+
+type EvidenceSignal = {
+  id: string
+  badge: string
+  tone: 'harmful' | 'protective'
+  value: number
+  prefix?: string
+  suffix?: string
+  decimals?: number
+  title: string
+  detail: string
+}
 
 export const metadata: Metadata = {
   title: 'Colitis Clearly | Best Ulcerative Colitis Treatments Ranked by Science',
   description:
-    'Evidence-first UC science: ranked treatments, flare management, diet guidance, biomarkers, and research summaries from clinical trials and gastroenterology guidelines.',
+    'An evidence-first ulcerative colitis site with clinical-trial-ranked treatments, research snapshots, diet guidance, and science-backed recommendations.',
+}
+
+const heroStats: HeroStat[] = [
+  {
+    value: TREATMENTS.length,
+    suffix: '+',
+    label: 'ranked therapies',
+    detail: 'One board spanning 5-ASA drugs, biologics, oral small molecules, rescue therapy, and surgery.',
+  },
+  {
+    value: 36,
+    suffix: ' RCTs',
+    label: 'in the 2025 network meta-analysis',
+    detail: 'The latest cross-trial ranking put upadacitinib first for remission, endoscopy, and histology.',
+  },
+  {
+    value: 5,
+    prefix: 'NNT ',
+    label: 'for fecal microbiota transplant',
+    detail: 'FMT remains investigational, but the pooled remission signal is too strong to ignore.',
+  },
+]
+
+const evidenceSignals: EvidenceSignal[] = [
+  {
+    id: 'meat',
+    badge: 'Harmful',
+    tone: 'harmful',
+    value: 5.19,
+    prefix: 'OR ',
+    decimals: 2,
+    title: 'red and processed meat relapse signal',
+    detail: 'Among the clearest dietary risk multipliers in the UC literature.',
+  },
+  {
+    id: 'stress',
+    badge: 'Harmful',
+    tone: 'harmful',
+    value: 2.8,
+    prefix: 'HR ',
+    decimals: 1,
+    title: 'flare risk tied to sustained stress',
+    detail: 'Psychological load is not background noise. It is a measurable disease amplifier.',
+  },
+  {
+    id: 'curcumin',
+    badge: 'Protective',
+    tone: 'protective',
+    value: 2.33,
+    prefix: 'RR ',
+    decimals: 2,
+    title: 'clinical remission signal with curcumin',
+    detail: 'One of the strongest low-cost adjunct options in mild-to-moderate UC.',
+  },
+  {
+    id: 'appendectomy',
+    badge: 'Protective',
+    tone: 'protective',
+    value: 0.31,
+    prefix: 'OR ',
+    decimals: 2,
+    title: 'lower UC risk with early appendectomy',
+    detail: 'A striking protective association that now has RCT-level follow-up in relapse prevention.',
+  },
+  {
+    id: 'fmt',
+    badge: 'Protective',
+    tone: 'protective',
+    value: 5,
+    prefix: 'NNT ',
+    title: 'patients needed for one extra FMT remission',
+    detail: 'Investigational, but still one of the most dramatic pooled treatment effects on the site.',
+  },
+]
+
+const navCardStyles: Record<string, string> = {
+  Rankings: 'from-emerald-accent/18 to-emerald-accent/4',
+  Blog: 'from-amber-accent/18 to-amber-accent/4',
+  Research: 'from-teal-accent/18 to-teal-accent/4',
+  Shop: 'from-violet-400/18 to-violet-400/4',
 }
 
 const latestPapers = [...researchPapers].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 )
 
+const highlightedTreatment = TREATMENTS.find((treatment) => treatment.name === 'Upadacitinib') ?? TREATMENTS[0]
+
+const featuredTreatmentStats = [
+  {
+    label: 'Clinical response',
+    value: highlightedTreatment.responseRate,
+  },
+  {
+    label: 'Induction remission',
+    value: highlightedTreatment.remissionRate,
+  },
+  {
+    label: 'Pivotal trials',
+    value: highlightedTreatment.trials,
+  },
+]
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen text-white">
-      {/* ═══════ HERO ═══════ */}
-      <section className="relative overflow-hidden">
-        {/* Layered background: radial emerald glow + subtle teal + deep navy base */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(0,200,83,0.15),transparent),radial-gradient(ellipse_60%_40%_at_80%_50%,rgba(0,191,165,0.08),transparent),radial-gradient(ellipse_50%_60%_at_20%_80%,rgba(241,181,68,0.06),transparent)]" />
-        {/* Floating orbs */}
-        <div className="pointer-events-none absolute -left-32 -top-32 h-[500px] w-[500px] rounded-full bg-emerald-accent/[0.07] blur-[120px] animate-float-slow" />
-        <div className="pointer-events-none absolute -right-20 top-1/3 h-[400px] w-[400px] rounded-full bg-teal-accent/[0.06] blur-[100px] animate-float-slow" style={{ animationDelay: '-4s' }} />
-        <div className="pointer-events-none absolute bottom-0 left-1/3 h-[350px] w-[350px] rounded-full bg-amber-accent/[0.04] blur-[100px] animate-float-slow" style={{ animationDelay: '-8s' }} />
-        {/* Dot grid */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+    <main className="min-h-screen bg-navy-950 text-white">
+      <section className="relative overflow-hidden border-b border-white/8">
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,#08111c_0%,#0a1628_58%,#08111c_100%)]" />
+        <div className="hero-orb hero-orb-emerald orb-drift-slow left-[-12rem] top-[-6rem] h-[28rem] w-[28rem]" />
+        <div className="hero-orb hero-orb-teal orb-drift-reverse right-[-8rem] top-10 h-[30rem] w-[30rem]" />
+        <div className="hero-orb hero-orb-amber orb-drift-delayed bottom-[-8rem] left-[42%] h-64 w-64 opacity-45" />
+        <div className="absolute inset-0 opacity-40 dot-grid-pattern" />
 
-        <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-16 md:px-6 md:pb-28 md:pt-24">
-          <div className="mx-auto max-w-4xl text-center">
-            {/* Badge */}
-            <div className="animate-fade-in-up inline-flex items-center gap-2 rounded-full border border-emerald-accent/25 bg-emerald-accent/[0.08] px-5 py-2 backdrop-blur-sm">
-              <span className="h-2 w-2 rounded-full bg-emerald-accent animate-pulse" />
-              <span className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-emerald-100/90">Evidence-Based UC Science</span>
-            </div>
-
-            {/* Headline */}
-            <h1 className="font-display mt-8 text-5xl leading-[1.08] tracking-tight md:text-[5.5rem]">
-              <span className="animate-fade-in-up block text-white" style={{ animationDelay: '100ms' }}>
-                Best UC Treatments
-              </span>
-              <span className="animate-fade-in-up block mt-1" style={{ animationDelay: '200ms' }}>
-                <span className="bg-gradient-to-r from-emerald-200 via-emerald-accent to-teal-accent bg-clip-text text-transparent">Ranked by Science</span>
-              </span>
-            </h1>
-
-            {/* Subtitle */}
-            <p className="animate-fade-in-up mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-slate-300/90 md:text-xl" style={{ animationDelay: '300ms' }}>
-              {TREATMENTS.length} treatments compared by clinical trial data. Every stat sourced from published RCTs, meta-analyses, and gastroenterology guidelines.
-            </p>
-
-            {/* CTAs */}
-            <div className="animate-fade-in-up mt-10 flex flex-wrap justify-center gap-4" style={{ animationDelay: '400ms' }}>
-              <Link
-                href="/rankings"
-                className="group relative overflow-hidden rounded-full bg-emerald-accent px-7 py-3.5 text-sm font-bold text-navy-950 shadow-[0_0_32px_rgba(0,200,83,0.3)] transition-all duration-300 hover:shadow-[0_0_48px_rgba(0,200,83,0.45)] hover:scale-[1.02]"
-              >
-                <span className="relative z-10">Explore Treatment Rankings</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-accent via-teal-accent to-emerald-accent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-              </Link>
-              <Link
-                href="/research"
-                className="rounded-full border border-white/12 bg-white/[0.04] px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-emerald-accent/30 hover:bg-white/[0.08] hover:shadow-[0_0_24px_rgba(0,200,83,0.1)]"
-              >
-                Browse UC Research
-              </Link>
-            </div>
-          </div>
-
-          {/* ═══ Hero Stats ═══ */}
-          <div className="mt-16 grid gap-4 md:grid-cols-3 md:gap-5">
-            {[
-              { value: TREATMENTS.length, suffix: '+', label: 'Science-Ranked Treatments', detail: 'Mesalamine to biologics to surgery — every option with trial data.', icon: '💊' },
-              { value: 54, suffix: '%', label: 'Top Maintenance Remission', detail: 'Upadacitinib — #1 in the 2025 NMA of 36 RCTs and 14,270 patients.', icon: '🏆' },
-              { value: 28, suffix: '', label: 'Meta-Analysis Stats', detail: 'From PREdiCCt aHR 3.25 to curcumin RR 0.24 — all on one site.', icon: '📊' },
-            ].map((stat, index) => (
-              <div
-                key={stat.label}
-                className="animate-fade-in-up group relative overflow-hidden rounded-[28px] border border-white/[0.06] bg-gradient-to-b from-white/[0.05] to-white/[0.02] p-6 backdrop-blur-sm transition-all duration-500 hover:border-emerald-accent/20 hover:shadow-[0_12px_40px_rgba(0,200,83,0.08)]"
-                style={{ animationDelay: `${500 + index * 100}ms` }}
-              >
-                <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-emerald-accent/[0.06] blur-2xl transition-all duration-500 group-hover:bg-emerald-accent/[0.12]" />
-                <div className="relative">
-                  <span className="text-2xl">{stat.icon}</span>
-                  <p className="font-display mt-3 text-4xl tracking-tight text-white md:text-5xl">
-                    <CountUpMetric value={stat.value} suffix={stat.suffix} />
-                  </p>
-                  <p className="mt-2 text-sm font-bold text-emerald-100">{stat.label}</p>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-400">{stat.detail}</p>
+        <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-10 md:px-6 md:pb-28 md:pt-16">
+          <div className="hero-shimmer glass-panel px-6 py-12 text-center md:px-10 md:py-20">
+            <div className="mx-auto max-w-5xl">
+              <div className="animate-fade-in-up">
+                <div className="inline-flex rounded-full border border-emerald-accent/20 bg-emerald-accent/10 px-4 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-emerald-100/80">
+                  Clinical Evidence, Distilled
                 </div>
               </div>
-            ))}
+
+              <div className="animate-fade-in-up" style={{ animationDelay: '120ms' }}>
+                <h1 className="font-display mt-6 text-5xl leading-[0.92] tracking-tight text-white md:text-[5.9rem] lg:text-[6.7rem]">
+                  <span className="block">Best Ulcerative Colitis Treatments</span>
+                  <span className="block bg-gradient-to-r from-emerald-100 via-emerald-accent to-teal-accent bg-clip-text text-transparent">
+                    Ranked by Science
+                  </span>
+                </h1>
+              </div>
+
+              <div className="animate-fade-in-up" style={{ animationDelay: '220ms' }}>
+                <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-2xl">
+                  Trial-ranked therapies, cleaner research context, and no fake certainty about what actually changes UC outcomes.
+                </p>
+              </div>
+
+              <div className="animate-fade-in-up mt-9 flex flex-wrap justify-center gap-3" style={{ animationDelay: '320ms' }}>
+                <Link
+                  href="/rankings"
+                  className="rounded-full bg-emerald-accent px-6 py-3.5 text-sm font-semibold text-navy-950 shadow-glow-emerald hover:bg-[#2ed37a]"
+                >
+                  Explore treatment rankings
+                </Link>
+                <Link
+                  href="/shop"
+                  className="rounded-full border border-white/10 bg-white/[0.05] px-6 py-3.5 text-sm font-semibold text-white hover:border-emerald-accent/30 hover:bg-white/[0.08]"
+                >
+                  Browse science-backed recommendations
+                </Link>
+              </div>
+
+              <div className="mt-12 grid gap-4 md:grid-cols-3">
+                {heroStats.map((stat, index) => (
+                  <div
+                    key={stat.label}
+                    className="stat-pill animate-fade-in-up px-5 py-5 text-left"
+                    style={{ animationDelay: `${420 + index * 90}ms` }}
+                  >
+                    <p className="font-display text-4xl tracking-tight text-white md:text-5xl">
+                      <CountUpMetric
+                        value={stat.value}
+                        prefix={stat.prefix}
+                        suffix={stat.suffix}
+                        decimals={stat.decimals}
+                      />
+                    </p>
+                    <p className="mt-2 text-sm font-semibold text-emerald-100">{stat.label}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-400">{stat.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-navy-950 to-transparent" />
       </section>
 
-      {/* ═══════ KEY EVIDENCE SIGNALS ═══════ */}
-      <section className="relative mx-auto max-w-7xl px-4 py-20 md:px-6 md:py-28">
+      <section className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
         <ScrollReveal>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-emerald-accent/70">Clinical Evidence</p>
-            <h2 className="font-display mt-4 text-4xl tracking-tight text-white md:text-5xl">
-              The Numbers That <span className="bg-gradient-to-r from-emerald-200 to-teal-accent bg-clip-text text-transparent">Actually Matter</span>
+          <div className="max-w-3xl">
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-emerald-100/70">
+              Proven Health Benefits
+            </p>
+            <h2 className="font-display mt-3 text-3xl tracking-tight text-white md:text-5xl">
+              The outcome signals worth knowing before the next treatment decision.
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-slate-300">
-              Not wellness noise — reproducible effect sizes from prospective cohorts, RCTs, and Cochrane reviews that change how you think about UC.
+            <p className="mt-4 text-sm leading-relaxed text-slate-300 md:text-base">
+              These are the dramatic findings that keep resurfacing across relapse risk, microbiome strategy, surgery,
+              and adjunct therapy. The effect sizes are what make them memorable.
             </p>
           </div>
         </ScrollReveal>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {[
-            { badge: '🔴 Flare Risk', value: 5.19, prefix: 'OR ', decimals: 2, title: 'relapse risk from red/processed meat', detail: 'The single most impactful dietary trigger. Sulfur amino acids → H₂S → colonocyte toxicity.', borderColor: 'border-red-500/20 hover:border-red-500/40', glowColor: 'bg-red-500/8' },
-            { badge: '🧠 Stress', value: 2.8, prefix: 'HR ', decimals: 1, title: 'exacerbation risk from chronic stress', detail: 'Sustained perceived stress over months — not acute stress — drives disease activation via HPA axis.', borderColor: 'border-orange-500/20 hover:border-orange-500/40', glowColor: 'bg-orange-500/8' },
-            { badge: '💊 #1 Treatment', value: 54, suffix: '%', title: 'upadacitinib maintenance remission (wk 52)', detail: 'Ranked #1 in 2025 NMA of 36 RCTs. Symptom relief from day 1. JAK1 selective.', borderColor: 'border-emerald-accent/20 hover:border-emerald-accent/40', glowColor: 'bg-emerald-accent/8' },
-            { badge: '🟢 Curcumin', value: 2.33, prefix: 'RR ', decimals: 2, title: 'clinical remission with curcumin adjunct', detail: '8+ RCTs. ECCO 2025 recognized. 1.5–3g/day with piperine as add-on to mesalamine.', borderColor: 'border-amber-accent/20 hover:border-amber-accent/40', glowColor: 'bg-amber-accent/8' },
-            { badge: '🦠 Microbiome', value: 2.25, prefix: 'OR ', decimals: 2, title: 'FMT remission benefit (14 RCTs)', detail: 'Multi-donor FMT OR 3.32. Investigational but the strongest non-pharma signal.', borderColor: 'border-violet-500/20 hover:border-violet-500/40', glowColor: 'bg-violet-500/8' },
-            { badge: '✂️ Surgery', value: 0.65, prefix: 'RR ', decimals: 2, title: 'relapse reduction with appendectomy', detail: 'ACCURE RCT 2025. First surgical RCT for UC. OR 0.31 before age 20.', borderColor: 'border-teal-accent/20 hover:border-teal-accent/40', glowColor: 'bg-teal-accent/8' },
-          ].map((signal, index) => (
-            <ScrollReveal key={signal.title} delay={Math.min(index * 60, 250)}>
-              <div className={`card-lift group relative h-full overflow-hidden rounded-[28px] border ${signal.borderColor} bg-gradient-to-b from-navy-800/60 to-navy-950/80 p-6 backdrop-blur-sm transition-all duration-500`}>
-                <div className={`absolute -right-8 -top-8 h-32 w-32 rounded-full ${signal.glowColor} blur-3xl transition-all duration-500 group-hover:scale-150 group-hover:opacity-150`} />
-                <div className="relative">
-                  <span className="inline-block rounded-full border border-white/8 bg-white/[0.04] px-3 py-1 text-xs font-semibold">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+          {evidenceSignals.map((signal, index) => {
+            const harmful = signal.tone === 'harmful'
+
+            return (
+              <ScrollReveal key={signal.id} delay={Math.min(index * 55, 240)}>
+                <div
+                  className={`card-lift relative overflow-hidden rounded-[34px] border p-6 ${
+                    harmful
+                      ? 'border-rose-400/28 bg-[linear-gradient(180deg,rgba(127,29,29,0.18),rgba(20,34,54,0.82))]'
+                      : 'border-emerald-accent/28 bg-[linear-gradient(180deg,rgba(0,200,83,0.12),rgba(20,34,54,0.82))]'
+                  }`}
+                >
+                  <div
+                    className={`absolute inset-x-6 top-0 h-px bg-gradient-to-r ${
+                      harmful ? 'from-rose-300/40 via-rose-300/15 to-transparent' : 'from-emerald-accent/40 via-emerald-accent/15 to-transparent'
+                    }`}
+                  />
+                  <span
+                    className={`rounded-full border px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.22em] ${
+                      harmful
+                        ? 'border-rose-300/24 bg-rose-300/10 text-rose-100'
+                        : 'border-emerald-accent/24 bg-emerald-accent/10 text-emerald-100'
+                    }`}
+                  >
                     {signal.badge}
                   </span>
-                  <p className="font-display mt-5 text-5xl tracking-tight text-white md:text-6xl">
-                    <CountUpMetric value={signal.value} prefix={signal.prefix} suffix={signal.suffix} decimals={signal.decimals} />
+
+                  <p className="font-display mt-6 text-4xl tracking-tight text-white md:text-[3.2rem]">
+                    <CountUpMetric
+                      value={signal.value}
+                      prefix={signal.prefix}
+                      suffix={signal.suffix}
+                      decimals={signal.decimals}
+                    />
                   </p>
-                  <p className="mt-3 text-base font-bold leading-snug text-white">{signal.title}</p>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-400">{signal.detail}</p>
+                  <p className="mt-4 text-base font-semibold leading-snug text-white">{signal.title}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-300">{signal.detail}</p>
                 </div>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
-      </section>
-
-      {/* ═══════ RESEARCH CAROUSEL ═══════ */}
-      <section className="relative overflow-hidden border-y border-white/[0.04] bg-gradient-to-b from-navy-950 via-navy-900/30 to-navy-950 py-16 md:py-20">
-        <div className="pointer-events-none absolute left-1/2 top-0 h-[300px] w-[600px] -translate-x-1/2 rounded-full bg-emerald-accent/[0.04] blur-[100px]" />
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <ScrollReveal>
-            <div className="mb-10 flex items-end justify-between">
-              <div>
-                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-teal-accent/70">Latest Research</p>
-                <h2 className="font-display mt-3 text-3xl tracking-tight text-white md:text-4xl">From the Journals</h2>
-              </div>
-              <Link href="/research" className="hidden text-sm font-semibold text-emerald-100 hover:text-emerald-50 md:block">
-                All research →
-              </Link>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal>
-            <ResearchCarousel papers={latestPapers} />
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* ═══════ META-ANALYSIS TEASER ═══════ */}
-      <section className="mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-20">
-        <ScrollReveal>
-          <MetaAnalysisTeaser findings={metaFindings} studyCount={researchPapers.length} />
-        </ScrollReveal>
-      </section>
-
-      {/* ═══════ HARMFUL FACTORS ═══════ */}
-      <HarmfulFactorsTable />
-
-      {/* ═══════ QUICK NAVIGATION ═══════ */}
-      <section className="relative mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
-        <ScrollReveal>
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-amber-accent/70">Explore</p>
-            <h2 className="font-display mt-4 text-4xl tracking-tight text-white md:text-5xl">
-              What Do You Need to Know?
-            </h2>
-          </div>
-        </ScrollReveal>
-
-        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {QUICK_NAV_CARDS.map((card, index) => {
-            const gradients: Record<string, string> = {
-              Treatments: 'from-emerald-accent/[0.12] via-transparent to-transparent hover:from-emerald-accent/[0.2]',
-              'Flare Management': 'from-amber-accent/[0.12] via-transparent to-transparent hover:from-amber-accent/[0.2]',
-              'Diet & Lifestyle': 'from-teal-accent/[0.12] via-transparent to-transparent hover:from-teal-accent/[0.2]',
-              Research: 'from-violet-500/[0.12] via-transparent to-transparent hover:from-violet-500/[0.2]',
-            }
-            const icons: Record<string, string> = {
-              Treatments: '💊',
-              'Flare Management': '🔥',
-              'Diet & Lifestyle': '🥗',
-              Research: '🔬',
-            }
-            return (
-              <ScrollReveal key={card.title} delay={Math.min(index * 70, 220)}>
-                <Link
-                  href={card.href}
-                  className={`card-lift group block h-full rounded-[28px] border border-white/[0.06] bg-gradient-to-br ${gradients[card.title] || 'from-white/[0.06] to-transparent'} p-7 transition-all duration-500`}
-                >
-                  <span className="text-3xl">{icons[card.title] || '📋'}</span>
-                  <h3 className="font-display mt-5 text-2xl tracking-tight text-white">{card.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-400">{card.description}</p>
-                  <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-emerald-accent transition-all duration-300 group-hover:gap-3">
-                    Explore <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                  </div>
-                </Link>
               </ScrollReveal>
             )
           })}
         </div>
       </section>
 
-      {/* ═══════ DISCLAIMER ═══════ */}
-      <section className="mx-auto max-w-4xl px-4 pb-20 md:px-6">
+      <section className="mx-auto max-w-7xl px-4 py-2 md:px-6 md:py-4">
+        <ScrollReveal>
+          <div className="hero-shimmer glass-panel relative overflow-hidden p-6 md:p-8">
+            <div className="hero-orb hero-orb-emerald orb-drift-delayed right-[-8rem] top-[-5rem] h-56 w-56 opacity-40" />
+
+            <div className="relative grid gap-6 lg:grid-cols-[1.2fr,0.85fr] lg:items-center">
+              <div className="max-w-3xl">
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="rounded-full border border-emerald-accent/24 bg-emerald-accent/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-emerald-100">
+                    Featured Treatment
+                  </span>
+                  <span className="rounded-full border border-cyan-400/24 bg-cyan-400/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-cyan-100">
+                    #1 in 2025 NMA
+                  </span>
+                </div>
+
+                <h2 className="font-display mt-5 text-3xl tracking-tight text-white md:text-5xl">
+                  Upadacitinib keeps showing up at the top when fast remission matters.
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-slate-300 md:text-lg">
+                  {highlightedTreatment.name} ({highlightedTreatment.brandNames}) is a {highlightedTreatment.className.toLowerCase()}
+                  with one of the strongest oral induction profiles in the entire board. It stands out for speed,
+                  symptom relief, and cross-trial ranking strength.
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <Link
+                    href="/blog/jak-inhibitors-uc"
+                    className="rounded-full bg-emerald-accent px-5 py-3 text-sm font-semibold text-navy-950 shadow-glow-emerald hover:bg-[#2ed37a]"
+                  >
+                    Read the JAK guide
+                  </Link>
+                  <Link
+                    href="/rankings"
+                    className="rounded-full border border-white/10 bg-white/[0.05] px-5 py-3 text-sm font-semibold text-white hover:border-emerald-accent/30 hover:bg-white/[0.08]"
+                  >
+                    View the rankings board
+                  </Link>
+                </div>
+              </div>
+
+              <div className="glass-panel border border-white/10 bg-white/[0.04] p-5">
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">
+                  Why It Stands Out
+                </p>
+
+                <div className="mt-5 grid gap-3">
+                  {featuredTreatmentStats.map((stat) => (
+                    <div
+                      key={stat.label}
+                      className="rounded-[24px] border border-white/8 bg-[rgba(8,17,28,0.48)] px-4 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
+                    >
+                      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">{stat.label}</p>
+                      <p className="font-display mt-2 text-2xl tracking-tight text-white">{stat.value}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <p className="mt-5 text-sm leading-relaxed text-slate-300">{highlightedTreatment.notes}</p>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 pb-6 pt-8 md:px-6 md:pb-10 md:pt-12">
+        <ScrollReveal>
+          <ResearchCarousel papers={latestPapers} />
+        </ScrollReveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-6 md:px-6 md:py-10">
+        <ScrollReveal>
+          <MetaAnalysisTeaser findings={metaFindings} studyCount={researchPapers.length} />
+        </ScrollReveal>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-12">
+        <ScrollReveal>
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-teal-100/70">Quick Navigation</p>
+              <h2 className="font-display mt-3 text-3xl tracking-tight text-white md:text-5xl">
+                Jump straight to rankings, articles, research, or product picks.
+              </h2>
+            </div>
+            <Link href="/blog" className="text-sm font-semibold text-emerald-100 hover:text-emerald-50">
+              Open the full article library →
+            </Link>
+          </div>
+        </ScrollReveal>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {QUICK_NAV_CARDS.map((card, index) => (
+            <ScrollReveal key={card.title} delay={Math.min(index * 60, 220)}>
+              <Link
+                href={card.href}
+                className={`card-lift block rounded-[32px] border border-white/8 bg-gradient-to-br ${navCardStyles[card.title] || 'from-white/[0.06] to-white/[0.03]'} p-6`}
+              >
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-300">Section</p>
+                <h3 className="font-display mt-4 text-3xl tracking-tight text-white">{card.title}</h3>
+                <p className="mt-4 text-sm leading-relaxed text-slate-300">{card.description}</p>
+                <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-emerald-100">
+                  Open section <span>→</span>
+                </div>
+              </Link>
+            </ScrollReveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-4 pb-16 pt-4 md:px-6 md:pb-20">
         <ScrollReveal>
           <MedicalDisclaimer />
         </ScrollReveal>
