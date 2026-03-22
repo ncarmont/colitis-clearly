@@ -1,26 +1,33 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import FeedbackBubble from "@/components/FeedbackBubble";
-import { BASE_URL, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
+import type { Metadata } from 'next'
+import { Fraunces, Geist_Mono, Sora } from 'next/font/google'
+import './globals.css'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
+import FeedbackBubble from '@/components/FeedbackBubble'
+import { BASE_URL, SITE_NAME, SITE_TAGLINE } from '@/lib/site'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const sora = Sora({
+  variable: '--font-sora',
+  subsets: ['latin'],
+})
+
+const fraunces = Fraunces({
+  variable: '--font-fraunces',
+  subsets: ['latin'],
+})
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: `${SITE_NAME} | Evidence-Based Ulcerative Colitis Science`,
-  description: "Evidence-based ulcerative colitis science, treatment rankings, flare management, biomarkers, and research summaries grounded in clinical trials and gastroenterology guidance.",
-  keywords: "ulcerative colitis, UC treatments, ulcerative colitis science, colitis flare management, fecal calprotectin, IBD biomarkers, biologics for ulcerative colitis, JAK inhibitors UC",
+  description:
+    'Evidence-based ulcerative colitis science, treatment rankings, flare management, biomarkers, and research summaries grounded in clinical trials and gastroenterology guidance.',
+  keywords:
+    'ulcerative colitis, UC treatments, ulcerative colitis science, colitis flare management, fecal calprotectin, IBD biomarkers, biologics for ulcerative colitis, JAK inhibitors UC',
   icons: {
     icon: '/favicon.ico',
   },
@@ -29,16 +36,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: `${SITE_NAME} | Evidence-Based UC Treatment Guide`,
-    description: "Treatment rankings, research explainers, and evidence-based UC education built around pivotal trials and guideline-informed care.",
-    type: "website",
-    locale: "en_US",
+    description:
+      'Treatment rankings, research explainers, and evidence-based UC education built around pivotal trials and guideline-informed care.',
+    type: 'website',
+    locale: 'en_US',
     url: BASE_URL,
     siteName: SITE_NAME,
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
     title: `${SITE_NAME} | UC Science and Treatment Rankings`,
-    description: "Evidence-based ulcerative colitis science, treatment comparisons, and biomarker explainers.",
+    description: 'Evidence-based ulcerative colitis science, treatment comparisons, and biomarker explainers.',
   },
   robots: {
     index: true,
@@ -57,12 +65,12 @@ export const metadata: Metadata = {
     // yandex: 'your-yandex-verification-code',
     // bing: 'your-bing-verification-code',
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -92,23 +100,23 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": SITE_NAME,
-              "url": BASE_URL,
-              "logo": `${BASE_URL}/icon.svg`,
-              "description": `${SITE_TAGLINE}. Educational treatment comparisons and UC research summaries.`,
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Editorial",
-                "email": "contact@colitisclearly.com"
-              }
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: SITE_NAME,
+              url: BASE_URL,
+              logo: `${BASE_URL}/icon.svg`,
+              description: `${SITE_TAGLINE}. Educational treatment comparisons and UC research summaries.`,
+              contactPoint: {
+                '@type': 'ContactPoint',
+                contactType: 'Editorial',
+                email: 'contact@colitisclearly.com',
+              },
             })
           }}
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
+        className={`${sora.variable} ${fraunces.variable} ${geistMono.variable} overflow-x-hidden bg-navy-950 antialiased`}
       >
         <Navigation />
         {children}
@@ -116,5 +124,5 @@ export default function RootLayout({
         <FeedbackBubble />
       </body>
     </html>
-  );
+  )
 }

@@ -1,7 +1,7 @@
 'use client'
 
-import { useRef, useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useRef } from 'react'
 
 type Paper = {
   slug: string
@@ -13,99 +13,87 @@ type Paper = {
   date: string
 }
 
-const CATEGORY_ICONS: Record<string, string> = {
-  Biologics: '🧬',
-  'Small Molecules': '💊',
-  Biomarkers: '🧪',
-  Surgery: '🏥',
-  Microbiome: '🦠',
-  Monitoring: '📈',
-  Lifestyle: '🥗',
-  Trials: '📚',
+const categoryStyles: Record<string, string> = {
+  Biologics: 'border-emerald-accent/30 bg-emerald-accent/12 text-emerald-100',
+  'Small Molecules': 'border-cyan-400/30 bg-cyan-400/12 text-cyan-100',
+  Trials: 'border-violet-400/30 bg-violet-400/12 text-violet-100',
+  Monitoring: 'border-amber-accent/30 bg-amber-accent/12 text-amber-100',
+  Biomarkers: 'border-rose-400/30 bg-rose-400/12 text-rose-100',
 }
 
-/**
- * Infinite-scroll research carousel using CSS translate for smooth movement.
- * Duplicates items to create seamless loop. Pauses on hover/touch.
- */
 export default function ResearchCarousel({ papers }: { papers: Paper[] }) {
-  const trackRef = useRef<HTMLDivElement>(null)
-  const [paused, setPaused] = useState(false)
-
-  // Duplicate for seamless loop
-  const displayPapers = [...papers, ...papers]
-
-  useEffect(() => {
-    const track = trackRef.current
-    if (!track) return
-
-    let raf: number
-    let offset = 0
-    const speed = 0.4 // px per frame (~24px/sec at 60fps)
-
-    const tick = () => {
-      if (!paused) {
-        offset += speed
-        // Reset when first set has scrolled past
-        const halfWidth = track.scrollWidth / 2
-        if (halfWidth > 0 && offset >= halfWidth) {
-          offset -= halfWidth
-        }
-        track.style.transform = `translateX(-${offset}px)`
-      }
-      raf = requestAnimationFrame(tick)
-    }
-
-    raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
-  }, [paused])
+  const scrollRef = useRef<HTMLDivElement>(null)
 
   return (
-    <section className="relative bg-[#0a1628] pt-3 pb-3 md:pt-3 md:pb-4 border-t border-white/5 overflow-hidden">
-      <div className="absolute top-0 left-[30%] w-[200px] h-[100px] bg-emerald-500/5 rounded-full blur-[60px] pointer-events-none" />
-      <div className="max-w-7xl mx-auto px-3 md:px-6">
-        <div className="flex items-center justify-between mb-2">
-          <h2 className="text-[11px] md:text-xs font-bold text-white/40 tracking-[0.15em] uppercase">
-            Pivotal Ulcerative Colitis Research
+    <section className="hero-shimmer glass-panel rounded-[34px] p-6 md:p-8">
+      <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div className="max-w-2xl">
+          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-emerald-100/70">
+            Latest UC Papers
+          </p>
+          <h2 className="font-display mt-3 text-3xl tracking-tight text-white md:text-4xl">
+            Scroll the recent treatment and monitoring literature.
           </h2>
-          <Link href="/research" className="text-[10px] text-emerald-400/40 hover:text-emerald-400/70 transition-colors">
-            All research →
-          </Link>
+          <p className="mt-3 text-sm leading-relaxed text-slate-300">
+            A snap-scrolling strip of pivotal UC papers so the clinical trial context stays close to the treatment conversation.
+          </p>
         </div>
-        <div className="relative overflow-hidden">
-          {/* Edge fades */}
-          <div className="absolute left-0 top-0 bottom-0 w-6 bg-gradient-to-r from-[#0a1628] to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#0a1628] to-transparent z-10 pointer-events-none" />
 
-          {/* Sliding track */}
-          <div
-            ref={trackRef}
-            className="flex gap-2.5 pb-1 will-change-transform"
-            onMouseEnter={() => setPaused(true)}
-            onMouseLeave={() => setPaused(false)}
-            onTouchStart={() => setPaused(true)}
-            onTouchEnd={() => setTimeout(() => setPaused(false), 3000)}
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={() => scrollRef.current?.scrollBy({ left: -360, behavior: 'smooth' })}
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-white hover:border-emerald-accent/40 hover:bg-white/[0.08]"
+            aria-label="Scroll research cards left"
           >
-            {displayPapers.map((paper, i) => (
-              <Link
-                key={`${paper.slug}-${i}`}
-                href={paper.href || `/blog/${paper.slug}`}
-                className="shrink-0 w-[210px] md:w-[220px] bg-white/[0.06] border border-white/[0.08] rounded-lg p-3 hover:bg-white/[0.1] hover:border-emerald-500/20 transition-all duration-300"
-              >
-                <div className="flex items-center gap-1 mb-1.5">
-                  <span className="text-[10px]">{CATEGORY_ICONS[paper.category] || '📄'}</span>
-                  <span className="text-[8px] font-bold text-white/30 uppercase tracking-wider">{paper.category}</span>
-                </div>
-                <h3 className="text-[11px] font-bold text-white/80 leading-snug line-clamp-2">
-                  {paper.title}
-                </h3>
-                <p className="mt-1 text-[8px] text-white/25 italic truncate">
-                  {paper.paper}
-                </p>
-              </Link>
-            ))}
-          </div>
+            ←
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollRef.current?.scrollBy({ left: 360, behavior: 'smooth' })}
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-white hover:border-emerald-accent/40 hover:bg-white/[0.08]"
+            aria-label="Scroll research cards right"
+          >
+            →
+          </button>
         </div>
+      </div>
+
+      <div
+        ref={scrollRef}
+        className="mt-8 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 scroll-smooth"
+      >
+        {papers.map((paper) => (
+          <Link
+            key={paper.slug}
+            href={paper.href || `/blog/${paper.slug}`}
+            className="card-lift glass-panel min-h-[280px] w-[310px] shrink-0 snap-start rounded-[30px] border border-white/8 p-5"
+          >
+            <div className="flex items-center justify-between gap-3">
+              <span
+                className={`rounded-full border px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.2em] ${
+                  categoryStyles[paper.category] || 'border-white/12 bg-white/[0.05] text-slate-200'
+                }`}
+              >
+                {paper.category}
+              </span>
+              <span className="text-xs text-slate-400">
+                {new Intl.DateTimeFormat('en-US', {
+                  month: 'short',
+                  year: 'numeric',
+                }).format(new Date(paper.date))}
+              </span>
+            </div>
+
+            <h3 className="mt-5 text-xl font-semibold leading-snug text-white">{paper.title}</h3>
+            <p className="mt-3 text-xs uppercase tracking-[0.18em] text-slate-500">{paper.paper}</p>
+            <p className="mt-5 text-sm leading-relaxed text-slate-300">{paper.finding}</p>
+
+            <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-emerald-100">
+              Open paper summary <span>→</span>
+            </div>
+          </Link>
+        ))}
       </div>
     </section>
   )

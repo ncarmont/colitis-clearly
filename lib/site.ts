@@ -2,26 +2,29 @@ export const BASE_URL = 'https://colitis-clearly.vercel.app'
 
 export const SITE_NAME = 'Colitis Clearly'
 
-export const SITE_TAGLINE = 'Evidence-Based Ulcerative Colitis Science'
+export const SITE_TAGLINE = 'Evidence-Based UC Science'
 
 export const MEDICAL_DISCLAIMER =
-  'This content is for educational purposes only. Consult your gastroenterologist.'
+  'Educational science summaries only. Ulcerative colitis symptoms, medication changes, and flare decisions should be reviewed with your gastroenterologist or treating clinician.'
 
 export const HOME_STATS = [
   {
-    value: '~1M',
-    label: 'Americans living with ulcerative colitis',
-    detail: 'IBD estimates suggest UC accounts for a large share of the 3.1 million U.S. adults living with inflammatory bowel disease.',
+    value: 22,
+    suffix: '+',
+    label: 'science-ranked treatments',
+    detail: 'From mesalamine and rectal therapy to biologics, small molecules, and surgery.',
   },
   {
-    value: '3M+',
-    label: 'People affected globally',
-    detail: 'Prevalence continues to rise as newly industrialized countries adopt westernized environmental exposures.',
+    value: 5,
+    suffix: '',
+    label: 'decision categories',
+    detail: '5-ASA, biologics, small molecules, steroids, and other rescue or structural options.',
   },
   {
-    value: '15-30',
-    label: 'Typical age at diagnosis',
-    detail: 'UC can begin at any age, but onset most often clusters in late adolescence and early adulthood.',
+    value: 74,
+    suffix: '%',
+    label: 'top response rate (upadacitinib week 8)',
+    detail: 'The highest clinical response signal from a pivotal RCT in moderate-to-severe UC.',
   },
 ] as const
 

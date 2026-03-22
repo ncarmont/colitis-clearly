@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 
 interface Finding {
@@ -8,62 +6,50 @@ interface Finding {
   source: string
 }
 
-export default function MetaAnalysisTeaser({ findings, studyCount }: { findings: Finding[]; studyCount: number }) {
-  const featured = findings.slice(0, 8)
+export default function MetaAnalysisTeaser({
+  findings,
+  studyCount,
+}: {
+  findings: Finding[]
+  studyCount: number
+}) {
+  const featuredFindings = findings.slice(0, 4)
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#060e1a] to-[#0a1628]">
-      {/* Top glow line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/25 to-transparent" />
-
-      <div className="max-w-6xl mx-auto px-4 py-4 md:py-6">
-        {/* Header — clear label explaining what this is */}
-        <div className="flex items-center justify-between mb-1.5">
-          <div className="flex items-center gap-2">
-            <svg className="w-3.5 h-3.5 text-emerald-400/70 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
-            <span className="text-[11px] md:text-xs font-bold text-emerald-400/70 uppercase tracking-[0.12em]">
-              UC Evidence Snapshot
-            </span>
-          </div>
-          <Link
-            href="/research"
-            className="text-[10px] md:text-xs text-emerald-400/50 hover:text-emerald-400 font-semibold transition-colors flex items-center gap-1 group"
-          >
-            All research
-            <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
+    <section className="glass-panel rounded-[34px] p-6 md:p-8">
+      <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div className="max-w-2xl">
+          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-amber-100/70">
+            Meta-Analysis Teaser
+          </p>
+          <h2 className="font-display mt-3 text-3xl tracking-tight text-white md:text-4xl">
+            The short version of the UC evidence stack.
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-slate-300">
+            Snapshot findings pulled from {studyCount} research summaries so visitors can move from headline numbers to the fuller trial context.
+          </p>
         </div>
 
-        {/* Subtitle — explains what this data actually is */}
-        <p className="text-[9px] md:text-[10px] text-white/25 mb-3">
-          Aggregated from {studyCount} pivotal papers and reviews · {findings.length} key findings
-        </p>
-
-        {/* Stats ribbon — compact cards, horizontal scroll mobile, grid desktop */}
-        <div className="flex gap-1.5 md:gap-2 overflow-x-auto scrollbar-hide pb-0.5 md:pb-0 md:grid md:grid-cols-4 lg:grid-cols-8 snap-x snap-mandatory">
-          {featured.map((f, i) => (
-            <Link
-              key={i}
-              href="/research"
-              className="flex-shrink-0 snap-start w-[110px] md:w-auto bg-white/[0.03] border border-white/[0.06] rounded-lg px-2.5 py-2 text-center hover:bg-white/[0.06] hover:border-emerald-500/15 transition-all duration-200 group"
-            >
-              <div className="text-base md:text-lg font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/60 group-hover:from-emerald-200 group-hover:to-emerald-400 transition-all leading-tight">
-                {f.stat}
-              </div>
-              <div className="text-[7.5px] md:text-[8.5px] text-white/35 leading-tight mt-0.5 line-clamp-2">
-                {f.label}
-              </div>
-            </Link>
-          ))}
-        </div>
+        <Link
+          href="/research"
+          className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm font-semibold text-white hover:border-emerald-accent/40 hover:bg-white/[0.07]"
+        >
+          Explore the research library <span>→</span>
+        </Link>
       </div>
 
-      {/* Bottom glow line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/15 to-transparent" />
+      <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        {featuredFindings.map((finding) => (
+          <div
+            key={`${finding.source}-${finding.label}`}
+            className="card-lift rounded-[28px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-5"
+          >
+            <p className="text-xs uppercase tracking-[0.2em] text-amber-100/65">{finding.source}</p>
+            <p className="font-display mt-4 text-4xl tracking-tight text-amber-accent">{finding.stat}</p>
+            <p className="mt-3 text-sm leading-relaxed text-slate-300">{finding.label}</p>
+          </div>
+        ))}
+      </div>
     </section>
   )
 }

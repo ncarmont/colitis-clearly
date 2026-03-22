@@ -475,8 +475,6 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     ],
     relatedSlugs: ['understanding-ulcerative-colitis', 'uc-flare-management', 'biologics-for-uc-compared'],
   },
-]
-
   {
     slug: 'fmt-anti-inflammatory-diet-uc-remission',
     title: 'FMT Plus an Anti-Inflammatory Diet Beat Standard Therapy in UC — And Diet Alone Maintained Remission for a Year',
@@ -495,14 +493,14 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         title: 'Why this RCT matters more than it gets credit for',
         paragraphs: [
           'Most UC diet research is observational garbage. Someone eats fewer processed foods, feels better, and calls it a protocol. This trial is different: it is a registered RCT (ISRCTN15475780), it randomised 73 patients with endoscopically confirmed, mild-to-moderate UC into two arms, and it followed them for a full 48 weeks. The outcomes were not self-reported symptoms — they included colonoscopic assessment of mucosal healing.',
-          'Published in Gut in December 2022 (Kedia et al., PMID 35973787), the study ran at one of India's top academic centres. Patients were in their mid-30s on average, had active disease for roughly four years, and a third of them had pancolitis. This was not a cherry-picked, mild crowd.',
+          'Published in Gut in December 2022 (Kedia et al., PMID 35973787), the study ran at one of India\'s top academic centres. Patients were in their mid-30s on average, had active disease for roughly four years, and a third of them had pancolitis. This was not a cherry-picked, mild crowd.',
         ],
         callout: 'Gut is one of the most cited gastroenterology journals in the world. An RCT there with an OR of 6.0 for deep remission is not something you skip past.',
       },
       {
         title: 'What the FMT-AID arm actually did',
         paragraphs: [
-          'Patients in the intervention arm received seven weekly colonoscopic infusions of freshly prepared FMT from multiple rural donors. This multidonor approach matters: research increasingly suggests that donor diversity drives FMT efficacy in IBD, because you are trying to seed a more stable, diverse microbiome, not just transplant one person's bacteria.',
+          'Patients in the intervention arm received seven weekly colonoscopic infusions of freshly prepared FMT from multiple rural donors. This multidonor approach matters: research increasingly suggests that donor diversity drives FMT efficacy in IBD, because you are trying to seed a more stable, diverse microbiome, not just transplant one person\'s bacteria.',
           'Simultaneously, patients followed a structured anti-inflammatory diet. The diet emphasised vegetables, fruits, whole grains, lean proteins, and omega-3-rich foods while reducing ultra-processed foods, refined carbohydrates, and red meat — broadly aligned with a Mediterranean anti-inflammatory eating pattern. The diet was not a fad; it was designed to reduce bacterial endotoxin load, support gut barrier function, and shift the microbiome toward anti-inflammatory species.',
           'After week 8, FMT stopped. Patients in the FMT-AID arm continued only on their baseline medications and the anti-inflammatory diet through week 48.',
         ],
@@ -534,7 +532,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
         title: 'The anti-inflammatory diet: what it actually looks like',
         paragraphs: [
           'The trial did not publish a precise meal plan, but based on the dietary framework described and the broader anti-inflammatory diet literature, the principles are consistent: high fibre from diverse plant sources, fatty fish at least twice a week, olive oil as the primary cooking fat, minimal ultra-processed foods, no refined sugar spikes, and reduced red and processed meat.',
-          'This overlaps significantly with the Mediterranean diet and the IBD Anti-Inflammatory Diet (IBD-AID) developed at UMass Medical School. The IBD-AID specifically targets UC and Crohn's by emphasising prebiotic foods (oats, bananas, asparagus, Jerusalem artichokes) that feed beneficial bacteria, combined with probiotics and anti-inflammatory fats.',
+          'This overlaps significantly with the Mediterranean diet and the IBD Anti-Inflammatory Diet (IBD-AID) developed at UMass Medical School. The IBD-AID specifically targets UC and Crohn\'s by emphasising prebiotic foods (oats, bananas, asparagus, Jerusalem artichokes) that feed beneficial bacteria, combined with probiotics and anti-inflammatory fats.',
           'What this is not: a low-FODMAP diet, which is designed for IBS and can actually starve the beneficial bacteria you want to feed. It is also not the Specific Carbohydrate Diet (SCD), though there is some evidence for SCD in pediatric IBD. The anti-inflammatory framework prioritises microbiome diversity and barrier support over strict exclusion.',
         ],
         bullets: [

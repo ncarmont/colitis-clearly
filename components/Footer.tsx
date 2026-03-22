@@ -1,139 +1,86 @@
 import Link from 'next/link'
-import { MEDICAL_DISCLAIMER, SITE_NAME, SITE_TAGLINE } from '@/lib/site'
+import MedicalDisclaimer from '@/components/MedicalDisclaimer'
+import { SITE_NAME, SITE_TAGLINE } from '@/lib/site'
+
+const footerColumns = [
+  {
+    title: 'Explore',
+    links: [
+      { href: '/rankings', label: 'Treatment Rankings' },
+      { href: '/blog', label: 'Blog' },
+      { href: '/research', label: 'Research Library' },
+      { href: '/about', label: 'About' },
+    ],
+  },
+  {
+    title: 'Science Paths',
+    links: [
+      { href: '/research/clinical-trials', label: 'Clinical Trials' },
+      { href: '/research/biomarkers', label: 'Biomarkers' },
+      { href: '/research/pathophysiology', label: 'Pathophysiology' },
+      { href: '/research/emerging', label: 'Emerging Therapies' },
+    ],
+  },
+  {
+    title: 'Editorial',
+    links: [
+      { href: '/editorial-policy', label: 'Editorial Policy' },
+      { href: '/privacy-policy', label: 'Privacy Policy' },
+      { href: '/terms', label: 'Terms of Service' },
+      { href: '/contact', label: 'Contact' },
+    ],
+  },
+]
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 text-gray-300">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent"></div>
+    <footer className="relative overflow-hidden border-t border-white/8 bg-[linear-gradient(180deg,#09111d_0%,#0b1626_100%)] text-slate-300">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-emerald-accent/40 to-transparent" />
+      <div className="absolute left-[-8rem] top-8 h-48 w-48 rounded-full bg-emerald-accent/10 blur-3xl" />
+      <div className="absolute bottom-0 right-[-6rem] h-56 w-56 rounded-full bg-teal-accent/10 blur-3xl" />
 
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-300 to-cyan-300 text-sm font-black tracking-[0.2em] text-slate-950 shadow-lg">
-                CC
+      <div className="relative mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-16">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr,1.8fr]">
+          <div className="space-y-5">
+            <div>
+              <p className="font-display text-3xl tracking-tight text-white">
+                Colitis <span className="text-emerald-accent">Clearly</span>
+              </p>
+              <p className="mt-2 max-w-md text-sm leading-relaxed text-slate-400">
+                {SITE_TAGLINE}. Warm, evidence-first ulcerative colitis guidance for treatment choices, flare questions, diet decisions, and research literacy.
+              </p>
+            </div>
+
+            <MedicalDisclaimer />
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-3">
+            {footerColumns.map((column) => (
+              <div key={column.title}>
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-500">
+                  {column.title}
+                </p>
+                <div className="mt-4 space-y-3">
+                  {column.links.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="block text-sm text-slate-300 transition hover:text-emerald-100"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-emerald-300 to-cyan-200 bg-clip-text text-transparent">
-                {SITE_NAME}
-              </span>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              {SITE_TAGLINE}. We synthesize trial data, biomarkers, and guideline-based UC care for patients, caregivers, and trainees.
-            </p>
-            <div className="rounded-2xl border border-amber-400/20 bg-amber-400/10 px-4 py-3 text-xs leading-relaxed text-amber-100/85">
-              {MEDICAL_DISCLAIMER}
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-white font-bold mb-4 text-lg">Quick Links</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/rankings" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Treatments
-                </Link>
-              </li>
-              <li>
-                <Link href="/research" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Research
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  About
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-bold mb-4 text-lg">Research Tracks</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/research/overview" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Research Overview
-                </Link>
-              </li>
-              <li>
-                <Link href="/research/pathophysiology" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Pathophysiology
-                </Link>
-              </li>
-              <li>
-                <Link href="/research/clinical-trials" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Clinical Trials
-                </Link>
-              </li>
-              <li>
-                <Link href="/research/biomarkers" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200 flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-emerald-300 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                  Biomarkers
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-white font-bold mb-4 text-lg">Read Next</h3>
-            <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-              Start with the flagship treatment comparison or the flare-management guide.
-            </p>
-            <div className="space-y-3">
-              <Link href="/rankings" className="block rounded-xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-white transition hover:border-emerald-300/30 hover:bg-white/[0.06]">
-                UC treatment rankings
-              </Link>
-              <Link href="/blog/uc-flare-management" className="block rounded-xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-white transition hover:border-emerald-300/30 hover:bg-white/[0.06]">
-                What to do during a flare
-              </Link>
-              <Link href="/blog/fecal-calprotectin-explained" className="block rounded-xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-white transition hover:border-emerald-300/30 hover:bg-white/[0.06]">
-                Calprotectin explained
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-6 pb-2">
-          <p className="text-gray-500 text-xs leading-relaxed text-center max-w-2xl mx-auto">
-            Colitis Clearly is editorially independent. Pages summarize published trials, reviews, and guideline-informed practice. We do not provide personal medical advice or replace clinician care.
+        <div className="mt-10 flex flex-col gap-4 border-t border-white/8 pt-6 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
+          <p>© 2026 {SITE_NAME}. Educational medical science, not personal medical advice.</p>
+          <p className="max-w-xl text-left md:text-right">
+            UC treatment choices still depend on disease severity, biomarkers, endoscopy, and your care team&apos;s judgement.
           </p>
-        </div>
-
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">
-            © 2026 {SITE_NAME}. All rights reserved.
-          </p>
-          <div className="flex gap-6 text-sm flex-wrap justify-center">
-            <Link href="/privacy-policy" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200">
-              Terms of Service
-            </Link>
-            <Link href="/contact" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200">
-              Contact
-            </Link>
-            <Link href="/editorial-policy" className="text-gray-400 hover:text-emerald-300 transition-colors duration-200">
-              Editorial Policy
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
