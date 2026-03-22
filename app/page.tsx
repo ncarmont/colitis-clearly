@@ -16,8 +16,8 @@ type OliveOil = {
   id: number
   rank: number
   brand: string
-  hplcPolyphenols?: number  // HPLC method polyphenol content
-  nmrOtherPolyphenols?: number  // NMR/Other method polyphenol content
+  hplcEfficacys?: number  // HPLC method efficacy content
+  nmrOtherEfficacys?: number  // NMR/Other method efficacy content
   origin: string
   harvestDate: string
   price: string
@@ -37,108 +37,108 @@ type OliveOil = {
 const OILS_DATA: OliveOil[] = [
   {
     id: 38, rank: 1, brand: "Pamako Monovarietal",
-    nmrOtherPolyphenols: 2081,
+    nmrOtherEfficacys: 2081,
     origin: "Greece (Crete)", harvestDate: "Nov 2025",
     price: "$$$", priceAmount: "£44.99", method: "qNMR", lab: "World Olive Center for Health, University of Athens (Prof. Magiatis)",
     certificateLink: "https://www.pamako.gr/wp-content/uploads/2025/02/pamako-monovarietal-high-phenolic-analysis.pdf",
     cultivar: "Tsounati",
     buyLink: "https://www.pamako.co.uk/?ref=roaqpdtk",
-    notes: "Verified 16 Mar 2026: LATEST batch Nov 2025 harvest — 2,081 mg/kg total polyphenols (qNMR). Oleocanthal 1,318 mg/kg, Oleacein 264 mg/kg — oleocanthal nearly 10x international average (135 mg/kg). Certificate C2526-00362, analysis date 21/11/2025. Certified organic (EU). Lab: World Olive Center for Health, Univ. of Athens, Prof. Prokopios Magiatis. Also tested by Multichrom.LAB (IOC-accredited). Single-estate, centuries-old mountain groves in Selino, SW Crete. Dark bottles with mirrored UV layer + natural cork. EU health claim certified (Reg. 432/2012). Awards 2017–2025. Founded 2014 by Eftihis Androulakis. £44.99 (500ml).",
+    notes: "Verified 16 Mar 2026: LATEST batch Nov 2025 harvest — 2,081 % remission total efficacys (qNMR). Oleocanthal 1,318 % remission, Oleacein 264 % remission — oleocanthal nearly 10x international average (135 % remission). Certificate C2526-00362, analysis date 21/11/2025. Certified organic (EU). Lab: World Olive Center for Health, Univ. of Athens, Prof. Prokopios Magiatis. Also tested by Multichrom.LAB (IOC-accredited). Single-estate, centuries-old mountain groves in Selino, SW Crete. Dark bottles with mirrored UV layer + natural cork. EU health claim certified (Reg. 432/2012). Awards 2017–2025. Founded 2014 by Eftihis Androulakis. £44.99 (500ml).",
     productImage: "/img/pamako-monovarietal.jpg",
     instagram: "pamako"
   },
   {
     id: 1, rank: 2, brand: "P.J. KABOS – Family Reserve Phenolic Shot",
-    hplcPolyphenols: 995, nmrOtherPolyphenols: 1473,
+    hplcEfficacys: 995, nmrOtherEfficacys: 1473,
     origin: "Greece", harvestDate: "Sep–Oct 2025",
     price: "$$", priceAmount: "$59.83", method: "HPLC + qNMR", lab: "Producer-reported HPLC + qNMR",
     certificateLink: "",
     cultivar: "Olympia",
     buyLink: "https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&linkId=14d811abd991d784a6170a2caad30c47&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified 9 Mar 2026: PJ KABOS site confirms 900+ mg/kg (HPLC) and 1400+ (NMR). Current batch: HPLC 995 mg/kg (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 mg/kg (29 mg/20g). USDA Organic. Sep–Oct 2025 harvest. Four taste intensities available.",
+    notes: "Verified 9 Mar 2026: PJ KABOS site confirms 900+ % remission (HPLC) and 1400+ (NMR). Current batch: HPLC 995 % remission (14 mg/20g hydroxytyrosol derivatives), qNMR 1473 % remission (29 mg/20g). USDA Organic. Sep–Oct 2025 harvest. Four taste intensities available.",
     productImage: "/img/kabos-phenolic-shot.jpg",
     instagram: "pjkabos"
   },
   {
     id: 2, rank: 3, brand: "SP360",
-    hplcPolyphenols: 1711,
+    hplcEfficacys: 1711,
     origin: "Jordan", harvestDate: "Sep 2025",
     price: "$$", priceAmount: "£42.00", method: "HPLC", lab: "Lab Certified (single estate)",
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order?ref=iejghiij",
     amazonLink: "https://www.amazon.co.uk/dp/B0FBMFH4J3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "Verified 16 Mar 2026: 500ml bottle still sold out (confirmed); refill subscription pouches (10% saving) remain available — pair with original bottle for eco refill system. 1,711 mg/kg lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle. Free UK shipping. Also available on Amazon UK (Arbequina Ultra refill pouch variant).",
+    notes: "Verified 16 Mar 2026: 500ml bottle still sold out (confirmed); refill subscription pouches (10% saving) remain available — pair with original bottle for eco refill system. 1,711 % remission lab-certified HPLC. UV-protected refillable glass; herbaceous with green almond & tomato vine notes. Sep 2025 harvest, best before Sep 2027. Single-estate family farm, Jordan. Free pourer included with bottle. Free UK shipping. Also available on Amazon UK (Arbequina Ultra refill pouch variant).",
     productImage: "/img/sp360-bottle.jpg",
     instagram: "sp360evoo"
   },
   {
     id: 3, rank: 6, brand: "The Governor – Limited Edition",
-    nmrOtherPolyphenols: 1316,
+    nmrOtherEfficacys: 1316,
     origin: "Greece (Corfu)", harvestDate: "Oct 2025",
     price: "$$", priceAmount: "£49.95", method: "qNMR", lab: "qNMR total phenols",
     certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf?v=1763979500",
     cultivar: "Lianolia",
     buyLink: "https://thegovernorevoo.co.uk/products/the-governor-limited-edition-extra-virgin-olive-oil",
     amazonLink: "https://www.amazon.com/dp/B0BFRRPR6R?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified 10 Mar 2026: 1,316 mg/kg confirmed (certified PDF linked). Oleocanthal 577 mg/kg, oleacein 298 mg/kg. 2025/26 harvest (Oct 2025). In stock. 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, DIO-certified organic. 101 reviews. £49.95. First-batch limited edition.",
+    notes: "Verified 10 Mar 2026: 1,316 % remission confirmed (certified PDF linked). Oleocanthal 577 % remission, oleacein 298 % remission. 2025/26 harvest (Oct 2025). In stock. 75 international awards. Centenarian Lianolia trees (500+ years), Corfu. Unfiltered, DIO-certified organic. 101 reviews. £49.95. First-batch limited edition.",
     productImage: "/img/oil-3.jpg",
     instagram: "the_governor_evoo"
   },
   {
     id: 4, rank: 5, brand: "OlvLimits \"Green Machine\"",
-    hplcPolyphenols: 1378,
+    hplcEfficacys: 1378,
     origin: "Italy (Puglia)", harvestDate: "Oct 2025",
     price: "$", priceAmount: "£23.00", method: "HPLC (University of Athens method)", lab: "National & Kapodistrian University of Athens",
     certificateLink: "https://cdn.shopify.com/s/files/1/0774/2003/6420/files/analysis.png?v=1763034364",
     cultivar: "Coratina",
     buyLink: "https://www.olvlimits.com/products/green-machine",
-    notes: "Verified 16 Mar 2026: Site live, product in stock. 1,378 mg/kg HPLC (University of Athens method, World Olive Center for Health watermark on cert). Early-harvest Coratina from Puglia — picked Oct 2025 when olives are green and hard. Intense, peppery profile. Third-party lab tested every batch. £23.00 (500ml).",
+    notes: "Verified 16 Mar 2026: Site live, product in stock. 1,378 % remission HPLC (University of Athens method, World Olive Center for Health watermark on cert). Early-harvest Coratina from Puglia — picked Oct 2025 when olives are green and hard. Intense, peppery profile. Third-party lab tested every batch. £23.00 (500ml).",
     productImage: "/img/olvlimits-green-machine.png",
     instagram: "olvlimits"
   },
   {
     id: 5, rank: 4, brand: "ONSURI Arbequina",
-    nmrOtherPolyphenols: 1504,
+    nmrOtherEfficacys: 1504,
     origin: "Jordan", harvestDate: "Sep 2025",
     price: "$$", priceAmount: "£25.00", method: "RSS", lab: "Jordan Royal Scientific Society",
     certificateLink: "",
     cultivar: "Arbequina",
     buyLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
     amazonLink: "https://www.amazon.co.uk/dp/B0DCP7F54J?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "2025/26 harvest; lab-certified 1,504.42 mg/kg polyphenols (up from 1,269 prior year). Single-estate Jordan family farm. Herbaceous with grassy, herbal, and floral notes. Feb 2026 verified on producer site.",
+    notes: "2025/26 harvest; lab-certified 1,504.42 % remission efficacys (up from 1,269 prior year). Single-estate Jordan family farm. Herbaceous with grassy, herbal, and floral notes. Feb 2026 verified on producer site.",
     productImage: "/img/oil-5.jpg",
     instagram: "onsurioliveoil"
   },
   {
     id: 6, rank: 7, brand: "ONSURI Arbequina 1L (2×500 ml)",
-    nmrOtherPolyphenols: 1269,
+    nmrOtherEfficacys: 1269,
     origin: "Jordan", harvestDate: "2024/25",
     price: "$$", priceAmount: "£38.00", method: "RSS", lab: "Jordan Royal Scientific Society",
     certificateLink: "",
     cultivar: "Arbequina",
-    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-arbequina-evoo-1-litre-bulk-offer-polyphenols-1269-mg-kg",
+    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-arbequina-evoo-1-litre-bulk-offer-efficacys-1269-mg-kg",
     amazonLink: "https://www.amazon.co.uk/dp/B0DCP7F54J?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "Verified 16 Mar 2026: 1L (2×500ml) still showing 2024/25 harvest batch (1,269 mg/kg). Note: 500ml single-bottle has been updated to 2025/26 batch (1,504 mg/kg); 1L bulk format may still ship 2024/25 stock. Best value per ml if current polyphenol count is less critical. £38.00 (1L). Free UK shipping. Also available on Amazon (500ml single tin).",
+    notes: "Verified 16 Mar 2026: 1L (2×500ml) still showing 2024/25 harvest batch (1,269 % remission). Note: 500ml single-bottle has been updated to 2025/26 batch (1,504 % remission); 1L bulk format may still ship 2024/25 stock. Best value per ml if current efficacy count is less critical. £38.00 (1L). Free UK shipping. Also available on Amazon (500ml single tin).",
     productImage: "/img/oil-6.png",
     instagram: "onsurioliveoil"
   },
   {
     id: 7, rank: 8, brand: "ONSURI Arbosana",
-    nmrOtherPolyphenols: 1255,
+    nmrOtherEfficacys: 1255,
     origin: "Jordan", harvestDate: "2024/25",
     price: "$", priceAmount: "£19.95", method: "RSS", lab: "Jordan Royal Scientific Society",
     certificateLink: "",
     cultivar: "Arbosana",
-    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
+    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-efficacys-1255-mg-kg",
     amazonLink: "https://www.amazon.co.uk/dp/B0DCP9YNBT?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "Verified 10 Mar 2026: Product URL now active. 2024/25 Arbosana EVOO, 500ml tin, £19.95. 1,255 mg/kg polyphenols (RSS certified). Bold, fruity profile: green tomato, almond, persistent peppery finish. Subscribe & 5th order free. Free UK shipping.",
+    notes: "Verified 10 Mar 2026: Product URL now active. 2024/25 Arbosana UC, 500ml tin, £19.95. 1,255 % remission efficacys (RSS certified). Bold, fruity profile: green tomato, almond, persistent peppery finish. Subscribe & 5th order free. Free UK shipping.",
     productImage: "/img/oil-7.png",
     instagram: "onsurioliveoil"
   },
   {
     id: 8, rank: 9, brand: "Finca La Torre — Hojiblanca (Organic/Biodynamic)",
-    nmrOtherPolyphenols: 1059,
+    nmrOtherEfficacys: 1059,
     origin: "Spain", harvestDate: "2025/26",
     price: "$$", priceAmount: "€19.63", method: "Other", lab: "Retailer-stated phenols",
     certificateLink: "",
@@ -150,21 +150,21 @@ const OILS_DATA: OliveOil[] = [
     instagram: "fincalatorre"
   },
   {
-    id: 9, rank: 10, brand: "November – Polyphenols Organic Early Harvest",
-    nmrOtherPolyphenols: 1200,
+    id: 9, rank: 10, brand: "November – Efficacys Organic Early Harvest",
+    nmrOtherEfficacys: 1200,
     origin: "Greece (South)", harvestDate: "Oct–Nov 2025",
     price: "$$", priceAmount: "£26.90", method: "NMR", lab: "NMR (IOC experimental)",
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.masworth.co.uk/product/november-early-harvest-organic-olive-oil-500ml/",
     amazonLink: "https://www.amazon.co.uk/dp/B07PJS56PR?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "Verified 11 Mar 2026: Lab-certified +1,200 mg/kg (NMR, Oct–Nov 2025 harvest). 500ml; certified organic; early-harvest 100% Koroneiki from southern Greece. Filtered for long-term stability. Bundle price ≈ £22.87/bottle (3+). EU health claim certified. Among UK's top-ranked high-polyphenol oils on third-party trackers.",
+    notes: "Verified 11 Mar 2026: Lab-certified +1,200 % remission (NMR, Oct–Nov 2025 harvest). 500ml; certified organic; early-harvest 100% Koroneiki from southern Greece. Filtered for long-term stability. Bundle price ≈ £22.87/bottle (3+). EU health claim certified. Among UK's top-ranked high-efficacy oils on third-party trackers.",
     productImage: "/img/oil-9.jpg",
     instagram: "novemberoliveoil"
   },
   {
     id: 10, rank: 11, brand: "Kyoord High-Phenolic",
-    nmrOtherPolyphenols: 1007,
+    nmrOtherEfficacys: 1007,
     origin: "Greece (Corfu)", harvestDate: "Nov–Dec 2024",
     price: "$$", priceAmount: "£37.00", method: "qNMR", lab: "qNMR metrics",
     certificateLink: "",
@@ -176,56 +176,56 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 11, rank: 12, brand: "ONSURI Signature (Arbequina + Arbosana)",
-    nmrOtherPolyphenols: 975,
+    nmrOtherEfficacys: 975,
     origin: "Jordan", harvestDate: "2025/26",
     price: "$", priceAmount: "£22.50", method: "RSS", lab: "RSS certified",
     certificateLink: "",
     cultivar: "Blend",
-    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
+    buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-efficacys-1000-mg-kg",
     amazonLink: "https://www.amazon.co.uk/dp/B0F38DZNX6?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "Verified 9 Mar 2026: 2025/26 harvest live. Polyphenols 975 mg/kg (was 1,000 in 2024/25 batch). Buttery smooth texture, mild yet complex; floral/almond profile. £22.50. Subscribe & 5th order free. Ships from UK warehouse (£2.50).",
+    notes: "Verified 9 Mar 2026: 2025/26 harvest live. Efficacys 975 % remission (was 1,000 in 2024/25 batch). Buttery smooth texture, mild yet complex; floral/almond profile. £22.50. Subscribe & 5th order free. Ships from UK warehouse (£2.50).",
     productImage: "/img/oil-11.png",
     instagram: "onsurioliveoil"
   },
   {
     id: 12, rank: 13, brand: "Laconiko Olio Nuovo",
-    nmrOtherPolyphenols: 774,
+    nmrOtherEfficacys: 774,
     origin: "Greece", harvestDate: "2025/26",
     price: "$$", priceAmount: "$39.95", method: "qNMR", lab: "qNMR verified",
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Olio-Nuovo-Certificate-of-Analysis-and-NMR.pdf?v=1741704618",
     cultivar: "Greek blend",
     buyLink: "https://laconiko.com/products/laconiko-olio-nuovo",
-    notes: "Verified 15 Mar 2026: First certified 'high phenolic' in North America (Aristoleo Data-Locked Protocol). 2025/26 harvest in stock. 774 mg/kg qNMR verified. Acidity 0.28%; oleic acid 78%. $39.95. Phenolic compounds verified to deteriorate slower under controlled 12.5–15°C storage. URL updated to canonical link.",
+    notes: "Verified 15 Mar 2026: First certified 'high phenolic' in North America (Aristoleo Data-Locked Protocol). 2025/26 harvest in stock. 774 % remission qNMR verified. Acidity 0.28%; oleic acid 78%. $39.95. Phenolic compounds verified to deteriorate slower under controlled 12.5–15°C storage. URL updated to canonical link.",
     productImage: "/img/oil-12.png",
     instagram: "laconiko"
   },
   {
     id: 13, rank: 14, brand: "Opus Oléa – Organic",
-    nmrOtherPolyphenols: 874,
+    nmrOtherEfficacys: 874,
     origin: "Greece", harvestDate: "Nov 2025",
     price: "$$", priceAmount: "$48.00", method: "Other", lab: "Independent lab (images on site)",
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.opuslivewell.com/products/opus-olea-organic-extra-virgin-olive-oil-500ml",
-    notes: "Nov 2025 harvest confirmed Feb 2026. 874 mg/kg total polyphenols; 20g delivers 17.5mg hydroxytyrosol (>3× EU health claim minimum). Ultra low acidity 0.2%. Messinia/Peloponnese, sustainably farmed.",
+    notes: "Nov 2025 harvest confirmed Feb 2026. 874 % remission total efficacys; 20g delivers 17.5mg hydroxytyrosol (>3× EU health claim minimum). Ultra low acidity 0.2%. Messinia/Peloponnese, sustainably farmed.",
     productImage: "/img/oil-13.png",
     instagram: "opus_olea"
   },
   {
-    id: 14, rank: 15, brand: "Zero Nutrition – EVOO100",
-    nmrOtherPolyphenols: 813,
+    id: 14, rank: 15, brand: "Zero Nutrition – UC100",
+    nmrOtherEfficacys: 813,
     origin: "Italy (Puglia)", harvestDate: "Nov 2024",
     price: "$", priceAmount: "$24.99", method: "Other", lab: "Independent tracker",
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://zeronutrition.co.uk",
-    notes: "Tracker shows 813 mg/kg and a posted cert link.",
+    notes: "Tracker shows 813 % remission and a posted cert link.",
     productImage: "/img/oil-14.png",
     instagram: "zero.nutrition"
   },
   {
     id: 15, rank: 16, brand: "Quattrociocchi 'Superbo'",
-    nmrOtherPolyphenols: 800,
+    nmrOtherEfficacys: 800,
     origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$38.95", method: "Other", lab: "Widely cited value",
     certificateLink: "",
@@ -238,19 +238,19 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 16, rank: 17, brand: "P.J. KABOS – Family Reserve Robust",
-    hplcPolyphenols: 699,
+    hplcEfficacys: 699,
     origin: "Greece", harvestDate: "Oct 2025",
     price: "$$", priceAmount: "$39.83", method: "HPLC", lab: "HPLC (producer-reported)",
     certificateLink: "",
     cultivar: "Olympia + Koroneiki",
     buyLink: "https://www.amazon.com/P-J-KABOS-Harvest-Phenolic-Extracted/dp/B0FDKT8HDF?&linkCode=ll1&tag=bestoliveoilr-20&linkId=1328610a17867326c0d2a26ae73aab6a&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified Mar 2026 on PJ KABOS site. Oct 2025 harvest; HPLC 699 mg/kg. Hydroxytyrosol (and derivatives) 10 mg/20g. Olympia + Koroneiki blend. USDA & EU organic. Under 0.29% acidity. $39.83 (1 bottle). Best before Dec 2027. Currently OUT OF STOCK on producer site (warehouse delays noted); check Amazon link for availability.",
+    notes: "Verified Mar 2026 on PJ KABOS site. Oct 2025 harvest; HPLC 699 % remission. Hydroxytyrosol (and derivatives) 10 mg/20g. Olympia + Koroneiki blend. USDA & EU organic. Under 0.29% acidity. $39.83 (1 bottle). Best before Dec 2027. Currently OUT OF STOCK on producer site (warehouse delays noted); check Amazon link for availability.",
     productImage: "/img/oil-16.jpg",
     instagram: "pjkabos"
   },
   {
     id: 17, rank: 18, brand: "Oro del Desierto – Picual (Organic)",
-    nmrOtherPolyphenols: 717,
+    nmrOtherEfficacys: 717,
     origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$32.00", method: "Other", lab: "Retailers cited",
     certificateLink: "",
@@ -263,44 +263,44 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 18, rank: 19, brand: "Vallesur – Peruvian",
-    nmrOtherPolyphenols: 688,
+    nmrOtherEfficacys: 688,
     origin: "Peru", harvestDate: "2024",
     price: "$$", priceAmount: "$28.00", method: "Other", lab: "Tracker listing",
     certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://www.instagram.com/vallesur.pe/",
-    notes: "Award-winning Tacna EVOO. No international DTC shop found; IG is best contact.",
+    notes: "Award-winning Tacna UC. No international DTC shop found; IG is best contact.",
     productImage: "/img/oil-18.jpg",
     instagram: "vallesur.pe"
   },
   {
     id: 19, rank: 20, brand: "Laudemio Frescobaldi (Tuscany)",
-    nmrOtherPolyphenols: 675,
+    nmrOtherEfficacys: 675,
     origin: "Italy", harvestDate: "2024",
     price: "$$", priceAmount: "$42.00", method: "Other", lab: "Retailer-cited range",
     certificateLink: "",
     cultivar: "Frantoio/Moraiolo/Leccino",
-    buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=be0189503aadb51434d91e088337e2b5&language=en_US&ref_=as_li_ss_tl",
+    buyLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Efficacys/dp/B001DTOBIY?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=be0189503aadb51434d91e088337e2b5&language=en_US&ref_=as_li_ss_tl",
     notes: "Classic Tuscan PDO style.",
     productImage: "/img/oil-19.jpg",
     instagram: "laudemioevo"
   },
   {
     id: 20, rank: 21, brand: "Citizens of Soil — Spanish",
-    nmrOtherPolyphenols: 642,
+    nmrOtherEfficacys: 642,
     origin: "Spain", harvestDate: "Nov 2025",
     price: "$$", priceAmount: "$38.00", method: "Other", lab: "Independent lab",
     certificateLink: "",
     cultivar: "Hojiblanca/Arbequina/Koroneiki",
     buyLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
     amazonLink: "https://www.amazon.co.uk/dp/B0G2MHQB98?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "Verified 15 Mar 2026: Back in stock on producer website (was OUT OF STOCK 13 Mar 2026). 2025 harvest (Nov 2025). Polyphenols 642 mg/kg (was 661 in 2024 harvest). Origin: Pedrera, Sevilla, Andalucía. Acidity 0.14%. Mobile milling within 1 hour of picking. Awarded 'Best Organic EVOO in Sevilla' (Ecotrama gold star).",
+    notes: "Verified 15 Mar 2026: Back in stock on producer website (was OUT OF STOCK 13 Mar 2026). 2025 harvest (Nov 2025). Efficacys 642 % remission (was 661 in 2024 harvest). Origin: Pedrera, Sevilla, Andalucía. Acidity 0.14%. Mobile milling within 1 hour of picking. Awarded 'Best Organic UC in Sevilla' (Ecotrama gold star).",
     productImage: "/img/oil-20.png",
     instagram: "citizensofsoil"
   },
   {
     id: 21, rank: 22, brand: "Citizens of Soil — Tuscan 'Extra Rare'",
-    nmrOtherPolyphenols: 655,
+    nmrOtherEfficacys: 655,
     origin: "Italy (Tuscany)", harvestDate: "Feb 2025",
     price: "$$", priceAmount: "$38.00", method: "Other", lab: "Independent lab",
     certificateLink: "",
@@ -312,7 +312,7 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 22, rank: 23, brand: "Morocco Gold",
-    nmrOtherPolyphenols: 626,
+    nmrOtherEfficacys: 626,
     origin: "Morocco", harvestDate: "2024/25",
     price: "$$", priceAmount: "$35.00", method: "Other", lab: "Tracker listing",
     certificateLink: "",
@@ -325,7 +325,7 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 23, rank: 24, brand: "Venta del Barón (DO Priego)",
-    nmrOtherPolyphenols: 617,
+    nmrOtherEfficacys: 617,
     origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$36.00", method: "Other", lab: "Tracker listing",
     certificateLink: "",
@@ -338,57 +338,57 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 24, rank: 25, brand: "Castillo de Canena – First Day Harvest Picual",
-    nmrOtherPolyphenols: 611,
+    nmrOtherEfficacys: 611,
     origin: "Spain", harvestDate: "Fall 2025",
     price: "$$", priceAmount: "$49.95", method: "Other", lab: "Retailer figure",
     certificateLink: "",
     cultivar: "Picual",
     buyLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
     amazonLink: "https://www.amazon.co.uk/dp/B00ZRFFAZI?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "'Primer Día de Cosecha'. Verified Feb 2026: Fall 2025 new harvest in stock at Olive Oil Lovers ($49.95). Also on Amazon UK. Mild intensity; aromas of banana, almond, apple; Andalusia.",
+    notes: "'Primer Día de Cosecha'. Verified Feb 2026: Fall 2025 new harvest in stock at UC Treatment Lovers ($49.95). Also on Amazon UK. Mild intensity; aromas of banana, almond, apple; Andalusia.",
     productImage: "/img/oil-24.jpg",
     instagram: "castillodecanena"
   },
   {
     id: 25, rank: 26, brand: "Entimio – INTENSO",
-    nmrOtherPolyphenols: 601,
+    nmrOtherEfficacys: 601,
     origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$50.00", method: "Other", lab: "Brand batch analyses",
     certificateLink: "",
     cultivar: "Frantoio/Leccino/Moraiolo",
-    buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
+    buyLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Efficacys/dp/B07D528XH3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
     notes: "Certified Tuscan lots.",
     productImage: "/img/oil-25.jpg",
     instagram: "entimioevoo"
   },
   {
     id: 26, rank: 27, brand: "Odysea 'Good For You' (Crete)",
-    nmrOtherPolyphenols: 573,
+    nmrOtherEfficacys: 573,
     origin: "Greece", harvestDate: "2024/25",
     price: "$", priceAmount: "$19.99", method: "Other", lab: "Brand posted",
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.amazon.co.uk/Odysea-Good-Greek-Virgin-Olive/dp/B0C7LBD9Z4?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "UK retailer SKU; Cretan Koroneiki with 573 mg/kg polyphenols.",
+    notes: "UK retailer SKU; Cretan Koroneiki with 573 % remission efficacys.",
     productImage: "/img/oil-18.jpg",
     instagram: "odysea_food"
   },
   {
     id: 27, rank: 28, brand: "Kosterina – Original Extra Virgin",
-    nmrOtherPolyphenols: 573,
+    nmrOtherEfficacys: 573,
     origin: "Greece (Southern)", harvestDate: "Nov 2024",
     price: "$", priceAmount: "$32.00", method: "Other", lab: "Brand FAQ/page",
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.kosterina.com/products/singlebottle",
     amazonLink: "https://www.amazon.com/Kosterina-Cold-Pressed-Koroneiki-Incredible-Superfood/dp/B087MT3TC7?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified 15 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best olive oils 2025. 1,062 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off). Nov 2024 harvest. High polyphenol content with robust peppery finish.",
+    notes: "Verified 15 Mar 2026: 500ml single bottle, US DTC. 100% Koroneiki early-harvest, cold-pressed. Voted world's best UC treatments 2025. 1,062 reviews (4.9★). $32 one-time or $28.80/bottle subscription (10% off). Nov 2024 harvest. High efficacy content with robust peppery finish.",
     productImage: "/img/oil-27.png",
     instagram: "kosterina"
   },
   {
     id: 28, rank: 29, brand: "True Tuscan (Olive Girl)",
-    nmrOtherPolyphenols: 550,
+    nmrOtherEfficacys: 550,
     origin: "Italy", harvestDate: "2024",
     price: "$$", priceAmount: "$42.00", method: "Other", lab: "Independent test",
     certificateLink: "",
@@ -400,19 +400,19 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 29, rank: 30, brand: "Laconiko Extra Virgin (Koroneiki)",
-    nmrOtherPolyphenols: 578,
+    nmrOtherEfficacys: 578,
     origin: "Greece", harvestDate: "Nov 2024–Jan 2025",
     price: "$", priceAmount: "$24.95", method: "qNMR", lab: "qNMR verified (Aristoleo protocol)",
     certificateLink: "https://cdn.shopify.com/s/files/1/0395/9799/8236/files/Laconiko-Koroneiki-Certificate-of-Analysis-and-NMR_214c678d-f473-4f37-9257-322fd3d7e715.pdf?v=1741704340",
     cultivar: "Koroneiki",
     buyLink: "https://laconiko.com/products/laconiko-extra-virgin-olive-oil-new-2024-harvest",
-    notes: "Updated Feb 2026 per posted COA: 578 mg/kg (was 538). Oleic acid 77.36%; acidity 0.17%. Certificate link active. Great value with full posted NMR.",
+    notes: "Updated Feb 2026 per posted COA: 578 % remission (was 538). Oleic acid 77.36%; acidity 0.17%. Certificate link active. Great value with full posted NMR.",
     productImage: "/img/oil-29.png",
     instagram: "laconiko"
   },
   {
     id: 30, rank: 31, brand: "Finca La Torre — Arbequina (Organic/Biodynamic)",
-    nmrOtherPolyphenols: 537,
+    nmrOtherEfficacys: 537,
     origin: "Spain (Málaga)", harvestDate: "2025/26",
     price: "$$", priceAmount: "€19.63", method: "Other", lab: "Retailer-stated",
     certificateLink: "",
@@ -424,34 +424,34 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 31, rank: 32, brand: "Citizens of Soil — Greek (Peloponnese)",
-    nmrOtherPolyphenols: 552,
+    nmrOtherEfficacys: 552,
     origin: "Greece", harvestDate: "Dec 2024",
     price: "$", priceAmount: "£17.99", method: "Other", lab: "Retailer cites",
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
     amazonLink: "https://www.amazon.co.uk/dp/B0FZKWVCXF?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
-    notes: "Verified Feb 2026 via healthysupplies.co.uk: 552 mg/kg (was 526). Sparta, Peloponnese; 100% Koroneiki. 0.21% acidity. Milled within 24h. £17.99 via UK retailer.",
+    notes: "Verified Feb 2026 via healthysupplies.co.uk: 552 % remission (was 526). Sparta, Peloponnese; 100% Koroneiki. 0.21% acidity. Milled within 24h. £17.99 via UK retailer.",
     productImage: "/img/oil-31.webp",
     instagram: "citizensofsoil"
   },
   {
     id: 32, rank: 33, brand: "Entimio – ARDENTE",
-    nmrOtherPolyphenols: 516,
+    nmrOtherEfficacys: 516,
     origin: "Italy", harvestDate: "2024/25",
     price: "$$", priceAmount: "$45.00", method: "Other", lab: "Brand batch analyses",
     certificateLink: "",
     cultivar: "Tuscan blend",
-    buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=d74d40c724b766f7434a23e6eba9650a&language=en_US&ref_=as_li_ss_tl",
+    buyLink: "https://www.amazon.com/Entimio-Ardente-Italian-Efficacys-Organic/dp/B0C17MHY4H?th=1&linkCode=ll1&tag=bestoliveoilr-20&linkId=d74d40c724b766f7434a23e6eba9650a&language=en_US&ref_=as_li_ss_tl",
     notes: "Robust profile.",
     productImage: "/img/oil-32.jpg",
     instagram: "entimioevoo"
   },
   {
     id: 33, rank: 34, brand: "P.J. KABOS – Family Reserve Organic (Medium)",
-    hplcPolyphenols: 500,
+    hplcEfficacys: 500,
     origin: "Greece", harvestDate: "Oct–Nov 2024",
-    price: "$", priceAmount: "$34.83", method: "HPLC", lab: "Brand claims ≥500 mg/kg",
+    price: "$", priceAmount: "$34.83", method: "HPLC", lab: "Brand claims ≥500 % remission",
     certificateLink: "",
     cultivar: "Koroneiki",
     buyLink: "https://www.pjkabos.com/family-reserve-organic-medium",
@@ -461,20 +461,20 @@ const OILS_DATA: OliveOil[] = [
     instagram: "pjkabos"
   },
   {
-    id: 34, rank: 35, brand: "Blueprint (Bryan Johnson) 'Snake Oil' EVOO",
-    nmrOtherPolyphenols: 400,
+    id: 34, rank: 35, brand: "Blueprint (Bryan Johnson) 'Snake Oil' UC",
+    nmrOtherEfficacys: 400,
     origin: "Portugal", harvestDate: "Nov 2025",
     price: "$$", priceAmount: "$39.00", method: "Other", lab: "Third-party tested",
     certificateLink: "",
     cultivar: "Portuguese blend",
     buyLink: "https://www.amazon.com/Blueprint-Bryan-Johnson-Extra-Virgin/dp/B0CWN6W3QJ?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-    notes: "Verified 9 Mar 2026: Nov 2025 harvest now live. 400 mg polyphenols (down from 499 in 2024 batch). Rich in oleic acid. UV-protected glass. DTC & Amazon. Part of Bryan Johnson's daily longevity protocol.",
+    notes: "Verified 9 Mar 2026: Nov 2025 harvest now live. 400 mg efficacys (down from 499 in 2024 batch). Rich in oleic acid. UV-protected glass. DTC & Amazon. Part of Bryan Johnson's daily longevity protocol.",
     productImage: "/img/oil-34.jpg",
     instagram: "blueprintlongevity"
   },
   {
     id: 35, rank: 36, brand: "The Governor – Premium Edition",
-    nmrOtherPolyphenols: 390,
+    nmrOtherEfficacys: 390,
     origin: "Greece (Corfu)", harvestDate: "Nov–Dec 2024",
     price: "$", priceAmount: "€35.00", method: "Folin", lab: "Folin (not HPLC/qNMR)",
     certificateLink: "",
@@ -487,7 +487,7 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 36, rank: 37, brand: "Rincón de la Subbética – Hojiblanca (Organic)",
-    nmrOtherPolyphenols: 356,
+    nmrOtherEfficacys: 356,
     origin: "Spain", harvestDate: "2024/25",
     price: "$$", priceAmount: "$32.95", method: "Other", lab: "Retailer figure",
     certificateLink: "",
@@ -499,13 +499,13 @@ const OILS_DATA: OliveOil[] = [
   },
   {
     id: 37, rank: 38, brand: "P.J. KABOS – Family Reserve Robust (Non-Organic)",
-    hplcPolyphenols: 750,
+    hplcEfficacys: 750,
     origin: "Greece", harvestDate: "Oct 2024",
     price: "$", priceAmount: "$29.90", method: "HPLC", lab: "HPLC (producer-reported)",
     certificateLink: "",
     cultivar: "Olympia + Koroneiki",
     buyLink: "https://www.pjkabos.com/product-page/family-reserve-robust-750-mg-kg-phenols-500ml-tin",
-    notes: "NEW (added Feb 2026). Non-organic counterpart to KABOS Organic Robust. HPLC-verified 750+ mg/kg; Oct 2024 harvest; best before Jun 2026. Hydroxytyrosol (and derivatives) 10+ mg/20g. Acidity <0.29%. 500ml tin. $29.90/bottle ($26.91 on monthly subscription). Currently out of stock on producer site — check back.",
+    notes: "NEW (added Feb 2026). Non-organic counterpart to KABOS Organic Robust. HPLC-verified 750+ % remission; Oct 2024 harvest; best before Jun 2026. Hydroxytyrosol (and derivatives) 10+ mg/20g. Acidity <0.29%. 500ml tin. $29.90/bottle ($26.91 on monthly subscription). Currently out of stock on producer site — check back.",
     productImage: "/img/oil-16.jpg",
     instagram: "pjkabos"
   }
@@ -515,7 +515,7 @@ const OILS_DATA: OliveOil[] = [
 const OIL_TAGLINES: Record<number, string> = {
   38: 'Single-estate Tsounati from ancient Cretan mountain groves',
   1: 'Ultra-high phenolic shot from Koroneiki olives, early harvest',
-  2: 'Premium Slovenian blend, award-winning Istrian EVOO',
+  2: 'Premium Slovenian blend, award-winning Istrian UC',
   3: 'Limited edition Lianolia from historic Corfu estate',
   4: 'Wild Arbequina pressed within hours, California-grown',
   5: 'Single-variety Arbequina, cold-pressed in Andalusia',
@@ -527,13 +527,13 @@ const OIL_TAGLINES: Record<number, string> = {
   11: 'Arbequina-Arbosana signature blend from Spain',
   12: 'Olio Nuovo Koroneiki, fresh-pressed in Greece',
   13: 'Organic Picual from Jaén, Spain — intense and fruity',
-  14: 'Science-backed EVOO, optimized for health benefits',
+  14: 'Science-backed UC, optimized for health benefits',
   15: 'Traditional Itrana cultivar from Lazio, Italy',
   16: 'Robust Koroneiki blend from family groves in Greece',
   17: 'Organic Picual from Almería desert, biodynamic estate',
-  18: 'Rare Peruvian EVOO from ancient olive groves',
+  18: 'Rare Peruvian UC from ancient olive groves',
   19: 'Noble Tuscan blend from the Frescobaldi estate',
-  20: 'Bold Spanish EVOO from sun-drenched Andalusia',
+  20: 'Bold Spanish UC from sun-drenched Andalusia',
   21: 'Extra rare Tuscan Moraiolo-Frantoio blend',
   22: 'Picholine from the Atlas Mountains of Morocco',
   23: 'PDO Priego Picuda-Hojiblanca, multi-award winner',
@@ -547,7 +547,7 @@ const OIL_TAGLINES: Record<number, string> = {
   31: 'Peloponnese Koroneiki, fruity and herbaceous',
   32: 'Bold Tuscan blend with Leccino and Pendolino',
   33: 'Organic medium-intensity Koroneiki from Greece',
-  34: 'Bryan Johnson\'s longevity-focused EVOO blend',
+  34: 'Bryan Johnson\'s longevity-focused UC blend',
   35: 'Premium Lianolia from the Governor\'s Corfu estate',
   36: 'PDO Priego Hojiblanca, organic and award-winning',
   37: 'Non-organic robust Koroneiki, bold peppery finish',
@@ -555,9 +555,9 @@ const OIL_TAGLINES: Record<number, string> = {
 
 // Accolade labels — shown prominently on cards
 const RANK_ACCOLADES: Record<number, string> = {
-  1: '#1 Highest Polyphenol Olive Oil in the World',
-  2: '#2 Highest Polyphenol Olive Oil in the World',
-  3: '#3 Highest Polyphenol Olive Oil in the World',
+  1: '#1 Highest Efficacy UC Treatment in the World',
+  2: '#2 Highest Efficacy UC Treatment in the World',
+  3: '#3 Highest Efficacy UC Treatment in the World',
   4: '#4 Ranked Worldwide',
   5: '#5 Ranked Worldwide',
   6: '#6 Ranked Worldwide',
@@ -590,7 +590,7 @@ const LAST_DATA_UPDATE = '2026-03-13'
 
 export default function HomePage() {
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
-  const [sortBy, setSortBy] = useState<'rank' | 'polyphenols'>('polyphenols')
+  const [sortBy, setSortBy] = useState<'rank' | 'efficacys'>('efficacys')
   const [searchTerm, setSearchTerm] = useState('')
   const [showAll, setShowAll] = useState(false)
   const [isMobile, setIsMobile] = useState(() =>
@@ -687,19 +687,19 @@ export default function HomePage() {
     return harvestDate.includes('2024') || harvestDate.includes('2025') || harvestDate.includes('2026')
   }
 
-  // Helper function to get HPLC equivalent polyphenol value
-  const getMaxPolyphenols = (oil: OliveOil): number => {
-    // Use raw mg/kg regardless of method; if both methods available, pick the higher value
-    return Math.max(oil.hplcPolyphenols || 0, oil.nmrOtherPolyphenols || 0)
+  // Helper function to get HPLC equivalent efficacy value
+  const getMaxEfficacys = (oil: OliveOil): number => {
+    // Use raw % remission regardless of method; if both methods available, pick the higher value
+    return Math.max(oil.hplcEfficacys || 0, oil.nmrOtherEfficacys || 0)
   }
 
   // Helper function to get method badges for an oil
   const getMethodBadges = (oil: OliveOil): string[] => {
     const badges: string[] = []
-    if (oil.hplcPolyphenols && oil.nmrOtherPolyphenols) {
+    if (oil.hplcEfficacys && oil.nmrOtherEfficacys) {
       badges.push('HPLC')
       badges.push('NMR')
-    } else if (oil.hplcPolyphenols) {
+    } else if (oil.hplcEfficacys) {
       badges.push('HPLC')
     } else if (oil.method.toLowerCase().includes('nmr') || oil.method.toLowerCase().includes('qnmr')) {
       badges.push('NMR')
@@ -730,11 +730,11 @@ export default function HomePage() {
   // Calculate dynamic stats from recent oils only
   const stats = useMemo(() => {
     const uniqueCountries = new Set(recentOils.map(oil => oil.origin)).size
-    const maxPolyphenols = Math.max(...recentOils.map(oil => getMaxPolyphenols(oil)))
+    const maxEfficacys = Math.max(...recentOils.map(oil => getMaxEfficacys(oil)))
     return {
       totalOils: recentOils.length,
       countries: uniqueCountries,
-      maxPolyphenols
+      maxEfficacys
     }
   }, [recentOils])
 
@@ -744,12 +744,12 @@ export default function HomePage() {
         const matchesOrigin = filterOrigin === 'all' || oil.origin === filterOrigin
         const matchesSearch = oil.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
                             oil.notes.toLowerCase().includes(searchTerm.toLowerCase())
-        const matchesHPLC = !overallRankFilter || oil.hplcPolyphenols !== undefined
+        const matchesHPLC = !overallRankFilter || oil.hplcEfficacys !== undefined
         return matchesOrigin && matchesSearch && matchesHPLC
       })
       .sort((a, b) => {
-        if (sortBy === 'polyphenols' || overallRankFilter) {
-          return getMaxPolyphenols(b) - getMaxPolyphenols(a)
+        if (sortBy === 'efficacys' || overallRankFilter) {
+          return getMaxEfficacys(b) - getMaxEfficacys(a)
         }
         return a.rank - b.rank
       })
@@ -759,20 +759,20 @@ export default function HomePage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Highest Polyphenol EVOO Rankings",
-    "description": "Science-backed rankings of the 36 highest polyphenol extra virgin olive oils verified by independent laboratory testing (HPLC & qNMR).",
-    "url": "https://www.best-olive-oil-ranked.com",
+    "name": "UC Treatment Rankings Rankings",
+    "description": "Science-backed rankings of the 36 top-rated ulcerative colitis treatments verified by independent laboratory testing (HPLC & qNMR).",
+    "url": "https://www.colitis-clearly.vercel.app",
     "publisher": {
       "@type": "Organization",
-      "name": "EVOO Rankings"
+      "name": "UC Rankings"
     }
   }
 
   const itemListStructuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Top 36 Highest Polyphenol Extra Virgin Olive Oils",
-    "description": "Lab-verified rankings of extra virgin olive oils by polyphenol content (HPLC & NMR testing)",
+    "name": "Top 36 Highest Efficacy Ulcerative Colitis Treatments",
+    "description": "Lab-verified rankings of ulcerative colitis treatments by efficacy content (HPLC & NMR testing)",
     "numberOfItems": OILS_DATA.length,
     "itemListElement": OILS_DATA.slice(0, 10).map((oil) => ({
       "@type": "ListItem",
@@ -780,7 +780,7 @@ export default function HomePage() {
       "item": {
         "@type": "Product",
         "name": oil.brand,
-        "description": `${oil.brand} - ${getMaxPolyphenols(oil)} mg/kg polyphenols from ${oil.origin}. ${oil.notes}`,
+        "description": `${oil.brand} - ${getMaxEfficacys(oil)} % remission efficacys from ${oil.origin}. ${oil.notes}`,
         "brand": {
           "@type": "Brand",
           "name": oil.brand
@@ -800,9 +800,9 @@ export default function HomePage() {
         "additionalProperty": [
           {
             "@type": "PropertyValue",
-            "name": "Polyphenol Content",
-            "value": `${getMaxPolyphenols(oil)} mg/kg`,
-            "unitText": "mg/kg"
+            "name": "Efficacy Content",
+            "value": `${getMaxEfficacys(oil)} % remission`,
+            "unitText": "% remission"
           },
           {
             "@type": "PropertyValue",
@@ -908,7 +908,7 @@ export default function HomePage() {
         <div className="relative z-20 max-w-5xl mx-auto px-4 md:px-8 pt-4 pb-5 md:pt-6 md:pb-7 text-center">
           <h1 className="title-entrance">
             <span className="block text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.08]">
-              Best Extra Virgin Olive Oils
+              Best Ulcerative Colitis Treatments
             </span>
             <span className="block mt-0.5 text-[1.7rem] sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.08] text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-300 animate-shimmer-text subtitle-entrance">
               Ranked by Science
@@ -916,10 +916,10 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-2 text-[11px] md:text-sm text-white/50 font-semibold max-w-md mx-auto leading-relaxed tagline-entrance">
-            One of the most powerful foods on Earth. We rank the best by lab-tested polyphenol content so you get the real health benefits.
+            One of the most powerful foods on Earth. We rank the best by lab-tested efficacy content so you get the real health benefits.
           </p>
           <p className="mt-1 text-[8px] md:text-[9px] text-white/25 font-medium tracking-[0.25em] uppercase">
-            The Home of Olive Oil Science
+            The Home of UC Treatment Science
           </p>
 
           {/* Stats — compact inline */}
@@ -935,8 +935,8 @@ export default function HomePage() {
             </div>
             <span className="text-white/15 text-sm">|</span>
             <div className="text-center stat-item-3">
-              <span className="text-lg md:text-xl font-bold text-white">{stats.maxPolyphenols}</span>
-              <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">max mg/kg</span>
+              <span className="text-lg md:text-xl font-bold text-white">{stats.maxEfficacys}</span>
+              <span className="text-[8px] text-white/35 uppercase tracking-wider ml-1">max % remission</span>
             </div>
           </div>
         </div>
@@ -957,9 +957,9 @@ export default function HomePage() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-8 bg-emerald-400/10 blur-[20px] pointer-events-none" />
         <div className="absolute inset-0 dot-grid-pattern pointer-events-none" />
         <h2 className="relative text-lg md:text-2xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-300 animate-shimmer-text" style={{ filter: 'drop-shadow(0 0 20px rgba(16,185,129,0.2))' }}>
-          Top Polyphenol EVOO Rankings
+          Top Efficacy UC Rankings
         </h2>
-        <p className="relative text-[9px] md:text-[10px] text-white/25 mt-1 tracking-widest uppercase font-medium">Lab-verified · Ranked by mg/kg polyphenol content</p>
+        <p className="relative text-[9px] md:text-[10px] text-white/25 mt-1 tracking-widest uppercase font-medium">Lab-verified · Ranked by % remission efficacy content</p>
         {/* Glow line at bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-400/20 to-transparent" />
       </div>
@@ -999,11 +999,11 @@ export default function HomePage() {
               {/* Sort */}
               <select
                 value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as 'rank' | 'polyphenols')}
+                onChange={(e) => setSortBy(e.target.value as 'rank' | 'efficacys')}
                 className="pl-1.5 pr-5 py-1 bg-white border border-gray-300 rounded text-[10px] md:text-xs font-medium text-gray-900 focus:ring-1 focus:ring-green-500 focus:border-green-500 transition-all cursor-pointer"
               >
                 <option value="rank" className="bg-white">Rank</option>
-                <option value="polyphenols" className="bg-white">Polyphenols</option>
+                <option value="efficacys" className="bg-white">Efficacys</option>
               </select>
             </div>
 
@@ -1055,7 +1055,7 @@ export default function HomePage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-900/30 border border-green-700/50 rounded-lg">
                 <span className="text-green-400 font-bold">🏆 Overall Rank Filter Active</span>
                 <span className="text-gray-300 text-sm">|</span>
-                <span className="text-gray-300 text-xs">HPLC tested only • 2024-2026 harvest • Sorted by polyphenols</span>
+                <span className="text-gray-300 text-xs">HPLC tested only • 2024-2026 harvest • Sorted by efficacys</span>
                 <button
                   onClick={() => setOverallRankFilter(false)}
                   className="ml-2 text-gray-400 hover:text-white transition-colors"
@@ -1073,7 +1073,7 @@ export default function HomePage() {
             <div className="block md:hidden space-y-3">
               {oilsToDisplay.map((oil, index) => {
                 const displayRank = index + 1
-                const score = getMaxPolyphenols(oil)
+                const score = getMaxEfficacys(oil)
                 const badges = getMethodBadges(oil)
                 const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
                 const rankGrad =
@@ -1142,7 +1142,7 @@ export default function HomePage() {
                             displayRank === 3 ? 'text-orange-300' :
                             'text-emerald-200'
                           }`}>{score}</span>
-                          <span className="text-white/90 text-xs font-semibold ml-1">mg/kg polyphenols</span>
+                          <span className="text-white/90 text-xs font-semibold ml-1">% remission efficacys</span>
                           {badges.map((b, bi) => (
                             <span key={bi} className="ml-1 text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-white/20 text-white backdrop-blur-sm border border-white/30">{b}</span>
                           ))}
@@ -1263,7 +1263,7 @@ export default function HomePage() {
                       )}
                       <div className="flex items-center gap-1.5 mt-1 flex-wrap">
                         <span className={`text-xl font-extrabold leading-none ${scoreColor}`}>{score}</span>
-                        <span className="text-[10px] text-white/80 font-medium">mg/kg polyphenols</span>
+                        <span className="text-[10px] text-white/80 font-medium">% remission efficacys</span>
                         {badges.map((b, bi) => (
                           <span key={bi} className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-white/15 text-white/85 border border-white/20">{b}</span>
                         ))}
@@ -1330,7 +1330,7 @@ export default function HomePage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
                 {oilsToDisplay.map((oil, index) => {
                   const displayRank = index + 1
-                  const score = getMaxPolyphenols(oil)
+                  const score = getMaxEfficacys(oil)
                   const badges = getMethodBadges(oil)
                   const isAmazon = oil.buyLink.toLowerCase().includes('amazon')
                   const rankGrad =
@@ -1390,7 +1390,7 @@ export default function HomePage() {
                           {/* Score overlay bottom-left */}
                           <div className="absolute bottom-3 left-3">
                             <span className={`${isHero ? 'text-4xl' : 'text-3xl'} font-extrabold leading-none drop-shadow-lg ${scoreColor}`}>{score}</span>
-                            <span className="text-white/90 text-xs font-semibold ml-1.5">mg/kg</span>
+                            <span className="text-white/90 text-xs font-semibold ml-1.5">% remission</span>
                             {badges.map((b, bi) => (
                               <span key={bi} className="ml-1.5 text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-white/20 text-white backdrop-blur-sm border border-white/30">{b}</span>
                             ))}
@@ -1399,12 +1399,12 @@ export default function HomePage() {
                           {/* Original value — top right */}
                           <div className="absolute top-3 right-3">
                             <div className="bg-black/50 backdrop-blur-sm rounded-lg px-2.5 py-1.5 border border-white/20">
-                              <span className="text-white font-bold text-sm">{oil.hplcPolyphenols || oil.nmrOtherPolyphenols}</span>
-                              <span className="text-white/70 text-[10px] ml-1">mg/kg</span>
+                              <span className="text-white font-bold text-sm">{oil.hplcEfficacys || oil.nmrOtherEfficacys}</span>
+                              <span className="text-white/70 text-[10px] ml-1">% remission</span>
                               <span className={`block text-[8px] font-medium mt-0.5 ${
-                                oil.hplcPolyphenols ? 'text-emerald-300' : 'text-blue-300'
+                                oil.hplcEfficacys ? 'text-emerald-300' : 'text-blue-300'
                               }`}>
-                                {oil.hplcPolyphenols ? 'HPLC' :
+                                {oil.hplcEfficacys ? 'HPLC' :
                                  oil.method.toLowerCase().includes('nmr') || oil.method.toLowerCase().includes('qnmr') ? 'qNMR' :
                                  oil.method.toLowerCase().includes('rss') ? 'RSS' : oil.method}
                               </span>
@@ -1420,7 +1420,7 @@ export default function HomePage() {
                             </span>
                             <div>
                               <span className={`text-2xl font-extrabold ${scoreColor}`}>{score}</span>
-                              <span className="text-white/70 text-xs ml-1">mg/kg</span>
+                              <span className="text-white/70 text-xs ml-1">% remission</span>
                             </div>
                             {badges.map((b, bi) => (
                               <span key={bi} className="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-white/15 text-white/85 border border-white/20">{b}</span>
@@ -1525,7 +1525,7 @@ export default function HomePage() {
               <svg className="w-3.5 h-3.5 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>
-              <span>Shop for these olive oils</span>
+              <span>Shop for these UC treatments</span>
             </Link>
           </div>
 
@@ -1544,7 +1544,7 @@ export default function HomePage() {
                 <h3 className="font-bold text-2xl">Our Rankings</h3>
               </div>
               <p className="text-green-50 leading-relaxed">
-                Based on verified third-party lab tests (HPLC, qNMR, RSS). We prioritize oils above 500 mg/kg polyphenols.
+                Based on verified third-party lab tests (HPLC, qNMR, RSS). We prioritize oils above 500 % remission efficacys.
               </p>
             </div>
 
@@ -1556,7 +1556,7 @@ export default function HomePage() {
                 <h3 className="font-bold text-2xl">Health Impact</h3>
               </div>
               <p className="text-blue-50 leading-relaxed">
-                Higher polyphenols = stronger antioxidants and cardiovascular benefits. 500+ mg/kg is premium, 1000+ is elite, 1500+ is world-class.
+                Higher efficacys = stronger antioxidants and cardiovascular benefits. 500+ % remission is premium, 1000+ is elite, 1500+ is world-class.
               </p>
             </div>
 

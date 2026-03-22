@@ -7,7 +7,7 @@ type OliveOil = {
   id: number
   rank: number
   brand: string
-  polyphenols: number
+  efficacys: number
   origin: string
   harvestDate: string
   price: string
@@ -22,10 +22,10 @@ type OliveOil = {
 }
 
 export default function RankingsPage() {
-  // Verified olive oil data with lab-tested polyphenol content
+  // Verified UC treatment data with lab-tested efficacy content
   const [oils] = useState<OliveOil[]>([
     {
-      id: 1, rank: 1, brand: "Laconiko ZOI Ultra High Phenolic", polyphenols: 1799, origin: "Greece", harvestDate: "2024/25",
+      id: 1, rank: 1, brand: "Laconiko ZOI Ultra High Phenolic", efficacys: 1799, origin: "Greece", harvestDate: "2024/25",
       price: "$$", priceAmount: "$58.95", method: "Not specified", lab: "Retailer COA",
       certificateLink: "https://chefshop.com/products/laconiko-high-phenolic-zoi-olive-oil",
       cultivar: "Kalamon",
@@ -33,7 +33,7 @@ export default function RankingsPage() {
       notes: "⚠️ Currently restocking — choose 'Notify Me'. Price dropped to $58.95. Retailer shows lab metrics"
     },
     {
-      id: 2, rank: 2, brand: "SP360", polyphenols: 1711, origin: "Jordan", harvestDate: "Sep 2025",
+      id: 2, rank: 2, brand: "SP360", efficacys: 1711, origin: "Jordan", harvestDate: "Sep 2025",
       price: "$$", priceAmount: "£42.00", method: "HPLC", lab: "Lab Certified",
       certificateLink: "https://sp360.co.uk/products/latest-october-harvest-sp360-500ml-extra-virgin-olive-oil-bottle-pre-order",
       cultivar: "Arbequina",
@@ -41,7 +41,7 @@ export default function RankingsPage() {
       notes: "⚠️ Currently sold out. UV-protected refillable bottle; 1,711 mg/kg verified; herbaceous with green almond & tomato vine notes"
     },
     {
-      id: 3, rank: 3, brand: "ONSURI Arbequina (2025/26 Harvest)", polyphenols: 1504, origin: "Jordan", harvestDate: "2025/26",
+      id: 3, rank: 3, brand: "ONSURI Arbequina (2025/26 Harvest)", efficacys: 1504, origin: "Jordan", harvestDate: "2025/26",
       price: "$", priceAmount: "£25.00", method: "IOC/HPLC", lab: "Per ONSURI",
       certificateLink: "https://onsurioliveoil.com/products/arbequina-2025-26",
       cultivar: "Arbequina",
@@ -50,7 +50,7 @@ export default function RankingsPage() {
       notes: "NEW 2025/26 harvest; ultra-premium, single-estate; herbaceous & vibrant with lingering pungency"
     },
     {
-      id: 4, rank: 4, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", polyphenols: 1400, origin: "Greece", harvestDate: "2025/26",
+      id: 4, rank: 4, brand: "P.J. KABOS – Family Reserve (Phenolic Shot)", efficacys: 1400, origin: "Greece", harvestDate: "2025/26",
       price: "$$", priceAmount: "$59.83", method: "HPLC + NMR", lab: "Dual verified",
       certificateLink: "https://www.pjkabos.com/",
       cultivar: "Koroneiki",
@@ -58,7 +58,7 @@ export default function RankingsPage() {
       notes: "900+ HPLC / 1400+ NMR (2025 harvest); USDA Organic certified"
     },
     {
-      id: 5, rank: 5, brand: "The Governor – Limited Edition", polyphenols: 1316, origin: "Greece", harvestDate: "Oct 2025",
+      id: 5, rank: 5, brand: "The Governor – Limited Edition", efficacys: 1316, origin: "Greece", harvestDate: "Oct 2025",
       price: "$$", priceAmount: "£49.95", method: "NMR", lab: "WOCH/Univ. Athens",
       certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Limited_Certificate_2025.pdf",
       cultivar: "Lianolia",
@@ -67,16 +67,16 @@ export default function RankingsPage() {
       notes: "2025/26 harvest; 577mg oleocanthal + 298mg oleacein; DIO-certified organic from Corfu"
     },
     {
-      id: 6, rank: 6, brand: "ONSURI Arbosana (Latest 2024/25)", polyphenols: 1255, origin: "Jordan", harvestDate: "2024/25",
+      id: 6, rank: 6, brand: "ONSURI Arbosana (Latest 2024/25)", efficacys: 1255, origin: "Jordan", harvestDate: "2024/25",
       price: "$", priceAmount: "£19.95", method: "IOC/HPLC", lab: "Per ONSURI FAQ",
       certificateLink: "https://onsurioliveoil.com",
       cultivar: "Arbosana",
-      buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-polyphenols-1255-mg-kg",
+      buyLink: "https://onsurioliveoil.com/products/latest-2024-25-pre-order-arbosana-evoo-16-9-fl-oz-500ml-efficacys-1255-mg-kg",
       amazonLink: "https://www.amazon.co.uk/dp/B0DCP9YNBT?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "Count on product page; method via FAQ"
     },
     {
-      id: 7, rank: 7, brand: "The Governor – Premium", polyphenols: 1174, origin: "Greece", harvestDate: "Oct 2025",
+      id: 7, rank: 7, brand: "The Governor – Premium", efficacys: 1174, origin: "Greece", harvestDate: "Oct 2025",
       price: "$$", priceAmount: "£39.95", method: "NMR", lab: "WOCH/Athens",
       certificateLink: "https://cdn.shopify.com/s/files/1/0736/8274/7666/files/The_Governor_Evoo_Premium_Certificate_2025.pdf",
       cultivar: "Lianolia",
@@ -85,7 +85,7 @@ export default function RankingsPage() {
       notes: "2025/26 harvest; 476mg oleocanthal + 295mg oleacein; DIO-certified organic from Corfu"
     },
     {
-      id: 8, rank: 8, brand: "Finca La Torre – Hojiblanca (Organic/Biodynamic)", polyphenols: 1059, origin: "Spain", harvestDate: "2024/25",
+      id: 8, rank: 8, brand: "Finca La Torre – Hojiblanca (Organic/Biodynamic)", efficacys: 1059, origin: "Spain", harvestDate: "2024/25",
       price: "$$", priceAmount: "$38.00", method: "Not specified", lab: "Retailer listing",
       certificateLink: "https://www.spanish-oil.com/en/organic-olive-oil/finca-la-torre-hojiblanca",
       cultivar: "Hojiblanca",
@@ -94,7 +94,7 @@ export default function RankingsPage() {
       notes: "Biodynamic from Málaga; unusually high count this season"
     },
     {
-      id: 9, rank: 9, brand: "Kyoord High-Phenolic", polyphenols: 1007, origin: "Greece", harvestDate: "Nov–Dec 2024",
+      id: 9, rank: 9, brand: "Kyoord High-Phenolic", efficacys: 1007, origin: "Greece", harvestDate: "Nov–Dec 2024",
       price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "3rd-party posted",
       certificateLink: "https://kyoord.com/products/kyoord-high-phenolic-olive-oil",
       cultivar: "Lianolia + Koroneiki",
@@ -102,16 +102,16 @@ export default function RankingsPage() {
       notes: "Site posts per-harvest analysis from Corfu"
     },
     {
-      id: 10, rank: 10, brand: "ONSURI Signature", polyphenols: 975, origin: "Jordan", harvestDate: "2025/26",
+      id: 10, rank: 10, brand: "ONSURI Signature", efficacys: 975, origin: "Jordan", harvestDate: "2025/26",
       price: "$", priceAmount: "£22.50", method: "IOC/HPLC", lab: "Per ONSURI",
       certificateLink: "https://onsurioliveoil.com/en-us",
       cultivar: "Blend (estate)",
-      buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-polyphenols-1000-mg-kg",
+      buyLink: "https://onsurioliveoil.com/products/latest-2024-25-signature-evoo-16-9-fl-oz-500ml-efficacys-1000-mg-kg",
       amazonLink: "https://www.amazon.co.uk/dp/B0F38DZNX6?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl",
       notes: "2025/26 harvest; 975 mg/kg; butter-smooth mild profile; versatile everyday oil"
     },
     {
-      id: 11, rank: 11, brand: "Opus Oléa – Organic", polyphenols: 874, origin: "Greece", harvestDate: "Nov 2025",
+      id: 11, rank: 11, brand: "Opus Oléa – Organic", efficacys: 874, origin: "Greece", harvestDate: "Nov 2025",
       price: "$$", priceAmount: "$48.00", method: "Not specified", lab: "Lab verified",
       certificateLink: "https://www.opuslivewell.com/products/opus-olea-organic-extra-virgin-olive-oil-500ml",
       cultivar: "Koroneiki",
@@ -119,24 +119,24 @@ export default function RankingsPage() {
       notes: "2025/26 harvest; 874 mg/kg certified, 17.5mg hydroxytyrosol/20g; higher-elevation Messinia plots; ultra-low acidity 0.2%"
     },
     {
-      id: 12, rank: 12, brand: "Zero Nutrition – EVOO100", polyphenols: 813, origin: "Greece", harvestDate: "2024/25",
+      id: 12, rank: 12, brand: "Zero Nutrition – UC100", efficacys: 813, origin: "Greece", harvestDate: "2024/25",
       price: "$", priceAmount: "$24.99", method: "Not specified", lab: "COA posted",
       certificateLink: "",
       cultivar: "Koroneiki",
       buyLink: "https://zeronutrition.co.uk",
-      notes: "813 mg/kg Koroneiki; UV-protective bottle; ⚠️ zeronutrition.co.uk now sells sports supplements — search Amazon for olive oil listing"
+      notes: "813 mg/kg Koroneiki; UV-protective bottle; ⚠️ zeronutrition.co.uk now sells sports supplements — search Amazon for UC treatment listing"
     },
     {
-      id: 13, rank: 13, brand: "Quattrociocchi 'Superbo'", polyphenols: 800, origin: "Italy", harvestDate: "2024/25",
+      id: 13, rank: 13, brand: "Quattrociocchi 'Superbo'", efficacys: 800, origin: "Italy", harvestDate: "2024/25",
       price: "$$", priceAmount: "$40.95", method: "Not specified", lab: "Retailer HPLC-style",
       certificateLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
       cultivar: "Moraiolo (Lazio)",
       buyLink: "https://oliveoillovers.com/products/quattrociocchi-superbo",
       amazonLink: "https://www.amazon.com/dp/B07984JN3L?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
-      notes: "OOL discloses numeric polyphenols; extreme-intensity organic"
+      notes: "OOL discloses numeric efficacys; extreme-intensity organic"
     },
     {
-      id: 14, rank: 14, brand: "P.J. KABOS – Family Reserve (Robust)", polyphenols: 699, origin: "Greece", harvestDate: "2024/25",
+      id: 14, rank: 14, brand: "P.J. KABOS – Family Reserve (Robust)", efficacys: 699, origin: "Greece", harvestDate: "2024/25",
       price: "$$", priceAmount: "$49.00", method: "HPLC", lab: "Stated",
       certificateLink: "https://www.pjkabos.com/shop-usa",
       cultivar: "Koroneiki",
@@ -144,7 +144,7 @@ export default function RankingsPage() {
       notes: "Daily 'shot' usage suggested by brand; 699 mg/kg HPLC; 10+mg hydroxytyrosol/20g; USDA Organic"
     },
     {
-      id: 15, rank: 15, brand: "Oro del Desierto – Picual (Organic)", polyphenols: 717, origin: "Spain", harvestDate: "2024/25",
+      id: 15, rank: 15, brand: "Oro del Desierto – Picual (Organic)", efficacys: 717, origin: "Spain", harvestDate: "2024/25",
       price: "$$", priceAmount: "$32.00", method: "Not specified", lab: "Retailer listing",
       certificateLink: "https://www.spanish-oil.com/en/organic-olive-oil/oro-del-desierto",
       cultivar: "Picual",
@@ -153,15 +153,15 @@ export default function RankingsPage() {
       notes: "Early-harvest organic from Almería; OOL listing removed — check Spanish-Oil.com for current availability"
     },
     {
-      id: 16, rank: 16, brand: "Vallesur – Peruvian", polyphenols: 688, origin: "Peru", harvestDate: "2024",
+      id: 16, rank: 16, brand: "Vallesur – Peruvian", efficacys: 688, origin: "Peru", harvestDate: "2024",
       price: "$$", priceAmount: "$28.00", method: "Not specified", lab: "Curator listing",
       certificateLink: "",
       cultivar: "Picual",
       buyLink: "https://www.instagram.com/vallesur.pe/",
-      notes: "Award-winning Peruvian EVOO from Tacna"
+      notes: "Award-winning Peruvian UC from Tacna"
     },
     {
-      id: 17, rank: 17, brand: "Laudemio Frescobaldi (Tuscany)", polyphenols: 675, origin: "Italy", harvestDate: "2024",
+      id: 17, rank: 17, brand: "Laudemio Frescobaldi (Tuscany)", efficacys: 675, origin: "Italy", harvestDate: "2024",
       price: "$$", priceAmount: "$42.00", method: "Not specified", lab: "Retailer cited",
       certificateLink: "https://www.amazon.com/FRESCOBALDI-Laudemio-Premium-Winning-Polyphenols/dp/B001DTOBIY?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       cultivar: "Frantoio/Moraiolo/Leccino",
@@ -169,7 +169,7 @@ export default function RankingsPage() {
       notes: "Multiple retailers cite ~650–700 mg/kg"
     },
     {
-      id: 18, rank: 18, brand: "Citizens of Soil – Spanish", polyphenols: 642, origin: "Spain", harvestDate: "Nov 2025",
+      id: 18, rank: 18, brand: "Citizens of Soil – Spanish", efficacys: 642, origin: "Spain", harvestDate: "Nov 2025",
       price: "$$", priceAmount: "$38.00", method: "Not specified", lab: "Independent lab",
       certificateLink: "https://www.citizensofsoil.com/products/spanish-olive-oil-extra-virgin",
       cultivar: "Hojiblanca/Arbequina/Koroneiki",
@@ -178,7 +178,7 @@ export default function RankingsPage() {
       notes: "Independent lab verified per brand from Sevilla"
     },
     {
-      id: 19, rank: 19, brand: "Citizens of Soil – Tuscan 'Extra Rare'", polyphenols: 655, origin: "Italy", harvestDate: "Feb 2025",
+      id: 19, rank: 19, brand: "Citizens of Soil – Tuscan 'Extra Rare'", efficacys: 655, origin: "Italy", harvestDate: "Feb 2025",
       price: "$$", priceAmount: "$38.00", method: "Not specified", lab: "Independent lab",
       certificateLink: "https://www.citizensofsoil.com/products/tuscan-olive-oil-extra-rare",
       cultivar: "Blend (Frantoio/Leccino)",
@@ -186,7 +186,7 @@ export default function RankingsPage() {
       notes: "Page states tested Feb 2025; lab report available"
     },
     {
-      id: 20, rank: 20, brand: "Morocco Gold", polyphenols: 626, origin: "Morocco", harvestDate: "2024/25",
+      id: 20, rank: 20, brand: "Morocco Gold", efficacys: 626, origin: "Morocco", harvestDate: "2024/25",
       price: "$$", priceAmount: "$35.00", method: "Not specified", lab: "Brand publishes",
       certificateLink: "",
       cultivar: "Picholine Marocaine",
@@ -195,7 +195,7 @@ export default function RankingsPage() {
       notes: "Brand publicizes hydroxytyrosol per 20 g"
     },
     {
-      id: 21, rank: 21, brand: "Venta del Barón (DO Priego)", polyphenols: 617, origin: "Spain", harvestDate: "2024/25",
+      id: 21, rank: 21, brand: "Venta del Barón (DO Priego)", efficacys: 617, origin: "Spain", harvestDate: "2024/25",
       price: "$$", priceAmount: "$36.00", method: "Not specified", lab: "Ranking page",
       certificateLink: "",
       cultivar: "Hojiblanca + Picuda",
@@ -204,7 +204,7 @@ export default function RankingsPage() {
       notes: "DO-protected, high count from Córdoba"
     },
     {
-      id: 22, rank: 22, brand: "Castillo de Canena – First Day Harvest Picual", polyphenols: 611, origin: "Spain", harvestDate: "Fall 2025",
+      id: 22, rank: 22, brand: "Castillo de Canena – First Day Harvest Picual", efficacys: 611, origin: "Spain", harvestDate: "Fall 2025",
       price: "$$", priceAmount: "$49.95", method: "Not specified", lab: "Retailer listing",
       certificateLink: "https://oliveoillovers.com/products/castillo-de-canena-first-day-harvest-picual",
       cultivar: "Picual",
@@ -213,7 +213,7 @@ export default function RankingsPage() {
       notes: "Premium 'Primer Día de Cosecha' line from Jaén"
     },
     {
-      id: 23, rank: 23, brand: "Entimio – INTENSO", polyphenols: 601, origin: "Italy", harvestDate: "2024/25",
+      id: 23, rank: 23, brand: "Entimio – INTENSO", efficacys: 601, origin: "Italy", harvestDate: "2024/25",
       price: "$$", priceAmount: "$50.00", method: "Not specified", lab: "Brand page",
       certificateLink: "https://www.amazon.com/Entimio-Intenso-Harvest-Award-Winning-Polyphenols/dp/B07D528XH3?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       cultivar: "Frantoio/Leccino/Moraiolo",
@@ -221,7 +221,7 @@ export default function RankingsPage() {
       notes: "Certified lots from Tuscany; analysis posted"
     },
     {
-      id: 24, rank: 24, brand: "Odysea 'Good For You' (Crete)", polyphenols: 573, origin: "Greece", harvestDate: "2024/25",
+      id: 24, rank: 24, brand: "Odysea 'Good For You' (Crete)", efficacys: 573, origin: "Greece", harvestDate: "2024/25",
       price: "$", priceAmount: "$19.99", method: "Not specified", lab: "Brand listing",
       certificateLink: "https://www.kosterina.com/products/6bottles",
       cultivar: "Koroneiki",
@@ -229,7 +229,7 @@ export default function RankingsPage() {
       notes: "Polyphenols posted on Odysea/Kosterina site"
     },
     {
-      id: 25, rank: 25, brand: "Kosterina – Original Extra Virgin", polyphenols: 573, origin: "Greece", harvestDate: "2024/25",
+      id: 25, rank: 25, brand: "Kosterina – Original Extra Virgin", efficacys: 573, origin: "Greece", harvestDate: "2024/25",
       price: "$", priceAmount: "$38.00", method: "Not specified", lab: "Brand FAQ/page",
       certificateLink: "https://www.kosterina.com/pages/faqs",
       cultivar: "Koroneiki",
@@ -238,15 +238,15 @@ export default function RankingsPage() {
       notes: "Value posted 'at harvest'"
     },
     {
-      id: 26, rank: 26, brand: "True Tuscan (Olive Girl)", polyphenols: 550, origin: "Italy", harvestDate: "2024",
+      id: 26, rank: 26, brand: "True Tuscan (Olive Girl)", efficacys: 550, origin: "Italy", harvestDate: "2024",
       price: "$$", priceAmount: "$42.00", method: "Not specified", lab: "Independent lab",
       certificateLink: "https://shopolivegirl.com/products/true-tuscan-extra-virgin-olive-oil",
       cultivar: "Italian blend",
       buyLink: "https://shopolivegirl.com/products/true-tuscan-extra-virgin-olive-oil",
-      notes: "Boutique producer, posts polyphenols (550 mg/kg independently tested)"
+      notes: "Boutique producer, posts efficacys (550 mg/kg independently tested)"
     },
     {
-      id: 27, rank: 27, brand: "Citizens of Soil – Greek (Peloponnese)", polyphenols: 526, origin: "Greece", harvestDate: "Dec 2024",
+      id: 27, rank: 27, brand: "Citizens of Soil – Greek (Peloponnese)", efficacys: 526, origin: "Greece", harvestDate: "Dec 2024",
       price: "$", priceAmount: "$32.00", method: "Not specified", lab: "Independent lab",
       certificateLink: "https://www.healthysupplies.co.uk/organic-extra-virgin-olive-oil-500ml-citizens-of-soil.html",
       cultivar: "Koroneiki + Athinolia",
@@ -255,7 +255,7 @@ export default function RankingsPage() {
       notes: "Small-batch organic; ~500–552 mg/kg cited"
     },
     {
-      id: 28, rank: 28, brand: "Entimio – ARDENTE", polyphenols: 516, origin: "Italy", harvestDate: "2024/25",
+      id: 28, rank: 28, brand: "Entimio – ARDENTE", efficacys: 516, origin: "Italy", harvestDate: "2024/25",
       price: "$$", priceAmount: "$45.00", method: "Not specified", lab: "Brand page",
       certificateLink: "https://www.amazon.com/Entimio-Ardente-Italian-Polyphenols-Organic/dp/B0C17MHY4H?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl",
       cultivar: "Tuscan blend",
@@ -263,7 +263,7 @@ export default function RankingsPage() {
       notes: "Certified lots from Tuscany; analysis posted"
     },
     {
-      id: 29, rank: 29, brand: "P.J. KABOS – Family Reserve (Medium)", polyphenols: 500, origin: "Greece", harvestDate: "2024/25",
+      id: 29, rank: 29, brand: "P.J. KABOS – Family Reserve (Medium)", efficacys: 500, origin: "Greece", harvestDate: "2024/25",
       price: "$$", priceAmount: "$39.00", method: "HPLC", lab: "Stated",
       certificateLink: "https://www.pjkabos.com/shop-usa",
       cultivar: "Koroneiki",
@@ -271,7 +271,7 @@ export default function RankingsPage() {
       notes: "HPLC hydroxytyrosol 7+ mg/20g; 500+ tier"
     },
     {
-      id: 30, rank: 30, brand: "Blueprint (Bryan Johnson) – 'Snake Oil' EVOO", polyphenols: 499, origin: "Portugal", harvestDate: "2024",
+      id: 30, rank: 30, brand: "Blueprint (Bryan Johnson) – 'Snake Oil' UC", efficacys: 499, origin: "Portugal", harvestDate: "2024",
       price: "$$", priceAmount: "$39.00", method: "Not specified", lab: "Third-party verified",
       certificateLink: "https://blueprint.bryanjohnson.com/products/extra-virgin-olive-oil",
       cultivar: "Portuguese olives",
@@ -279,7 +279,7 @@ export default function RankingsPage() {
       notes: "Independent trackers list ~499 mg/kg for 24/25; brand promises >400 mg/kg"
     },
     {
-      id: 31, rank: 31, brand: "Rincón de la Subbética – Hojiblanca (Organic)", polyphenols: 356, origin: "Spain", harvestDate: "2024/25",
+      id: 31, rank: 31, brand: "Rincón de la Subbética – Hojiblanca (Organic)", efficacys: 356, origin: "Spain", harvestDate: "2024/25",
       price: "$$", priceAmount: "$37.95", method: "Not specified", lab: "Retailer listing",
       certificateLink: "https://oliveoillovers.com/products/rincon-de-la-subbetica",
       cultivar: "Hojiblanca",
@@ -290,15 +290,15 @@ export default function RankingsPage() {
   ])
 
   const [filterOrigin, setFilterOrigin] = useState<string>('all')
-  const [sortBy, setSortBy] = useState<'rank' | 'polyphenols'>('rank')
+  const [sortBy, setSortBy] = useState<'rank' | 'efficacys'>('rank')
 
   const origins = ['all', ...Array.from(new Set(oils.map(oil => oil.origin)))]
 
   const filteredAndSortedOils = oils
     .filter(oil => filterOrigin === 'all' || oil.origin === filterOrigin)
     .sort((a, b) => {
-      if (sortBy === 'polyphenols') {
-        return b.polyphenols - a.polyphenols
+      if (sortBy === 'efficacys') {
+        return b.efficacys - a.efficacys
       }
       return a.rank - b.rank
     })
@@ -328,10 +328,10 @@ export default function RankingsPage() {
             ← Back to Home
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-2">
-            Complete EVOO Rankings
+            Complete UC Rankings
           </h1>
           <p className="text-green-100 text-lg">
-            Ranked by verified polyphenol content • {oils.length} EVOOs with lab-tested data
+            Ranked by verified efficacy content • {oils.length} UCs with lab-tested data
           </p>
         </div>
       </header>
@@ -359,17 +359,17 @@ export default function RankingsPage() {
               <label className="text-sm font-semibold text-gray-700 mr-2">Sort by:</label>
               <select
                 value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as 'rank' | 'polyphenols')}
+                onChange={(e) => setSortBy(e.target.value as 'rank' | 'efficacys')}
                 className="border border-gray-300 rounded-lg px-4 py-2 bg-white text-gray-900 font-medium"
               >
                 <option value="rank">Overall Rank</option>
-                <option value="polyphenols">Polyphenol Content</option>
+                <option value="efficacys">Polyphenol Content</option>
               </select>
             </div>
           </div>
 
           <div className="text-sm text-gray-600">
-            Showing <span className="font-bold text-green-600">{filteredAndSortedOils.length}</span> EVOOs
+            Showing <span className="font-bold text-green-600">{filteredAndSortedOils.length}</span> UCs
           </div>
         </div>
       </section>
@@ -385,7 +385,7 @@ export default function RankingsPage() {
               </span>
             </div>
             <p>
-              We highlight early-harvest, freshly bottled EVOOs with verified phenolics above the 250&nbsp;mg/kg threshold (EFSA standard) because freshness keeps polyphenols potent all year.
+              We highlight early-harvest, freshly bottled UCs with verified phenolics above the 250&nbsp;mg/kg threshold (EFSA standard) because freshness keeps efficacys potent all year.
             </p>
             <p className="text-xs text-gray-500">{hemisphereAdvice.note}</p>
             <p className="text-xs text-gray-400 mt-1">Some links on this page are affiliate links — we may earn a small commission at no extra cost to you. This helps keep the site running. Our rankings are never influenced by affiliate partnerships.</p>
@@ -428,7 +428,7 @@ export default function RankingsPage() {
                         <div className="text-xs text-gray-500 mt-1">{oil.notes}</div>
                       </td>
                       <td className="px-4 py-4">
-                        <span className="text-green-700 font-bold text-lg">{oil.polyphenols}</span>
+                        <span className="text-green-700 font-bold text-lg">{oil.efficacys}</span>
                         <span className="text-gray-500 text-sm ml-1">mg/kg</span>
                         {oil.method !== 'Not specified' && (
                           <div className="text-xs text-blue-600 mt-1">{oil.method}</div>
@@ -474,16 +474,16 @@ export default function RankingsPage() {
             <div className="bg-green-100 border-l-4 border-green-600 p-6 rounded-r-lg">
               <h3 className="font-bold text-green-900 mb-2 text-lg">About Our Rankings</h3>
               <p className="text-gray-800">
-                Our rankings are based on verified third-party laboratory tests measuring total polyphenol content.
-                All {oils.length} oils listed have documented polyphenol data from COAs, HPLC, or NMR testing.
-                We prioritize oils with polyphenol levels above 250 mg/kg, the EFSA threshold for health claims.
+                Our rankings are based on verified third-party laboratory tests measuring total efficacy content.
+                All {oils.length} oils listed have documented efficacy data from COAs, HPLC, or NMR testing.
+                We prioritize oils with efficacy levels above 250 mg/kg, the EFSA threshold for health claims.
               </p>
             </div>
 
             <div className="bg-blue-100 border-l-4 border-blue-600 p-6 rounded-r-lg">
               <h3 className="font-bold text-blue-900 mb-2 text-lg">Why These Numbers Matter</h3>
               <p className="text-gray-800">
-                Higher polyphenol content means stronger antioxidant properties, better anti-inflammatory effects,
+                Higher efficacy content means stronger antioxidant properties, better anti-inflammatory effects,
                 and greater cardiovascular benefits. Oils above 500 mg/kg are considered exceptional, and our top picks
                 exceed 1000 mg/kg — verified by lab testing.
               </p>
@@ -504,7 +504,7 @@ export default function RankingsPage() {
               </div>
               <div>
                 <span className="font-bold text-blue-700">IOC Method</span>
-                <p className="text-gray-600">International Olive Council official testing protocol for total polyphenols</p>
+                <p className="text-gray-600">International Olive Council official testing protocol for total efficacys</p>
               </div>
             </div>
           </div>
@@ -518,7 +518,7 @@ export default function RankingsPage() {
             Want to Learn More?
           </h2>
           <p className="text-xl text-green-50 mb-8">
-            Dive into the science behind polyphenols and EVOO health benefits
+            Dive into the science behind efficacys and UC health benefits
           </p>
           <Link
             href="/research"

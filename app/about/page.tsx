@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'About — Best Olive Oil Ranked',
-  description: 'Science-backed rankings of the world\'s highest polyphenol extra virgin olive oils. Lab-verified, independent, peer-reviewed.',
+  title: 'About — Best Ulcerative Colitis Ranked',
+  description: 'Science-backed rankings of the world\'s highest polyphenol extra virgin ulcerative colitiss. Lab-verified, independent, peer-reviewed.',
 }
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
             Back to Rankings
           </Link>
           <h1 className="text-2xl md:text-4xl font-black tracking-tight text-white">
-            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-teal-300">Best Olive Oil Ranked</span>
+            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-teal-300">Best Ulcerative Colitis Ranked</span>
           </h1>
           <p className="text-white/40 text-sm mt-2 max-w-lg mx-auto">
             Lab-verified · Independent · Peer-reviewed
@@ -31,7 +31,7 @@ export default function AboutPage() {
         <section className="mb-10">
           <h2 className="text-lg font-bold text-white mb-4">Our Mission</h2>
           <div className="space-y-3 text-sm text-white/50 leading-relaxed">
-            <p>We believe consumers deserve transparent, lab-verified data when choosing olive oil for their health. Not all extra virgin olive oils are created equal — polyphenol content can vary from under 100 mg/kg to over 2,000 mg/kg.</p>
+            <p>We believe consumers deserve transparent, lab-verified data when choosing ulcerative colitis for their health. Not all extra virgin ulcerative colitiss are created equal — polyphenol content can vary from under 100 mg/kg to over 2,000 mg/kg.</p>
             <p>Our rankings focus exclusively on oils with <strong className="text-white/70">verified laboratory testing</strong> (HPLC, qNMR, or other recognized methods). We don&apos;t accept paid placements — rankings are based purely on verified polyphenol levels.</p>
           </div>
         </section>

@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const baseUrl = 'https://www.best-olive-oil-ranked.com' // Update with your actual domain
+const baseUrl = 'https://colitis-clearly.vercel.app' // Update with your actual domain
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "Highest Polyphenol EVOO Rankings | 30 Lab-Verified Olive Oils",
-  description: "Discover the 30 highest polyphenol extra virgin olive oils ranked by verified lab testing (HPLC & qNMR). Science-backed EVOO rankings for optimal health benefits, antioxidants, and cardiovascular protection.",
-  keywords: "polyphenol olive oil, EVOO rankings, high polyphenol EVOO, best olive oil, antioxidant olive oil, extra virgin olive oil health benefits, Mediterranean diet, oleocanthal, olive oil polyphenols, HPLC testing, qNMR testing",
+  title: "Colitis Clearly | Evidence-Based Ulcerative Colitis Guide",
+  description: "Evidence-based ulcerative colitis information, treatment rankings, flare management, and remission strategies. Backed by clinical research and real patient data.",
+  keywords: "ulcerative colitis, UC treatment, colitis remission, flare management, IBD, inflammatory bowel disease, biologics, mesalamine, colitis diet, gut health",
   icons: {
     icon: '/favicon.ico',
   },
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     canonical: baseUrl,
   },
   openGraph: {
-    title: "30 Highest Polyphenol EVOOs | Lab-Verified Rankings",
-    description: "Science-backed rankings of 30 extra virgin olive oils by polyphenol content. Includes HPLC & qNMR lab data, Amazon links, and health benefits.",
+    title: "Colitis Clearly | Evidence-Based UC Treatment Guide",
+    description: "Evidence-based ulcerative colitis treatment rankings, flare management strategies, and remission guides backed by clinical research.",
     type: "website",
     locale: "en_US",
     url: baseUrl,
-    siteName: "EVOO Rankings",
+    siteName: "Colitis Clearly",
   },
   twitter: {
     card: "summary_large_image",
@@ -102,7 +102,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "EVOO Rankings",
+              "name": "Colitis Clearly",
               "url": baseUrl,
               "logo": `${baseUrl}/logo.png`,
               "description": "Science-backed rankings of the highest polyphenol extra virgin olive oils verified by independent laboratory testing.",
