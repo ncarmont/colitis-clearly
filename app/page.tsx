@@ -3,7 +3,9 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import researchPapers from './research-carousel.json'
+import metaFindings from './meta-analysis-findings.json'
 import ResearchCarousel from './ResearchCarousel'
+import MetaAnalysisTeaser from './MetaAnalysisTeaser'
 import HeroBackground from './HeroBackground'
 import ScrollReveal from './ScrollReveal'
 import WorldMap from '@/components/WorldMap'
@@ -938,6 +940,9 @@ export default function HomePage() {
 
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
       </header>
+
+      {/* Meta-Analysis Teaser — key stats from shared data */}
+      <MetaAnalysisTeaser findings={metaFindings} studyCount={researchPapers.length} />
 
       {/* Research Carousel — auto-scrolling client component */}
       <ResearchCarousel papers={researchPapers} />

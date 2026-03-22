@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import researchArticles from '../research-carousel.json'
+import keyFindingsData from '../meta-analysis-findings.json'
 
 export const metadata = {
   title: 'Olive Oil Research — Peer-Reviewed Studies & Meta-Analysis | EVOO Rankings',
@@ -56,21 +57,7 @@ export default function ResearchPage() {
     grouped[key].push(a)
   })
 
-  const keyFindings = [
-    { stat: '31%', label: 'CVD risk reduction', source: 'PREDIMED Trial' },
-    { stat: '28%', label: 'lower dementia risk', source: 'Harvard 28-yr study' },
-    { stat: '30min', label: 'cancer cell apoptosis', source: 'Celano et al.' },
-    { stat: '10×', label: 'antioxidant power vs green tea', source: 'Visioli et al.' },
-    { stat: '7.1', label: 'mmHg blood pressure drop', source: 'Doménech et al.' },
-    { stat: '30%', label: 'hepatic fat reduction', source: 'Priore et al.' },
-    { stat: 'P=.008', label: 'depression score reduction', source: 'Foshati et al.' },
-    { stat: 'P=.005', label: 'bone density protection in women', source: 'PREDIMED-Plus' },
-    { stat: '47%', label: 'psoriasis remission rate (PASI 75)', source: 'MEDIPSO Trial' },
-    { stat: '−0.79', label: 'mg/L CRP reduction in CKD', source: 'Zhou et al. 2026' },
-    { stat: '+17%', label: 'testosterone increase in 3 weeks', source: 'Derouiche et al.' },
-    { stat: '32,141', label: 'cancer DNA sites epigenetically altered', source: 'Del Saz-Lara et al. 2023' },
-    { stat: '7.4×', label: 'selectivity of EVOO polyphenols for pathological vs. normal cells (AMD model)', source: 'Marrero et al. 2024' },
-  ]
+  const keyFindings = keyFindingsData
 
   return (
     <main className="min-h-screen bg-[#060e1a]">
