@@ -302,8 +302,18 @@ export default function Top10PolyphenolOilsPage() {
                 </div>
               </div>
 
-              <Link href="/" className="text-green-400 hover:text-green-300 text-sm font-semibold">
-                View in Rankings →
+              <div className="flex gap-3 mb-3">
+                <a
+                  href="https://www.pamako.co.uk/?ref=roaqpdtk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-yellow-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-yellow-500 transition-all"
+                >
+                  <span>Buy Pamako →</span>
+                </a>
+              </div>
+              <Link href="/rankings" className="text-green-400 hover:text-green-300 text-sm font-semibold">
+                View Full Rankings →
               </Link>
             </div>
 
@@ -346,8 +356,18 @@ export default function Top10PolyphenolOilsPage() {
                 </div>
               </div>
 
-              <Link href="/" className="text-green-400 hover:text-green-300 text-sm font-semibold">
-                View in Rankings →
+              <div className="flex gap-3 mb-3">
+                <a
+                  href="https://www.amazon.co.uk/dp/B0DCP9YNBT?&linkCode=ll1&tag=bestoliveoilr-20&language=en_GB&ref_=as_li_ss_tl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-orange-500 transition-all"
+                >
+                  <span>Buy on Amazon →</span>
+                </a>
+              </div>
+              <Link href="/rankings" className="text-green-400 hover:text-green-300 text-sm font-semibold">
+                View Full Rankings →
               </Link>
             </div>
 
@@ -390,8 +410,18 @@ export default function Top10PolyphenolOilsPage() {
                 </div>
               </div>
 
-              <Link href="/" className="text-green-400 hover:text-green-300 text-sm font-semibold">
-                View in Rankings →
+              <div className="flex gap-3 mb-3">
+                <a
+                  href="https://www.amazon.com/KABOS-Phenolic-Organic-Pungent-Extracted/dp/B0C9WNNVVD?&linkCode=ll1&tag=bestoliveoilr-20&language=en_US&ref_=as_li_ss_tl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-orange-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-orange-500 transition-all"
+                >
+                  <span>Buy on Amazon →</span>
+                </a>
+              </div>
+              <Link href="/rankings" className="text-green-400 hover:text-green-300 text-sm font-semibold">
+                View Full Rankings →
               </Link>
             </div>
 
@@ -434,8 +464,8 @@ export default function Top10PolyphenolOilsPage() {
                 </div>
               </div>
 
-              <Link href="/" className="text-green-400 hover:text-green-300 text-sm font-semibold">
-                View in Rankings →
+              <Link href="/rankings" className="text-green-400 hover:text-green-300 text-sm font-semibold">
+                View Full Rankings →
               </Link>
             </div>
 
@@ -514,7 +544,7 @@ export default function Top10PolyphenolOilsPage() {
                 </div>
               </div>
 
-              <Link href="/" className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-500 transition-all mt-4">
+              <Link href="/rankings" className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-500 transition-all mt-4">
                 <span>View All Details</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -803,7 +833,7 @@ export default function Top10PolyphenolOilsPage() {
               <strong>Our recommendation:</strong> Choose any oil with 500+ mg/kg polyphenols from this list. Store properly in a dark, cool place, and use within 6 months of opening. Consume 2-4 tablespoons daily for maximum benefits.
             </p>
             <Link
-              href="/"
+              href="/rankings"
               className="inline-flex items-center gap-2 bg-white text-green-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-50 transition-all shadow-xl"
             >
               <span>Explore Full Rankings & Buy Links</span>
