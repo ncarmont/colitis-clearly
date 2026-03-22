@@ -1,5 +1,86 @@
 [
   {
+    "slug": "predicct-calprotectin-flare-prediction",
+    "href": "/research/biomarkers",
+    "title": "PREdiCCt: Faecal calprotectin ≥250 predicts objective flare with aHR 3.25",
+    "paper": "PREdiCCt cohort. Gut 2025. PMID: 41554630",
+    "finding": "In the largest prospective IBD flare-prediction cohort, FC ≥250 µg/g vs <50 predicted objective UC flare with aHR 3.25 — even in patients reporting remission.",
+    "category": "Biomarkers",
+    "date": "2025-07-01"
+  },
+  {
+    "slug": "mesalamine-adherence-hr-5-5",
+    "href": "/blog/understanding-ulcerative-colitis",
+    "title": "Mesalamine non-adherence multiplies relapse risk by 5.5×",
+    "paper": "Kane et al. Am J Med. 2003. PMID: 12543288",
+    "finding": "Prospective data showed non-adherent UC patients had HR 5.5 for relapse — making medication adherence the single highest-leverage modifiable factor.",
+    "category": "Treatment",
+    "date": "2003-01-01"
+  },
+  {
+    "slug": "aga-2024-living-guideline",
+    "href": "/research/clinical-trials",
+    "title": "AGA 2024 Living Guideline: early advanced therapy for moderate-to-severe UC",
+    "paper": "AGA Clinical Practice Guideline. Gastroenterology. Dec 2024",
+    "finding": "AGA now recommends initiating advanced therapy early rather than prolonged step-up delays after 5-ASA failure, with structured monitoring timelines.",
+    "category": "Guidelines",
+    "date": "2024-12-01"
+  },
+  {
+    "slug": "bsg-2025-ibd-guideline",
+    "href": "/research/clinical-trials",
+    "title": "BSG 2025: Comprehensive adult IBD guideline with treat-to-target monitoring",
+    "paper": "British Society of Gastroenterology. Gut 2025",
+    "finding": "BSG pragmatic thresholds: FC <100 likely endoscopic remission; FC >200 low likelihood. Symptoms by 3 months, biomarkers 3–6 months, endoscopy 6–12 months.",
+    "category": "Guidelines",
+    "date": "2025-01-01"
+  },
+  {
+    "slug": "predicct-meat-intake-flare",
+    "href": "/blog/uc-diet-guide",
+    "title": "PREdiCCt: Highest meat intake quartile doubles objective flare risk",
+    "paper": "PREdiCCt cohort. Gut 2025. PMID: 41554630",
+    "finding": "Highest vs lowest quartile total meat intake in UC was associated with aHR 1.95 for objective flare — one of the strongest dietary signals.",
+    "category": "Diet",
+    "date": "2025-07-01"
+  },
+  {
+    "slug": "stress-3-6x-flare-risk",
+    "href": "/blog/uc-and-mental-health",
+    "title": "High perceived stress linked to 3.6× higher odds of UC flare",
+    "paper": "Sauk et al. Clin Gastroenterol Hepatol. 2023",
+    "finding": "Stress was the #1 patient-reported flare trigger (37.9% of 27,000+ forum posts), and prospective data showed 3.6× flare odds with high perceived stress.",
+    "category": "Mental Health",
+    "date": "2023-06-01"
+  },
+  {
+    "slug": "curcumin-cochrane-rr-024",
+    "href": "/blog/understanding-ulcerative-colitis",
+    "title": "Cochrane: Curcumin adjunct reduces UC relapse to 4% vs 18% (RR 0.24)",
+    "paper": "Cochrane Database of Systematic Reviews",
+    "finding": "Curcumin 2g/day as add-on to mesalamine cut 6-month relapse from 18% to 4%. ECCO/ESPGHAN now recognises it as a potential additional therapy.",
+    "category": "Supplements",
+    "date": "2023-01-01"
+  },
+  {
+    "slug": "fmt-meta-analysis-or-225",
+    "href": "/research/emerging",
+    "title": "FMT meta-analysis: OR 2.25 for combined clinical + endoscopic remission",
+    "paper": "Meta-analysis of 14 RCTs. PMID: 35766805",
+    "finding": "Multi-donor FMT (OR 3.32) and oral delivery (OR 3.15) showed best results. AGA recommends FMT for UC only in clinical trial settings (2024).",
+    "category": "Microbiome",
+    "date": "2022-06-01"
+  },
+  {
+    "slug": "cmv-antivirals-colectomy-reduction",
+    "href": "/research/clinical-trials",
+    "title": "Antivirals in CMV+ steroid-refractory UC reduce colectomy odds by 80%",
+    "paper": "Meta-analysis. PMID: 29392650",
+    "finding": "Antiviral therapy in CMV-positive steroid-refractory UC associated with colectomy OR 0.20 — a dramatic reduction in surgical need.",
+    "category": "Treatment",
+    "date": "2018-02-01"
+  },
+  {
     "slug": "act-trials-infliximab",
     "href": "/blog/biologics-for-uc-compared",
     "title": "Infliximab established anti-TNF induction and maintenance benefit in ACT 1 and ACT 2",
@@ -9,22 +90,40 @@
     "date": "2005-12-08"
   },
   {
-    "slug": "ultra-adalimumab",
-    "href": "/blog/biologics-for-uc-compared",
-    "title": "ULTRA trials defined adalimumab's place as a self-injected anti-TNF option",
-    "paper": "Sandborn et al. Gastroenterology. 2012. PMID: 22062358",
-    "finding": "Week-8 remission reached about 17-19%, giving patients an at-home anti-TNF pathway for moderate to severe UC.",
-    "category": "Biologics",
-    "date": "2012-02-01"
+    "slug": "u-achieve-upadacitinib",
+    "href": "/blog/jak-inhibitors-uc",
+    "title": "U-ACHIEVE: Upadacitinib delivers 26–34% remission at week 8 (NNT ≈ 3–5)",
+    "paper": "Danese et al. Lancet. 2022. PMID: 35644166",
+    "finding": "Upadacitinib reached 74% response and 26% remission at week 8, with maintenance at 42–52% vs 12% — one of the strongest oral signals in UC.",
+    "category": "Small Molecules",
+    "date": "2022-06-04"
   },
   {
     "slug": "gemini-1-vedolizumab",
     "href": "/blog/biologics-for-uc-compared",
-    "title": "GEMINI 1 put gut-selective trafficking blockade into mainstream UC care",
+    "title": "GEMINI 1: Vedolizumab gut-selective approach with 42% remission at week 52",
     "paper": "Feagan et al. N Engl J Med. 2013. PMID: 23964932",
     "finding": "Vedolizumab produced about 17% remission at week 6 and around 42% remission at week 52 with a favorable safety profile.",
     "category": "Biologics",
     "date": "2013-08-22"
+  },
+  {
+    "slug": "lucent-mirikizumab",
+    "href": "/blog/biologics-for-uc-compared",
+    "title": "LUCENT: Mirikizumab maintenance remission 49.9% at week 40",
+    "paper": "D'Haens et al. Lancet. 2023",
+    "finding": "Mirikizumab produced about 63% response with 24% remission at week 12 and 49.9% maintenance remission — strongest IL-23 maintenance signal.",
+    "category": "Biologics",
+    "date": "2023-05-13"
+  },
+  {
+    "slug": "octave-tofacitinib",
+    "href": "/blog/jak-inhibitors-uc",
+    "title": "OCTAVE: Tofacitinib oral JAK inhibitor with rapid symptom control",
+    "paper": "Sandborn et al. N Engl J Med. 2017. PMID: 28467869",
+    "finding": "Tofacitinib reached about 59% response and 19% remission at week 8, with maintenance at 34–41% vs 11%.",
+    "category": "Small Molecules",
+    "date": "2017-05-04"
   },
   {
     "slug": "unifi-ustekinumab",
@@ -36,57 +135,30 @@
     "date": "2019-09-26"
   },
   {
-    "slug": "octave-tofacitinib",
-    "href": "/blog/jak-inhibitors-uc",
-    "title": "OCTAVE showed that an oral JAK inhibitor could induce remission quickly",
-    "paper": "Sandborn et al. N Engl J Med. 2017. PMID: 28467869",
-    "finding": "Tofacitinib reached about 59% response and around 19% remission at week 8, changing the conversation about fast oral rescue.",
-    "category": "Small Molecules",
-    "date": "2017-05-04"
-  },
-  {
-    "slug": "u-achieve-upadacitinib",
-    "href": "/blog/jak-inhibitors-uc",
-    "title": "U-ACHIEVE pushed oral efficacy higher with selective JAK1 inhibition",
-    "paper": "Danese et al. Lancet. 2022. PMID: 35644166",
-    "finding": "Upadacitinib reached roughly 74% response and 26% remission at week 8, one of the strongest oral induction signals in UC.",
-    "category": "Small Molecules",
-    "date": "2022-06-04"
-  },
-  {
     "slug": "true-north-ozanimod",
     "href": "/rankings",
-    "title": "TRUE NORTH established oral S1P modulation as another advanced-therapy pathway",
+    "title": "TRUE NORTH: Ozanimod S1P modulation for moderate-to-severe UC",
     "paper": "Sandborn et al. N Engl J Med. 2021. PMID: 34587385",
-    "finding": "Ozanimod delivered about 18% remission at week 10 and helped broaden non-biologic, non-JAK options for moderate to severe UC.",
+    "finding": "Ozanimod delivered about 18% remission at week 10 and 37% maintenance among responders (NNT ≈ 5).",
     "category": "Small Molecules",
     "date": "2021-10-14"
   },
   {
-    "slug": "lucent-mirikizumab",
-    "href": "/blog/biologics-for-uc-compared",
-    "title": "LUCENT brought IL-23 p19 targeting into the UC biologic era",
-    "paper": "D'Haens et al. Lancet. 2023",
-    "finding": "Mirikizumab produced about 63% response with around 24% remission at week 12, reinforcing the shift toward IL-23-specific therapy.",
-    "category": "Biologics",
-    "date": "2023-05-13"
-  },
-  {
     "slug": "elevate-etrasimod",
     "href": "/rankings",
-    "title": "ELEVATE UC 12 and UC 52 confirmed etrasimod as an oral S1P option",
+    "title": "ELEVATE: Etrasimod confirmed as second oral S1P option",
     "paper": "Sandborn et al. Lancet. 2023. PMID: 36871574",
-    "finding": "Etrasimod showed around 53% response at week 12 and expanded the S1P class soon after its 2023 approval.",
+    "finding": "Etrasimod showed around 53% response at week 12 (NNT ≈ 10 induction) and expanded the S1P class after 2023 approval.",
     "category": "Small Molecules",
     "date": "2023-03-11"
   },
   {
-    "slug": "uc-systematic-review-2023",
-    "href": "/research/clinical-trials",
-    "title": "Systematic review data now frame how biologics and small molecules are sequenced",
-    "paper": "Ungaro et al. Aliment Pharmacol Ther. 2023",
-    "finding": "Comparative reviews emphasize that efficacy, prior exposure, safety, and speed all matter when positioning advanced UC therapies.",
-    "category": "Trials",
-    "date": "2023-11-01"
+    "slug": "vitamin-d-ibd-meta-analysis",
+    "href": "/research/emerging",
+    "title": "Vitamin D supplementation reduces IBD relapse (RR 0.64) — UC subgroup needs more data",
+    "paper": "RCT meta-analysis. PMID: 36579768",
+    "finding": "Across IBD, vitamin D supplementation reduced relapse RR to 0.64. UC-specific evidence remains underpowered but 45–50% of UC patients are deficient.",
+    "category": "Supplements",
+    "date": "2023-01-01"
   }
 ]

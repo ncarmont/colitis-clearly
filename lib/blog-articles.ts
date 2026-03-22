@@ -477,6 +477,126 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   },
 ]
 
+  {
+    slug: 'fmt-anti-inflammatory-diet-uc-remission',
+    title: 'FMT Plus an Anti-Inflammatory Diet Beat Standard Therapy in UC — And Diet Alone Maintained Remission for a Year',
+    description: 'A landmark RCT showed that combining fecal microbiota transplantation with an anti-inflammatory diet put UC patients into remission at nearly double the rate of standard treatment — and diet alone kept that remission going for 12 months. Here is what the trial found and what it means for your gut.',
+    category: 'Diet & Microbiome',
+    readTime: '10 min read',
+    datePublished: '2026-03-22',
+    intro: 'If your gastroenterologist told you that diet does not matter in ulcerative colitis, this randomised controlled trial published in Gut is going to make you want a second opinion. Researchers at AIIMS New Delhi showed that combining multidonor fecal microbiota transplantation (FMT) with a structured anti-inflammatory diet beat optimised standard medical therapy on every single outcome — clinical response, clinical remission, and deep remission. Then, after the FMT was finished, diet alone continued to maintain deep remission over 48 weeks while the standard-therapy arm hit zero. Yes, zero.',
+    keyPoints: [
+      'FMT combined with anti-inflammatory diet produced 65.7% clinical response vs 35.5% with standard therapy — an odds ratio of 3.5.',
+      'Deep remission (both clinical and endoscopic) reached 36.4% in the FMT-diet group vs only 8.7% with standard treatment — an odds ratio of 6.0.',
+      'After FMT ended, diet alone maintained deep remission in 25% of patients at 48 weeks versus 0% in the standard therapy group.',
+    ],
+    sections: [
+      {
+        title: 'Why this RCT matters more than it gets credit for',
+        paragraphs: [
+          'Most UC diet research is observational garbage. Someone eats fewer processed foods, feels better, and calls it a protocol. This trial is different: it is a registered RCT (ISRCTN15475780), it randomised 73 patients with endoscopically confirmed, mild-to-moderate UC into two arms, and it followed them for a full 48 weeks. The outcomes were not self-reported symptoms — they included colonoscopic assessment of mucosal healing.',
+          'Published in Gut in December 2022 (Kedia et al., PMID 35973787), the study ran at one of India's top academic centres. Patients were in their mid-30s on average, had active disease for roughly four years, and a third of them had pancolitis. This was not a cherry-picked, mild crowd.',
+        ],
+        callout: 'Gut is one of the most cited gastroenterology journals in the world. An RCT there with an OR of 6.0 for deep remission is not something you skip past.',
+      },
+      {
+        title: 'What the FMT-AID arm actually did',
+        paragraphs: [
+          'Patients in the intervention arm received seven weekly colonoscopic infusions of freshly prepared FMT from multiple rural donors. This multidonor approach matters: research increasingly suggests that donor diversity drives FMT efficacy in IBD, because you are trying to seed a more stable, diverse microbiome, not just transplant one person's bacteria.',
+          'Simultaneously, patients followed a structured anti-inflammatory diet. The diet emphasised vegetables, fruits, whole grains, lean proteins, and omega-3-rich foods while reducing ultra-processed foods, refined carbohydrates, and red meat — broadly aligned with a Mediterranean anti-inflammatory eating pattern. The diet was not a fad; it was designed to reduce bacterial endotoxin load, support gut barrier function, and shift the microbiome toward anti-inflammatory species.',
+          'After week 8, FMT stopped. Patients in the FMT-AID arm continued only on their baseline medications and the anti-inflammatory diet through week 48.',
+        ],
+      },
+      {
+        title: 'The numbers that should be on every UC forum',
+        paragraphs: [
+          'At 8 weeks, clinical response — meaning a meaningful drop in symptom score — occurred in 65.7% of the FMT-AID group versus 35.5% in the standard-therapy group. Odds ratio: 3.5. That is not a marginal statistical blip; that is nearly doubling the response rate.',
+          'Clinical remission at 8 weeks: 60% versus 32.3%, odds ratio 3.2. More than half the patients in the intervention arm were in remission after two months.',
+          'Deep remission — the holy grail that requires both clinical and endoscopic healing — reached 36.4% in the FMT-AID group versus 8.7% in standard therapy, odds ratio 6.0. To put that in perspective: the same endpoint for some biologics at week 8 sits around 16–26%. An odds ratio of 6.0 for deep remission in a dietary and microbiome intervention is genuinely striking.',
+        ],
+        bullets: [
+          '65.7% clinical response (FMT-AID) vs 35.5% (standard therapy) — OR 3.5, p=0.01',
+          '60% clinical remission (FMT-AID) vs 32.3% (standard therapy) — OR 3.2, p=0.02',
+          '36.4% deep remission (FMT-AID) vs 8.7% (standard therapy) — OR 6.0, p=0.03',
+          '25% maintained deep remission at 48 weeks on diet alone vs 0% with standard therapy, p=0.007',
+        ],
+        callout: 'Deep remission at 48 weeks: 25% on diet alone vs 0% on standard therapy. That is not a rounding error. That is a statistically significant difference in favour of the diet group.',
+      },
+      {
+        title: 'What the microbiome has to do with your next flare',
+        paragraphs: [
+          'Ulcerative colitis is not just a colon problem — it is a gut ecosystem problem. Patients with UC consistently show reduced microbial diversity, lower populations of short-chain fatty acid-producing bacteria like Faecalibacterium prausnitzii and Roseburia, and elevated pro-inflammatory species. This dysbiosis weakens the mucosal barrier, ramps up immune activation, and creates a cycle that diet and conventional medication alone often fail to break.',
+          'FMT interrupts this cycle by flooding the colon with a diverse donor microbiome. When it works, it can shift the resident community toward something more resilient. The anti-inflammatory diet then acts like fertiliser for those new species — feeding the short-chain fatty acid producers that reduce mucosal inflammation and tighten the epithelial barrier.',
+          'This is why the combination outperformed FMT alone in prior studies. The diet creates conditions where the transplanted microbiome can actually survive and compete against the pathobionts driving inflammation.',
+        ],
+      },
+      {
+        title: 'The anti-inflammatory diet: what it actually looks like',
+        paragraphs: [
+          'The trial did not publish a precise meal plan, but based on the dietary framework described and the broader anti-inflammatory diet literature, the principles are consistent: high fibre from diverse plant sources, fatty fish at least twice a week, olive oil as the primary cooking fat, minimal ultra-processed foods, no refined sugar spikes, and reduced red and processed meat.',
+          'This overlaps significantly with the Mediterranean diet and the IBD Anti-Inflammatory Diet (IBD-AID) developed at UMass Medical School. The IBD-AID specifically targets UC and Crohn's by emphasising prebiotic foods (oats, bananas, asparagus, Jerusalem artichokes) that feed beneficial bacteria, combined with probiotics and anti-inflammatory fats.',
+          'What this is not: a low-FODMAP diet, which is designed for IBS and can actually starve the beneficial bacteria you want to feed. It is also not the Specific Carbohydrate Diet (SCD), though there is some evidence for SCD in pediatric IBD. The anti-inflammatory framework prioritises microbiome diversity and barrier support over strict exclusion.',
+        ],
+        bullets: [
+          'Diverse vegetables and fruits — aim for 30+ different plants per week',
+          'Fatty fish (salmon, sardines, mackerel) at least twice weekly for EPA and DHA',
+          'Extra-virgin olive oil as the main cooking fat for oleocanthal and oleic acid',
+          'Whole grains over refined: oats, barley, brown rice, quinoa',
+          'Legumes when tolerated — lentils, chickpeas, and beans feed butyrate producers',
+          'Minimise ultra-processed foods, refined sugar, and seed oils high in omega-6',
+        ],
+      },
+      {
+        title: 'What this means if you are in the middle of a flare right now',
+        paragraphs: [
+          'This trial was conducted in mild-to-moderate UC. If you are in a severe flare — high fever, significant bleeding, hospitalisation territory — diet is not your first intervention. Get assessed. But if you are managing mild to moderate disease, perpetually cycling through mesalamine, occasional steroids, and feeling like your GI is just playing whack-a-mole, this trial offers a different model.',
+          'The model is: address the microbiome and the diet simultaneously, not sequentially. Not FMT, then wait, then maybe tweak diet. Together, aggressively, for eight weeks minimum.',
+          'FMT is not yet FDA-approved for UC (it is approved for recurrent C. difficile infection), but clinical trials are ongoing and it is available in some IBD centres as part of research protocols. The diet piece, however, has zero barriers to starting tonight.',
+        ],
+        callout: 'You cannot get a multidonor FMT next week, but you can start the anti-inflammatory diet today. That same diet maintained deep remission for 12 months in this trial.',
+      },
+      {
+        title: 'The honest limitations of this trial',
+        paragraphs: [
+          'This was an open-label trial — patients and investigators knew which group they were in. That is a real limitation for subjective outcomes like symptom scores. The sample size was 66 patients in the final analysis, which is small. The FMT was colonoscopic and delivered over seven weeks; that is not scalable or accessible for most people in most countries right now.',
+          'The maintenance phase was observational: researchers tracked patients who responded at 8 weeks, and the diet group just continued on diet. It was not a separate randomisation into diet versus no diet at 48 weeks, which would have been a stronger design.',
+          'But the endoscopic outcomes are hard to fake and the p-values are robust. An OR of 6.0 for deep remission at 8 weeks with p=0.03, and a 25% vs 0% deep remission maintenance at 48 weeks with p=0.007, are not results that disappear with minor analytical changes.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is FMT approved for ulcerative colitis?',
+        answer: 'Not currently in the US or EU for UC specifically. FMT is FDA-approved for recurrent C. difficile infection. UC trials are ongoing. Some academic IBD centres offer it in research contexts.',
+      },
+      {
+        question: 'What is an anti-inflammatory diet for UC?',
+        answer: 'A pattern emphasising diverse vegetables, fruits, fatty fish, olive oil, whole grains, and legumes while minimising ultra-processed foods and refined sugars. It overlaps with the Mediterranean diet and IBD-AID frameworks.',
+      },
+      {
+        question: 'Can diet alone treat active UC?',
+        answer: 'Diet is not a replacement for proven therapies in active disease. But as this trial shows, it can significantly support remission alongside medical treatment — and may help maintain it. Always discuss changes with your gastroenterologist.',
+      },
+      {
+        question: 'What happened to patients who got FMT but did not respond at 8 weeks?',
+        answer: 'Non-responders were not followed in the long-term maintenance phase. The 48-week data applies only to those who had responded clinically by week 8.',
+      },
+      {
+        question: 'How many donors were used for the FMT?',
+        answer: 'Multiple rural donors, which the researchers argued provides greater microbial diversity than single-donor FMT — potentially explaining better outcomes.',
+      },
+    ],
+    references: [
+      { label: 'Kedia et al. Gut 2022 (PMID: 35973787)', href: 'https://pubmed.ncbi.nlm.nih.gov/35973787/' },
+      { label: 'IBD-AID overview — UMass Medical School', href: 'https://www.umassmed.edu/nutrition/ibd/ibdaid/' },
+      { label: 'Moayyedi et al. Gastroenterology 2015 — FMT RCT in UC (PMID: 25857665)', href: 'https://pubmed.ncbi.nlm.nih.gov/25857665/' },
+      { label: 'Paramsothy et al. Lancet 2017 — Multidonor FMT in active UC (PMID: 28214091)', href: 'https://pubmed.ncbi.nlm.nih.gov/28214091/' },
+      { label: 'Swaminath et al. IBD 2017 — Mediterranean diet and IBD (PMID: 28040749)', href: 'https://pubmed.ncbi.nlm.nih.gov/28040749/' },
+    ],
+    relatedSlugs: ['uc-diet-guide', 'uc-flare-management', 'understanding-ulcerative-colitis'],
+  },
+]
+
 export const BLOG_ARTICLE_MAP = Object.fromEntries(
   BLOG_ARTICLES.map((article) => [article.slug, article])
 ) as Record<string, BlogArticle>
