@@ -8,6 +8,7 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer'
 import CountUpMetric from '@/components/CountUpMetric'
 import ScrollReveal from '@/components/ScrollReveal'
 import { QUICK_NAV_CARDS } from '@/lib/site'
+import HarmfulFactorsTable from '@/components/HarmfulFactorsTable'
 import { TREATMENTS } from '@/lib/treatments'
 
 type HeroStat = {
@@ -281,6 +282,8 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-5xl px-4 pb-16 pt-4 md:px-6 md:pb-20">
         <ScrollReveal>
+          <HarmfulFactorsTable />
+
           <MedicalDisclaimer />
         </ScrollReveal>
       </section>
