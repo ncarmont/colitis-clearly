@@ -10,14 +10,39 @@ export const metadata: Metadata = {
     'Evidence-based ulcerative colitis explainers on diagnosis, flare management, diet, biomarkers, and treatment decisions.',
 }
 
-const categoryStyles: Record<string, string> = {
-  Foundations: 'border-emerald-accent/30 bg-emerald-accent/12 text-emerald-100',
-  Comparisons: 'border-cyan-400/30 bg-cyan-400/12 text-cyan-100',
-  'Flare Management': 'border-amber-accent/30 bg-amber-accent/12 text-amber-100',
-  'Diet & Lifestyle': 'border-teal-accent/30 bg-teal-accent/12 text-teal-100',
-  'Diet & Microbiome': 'border-violet-400/30 bg-violet-400/12 text-violet-100',
-  Biomarkers: 'border-rose-400/30 bg-rose-400/12 text-rose-100',
-  Treatments: 'border-sky-400/30 bg-sky-400/12 text-sky-100',
+const categoryStyles = {
+  treatment: {
+    badge: 'border-emerald-accent/30 bg-emerald-accent/12 text-emerald-100',
+    glow: 'from-emerald-accent/35 via-emerald-accent/10 to-transparent',
+  },
+  diet: {
+    badge: 'border-amber-accent/30 bg-amber-accent/12 text-amber-100',
+    glow: 'from-amber-accent/35 via-amber-accent/10 to-transparent',
+  },
+  lifestyle: {
+    badge: 'border-violet-400/30 bg-violet-400/12 text-violet-100',
+    glow: 'from-violet-400/35 via-violet-400/10 to-transparent',
+  },
+  research: {
+    badge: 'border-teal-accent/30 bg-teal-accent/12 text-teal-100',
+    glow: 'from-teal-accent/35 via-teal-accent/10 to-transparent',
+  },
+}
+
+function resolveCategoryStyle(category: string) {
+  if (category === 'Treatments') {
+    return categoryStyles.treatment
+  }
+
+  if (category.includes('Diet')) {
+    return categoryStyles.diet
+  }
+
+  if (category === 'Flare Management') {
+    return categoryStyles.lifestyle
+  }
+
+  return categoryStyles.research
 }
 
 const posts = [...BLOG_ARTICLES].sort(
@@ -71,23 +96,25 @@ export default function BlogIndexPage() {
         <ScrollReveal>
           <Link
             href={`/blog/${featured.slug}`}
-            className="card-lift glass-panel block rounded-[34px] p-6 md:p-8"
+            className="card-lift glass-panel group relative block overflow-hidden p-6 md:p-8"
           >
+            <div className={`absolute inset-x-6 top-0 h-px bg-gradient-to-r ${resolveCategoryStyle(featured.category).glow}`} />
+
             <div className="flex flex-wrap items-center gap-3 text-sm text-slate-300">
               <span
                 className={`rounded-full border px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] ${
-                  categoryStyles[featured.category] || 'border-white/10 bg-white/[0.05] text-slate-100'
+                  resolveCategoryStyle(featured.category).badge
                 }`}
               >
                 {featured.category}
               </span>
-              <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs text-slate-300">
+              <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-300">
                 {featured.readTime}
               </span>
               <span className="text-xs uppercase tracking-[0.2em] text-slate-500">{featured.datePublished}</span>
             </div>
 
-            <h2 className="font-display mt-6 max-w-3xl text-4xl tracking-tight text-white md:text-5xl">
+            <h2 className="font-display mt-6 max-w-3xl text-4xl tracking-tight text-white transition group-hover:text-emerald-50 md:text-5xl">
               {featured.title}
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-slate-300">{featured.description}</p>
@@ -102,22 +129,26 @@ export default function BlogIndexPage() {
             <ScrollReveal key={post.slug} delay={Math.min(index * 45, 220)}>
               <Link
                 href={`/blog/${post.slug}`}
-                className="card-lift glass-panel block h-full rounded-[30px] p-5"
+                className="card-lift glass-panel group relative block h-full overflow-hidden p-5"
               >
+                <div className={`absolute inset-x-5 top-0 h-px bg-gradient-to-r ${resolveCategoryStyle(post.category).glow}`} />
+
                 <div className="flex flex-wrap items-center gap-3">
                   <span
                     className={`rounded-full border px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] ${
-                      categoryStyles[post.category] || 'border-white/10 bg-white/[0.05] text-slate-100'
+                      resolveCategoryStyle(post.category).badge
                     }`}
                   >
                     {post.category}
                   </span>
-                  <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs text-slate-300">
+                  <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-300">
                     {post.readTime}
                   </span>
                 </div>
 
-                <h2 className="mt-5 text-2xl font-semibold leading-snug text-white">{post.title}</h2>
+                <h2 className="mt-5 text-2xl font-semibold leading-snug text-white transition group-hover:text-emerald-50">
+                  {post.title}
+                </h2>
                 <p className="mt-4 text-sm leading-relaxed text-slate-300">{post.description}</p>
                 <p className="mt-5 text-xs uppercase tracking-[0.2em] text-slate-500">{post.datePublished}</p>
               </Link>

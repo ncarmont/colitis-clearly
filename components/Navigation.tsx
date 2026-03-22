@@ -8,6 +8,7 @@ const links = [
   { href: '/rankings', label: 'Rankings' },
   { href: '/blog', label: 'Blog' },
   { href: '/research', label: 'Research' },
+  { href: '/shop', label: 'Shop' },
   { href: '/about', label: 'About' },
 ]
 
@@ -20,7 +21,7 @@ export default function Navigation() {
   }, [pathname])
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/8 bg-[rgba(10,22,40,0.78)] backdrop-blur-2xl">
+    <nav className="sticky top-0 z-50 border-b border-white/8 bg-[rgba(8,17,28,0.82)] backdrop-blur-2xl">
       <div className="mx-auto max-w-7xl px-4 py-3 md:px-6">
         <div className="flex items-center justify-between gap-4">
           <Link href="/" className="group flex min-w-0 items-center gap-3">
@@ -81,7 +82,9 @@ export default function Navigation() {
             <div className="mt-3 rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(20,34,54,0.96),rgba(8,17,28,0.94))] p-3 shadow-glow-soft">
               <div className="mb-3 rounded-[22px] border border-[rgba(0,200,83,0.16)] bg-[rgba(0,200,83,0.08)] px-4 py-3">
                 <p className="text-[0.65rem] uppercase tracking-[0.28em] text-emerald-100/70">Navigation</p>
-                <p className="mt-1 text-sm text-slate-300">Evidence-guided treatment rankings, articles, and UC research summaries.</p>
+                <p className="mt-1 text-sm text-slate-300">
+                  Evidence-guided rankings, articles, research summaries, and science-backed recommendations.
+                </p>
               </div>
               <div className="space-y-2">
                 {links.map((link) => {

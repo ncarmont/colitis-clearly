@@ -9,6 +9,7 @@ const footerColumns = [
       { href: '/rankings', label: 'Treatment Rankings' },
       { href: '/blog', label: 'Blog' },
       { href: '/research', label: 'Research Library' },
+      { href: '/shop', label: 'Science-Backed Recommendations' },
       { href: '/about', label: 'About' },
     ],
   },

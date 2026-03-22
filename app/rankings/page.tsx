@@ -30,17 +30,20 @@ export default function RankingsPage() {
   return (
     <main className="min-h-screen text-white">
       <section className="relative overflow-hidden border-b border-white/8">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(46,204,113,0.16),transparent_40%),linear-gradient(180deg,#08111c_0%,#0a1628_55%,#08111c_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,#08111c_0%,#0a1628_55%,#08111c_100%)]" />
+        <div className="hero-orb hero-orb-emerald orb-drift-slow left-[-8rem] top-[-3rem] h-80 w-80" />
+        <div className="hero-orb hero-orb-teal orb-drift-reverse right-[-6rem] top-12 h-96 w-96" />
+        <div className="hero-orb hero-orb-amber orb-drift-delayed bottom-[-7rem] left-[45%] h-56 w-56 opacity-45" />
         <div className="absolute inset-0 opacity-40 dot-grid-pattern" />
 
-        <div className="relative mx-auto max-w-7xl px-4 pb-14 pt-10 md:px-6 md:pb-16 md:pt-14">
+        <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-10 md:px-6 md:pb-20 md:pt-14">
           <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-100/75 hover:text-emerald-100">
             <span>←</span>
             Back to home
           </Link>
 
-          <div className="hero-shimmer glass-panel mt-6 rounded-[38px] px-6 py-10 md:px-10 md:py-12">
-            <div className="mx-auto max-w-4xl">
+          <div className="hero-shimmer glass-panel mt-6 px-6 py-10 md:px-10 md:py-14">
+            <div className="mx-auto max-w-5xl">
               <div className="animate-fade-in-up">
                 <div className="inline-flex rounded-full border border-emerald-accent/20 bg-emerald-accent/10 px-4 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-emerald-100/80">
                   Ranked by Science
@@ -48,15 +51,18 @@ export default function RankingsPage() {
               </div>
 
               <div className="animate-fade-in-up" style={{ animationDelay: '120ms' }}>
-                <h1 className="font-display mt-6 text-4xl tracking-tight text-white md:text-6xl">
-                  Ulcerative colitis treatments, arranged for real decision-making.
+                <h1 className="font-display mt-6 max-w-4xl text-5xl leading-none tracking-tight text-white md:text-7xl">
+                  UC Treatment Rankings
+                  <span className="mt-2 block bg-gradient-to-r from-emerald-100 via-emerald-accent to-teal-accent bg-clip-text text-transparent">
+                    Ranked by Clinical Trial Data
+                  </span>
                 </h1>
               </div>
 
               <div className="animate-fade-in-up" style={{ animationDelay: '220ms' }}>
-                <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">
-                  Mesalamine anchors the board, advanced therapies stay visible by mechanism, and every card keeps the trial name,
-                  remission signal, and side-effect summary close by.
+                <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-xl">
+                  Mesalamine anchors the board, advanced therapies stay visible by mechanism, and every card keeps the trial,
+                  remission signal, and safety context close enough to compare without tab overload.
                 </p>
               </div>
 
