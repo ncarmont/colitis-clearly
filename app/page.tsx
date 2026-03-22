@@ -915,7 +915,10 @@ export default function HomePage() {
             </span>
           </h1>
 
-          <p className="mt-1.5 text-[9px] md:text-[10px] text-white/40 font-medium tracking-[0.25em] uppercase tagline-entrance">
+          <p className="mt-2 text-[11px] md:text-sm text-white/50 font-semibold max-w-md mx-auto leading-relaxed tagline-entrance">
+            One of the most powerful foods on Earth. We rank the best by lab-tested polyphenol content so you get the real health benefits.
+          </p>
+          <p className="mt-1 text-[8px] md:text-[9px] text-white/25 font-medium tracking-[0.25em] uppercase">
             The Home of Olive Oil Science
           </p>
 
