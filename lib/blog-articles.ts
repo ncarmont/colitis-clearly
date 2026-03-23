@@ -684,6 +684,119 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     ],
     relatedSlugs: ['uc-diet-guide', 'fmt-anti-inflammatory-diet-uc-remission', 'understanding-ulcerative-colitis'],
   },
+  {
+    slug: 'jak-inhibitors-acute-severe-uc-meta-analysis-2026',
+    title: '86.5% Clinical Response in 30 Days: JAK Inhibitors Are Rewriting the Rules for the Worst UC Flares',
+    description: 'A 2026 meta-analysis of 35 studies and 664 patients found that upadacitinib achieved an 86.5% short-term clinical response in acute severe ulcerative colitis — with colectomy rates slashed to just 11%. Here\'s what that means for patients facing hospitalisation.',
+    category: 'treatment',
+    readTime: '10 min read',
+    datePublished: '2026-03-23',
+    intro: 'Acute severe ulcerative colitis is the UC patient\'s worst nightmare. You\'re hospitalised, on intravenous steroids, and your doctor is quietly calculating whether surgery might be unavoidable. For decades, the choices at that fork in the road were grim: cyclosporine, infliximab, or a colectomy. A 2026 systematic review and meta-analysis published in Clinical Gastroenterology and Hepatology just changed that calculus permanently. Across 35 studies and 664 patients, JAK inhibitors — particularly upadacitinib — achieved an 86.5% short-term clinical response rate in the most severe UC flares within 30 days. Colectomy rates: just 11%. This is not a minor update. This is a paradigm shift.',
+    keyPoints: [
+      'Upadacitinib achieved 86.5% short-term clinical response in acute severe UC within 30 days (95% CI 72.3–94.1%)',
+      'Tofacitinib achieved 77.9% short-term clinical response — also dramatically higher than historical IV steroid-only rates',
+      'Colectomy rates were only 11.2% with upadacitinib and 11.5% with tofacitinib — cutting historical surgery risk by more than half',
+      'Both JAK inhibitors performed similarly at 3-month and 12-month marks, with ~37% remission at one year',
+      'Serious adverse events were low: VTE 2.2%, major cardiac events 0.7%, herpes zoster 3.4%',
+    ],
+    sections: [
+      {
+        title: 'What acute severe UC actually means — and why it\'s terrifying',
+        paragraphs: [
+          'Acute severe ulcerative colitis (ASUC) is not just a "bad flare." By clinical definition, it means six or more bloody bowel movements per day, a heart rate above 90, a temperature above 37.8°C, haemoglobin below 10.5 g/dL, or an ESR above 30 mm/hr. These are the criteria that get you admitted. You are systemically unwell, bleeding significantly, and at risk of life-threatening complications including toxic megacolon and bowel perforation.',
+          'Historically, around 25–30% of patients hospitalised with ASUC ended up requiring colectomy — surgical removal of the colon — within that admission or within the following year. A colostomy bag, multiple surgeries, permanent lifestyle changes. That was the statistical reality patients faced while lying in a hospital bed, hoping intravenous hydrocortisone would be enough.',
+          'When steroids fail — which happens in roughly 30–40% of ASUC hospitalisations — gastroenterologists reach for "rescue therapy." The traditional rescue options were cyclosporine (immunosuppressant, narrow therapeutic window, high toxicity) or infliximab (biologic, slower onset, also not always effective). The need for something better has been obvious for two decades.',
+        ],
+        callout: 'One in four ASUC patients historically lost their colon. JAK inhibitors are now changing that number.',
+      },
+      {
+        title: 'What this meta-analysis found — and why 86.5% matters',
+        paragraphs: [
+          'Jena et al. searched PubMed, Embase, and Scopus through December 2025 and identified 35 studies covering 664 patients treated with JAK inhibitors for ASUC. This is the most comprehensive evidence synthesis yet on JAK inhibitors in this specific population.',
+          'The headline finding: within 30 days of starting upadacitinib, 86.5% of patients achieved clinical response (95% CI 72.3–94.1%). With tofacitinib, 77.9% achieved clinical response (95% CI 67.1–86%). Both figures are extraordinary in the context of a disease state where patients had already failed or were failing intravenous corticosteroids.',
+          'To put that in perspective: infliximab rescue therapy in ASUC typically achieves clinical response in 60–70% of patients in the short term. Cyclosporine performs in a similar range. Upadacitinib is hitting 86.5% in the same patients — people hospitalised with the worst flares of their lives.',
+          'At the three-month mark, remission rates with upadacitinib were 47.4% (vs 37.3% with tofacitinib). At 12 months, tofacitinib achieved 33.8% remission and upadacitinib 37.5% — statistically comparable, both representing durable control in a patient population that arrived in crisis.',
+        ],
+        callout: '86.5% short-term response. That\'s not a clinical trial in optimal patients under ideal conditions. That\'s real-world data from hospitalised patients who were failing standard therapy.',
+      },
+      {
+        title: 'The colectomy data is the most important number here',
+        paragraphs: [
+          'Surgery avoidance is the number UC patients and their families care about most when hospitalised with ASUC. The colectomy rates in this meta-analysis are striking.',
+          'With upadacitinib, the short-term colectomy rate was 11.2% (95% CI 7.2–16.9%). With tofacitinib, 11.5% (95% CI 7.1–18.4%). These numbers held reasonably stable at the intermediate (3-month) and long-term (12-month) time points.',
+          'Compare that to historical pre-biologic ASUC data, where colectomy rates within one year ranged from 25–30% even in patients who initially responded to rescue therapy. JAK inhibitors appear to be cutting that rate by at least half. That is tens of thousands of people per year, globally, who might keep their colon because of these drugs.',
+          'What\'s critical to understand: both tofacitinib and upadacitinib showed similar colectomy outcomes. The meta-analysis found no statistically significant difference in surgery rates between the two drugs. The choice between them may ultimately come down to dosing convenience, patient-specific risk factors, and what your gastroenterologist has access to.',
+        ],
+      },
+      {
+        title: 'How JAK inhibitors work — without the medical school lecture',
+        paragraphs: [
+          'Janus kinase inhibitors block a specific cellular signalling pathway called the JAK-STAT pathway. In simple terms: your immune cells communicate through chemical messages. JAK inhibitors intercept those messages before they can tell immune cells to keep attacking your gut lining.',
+          'Unlike biologics (like infliximab or vedolizumab), which are large protein molecules injected or infused, JAK inhibitors are small molecule drugs taken orally. They act faster — often within hours — and do not require intravenous infusion. In an acute hospitalised patient who needs rapid response, this pharmacokinetic profile matters enormously.',
+          'Upadacitinib (brand name: Rinvoq) is a selective JAK1 inhibitor. Tofacitinib (Xeljanz) inhibits JAK1 and JAK3. The selectivity difference between them may explain why upadacitinib trended slightly higher on response rates, though the sample sizes are not large enough to call this definitively.',
+        ],
+      },
+      {
+        title: 'What about the risks — the honest picture',
+        paragraphs: [
+          'JAK inhibitors are not without risk, and any honest discussion of this data must include the side effect profile. In this meta-analysis of ASUC patients, the reported adverse events were: venous thromboembolism (VTE, i.e. blood clots) in 2.2% of patients (95% CI 1.1–4.7%), major adverse cardiovascular events in 0.7% (95% CI 0.1–10.3%), and herpes zoster (shingles) reactivation in 3.4% (95% CI 1.9–6.1%).',
+          'These numbers need context. Patients with ASUC are already at elevated VTE risk from the inflammation itself, hospitalisation, and inactivity — independent of any medication. The 2.2% VTE rate in this dataset is not dramatically higher than the background risk in this specific population. The herpes zoster risk is real and worth knowing about, particularly in patients who are immunocompromised or over 50.',
+          'The FDA has required boxed warnings on tofacitinib specifically (related to cardiovascular events and cancer risk in rheumatoid arthritis patients, who are older and have different risk profiles). Upadacitinib carries similar labelling. In the context of ASUC — where the alternative is colectomy — the benefit-risk equation looks very different than in older RA patients.',
+          'Importantly: the meta-analysis found no difference in adverse event rates between high-dose and standard-dose tofacitinib, which helps gastroenterologists dosing decisions.',
+        ],
+        callout: 'Risks are real but must be weighed against the risk of surgery, prolonged steroid exposure, and the consequences of ongoing uncontrolled inflammation. Your GI should have this conversation with you explicitly.',
+      },
+      {
+        title: 'What your gastroenterologist might not have mentioned yet',
+        paragraphs: [
+          'Here is the uncomfortable truth: JAK inhibitors are not yet universally adopted as first-line rescue therapy in ASUC, even though the evidence base is rapidly accumulating. Many centres still default to infliximab rescue because it\'s been established longer, because formulary restrictions limit access, or simply because practice changes slowly.',
+          'The 2025–2026 ECCO (European Crohn\'s and Colitis Organisation) guidelines and the ACG (American College of Gastroenterology) recommendations are beginning to incorporate JAK inhibitors into ASUC management pathways, but implementation varies enormously by hospital and by individual gastroenterologist.',
+          'If you are hospitalised with ASUC — or if you have been told that surgery might be on the table — it is entirely appropriate to ask your care team: "Has JAK inhibitor therapy been considered as rescue or co-therapy for my case?" That is not an aggressive or unreasonable question. It is the right question, backed by 35 studies and 664 patients.',
+          'For patients who are not hospitalised but have moderate-to-severe UC that is not responding to their current treatment: upadacitinib is FDA-approved for moderate-to-severe UC (not just ASUC). Tofacitinib is also approved in this indication. These are options you can ask about before you end up in an emergency situation.',
+        ],
+      },
+      {
+        title: 'The bigger picture: a rapidly changing treatment landscape',
+        paragraphs: [
+          'The publication of this meta-analysis in Clinical Gastroenterology and Hepatology — one of the highest-impact GI journals — in February 2026 signals how quickly the evidence base is maturing. Five years ago, the idea of an oral pill outperforming infliximab in acute severe colitis would have seemed unlikely. It is now looking like the probable reality.',
+          'This has profound implications for the entire UC treatment cascade. If JAK inhibitors can rescue patients in ASUC with 86.5% short-term response and keep colectomy rates below 12%, the argument for earlier introduction of these agents — before patients reach hospitalisation — becomes even stronger. Reactive treatment of crisis is worse than proactive optimisation of the treatment ladder.',
+          'The next step in the evidence base, as the authors note, is randomised controlled trials specifically designed for ASUC with JAK inhibitors as co-therapy with corticosteroids and as defined salvage agents. Those trials are underway. But the observational and real-world data pooled here already tells a compelling story.',
+          'If you are a UC patient still on mesalamine or a first-generation biologic with persistent activity, this meta-analysis is the clearest signal yet that the treatment options above your current therapy are more powerful — and more accessible — than they may have been when you were last assessed.',
+        ],
+        callout: 'The question is not whether JAK inhibitors work in severe UC. The question is why they aren\'t being offered to more patients, sooner.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can I take upadacitinib or tofacitinib without being hospitalised?',
+        answer: 'Yes. Both upadacitinib (Rinvoq) and tofacitinib (Xeljanz) are FDA-approved for moderate-to-severe UC in outpatient settings. This meta-analysis focused on acute severe UC hospitalised patients, but the drugs are used across the spectrum of UC severity. Ask your gastroenterologist if you are a candidate.',
+      },
+      {
+        question: 'Are JAK inhibitors safe for long-term use in UC?',
+        answer: 'Long-term safety data is accumulating. The primary risks to monitor are blood clots (VTE), cardiovascular events (higher risk in patients over 50 with cardiovascular risk factors), herpes zoster reactivation, and — over very long periods — potential cancer risk. These risks need to be individualised based on your specific health profile and weighed against the risks of uncontrolled UC inflammation.',
+      },
+      {
+        question: 'How quickly do JAK inhibitors work compared to biologics?',
+        answer: 'Faster. JAK inhibitors are small molecules that act within hours of the first dose, not days or weeks. Biologics like infliximab typically require 3–7 days to show significant response. In an acute hospitalised UC patient, this speed advantage is clinically meaningful.',
+      },
+      {
+        question: 'What is upadacitinib\'s brand name and how is it taken?',
+        answer: 'Upadacitinib is sold as Rinvoq. For UC, the induction dose is 45 mg orally once daily for 8 weeks, followed by a maintenance dose of 15 mg or 30 mg once daily. It is a pill — no injections or infusions required.',
+      },
+      {
+        question: 'If steroids fail during my UC hospitalisation, what should I ask for?',
+        answer: 'Ask your gastroenterologist specifically about JAK inhibitor rescue therapy — either tofacitinib or upadacitinib. Also ask whether an urgent GI consultation with an IBD specialist (not just a general gastroenterologist) is available. The combination of escalation timing and drug choice significantly affects outcomes in ASUC.',
+      },
+    ],
+    references: [
+      { label: 'Jena A et al. Clin Gastroenterol Hepatol. 2026 (PMID: 41690364)', href: 'https://pubmed.ncbi.nlm.nih.gov/41690364/' },
+      { label: 'FDA Prescribing Information — Upadacitinib (Rinvoq) for UC', href: 'https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213856s003lbl.pdf' },
+      { label: 'Truelove SC, Witts LJ. BMJ 1955 — Original ASUC criteria', href: 'https://pubmed.ncbi.nlm.nih.gov/13260656/' },
+      { label: 'ACG Clinical Guidelines: UC Management 2023', href: 'https://pubmed.ncbi.nlm.nih.gov/36648154/' },
+      { label: 'ECCO Guidelines — Management of Acute Severe UC 2022', href: 'https://pubmed.ncbi.nlm.nih.gov/35104498/' },
+    ],
+    relatedSlugs: ['understanding-ulcerative-colitis', 'anti-inflammatory-diet-uc-meta-analysis-2026'],
+  },
 ]
 
 export const BLOG_ARTICLE_MAP = Object.fromEntries(
