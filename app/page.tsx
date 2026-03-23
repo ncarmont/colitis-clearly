@@ -9,6 +9,8 @@ import CountUpMetric from '@/components/CountUpMetric'
 import ScrollReveal from '@/components/ScrollReveal'
 import { QUICK_NAV_CARDS } from '@/lib/site'
 import { TREATMENTS } from '@/lib/treatments'
+import { TOP_PRODUCTS } from '@/lib/products'
+import FeaturedProducts from '@/components/FeaturedProducts'
 
 type HeroStat = {
   value: number
@@ -337,6 +339,9 @@ export default function HomePage() {
           </div>
         </ScrollReveal>
       </section>
+
+      {/* Featured Products */}
+      <FeaturedProducts products={TOP_PRODUCTS} />
 
       <section className="mx-auto max-w-7xl px-4 pb-6 pt-8 md:px-6 md:pb-10 md:pt-12">
         <ScrollReveal>

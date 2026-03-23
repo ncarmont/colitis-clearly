@@ -84,8 +84,8 @@ export default function ShopRecommendationsClient() {
                 <div className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${categoryGlow[product.category]}`} />
 
                 <div className="flex items-start justify-between gap-4">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-[22px] border border-white/10 bg-white/[0.06] text-4xl shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
-                    <span aria-hidden="true">{product.imageEmoji}</span>
+                  <div className="h-16 w-16 overflow-hidden rounded-[22px] border border-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+                    <img src={product.imageUrl} alt={product.name} className="h-full w-full object-cover" loading="lazy" />
                   </div>
 
                   <div className="flex flex-wrap justify-end gap-2">
