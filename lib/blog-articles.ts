@@ -593,6 +593,97 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     ],
     relatedSlugs: ['uc-diet-guide', 'uc-flare-management', 'understanding-ulcerative-colitis'],
   },
+  {
+    slug: 'anti-inflammatory-diet-uc-meta-analysis-2026',
+    title: 'Anti-Inflammatory Diet Makes You 82% More Likely to Respond in Active UC — 6 RCTs',
+    description: 'A 2026 meta-analysis of 6 RCTs found that whole-food anti-inflammatory diets increase clinical response in active ulcerative colitis by 82% and slash gut inflammation markers by 210 points. Here is what the evidence actually shows.',
+    category: 'Diet',
+    readTime: '9 min read',
+    datePublished: '2026-03-23',
+    intro: 'For years UC patients have been told diet "doesn\'t cause IBD" — which is technically true — and then quietly dismissed when they ask what they should actually eat. A 2026 systematic review and meta-analysis just published in Digestive Diseases and Sciences pooled six randomised controlled trials (359 patients) specifically examining whole-food, anti-inflammatory dietary patterns in UC. The headline result: in patients with active disease, those eating an anti-inflammatory diet were 82% more likely to achieve a clinical response than controls. That is not anecdote. That is a risk ratio of 1.82 with a p-value of 0.004 and zero statistical heterogeneity.',
+    keyPoints: [
+      'Anti-inflammatory diet increased clinical response in active UC by 82% (RR 1.82, p=0.004, I²=0%)',
+      'Gut inflammation marker fecal calprotectin dropped by an average of 210 µg/g during remission (p=0.006)',
+      'Effect was in addition to standard medication — this was adjunct therapy, making your drugs work better',
+      'No significant impact on relapse in quiescent UC in this analysis, suggesting the benefit is largest during active disease',
+    ],
+    sections: [
+      {
+        title: 'What the meta-analysis actually found',
+        paragraphs: [
+          'Rehmat et al. searched PubMed, Cochrane, Embase, and ClinicalTrials.gov for randomised trials testing anti-inflammatory dietary patterns — not individual supplements — in UC patients. Six RCTs met their criteria, covering 359 patients aged 12 to 75 with mild-to-moderate active UC, quiescent UC, or UC in clinical remission.',
+          'The headline finding: among patients with active disease, the anti-inflammatory diet group was 82% more likely to achieve clinical response (RR = 1.82, 95% CI [1.20 to 2.75], p = 0.004). Critically, there was zero heterogeneity across the trials (I² = 0%), meaning the finding was consistent — not driven by one outlier study with an unusual population or protocol.',
+          'On top of that, fecal calprotectin (FCP) — one of the most reliable non-invasive markers of intestinal inflammation — dropped by an average of 210 µg/g in the diet groups during remission (MD = −210.01, 95% CI [−359.77 to −60.25], p = 0.006). That is a clinically significant reduction. FCP values above 250 µg/g predict endoscopic inflammation; dropping 210 points can push a patient from "active mucosal disease" territory into a much safer range.',
+        ],
+        callout: 'An 82% better chance of clinical response is not a rounding error. That is the kind of number that would make a drug company file for FDA approval.',
+      },
+      {
+        title: 'What "anti-inflammatory diet" actually means in these trials',
+        paragraphs: [
+          'This matters — because "anti-inflammatory" is one of the most abused buzzwords in wellness marketing. In the clinical trials pooled in this meta-analysis, anti-inflammatory diet patterns consistently included: abundant vegetables and fruits (especially dark leafy greens, berries, and cruciferous vegetables), extra-virgin olive oil as the primary fat source, fatty fish (salmon, sardines, mackerel) at least twice weekly, whole grains rather than refined carbohydrates, legumes (lentils, chickpeas, beans), and minimal ultra-processed foods, red meat, refined sugar, and alcohol.',
+          'Some trials specifically used the IBD Anti-Inflammatory Diet (IBD-AID), developed at UMass Medical School, which also emphasises pre- and probiotic foods to support microbiome diversity. Others used Mediterranean-style frameworks. The consistent thread is whole food density and the removal of industrial food ingredients that drive gut permeability and mucosal irritation.',
+          'What the diets were NOT: fibre-restricted, low-residue, or exclusively liquid. The "low-fibre diet for UC" advice your gastroenterologist may have given you during a flare is a short-term acute management tool, not a long-term dietary strategy. These trials used fibre-rich whole foods during remission and in mild-to-moderate active disease, not against it.',
+        ],
+      },
+      {
+        title: 'Why the fecal calprotectin finding is actually more important than it looks',
+        paragraphs: [
+          'Most UC patients understand their symptoms — bleeding, urgency, pain. Fewer understand their inflammatory burden. Fecal calprotectin is a protein released by white blood cells into the gut lumen during active inflammation. It is measured in a simple stool test and directly reflects mucosal inflammation.',
+          'When FCP drops by 210 µg/g, that is not just a number on a lab report improving. It means the gut lining is calming down at the cellular level. It means your GI doctor looking at your next scope is more likely to see a pink, healed mucosa rather than angry, ulcerated tissue. It means your risk of relapse is decreasing.',
+          'This FCP reduction was observed during the remission phase of the included trials. In other words: patients who were already in remission and started an anti-inflammatory diet continued suppressing inflammation at the tissue level. That is the holy grail of UC management — maintaining deep remission and keeping the colon quiet between flares.',
+        ],
+        callout: 'FCP is not a symptomatic score — it is an objective biological measurement. Diet moving FCP by 210 points is the equivalent of a mild medication working inside your gut.',
+      },
+      {
+        title: 'The honest limitations you deserve to know',
+        paragraphs: [
+          'This meta-analysis pooled only six trials with 359 total patients. That is small. The primary clinical remission outcome was not statistically significant (RR = 1.59, p = 0.21) — likely because the trials were too small and too heterogeneous on remission definitions to detect that signal. The clinical response finding (RR = 1.82, p = 0.004) is stronger partly because response is a broader endpoint.',
+          'None of the individual trials or the meta-analysis demonstrated that diet alone can replace proven therapies like mesalamine, biologics, or JAK inhibitors. This is adjunct evidence — diet making your medications work better, not diet as a standalone cure. If you are in a moderate-to-severe flare, you need escalation in your medical therapy alongside dietary changes.',
+          'There is also the challenge of blinding. Diet trials cannot be double-blinded. Patients know what they are eating. That introduces bias in self-reported symptom outcomes, though it does not explain the objective FCP reduction (you cannot hallucinate your calprotectin dropping).',
+        ],
+      },
+      {
+        title: 'What this means for your treatment strategy',
+        paragraphs: [
+          'If you are on mesalamine and struggling to maintain remission, this evidence suggests adding an anti-inflammatory dietary pattern is not optional wellness advice — it is a legitimate clinical strategy with RCT-level support. The effect size (RR 1.82) is larger than many secondary interventions doctors currently recommend.',
+          'If you are on a biologic and wondering why your response is partial, diet may be the missing piece. The microbiome drives a substantial proportion of intestinal immune signalling, and ultra-processed food diets are documented microbiome disruptors. You can have the best biologic in the world and still have suboptimal outcomes if your diet is feeding inflammatory pathways faster than the drug can suppress them.',
+          'The practical steps are not exotic: cut ultra-processed foods aggressively. Add olive oil. Add fatty fish twice a week. Add diverse vegetables. Add fermented foods if tolerated (yogurt, kefir, kimchi — these were components in several IBD-AID studies). Remove refined sugar as a daily habit. This is not a fad. This is the pattern that showed up consistently across six randomised trials.',
+          'One more thing: the patients in these trials were on standard medical therapy. Diet was added on top. The 82% improvement in clinical response happened in patients already receiving treatment. The evidence is not about replacing your gastroenterologist — it is about giving you every available tool to stack the odds in your favour.',
+        ],
+        callout: 'Your GI manages your medications. You manage your fork. This meta-analysis says the fork matters more than most people — including doctors — have been telling you.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can an anti-inflammatory diet replace my UC medication?',
+        answer: 'No. The trials in this meta-analysis added dietary changes on top of standard therapy. Diet is a powerful adjunct that can significantly improve your response, but it is not a replacement for proven medical treatments. Never stop medications without discussing with your gastroenterologist.',
+      },
+      {
+        question: 'What is the best anti-inflammatory diet for UC specifically?',
+        answer: 'The IBD Anti-Inflammatory Diet (IBD-AID) and Mediterranean dietary patterns have the strongest evidence base. Both emphasise diverse vegetables, fatty fish, olive oil, fermented foods, and whole grains while eliminating ultra-processed foods and refined sugar.',
+      },
+      {
+        question: 'Will a high-fibre anti-inflammatory diet make my UC worse?',
+        answer: 'Short-term fibre restriction may be appropriate during a severe acute flare to reduce bowel frequency. However, long-term low-fibre diets are associated with worse UC outcomes and microbiome depletion. The goal is to gradually reintroduce diverse plant fibres during remission.',
+      },
+      {
+        question: 'How long does the anti-inflammatory diet take to work in UC?',
+        answer: 'The clinical trials in this meta-analysis ran for 6 to 12 weeks before seeing significant differences. Do not expect overnight changes. Give it 8 weeks of consistent adherence before evaluating whether your symptoms, energy, and biomarkers (like FCP) have shifted.',
+      },
+      {
+        question: 'Does diet affect fecal calprotectin results?',
+        answer: 'Yes, significantly. This meta-analysis found a mean reduction of 210 µg/g in FCP with anti-inflammatory diet adherence during remission. FCP is one of the most reliable non-invasive markers of gut inflammation in UC.',
+      },
+    ],
+    references: [
+      { label: 'Rehmat M et al. Dig Dis Sci 2026 (PMID: 40797000)', href: 'https://pubmed.ncbi.nlm.nih.gov/40797000/' },
+      { label: 'IBD Anti-Inflammatory Diet — UMass Medical School', href: 'https://www.umassmed.edu/nutrition/ibd/ibdaid/' },
+      { label: 'Moayyedi et al. Gastroenterology 2015 — FMT RCT in UC', href: 'https://pubmed.ncbi.nlm.nih.gov/25857665/' },
+      { label: 'Khalili H et al. — Mediterranean diet and IBD risk (PMID: 31209713)', href: 'https://pubmed.ncbi.nlm.nih.gov/31209713/' },
+      { label: 'Limketkai BN et al. Cochrane Review — Dietary interventions in IBD', href: 'https://pubmed.ncbi.nlm.nih.gov/31026337/' },
+    ],
+    relatedSlugs: ['uc-diet-guide', 'fmt-anti-inflammatory-diet-uc-remission', 'understanding-ulcerative-colitis'],
+  },
 ]
 
 export const BLOG_ARTICLE_MAP = Object.fromEntries(
