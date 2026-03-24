@@ -797,6 +797,122 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     ],
     relatedSlugs: ['understanding-ulcerative-colitis', 'anti-inflammatory-diet-uc-meta-analysis-2026'],
   },
+  {
+    slug: 'fmt-remission-meta-analysis-2026',
+    title: 'Fecal Microbiota Transplantation Doubles Endoscopic Response in UC — Meta-Analysis of 15 RCTs',
+    description: 'A 2026 meta-analysis of 15 randomised trials found FMT achieved 62% clinical remission vs 50.5% with placebo (OR 2.65) and nearly doubled endoscopic response rates. Here\'s what it means for UC patients whose current treatment isn\'t working.',
+    category: 'Research',
+    readTime: '10 min read',
+    datePublished: '2026-03-24',
+    intro: 'If you\'ve been on mesalamine for years, cycled through biologics, or been told you\'re running out of options — there\'s a growing body of evidence pointing to a radically different approach. Fecal microbiota transplantation (FMT) doesn\'t target a single immune pathway. It attempts to reset the entire gut ecosystem. A 2026 meta-analysis of 15 randomised controlled trials, published in Digestive Diseases, found that FMT significantly improves both clinical and endoscopic remission in UC — and the evidence is strong enough that dismissing it as "experimental" is becoming harder to justify.',
+    keyPoints: [
+      'FMT achieved 62% clinical remission vs 50.5% in controls across 15 RCTs (OR 2.65; 95% CI 1.76–4.00).',
+      'Endoscopic response was 42% in the FMT group vs 22% in controls — nearly double (OR 2.00; 95% CI 1.09–3.68).',
+      'Heterogeneity was assessed as low, meaning the results were consistent across trials — not driven by one outlier study.',
+      'FMT is non-pharmacological — it doesn\'t add immunosuppression, doesn\'t cause moon face, and doesn\'t suppress your immune system globally.',
+    ],
+    sections: [
+      {
+        title: 'Why "your gut bacteria are the problem" is no longer fringe science',
+        paragraphs: [
+          'For most of the history of UC treatment, the gut microbiome was a footnote. The real action was in immune suppression: aminosalicylates, steroids, thiopurines, biologics targeting TNF or integrin or IL-12/23. The logic was straightforward — UC is an inflammatory disease, so suppress the inflammation.',
+          'What that approach consistently failed to explain was why some patients achieve remission and others don\'t, why flares seem to correlate with stress and dietary changes and antibiotics, and why the disease relapses even when the immune pathway you\'re blocking is theoretically neutralised.',
+          'The microbiome hypothesis offers an upstream explanation. UC patients consistently show reduced diversity in gut bacteria, depletion of short-chain fatty acid producers like Faecalibacterium prausnitzii and Roseburia, and overgrowth of pro-inflammatory species. These are not coincidental findings. They correlate with disease activity and mucosal healing. They may be causal — not just a consequence of inflammation.',
+          'FMT is the most direct test of this hypothesis: take a healthy donor\'s entire gut ecosystem and introduce it to the diseased gut. If the microbiome matters, remission should follow. Across 15 randomised trials and thousands of patients, it does — at least for a meaningful proportion of UC patients.',
+        ],
+        callout: 'Your gut contains 100 trillion bacteria. UC patients have systematically different microbiomes than healthy controls. FMT is the most direct attempt to fix that imbalance.',
+      },
+      {
+        title: 'What this meta-analysis actually found',
+        paragraphs: [
+          'Doukas et al. searched four major medical databases and analysed only randomised clinical trials comparing FMT against placebo or standard care in UC patients. They assessed both clinical remission (symptom improvement on validated scoring systems) and endoscopic response (direct visual improvement in the gut lining).',
+          'The meta-analysis included 15 trials, drawn from an initial pool of 6,737 identified studies. The quality filter was strict: randomised, controlled, properly reported.',
+          'Clinical remission: 62% of FMT patients achieved remission vs 50.5% in controls. The odds ratio of 2.65 (95% CI 1.76–4.00) means FMT patients were nearly three times more likely to achieve remission. This was statistically robust and consistent across trials.',
+          'Endoscopic response — arguably the more important outcome because it measures actual mucosal healing, not just how you feel — was 42% in the FMT group vs 22% in controls. The odds ratio of 2.00 (95% CI 1.09–3.68) means FMT patients were twice as likely to show objective healing of the gut lining.',
+          'Critically, heterogeneity across trials was low. This is not a situation where one or two outlier studies are driving the result. The effect was consistent. That\'s the signal quality you want when evaluating a treatment that has been controversial.',
+        ],
+        callout: 'OR 2.65 for clinical remission. OR 2.00 for endoscopic response. These are not marginal statistical findings — they are clinically meaningful signals from 15 independent randomised trials.',
+      },
+      {
+        title: 'Why endoscopic remission matters more than you might think',
+        paragraphs: [
+          'Patients naturally focus on symptoms: how many bathroom trips per day, how much blood, how much pain. But gastroenterologists increasingly treat to the target of mucosal healing — what the gut looks like on a scope, not just how you feel.',
+          'The reason is longitudinal. Patients who achieve mucosal healing have lower rates of flare, hospitalisation, colectomy, and colorectal neoplasia over the following years. Feeling better while the gut is still visibly inflamed is a precarious remission — the fire is banked, not extinguished.',
+          'FMT\'s 42% endoscopic response rate (vs 22% placebo) is significant because it suggests genuine mucosal healing in a substantial proportion of patients, not just symptomatic suppression. That\'s a higher bar, and FMT is clearing it.',
+          'For comparison: first-generation aminosalicylates achieve endoscopic remission in roughly 30–40% of patients with mild-to-moderate UC. FMT, as an adjunct or alternative, is not obviously inferior in this metric — and it works through a completely different mechanism.',
+        ],
+      },
+      {
+        title: 'The honest context: what FMT does and doesn\'t solve',
+        paragraphs: [
+          'This is not a claim that FMT is ready to replace biologics or JAK inhibitors for severe UC. It isn\'t, and this meta-analysis doesn\'t argue that it should be.',
+          'The evidence base is for active UC in patients who haven\'t necessarily exhausted all other options. The remission rate — while significantly better than placebo — is not 90%. A meaningful fraction of patients do not respond. The optimal donor selection, dosing protocol, administration route (enema, colonoscopic infusion, oral capsule), and duration of treatment remain subjects of active research.',
+          'What this meta-analysis does establish is that FMT is significantly better than doing nothing different, that the effect is real and consistent across trials, and that there is a non-pharmacological option worth discussing — particularly for patients who are trying to minimise immunosuppressive load, who have failed one or more biologics, or who are searching for an adjunct to their existing treatment.',
+          'The authors note that FMT is "a promising nonpharmacological option for UC patients unresponsive to conventional treatments." That is careful, precise language. It is also clearly true.',
+        ],
+        callout: 'FMT is not a cure. But OR 2.65 for clinical remission means it is meaningfully effective for a substantial proportion of UC patients. That is not nothing — that is a conversation worth having with your GI.',
+      },
+      {
+        title: 'How FMT is administered — and what to realistically expect',
+        paragraphs: [
+          'Current FMT protocols in clinical trials have used several delivery routes: colonoscopic infusion (the most common in RCTs), enema, and increasingly, encapsulated oral preparations (freeze-dried stool capsules — yes, really, and yes, they work).',
+          'Most RCT protocols involve multiple infusions rather than a single treatment. Weekly colonoscopic infusions over 6–8 weeks are common. This is burdensome, which is part of why oral capsule formulations are being developed actively. The OPENBIOME and Rebiotix platforms, and the FDA-approved Rebyota and Vowst products (currently for Clostridioides difficile, not UC), demonstrate that the logistics of gut microbiome therapy are being solved.',
+          'Adverse events in this meta-analysis were described as generally mild and manageable, consistent with other FMT literature. The most common side effects are transient GI symptoms: bloating, cramping, altered bowel habits after infusion. Serious adverse events are rare in immunocompetent patients, though screening of donors for transmissible pathogens is essential and non-negotiable.',
+          'In terms of what to expect: not everyone responds. The remission rate improvement is statistically robust but the absolute rates still leave a substantial minority of patients without adequate response. For patients who do respond, the goal is durable remission — and the long-term data on FMT maintenance protocols is still accumulating.',
+        ],
+      },
+      {
+        title: 'What this means if you\'re currently stuck in the treatment ladder',
+        paragraphs: [
+          'The standard UC treatment escalation goes roughly: aminosalicylates → thiopurines → biologics (anti-TNF, vedolizumab, ustekinumab) → JAK inhibitors → surgery. At each step, the options become more powerful and the side effect profiles more complex. Many patients feel trapped in the middle of this ladder — current treatment isn\'t working well, but escalating feels scary.',
+          'FMT doesn\'t fit neatly into this ladder. It\'s orthogonal to immunosuppression. You could theoretically combine FMT with your existing biologic or aminosalicylate therapy. Some trials have done exactly this. The evidence for combination approaches is not yet definitive, but the mechanistic rationale is sound: if your biologic suppresses the immune overreaction and FMT restores the microbial balance that is triggering the reaction, you\'re hitting the problem from two directions.',
+          'The most practical implication of this meta-analysis: if you are a UC patient who has not responded adequately to two or more treatments, FMT is worth an explicit conversation with your gastroenterologist. Not as a demand, but as an informed question: "Am I a candidate for FMT as adjunctive therapy? Are there trials I could enrol in?" The answer might be no — but it should be a no based on your specific situation, not a reflexive dismissal of a treatment that now has 15 RCTs behind it.',
+          'For patients pursuing FMT: the safest context remains an established IBD clinic, ideally as part of a clinical trial, with screened donors and proper follow-up. DIY FMT exists and is discussed extensively on Reddit forums — but donor screening for transmissible pathogens is not optional, and several serious adverse events have occurred in unscreened DIY settings.',
+        ],
+        callout: 'If two treatments have failed you, FMT is a legitimate next question — not fringe, not experimental in the dismissive sense, but an evidence-based option your GI should be willing to discuss.',
+      },
+      {
+        title: 'The bigger picture: UC is a disease of the entire gut ecosystem',
+        paragraphs: [
+          'Perhaps the most important thing this meta-analysis signals is not the efficacy data itself, but what the efficacy data implies about the nature of UC.',
+          'If transplanting a healthy gut microbiome improves outcomes in UC — consistently, across 15 independent trials, in multiple countries with different patient populations and different UC severities — then the microbiome is not a passenger in UC. It is at minimum a co-driver, and potentially the primary upstream cause of the immune dysregulation we\'ve been treating pharmacologically for decades.',
+          'This reframes the question from "which drug should I use to suppress this inflammation?" to "why is my gut ecosystem triggering this inflammation, and can we fix the trigger rather than just dampen the response?"',
+          'FMT is the bluntest tool for answering that question. Targeted probiotic therapies, microbiome-based diagnostics, and personalised interventions based on individual microbial signatures are in development. The OR 2.65 from this meta-analysis is not just a result — it is a direction. The gut ecosystem is where at least some of the answers are.',
+          'None of this means you should stop your current medications. It means you should understand that UC treatment is evolving faster than most GI clinics\' practice patterns, that a non-pharmacological option with genuine efficacy now exists, and that informed patients ask better questions.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is FMT FDA-approved for ulcerative colitis?',
+        answer: 'Not yet in the US as a licensed treatment specifically for UC. FMT is FDA-approved for recurrent Clostridioides difficile infection (the products Rebyota and Vowst). For UC, it is primarily available through clinical trials and specialised IBD centres. The evidence base — including this 15-RCT meta-analysis — is driving ongoing regulatory discussions.',
+      },
+      {
+        question: 'Can I do FMT at home for my UC?',
+        answer: 'DIY FMT is practised and discussed online, but carries genuine risks. Donor screening for transmissible pathogens (including HIV, hepatitis, antibiotic-resistant bacteria, and other infectious agents) is essential. Serious adverse events, including deaths, have occurred with unscreened donors. If you are considering FMT, the safest route is through an established IBD clinic or clinical trial where donors are properly screened.',
+      },
+      {
+        question: 'How many FMT treatments are needed for UC?',
+        answer: 'The RCT protocols vary considerably — from single infusions to multiple weekly colonoscopic infusions over 6–8 weeks. Most successful protocols in the meta-analysis used multiple treatments. Optimal dosing is still being researched. Oral capsule formulations are being developed to reduce the burden of repeated colonoscopic procedures.',
+      },
+      {
+        question: 'Does FMT work if I\'m on biologics?',
+        answer: 'The meta-analysis included patients on various background therapies. The evidence for FMT combined with biologics is not yet definitive, but mechanistically there is no obvious reason the two approaches would be incompatible. Some trials are specifically testing FMT as an adjunct to conventional treatment. Ask your gastroenterologist about your specific situation.',
+      },
+      {
+        question: 'What is the remission rate with FMT for UC?',
+        answer: 'In this meta-analysis of 15 RCTs, 62% of FMT patients achieved clinical remission vs 50.5% in control groups — an odds ratio of 2.65. Endoscopic response was 42% vs 22%. These are average rates across diverse trials; individual results depend on disease severity, duration, prior treatments, and donor microbiome characteristics.',
+      },
+    ],
+    references: [
+      { label: 'Doukas PG et al. Dig Dis (Basel). 2026;44(1):85-98. (PMID: 41078065)', href: 'https://pubmed.ncbi.nlm.nih.gov/41078065/' },
+      { label: 'Paramsothy S et al. Lancet. 2017 — FOCUS trial of FMT in active UC', href: 'https://pubmed.ncbi.nlm.nih.gov/28131791/' },
+      { label: 'Moayyedi P et al. Gastroenterology. 2015 — RCT FMT in UC', href: 'https://pubmed.ncbi.nlm.nih.gov/25857726/' },
+      { label: 'Xu MQ et al. Aliment Pharmacol Ther. 2015 — FMT for IBD meta-analysis', href: 'https://pubmed.ncbi.nlm.nih.gov/25923583/' },
+      { label: 'FDA — Rebyota and Vowst approvals for C. difficile', href: 'https://www.fda.gov/vaccines-blood-biologics/biologics-approvals/fecal-microbiota-products' },
+    ],
+    relatedSlugs: ['understanding-ulcerative-colitis', 'jak-inhibitors-acute-severe-uc-meta-analysis-2026', 'anti-inflammatory-diet-uc-meta-analysis-2026'],
+  },
 ]
 
 export const BLOG_ARTICLE_MAP = Object.fromEntries(
