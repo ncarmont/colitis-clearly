@@ -798,6 +798,128 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     relatedSlugs: ['understanding-ulcerative-colitis', 'anti-inflammatory-diet-uc-meta-analysis-2026'],
   },
   {
+    slug: 'mediterranean-diet-curcumin-uc-rct-2024',
+    title: 'Mediterranean Diet + Curcumin Suppressed Active UC in 8 Weeks — Multicenter Randomized Trial',
+    description: 'A multicenter RCT found that a Mediterranean diet — with or without curcumin or resveratrol supplementation — significantly reduced UC disease activity, cut inflammatory markers, and improved quality of life in 8 weeks. Here is what the trial actually showed.',
+    category: 'Diet',
+    readTime: '10 min read',
+    datePublished: '2026-03-25',
+    intro: 'Your gastroenterologist probably told you diet doesn\'t treat UC. This multicenter randomised controlled trial out of Turkey, published in Nutrients in 2024, would like a word. Researchers ran three parallel arms — Mediterranean diet alone, Mediterranean diet plus 1,600 mg/day curcumin, and Mediterranean diet plus 500 mg/day resveratrol — in patients with mild-to-moderate active UC. All three groups showed statistically significant reductions in disease activity, serum inflammatory markers, and improved quality of life scores after just 8 weeks. Not anecdote. Not a wellness blog. A registered RCT with colonoscopy-confirmed, gastroenterologist-diagnosed patients on mesalamine.',
+    keyPoints: [
+      'All three dietary arms (Mediterranean diet alone, MD + curcumin, MD + resveratrol) significantly reduced disease activity on the Truelove–Witts Index (p < 0.05) after 8 weeks.',
+      'Serum inflammatory markers — including CRP and TNF-α-related cytokines — dropped significantly in all groups (p < 0.05).',
+      'Quality of life scores (SF-36 and IBD Questionnaire) improved significantly in all three arms after 8 weeks.',
+      'The Mediterranean diet alone was as effective as MD + supplementation on most parameters — the diet itself was doing the heavy lifting.',
+    ],
+    sections: [
+      {
+        title: 'Why this RCT is more important than you\'ve been led to believe',
+        paragraphs: [
+          'Most diet research in UC is deeply flawed: observational studies tracking what people ate years ago, single-arm trials without control groups, or testimonials dressed up in pseudo-scientific language. This 2024 study published in Nutrients (PMID: 38794742) is different in structure. It was registered as a clinical trial (NCT05761327), approved by a clinical research ethics committee, randomised using validated disease-activity scoring, and run across two gastroenterology centres in Turkey.',
+          'Participants had confirmed mild-to-moderate active UC diagnosed by a gastroenterologist, were already on stable mesalamine and/or azathioprine treatment, and were assessed on objective endpoints including the Truelove–Witts Index (a validated UC disease activity scoring system), the IBD Questionnaire, Short Form-36 quality-of-life tool, and laboratory inflammatory markers. This is not a study where patients self-reported whether they "felt better."',
+          'The intervention ran for 8 weeks. Forty-eight patients were enrolled across three arms: Mediterranean diet only (16 patients), MD plus 1,600 mg/day curcumin (16 patients), and MD plus 500 mg/day resveratrol (16 patients). All patients received the same dietary framework. The only variable was whether polyphenol supplementation was added.',
+        ],
+        callout: 'Registered RCT. Gastroenterologist-confirmed UC. Validated disease scoring. Lab markers. Across two academic IBD centres. This is actual science, not a wellness Instagram post.',
+      },
+      {
+        title: 'What the results showed — and what surprised researchers',
+        paragraphs: [
+          'Here is the result that should be on every UC forum: all three groups — Mediterranean diet alone, MD plus curcumin, and MD plus resveratrol — showed statistically significant within-group reductions in disease activity, inflammatory markers, and quality of life improvements (all p < 0.05). The Truelove–Witts Index scores dropped. The IBD Questionnaire scores improved. The SF-36 scores improved. All of this happened in 8 weeks, in patients who had not changed their baseline medication.',
+          'The between-group comparisons are where the results get even more instructive. Across most parameters — disease activity, inflammatory markers, IBD quality of life — there was no statistically significant difference between the three arms. The Mediterranean diet alone performed equivalently to Mediterranean diet plus curcumin and Mediterranean diet plus resveratrol.',
+          'The exceptions were the pain subparameter of the SF-36 quality-of-life scale and the Mediterranean Diet Adherence Scale score. On pain specifically, there were between-group differences — suggesting curcumin may provide additional analgesic benefit beyond the diet itself. But on the primary disease activity and inflammation outcomes, the Mediterranean diet alone was doing the work.',
+          'The researchers concluded: "The MD is an effective and safe intervention to be used in clinical practice in individuals with UC." That is direct language from a peer-reviewed, multicenter RCT. Not from a nutrition coach. Not from a supplement company. From gastroenterologists and clinical dietitians who ran a registered trial.',
+        ],
+        callout: 'The Mediterranean diet alone — without curcumin, without resveratrol — was enough to significantly reduce UC disease activity in 8 weeks. The food is the medicine.',
+      },
+      {
+        title: 'How curcumin actually works in UC — the mechanism isn\'t magic',
+        paragraphs: [
+          'Curcumin is a polyphenol extracted from turmeric root. It has been used in Ayurvedic medicine for centuries, which is why wellness culture has latched onto it. But the reason it may be relevant in UC is not mystical — it is immunological.',
+          'Curcumin inhibits two of the primary inflammatory cytokines in UC: interleukin-1 (IL-1) and tumour necrosis factor alpha (TNF-α). These are the same cytokines targeted by biologics like infliximab. Curcumin does not block them as potently or as specifically as a biologic, but at 1,600 mg/day — the dose used in this trial — it produces measurable downstream anti-inflammatory effects at the mucosal level.',
+          'A 2021 meta-analysis by Yin et al. analysed 385 UC patients across six RCTs and found curcumin supplementation was effective in achieving clinical remission, though not endoscopic remission. The 2024 trial adds to this evidence: curcumin combined with a Mediterranean dietary framework reduced disease activity and inflammatory markers in an 8-week trial with on-medication UC patients.',
+          'Critically: curcumin is poorly bioavailable on its own. Standard curcumin capsules are largely excreted before reaching therapeutic tissue concentrations. The studies that show clinical benefit typically use enhanced formulations — phospholipid complexes, piperine-enhanced preparations, or nanoparticle encapsulation — that improve absorption. The trial used curcumin at 1,600 mg/day; the formulation specifics should be considered when interpreting how to replicate this in practice.',
+        ],
+      },
+      {
+        title: 'The Mediterranean diet: what it actually is, stripped of the marketing',
+        paragraphs: [
+          'Before the word "Mediterranean" conjures images of a Santorini buffet, here is the clinical definition used in IBD dietary research: a predominantly plant-based pattern characterised by abundant vegetables, fruits, whole grains, legumes, nuts, and seeds; extra-virgin olive oil as the primary fat source; fish at least twice weekly; moderate poultry and dairy; minimal red meat, processed meat, refined carbohydrates, added sugars, and ultra-processed foods.',
+          'In the context of UC, the anti-inflammatory mechanisms of a Mediterranean pattern operate at multiple levels. Olive oil\'s oleocanthal acts as a natural COX-2 inhibitor — the same enzyme pathway targeted by some anti-inflammatory drugs. Omega-3 fatty acids from fatty fish (EPA and DHA) compete with omega-6 arachidonic acid to produce less inflammatory eicosanoids. Diverse plant polyphenols feed anti-inflammatory bacteria that produce butyrate, a short-chain fatty acid that directly nourishes colonocytes and reduces mucosal inflammation.',
+          'The Mediterranean Diet Adherence Scale (MEDAS) used in this trial has 14 components. Patients who scored higher on MEDAS adherence showed better disease activity outcomes — a dose-response relationship that strengthens the causal argument.',
+        ],
+        bullets: [
+          'Extra-virgin olive oil daily — target 4+ tablespoons for IBD-relevant anti-inflammatory dose',
+          'Fatty fish (salmon, sardines, mackerel) at least 3 times per week',
+          'Diverse vegetables daily — minimum 2 servings, aim for colour variety',
+          'Legumes 3+ times per week (lentils, chickpeas, beans) — when tolerated',
+          'Whole grains over refined (oats, barley, brown rice, quinoa)',
+          'Minimal processed meat, refined sugar, and ultra-processed foods',
+          'Nuts and seeds daily — walnuts, almonds, ground flaxseed',
+        ],
+      },
+      {
+        title: 'What about resveratrol — and why you probably don\'t need to supplement it',
+        paragraphs: [
+          'Resveratrol is a stilbenoid polyphenol found naturally in red grapes, berries, and peanuts. In UC, its proposed mechanisms include inhibition of NF-κB (a master inflammatory regulator), prevention of mitochondrial dysfunction in colonocytes, and reduction of pro-inflammatory cytokine production.',
+          'In this trial, 500 mg/day resveratrol added to the Mediterranean diet showed equivalent outcomes to MD alone on most disease activity and inflammatory marker endpoints. The polyphenol supplementation did not add meaningful benefit beyond what the diet itself was achieving — possibly because the Mediterranean diet itself is rich in natural resveratrol precursors and other polyphenols that work through overlapping pathways.',
+          'Human bioavailability studies on oral resveratrol are complicated by the same issue as curcumin: poor absorption and rapid metabolism mean standard capsule doses may not achieve adequate tissue concentrations. The fact that MD + resveratrol performed equivalently to MD alone in this trial might reflect genuine equivalence, or it might reflect inadequate tissue-level resveratrol delivery from a standard supplement at 500 mg.',
+          'The practical takeaway: focus on the Mediterranean dietary pattern first. Curcumin at 1,600 mg/day in an enhanced-bioavailability formulation has a better evidence base for clinical benefit in UC than resveratrol supplementation at current evidence levels.',
+        ],
+      },
+      {
+        title: 'What "in addition to standard medication" actually means for you',
+        paragraphs: [
+          'Every patient in this trial was already on mesalamine and/or azathioprine. The dietary intervention was additive — it was not replacing medication, it was augmenting what medication was already doing. That framing matters, because the most dangerous misinterpretation of this evidence is that diet can substitute for proven pharmacological treatment.',
+          'If you are on mesalamine and struggling to maintain remission, this trial suggests the Mediterranean diet is not a "nice to have" lifestyle suggestion. It is a clinically validated adjunct that produced statistically significant disease activity reduction in 8 weeks, in patients just like you, on the same medications you are taking.',
+          'If you are on a biologic or JAK inhibitor with partial response, the same logic applies. Your drug is suppressing one or several immune pathways. Your diet is either feeding or starving the upstream triggers — the gut dysbiosis, the mucosal permeability, the inflammatory lipid environment. Getting both right simultaneously is not redundant. It is mechanistically additive.',
+          'If you have been told diet doesn\'t matter in UC: you now have a registered multicenter RCT that specifically contradicts that dismissal. Eight weeks. Two academic gastroenterology centres. Validated disease scoring. The diet matters. The data says so.',
+        ],
+        callout: 'Diet did not replace their mesalamine. It made the mesalamine work better. That is the sentence your GI should hear.',
+      },
+      {
+        title: 'The limitations of this trial — in full transparency',
+        paragraphs: [
+          'This trial enrolled 48 patients across three arms — 16 per group. That is a small sample size. With 16 patients per arm, the study was adequately powered to detect medium-to-large effect sizes, but may have missed more modest differences between the three groups. The absence of a placebo arm (where patients received neither dietary guidance nor supplementation) is also a limitation — all three groups improved, but there was no true control arm to quantify placebo or natural disease fluctuation effects.',
+          'The trial was open-label: patients knew which group they were in. For subjective outcomes like quality of life and symptom scores, this introduces potential bias. Patients who know they are making deliberate dietary changes may report improvement partly because of expectation effects.',
+          'However, inflammatory markers — CRP, serum cytokines — are not self-reported. The objective biomarker improvements across all three groups are harder to attribute to expectation alone.',
+          'The 8-week follow-up is relatively short. UC is a relapsing-remitting disease measured over years. Whether Mediterranean diet adherence sustains disease activity reduction at 6 months and 12 months is the key clinical question the trial was not designed to answer.',
+          'Despite these limitations: a multicenter, registered, ethics-approved RCT showing statistically significant reductions in validated UC disease activity scores and serum inflammatory markers is not trivial. It adds to an accumulating evidence base — including the 2026 meta-analysis showing anti-inflammatory diets improve response by 82% — that food is a legitimate, evidence-supported intervention in UC.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can the Mediterranean diet replace my UC medication?',
+        answer: 'No. Every patient in this trial was on stable mesalamine or azathioprine. The diet produced significant improvements on top of medication — not instead of it. Never adjust or stop UC medication without your gastroenterologist\'s guidance.',
+      },
+      {
+        question: 'How much curcumin should I take for UC?',
+        answer: 'This trial used 1,600 mg/day. Most studies showing clinical benefit in UC use doses between 1,000 and 2,000 mg/day. Standard bioavailability of oral curcumin is poor — look for enhanced-absorption formulations (phospholipid complexes, piperine-enhanced, or nanoparticle preparations). Always discuss supplementation with your gastroenterologist, as curcumin can interact with some anticoagulant medications.',
+      },
+      {
+        question: 'How quickly does a Mediterranean diet help UC symptoms?',
+        answer: 'In this 8-week trial, statistically significant improvements in disease activity and inflammatory markers were measurable after just 8 weeks. Do not expect overnight results — give it at least 6-8 weeks of genuine adherence before evaluating whether it is helping your symptoms and biomarkers.',
+      },
+      {
+        question: 'Is the Mediterranean diet safe during a UC flare?',
+        answer: 'This trial studied patients with mild-to-moderate active UC. During a severe flare with significant bleeding, high stool frequency, or hospitalisation, aggressive dietary changes are not the first priority — medical assessment is. In mild-to-moderate disease, the Mediterranean diet is generally well-tolerated. Your GI dietitian can help you adapt it to your tolerance during active disease.',
+      },
+      {
+        question: 'Should I also take resveratrol for UC?',
+        answer: 'In this trial, resveratrol at 500 mg/day added to the Mediterranean diet did not significantly outperform the diet alone on most UC outcomes. The Mediterranean diet itself provided substantial benefit. If considering resveratrol supplementation, discuss it with your gastroenterologist first — the evidence base is less established than for curcumin in UC.',
+      },
+    ],
+    references: [
+      { label: 'Erol Doğan Ö et al. Nutrients. 2024 (PMID: 38794742)', href: 'https://pubmed.ncbi.nlm.nih.gov/38794742/' },
+      { label: 'PMC Full Text (PMC11123867)', href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11123867/' },
+      { label: 'Yin M et al. — Curcumin meta-analysis in UC (6 RCTs, 385 patients)', href: 'https://pubmed.ncbi.nlm.nih.gov/31958083/' },
+      { label: 'Rehmat M et al. Dig Dis Sci 2026 — Anti-inflammatory diet meta-analysis (PMID: 40797000)', href: 'https://pubmed.ncbi.nlm.nih.gov/40797000/' },
+      { label: 'IBD Anti-Inflammatory Diet — UMass Medical School', href: 'https://www.umassmed.edu/nutrition/ibd/ibdaid/' },
+      { label: 'Khalili H et al. — Mediterranean diet and IBD risk (PMID: 31209713)', href: 'https://pubmed.ncbi.nlm.nih.gov/31209713/' },
+    ],
+    relatedSlugs: ['anti-inflammatory-diet-uc-meta-analysis-2026', 'uc-diet-guide', 'fmt-anti-inflammatory-diet-uc-remission'],
+  },
+  {
     slug: 'fmt-remission-meta-analysis-2026',
     title: 'Fecal Microbiota Transplantation Doubles Endoscopic Response in UC — Meta-Analysis of 15 RCTs',
     description: 'A 2026 meta-analysis of 15 randomised trials found FMT achieved 62% clinical remission vs 50.5% with placebo (OR 2.65) and nearly doubled endoscopic response rates. Here\'s what it means for UC patients whose current treatment isn\'t working.',
