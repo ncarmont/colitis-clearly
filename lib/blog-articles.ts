@@ -32,6 +32,95 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'curcumin-qingdai-uc-rct-2024',
+    title: '50% Remission in 8 Weeks: Curcumin + QingDai Delivered One of the Strongest Non-Steroid UC Signals in a Placebo RCT',
+    description: 'A 2024 placebo-controlled RCT found that an oral curcumin-QingDai combination achieved 50% clinical remission in active ulcerative colitis vs 8% on placebo by week 8. Here is what the trial means if you are desperate for steroid-free control.',
+    category: 'Supplements',
+    readTime: '11 min read',
+    datePublished: '2026-03-27',
+    intro: 'If you are stuck in the UC loop — flare, prednisone, side effects, partial improvement, flare again — this trial is the kind of data you screenshot and send to your family. In a randomised placebo-controlled study, 50% of active UC patients taking a curcumin-QingDai combination reached clinical remission in 8 weeks, compared with just 8% on placebo. That is not a tiny signal. That is a major gap in outcomes, in a disease where most people are told to settle for “some improvement.”',
+    keyPoints: [
+      'Clinical remission at week 8: 50% with CurQD vs 8% with placebo (P = 0.01).',
+      'Clinical response: 85.7% with CurQD vs 30.7% with placebo (P < 0.001).',
+      'Endoscopic improvement: 75% vs 20% (P = 0.036), showing objective mucosal benefit, not just symptom placebo effect.',
+      'No major safety signal difference was seen between CurQD and placebo in this short trial.',
+    ],
+    sections: [
+      {
+        title: 'Why this result matters to real people, not just researchers',
+        paragraphs: [
+          'UC patients do not care about elegant mechanisms. They care about whether they can leave the house without mapping every bathroom, eat without fear, and stop depending on repeated steroid tapers that wreck sleep, mood, weight, skin, and bones. So let us translate the trial result into plain language: in this study, people on CurQD were about six times more likely to hit clinical remission at 8 weeks than people on placebo (50% vs 8%).',
+          'That magnitude is exactly why this paper is commercially and clinically interesting. Most adjunct interventions in UC produce small incremental gains. This one produced a large absolute delta in remission, plus a strong endoscopic signal. If a patient in the middle of a flare sees 50% vs 8%, they understand the message instantly: this could materially change my odds.',
+        ],
+        callout: '50% remission vs 8% placebo is the kind of outcome gap that gets attention because it changes patient-level probability, not just p-values.',
+      },
+      {
+        title: 'What the trial actually did',
+        paragraphs: [
+          'Ben-Horin and colleagues ran a two-part programme, with the core efficacy data coming from a randomised, double-blind, placebo-controlled trial in active UC patients in Israel and Greece. Participants had active disease by symptom and objective measures, then were randomised 2:1 to enteric-coated CurQD 3 g/day or placebo for 8 weeks.',
+          'The co-primary endpoint required meaningful clinical and objective improvement. They also reported key secondary outcomes that matter to patients and clinicians: clinical response rates, clinical remission rates, calprotectin reduction, and endoscopic improvement. This design is important because it reduces the chance that the whole result is driven by expectation or symptom-report bias alone.',
+          'At week 8, CurQD beat placebo across the core outcomes. Clinical response occurred in 85.7% vs 30.7%. Clinical remission occurred in 50% vs 8%. Endoscopic improvement occurred in 75% vs 20%. Even the biomarker trend favored CurQD. In short: symptoms improved and the colon looked better.',
+        ],
+      },
+      {
+        title: 'The steroid-free angle: why this is the real hook',
+        paragraphs: [
+          'The ICP for UC content is not asking for another abstract. They are asking: “How do I get out of this prednisone trap?” This paper matters because it suggests a non-steroid adjunct strategy can produce large remission and response gains in active disease. Nobody sane is saying this replaces your GI specialist or replaces escalation when severe disease demands it. But as an add-on strategy, this is exactly the kind of evidence patients are starving for.',
+          'Steroids are fast, but they are not a long-term plan. The cumulative toxicity is real: insomnia, anxiety, depression, glucose dysregulation, blood pressure effects, bone loss, infection risk, and the psychological crash when tapering fails. Any intervention that can improve odds of remission without increasing steroid burden deserves serious attention.',
+          'This is where CurQD becomes strategically relevant: it may help close the gap between “partial control” and meaningful remission, which is often the difference between constant urgency and having a normal workday again.',
+        ],
+        callout: 'People do not want “better than baseline.” They want steroid-free normal life. This trial pushes in that direction.',
+      },
+      {
+        title: 'Mechanism without the fluff: why CurQD might work',
+        paragraphs: [
+          'Curcumin has known anti-inflammatory activity (including NF-kB-related signaling effects), and QingDai has been investigated for immunomodulatory and mucosal effects. The trial also reported unique up-regulation of mucosal CYP1A1 expression with CurQD, supporting aryl hydrocarbon receptor pathway engagement. Translation: this is not just folklore or supplement marketing copy; there is plausible biologic activity at the tissue level.',
+          'Does mechanism prove clinical efficacy? No. Outcomes do. But when you see both strong clinical outcomes and plausible tissue-level mechanism, confidence increases that you are seeing a real therapeutic effect rather than random noise.',
+        ],
+      },
+      {
+        title: 'Limitations you should know before you get overexcited',
+        paragraphs: [
+          'First, the randomised sample was small (42 patients). Small trials can overestimate effect size and need replication. Second, this was an 8-week induction window for the placebo-controlled phase, so long-term durability and relapse prevention require further study. Third, this was an adjunct strategy in active UC, not a proof that supplements alone can replace evidence-based medical treatment in moderate-to-severe disease.',
+          'Also, product quality in the real world is messy. The trial used a defined enteric-coated formulation and dosing protocol. Over-the-counter copycat products are inconsistent in bioavailability and purity. If you discuss this with your GI team, formulation and quality control matter more than marketing claims.',
+        ],
+      },
+      {
+        title: 'Practical next steps if you are exhausted by trial-and-error',
+        paragraphs: [
+          'Bring this paper to your gastroenterologist and have an adult conversation: where does an adjunct like CurQD fit your current disease activity, current meds, and risk profile? If you are in a severe flare, this is not DIY territory; you need medical supervision and often rapid escalation. If you are in mild-to-moderate active disease with incomplete response, this is where adjunct strategies can be discussed intelligently.',
+          'Track objective markers, not vibes. If you test any adjunct intervention, follow stool frequency, urgency, bleeding, fecal calprotectin, and ideally endoscopic outcomes when indicated. The goal is not to “feel a little better for two weeks.” The goal is durable, objective, steroid-sparing remission.',
+          'Bottom line: this RCT does not prove CurQD is a universal fix. It does prove there is a serious, evidence-backed non-steroid signal worth discussing now, especially for patients who feel trapped between underperformance and escalation fatigue.',
+        ],
+        callout: 'Want the full evidence breakdown and where CurQD ranks against biologics, JAKs, and diet strategies? Use the treatment rankings at Colitis Clearly (link in bio).',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can CurQD replace my UC medications?',
+        answer: 'No. This trial supports CurQD as a promising adjunct strategy, not a replacement for prescribed UC therapy. Medication decisions should be made with your gastroenterologist.',
+      },
+      {
+        question: 'How fast did CurQD work in the trial?',
+        answer: 'The placebo-controlled induction phase measured outcomes at 8 weeks, where CurQD showed significantly higher clinical response and remission rates versus placebo.',
+      },
+      {
+        question: 'Was there objective evidence beyond symptom improvement?',
+        answer: 'Yes. Endoscopic improvement was significantly better in the CurQD arm (75% vs 20%), which supports a true anti-inflammatory signal in the colon.',
+      },
+      {
+        question: 'Is CurQD safe for everyone with UC?',
+        answer: 'Not automatically. Trial safety looked acceptable short-term, but individual risk depends on your health profile, medication interactions, and product quality. Discuss with a licensed clinician before use.',
+      },
+    ],
+    references: [
+      { label: 'Ben-Horin S et al. Clin Gastroenterol Hepatol. 2024 (PMID: 37302449)', href: 'https://pubmed.ncbi.nlm.nih.gov/37302449/' },
+      { label: 'Danese et al. Upadacitinib phase 3 UC programme (PMID: 35644166)', href: 'https://pubmed.ncbi.nlm.nih.gov/35644166/' },
+      { label: 'Cochrane: Vitamin D for IBD (PMID: 37781953)', href: 'https://pubmed.ncbi.nlm.nih.gov/37781953/' },
+    ],
+    relatedSlugs: ['anti-inflammatory-diet-uc-meta-analysis-2026', 'mediterranean-diet-curcumin-uc-rct-2024', 'jak-inhibitors-uc'],
+  },
+  {
     slug: 'understanding-ulcerative-colitis',
     title: 'Understanding Ulcerative Colitis: Symptoms, Diagnosis, and Prognosis',
     description: 'A complete guide to ulcerative colitis: what it is, how symptoms present, how diagnosis is confirmed, and what long-term management usually looks like.',
