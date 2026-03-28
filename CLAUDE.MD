@@ -142,8 +142,9 @@ npm run lint    # Run ESLint
 2. Navigate to the affected page to verify changes render correctly
 3. Check console for any errors
 4. Test interactive features (clicking, filtering, navigation)
+5. **Thoroughly test all changes on the actual running application** — open the relevant UI in the browser, interact with all affected features end-to-end, and confirm everything works correctly before finishing.
 
-**The dev server is running on localhost:3000** - Always check your work visually!
+**The dev server is running on localhost:3000** - Always check your work visually! Do NOT consider a task done until you have verified it in the running app.
 
 ## 🚨 CRITICAL: Git Workflow - ALWAYS COMMIT AND PUSH
 
@@ -193,7 +194,7 @@ npm run lint    # Run ESLint
    - Fix any errors (build failures, runtime errors, etc.)
    - Repeat steps 1-6
 
-**This is MANDATORY - never skip committing, pushing, and verifying deployment!**
+**This is MANDATORY - never skip committing, pushing, and verifying deployment! Commit and push after EACH individual change, not just at the end.**
 
 ## Known Issues
 
