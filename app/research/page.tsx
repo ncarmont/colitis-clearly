@@ -5,7 +5,7 @@ import findings from '../meta-analysis-findings.json'
 import MedicalDisclaimer from '@/components/MedicalDisclaimer'
 
 export const metadata: Metadata = {
-  title: 'UC Research Hub | Colitis Clearly',
+  title: 'UC Research Hub | Project Remission UC',
   description: 'Track ulcerative colitis trials, biomarkers, pathophysiology, and emerging therapies in one evidence-first research hub.',
 }
 

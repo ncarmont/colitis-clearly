@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import MedicalDisclaimer from '@/components/MedicalDisclaimer'
 
 export const metadata: Metadata = {
-  title: 'Emerging UC Therapies | Colitis Clearly',
+  title: 'Emerging UC Therapies | Project Remission UC',
   description: 'FMT, microbiome engineering, stem-cell approaches, nanomedicine, and next-generation ulcerative colitis therapeutics.',
 }
 

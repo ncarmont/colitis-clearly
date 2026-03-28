@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Editorial Policy | Colitis Clearly',
-  description: 'How Colitis Clearly researches, reviews, updates, and corrects UC science content.',
+  title: 'Editorial Policy | Project Remission UC',
+  description: 'How Project Remission UC researches, reviews, updates, and corrects UC science content.',
 }
 
 export default function EditorialPolicyPage() {

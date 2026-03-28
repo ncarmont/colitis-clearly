@@ -6,7 +6,7 @@ import TreatmentRankingsBoard from '@/components/TreatmentRankingsBoard'
 import { TREATMENTS } from '@/lib/treatments'
 
 export const metadata: Metadata = {
-  title: 'UC Treatment Rankings | Colitis Clearly',
+  title: 'UC Treatment Rankings | Project Remission UC',
   description:
     'Warm, evidence-first ulcerative colitis treatment rankings with filterable cards for 5-ASA drugs, biologics, small molecules, and other therapies.',
 }

@@ -45,7 +45,7 @@ export default function FeedbackBubble() {
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-4 right-4 z-50 bg-slate-700/80 backdrop-blur-sm text-white p-3 rounded-full shadow-lg hover:bg-slate-600/90 hover:scale-110 transition-all duration-300 border border-slate-600/50"
-        title="Submit feedback about Colitis Clearly"
+        title="Submit feedback about Project Remission UC"
       >
         <span className="text-xl">❓</span>
       </button>

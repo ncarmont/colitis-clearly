@@ -12,6 +12,46 @@ const links = [
   { href: '/about', label: 'About' },
 ]
 
+function BrandIcon() {
+  return (
+    <div className="relative flex-shrink-0">
+      <div className="logo-breathe absolute -inset-1.5 rounded-[20px] bg-gradient-to-br from-coral-400/40 to-teal-accent/25 blur-md" />
+      <div className="relative overflow-hidden rounded-[14px] shadow-[0_4px_16px_rgba(244,132,95,0.25)]">
+        <svg width="42" height="42" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="44" height="44" rx="13" fill="url(#navGrad1)" />
+          <rect x="0" y="0" width="44" height="22" rx="13" fill="url(#navSheen)" opacity="0.45" />
+          <path
+            d="M30 13C27.2 11.4 24 10.5 20.8 10.5C13.6 10.5 8 16.2 8 23.5C8 30.8 13.6 36.5 20.8 36.5C24 36.5 27.1 35.5 30 33.8"
+            stroke="white"
+            strokeWidth="2.8"
+            strokeLinecap="round"
+            strokeOpacity="0.95"
+          />
+          <circle cx="30.5" cy="12.5" r="2.8" fill="white" fillOpacity="0.95" />
+          <circle cx="30.5" cy="34.5" r="2.8" fill="white" fillOpacity="0.95" />
+          <path
+            d="M25.5 17.5C23.5 16.3 21.2 15.8 19 16"
+            stroke="white"
+            strokeWidth="1.4"
+            strokeLinecap="round"
+            strokeOpacity="0.35"
+          />
+          <defs>
+            <linearGradient id="navGrad1" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#f4845f" />
+              <stop offset="1" stopColor="#f9a87a" />
+            </linearGradient>
+            <linearGradient id="navSheen" x1="22" y1="0" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+              <stop stopColor="white" stopOpacity="0.28" />
+              <stop offset="1" stopColor="white" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  )
+}
+
 export default function Navigation() {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -21,37 +61,32 @@ export default function Navigation() {
   }, [pathname])
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/8 bg-[rgba(8,17,28,0.82)] backdrop-blur-2xl">
-      <div className="mx-auto max-w-7xl px-4 py-3 md:px-6">
+    <nav className="sticky top-0 z-50 border-b border-warm-200/60 bg-white/80 backdrop-blur-2xl shadow-[0_1px_20px_rgba(180,80,40,0.06)]">
+      <div className="mx-auto max-w-7xl px-4 py-2.5 md:px-6">
         <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="group flex min-w-0 items-center gap-3">
-            <div className="rounded-[18px] bg-gradient-to-br from-emerald-accent via-teal-accent to-amber-accent p-[1px] shadow-glow-emerald">
-              <div className="flex h-12 w-12 items-center justify-center rounded-[17px] bg-navy-950 text-sm font-black tracking-[0.24em] text-white">
-                CC
-              </div>
-            </div>
+          <Link href="/" className="group flex min-w-0 items-center gap-2.5">
+            <BrandIcon />
             <div className="min-w-0 leading-tight">
-              <p className="font-display text-[1.35rem] tracking-tight text-white md:text-[1.55rem]">
-                Colitis <span className="text-emerald-accent">Clearly</span>
+              <p className="font-display text-[1.25rem] tracking-tight text-warm-900 md:text-[1.4rem]">
+                Project Remission <span className="text-coral-400">UC</span>
               </p>
-              <p className="truncate text-[0.63rem] uppercase tracking-[0.28em] text-slate-400 md:text-[0.68rem]">
-                Evidence-Based UC Science
+              <p className="truncate text-[0.58rem] uppercase tracking-[0.26em] text-warm-500 md:text-[0.63rem]">
+                Finding what actually works
               </p>
             </div>
           </Link>
 
-          <div className="hidden items-center gap-2 rounded-full border border-white/8 bg-white/[0.04] p-1.5 md:flex">
+          <div className="hidden items-center gap-1 rounded-full border border-warm-200 bg-warm-50/80 p-1 md:flex">
             {links.map((link) => {
               const active = pathname.startsWith(link.href)
-
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`rounded-full border px-4 py-2 text-sm font-semibold ${
+                  className={`rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-all ${
                     active
-                      ? 'border-emerald-accent/60 bg-emerald-accent/12 text-emerald-100'
-                      : 'border-transparent text-slate-300 hover:border-white/10 hover:bg-white/[0.06] hover:text-white'
+                      ? 'border-coral-400/50 bg-coral-400/10 text-coral-600'
+                      : 'border-transparent text-warm-700 hover:border-warm-200 hover:bg-white hover:text-warm-900'
                   }`}
                 >
                   {link.label}
@@ -62,12 +97,12 @@ export default function Navigation() {
 
           <button
             type="button"
-            className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.06] text-white md:hidden"
-            onClick={() => setMobileMenuOpen((current) => !current)}
+            className="flex h-10 w-10 items-center justify-center rounded-xl border border-warm-200 bg-white text-warm-700 md:hidden"
+            onClick={() => setMobileMenuOpen((c) => !c)}
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle navigation menu"
           >
-            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg className="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               {mobileMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6L6 18" />
               ) : (
@@ -79,25 +114,24 @@ export default function Navigation() {
 
         {mobileMenuOpen ? (
           <div className="animate-fade-in-up md:hidden">
-            <div className="mt-3 rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(20,34,54,0.96),rgba(8,17,28,0.94))] p-3 shadow-glow-soft">
-              <div className="mb-3 rounded-[22px] border border-[rgba(0,200,83,0.16)] bg-[rgba(0,200,83,0.08)] px-4 py-3">
-                <p className="text-[0.65rem] uppercase tracking-[0.28em] text-emerald-100/70">Navigation</p>
-                <p className="mt-1 text-sm text-slate-300">
+            <div className="mt-2.5 rounded-[24px] border border-warm-200 bg-white/95 p-2.5 shadow-card-warm">
+              <div className="mb-2.5 rounded-[18px] border border-coral-400/15 bg-coral-50/60 px-4 py-2.5">
+                <p className="text-[0.6rem] uppercase tracking-[0.28em] text-coral-600/70">Navigation</p>
+                <p className="mt-1 text-xs text-warm-600">
                   Evidence-guided rankings, articles, research summaries, and science-backed recommendations.
                 </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-1.5">
                 {links.map((link) => {
                   const active = pathname.startsWith(link.href)
-
                   return (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className={`block rounded-2xl border px-4 py-3 text-sm font-semibold ${
+                      className={`block rounded-xl border px-4 py-2.5 text-sm font-semibold ${
                         active
-                          ? 'border-emerald-accent/60 bg-emerald-accent/12 text-emerald-100'
-                          : 'border-white/8 bg-white/[0.04] text-slate-200 hover:bg-white/[0.08]'
+                          ? 'border-coral-400/40 bg-coral-400/8 text-coral-600'
+                          : 'border-warm-100 bg-warm-50 text-warm-800 hover:bg-white'
                       }`}
                     >
                       {link.label}

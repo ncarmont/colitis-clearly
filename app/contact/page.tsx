@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact | Colitis Clearly',
-  description: 'Contact Colitis Clearly for correction requests, citation updates, and editorial questions.',
+  title: 'Contact | Project Remission UC',
+  description: 'Contact Project Remission UC for correction requests, citation updates, and editorial questions.',
 }
 
 export default function ContactPage() {

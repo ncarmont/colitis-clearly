@@ -1,8 +1,8 @@
 export const BASE_URL = 'https://colitis-clearly.vercel.app'
 
-export const SITE_NAME = 'Colitis Clearly'
+export const SITE_NAME = 'Project Remission UC'
 
-export const SITE_TAGLINE = 'Evidence-Based UC Science'
+export const SITE_TAGLINE = 'Finding what actually works for UC remission'
 
 export const MEDICAL_DISCLAIMER =
   'Educational science summaries only. Ulcerative colitis symptoms, medication changes, and flare decisions should be reviewed with your gastroenterologist or treating clinician.'

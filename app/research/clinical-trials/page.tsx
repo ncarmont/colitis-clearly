@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import MedicalDisclaimer from '@/components/MedicalDisclaimer'
 
 export const metadata: Metadata = {
-  title: 'Major UC Clinical Trials | Colitis Clearly',
+  title: 'Major UC Clinical Trials | Project Remission UC',
   description: 'A concise guide to the pivotal ulcerative colitis trials that shaped modern therapy sequencing.',
 }
 

@@ -1,14 +1,15 @@
 import type { Metadata } from 'next'
-import { Fraunces, Geist_Mono, Sora } from 'next/font/google'
+import { Fraunces, Geist_Mono, Nunito } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import FeedbackBubble from '@/components/FeedbackBubble'
 import { BASE_URL, SITE_NAME, SITE_TAGLINE } from '@/lib/site'
 
-const sora = Sora({
-  variable: '--font-sora',
+const nunito = Nunito({
+  variable: '--font-nunito',
   subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
 })
 
 const fraunces = Fraunces({
@@ -59,12 +60,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    // Add your verification codes when you have them
-    // google: 'your-google-verification-code',
-    // yandex: 'your-yandex-verification-code',
-    // bing: 'your-bing-verification-code',
-  },
 }
 
 export default function RootLayout({
@@ -75,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google AdSense — auto ads enabled, controlled via adsense.google.com dashboard */}
+        {/* Google AdSense */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1361556625262612"
@@ -83,7 +78,7 @@ export default function RootLayout({
         ></script>
         <meta name="google-adsense-account" content="ca-pub-1361556625262612" />
 
-        {/* Google tag (gtag.js) */}
+        {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LQ9T4462C0"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -116,12 +111,23 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${sora.variable} ${fraunces.variable} ${geistMono.variable} overflow-x-hidden bg-navy-950 antialiased`}
+        className={`${nunito.variable} ${fraunces.variable} ${geistMono.variable} overflow-x-hidden antialiased`}
       >
-        <Navigation />
-        {children}
-        <Footer />
-        <FeedbackBubble />
+        {/* Animated blob background — fixed behind everything */}
+        <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+          <div className="blob blob-1" />
+          <div className="blob blob-2" />
+          <div className="blob blob-3" />
+          <div className="blob blob-4" />
+          <div className="blob blob-5" />
+        </div>
+
+        <div className="relative z-10">
+          <Navigation />
+          {children}
+          <Footer />
+          <FeedbackBubble />
+        </div>
       </body>
     </html>
   )

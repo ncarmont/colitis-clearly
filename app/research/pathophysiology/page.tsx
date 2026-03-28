@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import MedicalDisclaimer from '@/components/MedicalDisclaimer'
 
 export const metadata: Metadata = {
-  title: 'UC Pathophysiology | Colitis Clearly',
+  title: 'UC Pathophysiology | Project Remission UC',
   description: 'How ulcerative colitis works: mucosal immune dysregulation, epithelial barrier dysfunction, microbiome changes, and genetic susceptibility.',
 }
 

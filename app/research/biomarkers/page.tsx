@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import MedicalDisclaimer from '@/components/MedicalDisclaimer'
 
 export const metadata: Metadata = {
-  title: 'UC Biomarkers | Colitis Clearly',
+  title: 'UC Biomarkers | Project Remission UC',
   description: 'How fecal calprotectin, CRP, ESR, and lactoferrin help monitor ulcerative colitis activity.',
 }
 

@@ -5,7 +5,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import { BLOG_ARTICLES } from '@/lib/blog-articles'
 
 export const metadata: Metadata = {
-  title: 'UC Science Blog | Colitis Clearly',
+  title: 'UC Science Blog | Project Remission UC',
   description:
     'Evidence-based ulcerative colitis explainers on diagnosis, flare management, diet, biomarkers, and treatment decisions.',
 }

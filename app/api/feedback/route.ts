@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     }
 
     // Prepare email content
-    const emailSubject = 'Colitis Clearly - New Feedback Submission'
+    const emailSubject = 'Project Remission UC - New Feedback Submission'
     const emailBody = `
 New feedback received from colitis-clearly.vercel.app:
 
@@ -30,7 +30,7 @@ Submitted at: ${new Date().toISOString()}
         const resend = new Resend(process.env.RESEND_API_KEY)
 
         await resend.emails.send({
-          from: 'Colitis Clearly <feedback@colitisclearly.com>',
+          from: 'Project Remission UC <feedback@colitisclearly.com>',
           to: 'buildskiki@gmail.com',
           subject: emailSubject,
           text: emailBody,
@@ -54,7 +54,7 @@ Submitted at: ${new Date().toISOString()}
         body: JSON.stringify({
           access_key: process.env.WEB3FORMS_ACCESS_KEY,
           subject: emailSubject,
-          from_name: 'Colitis Clearly Feedback',
+          from_name: 'Project Remission UC Feedback',
           email: 'buildskiki@gmail.com',
           message: emailBody,
         }),

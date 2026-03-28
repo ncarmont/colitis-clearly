@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import MedicalDisclaimer from '@/components/MedicalDisclaimer'
 
 export const metadata: Metadata = {
-  title: 'About | Colitis Clearly',
-  description: 'About Colitis Clearly, an evidence-based resource focused on making ulcerative colitis science accessible.',
+  title: 'About | Project Remission UC',
+  description: 'About Project Remission UC, an evidence-based resource focused on making ulcerative colitis science accessible.',
 }
 
 const values = [
@@ -31,9 +31,9 @@ export default function AboutPage() {
             <span>←</span>
             Back to home
           </Link>
-          <h1 className="mt-6 text-4xl font-black tracking-tight md:text-5xl">About Colitis Clearly</h1>
+          <h1 className="mt-6 text-4xl font-black tracking-tight md:text-5xl">About Project Remission UC</h1>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate-300">
-            Colitis Clearly is an evidence-based resource dedicated to making ulcerative colitis science accessible. We synthesize clinical trial data, systematic reviews, and gastroenterology guidelines to help patients, caregivers, and clinicians make informed decisions.
+            Project Remission UC is an evidence-based resource dedicated to making ulcerative colitis science accessible. We synthesize clinical trial data, systematic reviews, and gastroenterology guidelines to help patients, caregivers, and clinicians make informed decisions.
           </p>
           <div className="mt-8 max-w-3xl">
             <MedicalDisclaimer compact />

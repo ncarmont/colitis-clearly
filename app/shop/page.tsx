@@ -6,7 +6,7 @@ import { PRODUCT_CATEGORIES, PRODUCTS } from '@/lib/products'
 import ShopRecommendationsClient from './ShopRecommendationsClient'
 
 export const metadata: Metadata = {
-  title: 'Science-Backed Recommendations | Colitis Clearly',
+  title: 'Science-Backed Recommendations | Project Remission UC',
   description:
     'Evidence-guided product recommendations for ulcerative colitis covering Mediterranean diet staples, supplements, gut health support, and lifestyle upgrades.',
 }
