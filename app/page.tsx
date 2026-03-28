@@ -4,6 +4,7 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer'
 import { TREATMENTS } from '@/lib/treatments'
 import { RANKED_PROCEDURES } from '@/lib/rankedProcedures'
 import FeaturedProcedures from '@/components/FeaturedProcedures'
+import PerfectDay from '@/components/PerfectDay'
 
 export const metadata: Metadata = {
   title: 'Colitis Clearly | Best Ulcerative Colitis Treatments Ranked by Science',
@@ -116,6 +117,11 @@ export default function HomePage() {
 
       {/* ── FULL RANKED PROCEDURES — all 15 with photos + filter ─────────────── */}
       <FeaturedProcedures procedures={RANKED_PROCEDURES} />
+
+      {/* ── PERFECT DAY LIFESTYLE STACK ──────────────────────────────────────── */}
+      <div className="border-t border-warm-200/50">
+        <PerfectDay />
+      </div>
 
       {/* ── DISCLAIMER ───────────────────────────────────────────────────────── */}
       <section className="mx-auto max-w-4xl px-4 pb-14 pt-2">
