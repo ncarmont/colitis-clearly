@@ -30,7 +30,12 @@ export const metadata: Metadata = {
   keywords:
     'ulcerative colitis, UC treatments, ulcerative colitis science, colitis flare management, fecal calprotectin, IBD biomarkers, biologics for ulcerative colitis, JAK inhibitors UC',
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
   },
   alternates: {
     canonical: BASE_URL,
