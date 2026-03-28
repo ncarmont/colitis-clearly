@@ -393,6 +393,42 @@ button { cursor: pointer; }
 .horizontal-scroll:active { cursor: grabbing; }
 .horizontal-scroll > * { scroll-snap-align: start; }
 
+/* ─── Auto-rotating ticker carousel ─────────────────────────────────────────── */
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.ticker-wrap {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 7%,
+    black 93%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 7%,
+    black 93%,
+    transparent 100%
+  );
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker 50s linear infinite;
+  will-change: transform;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
 /* ─── Responsive / Accessibility ─────────────────────────────────────────────── */
 
 @media (hover: none) {
@@ -411,4 +447,5 @@ button { cursor: pointer; }
 
   .scroll-reveal { opacity: 1; transform: none; filter: none; }
   .blob { animation: none !important; }
+  .ticker-track { animation: none !important; }
 }
