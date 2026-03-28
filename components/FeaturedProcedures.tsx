@@ -65,6 +65,17 @@ function ProcedureCard({ p }: { p: RankedProcedure }) {
         )}
         <p className="mt-1.5 text-[0.68rem] leading-relaxed text-warm-500">{p.trialRef}</p>
 
+        {p.subMethods && p.subMethods.length > 0 && (
+          <ul className="mt-2.5 space-y-1 rounded-xl bg-warm-50 px-3 py-2">
+            {p.subMethods.map((method, i) => (
+              <li key={i} className="flex items-start gap-1.5 text-[0.62rem] leading-snug text-warm-600">
+                <span className="mt-px shrink-0 text-coral-400">›</span>
+                {method}
+              </li>
+            ))}
+          </ul>
+        )}
+
         <div className="mt-auto flex items-center justify-between pt-3">
           <span className="rounded-full border border-coral-200 bg-coral-50 px-2 py-0.5 text-[0.58rem] font-bold uppercase tracking-[0.12em] text-coral-600">
             {p.evidenceLevel} Evidence
