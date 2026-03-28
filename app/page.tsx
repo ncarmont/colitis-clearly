@@ -91,22 +91,20 @@ export default function HomePage() {
                 href={pill.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex-none w-[102px] rounded-xl border px-2 py-2 transition-shadow hover:shadow-md ${
+                className={`flex-none w-[88px] rounded-lg border px-2 py-1.5 transition-opacity hover:opacity-80 ${
                   pill.tone === 'bad'
-                    ? 'border-rose-200 bg-rose-50 hover:border-rose-300'
-                    : 'border-warm-200 bg-white hover:border-coral-300/60'
+                    ? 'border-rose-200 bg-rose-50'
+                    : 'border-warm-200 bg-white'
                 }`}
               >
-                <p className={`font-display text-[1.1rem] font-black leading-none tracking-tight ${
+                <p className={`font-display text-[1rem] font-black leading-none tracking-tight ${
                   pill.tone === 'bad' ? 'text-rose-500' : 'text-warm-900'
                 }`}>
                   {pill.value}
                 </p>
-                <p className="mt-0.5 text-[0.56rem] leading-snug text-warm-500">{pill.label}</p>
-                <p className={`mt-1 border-t pt-1 text-[0.5rem] font-semibold leading-none tracking-wide ${
-                  pill.tone === 'bad'
-                    ? 'border-rose-100 text-rose-400'
-                    : 'border-warm-100 text-coral-400'
+                <p className="mt-0.5 text-[0.53rem] leading-snug text-warm-500">{pill.label}</p>
+                <p className={`mt-0.5 text-[0.47rem] leading-none ${
+                  pill.tone === 'bad' ? 'text-rose-400/70' : 'text-warm-400'
                 }`}>
                   {pill.cite}
                 </p>
