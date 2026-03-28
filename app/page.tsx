@@ -9,8 +9,8 @@ import CountUpMetric from '@/components/CountUpMetric'
 import ScrollReveal from '@/components/ScrollReveal'
 import { QUICK_NAV_CARDS } from '@/lib/site'
 import { TREATMENTS } from '@/lib/treatments'
-import { TOP_PRODUCTS } from '@/lib/products'
-import FeaturedProducts from '@/components/FeaturedProducts'
+import { TOP_RANKED_PROCEDURES } from '@/lib/rankedProcedures'
+import FeaturedProcedures from '@/components/FeaturedProcedures'
 
 type HeroStat = {
   value: number
@@ -34,9 +34,9 @@ type EvidenceSignal = {
 }
 
 export const metadata: Metadata = {
-  title: 'Colitis Clearly | Best Ulcerative Colitis Treatments Ranked by Science',
+  title: 'Project Remission UC | Best Ulcerative Colitis Treatments Ranked by Science',
   description:
-    'An evidence-first ulcerative colitis site with clinical-trial-ranked treatments, research snapshots, diet guidance, and science-backed recommendations.',
+    'A project to find the most effective methods for ulcerative colitis remission — clinical-trial-ranked treatments, research snapshots, diet guidance, and science-backed recommendations.',
 }
 
 const heroStats: HeroStat[] = [
@@ -48,15 +48,14 @@ const heroStats: HeroStat[] = [
   },
   {
     value: 36,
-    suffix: ' RCTs',
-    label: 'in the 2025 network meta-analysis',
-    detail: 'The latest cross-trial ranking put upadacitinib first for remission, endoscopy, and histology.',
+    label: 'clinical trials in the 2025 network analysis',
+    detail: 'The largest cross-trial comparison put upadacitinib first for remission, endoscopy, and histology.',
   },
   {
-    value: 5,
-    prefix: 'NNT ',
-    label: 'for fecal microbiota transplant',
-    detail: 'FMT remains investigational, but the pooled remission signal is too strong to ignore.',
+    value: 62,
+    suffix: '%',
+    label: 'remission rate with FMT in meta-analysis',
+    detail: 'Fecal microbiota transplant is investigational, but the pooled remission signal across 15 trials is striking.',
   },
 ]
 
@@ -65,50 +64,49 @@ const evidenceSignals: EvidenceSignal[] = [
     id: 'meat',
     badge: 'Harmful',
     tone: 'harmful',
-    value: 5.19,
-    prefix: 'OR ',
-    decimals: 2,
-    title: 'red and processed meat relapse signal',
-    detail: 'Among the clearest dietary risk multipliers in the UC literature.',
+    value: 5.2,
+    suffix: 'x',
+    decimals: 1,
+    title: 'higher relapse risk from red and processed meat',
+    detail: 'Among the clearest dietary risk multipliers in UC — eating red or processed meat raises relapse risk more than 5-fold.',
   },
   {
     id: 'stress',
     badge: 'Harmful',
     tone: 'harmful',
     value: 2.8,
-    prefix: 'HR ',
+    suffix: 'x',
     decimals: 1,
-    title: 'flare risk tied to sustained stress',
-    detail: 'Psychological load is not background noise. It is a measurable disease amplifier.',
+    title: 'more flares linked to chronic stress',
+    detail: 'Psychological stress is a measurable UC trigger. Patients under sustained stress had nearly 3 times more flares.',
   },
   {
     id: 'curcumin',
     badge: 'Protective',
     tone: 'protective',
-    value: 2.33,
-    prefix: 'RR ',
-    decimals: 2,
-    title: 'clinical remission signal with curcumin',
-    detail: 'One of the strongest low-cost adjunct options in mild-to-moderate UC.',
+    value: 2.3,
+    suffix: 'x',
+    decimals: 1,
+    title: 'more patients reach remission with curcumin',
+    detail: 'One of the strongest low-cost adjunct options in mild-to-moderate UC, recognized by ECCO 2025 guidelines.',
   },
   {
     id: 'appendectomy',
     badge: 'Protective',
     tone: 'protective',
-    value: 0.31,
-    prefix: 'OR ',
-    decimals: 2,
+    value: 69,
+    suffix: '%',
     title: 'lower UC risk with early appendectomy',
-    detail: 'A striking protective association that now has RCT-level follow-up in relapse prevention.',
+    detail: 'A striking protective association — people who had appendectomies early in life have 69% lower UC risk.',
   },
   {
     id: 'fmt',
     badge: 'Protective',
     tone: 'protective',
-    value: 5,
-    prefix: 'NNT ',
-    title: 'patients needed for one extra FMT remission',
-    detail: 'Investigational, but still one of the most dramatic pooled treatment effects on the site.',
+    value: 62,
+    suffix: '%',
+    title: 'of FMT patients achieve remission in trials',
+    detail: 'Still investigational, but 62% remission across 15 randomized trials is one of the most dramatic pooled effects seen.',
   },
 ]
 
@@ -145,58 +143,65 @@ export default function HomePage() {
     <main className="min-h-screen bg-navy-950 text-white">
       <section className="relative overflow-hidden border-b border-white/8">
         <div className="absolute inset-0 bg-[linear-gradient(180deg,#08111c_0%,#0a1628_58%,#08111c_100%)]" />
-        <div className="hero-orb hero-orb-emerald orb-drift-slow left-[-12rem] top-[-6rem] h-[28rem] w-[28rem]" />
-        <div className="hero-orb hero-orb-teal orb-drift-reverse right-[-8rem] top-10 h-[30rem] w-[30rem]" />
-        <div className="hero-orb hero-orb-amber orb-drift-delayed bottom-[-8rem] left-[42%] h-64 w-64 opacity-45" />
+        <div className="hero-orb hero-orb-emerald orb-drift-slow left-[-10rem] top-[-4rem] h-[24rem] w-[24rem]" />
+        <div className="hero-orb hero-orb-teal orb-drift-reverse right-[-6rem] top-8 h-[26rem] w-[26rem]" />
+        <div className="hero-orb hero-orb-amber orb-drift-delayed bottom-[-5rem] left-[42%] h-52 w-52 opacity-40" />
         <div className="absolute inset-0 opacity-40 dot-grid-pattern" />
 
-        <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-10 md:px-6 md:pb-28 md:pt-16">
-          <div className="hero-shimmer glass-panel px-6 py-12 text-center md:px-10 md:py-20">
+        {/* Floating particles */}
+        <div className="particle h-[3px] w-[3px]" style={{ left: '12%', top: '55%', '--dur': '9s', '--delay': '0s', '--drift': '14px' } as React.CSSProperties} />
+        <div className="particle h-[4px] w-[4px]" style={{ left: '33%', top: '68%', '--dur': '13s', '--delay': '2.5s', '--drift': '-10px' } as React.CSSProperties} />
+        <div className="particle h-[2px] w-[2px]" style={{ left: '57%', top: '58%', '--dur': '11s', '--delay': '1s', '--drift': '18px' } as React.CSSProperties} />
+        <div className="particle h-[5px] w-[5px]" style={{ left: '74%', top: '72%', '--dur': '10s', '--delay': '3.5s', '--drift': '-14px' } as React.CSSProperties} />
+        <div className="particle h-[3px] w-[3px]" style={{ left: '88%', top: '50%', '--dur': '12s', '--delay': '0.8s', '--drift': '10px' } as React.CSSProperties} />
+
+        <div className="relative mx-auto max-w-7xl px-4 pb-8 pt-5 md:px-6 md:pb-12 md:pt-8">
+          <div className="hero-shimmer glass-panel px-6 py-8 text-center md:px-10 md:py-12">
             <div className="mx-auto max-w-5xl">
               <div className="animate-fade-in-up">
-                <div className="inline-flex rounded-full border border-emerald-accent/20 bg-emerald-accent/10 px-4 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-emerald-100/80">
-                  Clinical Evidence, Distilled
+                <div className="inline-flex rounded-full border border-emerald-accent/20 bg-emerald-accent/10 px-4 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-orange-100/80">
+                  Project Remission UC — Clinical Evidence, Distilled
                 </div>
               </div>
 
               <div className="animate-fade-in-up" style={{ animationDelay: '120ms' }}>
-                <h1 className="font-display mt-6 text-5xl leading-[0.92] tracking-tight text-white md:text-[5.9rem] lg:text-[6.7rem]">
+                <h1 className="font-display mt-4 text-4xl leading-[0.94] tracking-tight text-white md:text-[5rem] lg:text-[5.6rem]">
                   <span className="block">Best Ulcerative Colitis Treatments</span>
-                  <span className="block bg-gradient-to-r from-emerald-100 via-emerald-accent to-teal-accent bg-clip-text text-transparent">
+                  <span className="animate-gradient-text block bg-gradient-to-r from-orange-100 via-emerald-accent to-teal-accent bg-clip-text text-transparent">
                     Ranked by Science
                   </span>
                 </h1>
               </div>
 
               <div className="animate-fade-in-up" style={{ animationDelay: '220ms' }}>
-                <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-2xl">
-                  Trial-ranked therapies, cleaner research context, and no fake certainty about what actually changes UC outcomes.
+                <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-slate-300 md:text-xl">
+                  A project to find the most effective methods for UC remission — trial-ranked therapies, no fake certainty.
                 </p>
               </div>
 
-              <div className="animate-fade-in-up mt-9 flex flex-wrap justify-center gap-3" style={{ animationDelay: '320ms' }}>
+              <div className="animate-fade-in-up mt-6 flex flex-wrap justify-center gap-3" style={{ animationDelay: '320ms' }}>
                 <Link
                   href="/rankings"
-                  className="rounded-full bg-emerald-accent px-6 py-3.5 text-sm font-semibold text-navy-950 shadow-glow-emerald hover:bg-[#2ed37a]"
+                  className="btn-shimmer rounded-full bg-emerald-accent px-6 py-3 text-sm font-semibold text-navy-950 shadow-glow-emerald hover:bg-[#ff9d84]"
                 >
                   Explore treatment rankings
                 </Link>
                 <Link
                   href="/shop"
-                  className="rounded-full border border-white/10 bg-white/[0.05] px-6 py-3.5 text-sm font-semibold text-white hover:border-emerald-accent/30 hover:bg-white/[0.08]"
+                  className="rounded-full border border-white/10 bg-white/[0.05] px-6 py-3 text-sm font-semibold text-white hover:border-emerald-accent/30 hover:bg-white/[0.08]"
                 >
-                  Browse science-backed recommendations
+                  Browse science-backed picks
                 </Link>
               </div>
 
-              <div className="mt-12 grid gap-4 md:grid-cols-3">
+              <div className="mt-7 grid gap-3 md:grid-cols-3">
                 {heroStats.map((stat, index) => (
                   <div
                     key={stat.label}
-                    className="stat-pill animate-fade-in-up px-5 py-5 text-left"
+                    className="stat-pill stat-pop px-5 py-4 text-left"
                     style={{ animationDelay: `${420 + index * 90}ms` }}
                   >
-                    <p className="font-display text-4xl tracking-tight text-white md:text-5xl">
+                    <p className="font-display text-3xl tracking-tight text-white md:text-4xl">
                       <CountUpMetric
                         value={stat.value}
                         prefix={stat.prefix}
@@ -204,8 +209,8 @@ export default function HomePage() {
                         decimals={stat.decimals}
                       />
                     </p>
-                    <p className="mt-2 text-sm font-semibold text-emerald-100">{stat.label}</p>
-                    <p className="mt-2 text-sm leading-relaxed text-slate-400">{stat.detail}</p>
+                    <p className="mt-1.5 text-sm font-semibold text-orange-100">{stat.label}</p>
+                    <p className="mt-1 text-xs leading-relaxed text-slate-400">{stat.detail}</p>
                   </div>
                 ))}
               </div>
@@ -340,8 +345,8 @@ export default function HomePage() {
         </ScrollReveal>
       </section>
 
-      {/* Featured Products */}
-      <FeaturedProducts products={TOP_PRODUCTS} />
+      {/* Ranked Procedures */}
+      <FeaturedProcedures procedures={TOP_RANKED_PROCEDURES} />
 
       <section className="mx-auto max-w-7xl px-4 pb-6 pt-8 md:px-6 md:pb-10 md:pt-12">
         <ScrollReveal>
