@@ -36,22 +36,22 @@ export default function HomePage() {
         <div className="absolute inset-0 dot-grid-pattern opacity-40" />
         <div className="relative mx-auto max-w-5xl px-4">
 
-          <div className="inline-flex rounded-full border border-coral-400/25 bg-coral-50 px-3.5 py-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-coral-600">
+          <div className="spring-up inline-flex rounded-full border border-coral-400/25 bg-coral-50 px-3.5 py-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-coral-600" style={{ animationDelay: '0.05s' }}>
             Clinical Evidence, Distilled
           </div>
 
-          <h1 className="font-display mt-2 text-[2rem] leading-[1.02] tracking-tight text-warm-950 sm:text-[2.5rem] md:text-[2.9rem] lg:text-[3.2rem]">
+          <h1 className="spring-up font-display mt-2 text-[2rem] leading-[1.02] tracking-tight text-warm-950 sm:text-[2.5rem] md:text-[2.9rem] lg:text-[3.2rem]" style={{ animationDelay: '0.15s' }}>
             Best UC Treatments{' '}
             <span className="bg-gradient-to-r from-coral-500 via-coral-400 to-amber-500 bg-clip-text text-transparent">
               Ranked by Science
             </span>
           </h1>
 
-          <p className="mx-auto mt-1.5 max-w-lg text-[0.78rem] leading-relaxed text-warm-500">
+          <p className="spring-up mx-auto mt-1.5 max-w-lg text-[0.78rem] leading-relaxed text-warm-500" style={{ animationDelay: '0.25s' }}>
             Trial-ranked therapies. No fake certainty — just what actually changes UC outcomes.
           </p>
 
-          <div className="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+          <div className="spring-up mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1" style={{ animationDelay: '0.33s' }}>
             <span className="text-[0.62rem] text-warm-500">
               <strong className="font-semibold text-warm-800">{TREATMENTS.length}+</strong> ranked therapies
             </span>
@@ -65,7 +65,7 @@ export default function HomePage() {
             </span>
           </div>
 
-          <div className="mt-3 flex flex-wrap justify-center gap-2.5">
+          <div className="spring-up mt-3 flex flex-wrap justify-center gap-2.5" style={{ animationDelay: '0.42s' }}>
             <Link
               href="/rankings"
               className="btn-shimmer rounded-full bg-coral-400 px-4.5 py-1.5 text-xs font-bold text-white hover:bg-coral-500"
@@ -83,7 +83,7 @@ export default function HomePage() {
       </section>
 
       {/* ── PROVEN CLINICAL SIGNALS — auto-rotating ticker ───────────────────── */}
-      <section className="border-b border-warm-200/50 bg-white/60 py-2">
+      <section className="spring-up border-b border-warm-200/50 bg-white/60 py-2" style={{ animationDelay: '0.52s' }}>
         <div className="ticker-wrap">
           <div className="ticker-track" style={{ gap: '8px', paddingInline: '8px' }}>
             {[...evidencePills, ...evidencePills].map((pill, i) => (

@@ -16,11 +16,12 @@ function rankBadge(rank: number) {
   return RANK_BADGE_COLORS[rank] ?? 'bg-coral-400 text-white'
 }
 
-function ProcedureCard({ p }: { p: RankedProcedure }) {
+function ProcedureCard({ p, index }: { p: RankedProcedure; index: number }) {
   return (
     <Link
       href={p.href}
-      className="card-lift group flex flex-col overflow-hidden rounded-[22px] border border-warm-200/70 bg-white shadow-card-warm hover:border-coral-300/60 hover:shadow-[0_16px_48px_rgba(244,132,95,0.12)]"
+      style={{ animationDelay: `${0.55 + index * 0.055}s` }}
+      className="spring-in card-lift group flex flex-col overflow-hidden rounded-[22px] border border-warm-200/70 bg-white shadow-card-warm hover:border-coral-300/60 hover:shadow-[0_16px_48px_rgba(244,132,95,0.12)]"
     >
       {/* Photo with overlaid rank + stat — exactly like the olive oil cards */}
       <div className="relative aspect-video overflow-hidden">
@@ -143,8 +144,8 @@ export default function FeaturedProcedures({ procedures }: { procedures: RankedP
 
       {/* Card grid */}
       <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {filtered.map((p) => (
-          <ProcedureCard key={p.rank} p={p} />
+        {filtered.map((p, i) => (
+          <ProcedureCard key={p.rank} p={p} index={i} />
         ))}
       </div>
 

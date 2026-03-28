@@ -120,6 +120,7 @@ export default function RootLayout({
           <div className="blob blob-3" />
           <div className="blob blob-4" />
           <div className="blob blob-5" />
+          <div className="blob blob-6" />
         </div>
 
         <div className="relative z-10">

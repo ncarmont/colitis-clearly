@@ -97,6 +97,21 @@
   }
 }
 
+@keyframes blob-morph-6 {
+  0%, 100% {
+    border-radius: 55% 45% 65% 35% / 45% 65% 35% 55%;
+    transform: translate(0, 0) scale(1);
+  }
+  40% {
+    border-radius: 35% 65% 45% 55% / 65% 35% 65% 35%;
+    transform: translate(60px, -50px) scale(1.13);
+  }
+  70% {
+    border-radius: 65% 35% 55% 45% / 35% 65% 35% 65%;
+    transform: translate(-30px, 40px) scale(0.91);
+  }
+}
+
 /* ─── Blob elements ─────────────────────────────────────────────────────────── */
 
 .blob {
@@ -108,56 +123,67 @@
 }
 
 .blob-1 {
-  width: 650px;
-  height: 550px;
-  background: radial-gradient(circle at 40% 40%, rgba(255, 196, 158, 0.9), rgba(249, 168, 122, 0.6));
-  top: -180px;
-  left: -120px;
-  opacity: 0.75;
-  animation: blob-morph-1 22s ease-in-out infinite;
+  width: 700px;
+  height: 600px;
+  background: radial-gradient(circle at 40% 40%, rgba(255, 195, 150, 0.92), rgba(249, 155, 108, 0.58));
+  top: -200px;
+  left: -140px;
+  opacity: 0.72;
+  animation: blob-morph-1 34s ease-in-out infinite;
 }
 
 .blob-2 {
-  width: 520px;
-  height: 620px;
-  background: radial-gradient(circle at 60% 50%, rgba(255, 224, 210, 0.95), rgba(252, 195, 175, 0.7));
-  top: 5%;
-  right: -100px;
-  opacity: 0.65;
-  animation: blob-morph-2 26s ease-in-out infinite;
+  width: 560px;
+  height: 660px;
+  background: radial-gradient(circle at 60% 50%, rgba(255, 218, 200, 0.96), rgba(252, 185, 162, 0.68));
+  top: 4%;
+  right: -110px;
+  opacity: 0.62;
+  animation: blob-morph-2 40s ease-in-out infinite;
 }
 
 .blob-3 {
-  width: 420px;
-  height: 420px;
-  background: radial-gradient(circle at 50% 50%, rgba(230, 200, 255, 0.8), rgba(210, 180, 250, 0.5));
-  top: 35%;
-  left: 15%;
-  opacity: 0.38;
-  animation: blob-morph-3 20s ease-in-out infinite;
-  animation-delay: -5s;
+  width: 460px;
+  height: 460px;
+  background: radial-gradient(circle at 50% 50%, rgba(228, 195, 255, 0.82), rgba(205, 168, 252, 0.5));
+  top: 32%;
+  left: 12%;
+  opacity: 0.5;
+  animation: blob-morph-3 30s ease-in-out infinite;
+  animation-delay: -8s;
 }
 
 .blob-4 {
-  width: 580px;
-  height: 480px;
-  background: radial-gradient(circle at 50% 60%, rgba(255, 240, 180, 0.85), rgba(252, 220, 140, 0.55));
-  bottom: -120px;
-  right: 8%;
-  opacity: 0.55;
-  animation: blob-morph-4 28s ease-in-out infinite;
-  animation-delay: -10s;
+  width: 620px;
+  height: 520px;
+  background: radial-gradient(circle at 50% 60%, rgba(255, 238, 170, 0.88), rgba(252, 215, 120, 0.52));
+  bottom: -130px;
+  right: 6%;
+  opacity: 0.52;
+  animation: blob-morph-4 44s ease-in-out infinite;
+  animation-delay: -14s;
 }
 
 .blob-5 {
-  width: 380px;
-  height: 380px;
-  background: radial-gradient(circle at 50% 40%, rgba(255, 175, 165, 0.85), rgba(245, 150, 140, 0.55));
-  top: 55%;
-  left: -70px;
-  opacity: 0.45;
-  animation: blob-morph-5 18s ease-in-out infinite;
-  animation-delay: -7s;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at 50% 40%, rgba(255, 170, 155, 0.88), rgba(245, 140, 128, 0.52));
+  top: 52%;
+  left: -80px;
+  opacity: 0.48;
+  animation: blob-morph-5 28s ease-in-out infinite;
+  animation-delay: -10s;
+}
+
+.blob-6 {
+  width: 480px;
+  height: 440px;
+  background: radial-gradient(circle at 45% 55%, rgba(255, 208, 130, 0.85), rgba(242, 180, 90, 0.5));
+  top: 18%;
+  left: 38%;
+  opacity: 0.35;
+  animation: blob-morph-6 37s ease-in-out infinite;
+  animation-delay: -18s;
 }
 
 /* ─── Keyframes ─────────────────────────────────────────────────────────────── */
@@ -165,6 +191,20 @@
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(26px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spring-up {
+  0%   { opacity: 0; transform: translateY(22px) scale(0.97); }
+  55%  { opacity: 1; transform: translateY(-5px) scale(1.008); }
+  75%  { transform: translateY(2px) scale(0.999); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes spring-in {
+  0%   { opacity: 0; transform: translateY(18px) scale(0.95); }
+  60%  { opacity: 1; transform: translateY(-4px) scale(1.012); }
+  80%  { transform: translateY(2px) scale(0.997); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 @keyframes shimmer {
@@ -331,6 +371,8 @@ button { cursor: pointer; }
 .animate-fade-in-up  { animation: fadeInUp 0.9s var(--ease-out) both; }
 .count-up            { animation: countUp 0.8s var(--ease-out) both; }
 .stat-pop            { animation: stat-pop 0.7s var(--ease-out) both; }
+.spring-up           { opacity: 0; animation: spring-up 0.65s cubic-bezier(0.34, 1.5, 0.64, 1) both; }
+.spring-in           { opacity: 0; animation: spring-in 0.55s cubic-bezier(0.34, 1.4, 0.64, 1) both; }
 
 .animate-gradient-text {
   background-size: 220% auto;
@@ -447,5 +489,6 @@ button { cursor: pointer; }
 
   .scroll-reveal { opacity: 1; transform: none; filter: none; }
   .blob { animation: none !important; }
+  .spring-up, .spring-in { animation: none !important; opacity: 1 !important; transform: none !important; }
   .ticker-track { animation: none !important; }
 }
