@@ -17,12 +17,17 @@ function rankBadge(rank: number) {
 }
 
 function ProcedureCard({ p, index }: { p: RankedProcedure; index: number }) {
+  const cardClass = 'spring-in card-lift group flex flex-col overflow-hidden rounded-[22px] border border-warm-200/70 bg-white shadow-card-warm hover:border-coral-300/60 hover:shadow-[0_16px_48px_rgba(244,132,95,0.12)]'
+  const isExternal = p.href.startsWith('http')
+  const Wrapper = isExternal
+    ? ({ children }: { children: React.ReactNode }) => (
+        <a href={p.href} target="_blank" rel="noopener noreferrer" style={{ animationDelay: `${0.55 + index * 0.055}s` }} className={cardClass}>{children}</a>
+      )
+    : ({ children }: { children: React.ReactNode }) => (
+        <Link href={p.href} style={{ animationDelay: `${0.55 + index * 0.055}s` }} className={cardClass}>{children}</Link>
+      )
   return (
-    <Link
-      href={p.href}
-      style={{ animationDelay: `${0.55 + index * 0.055}s` }}
-      className="spring-in card-lift group flex flex-col overflow-hidden rounded-[22px] border border-warm-200/70 bg-white shadow-card-warm hover:border-coral-300/60 hover:shadow-[0_16px_48px_rgba(244,132,95,0.12)]"
-    >
+    <Wrapper>
       {/* Photo with overlaid rank + stat — exactly like the olive oil cards */}
       <div className="relative aspect-video overflow-hidden">
         <img
@@ -67,13 +72,18 @@ function ProcedureCard({ p, index }: { p: RankedProcedure; index: number }) {
         <p className="mt-1.5 text-[0.68rem] leading-relaxed text-warm-500">{p.trialRef}</p>
 
         {p.subMethods && p.subMethods.length > 0 && (
-          <ul className="mt-2.5 space-y-1 rounded-xl bg-warm-50 px-3 py-2">
-            {p.subMethods.map((method, i) => (
-              <li key={i} className="flex items-start gap-1.5 text-[0.62rem] leading-snug text-warm-600">
+          <ul className="mt-2 space-y-0.5 rounded-lg bg-warm-50 px-2.5 py-1.5">
+            {p.subMethods.slice(0, 3).map((method, i) => (
+              <li key={i} className="flex items-start gap-1 text-[0.57rem] leading-snug text-warm-600">
                 <span className="mt-px shrink-0 text-coral-400">›</span>
-                {method}
+                <span className="line-clamp-1">{method}</span>
               </li>
             ))}
+            {p.subMethods.length > 3 && (
+              <li className="pt-0.5 text-[0.52rem] font-semibold text-warm-400">
+                +{p.subMethods.length - 3} more on details page
+              </li>
+            )}
           </ul>
         )}
 
@@ -82,11 +92,11 @@ function ProcedureCard({ p, index }: { p: RankedProcedure; index: number }) {
             {p.evidenceLevel} Evidence
           </span>
           <span className="text-xs font-bold text-coral-400 transition-colors group-hover:text-coral-600">
-            Details →
+            {p.ctaLabel ?? 'Details →'}
           </span>
         </div>
       </div>
-    </Link>
+    </Wrapper>
   )
 }
 
