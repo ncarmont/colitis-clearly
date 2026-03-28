@@ -32,32 +32,26 @@ export default function HomePage() {
     <main className="min-h-screen">
 
       {/* ── COMPACT HERO ─────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden border-b border-warm-200/50 py-3 text-center">
+      <section className="relative overflow-hidden border-b border-warm-200/50 py-5 text-center md:py-6">
         <div className="absolute inset-0 dot-grid-pattern opacity-40" />
         <div className="relative mx-auto max-w-5xl px-4">
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
-            <h1 className="font-display text-[1.6rem] leading-[1.05] tracking-tight text-warm-950 sm:text-[2rem] md:text-[2.4rem]">
-              Best UC Treatments{' '}
-              <span className="bg-gradient-to-r from-coral-500 via-coral-400 to-amber-500 bg-clip-text text-transparent">
-                Ranked by Science
-              </span>
-            </h1>
-            <div className="flex items-center gap-2.5">
-              <Link
-                href="/rankings"
-                className="btn-shimmer whitespace-nowrap rounded-full bg-coral-400 px-4 py-1.5 text-[0.72rem] font-bold text-white hover:bg-coral-500"
-              >
-                Explore rankings
-              </Link>
-              <Link
-                href="/shop"
-                className="whitespace-nowrap rounded-full border border-warm-300 bg-white/80 px-4 py-1.5 text-[0.72rem] font-bold text-warm-700 hover:border-coral-400/40 hover:bg-white"
-              >
-                Science picks
-              </Link>
-            </div>
+
+          <div className="inline-flex rounded-full border border-coral-400/25 bg-coral-50 px-3.5 py-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-coral-600">
+            Clinical Evidence, Distilled
           </div>
-          <div className="mt-1.5 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+
+          <h1 className="font-display mt-2 text-[2rem] leading-[1.02] tracking-tight text-warm-950 sm:text-[2.5rem] md:text-[2.9rem] lg:text-[3.2rem]">
+            Best UC Treatments{' '}
+            <span className="bg-gradient-to-r from-coral-500 via-coral-400 to-amber-500 bg-clip-text text-transparent">
+              Ranked by Science
+            </span>
+          </h1>
+
+          <p className="mx-auto mt-1.5 max-w-lg text-[0.78rem] leading-relaxed text-warm-500">
+            Trial-ranked therapies. No fake certainty — just what actually changes UC outcomes.
+          </p>
+
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
             <span className="text-[0.62rem] text-warm-500">
               <strong className="font-semibold text-warm-800">{TREATMENTS.length}+</strong> ranked therapies
             </span>
@@ -69,8 +63,21 @@ export default function HomePage() {
             <span className="text-[0.62rem] text-warm-500">
               <strong className="font-semibold text-warm-800">62%</strong> FMT remission rate
             </span>
-            <span className="text-warm-300">·</span>
-            <span className="text-[0.62rem] italic text-warm-400">Trial-ranked · no fake certainty</span>
+          </div>
+
+          <div className="mt-3 flex flex-wrap justify-center gap-2.5">
+            <Link
+              href="/rankings"
+              className="btn-shimmer rounded-full bg-coral-400 px-4.5 py-1.5 text-xs font-bold text-white hover:bg-coral-500"
+            >
+              Explore rankings
+            </Link>
+            <Link
+              href="/shop"
+              className="rounded-full border border-warm-300 bg-white/80 px-4.5 py-1.5 text-xs font-bold text-warm-700 hover:border-coral-400/40 hover:bg-white"
+            >
+              Science picks
+            </Link>
           </div>
         </div>
       </section>
