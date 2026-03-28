@@ -11,20 +11,19 @@ export const metadata: Metadata = {
     'An evidence-first ulcerative colitis site with clinical-trial-ranked treatments, research snapshots, diet guidance, and science-backed recommendations.',
 }
 
-// Horizontal scroll pills — shown below the hero, exactly like the olive oil "Proven Health Benefits" strip
 const evidencePills = [
-  { value: '74%',   label: 'respond to upadacitinib',         tone: 'good' },
-  { value: '62%',   label: 'FMT remission in meta-analysis',  tone: 'good' },
-  { value: '95%',   label: 'J-pouch surgical success',        tone: 'good' },
-  { value: '82%',   label: 'better outcomes, Mediterranean',   tone: 'good' },
-  { value: '2.3×',  label: 'more remissions with curcumin',   tone: 'good' },
-  { value: '43%',   label: 'remission with VSL#3 probiotic',  tone: 'good' },
-  { value: '69%',   label: 'lower UC risk, appendectomy',     tone: 'good' },
-  { value: '5.2×',  label: 'higher relapse risk, red meat',   tone: 'bad'  },
-  { value: '2.8×',  label: 'more flares from chronic stress', tone: 'bad'  },
-  { value: '50%',   label: 'remission — mirikizumab 40 wks',  tone: 'good' },
-  { value: '44%',   label: 'remission — ustekinumab 52 wks',  tone: 'good' },
-  { value: '42%',   label: 'remission — vedolizumab 52 wks',  tone: 'good' },
+  { value: '74%',  label: 'respond to upadacitinib',        tone: 'good', cite: 'U-ACHIEVE, NEJM 2023',  href: 'https://pubmed.ncbi.nlm.nih.gov/35644562/' },
+  { value: '62%',  label: 'FMT remission (meta-analysis)',  tone: 'good', cite: '15 RCTs, PMID 41078065', href: 'https://pubmed.ncbi.nlm.nih.gov/41078065/' },
+  { value: '95%',  label: 'J-pouch long-term success',      tone: 'good', cite: 'IPAA outcome studies',   href: 'https://pubmed.ncbi.nlm.nih.gov/19169164/' },
+  { value: '82%',  label: 'better outcomes, Med diet',      tone: 'good', cite: '6 RCTs, PMID 40797000',  href: 'https://pubmed.ncbi.nlm.nih.gov/40797000/' },
+  { value: '2.3×', label: 'more remissions, curcumin',      tone: 'good', cite: '8+ RCTs, ECCO 2025',     href: 'https://pubmed.ncbi.nlm.nih.gov/25688495/' },
+  { value: '43%',  label: 'remission with VSL#3',           tone: 'good', cite: 'Meta-analysis, 20 RCTs', href: 'https://pubmed.ncbi.nlm.nih.gov/25270082/' },
+  { value: '50%',  label: 'remission, mirikizumab 40 wks',  tone: 'good', cite: 'LUCENT-2, Lancet 2023',   href: 'https://pubmed.ncbi.nlm.nih.gov/36774166/' },
+  { value: '44%',  label: 'remission, ustekinumab 52 wks',  tone: 'good', cite: 'UNIFI, NEJM 2019',        href: 'https://pubmed.ncbi.nlm.nih.gov/31553834/' },
+  { value: '42%',  label: 'remission, vedolizumab 52 wks',  tone: 'good', cite: 'GEMINI 1, Lancet 2013',   href: 'https://pubmed.ncbi.nlm.nih.gov/23964932/' },
+  { value: '5.2×', label: 'higher relapse risk, red meat',  tone: 'bad',  cite: 'Jowett et al. 2004',      href: 'https://pubmed.ncbi.nlm.nih.gov/14960471/' },
+  { value: '2.8×', label: 'more flares, chronic stress',    tone: 'bad',  cite: 'Bernstein et al. 2010',   href: 'https://pubmed.ncbi.nlm.nih.gov/20070600/' },
+  { value: '69%',  label: 'lower UC risk, appendectomy',    tone: 'good', cite: 'Andersson, Gut 2001',      href: 'https://pubmed.ncbi.nlm.nih.gov/11559638/' },
 ]
 
 export default function HomePage() {
@@ -87,21 +86,31 @@ export default function HomePage() {
         <div className="ticker-wrap">
           <div className="ticker-track" style={{ gap: '8px', paddingInline: '8px' }}>
             {[...evidencePills, ...evidencePills].map((pill, i) => (
-              <div
+              <a
                 key={i}
-                className={`flex-none w-[122px] rounded-xl border px-2.5 py-2 ${
+                href={pill.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex-none w-[102px] rounded-xl border px-2 py-2 transition-shadow hover:shadow-md ${
                   pill.tone === 'bad'
-                    ? 'border-rose-200 bg-rose-50'
-                    : 'border-warm-200 bg-white'
+                    ? 'border-rose-200 bg-rose-50 hover:border-rose-300'
+                    : 'border-warm-200 bg-white hover:border-coral-300/60'
                 }`}
               >
-                <p className={`font-display text-[1.3rem] font-black leading-none tracking-tight ${
+                <p className={`font-display text-[1.1rem] font-black leading-none tracking-tight ${
                   pill.tone === 'bad' ? 'text-rose-500' : 'text-warm-900'
                 }`}>
                   {pill.value}
                 </p>
-                <p className="mt-0.5 text-[0.58rem] leading-snug text-warm-500">{pill.label}</p>
-              </div>
+                <p className="mt-0.5 text-[0.56rem] leading-snug text-warm-500">{pill.label}</p>
+                <p className={`mt-1 border-t pt-1 text-[0.5rem] font-semibold leading-none tracking-wide ${
+                  pill.tone === 'bad'
+                    ? 'border-rose-100 text-rose-400'
+                    : 'border-warm-100 text-coral-400'
+                }`}>
+                  {pill.cite}
+                </p>
+              </a>
             ))}
           </div>
         </div>
