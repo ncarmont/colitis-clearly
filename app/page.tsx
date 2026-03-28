@@ -91,7 +91,7 @@ export default function HomePage() {
                 href={pill.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex-none w-[88px] rounded-lg border px-2 py-1.5 transition-opacity hover:opacity-80 ${
+                className={`flex-none w-[118px] rounded-lg border px-2.5 py-2 transition-opacity hover:opacity-80 ${
                   pill.tone === 'bad'
                     ? 'border-rose-200 bg-rose-50'
                     : 'border-warm-200 bg-white'

@@ -447,15 +447,15 @@ button { cursor: pointer; }
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0%,
-    black 30%,
-    black 70%,
+    black 36%,
+    black 64%,
     transparent 100%
   );
   mask-image: linear-gradient(
     to right,
     transparent 0%,
-    black 30%,
-    black 70%,
+    black 36%,
+    black 64%,
     transparent 100%
   );
 }
