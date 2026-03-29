@@ -1,4 +1,5 @@
 [
+  { "stat": "77.7%", "label": "mirikizumab clinical remission sustained at 4 years (W52 remitters)", "source": "LUCENT-3 OLE — Sands BE et al. Inflamm Bowel Dis. 2026 (PMID: 41777218)" },
   { "stat": "OR 5.19", "label": "relapse risk from highest red/processed meat intake", "source": "Prospective cohort; dose-response meta-analysis" },
   { "stat": "HR 5.5", "label": "relapse risk from mesalamine non-adherence in quiescent UC", "source": "Prospective data (PMID: 12543288)" },
   { "stat": "aHR 3.25", "label": "objective flare risk with FC ≥250 vs <50 µg/g", "source": "PREdiCCt cohort (PMID: 41554630)" },

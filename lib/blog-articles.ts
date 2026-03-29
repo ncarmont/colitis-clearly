@@ -32,6 +32,122 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'mirikizumab-4-year-remission-lucent-3',
+    title: 'Mirikizumab Still Working at 4 Years: 77.7% Clinical Remission in LUCENT-3 — the Durability Data UC Patients Have Been Waiting For',
+    description: 'The LUCENT-3 open-label extension followed UC patients on mirikizumab for 4 continuous years. Among those in remission at year 1, 77.7% were still in clinical remission and 81.3% in endoscopic remission at week 212. Here is what this means for your treatment decision.',
+    category: 'Biologics',
+    readTime: '10 min read',
+    datePublished: '2026-03-29',
+    intro: 'Here is the question that every UC patient on a biologic asks their gastroenterologist at some point: "But how long will this actually work?" Most clinical trials only follow patients to week 52. That leaves a gaping uncertainty — will remission hold at year 2, year 3, year 4? The LUCENT-3 open-label extension just answered that question for mirikizumab. Among patients who achieved clinical remission at week 52, 77.7% were still in clinical remission at 4 years. Endoscopic remission was 81.3%. Symptomatic remission was 94.3%. And no new safety signals emerged across 835 patient-years of exposure. That is not a short-term spike. That is durable disease control.',
+    keyPoints: [
+      'W52 clinical remitters: 77.7% still in clinical remission at 4 years (week 212), by observed-case analysis.',
+      'W52 clinical remitters: 81.3% endoscopic remission and 94.3% symptomatic remission at 4 years.',
+      'W52 clinical responders (not yet remitters): 68.7% clinical and 70.2% endoscopic remission at 4 years.',
+      'Bowel urgency remission: 73.6% at 4 years — one of the most patient-relevant outcomes.',
+      'No new safety signals over 160+ weeks of long-term exposure in 835 patient-years.',
+      'Benefits held across biologic-naïve and biologic-experienced subgroups.',
+    ],
+    sections: [
+      {
+        title: 'Why durability data matters more than induction data',
+        paragraphs: [
+          'When a drug is approved, the headlines focus on induction: "X% achieved remission at week 8." That is important. But it is not the number that changes your life. The number that changes your life is what percentage of people are still doing well at year 2, year 3, year 4. Because UC is not an acute infection you treat and cure — it is a chronic disease you manage indefinitely.',
+          'Most biologic trials stop at week 52. That is a regulatory requirement, not a patient-relevant endpoint. A drug that gets 50% of patients into remission at 52 weeks could theoretically fall apart at week 104. Without long-term extension data, you are flying blind on durability.',
+          'LUCENT-3 addressed this directly. It extended the original LUCENT-1 and LUCENT-2 trials through week 212 — roughly 4 years of continuous treatment. The data reported by Sands et al. in Inflammatory Bowel Diseases (2026) represents the longest controlled prospective dataset for any IL-23 inhibitor in ulcerative colitis.',
+        ],
+        callout: 'Induction remission is a starting pistol. Durability at 4 years is the finish line patients actually care about.',
+      },
+      {
+        title: 'What the LUCENT-3 numbers actually mean',
+        paragraphs: [
+          'The study enrolled 868 patients in the original LUCENT induction program. Of these, 544 achieved clinical response. 365 were randomised to mirikizumab maintenance, and 316 entered the open-label extension after week 52. By week 212, 182 patients completed the full 4-year course — generating 835 total patient-years of exposure.',
+          'The headline number for patients in remission at week 52: 77.7% clinical remission at year 4, by observed-case analysis. But the other numbers are arguably more important. Endoscopic remission — meaning the colon looks objectively normal on camera — held at 81.3%. That is not just symptom relief; that is mucosal healing at 4 years. Histologic-endoscopic mucosal remission, the deepest possible measure of disease control, was 66.0%.',
+          'The symptomatic remission rate of 94.3% is the number that translates to daily life. Nearly all patients who were in remission at year 1 were symptom-free at year 4. Rectal bleeding, urgency, frequency — all sustained at near-zero by year 4 in the remitter cohort.',
+          'Even the responders — patients who had a clinical response at week 52 but were not yet in full remission — showed 68.7% clinical remission at year 4. That means a meaningful proportion of partial responders at year 1 converted to full remission over time. This has major implications for clinical decision-making: do not give up on a partial responder too early.',
+        ],
+      },
+      {
+        title: 'Bowel urgency: the outcome that actually matters to patients',
+        paragraphs: [
+          'One number in the LUCENT-3 data deserves special attention: bowel urgency remission of 73.6% at 4 years, with 92.9% achieving clinically meaningful improvement in bowel urgency.',
+          'Bowel urgency — the sudden, uncontrollable need to rush to a toilet — is the symptom that most severely limits UC patients. It determines whether you can travel, attend events, hold a normal job, maintain relationships, or sleep through the night. Standard clinical trials focus on stool frequency and rectal bleeding because those are easier to quantify. But patients consistently rank urgency as their most debilitating symptom.',
+          'The fact that LUCENT-3 tracked bowel urgency remission as a specific endpoint and showed 73.6% achieving it at 4 years is a signal that mirikizumab is addressing what patients actually experience, not just what looks good in a regulatory filing.',
+        ],
+        callout: '92.9% of patients achieved clinically meaningful improvement in bowel urgency at 4 years. That is the stat that changes whether you can live a normal life.',
+      },
+      {
+        title: 'What about biologic-experienced patients?',
+        paragraphs: [
+          'One of the most important subgroup analyses in LUCENT-3 was the split between biologic-naïve patients (no prior biologic exposure) and biologic-experienced patients (prior failure of anti-TNF or another biologic). Biologic failure is clinically harder — these patients have already proven they can exhaust treatment options.',
+          'The LUCENT-3 data showed that efficacy results were "generally similar" across both subgroups through week 212. This is meaningful. It means that if you failed adalimumab or infliximab, mirikizumab still has a realistic chance of providing 4-year durability. You are not just getting a temporary reprieve before the next treatment failure.',
+          'This is consistent with the established profile of IL-23 inhibitors as a class — their mechanism is independent of TNF signaling, so prior anti-TNF failure does not meaningfully blunt the IL-23 response. But the 4-year extension confirms this durability extends well beyond the standard 52-week observation window.',
+        ],
+      },
+      {
+        title: 'Safety over 160 weeks: what the long-term data shows',
+        paragraphs: [
+          'Safety is where long-term extension trials matter most. Short-term trials cannot detect rare events or cumulative effects that only emerge over years. The LUCENT-3 data across 835 patient-years showed no new safety signals compared with induction and maintenance treatment.',
+          'This is important because it addresses a concern that some patients have about biologics: "I know it is working now, but what happens to my immune system after 4 years?" The current answer from the longest IL-23 UC dataset available is: nothing unexpected. The risk profile at year 4 mirrors the risk profile at year 1.',
+          'As a class, IL-23 inhibitors have a favorable safety profile compared to anti-TNF agents and JAK inhibitors. They do not carry the cardiovascular or thromboembolism signals associated with JAK inhibitors, and they do not have the increased overall infection burden seen with broad anti-TNF therapy. The LUCENT-3 data further consolidates that profile over time.',
+        ],
+      },
+      {
+        title: 'How this compares to other biologics at 4 years',
+        paragraphs: [
+          'Most biologics approved for UC do not have 4-year randomised controlled data. Long-term extension studies for vedolizumab and ustekinumab show roughly 50–60% clinical remission in continuous responders at extended time points, though methodologies differ and direct comparison is not appropriate.',
+          'The mirikizumab LUCENT-3 77.7% number uses observed-case analysis — meaning it only counts patients who were still in the study at week 212, which is a stricter denominator in some respects (it excludes dropouts). When non-responder imputation is applied, rates are somewhat lower, as expected. The clinical implication is that patients who stay on mirikizumab and tolerate it well have a very high probability of remaining in deep remission at 4 years.',
+          'The bottom line for patients and clinicians: if you achieve remission on mirikizumab at year 1, there is a ~78% chance you will still be in clinical remission at year 4, a ~81% chance your colonoscopy will look objectively normal, and a near-zero chance of a new drug-related safety problem. That is a compelling durability argument.',
+        ],
+        callout: 'Achieve remission at year 1 → 78% probability of sustained clinical remission at year 4. That is the conversation starter for your next gastro appointment.',
+      },
+      {
+        title: 'What this means if you are currently deciding on treatment',
+        paragraphs: [
+          'If you have moderate-to-severe UC and are evaluating biologic options, the LUCENT-3 data strengthens the case for mirikizumab in several ways. First, it is now the IL-23 inhibitor with the longest published randomised extension data in UC. Second, the durability signal is among the strongest in the class. Third, the specific endoscopic and histologic remission rates at 4 years suggest deep, sustained mucosal healing — not just symptom masking.',
+          'Mirikizumab is currently approved in the US and EU under the brand name Omvoh. It is administered as an IV induction followed by a subcutaneous maintenance injection — a standard induction-to-SC path that simplifies long-term dosing.',
+          'None of this replaces a detailed conversation with your gastroenterologist. Treatment choice depends on your disease history, prior biologic exposure, comorbidities, payer coverage, and personal preferences. But if your GI is comparing IL-23 options, you can now bring the 4-year durability data to that conversation and ask: what is the comparable data for the alternative?',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is mirikizumab (Omvoh) and how does it work?',
+        answer: 'Mirikizumab is an IL-23 inhibitor that blocks the p19 subunit of interleukin-23, a key cytokine driving intestinal inflammation in UC. By blocking IL-23, it dampens the Th17 inflammatory pathway without broad immunosuppression. It is given as IV induction infusions followed by subcutaneous maintenance injections every 4 weeks.',
+      },
+      {
+        question: 'What does 77.7% clinical remission at 4 years mean in practice?',
+        answer: 'It means that of patients who achieved clinical remission at week 52, about 4 in 5 were still in clinical remission at the 4-year mark. Clinical remission in LUCENT trials means no rectal bleeding and very low stool frequency (Mayo score ≤1 with all subscores ≤1). This is an observed-case analysis, so it reflects patients who remained in the trial — an important caveat, but also the most clinically relevant group.',
+      },
+      {
+        question: 'Does mirikizumab still work if I previously failed a biologic like Humira or Remicade?',
+        answer: 'Yes — the LUCENT-3 data showed similar efficacy at 4 years across both biologic-naïve and biologic-experienced patients. Prior anti-TNF failure does not meaningfully reduce mirikizumab response because the two drugs work on completely different pathways.',
+      },
+      {
+        question: 'Are there any new long-term safety concerns at 4 years?',
+        answer: 'No. LUCENT-3 reported no new safety signals over 160+ weeks of long-term exposure (835 patient-years). The safety profile at 4 years mirrors that seen in the original induction and maintenance trials.',
+      },
+      {
+        question: 'What is bowel urgency remission and why does it matter?',
+        answer: 'Bowel urgency is the sudden, uncontrollable urge to rush to a toilet — often the most disabling symptom of active UC. LUCENT-3 showed 73.6% urgency remission and 92.9% clinically meaningful improvement in urgency at 4 years. This translates directly to whether patients can travel, work, socialise, and sleep normally.',
+      },
+    ],
+    references: [
+      {
+        label: 'Sands BE et al. Mirikizumab four-year sustained and durable efficacy and safety in ulcerative colitis: Final findings from the LUCENT-3 OLE. Inflamm Bowel Dis. 2026 Mar. PMID: 41777218',
+        href: 'https://pubmed.ncbi.nlm.nih.gov/41777218/',
+      },
+      {
+        label: 'D\'Haens G et al. LUCENT-2: Mirikizumab maintenance remission 49.9% at week 40. Lancet. 2023.',
+        href: 'https://pubmed.ncbi.nlm.nih.gov/36774166/',
+      },
+      {
+        label: 'Danese S et al. LUCENT-1 induction trial data. Lancet. 2022.',
+        href: 'https://pubmed.ncbi.nlm.nih.gov/35644166/',
+      },
+    ],
+    relatedSlugs: ['jak-inhibitors-uc', 'biologics-for-uc-compared', 'fmt-remission-meta-analysis-2026'],
+  },
+  {
     slug: 'curcumin-qingdai-uc-rct-2024',
     title: '50% Remission in 8 Weeks: Curcumin + QingDai Delivered One of the Strongest Non-Steroid UC Signals in a Placebo RCT',
     description: 'A 2024 placebo-controlled RCT found that an oral curcumin-QingDai combination achieved 50% clinical remission in active ulcerative colitis vs 8% on placebo by week 8. Here is what the trial means if you are desperate for steroid-free control.',

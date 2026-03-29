@@ -13,6 +13,8 @@ export interface RankedProcedure {
   href: string
   /** Ranked practical sub-methods with individual + combined effectiveness */
   subMethods?: string[]
+  /** Optional CTA label for cards (defaults to 'Details →') */
+  ctaLabel?: string
 }
 
 export const RANKED_PROCEDURES: RankedProcedure[] = [
