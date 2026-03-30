@@ -24,7 +24,7 @@ const evidencePills = [
   { value: '42%',  label: 'remission, vedolizumab 52 wks',  tone: 'good', cite: 'GEMINI 1, Lancet 2013',   href: 'https://pubmed.ncbi.nlm.nih.gov/23964932/' },
   { value: '5.2×', label: 'higher relapse risk, red meat',  tone: 'bad',  cite: 'Jowett et al. 2004',      href: 'https://pubmed.ncbi.nlm.nih.gov/14960471/' },
   { value: '2.8×', label: 'more flares, chronic stress',    tone: 'bad',  cite: 'Bernstein et al. 2010',   href: 'https://pubmed.ncbi.nlm.nih.gov/20070600/' },
-  { value: '69%',  label: 'lower UC risk, appendectomy',    tone: 'good', cite: 'Andersson, Gut 2001',      href: 'https://pubmed.ncbi.nlm.nih.gov/11559638/' },
+  { value: '2.7×', label: 'more remissions, appendicectomy vs JAK', tone: 'good', cite: 'COSTA trial, Lancet GH 2026', href: 'https://pubmed.ncbi.nlm.nih.gov/41512889/' },
 ]
 
 export default function HomePage() {

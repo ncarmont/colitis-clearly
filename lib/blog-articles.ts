@@ -32,6 +32,95 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'appendicectomy-vs-jak-inhibitor-biologic-refractory-uc-2026',
+    title: 'Appendicectomy Beat JAK Inhibitors in Biologic-Refractory UC — The COSTA Trial Just Changed the Conversation',
+    description: 'A Lancet 2026 multicentre prospective trial found that laparoscopic appendicectomy produced 2.7× more clinical remissions than switching to a JAK inhibitor in active UC patients who had already failed biologic therapy. Here is what this means for patients who have run out of options.',
+    category: 'Surgery',
+    readTime: '9 min read',
+    datePublished: '2026-03-30',
+    intro: 'If you have been through multiple biologics and are now staring at the prospect of a JAK inhibitor — or worse, a colectomy — the COSTA trial just dropped a finding you need to know about. A laparoscopic appendicectomy, a 30-minute keyhole procedure to remove your appendix, produced 32.8% clinical remission at 12 months in biologic-refractory UC patients. The JAK inhibitor group achieved 12.2%. That is nearly three times higher remission for a procedure that most gastroenterologists would never have thought to recommend over a targeted small molecule drug. This is not a retrospective analysis or a surrogate endpoint. It is a prospective, multicentre cohort study published in The Lancet Gastroenterology & Hepatology in March 2026.',
+    keyPoints: [
+      'Appendicectomy achieved 32.8% clinical remission at 12 months vs 12.2% with JAK inhibitor in biologic-exposed active UC patients (p=0.010).',
+      'Clinical response was 73.1% with appendicectomy vs 53.1% with JAK inhibitor (p=0.025).',
+      'Endoscopic response was 48.4% vs 25.6% — nearly double (p=0.018).',
+      'Colectomy rates were virtually identical: 9.0% appendicectomy vs 8.2% JAK inhibitor.',
+      'The procedure was safe: only 3 complications in 69 patients, all Clavien-Dindo grade II or lower.',
+      'The study enrolled patients with a total Mayo score of 5–12 and endoscopic subscore ≥2 despite prior advanced therapy.',
+    ],
+    sections: [
+      {
+        title: 'Who was in COSTA — and why these patients matter',
+        paragraphs: [
+          'The COSTA study enrolled what gastroenterologists call "biologic-exposed" patients — people who had already tried and failed at least one advanced therapy (a biologic or small molecule). These are not treatment-naive patients getting their first drug. These are people who are cycling through options, often with the shadow of colectomy on the horizon.',
+          'To enter the trial, patients needed a total Mayo score of 5–12 (moderate to severe active disease) and an endoscopic subscore of 2 or higher — meaning active mucosal inflammation visible on colonoscopy — despite ongoing treatment with an advanced therapy. That is the definition of medically refractory disease.',
+          'In standard clinical practice, the next step for this patient group is almost universally: switch to a new drug class, dose-escalate, or head to surgery. The COSTA investigators asked a different question: what if you also offered them an appendicectomy?',
+        ],
+        callout: '116 biologic-exposed UC patients. Active disease despite advanced therapy. The COSTA trial enrolled exactly the patients who have run out of obvious options.',
+      },
+      {
+        title: 'The numbers that matter',
+        paragraphs: [
+          'The primary outcome was clinical remission at 12 months without therapy failure — no need for steroids, no switch to another advanced therapy, no colectomy. In the appendicectomy group: 32.8% met this bar. In the JAK inhibitor group: 12.2%.',
+          'The unadjusted difference was 20.6 percentage points (95% CI 6.1–35.1). After logistic regression adjusting for baseline confounders, the difference was 22.9 percentage points (95% CI 6.1–39.8). Both analyses give the same conclusion: appendicectomy more than doubled — in fact nearly tripled — the remission rate.',
+          'Clinical response (improvement without full remission) was also significantly higher: 73.1% vs 53.1%. Endoscopic response — meaning actual healing visible on scope — was 48.4% vs 25.6%. That endoscopic finding is particularly important because it tells you the gut lining is actually changing, not just that symptom scores improved.',
+          'Colectomy rates at 12 months were virtually identical: 9.0% in the appendicectomy group vs 8.2% in the JAK inhibitor group. Appendicectomy did not increase colectomy risk. It dramatically improved remission while keeping colectomy rates the same.',
+        ],
+      },
+      {
+        title: 'Why would removing the appendix help UC?',
+        paragraphs: [
+          'The appendix is not a vestigial organ. It is a lymphoid tissue reservoir — essentially a training ground for gut-associated immune cells. In the context of ulcerative colitis, the appendix appears to function as a source of inflammatory immune cell trafficking into the colon.',
+          'This idea is supported by epidemiology: people who have their appendix removed before age 20 are significantly less likely to develop UC later in life (OR ~0.31 in multiple meta-analyses). That preventive effect has been known for decades. What COSTA tested is the therapeutic equivalent — whether removing an appendix that is already part of an established UC immune circuit can interrupt that circuit and reduce active disease.',
+          'The proposed mechanism involves the cecal patch, a dense aggregation of lymphoid follicles at the base of the appendix. In UC, abnormally activated T-cells from this patch recirculate to the colonic mucosa, perpetuating inflammation. Remove the source, and you may dampen the recirculating signal. It is not a cure — the colon itself is still the primary site of disease — but it appears to modulate the immune drive enough to convert some biologic-refractory patients into responders.',
+        ],
+        callout: 'The appendix is a lymphoid organ that may be feeding inflammatory signals back into the inflamed colon. Remove it, and you may partially interrupt that loop.',
+      },
+      {
+        title: 'What COSTA does not tell us — and why it still matters',
+        paragraphs: [
+          'COSTA was a patient-preference cohort study, not a randomised controlled trial. Patients chose which arm they entered, which introduces selection bias. The investigators adjusted for baseline differences in their logistic regression, but there is no guarantee the groups were truly equivalent in ways not captured by the Mayo score.',
+          'The trial was conducted at five hospitals in the Netherlands, which limits immediate generalisability. Dutch academic IBD centres have specific surgical and gastroenterological expertise that may affect both the quality of the appendicectomy and the choice of JAK inhibitor used.',
+          'The study also continued patients on their existing advanced therapy in the appendicectomy arm — this was appendicectomy as an adjunct, not as a replacement for medical therapy. The comparison was appendicectomy-plus-stable-existing-treatment versus switching to a new JAK inhibitor. That is clinically relevant (this is how you would actually offer it to a patient) but it makes it harder to isolate the appendicectomy effect alone.',
+          'Despite these limitations, this is the largest and most rigorous prospective dataset on therapeutic appendicectomy in UC ever published. The effect size is striking and consistent across all secondary endpoints. These findings justify a serious conversation between patients with biologic-refractory UC and their surgical team.',
+        ],
+      },
+      {
+        title: 'What this means for your next conversation with your GI',
+        paragraphs: [
+          'If you have active UC despite having tried at least one biologic, and your gastroenterologist is discussing switching drug classes, you can now ask a very specific question: "I read the COSTA trial. Am I a candidate for laparoscopic appendicectomy as an adjunct to my current therapy?"',
+          'The procedure itself is well-established, brief, and safe in experienced hands. The COSTA data shows serious adverse events were rare and colectomy risk was not increased. This is not asking your surgeon to do something experimental — laparoscopic appendicectomy has been performed for decades. What is new is the evidence that it may outperform a drug switch in this specific population.',
+          'Not every patient will be eligible. The COSTA entry criteria required a total Mayo score of 5–12 and an endoscopic subscore of ≥2 despite advanced therapy. Patients with particularly aggressive pancolitis, prior abdominal surgery complicating laparoscopy, or other contraindications may not be candidates. But for those who are, the evidence is now strong enough to justify the conversation.',
+        ],
+        callout: 'Ask your GI: "Based on COSTA, am I a candidate for laparoscopic appendicectomy as an adjunct?" The answer may change your trajectory.',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is appendicectomy safe in UC patients?',
+        answer: 'In the COSTA trial, 69 patients underwent laparoscopic appendicectomy. Only 3 experienced procedure-related complications, and all were Clavien-Dindo grade II or lower — the lowest tier of surgical complications (managed with drugs, no re-operation required). This is consistent with the established safety profile of laparoscopic appendicectomy in general surgical practice.',
+      },
+      {
+        question: 'Does appendicectomy prevent needing a colectomy?',
+        answer: 'In COSTA, colectomy rates at 12 months were virtually identical between the appendicectomy group (9.0%) and the JAK inhibitor group (8.2%). Appendicectomy did not significantly reduce colectomy risk compared to switching drugs — but it also did not increase it, while producing substantially higher remission and response rates.',
+      },
+      {
+        question: 'Does this mean appendicectomy is better than all JAK inhibitors?',
+        answer: 'No. COSTA compared appendicectomy-as-adjunct to standard-of-care treatment versus switching to a JAK inhibitor in biologic-refractory patients. The JAK inhibitor group in this trial was a specific biologic-exposed population starting a new drug class; the results do not apply to JAK inhibitor use as first-line or second-line therapy in biologic-naïve patients, where response rates are much higher.',
+      },
+      {
+        question: 'Who qualifies for therapeutic appendicectomy based on this trial?',
+        answer: 'COSTA enrolled patients with active UC (total Mayo score 5–12, endoscopic subscore ≥2) who had already been treated with at least one advanced therapy (biologic or small molecule) without achieving adequate control. These are biologic-refractory patients, not treatment-naïve individuals. Discuss eligibility with your IBD team and a colorectal surgeon.',
+      },
+    ],
+    references: [
+      { label: 'Visser E et al. (COSTA Study Group). Lancet Gastroenterol Hepatol. 2026 Mar;11(3):190-203. (PMID: 41512889)', href: 'https://pubmed.ncbi.nlm.nih.gov/41512889/' },
+      { label: 'Andersson RE et al. Appendectomy and protection against ulcerative colitis. N Engl J Med. 2001', href: 'https://pubmed.ncbi.nlm.nih.gov/11559638/' },
+      { label: 'Sahami S et al. ACCURE RCT — appendectomy in UC. Lancet Gastroenterol Hepatol. 2025', href: 'https://pubmed.ncbi.nlm.nih.gov/39159620/' },
+      { label: 'Kaplan GG et al. The role of the appendix in the development of inflammatory bowel disease. J Crohns Colitis. 2010', href: 'https://pubmed.ncbi.nlm.nih.gov/21122557/' },
+    ],
+    relatedSlugs: ['jak-inhibitors-acute-severe-uc-meta-analysis-2026', 'mirikizumab-4-year-remission-lucent-3', 'fmt-remission-meta-analysis-2026'],
+  },
+  {
     slug: 'mirikizumab-4-year-remission-lucent-3',
     title: 'Mirikizumab Still Working at 4 Years: 77.7% Clinical Remission in LUCENT-3 — the Durability Data UC Patients Have Been Waiting For',
     description: 'The LUCENT-3 open-label extension followed UC patients on mirikizumab for 4 continuous years. Among those in remission at year 1, 77.7% were still in clinical remission and 81.3% in endoscopic remission at week 212. Here is what this means for your treatment decision.',

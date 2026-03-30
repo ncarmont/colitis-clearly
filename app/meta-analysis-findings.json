@@ -8,7 +8,7 @@
   { "stat": "54%", "label": "upadacitinib maintenance remission at week 52 (#1 in 2025 NMA)", "source": "Phase 3 RCTs; Shehab 2025 NMA (36 RCTs, 14,270 pts)" },
   { "stat": "83%", "label": "clinical response with dual biologic therapy (guselkumab + golimumab)", "source": "VEGA trial" },
   { "stat": ">80%", "label": "sustained remission with guselkumab at 3 years", "source": "QUASAR/ASTRO extension data" },
-  { "stat": "RR 0.65", "label": "relapse reduction with therapeutic appendectomy", "source": "ACCURE RCT 2025 (Lancet Gastro Hepatol)" },
+  { "stat": "32.8% vs 12.2%", "label": "remission: appendicectomy vs JAK inhibitor in biologic-refractory UC (p=0.010)", "source": "COSTA trial — Visser E et al. Lancet Gastroenterol Hepatol. 2026 (PMID: 41512889)" },
   { "stat": "RR 2.33", "label": "clinical remission with curcumin adjunct (8+ RCTs)", "source": "Peng 2024 meta-analysis" },
   { "stat": "42.9%", "label": "remission with VSL#3/Visbiome vs 15.7% placebo", "source": "Sood 2009 RCT; multi-strain probiotic" },
   { "stat": "OR 3.85", "label": "remission induction with Lactobacillus + Bifidobacterium combination", "source": "NMA of 20 RCTs" },
