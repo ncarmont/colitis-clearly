@@ -20,7 +20,7 @@ const evidencePills = [
   { value: '2.3×', label: 'more remissions, curcumin',      tone: 'good', cite: '8+ RCTs, ECCO 2025',     href: 'https://pubmed.ncbi.nlm.nih.gov/25688495/' },
   { value: '43%',  label: 'remission with VSL#3',           tone: 'good', cite: 'Meta-analysis, 20 RCTs', href: 'https://pubmed.ncbi.nlm.nih.gov/25270082/' },
   { value: '77.7%', label: 'remission at 4 yrs, mirikizumab', tone: 'good', cite: 'LUCENT-3 OLE, PMID 41777218', href: 'https://pubmed.ncbi.nlm.nih.gov/41777218/' },
-  { value: '44%',  label: 'remission, ustekinumab 52 wks',  tone: 'good', cite: 'UNIFI, NEJM 2019',        href: 'https://pubmed.ncbi.nlm.nih.gov/31553834/' },
+  { value: '4.28×', label: 'more remissions, etrasimod 40 wks', tone: 'good', cite: 'GRADE meta-analysis, PMID 41891290', href: 'https://pubmed.ncbi.nlm.nih.gov/41891290/' },
   { value: '42%',  label: 'remission, vedolizumab 52 wks',  tone: 'good', cite: 'GEMINI 1, Lancet 2013',   href: 'https://pubmed.ncbi.nlm.nih.gov/23964932/' },
   { value: '5.2×', label: 'higher relapse risk, red meat',  tone: 'bad',  cite: 'Jowett et al. 2004',      href: 'https://pubmed.ncbi.nlm.nih.gov/14960471/' },
   { value: '2.8×', label: 'more flares, chronic stress',    tone: 'bad',  cite: 'Bernstein et al. 2010',   href: 'https://pubmed.ncbi.nlm.nih.gov/20070600/' },

@@ -1,4 +1,5 @@
 [
+  { "stat": "RR 6.93", "label": "mucosal healing at 40 weeks with etrasimod vs placebo (I²=0% — zero heterogeneity)", "source": "GRADE meta-analysis, 4 RCTs, 1239 patients — Jha A et al. Ann Pharmacother. 2026 (PMID: 41891290)" },
   { "stat": "77.7%", "label": "mirikizumab clinical remission sustained at 4 years (W52 remitters)", "source": "LUCENT-3 OLE — Sands BE et al. Inflamm Bowel Dis. 2026 (PMID: 41777218)" },
   { "stat": "OR 5.19", "label": "relapse risk from highest red/processed meat intake", "source": "Prospective cohort; dose-response meta-analysis" },
   { "stat": "HR 5.5", "label": "relapse risk from mesalamine non-adherence in quiescent UC", "source": "Prospective data (PMID: 12543288)" },

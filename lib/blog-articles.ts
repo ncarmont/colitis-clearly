@@ -32,6 +32,99 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'etrasimod-meta-analysis-mucosal-healing-2026',
+    title: 'Etrasimod Delivers 6.93× More Mucosal Healing at 40 Weeks — The Oral UC Pill Most Patients Have Never Heard Of',
+    description: 'A GRADE-based meta-analysis of 4 RCTs (1239 patients) published in March 2026 found etrasimod — an oral once-daily pill — achieves nearly 7× more mucosal healing and 4.28× more clinical remissions at 40 weeks vs placebo, with zero heterogeneity across trials. Here is what this means for UC patients seeking alternatives to injections.',
+    category: 'Small Molecules',
+    readTime: '8 min read',
+    datePublished: '2026-03-31',
+    intro: 'Most UC patients know about the biologics — the injections and infusions they sit through every few weeks. Fewer know about the oral S1P modulators, and even among those who do, etrasimod is often an afterthought. That needs to change. A GRADE-based systematic review and meta-analysis just published in the Annals of Pharmacotherapy (March 2026) pooled data from 4 randomised controlled trials and 1,239 patients and found that etrasimod — taken once daily by mouth — produces 6.93 times more mucosal healing at 40 weeks versus placebo. With zero heterogeneity (I²=0%). That last part matters. Zero heterogeneity means every trial told the same story. When you see I²=0% in a meta-analysis of UC maintenance data, you are looking at one of the most consistent signals in the field. This is not a drug being carried by one anomalous trial. Etrasimod\'s maintenance benefit is real, reproducible, and substantial.',
+    keyPoints: [
+      'Etrasimod is an oral once-daily sphingosine-1-phosphate (S1P) receptor modulator approved in 2023 for moderately-to-severely active UC.',
+      'Induction (12 weeks): clinical remission RR 2.92 vs placebo; clinical response RR 1.71; mucosal healing RR 3.11.',
+      'Maintenance (40+ weeks): clinical remission RR 4.28 (I²=0%); endoscopic improvement RR 3.51 (I²=0%); mucosal healing RR 6.93 (I²=0%); steroid-free remission RR 4.28 (I²=0%).',
+      'Zero heterogeneity in all four maintenance endpoints — an exceptionally consistent signal across independent trials.',
+      'No excess serious adverse events vs placebo; serious AE rate was numerically lower with etrasimod (RR 0.79).',
+      'GRADE-based analysis provides the highest-quality evidence grading for treatment recommendations.',
+    ],
+    sections: [
+      {
+        title: 'What etrasimod actually does — and why the mechanism matters for UC',
+        paragraphs: [
+          'Etrasimod selectively modulates sphingosine-1-phosphate (S1P) receptors 1, 4, and 5. The S1P signalling pathway controls how lymphocytes — the immune cells responsible for mucosal inflammation in UC — exit lymph nodes and traffic into tissues. By partially blocking this pathway, etrasimod effectively traps a subset of inflammatory lymphocytes in lymph nodes, reducing their ability to reach and damage the colon.',
+          'This is a gut-relevant mechanism, but it operates systemically. Unlike vedolizumab, which blocks gut-specific integrin trafficking, etrasimod works upstream at the lymphocyte egress stage. The selectivity for S1P receptors 1, 4, and 5 (rather than S1P receptor 3, which mediates cardiac effects) was a deliberate design choice to improve the cardiovascular safety profile compared to earlier-generation S1P modulators.',
+          'Once-daily dosing and oral delivery make etrasimod one of the most practical advanced therapies available. No injections, no infusion centre visits, no pre-medication. For patients who value treatment simplicity — or who have needle anxiety, or who travel frequently — etrasimod\'s administration profile is a genuine advantage.',
+        ],
+        callout: 'Etrasimod traps inflammatory lymphocytes before they reach your colon — taken once daily as a pill, no injections needed.',
+      },
+      {
+        title: 'Breaking down the meta-analysis numbers',
+        paragraphs: [
+          'The induction data at 12 weeks is solid but not startling: clinical remission RR 2.92 means roughly 3× more patients achieve remission than on placebo. Clinical response RR 1.71 means 71% more responders. Mucosal healing RR 3.11 — over triple the rate of placebo. These are strong induction numbers for any advanced therapy.',
+          'But the maintenance data — the 40-week-plus outcomes — is where etrasimod genuinely stands out. Clinical remission at 40+ weeks: RR 4.28, I²=0%. Endoscopic improvement: RR 3.51, I²=0%. Mucosal healing: RR 6.93, I²=0%. Steroid-free remission: RR 4.28, I²=0%.',
+          'That I²=0% figure repeated across four distinct maintenance endpoints is not coincidence. It tells you that the drug\'s maintenance benefit is not a statistical artefact of one optimistic trial skewing the pooled estimate — it was observed consistently across every trial in the analysis. In IBD research, where heterogeneity in maintenance trials is common (I² of 30–60% is typical), this level of consistency is remarkable.',
+          'The mucosal healing RR of 6.93 deserves particular attention. Mucosal healing — defined as an endoscopic subscore of 0 or 1 with no friability — is increasingly recognised as the most clinically meaningful UC outcome. Patients who achieve mucosal healing have lower long-term colectomy rates, fewer hospitalisations, and better quality of life than those who achieve only symptomatic remission. A nearly sevenfold improvement vs placebo in mucosal healing at 40 weeks is a treatment-class-defining number.',
+        ],
+        callout: 'Mucosal healing RR 6.93 at 40 weeks: nearly 7× more patients with a healed colon lining vs placebo. I²=0% — every trial confirmed it.',
+      },
+      {
+        title: 'How etrasimod compares to other oral options',
+        paragraphs: [
+          'The oral UC drug landscape now includes tofacitinib (pan-JAK inhibitor), upadacitinib (JAK1-selective), ozanimod (S1P), and etrasimod (S1P). Each has a different mechanism and risk profile.',
+          'Upadacitinib holds the crown for induction speed and raw remission numbers in phase 3 trials — 42% clinical remission at 52 weeks in U-ACHIEVE Maintenance, and 86.5% short-term response in acute severe UC per the 2026 meta-analysis. But JAK inhibitors carry a class-wide black box warning for cardiovascular events, malignancy, thrombosis, and serious infections, which makes many gastroenterologists and patients cautious about first-line use in patients without prior biologic failure.',
+          'Etrasimod occupies a different risk-benefit space. Its main safety concern is first-dose bradycardia (requiring a 6-hour observation after first dose in at-risk patients) and the need for cardiac screening in those with pre-existing arrhythmia. The GRADE meta-analysis found no excess serious adverse events, and the RR for serious adverse events was actually numerically lower with etrasimod than placebo (RR 0.79), though this was not statistically significant.',
+          'For patients who need an oral option without the JAK inhibitor safety profile — or who have failed vedolizumab and need a different mechanism — etrasimod offers a well-tolerated, once-daily option with a now-confirmed maintenance signal that is among the strongest in the drug class.',
+        ],
+      },
+      {
+        title: 'What the GRADE classification means for patients',
+        paragraphs: [
+          'GRADE (Grading of Recommendations, Assessment, Development and Evaluations) is the international standard for rating the quality of evidence in systematic reviews. The fact that this meta-analysis used GRADE methodology means the authors systematically assessed not just the pooled effect sizes, but the quality of evidence behind each outcome — looking at risk of bias, inconsistency, indirectness, imprecision, and publication bias.',
+          'GRADE evidence rated as "moderate" or "high" is what regulatory agencies and guideline committees use to make treatment recommendations. When the BSG or AGA update their UC guidelines to formally position etrasimod, this GRADE meta-analysis will likely be a key supporting reference.',
+          'For you as a patient, this means the numbers above are not cherry-picked from the most optimistic trial. They represent the best-quality synthesis of all available trial evidence, evaluated by researchers who were explicitly looking for weaknesses in the data. The signal survived that scrutiny intact.',
+        ],
+      },
+      {
+        title: 'Who should consider asking about etrasimod',
+        paragraphs: [
+          'Etrasimod is approved for moderately-to-severely active UC in adults. The ELEVATE UC phase 3 programme enrolled both biologic-naïve and biologic-experienced patients, and efficacy was observed in both groups — though numerically higher in naïve patients (as is typical for all advanced therapies).',
+          'You should consider asking your gastroenterologist about etrasimod if: you have moderate-to-severe UC on 5-ASA therapy and need to step up; you prefer an oral medication over injections or infusions; you have failed or are intolerant of a biologic and need an alternative mechanism; you value a drug with extensive mucosal healing data; or you are concerned about the JAK inhibitor safety profile.',
+          'Contraindications include recent MI, stroke or TIA, second-degree or higher AV block without a pacemaker, severe active infections, and active malignancy. A first-dose cardiac monitoring protocol (typically 6 hours of observation) is required for patients with certain cardiac risk factors. Discuss your full history with your GI before starting any advanced therapy.',
+        ],
+        callout: 'Prefer a pill over injections? Failed biologics? Ask your GI: "Am I a candidate for etrasimod based on the 2026 GRADE meta-analysis?"',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is etrasimod and how is it different from other UC drugs?',
+        answer: 'Etrasimod (brand name: Velsipity) is an oral once-daily sphingosine-1-phosphate (S1P) receptor modulator. Unlike biologics (which are injected or infused) and JAK inhibitors (which broadly suppress intracellular signalling), etrasimod modulates S1P receptors on lymphocytes to reduce their trafficking into the inflamed colon. It was FDA-approved in 2023 for moderately-to-severely active UC.',
+      },
+      {
+        question: 'How strong is the evidence for etrasimod compared to the top-ranked biologics?',
+        answer: 'The 2026 GRADE meta-analysis found etrasimod achieves clinical remission RR 4.28 and mucosal healing RR 6.93 at 40+ weeks vs placebo with I²=0%. These are relative risk figures against placebo, so they are not directly comparable to head-to-head trials against biologics. Head-to-head data is limited. However, the mucosal healing signal with zero heterogeneity is one of the most consistent maintenance findings in the S1P class.',
+      },
+      {
+        question: 'What are the main risks of etrasimod?',
+        answer: 'The most important risk is first-dose bradycardia — a transient slowing of the heart rate. Patients with certain cardiac conditions require 6 hours of observation after the first dose. Etrasimod should not be used in patients with recent cardiovascular events, significant AV block without a pacemaker, or active malignancy. There is also a risk of reactivating infections in immunosuppressed patients. However, the GRADE meta-analysis found no statistically significant increase in serious adverse events versus placebo (RR 0.79).',
+      },
+      {
+        question: 'Is etrasimod available for biologic-experienced patients?',
+        answer: 'Yes. The ELEVATE UC phase 3 trials included both biologic-naïve and biologic-experienced patients. Etrasimod showed clinical benefit in both groups, although (as with all advanced UC therapies) remission rates tend to be numerically higher in biologic-naïve patients. Your gastroenterologist can assess whether etrasimod is an appropriate next step after biologic failure.',
+      },
+    ],
+    references: [
+      { label: 'Jha A et al. Ann Pharmacother. 2026 — GRADE meta-analysis (PMID: 41891290)', href: 'https://pubmed.ncbi.nlm.nih.gov/41891290/' },
+      { label: 'Sandborn WJ et al. (ELEVATE UC) Lancet. 2023 (PMID: 36871574)', href: 'https://pubmed.ncbi.nlm.nih.gov/36871574/' },
+      { label: 'AGA Clinical Practice Guideline. Gastroenterology. 2024', href: 'https://www.gastrojournal.org/article/S0016-5085(24)00899-3/fulltext' },
+    ],
+    relatedSlugs: [
+      'elevate-etrasimod',
+      'true-north-ozanimod',
+      'u-achieve-upadacitinib',
+      'jak-inhibitors-acute-severe-uc-meta-analysis-2026',
+    ],
+  },
+  {
     slug: 'appendicectomy-vs-jak-inhibitor-biologic-refractory-uc-2026',
     title: 'Appendicectomy Beat JAK Inhibitors in Biologic-Refractory UC — The COSTA Trial Just Changed the Conversation',
     description: 'A Lancet 2026 multicentre prospective trial found that laparoscopic appendicectomy produced 2.7× more clinical remissions than switching to a JAK inhibitor in active UC patients who had already failed biologic therapy. Here is what this means for patients who have run out of options.',
