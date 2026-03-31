@@ -146,7 +146,7 @@ npm run lint    # Run ESLint
 
 **The dev server is running on localhost:3000** - Always check your work visually! Do NOT consider a task done until you have verified it in the running app.
 
-## 🚨 CRITICAL: Git Workflow - ALWAYS COMMIT AND PUSH
+## 🚨 CRITICAL: Git Workflow - VERIFY LOCALLY AND COMMIT
 
 **AFTER TESTING YOUR CHANGES, YOU MUST:**
 
@@ -160,41 +160,11 @@ npm run lint    # Run ESLint
    git commit -m "descriptive commit message"
    ```
 
-3. **Push to remote:**
-   ```bash
-   git push
-   ```
+3. **Do NOT push** — the user will ask when to push. This repo is connected to Vercel; every push triggers a build and deployment.
 
-4. **WAIT 4 MINUTES for Vercel deployment to complete**
+**Deployment URL** (for when user asks to push): https://www.best-olive-oil-ranked.com
 
-5. **Verify deployment success:**
-   ```bash
-   vercel inspect https://www.best-olive-oil-ranked.com --logs
-   ```
-
-   **Deployment URL:** https://www.best-olive-oil-ranked.com
-
-   **Alternative domains:**
-   - https://best-olive-oils-git-main-nickcarmont8-gmailcoms-projects.vercel.app
-   - https://best-olive-oils-lujkzasdw-nickcarmont8-gmailcoms-projects.vercel.app
-
-6. **Check your work on the live site:**
-
-   After 4 minutes, your changes should be visible at:
-   **https://www.best-olive-oil-ranked.com**
-
-   Open this URL in your browser to verify:
-   - Changes are deployed correctly
-   - No visual regressions
-   - Mobile responsiveness works
-   - All features function as expected
-
-7. **If deployment failed:**
-   - Check the logs output from step 5
-   - Fix any errors (build failures, runtime errors, etc.)
-   - Repeat steps 1-6
-
-**This is MANDATORY - never skip committing, pushing, and verifying deployment! Commit and push after EACH individual change, not just at the end.**
+**This is MANDATORY - always verify on localhost and commit. Never push unless explicitly asked.**
 
 ## Known Issues
 
