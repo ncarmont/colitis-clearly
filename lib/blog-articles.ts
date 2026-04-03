@@ -1422,6 +1422,114 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     ],
     relatedSlugs: ['understanding-ulcerative-colitis', 'jak-inhibitors-acute-severe-uc-meta-analysis-2026', 'anti-inflammatory-diet-uc-meta-analysis-2026'],
   },
+  {
+    slug: 'il23-inhibitors-meta-analysis-safety-efficacy-2026',
+    title: 'IL-23 Biologics: 2.53× More Mucosal Healing AND 61% Fewer Serious Side Effects — Meta-Analysis of 7 RCTs Confirms the Class is a Game-Changer',
+    description: 'A systematic review and meta-analysis of 7 randomised controlled trials (4,203 patients) finds IL-23 inhibitors (mirikizumab, risankizumab, guselkumab) deliver 2.53× more histo-endoscopic mucosal healing at induction AND 61% fewer serious adverse events vs placebo. This is the most reassuring safety-plus-efficacy signal in modern UC pharmacology.',
+    category: 'Biologics',
+    readTime: '9 min read',
+    datePublished: '2026-04-03',
+    intro: 'Most UC patients have heard that biologics are risky. That injections and infusions come with "black box warnings" and a list of side effects longer than the consent form itself. That is partly true for older anti-TNF drugs, and it made sense to be cautious a decade ago. But the evidence landscape has shifted dramatically — and if you haven\'t looked at the IL-23 inhibitor class recently, you are operating on outdated information. A systematic review and meta-analysis just published in the International Journal of Colorectal Disease pooled data from 7 randomised controlled trials and 4,203 patients evaluating mirikizumab (Omvoh), risankizumab (Skyrizi), and guselkumab (Tremfya) in moderate-to-severe ulcerative colitis. The headline: IL-23 blockers produce 2.53 times more histo-endoscopic mucosal healing at induction AND are associated with 61% fewer serious adverse events than placebo. Both findings. In the same dataset. At the same time. That is not a trade-off. That is a dominant strategy.',
+    keyPoints: [
+      'IL-23 inhibitors include mirikizumab (Omvoh), risankizumab (Skyrizi), and guselkumab (Tremfya) — all targeting the IL-23p19 subunit.',
+      'Induction efficacy: clinical remission RR 1.52; histo-endoscopic mucosal healing RR 2.53 vs placebo.',
+      'Maintenance efficacy: clinical remission RR 1.62; histo-endoscopic mucosal healing RR 1.81 vs placebo.',
+      'Safety: serious adverse events were 61% LOWER with IL-23 inhibitors during induction (RR 0.39 vs placebo).',
+      'Corticosteroid-free remission and clinical response also consistently favoured IL-23 blockade.',
+      'Evidence base: 7 RCTs, 4,203 patients — one of the most statistically powerful analyses of this drug class in UC.',
+    ],
+    sections: [
+      {
+        title: 'Why IL-23 — the mechanism that separates this class from everything that came before',
+        paragraphs: [
+          'To understand why IL-23 inhibitors perform so differently from older biologics, you need to understand the cytokine hierarchy in UC. Interleukin-23 (IL-23) is not just one inflammatory signal among many — it is an upstream master regulator that drives multiple pro-inflammatory pathways simultaneously. IL-23 promotes the differentiation and survival of Th17 cells, which in turn produce IL-17A, IL-17F, IL-22, and other cytokines that sustain mucosal inflammation.',
+          'Earlier biologics in UC targeted downstream nodes: anti-TNF drugs (infliximab, adalimumab, golimumab) block tumour necrosis factor, which sits relatively far down the inflammatory cascade. Vedolizumab blocks gut lymphocyte trafficking, limiting but not eliminating mucosal immune attack. Ustekinumab targets both IL-12 and IL-23 by blocking the shared p40 subunit.',
+          'IL-23p19-specific inhibitors (mirikizumab, risankizumab, guselkumab) go upstream of all of that. They block the p19 subunit of IL-23 specifically, interrupting the signal before it can activate the Th17/Th1 inflammatory programme. By targeting this more proximal step, they can shut down multiple downstream inflammatory pathways simultaneously — which is thought to explain both their efficacy advantage and their favourable safety profile.',
+          'Sparing the IL-12 pathway (which is involved in protective immunity against intracellular pathogens) while blocking IL-23 may also explain why serious infections — a concern with anti-TNF therapy — appear to be less common with this class.',
+        ],
+        callout: 'IL-23 is the master switch. Turn it off upstream, and multiple inflammatory pathways quiet down simultaneously — that\'s why 2.53× more mucosal healing AND 61% fewer serious AEs can coexist.',
+      },
+      {
+        title: 'The efficacy data: what 2.53× mucosal healing actually means for patients',
+        paragraphs: [
+          'Histo-endoscopic mucosal healing (HEMH) is the hardest endpoint in UC. It is not just symptomatic remission — no blood in stool, no urgency. It is not just clinical remission based on symptom scores. HEMH requires both endoscopic evidence of healed mucosa AND histological confirmation under microscope that the tissue itself has normalised. Patients who achieve HEMH have significantly lower rates of relapse, hospitalisation, and colorectal cancer risk than those who achieve only clinical remission.',
+          'At induction, IL-23 inhibitors produced HEMH in 2.53 times as many patients as placebo (RR 2.53). At maintenance, the ratio was 1.81 (RR 1.81 vs placebo). These are not minor improvements in soft endpoints — they are substantial advantages on the most demanding measure of treatment success.',
+          'For context: a HEMH advantage of 2.53× at induction means that if 20% of placebo patients achieve deep mucosal healing, approximately 50% of IL-23 inhibitor patients do. That difference translates directly into long-term remission durability, reduced steroid dependence, and better quality of life. Mucosal healing is where the long-term UC story is written.',
+          'Clinical remission rates followed a similar pattern: RR 1.52 at induction and RR 1.62 at maintenance. Corticosteroid-free remission — a critical benchmark given the long-term harm of steroid dependence — also consistently favoured IL-23 blockade. Clinical response rates were similarly superior across both phases.',
+        ],
+      },
+      {
+        title: 'The safety data: 61% fewer serious adverse events is not a rounding error',
+        paragraphs: [
+          'The most counterintuitive finding in this meta-analysis — and arguably the most important for patient decision-making — is the serious adverse event (SAE) rate. During induction, the risk of a serious adverse event was 61% lower with IL-23 inhibitors than with placebo (RR 0.39).',
+          'Read that again: patients receiving active biologic therapy had fewer serious adverse events than patients receiving no active therapy at all. This appears paradoxical until you consider that uncontrolled active UC is itself a serious disease. Patients in the placebo arms of these trials had active, moderate-to-severe colitis. Active UC drives hospitalisations, requires systemic steroids, and carries risks of toxic megacolon, haemorrhage, and emergency colectomy. Effective disease control with an IL-23 inhibitor eliminates many of these UC-attributable serious events.',
+          'During maintenance therapy, there was no significant difference in SAE rates between IL-23 inhibitors and placebo (RR 0.68, not statistically significant). This means that once disease is controlled, the long-term safety profile is similar to what a well patient experiences — not an escalation of risk above baseline.',
+          'For patients who have delayed escalating therapy because of biologic fear, this data matters. The risks of untreated or undertreated UC — hospitalisation, surgery, steroid complications, colorectal cancer — are real and quantifiable. The SAE profile of IL-23 inhibitors, based on 7 RCTs and 4,203 patients, is not just acceptable. In active disease, it is better than placebo.',
+        ],
+        callout: 'Scared of biologics? In this meta-analysis, IL-23 inhibitor patients had 61% fewer serious adverse events than placebo during induction. Uncontrolled UC is the risk. Treated UC is safer.',
+      },
+      {
+        title: 'Mirikizumab vs risankizumab vs guselkumab: are they interchangeable?',
+        paragraphs: [
+          'This meta-analysis evaluated the IL-23 inhibitor class as a whole, pooling data from mirikizumab (Lilly\'s Omvoh), risankizumab (AbbVie\'s Skyrizi), and guselkumab (J&J\'s Tremfya). While all three target the IL-23p19 subunit, they differ in their binding properties, dosing schedules, administration routes, and the size of their clinical trial programmes.',
+          'Mirikizumab has the most robust UC-specific trial data, including the landmark 4-year LUCENT-3 OLE showing 77.7% sustained remission at week 212. It is approved for moderately-to-severely active UC in the US and EU (as Omvoh). The induction dose is 300mg IV every 4 weeks for 3 doses, followed by 200mg subcutaneous every 4 weeks for maintenance.',
+          'Risankizumab\'s UC approval came through the INSPIRE and COMMAND trials. Guselkumab recently demonstrated efficacy with subcutaneous induction dosing in the ASTRO phase 3 trial (Lancet Gastroenterol Hepatol, 2026), which could simplify the treatment pathway by eliminating the need for IV infusion centre visits.',
+          'From a practical standpoint, the differences between the three drugs may matter less than the class effect. Your gastroenterologist\'s choice will depend on your insurance coverage, prior treatment history, whether you\'ve failed another IL-23 inhibitor already, and their centre\'s experience. What this meta-analysis confirms is that the class-level evidence is strong — whichever IL-23 inhibitor you and your doctor choose, you are backed by a robust evidence base.',
+        ],
+      },
+      {
+        title: 'Who is this data most relevant for?',
+        paragraphs: [
+          'The populations studied in these RCTs were adults with moderate-to-severe active UC who had either failed conventional therapy (aminosalicylates, corticosteroids, immunomodulators) or were biologic-naive. These are the two groups most likely to be weighing escalation to an advanced therapy.',
+          'For biologic-naive patients: IL-23 inhibitors are now considered alongside vedolizumab and JAK inhibitors as first-line advanced therapy options. The VARSITY trial showed vedolizumab superior to adalimumab (anti-TNF) for UC. Several network meta-analyses suggest IL-23 inhibitors may match or exceed vedolizumab on mucosal healing endpoints, particularly with longer follow-up.',
+          'For patients who have failed anti-TNF therapy: IL-23 inhibitors work through a completely distinct mechanism and retain significant efficacy even in anti-TNF-exposed or anti-TNF-refractory patients. The mechanism independence means prior biologic failure does not predict IL-23 inhibitor failure.',
+          'For patients currently on steroids: the corticosteroid-free remission advantage of IL-23 inhibitors confirmed in this meta-analysis is particularly relevant. Chronic steroid use has well-documented long-term harms including bone density loss, metabolic effects, cataracts, and adrenal suppression. If you\'ve been "stuck" on steroids, IL-23 inhibitors offer a pathway to getting off them.',
+          'What this data cannot tell you is how you as an individual will respond. UC is heterogeneous — biomarkers to predict responders versus non-responders are an active area of research. But the class-level odds are significantly better than placebo on every endpoint measured.',
+        ],
+        callout: 'Failed anti-TNF? Stuck on steroids? IL-23 inhibitors work through a different mechanism and achieve steroid-free remission at a significantly higher rate. The conversation with your GI is worth having.',
+      },
+      {
+        title: 'What to actually ask your gastroenterologist',
+        paragraphs: [
+          'Medical knowledge is only useful if it changes behaviour. Here is how to translate this meta-analysis into an actionable clinical conversation.',
+          'If you are being offered an anti-TNF drug (infliximab, adalimumab) as your first biologic: ask whether an IL-23 inhibitor might be more appropriate for your phenotype. The mechanism, safety profile, and long-term durability data for IL-23 inhibitors are now compelling enough that they should be considered alongside anti-TNF therapy — not as a second-line rescue after anti-TNF failure.',
+          'If you are reluctant to escalate therapy because of biologic concerns: share the SAE data from this meta-analysis. The 61% reduction in serious adverse events during induction versus placebo reframes the risk conversation. The question is not "is this biologic safe?" — the question is "compared to what?"',
+          'If you are currently in remission on a biologic and your doctor is discussing switching: understand that IL-23 inhibitor maintenance data (HEMH RR 1.81, clinical remission RR 1.62) supports staying on this class for long-term disease control, not just induction.',
+          'Finally: ask about histological remission specifically. Many follow-up protocols assess symptoms and endoscopy, but miss the histological layer. HEMH — the endpoint that most strongly predicts long-term outcomes — requires biopsy confirmation. If your follow-up doesn\'t include it, ask why.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Are IL-23 inhibitors safe for long-term use?',
+        answer: 'Based on current evidence — including this 7-RCT meta-analysis of 4,203 patients — IL-23 inhibitors show no excess serious adverse events versus placebo during maintenance therapy. Long-term extension data for mirikizumab (4 years, LUCENT-3) also shows no new safety signals. As with all immunomodulatory therapies, regular monitoring is appropriate, but the long-term safety profile is considered favourable.',
+      },
+      {
+        question: 'Can I switch to an IL-23 inhibitor if I\'ve already failed a biologic?',
+        answer: 'Yes, and this is one of the class\'s strengths. IL-23 inhibitors work through a mechanism entirely distinct from anti-TNF therapy and vedolizumab. Prior failure of an anti-TNF drug does not predict failure of an IL-23 inhibitor. Many patients in the trials included in this meta-analysis had prior biologic exposure.',
+      },
+      {
+        question: 'What is the difference between ustekinumab and the newer IL-23 inhibitors?',
+        answer: 'Ustekinumab (Stelara) blocks both IL-12 and IL-23 by targeting the shared p40 subunit. The newer IL-23p19 inhibitors (mirikizumab, risankizumab, guselkumab) are more selective — they block only IL-23. This selectivity is thought to preserve more of the protective immune function mediated by IL-12, which may contribute to the favourable safety profile observed in this meta-analysis.',
+      },
+      {
+        question: 'Which IL-23 inhibitor is best for UC?',
+        answer: 'This meta-analysis evaluated the class as a whole. Head-to-head trials between IL-23 inhibitors in UC are limited. Mirikizumab has the longest UC-specific safety and efficacy follow-up (4 years). Guselkumab recently demonstrated efficacy with subcutaneous-only induction (eliminating IV infusion). Your gastroenterologist will choose based on your history, insurance, and clinical phenotype.',
+      },
+      {
+        question: 'Do IL-23 inhibitors work for Crohn\'s disease too?',
+        answer: 'Yes — risankizumab and guselkumab are also approved for Crohn\'s disease. Mirikizumab has demonstrated efficacy in Crohn\'s in trials. The IL-23 pathway is important in both forms of IBD. This meta-analysis focused specifically on ulcerative colitis data.',
+      },
+    ],
+    references: [
+      { label: 'Amin HM et al. Int J Colorectal Dis. 2025 Dec 30;41(1):1. (PMID: 41467943)', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },
+      { label: 'Long M et al. (ASTRO Study Group). Lancet Gastroenterol Hepatol. 2026 Apr;11(4):284-298. (PMID: 41544637)', href: 'https://pubmed.ncbi.nlm.nih.gov/41544637/' },
+      { label: 'Sands BE et al. (LUCENT-3 OLE). Inflamm Bowel Dis. 2026 Mar. (PMID: 41777218)', href: 'https://pubmed.ncbi.nlm.nih.gov/41777218/' },
+      { label: 'Jha A et al. (Etrasimod GRADE meta-analysis). Ann Pharmacother. 2026. (PMID: 41891290)', href: 'https://pubmed.ncbi.nlm.nih.gov/41891290/' },
+      { label: 'Peyrin-Biroulet L et al. VARSITY trial — Vedolizumab vs Adalimumab in UC. NEJM 2019.', href: 'https://pubmed.ncbi.nlm.nih.gov/31553835/' },
+    ],
+    relatedSlugs: ['mirikizumab-4-year-remission-lucent-3', 'etrasimod-meta-analysis-mucosal-healing-2026', 'jak-inhibitors-acute-severe-uc-meta-analysis-2026'],
+  },
 ]
 
 export const BLOG_ARTICLE_MAP = Object.fromEntries(

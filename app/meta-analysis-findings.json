@@ -1,4 +1,6 @@
 [
+  { "stat": "RR 2.53", "label": "histo-endoscopic mucosal healing at induction with IL-23 inhibitors vs placebo (7 RCTs, 4,203 patients)", "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) — mirikizumab, risankizumab, guselkumab" },
+  { "stat": "61% fewer", "label": "serious adverse events with IL-23 inhibitors vs placebo during induction (RR 0.39) — active UC control reduces disease-driven harms", "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) — 7 RCTs, 4,203 patients" },
   { "stat": "RR 6.93", "label": "mucosal healing at 40 weeks with etrasimod vs placebo (I²=0% — zero heterogeneity)", "source": "GRADE meta-analysis, 4 RCTs, 1239 patients — Jha A et al. Ann Pharmacother. 2026 (PMID: 41891290)" },
   { "stat": "77.7%", "label": "mirikizumab clinical remission sustained at 4 years (W52 remitters)", "source": "LUCENT-3 OLE — Sands BE et al. Inflamm Bowel Dis. 2026 (PMID: 41777218)" },
   { "stat": "OR 5.19", "label": "relapse risk from highest red/processed meat intake", "source": "Prospective cohort; dose-response meta-analysis" },
