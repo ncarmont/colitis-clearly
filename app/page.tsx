@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const evidencePills = [
   { value: '74%',  label: 'respond to upadacitinib',        tone: 'good', cite: 'U-ACHIEVE, NEJM 2023',  href: 'https://pubmed.ncbi.nlm.nih.gov/35644562/' },
-  { value: '62%',  label: 'FMT remission (meta-analysis)',  tone: 'good', cite: '15 RCTs, PMID 41078065', href: 'https://pubmed.ncbi.nlm.nih.gov/41078065/' },
+  { value: '2.39×', label: 'more remissions, FMT via colonoscopy + enemas', tone: 'good', cite: '16 RCTs, PMID 41945234', href: 'https://pubmed.ncbi.nlm.nih.gov/41945234/' },
   { value: '95%',  label: 'J-pouch long-term success',      tone: 'good', cite: 'IPAA outcome studies',   href: 'https://pubmed.ncbi.nlm.nih.gov/19169164/' },
   { value: '82%',  label: 'better outcomes, Med diet',      tone: 'good', cite: '6 RCTs, PMID 40797000',  href: 'https://pubmed.ncbi.nlm.nih.gov/40797000/' },
   { value: '2.3×', label: 'more remissions, curcumin',      tone: 'good', cite: '8+ RCTs, ECCO 2025',     href: 'https://pubmed.ncbi.nlm.nih.gov/25688495/' },
@@ -26,6 +26,7 @@ const evidencePills = [
   { value: '5.2×', label: 'higher relapse risk, red meat',  tone: 'bad',  cite: 'Jowett et al. 2004',      href: 'https://pubmed.ncbi.nlm.nih.gov/14960471/' },
   { value: '2.8×', label: 'more flares, chronic stress',    tone: 'bad',  cite: 'Bernstein et al. 2010',   href: 'https://pubmed.ncbi.nlm.nih.gov/20070600/' },
   { value: '2.7×', label: 'more remissions, appendicectomy vs JAK', tone: 'good', cite: 'COSTA trial, Lancet GH 2026', href: 'https://pubmed.ncbi.nlm.nih.gov/41512889/' },
+  { value: '26× higher', label: 'remission: tulisokibart (anti-TL1A) vs placebo — Phase 2', tone: 'good', cite: 'ARTEMIS-UC Phase 2 — Goyal MK et al. APT 2026', href: 'https://pubmed.ncbi.nlm.nih.gov/41941212/' },
 ]
 
 export default function HomePage() {
