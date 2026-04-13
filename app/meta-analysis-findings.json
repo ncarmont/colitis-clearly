@@ -1,34 +1,182 @@
 [
-  { "stat": "RR 2.53", "label": "histo-endoscopic mucosal healing at induction with IL-23 inhibitors vs placebo (7 RCTs, 4,203 patients)", "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) — mirikizumab, risankizumab, guselkumab" },
-  { "stat": "61% fewer", "label": "serious adverse events with IL-23 inhibitors vs placebo during induction (RR 0.39) — active UC control reduces disease-driven harms", "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) — 7 RCTs, 4,203 patients" },
-  { "stat": "RR 6.93", "label": "mucosal healing at 40 weeks with etrasimod vs placebo (I²=0% — zero heterogeneity)", "source": "GRADE meta-analysis, 4 RCTs, 1239 patients — Jha A et al. Ann Pharmacother. 2026 (PMID: 41891290)" },
-  { "stat": "77.7%", "label": "mirikizumab clinical remission sustained at 4 years (W52 remitters)", "source": "LUCENT-3 OLE — Sands BE et al. Inflamm Bowel Dis. 2026 (PMID: 41777218)" },
-  { "stat": "OR 5.19", "label": "relapse risk from highest red/processed meat intake", "source": "Prospective cohort; dose-response meta-analysis" },
-  { "stat": "HR 5.5", "label": "relapse risk from mesalamine non-adherence in quiescent UC", "source": "Prospective data (PMID: 12543288)" },
-  { "stat": "aHR 3.25", "label": "objective flare risk with FC ≥250 vs <50 µg/g", "source": "PREdiCCt cohort (PMID: 41554630)" },
-  { "stat": "HR 2.8", "label": "UC exacerbation risk from chronic psychological stress", "source": "Levenstein et al. 2000 prospective cohort" },
-  { "stat": "OR 2.71", "label": "relapse risk from alcohol consumption", "source": "Jowett 2004 prospective cohort" },
-  { "stat": "54%", "label": "upadacitinib maintenance remission at week 52 (#1 in 2025 NMA)", "source": "Phase 3 RCTs; Shehab 2025 NMA (36 RCTs, 14,270 pts)" },
-  { "stat": "83%", "label": "clinical response with dual biologic therapy (guselkumab + golimumab)", "source": "VEGA trial" },
-  { "stat": ">80%", "label": "sustained remission with guselkumab at 3 years", "source": "QUASAR/ASTRO extension data" },
-  { "stat": "32.8% vs 12.2%", "label": "remission: appendicectomy vs JAK inhibitor in biologic-refractory UC (p=0.010)", "source": "COSTA trial — Visser E et al. Lancet Gastroenterol Hepatol. 2026 (PMID: 41512889)" },
-  { "stat": "RR 2.33", "label": "clinical remission with curcumin adjunct (8+ RCTs)", "source": "Peng 2024 meta-analysis" },
-  { "stat": "42.9%", "label": "remission with VSL#3/Visbiome vs 15.7% placebo", "source": "Sood 2009 RCT; multi-strain probiotic" },
-  { "stat": "OR 3.85", "label": "remission induction with Lactobacillus + Bifidobacterium combination", "source": "NMA of 20 RCTs" },
-  { "stat": "OR 2.25", "label": "clinical + endoscopic remission with FMT vs control (NNT 5)", "source": "Meta-analysis of 14 RCTs; Cochrane 2023" },
-  { "stat": "HR 1.82", "label": "IBD risk from ultra-processed foods (≥5 servings/day)", "source": "PURE study (116,087 adults)" },
-  { "stat": "OR 3.6", "label": "UC risk from PM2.5 air pollution (Mendelian randomization)", "source": "UK Biobank (455,210 participants)" },
-  { "stat": "53%", "label": "fewer hospitalizations with vitamin D repletion", "source": "VA study 2025" },
-  { "stat": "74%", "label": "clinical response with upadacitinib at week 8", "source": "U-ACHIEVE (NNT ≈ 3–5)" },
-  { "stat": "49.9%", "label": "mirikizumab maintenance remission at week 40", "source": "LUCENT (NNT ≈ 4)" },
-  { "stat": "OR 0.31", "label": "UC risk reduction with appendectomy before age 20", "source": "Multiple meta-analyses" },
-  { "stat": "OR 0.21", "label": "UC risk reduction from breastfeeding >12 months", "source": "Meta-analysis of 35 studies" },
-  { "stat": "26%", "label": "remission with tulisokibart (anti-TL1A) vs 1% placebo", "source": "ARTEMIS-UC Phase 2 (Merck); Phase 3 underway" },
-  { "stat": "21%", "label": "achieved long-term drug-free remission after anti-TNF discontinuation", "source": "10-year follow-up data" },
-  { "stat": "HR 2.05", "label": "UC risk with long sleep duration (>9 hours)", "source": "Nurses Health Study (151,000+ women)" },
-  { "stat": "aHR 1.95", "label": "objective flare risk with highest meat intake quartile", "source": "PREdiCCt cohort" },
-  { "stat": "37.9%", "label": "of UC patients report stress/anxiety as #1 flare trigger", "source": "Analysis of 27,000+ patient forum posts" },
-  { "stat": "RR 0.68", "label": "5-ASA maintenance relapse reduction vs placebo", "source": "Cochrane summary" },
-  { "stat": "OR 0.20", "label": "colectomy reduction with antivirals in CMV+ steroid-refractory UC", "source": "Meta-analysis (PMID: 29392650)" },
-  { "stat": "95%", "label": "functional success after J-pouch surgery", "source": "Long-term IPAA cohorts" }
+  {
+    "stat": "RR 3.30",
+    "label": "maintenance clinical response with oral S1P receptor modulators vs placebo in moderate-to-severe UC",
+    "source": "Gardezi SAA et al. Dig Dis Sci. 2026 Apr 13 (PMID: 41968221) — meta-analysis of 8 RCTs, 2,663 patients across etrasimod, ozanimod, tamuzimod, and KRP203"
+  },
+  {
+    "stat": "RR 2.60",
+    "label": "maintenance histological remission with oral S1P receptor modulators vs placebo",
+    "source": "Gardezi SAA et al. Dig Dis Sci. 2026 Apr 13 (PMID: 41968221) — tissue-level healing signal across the S1P class"
+  },
+  {
+    "stat": "RR 2.39",
+    "label": "clinical remission with FMT when delivered by colonoscopy + enema vs control",
+    "source": "Huang B et al. Adv Ther. 2026 Apr 7 (PMID: 41945234) — updated meta-analysis of 16 RCTs; strongest route-specific effect in UC"
+  },
+  {
+    "stat": "26× higher",
+    "label": "clinical remission rate — tulisokibart (anti-TL1A) vs placebo (26% vs 1%) in moderate-to-severe IBD, Phase 2 ARTEMIS-UC. Phase 3 now enrolling",
+    "source": "Goyal MK et al. Aliment Pharmacol Ther. 2026 Apr 6 (PMID: 41941212) — review of TL1A/DR3 clinical evidence; tulisokibart Phase 2 data"
+  },
+  {
+    "stat": "RR 2.53",
+    "label": "histo-endoscopic mucosal healing at induction with IL-23 inhibitors vs placebo (7 RCTs, 4,203 patients)",
+    "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) — mirikizumab, risankizumab, guselkumab"
+  },
+  {
+    "stat": "61% fewer",
+    "label": "serious adverse events with IL-23 inhibitors vs placebo during induction (RR 0.39) — active UC control reduces disease-driven harms",
+    "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) — 7 RCTs, 4,203 patients"
+  },
+  {
+    "stat": "RR 6.93",
+    "label": "mucosal healing at 40 weeks with etrasimod vs placebo (I²=0% — zero heterogeneity)",
+    "source": "GRADE meta-analysis, 4 RCTs, 1239 patients — Jha A et al. Ann Pharmacother. 2026 (PMID: 41891290)"
+  },
+  {
+    "stat": "77.7%",
+    "label": "mirikizumab clinical remission sustained at 4 years (W52 remitters)",
+    "source": "LUCENT-3 OLE — Sands BE et al. Inflamm Bowel Dis. 2026 (PMID: 41777218)"
+  },
+  {
+    "stat": "OR 5.19",
+    "label": "relapse risk from highest red/processed meat intake",
+    "source": "Prospective cohort; dose-response meta-analysis"
+  },
+  {
+    "stat": "HR 5.5",
+    "label": "relapse risk from mesalamine non-adherence in quiescent UC",
+    "source": "Prospective data (PMID: 12543288)"
+  },
+  {
+    "stat": "aHR 3.25",
+    "label": "objective flare risk with FC ≥250 vs <50 µg/g",
+    "source": "PREdiCCt cohort (PMID: 41554630)"
+  },
+  {
+    "stat": "HR 2.8",
+    "label": "UC exacerbation risk from chronic psychological stress",
+    "source": "Levenstein et al. 2000 prospective cohort"
+  },
+  {
+    "stat": "OR 2.71",
+    "label": "relapse risk from alcohol consumption",
+    "source": "Jowett 2004 prospective cohort"
+  },
+  {
+    "stat": "54%",
+    "label": "upadacitinib maintenance remission at week 52 (#1 in 2025 NMA)",
+    "source": "Phase 3 RCTs; Shehab 2025 NMA (36 RCTs, 14,270 pts)"
+  },
+  {
+    "stat": "83%",
+    "label": "clinical response with dual biologic therapy (guselkumab + golimumab)",
+    "source": "VEGA trial"
+  },
+  {
+    "stat": ">80%",
+    "label": "sustained remission with guselkumab at 3 years",
+    "source": "QUASAR/ASTRO extension data"
+  },
+  {
+    "stat": "32.8% vs 12.2%",
+    "label": "remission: appendicectomy vs JAK inhibitor in biologic-refractory UC (p=0.010)",
+    "source": "COSTA trial — Visser E et al. Lancet Gastroenterol Hepatol. 2026 (PMID: 41512889)"
+  },
+  {
+    "stat": "RR 2.33",
+    "label": "clinical remission with curcumin adjunct (8+ RCTs)",
+    "source": "Peng 2024 meta-analysis"
+  },
+  {
+    "stat": "42.9%",
+    "label": "remission with VSL#3/Visbiome vs 15.7% placebo",
+    "source": "Sood 2009 RCT; multi-strain probiotic"
+  },
+  {
+    "stat": "OR 3.85",
+    "label": "remission induction with Lactobacillus + Bifidobacterium combination",
+    "source": "NMA of 20 RCTs"
+  },
+  {
+    "stat": "OR 2.25",
+    "label": "clinical + endoscopic remission with FMT vs control (NNT 5)",
+    "source": "Meta-analysis of 14 RCTs; Cochrane 2023"
+  },
+  {
+    "stat": "HR 1.82",
+    "label": "IBD risk from ultra-processed foods (≥5 servings/day)",
+    "source": "PURE study (116,087 adults)"
+  },
+  {
+    "stat": "OR 3.6",
+    "label": "UC risk from PM2.5 air pollution (Mendelian randomization)",
+    "source": "UK Biobank (455,210 participants)"
+  },
+  {
+    "stat": "53%",
+    "label": "fewer hospitalizations with vitamin D repletion",
+    "source": "VA study 2025"
+  },
+  {
+    "stat": "74%",
+    "label": "clinical response with upadacitinib at week 8",
+    "source": "U-ACHIEVE (NNT ≈ 3–5)"
+  },
+  {
+    "stat": "49.9%",
+    "label": "mirikizumab maintenance remission at week 40",
+    "source": "LUCENT (NNT ≈ 4)"
+  },
+  {
+    "stat": "OR 0.31",
+    "label": "UC risk reduction with appendectomy before age 20",
+    "source": "Multiple meta-analyses"
+  },
+  {
+    "stat": "OR 0.21",
+    "label": "UC risk reduction from breastfeeding >12 months",
+    "source": "Meta-analysis of 35 studies"
+  },
+  {
+    "stat": "26%",
+    "label": "remission with tulisokibart (anti-TL1A) vs 1% placebo",
+    "source": "ARTEMIS-UC Phase 2 (Merck); Phase 3 underway"
+  },
+  {
+    "stat": "21%",
+    "label": "achieved long-term drug-free remission after anti-TNF discontinuation",
+    "source": "10-year follow-up data"
+  },
+  {
+    "stat": "HR 2.05",
+    "label": "UC risk with long sleep duration (>9 hours)",
+    "source": "Nurses Health Study (151,000+ women)"
+  },
+  {
+    "stat": "aHR 1.95",
+    "label": "objective flare risk with highest meat intake quartile",
+    "source": "PREdiCCt cohort"
+  },
+  {
+    "stat": "37.9%",
+    "label": "of UC patients report stress/anxiety as #1 flare trigger",
+    "source": "Analysis of 27,000+ patient forum posts"
+  },
+  {
+    "stat": "RR 0.68",
+    "label": "5-ASA maintenance relapse reduction vs placebo",
+    "source": "Cochrane summary"
+  },
+  {
+    "stat": "OR 0.20",
+    "label": "colectomy reduction with antivirals in CMV+ steroid-refractory UC",
+    "source": "Meta-analysis (PMID: 29392650)"
+  },
+  {
+    "stat": "95%",
+    "label": "functional success after J-pouch surgery",
+    "source": "Long-term IPAA cohorts"
+  }
 ]

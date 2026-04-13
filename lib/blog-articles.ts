@@ -32,6 +32,284 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 's1p-modulators-uc-meta-analysis-2026',
+    title: 'Oral S1P Drugs Just Put Up the Cleanest Class-Level UC Signal Yet: 3.30× Better Maintenance Response in 8 RCTs',
+    description: 'A new 2026 meta-analysis of 8 randomized trials and 2,663 patients found that oral S1P receptor modulators significantly improved induction and maintenance outcomes in moderate-to-severe ulcerative colitis, with 3.30× higher maintenance clinical response, 2.20× higher maintenance remission, and 2.60× higher histological remission versus placebo.',
+    category: 'Small Molecules',
+    readTime: '8 min read',
+    datePublished: '2026-04-13',
+    intro: 'UC patients keep getting sold the same false choice: injections that work or pills that do not. That story is getting harder to defend. A brand-new meta-analysis published April 13, 2026 pooled eight randomized controlled trials of oral sphingosine-1-phosphate receptor modulators, including etrasimod and ozanimod, across 2,663 patients with moderate-to-severe ulcerative colitis. The result was not subtle. Compared with placebo, S1P modulators delivered 2.47× higher induction clinical response, 1.84× higher induction remission, and 3.30× higher maintenance clinical response. Histological remission doubled to tripled in both phases. Serious adverse events were not increased. Translation: the oral S1P class is no longer a niche side story. It is now one of the most evidence-backed pill-based options in UC.',
+    keyPoints: [
+      'Meta-analysis included 8 randomized controlled trials and 2,663 adults with moderate-to-severe UC.',
+      'Maintenance clinical response was 3.30× higher with S1P modulators than placebo.',
+      'Maintenance clinical remission was 2.20× higher, with histological remission 2.60× higher and mucosal healing 2.21× higher.',
+      'Induction efficacy was also strong: clinical response RR 2.47, remission RR 1.84, endoscopic improvement RR 2.32.',
+      'Serious adverse events and treatment discontinuation were not significantly increased versus placebo.',
+      'Bottom line: if you want an oral advanced therapy that is not a JAK inhibitor, this class deserves a serious discussion with your GI. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters more than another single-drug headline',
+        paragraphs: [
+          'Most UC treatment headlines are about one drug, one trial, one sponsor deck, and one carefully chosen endpoint. Useful, but narrow. This paper did something more clinically meaningful. It pooled the randomized trial evidence across the whole S1P receptor modulator class, including etrasimod, ozanimod, tamuzimod, and KRP203, then asked the question patients actually care about: when you zoom out, does this pill class reliably work?',
+          'The answer is yes. Not maybe. Not in one cherry-picked subgroup. Across eight placebo-controlled RCTs, S1P modulators improved symptoms, endoscopy, histology, and mucosal healing. That breadth matters because UC is a disease where symptom improvement alone can lie to you. The colon can still be inflamed while you tell yourself things are “better.” This analysis showed improvement at the tissue level too.',
+          'That is why this is more useful than another press release about a single maintenance study. It tells you the mechanism is real at the class level, not just at the brand level.',
+        ],
+        callout: 'This was not one lucky trial. It was eight randomized trials telling the same basic story: the S1P class works.',
+      },
+      {
+        title: 'The number worth screenshotting: 3.30× better maintenance response',
+        paragraphs: [
+          'The standout result was maintenance clinical response: risk ratio 3.30 versus placebo. That is the sort of number that makes people who dismissed oral therapies look a little stupid. Maintenance is where UC treatment lives or dies. Plenty of drugs can produce a decent induction response and then fade once the easy wins are gone. Sustained response is what determines whether you keep your job, stop planning your day around toilets, and stay off repeated steroid tapers.',
+          'The maintenance story did not stop there. Clinical remission was 2.20× higher, histological remission was 2.60× higher, and mucosal healing was 2.21× higher than placebo. Histological remission matters because it means inflammation is calming down under the microscope, not just on a symptom diary. Mucosal healing matters because it predicts fewer flares, fewer hospitalizations, and a better long-term trajectory.',
+          'In plain English: these pills are not just making people feel a bit less awful. They are changing what the bowel looks like and what the tissue is doing.',
+        ],
+        callout: 'Maintenance response RR 3.30 is the headline. Histological remission RR 2.60 is the part smart patients should care about just as much.',
+      },
+      {
+        title: 'Induction results were strong too, which kills the “slow pill” stereotype',
+        paragraphs: [
+          'S1P modulators also performed well during induction. Clinical response improved 2.47-fold, clinical remission 1.84-fold, endoscopic improvement 2.32-fold, histological remission 2.59-fold, and mucosal healing 2.54-fold versus placebo. So no, this is not a class that only shows up later after months of waiting and hoping.',
+          'That matters because pill-based UC options are often judged unfairly. JAK inhibitors have the reputation for speed. Biologics have the reputation for depth. S1P drugs have sometimes been framed as the compromise option. This meta-analysis makes that framing too simplistic. They are clearly capable of meaningful induction benefit while also carrying a real maintenance and tissue-healing signal.',
+          'Does this mean every S1P drug is identical? Obviously not. Etrasimod and ozanimod have different trial programs, different label nuances, and slightly different practical baggage. But the class-level efficacy signal is now robust enough that “oral but weak” is no longer an evidence-based description.',
+        ],
+      },
+      {
+        title: 'What about safety? Better keep the hype on a leash',
+        paragraphs: [
+          'The meta-analysis found a slight increase in overall adverse events with S1P modulators, but serious adverse events were not significantly different from placebo, and discontinuation rates were also similar. That is reassuring, but let us not do the wellness-influencer thing and pretend “acceptable” means “risk-free.”',
+          'S1P receptor modulators still require real screening and real prescribing discipline. Heart-rate effects, conduction issues, infection risk, liver monitoring, and ophthalmic cautions are part of the class conversation. Some patients need first-dose monitoring depending on the specific drug and cardiac history. Others will not be appropriate candidates at all.',
+          'The honest conclusion is simple. These are legitimate advanced therapies with a reasonable safety profile, not harmless supplements. That is exactly why they belong in a gastroenterologist-led treatment plan rather than a random Reddit thread. See a professional.',
+        ],
+        callout: 'Good safety signal? Yes. Free pass? No. These are real drugs, and they need real screening.',
+      },
+      {
+        title: 'Who should ask about an S1P modulator right now',
+        paragraphs: [
+          'Three groups stand out. First, patients who want an advanced therapy but deeply prefer a pill over an infusion chair or self-injection. That preference is not trivial. Adherence is better when treatment fits real life. Second, patients who need an oral option but are wary of JAK-inhibitor black-box baggage. S1P modulators occupy a different risk-benefit lane. Third, patients who want evidence not just for symptoms, but for endoscopic and histologic healing.',
+          'If you are already discussing etrasimod or ozanimod with your GI, this meta-analysis gives you a smarter conversation starter: “What makes you choose this S1P drug versus a biologic or a JAK, given the new class-level RCT data?” That is a far better question than “Is there any good pill for UC?” because the answer to that old question is now clearly yes.',
+          'What this paper does not prove is head-to-head superiority over the top biologics or over upadacitinib. There are no direct class-vs-class trials here. So do not turn a good meta-analysis into a fake certainty machine. But if you ignored S1P drugs before, the evidence just got strong enough that ignoring them now is lazy.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What are S1P receptor modulators in ulcerative colitis?',
+        answer: 'They are oral drugs that alter lymphocyte trafficking by modulating sphingosine-1-phosphate receptors, reducing the movement of inflammatory immune cells into the gut. In UC, the leading approved examples are ozanimod and etrasimod.',
+      },
+      {
+        question: 'Does this meta-analysis prove S1P drugs are better than biologics or JAK inhibitors?',
+        answer: 'No. It proves they outperform placebo across multiple important endpoints and that the class-level signal is robust. Cross-trial comparisons against biologics or JAK inhibitors are imperfect without direct head-to-head trials.',
+      },
+      {
+        question: 'What was the strongest result in this paper?',
+        answer: 'Maintenance clinical response, with a pooled risk ratio of 3.30 versus placebo. Maintenance histological remission was also strong at RR 2.60, which supports real tissue-level healing rather than symptom masking alone.',
+      },
+      {
+        question: 'Are S1P modulators safe?',
+        answer: 'Overall they had an acceptable safety profile in this analysis, with no significant increase in serious adverse events or discontinuations versus placebo. But they still require proper cardiac, infection, liver, and medication-interaction review with a gastroenterologist. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Gardezi SAA et al. Sphingosine 1-Phosphate (S1P) Receptor Modulators as an Induction and Maintenance Therapy for Moderate to Severe Ulcerative Colitis: A Systematic Review and Meta-analysis of Randomized Controlled Trials. Dig Dis Sci. 2026 Apr 13 (PMID: 41968221)', href: 'https://pubmed.ncbi.nlm.nih.gov/41968221/' },
+      { label: 'Sandborn WJ et al. TRUE NORTH: Ozanimod as induction and maintenance therapy for ulcerative colitis. N Engl J Med. 2021 (PMID: 34587385)', href: 'https://pubmed.ncbi.nlm.nih.gov/34587385/' },
+      { label: 'Sandborn WJ et al. ELEVATE UC: Etrasimod as induction and maintenance therapy for ulcerative colitis. Lancet. 2023 (PMID: 36871574)', href: 'https://pubmed.ncbi.nlm.nih.gov/36871574/' },
+    ],
+    relatedSlugs: ['etrasimod-meta-analysis-mucosal-healing-2026', 'jak-inhibitors-uc', 'biologics-for-uc-compared'],
+  },
+  {
+    slug: 'fmt-delivery-route-meta-analysis-2026',
+    title: 'FMT Works Best by Colonoscopy + Enemas: The New UC Meta-Analysis That Finally Answers the Delivery Question',
+    description: 'An updated 2026 meta-analysis of 16 RCTs found that fecal microbiota transplantation improves clinical and endoscopic remission in UC, but delivery route matters a lot. Colonoscopy plus enemas produced the strongest signal: 2.39× more clinical remissions and 2.19× more endoscopic remissions than control, with no increase in adverse events.',
+    category: 'Microbiome',
+    readTime: '8 min read',
+    datePublished: '2026-04-07',
+    intro: 'Most UC patients who hear about fecal microbiota transplantation get sold the vague version: “FMT might help.” That is not good enough anymore. The clinically relevant question is not whether FMT works in the abstract. It is whether the way it is delivered changes the odds that it actually works for you. An updated 2026 systematic review and meta-analysis in Advances in Therapy pooled 16 randomized controlled trials and finally answered that question with unusual clarity. Overall, donor-derived FMT improved clinical remission by 81% and endoscopic remission by 74% versus control, without increasing adverse events. But the real story is route. When FMT was delivered by colonoscopy followed by enemas, remission was 2.39 times higher than control and endoscopic remission was 2.19 times higher. In other words: if you are going to talk about FMT in UC, the delivery method is not a technical footnote. It is the difference between a serious protocol and a weaker one.',
+    keyPoints: [
+      'Updated meta-analysis included 16 randomized controlled trials of donor-derived FMT in ulcerative colitis.',
+      'Overall efficacy: clinical remission RR 1.81 and endoscopic remission RR 1.74 versus placebo, sham, or autologous FMT.',
+      'Best-performing delivery route was colonoscopy plus enemas: clinical remission RR 2.39 and endoscopic remission RR 2.19.',
+      'Single-route colonoscopy and rectal enema also worked, but less strongly than the combined approach.',
+      'Adverse events were not increased with FMT versus control (RR 1.03), supporting short-term safety.',
+      'Bottom line for patients: if a center offers FMT, ask exactly how it is delivered, because route appears to matter substantially.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters more than the average FMT headline',
+        paragraphs: [
+          'FMT research in UC has had a persistent problem: everybody talks about the concept, almost nobody talks clearly about the protocol. That is ridiculous, because UC is not a disease where the details can be hand-waved away. Donor selection matters. Dose matters. Frequency matters. And, as this new meta-analysis makes painfully obvious, delivery route matters.',
+          'Huang and colleagues pooled 16 randomized controlled trials that compared donor-derived FMT against placebo, sham treatment, or autologous stool in ulcerative colitis. This is newer and slightly broader than earlier meta-analyses, and it specifically examined whether the way bacteria are delivered changes outcomes. That is the kind of question patients actually need answered. If one method works much better, then “FMT works” is too blurry to be useful.',
+          'The overall effect was already strong enough to matter. Clinical remission improved with a pooled risk ratio of 1.81. Endoscopic remission improved with a pooled risk ratio of 1.74. Adverse events were essentially the same as control. But the subgroup analysis is where this becomes patient-relevant rather than merely academic.',
+        ],
+        callout: 'FMT is not one thing. Delivery route changes the result, which means protocol quality changes the result.',
+      },
+      {
+        title: 'The number patients should care about: 2.39× more remissions with colonoscopy plus enemas',
+        paragraphs: [
+          'The combined colonoscopy-plus-enema strategy showed the largest effect for clinical remission: RR 2.39, with a confidence interval that stayed clearly above 1. That means the benefit was statistically credible, not just numerically interesting. It also showed the most consistent endoscopic remission signal, with RR 2.19.',
+          'That matters because endoscopic remission is not just “feeling better.” It means the colon actually looks better on scope. Patients with endoscopic healing do better long term. Fewer flares. Fewer steroid cycles. Lower hospitalization risk. Better odds of durable control. So when a microbiome therapy improves both symptoms and scope findings, you pay attention.',
+          'The obvious implication is that a one-off, low-intensity FMT protocol may leave efficacy on the table. Colonoscopy can distribute donor material broadly through the colon at the start. Follow-up enemas likely help reinforce engraftment and maintain contact with the distal colon, where UC usually remains most active. Mechanistically, that makes sense. Clinically, the data now backs it up.',
+        ],
+        callout: 'If a patient screenshots one number from this paper, it should be this one: RR 2.39 for remission with colonoscopy plus enemas.',
+      },
+      {
+        title: 'How the other routes performed, and why that matters',
+        paragraphs: [
+          'Colonoscopy alone and rectal enemas alone also showed significant benefit, with clinical remission risk ratios of 1.58 and 1.62 respectively. That is not trivial. It means FMT is not an all-or-nothing therapy that only works under one exact setup.',
+          'But both single-route approaches were weaker than the combined strategy. Oral capsules and nasoduodenal infusion had imprecise results, largely because there were fewer trials and less certainty. That does not prove capsules do not work. It proves the evidence is not yet good enough to put them on the same footing as lower-GI delivery.',
+          'For patients, this changes the conversation. “Does your center offer FMT?” is not the right question. The right question is: “Do you use colonoscopy followed by enemas, or are you using a weaker delivery method because it is easier?” Convenience is not the same thing as efficacy.',
+        ],
+      },
+      {
+        title: 'Safety looked reassuring, but do not get sloppy with the conclusion',
+        paragraphs: [
+          'The meta-analysis found no increase in adverse events compared with control, with a pooled RR of 1.03. That is reassuring, especially for patients who are understandably nervous about the idea of transferring donor stool.',
+          'But short-term safety is not the same as “zero risk” or “go do this anywhere.” FMT still depends on rigorous donor screening, infection control, standardized preparation, and a center that knows what it is doing. The history of FMT includes rare but serious infectious complications when stool screening standards were inadequate. That is what happens when people treat microbiome therapy like a supplement instead of a biologic-level intervention.',
+          'So yes, the short-term RCT safety signal is good. No, that does not mean DIY FMT is smart. It means properly screened, medically supervised FMT appears reasonably safe in the short term in UC trials.',
+        ],
+        callout: 'Short-term safety looked good. Sloppy donor screening is still a terrible idea.',
+      },
+      {
+        title: 'What patients should do with this information right now',
+        paragraphs: [
+          'First, understand the status clearly: FMT is still not a routine first-line UC therapy in mainstream practice. In many regions it remains investigational outside recurrent C. difficile infection. That part has not changed.',
+          'What has changed is the quality of the protocol conversation. If you are considering FMT through a trial, an academic center, or a specialist clinic, you now have a smarter question set. Ask how many administrations are used. Ask whether initial delivery is by colonoscopy. Ask whether they follow with enemas. Ask what remission endpoints they track, including fecal calprotectin and endoscopy, not just symptoms.',
+          'Second, stop treating all FMT claims as equal. A center advertising “capsule FMT for gut health” is not automatically offering the same thing supported by this UC evidence base. The data here most strongly supports lower-GI delivery, especially the combined route.',
+          'Third, remember what this paper does and does not prove. It supports FMT as a real induction-phase option that can improve remission without more adverse events. It does not prove long-term durability, it does not settle the optimal donor strategy, and it does not replace a gastroenterologist. See a professional. But if your GI says FMT is pure hype, that answer is now behind the evidence.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does this mean FMT is now proven for ulcerative colitis?',
+        answer: 'It means FMT has credible randomized-trial evidence for improving induction-phase remission in UC, especially with colonoscopy plus enema delivery. It does not mean it is universally standard of care or that long-term durability is fully settled.',
+      },
+      {
+        question: 'Why would colonoscopy plus enemas work better than capsules or one-time delivery?',
+        answer: 'Probably because it distributes donor microbiota broadly through the colon first, then repeatedly reinforces engraftment where UC is most active, especially distally. The exact mechanism is still being studied, but the clinical signal in this meta-analysis favored the combined lower-GI approach.',
+      },
+      {
+        question: 'Was FMT safer than standard treatment in this analysis?',
+        answer: 'Short-term adverse event rates were similar between FMT and control groups, with no significant increase in overall adverse events. That supports short-term safety in supervised trials, but donor screening and medical oversight remain essential.',
+      },
+      {
+        question: 'Should I try DIY FMT at home?',
+        answer: 'No. That is how people turn a promising therapy into an avoidable infection or worse. FMT should only be considered with proper donor screening and specialist oversight. Discuss it with a qualified gastroenterology team.',
+      },
+    ],
+    references: [
+      { label: 'Huang B et al. Comparative Effectiveness and Safety of Fecal Microbiota Transplantation in Ulcerative Colitis: An Updated Systematic Review and Meta-Analysis. Adv Ther. 2026 Apr 7 (PMID: 41945234)', href: 'https://pubmed.ncbi.nlm.nih.gov/41945234/' },
+      { label: 'Doukas PG et al. Dig Dis. 2026 — FMT meta-analysis of 15 RCTs (PMID: 41078065)', href: 'https://pubmed.ncbi.nlm.nih.gov/41078065/' },
+      { label: 'Paramsothy S et al. Lancet. 2017 — Multidonor FMT in active UC (PMID: 28214091)', href: 'https://pubmed.ncbi.nlm.nih.gov/28214091/' },
+    ],
+    relatedSlugs: ['fmt-remission-meta-analysis-2026', 'fmt-anti-inflammatory-diet-uc-remission', 'anti-inflammatory-diet-uc-meta-analysis-2026'],
+  },
+  {
+    slug: 'tl1a-inhibitors-uc-tulisokibart-duvakitug-2026',
+    title: 'The Next Biologic Breakthrough Nobody Is Talking About: TL1A Inhibitors Can Heal UC *and* Stop the Scarring',
+    description: 'A comprehensive 2026 review in Alimentary Pharmacology & Therapeutics reveals why TL1A inhibitors — tulisokibart, duvakitug, afimkibart — are unlike every existing UC biologic. They are the first class that directly targets both intestinal inflammation AND the fibrosis that eventually destroys the bowel wall. Phase 3 programs are now underway.',
+    category: 'Pipeline',
+    readTime: '9 min read',
+    datePublished: '2026-04-06',
+    intro: 'Every UC biologic approved in the last decade targets inflammation. Anti-TNFs quench cytokine fire. Vedolizumab blocks inflammatory cell traffic into the gut. IL-23 inhibitors turn off the molecular switch driving mucosal injury. JAK inhibitors silence the intracellular amplifiers of inflammation. All effective. All targeting the same endpoint: inflammation. None of them do anything meaningful about intestinal fibrosis — the progressive scarring that silently remodels your bowel wall even during periods of apparent remission. A review published today in Alimentary Pharmacology & Therapeutics (April 6, 2026) synthesises the entire body of evidence on TL1A inhibitors and concludes that this emerging class is genuinely different. TL1A and its receptor DR3 sit at the intersection of two processes that existing drugs treat separately: mucosal inflammation and intestinal fibrosis. Block TL1A, and you potentially interrupt both. Phase 2 trials of tulisokibart (26% remission vs 1% placebo) and duvakitug have demonstrated clinical and endoscopic remission in moderate-to-severe IBD. Phase 3 programmes are now actively enrolling. For UC patients who have failed multiple biologics, or who are watching their disease slowly destroy their bowel architecture despite "controlled" inflammation scores, this is the drug class worth following.',
+    keyPoints: [
+      'TL1A (tumour necrosis factor-like ligand 1A) and its receptor DR3 drive both intestinal inflammation and bowel wall fibrosis in UC — a combination no existing biologic fully addresses.',
+      'Tulisokibart (Merck, TEV-48574): Phase 2 ARTEMIS-UC showed 26% clinical remission vs 1% placebo in moderate-to-severe IBD. Phase 3 is now enrolling.',
+      'Duvakitug (Teva/AnaptysBio): Phase 2 data confirmed clinical and endoscopic remission in moderate-to-severe IBD across both UC and Crohn\'s disease.',
+      'Afimkibart is a third anti-TL1A agent in the clinical pipeline, further validating the target.',
+      'TL1A overexpression drives Th2/Th9/Th17 inflammatory cascades, epithelial barrier breakdown, and TGF-beta-driven intestinal fibrosis — the inflammation-fibrosis continuum.',
+      'This mechanism is most relevant for patients with fibrostenosing disease, multiple biologic failures, or structurally compromised bowel — currently an unaddressed unmet need.',
+    ],
+    sections: [
+      {
+        title: 'What TL1A actually is — and why no one has targeted it until now',
+        paragraphs: [
+          'TL1A stands for tumour necrosis factor-like ligand 1A. It is a cytokine — a signalling protein — produced primarily by intestinal endothelial cells, macrophages, and dendritic cells in response to microbial stimuli and barrier damage. Its receptor, DR3 (death receptor 3), is expressed on multiple immune cell types including T-helper cells, innate lymphoid cells, and mucosal regulatory T cells.',
+          'The TL1A-DR3 signalling axis has been studied in preclinical IBD models since the mid-2000s, but translating that into a druggable target took over a decade of work. The challenge was specificity: DR3 is expressed on many immune cell subsets, and early concerns about broad immunosuppression (similar to what was feared about anti-TNF agents before their clinical approval) slowed development. What changed was a deeper understanding of TL1A\'s tissue-specific effects — particularly the demonstration that TL1A, unlike most other inflammatory cytokines, has direct pro-fibrotic effects on intestinal stromal cells.',
+          'In simple terms: TL1A doesn\'t just drive inflammation. It also talks directly to the mesenchymal cells that lay down scar tissue in the gut wall. This makes it functionally distinct from any cytokine currently targeted by approved UC therapies.',
+        ],
+        callout: 'TL1A doesn\'t just drive inflammation. It also directly activates the cells that build scar tissue in your gut wall — a dual role no existing biologic addresses.',
+      },
+      {
+        title: 'The inflammation-fibrosis continuum: the problem existing biologics cannot solve',
+        paragraphs: [
+          'Intestinal fibrosis is one of the most underappreciated aspects of UC disease progression. Standard assessments — symptom scores, endoscopic grading, even faecal calprotectin — are primarily measures of active mucosal inflammation. They do not detect the progressive submucosal and transmural scarring that accumulates over years of recurrent disease cycles.',
+          'Approximately 5-10% of UC patients develop intestinal strictures severe enough to require surgery. A far larger proportion — estimated at 20-30% in long-duration disease — have histological evidence of subepithelial fibrosis even during endoscopic remission. This fibrotic remodelling is not reversed by anti-inflammatory biologics. You can achieve mucosal healing on vedolizumab or mirikizumab and still have progressive structural bowel damage.',
+          'TL1A drives this fibrosis through multiple downstream mechanisms. Preclinical data show that TL1A-DR3 signalling activates intestinal stromal fibroblasts and myofibroblasts, promotes TGF-beta production (the master regulator of fibrosis in every organ system), and induces IL-13 expression which amplifies pro-fibrotic collagen deposition. In murine UC models, genetic deletion or antibody blockade of TL1A reduces not just inflammation scores but histological fibrosis indices — a result that has not been replicated with anti-TNF or vedolizumab treatment in the same models.',
+          'The clinical implication is significant. If anti-TL1A therapy can simultaneously reduce mucosal inflammation (as the Phase 2 trial data suggests) and attenuate the fibrotic remodelling that drives long-term structural damage (as the preclinical models suggest), it would represent the first therapy capable of modifying the natural history of UC at a structural level — not just managing symptoms and mucosal appearance.',
+        ],
+        callout: 'You can achieve mucosal healing on a biologic and still have progressive bowel wall scarring. TL1A inhibitors are the first class designed to target that scarring directly.',
+      },
+      {
+        title: 'Tulisokibart Phase 2 (ARTEMIS-UC): 26% remission vs 1% placebo',
+        paragraphs: [
+          'Tulisokibart (TEV-48574, Merck) is the furthest-advanced TL1A inhibitor in clinical development for UC. The Phase 2 ARTEMIS-UC trial evaluated tulisokibart in biologic-naive and biologic-experienced patients with moderate-to-severe active UC. The headline finding: 26% clinical remission at 12 weeks in the highest-dose tulisokibart arm, compared to 1% in the placebo arm.',
+          'That gap — 26% vs 1% — is extraordinary for a Phase 2 induction study. For context, most Phase 2 trials in UC expect to see placebo remission rates of 5-15%, and drug remission rates of 15-30%. A 1% placebo rate reflects either a very high-severity patient population or very stringent endpoint definitions (or both). The absolute difference of 25 percentage points at induction gives a strong signal, though Phase 3 results with a more typical placebo rate will give a clearer picture of the true effect size.',
+          'Tulisokibart was well tolerated in Phase 2. Serious adverse events were not reported at elevated rates versus placebo, consistent with the growing safety data for this target. A Phase 3 programme is now enrolling — the largest clinical trial programme ever conducted for an anti-TL1A agent. Results are expected in 2027-2028.',
+        ],
+      },
+      {
+        title: 'Duvakitug and afimkibart: the class is not a one-drug story',
+        paragraphs: [
+          'Duvakitug (formerly ETG-005, jointly developed by Teva and AnaptysBio) is the second anti-TL1A antibody to have demonstrated clinical efficacy in Phase 2 trials. Unlike tulisokibart, duvakitug was evaluated in a combined UC and Crohn\'s disease programme, providing cross-IBD evidence for the TL1A pathway. Phase 2 results showed clinical and endoscopic remission in both conditions, with a safety profile consistent with selective immune modulation rather than broad immunosuppression.',
+          'Afimkibart is a third anti-TL1A antibody currently in earlier-stage clinical development. Three separate compounds from three different development programmes showing efficacy at the same target dramatically strengthens the mechanistic rationale. This is not a one-biologic fluke — the TL1A pathway appears genuinely druggable, and the class effect appears real.',
+          'The fact that duvakitug works in Crohn\'s disease as well as UC is also notable for IBD patients who have features of both conditions, or who have an uncertain diagnosis. TL1A\'s fibrotic mechanism is, if anything, more relevant in Crohn\'s disease (where transmural fibrosis and stricturing are even more clinically significant than in UC), which means this drug class may ultimately have broader IBD utility than any currently approved agent.',
+        ],
+      },
+      {
+        title: 'Who stands to benefit most from TL1A inhibitors?',
+        paragraphs: [
+          'It is too early to define precise patient selection criteria for TL1A inhibitors — Phase 3 data will be needed to understand subgroup effects. But the mechanistic profile suggests several patient groups for whom this class could be particularly valuable.',
+          'Patients with multiple prior biologic failures: TL1A is a mechanistically independent target from anti-TNF, vedolizumab, IL-23 inhibitors, and JAK inhibitors. Prior failure of one or even all existing classes does not predict TL1A inhibitor failure. For patients who are running out of options, this mechanism independence is critical.',
+          'Patients with evidence of progressive bowel wall thickening or early fibrosis on imaging: If MRI enterography or cross-sectional imaging shows transmural thickening, increased T2 signal (oedema-fibrosis spectrum), or loss of haustra — features associated with cumulative fibrotic remodelling — these patients may have the most to gain from a therapy that targets the fibrotic arm of disease.',
+          'Patients who continue to have histological inflammation despite endoscopic remission: Histological remission is increasingly recognised as a deeper endpoint associated with better long-term outcomes. Patients who achieve endoscopic but not histological remission on current therapy may have persistent TL1A-driven subepithelial inflammation that anti-TL1A agents are specifically positioned to address.',
+          'The clinical reality is that Phase 3 results will clarify this substantially. But understanding the mechanism now allows patients to have informed conversations with their gastroenterologists — particularly those who are watching their disease progress despite adequate anti-inflammatory therapy.',
+        ],
+        callout: 'Multiple biologic failures? Bowel wall thickening on MRI? Ongoing histological inflammation despite endoscopic remission? TL1A inhibitors are mechanistically built for exactly these situations.',
+      },
+      {
+        title: 'What patients should do right now — before Phase 3 results arrive',
+        paragraphs: [
+          'TL1A inhibitors are not yet approved. They are in Phase 3 trials. So why does this matter to you today?',
+          'First, clinical trials are actively enrolling. Tulisokibart Phase 3 sites are recruiting. If you have moderate-to-severe UC that has failed one or more advanced therapies, you may be eligible. Participating in a Phase 3 trial gives access to a potentially efficacious drug that is not yet commercially available — along with close monitoring and comprehensive care. ClinicalTrials.gov lists active studies under the search term "tulisokibart" and "duvakitug".',
+          'Second, understanding this pipeline changes how you navigate conversations with your gastroenterologist. If you are approaching your third or fourth biologic failure and your doctor is discussing step-down to optimise current therapy, it is reasonable to ask about clinical trial eligibility for next-generation targets including anti-TL1A agents.',
+          'Third, the TL1A story changes how we think about disease monitoring. If fibrosis is a parallel process to inflammation — and TL1A evidence suggests it is — then monitoring that focuses only on mucosal inflammation (symptoms, endoscopy, calprotectin) is incomplete. Asking about transmural assessment with intestinal ultrasound or MRI is increasingly warranted for patients with long-standing disease.',
+          'The most important thing is this: the UC treatment landscape in 2026 is more differentiated than it has ever been. Mechanistically distinct options — each with their own indication niche — are accumulating rapidly. TL1A inhibitors will add a category that currently does not exist: inflammation-plus-fibrosis modification. That is worth being ready for.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'When will tulisokibart be approved for UC?',
+        answer: 'Tulisokibart is currently in Phase 3 clinical trials. If Phase 3 results are positive and regulatory submission proceeds, approval could come in 2028-2029. Phase 3 results are expected approximately 2027-2028. ClinicalTrials.gov lists active recruiting sites for patients who want access now.',
+      },
+      {
+        question: 'Is TL1A the same as TNF? Is tulisokibart an anti-TNF drug?',
+        answer: 'No. TL1A (tumour necrosis factor-like ligand 1A) is structurally related to TNF but has a distinct receptor (DR3), distinct cell sources, and distinct downstream effects including direct pro-fibrotic activity. Tulisokibart is not an anti-TNF. It works through a completely independent mechanism and is expected to work in patients who have failed anti-TNF therapy.',
+      },
+      {
+        question: 'Can TL1A inhibitors actually reverse intestinal scarring?',
+        answer: 'Preclinical evidence shows TL1A inhibition reduces the formation of new fibrosis in murine IBD models. Whether established fibrosis can be reversed — rather than just prevented from progressing — is an open question that will require long-term extension data from Phase 3 trials. Most fibrosis experts believe prevention of progression is more achievable than reversal of established scarring.',
+      },
+      {
+        question: 'Who are the three TL1A inhibitors and what is their status?',
+        answer: 'Tulisokibart (Merck): most advanced, Phase 3 now enrolling after positive Phase 2 ARTEMIS-UC (26% vs 1% remission). Duvakitug (Teva/AnaptysBio): positive Phase 2 in UC and Crohn\'s disease. Afimkibart: earlier clinical development. All three target the TL1A-DR3 axis through antibody blockade of TL1A.',
+      },
+      {
+        question: 'If I have failed vedolizumab, mirikizumab, and upadacitinib, could TL1A inhibitors work?',
+        answer: 'Potentially yes. TL1A inhibitors are mechanistically independent of all three of those agents. The mechanism of prior failure does not predict TL1A inhibitor failure. This is one of the most clinically exciting aspects of the class — it offers a genuinely new pathway for patients who have exhausted current options.',
+      },
+    ],
+    references: [
+      { label: 'Goyal MK et al. TL1A Inhibitors in IBD - Mechanistic Rationale and Clinical Evidence. Aliment Pharmacol Ther. 2026 Apr 6 (PMID: 41941212)', href: 'https://pubmed.ncbi.nlm.nih.gov/41941212/' },
+      { label: 'Tulisokibart Phase 2 ARTEMIS-UC — ClinicalTrials.gov NCT04996173', href: 'https://clinicaltrials.gov/study/NCT04996173' },
+      { label: 'Duvakitug (ETG-005) Phase 2 results — AnaptysBio press release 2024', href: 'https://ir.anaptysbio.com/' },
+      { label: 'Sands BE et al. LUCENT-3 4-year mirikizumab OLE. Inflamm Bowel Dis. 2026 (PMID: 41777218)', href: 'https://pubmed.ncbi.nlm.nih.gov/41777218/' },
+      { label: 'Amin HM et al. IL-23 inhibitors meta-analysis. Int J Colorectal Dis. 2025 (PMID: 41467943)', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },
+    ],
+    relatedSlugs: ['jak-inhibitors-acute-severe-uc-meta-analysis-2026', 'mirikizumab-4-year-remission-lucent-3', 'il23-inhibitors-meta-analysis-safety-efficacy-2026'],
+  },
+  {
     slug: 'etrasimod-meta-analysis-mucosal-healing-2026',
     title: 'Etrasimod Delivers 6.93× More Mucosal Healing at 40 Weeks — The Oral UC Pill Most Patients Have Never Heard Of',
     description: 'A GRADE-based meta-analysis of 4 RCTs (1239 patients) published in March 2026 found etrasimod — an oral once-daily pill — achieves nearly 7× more mucosal healing and 4.28× more clinical remissions at 40 weeks vs placebo, with zero heterogeneity across trials. Here is what this means for UC patients seeking alternatives to injections.',
