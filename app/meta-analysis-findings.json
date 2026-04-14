@@ -1,5 +1,15 @@
 [
   {
+    "stat": "RR 2.03",
+    "label": "relapse risk after stopping rectal 5-ASA monotherapy in quiescent UC",
+    "source": "Arzivian A et al. Inflamm Bowel Dis. 2026 Apr 1 (PMID: 41338243) — systematic review and meta-analysis of 29 studies"
+  },
+  {
+    "stat": "RR 1.60",
+    "label": "relapse risk after stopping oral 5-ASA monotherapy in quiescent UC",
+    "source": "Arzivian A et al. Inflamm Bowel Dis. 2026 Apr 1 (PMID: 41338243) — withdrawal signal confined to monotherapy, not clearly seen after escalation to biologics or immunomodulators"
+  },
+  {
     "stat": "RR 3.30",
     "label": "maintenance clinical response with oral S1P receptor modulators vs placebo in moderate-to-severe UC",
     "source": "Gardezi SAA et al. Dig Dis Sci. 2026 Apr 13 (PMID: 41968221) — meta-analysis of 8 RCTs, 2,663 patients across etrasimod, ozanimod, tamuzimod, and KRP203"

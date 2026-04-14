@@ -32,6 +32,88 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'mesalamine-withdrawal-relapse-meta-analysis-2026',
+    title: 'Thinking of Stopping Mesalamine? New 2026 Meta-Analysis Says Oral Relapse Risk Jumps 60%, and Rectal Withdrawal Is Even Worse',
+    description: 'A 2026 systematic review and meta-analysis of 29 studies found that stopping mesalamine monotherapy in quiescent ulcerative colitis raises relapse risk by 60% for oral 5-ASA and doubles relapse risk for rectal 5-ASA. The warning was strongest in patients still relying on mesalamine alone.',
+    category: 'Maintenance Therapy',
+    readTime: '8 min read',
+    datePublished: '2026-04-14',
+    intro: 'One of the dumbest recurring UC mistakes is this: patients feel better, decide the mesalamine “isn’t doing anything anymore,” and quietly stop it. Then the bleeding comes back and everyone acts shocked. A new 2026 systematic review and meta-analysis in Inflammatory Bowel Diseases looked directly at what happens when patients with quiescent inflammatory bowel disease stop 5-ASA therapy. For ulcerative colitis, the answer was ugly and clinically useful. Stopping oral 5-ASA monotherapy raised relapse risk by 60%. Stopping rectal 5-ASA was worse, doubling relapse risk. That matters because mesalamine is still the backbone therapy for mild-to-moderate UC, especially distal disease. The headline is simple: if mesalamine is the thing holding your remission together, stopping it is not a neutral experiment. It is a relapse strategy.',
+    keyPoints: [
+      'Meta-analysis included 29 studies on 5-ASA withdrawal in IBD, with specific pooled data for ulcerative colitis.',
+      'Stopping oral 5-ASA monotherapy in quiescent UC increased relapse risk by 60% (RR 1.60, 95% CI 1.25-2.05).',
+      'Stopping rectal 5-ASA monotherapy doubled relapse risk (RR 2.03, 95% CI 1.58-2.61).',
+      'The signal was strongest in patients still relying on 5-ASA alone, not those already escalated to biologics or immunomodulators.',
+      'Rectal mesalamine remains one of the most underused high-value treatments in distal UC, and stopping it carries a real penalty.',
+      'Bottom line: do not stop mesalamine just because symptoms improve. Discuss any de-escalation with your GI and use objective monitoring. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to real UC patients',
+        paragraphs: [
+          'There is a persistent fantasy in ulcerative colitis that maintenance treatment is optional once you feel normal again. That fantasy is how patients go from “I feel pretty good” to “why am I suddenly bleeding six times a day?” Maintenance therapy is not glamorous, but it is what prevents the colon from quietly relapsing while you convince yourself everything is fine.',
+          'Mesalamine is especially vulnerable to this problem because it is old, familiar, and not dramatic. It is not a shiny biologic. It does not sound powerful. So people underestimate it. This meta-analysis is useful because it asks a brutally practical question: what happens if you stop the drug once remission has been achieved? In UC monotherapy patients, the answer is: relapse becomes substantially more likely.',
+        ],
+        callout: 'Feeling better after mesalamine is not proof you no longer need it. It may be proof it is working.',
+      },
+      {
+        title: 'The number worth screenshotting: rectal withdrawal doubled relapse risk',
+        paragraphs: [
+          'The most striking pooled result was for rectal 5-ASA. Patients who stopped rectal mesalamine had a relapse risk ratio of 2.03 versus those who stayed on it. Translation: stop the suppository or enema, and your odds of relapse roughly double.',
+          'That is not surprising if you actually respect disease biology. UC starts in the rectum. Distal inflammation is where many flares begin, and topical therapy puts anti-inflammatory drug directly on the mucosa that is usually most active. Patients hate rectal therapy because it is inconvenient, messy, and unsexy. Too bad. The colon does not care about your aesthetic preferences. If your disease is distal, rectal mesalamine is often one of the highest-yield things you can do.',
+        ],
+        callout: 'Rectal mesalamine is annoying. Relapsing is more annoying.',
+      },
+      {
+        title: 'Oral mesalamine withdrawal was bad too, just less catastrophic',
+        paragraphs: [
+          'Stopping oral 5-ASA monotherapy raised relapse risk by 60%, with a pooled RR of 1.60. That is not as dramatic as the rectal figure, but it is still a real, clinically meaningful increase. In a disease defined by repeated flares, steroid exposure, work disruption, anemia, and escalation to stronger drugs, a 60% higher relapse risk is a serious penalty.',
+          'Patients often frame the question badly: “Can I get away with stopping it?” The smarter question is: “What is the cost of stopping it compared with the inconvenience of staying on it?” This paper answers that more honestly. If oral mesalamine is your main maintenance therapy, withdrawal materially worsens your odds.',
+        ],
+      },
+      {
+        title: 'The important nuance: this was a monotherapy problem',
+        paragraphs: [
+          'The meta-analysis also found that in patients already receiving immunomodulators or biologics, stopping 5-ASA did not clearly increase relapse risk. That does not mean everyone on advanced therapy should throw mesalamine in the trash. It means the evidence for continued 5-ASA benefit becomes weaker once stronger maintenance therapy is doing the heavy lifting.',
+          'That distinction matters because many UC patients are over-treated with medication stacking they no longer need, while others are under-treated because they stop the one therapy actually holding them together. If you are on mesalamine alone, this paper is a warning. If you are on vedolizumab, infliximab, ustekinumab, or another advanced agent, the withdrawal conversation becomes more individualized and should be guided by your disease history, extent, prior relapse pattern, and objective markers.',
+        ],
+        callout: 'Monotherapy withdrawal looked risky. De-escalation after escalation is a different conversation entirely.',
+      },
+      {
+        title: 'What patients should actually do with this information',
+        paragraphs: [
+          'First, stop making medication decisions based only on symptoms. UC loves to lie. Some patients feel “fine” while calprotectin is climbing and the rectum is still inflamed. If you are considering stopping mesalamine, ask for a real reassessment: symptoms, fecal calprotectin, maybe CRP, and endoscopy when appropriate.',
+          'Second, if you have distal disease, do not casually abandon rectal mesalamine because it is inconvenient. The evidence says that exact move is associated with the biggest relapse penalty. Third, if you are already well controlled on a biologic or immunomodulator and want to simplify therapy, that is the subgroup where monitored withdrawal may be reasonable. But monitored means monitored, not “I stopped it and hoped for the best.”',
+          'Bottom line: mesalamine is boring, which is exactly why people disrespect it. This paper is a reminder that boring maintenance therapy is often what stands between stable remission and another flare. Discuss any change with your gastroenterologist, and use objective monitoring instead of vibes. See a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does this mean nobody with UC should ever stop mesalamine?',
+        answer: 'No. It means stopping mesalamine monotherapy in quiescent UC is associated with a higher relapse risk, especially for rectal 5-ASA. In patients already controlled on biologics or immunomodulators, monitored withdrawal may sometimes be reasonable. That decision should be made with your gastroenterologist using objective monitoring. See a professional.',
+      },
+      {
+        question: 'Why was rectal mesalamine withdrawal worse than oral withdrawal?',
+        answer: 'Because UC usually begins in the rectum and distal colon, and rectal mesalamine delivers the drug directly to the area most likely to relapse. If the rectum is your weak point, stopping topical therapy removes a very targeted defense.',
+      },
+      {
+        question: 'If I feel fine, does that mean it is safe to stop mesalamine?',
+        answer: 'Not necessarily. Symptoms and inflammation do not always match in UC. Many patients need fecal calprotectin, labs, or endoscopic assessment to know whether remission is truly stable before discussing de-escalation.',
+      },
+      {
+        question: 'What did the meta-analysis say about stopping 5-ASA after starting a biologic?',
+        answer: 'It did not show a clear increase in relapse risk in patients receiving immunomodulators and/or biologics, although certainty was low. That suggests some patients on advanced therapy may be candidates for monitored withdrawal, but the evidence is weaker than many internet takes pretend.',
+      },
+    ],
+    references: [
+      { label: 'Arzivian A et al. The Risk of Relapse Associated With Discontinuation of 5-Aminosalicylates in Inflammatory Bowel Diseases: A Systematic Review and Meta-Analysis. Inflamm Bowel Dis. 2026 Apr 1;32(4):661-676. PMID: 41338243', href: 'https://pubmed.ncbi.nlm.nih.gov/41338243/' },
+      { label: 'Feagan BG et al. Vedolizumab as induction and maintenance therapy for ulcerative colitis. N Engl J Med. 2013 (PMID: 23964932)', href: 'https://pubmed.ncbi.nlm.nih.gov/23964932/' },
+      { label: 'Kane S et al. Medication nonadherence and the outcomes of patients with quiescent ulcerative colitis. Am J Med. 2003 (PMID: 12543288)', href: 'https://pubmed.ncbi.nlm.nih.gov/12543288/' },
+    ],
+    relatedSlugs: ['understanding-ulcerative-colitis', 'fecal-calprotectin-explained', 'uc-flare-management'],
+  },
+  {
     slug: 's1p-modulators-uc-meta-analysis-2026',
     title: 'Oral S1P Drugs Just Put Up the Cleanest Class-Level UC Signal Yet: 3.30× Better Maintenance Response in 8 RCTs',
     description: 'A new 2026 meta-analysis of 8 randomized trials and 2,663 patients found that oral S1P receptor modulators significantly improved induction and maintenance outcomes in moderate-to-severe ulcerative colitis, with 3.30× higher maintenance clinical response, 2.20× higher maintenance remission, and 2.60× higher histological remission versus placebo.',
