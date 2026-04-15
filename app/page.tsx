@@ -19,7 +19,7 @@ const evidencePills = [
   { value: '95%',  label: 'J-pouch long-term success',      tone: 'good', cite: 'IPAA outcome studies',   href: 'https://pubmed.ncbi.nlm.nih.gov/19169164/' },
   { value: '82%',  label: 'better outcomes, Med diet',      tone: 'good', cite: '6 RCTs, PMID 40797000',  href: 'https://pubmed.ncbi.nlm.nih.gov/40797000/' },
   { value: '2.3×', label: 'more remissions, curcumin',      tone: 'good', cite: '8+ RCTs, ECCO 2025',     href: 'https://pubmed.ncbi.nlm.nih.gov/25688495/' },
-  { value: '43%',  label: 'remission with VSL#3',           tone: 'good', cite: 'Meta-analysis, 20 RCTs', href: 'https://pubmed.ncbi.nlm.nih.gov/25270082/' },
+  { value: '7.13×', label: 'more likely to hit remission, second-line vedolizumab', tone: 'good', cite: 'GEMINI-1 + VISIBLE-1, PMID 41883697', href: 'https://pubmed.ncbi.nlm.nih.gov/41883697/' },
   { value: '77.7%', label: 'remission at 4 yrs, mirikizumab', tone: 'good', cite: 'LUCENT-3 OLE, PMID 41777218', href: 'https://pubmed.ncbi.nlm.nih.gov/41777218/' },
   { value: '4.28×', label: 'more remissions, etrasimod 40 wks', tone: 'good', cite: 'GRADE meta-analysis, PMID 41891290', href: 'https://pubmed.ncbi.nlm.nih.gov/41891290/' },
   { value: '2.53×', label: 'more mucosal healing, IL-23 biologics',  tone: 'good', cite: '7 RCTs, 4203 pts, PMID 41467943', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },

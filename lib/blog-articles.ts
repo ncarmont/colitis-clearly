@@ -32,6 +32,90 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'vedolizumab-second-line-anti-tnf-meta-analysis-2026',
+    title: 'Failed One Anti-TNF? This 2026 Meta-Analysis Says Vedolizumab Still Made UC Patients 7.13× to 11.35× More Likely to Hit Remission',
+    description: 'A 2026 patient-level meta-analysis of GEMINI-1 and VISIBLE-1 found that after one anti-TNF failure, second-line vedolizumab significantly improved week-52 remission, steroid-free remission, endoscopic outcomes, and quality of life in ulcerative colitis.',
+    category: 'Biologics',
+    readTime: '8 min read',
+    datePublished: '2026-04-15',
+    intro: 'One failed biologic has a way of making UC patients think they are sliding toward the end of the line. That is bad logic, and this new analysis helps kill it. A 2026 patient-level meta-analysis pooled the GEMINI-1 and VISIBLE-1 phase 3 trials to answer a very practical question: what happens if a person with moderate-to-severe ulcerative colitis has already failed one anti-TNF and then moves to vedolizumab? The answer was stronger than a lot of patients, and frankly a lot of clinicians, probably expected. At week 52, second-line vedolizumab made patients 7.13× to 11.35× more likely to achieve clinical remission than placebo, depending on the remission definition used. It also improved steroid-free remission, endoscopic outcomes, and health-related quality of life. Translation: failing one anti-TNF does not mean your colon is out of options. It means treatment sequencing matters.',
+    keyPoints: [
+      'This meta-analysis pooled patient-level data from the GEMINI-1 and VISIBLE-1 randomized placebo-controlled vedolizumab trials.',
+      'It focused specifically on UC patients who had already received one anti-TNF as first-line biologic therapy.',
+      'At week 52, second-line vedolizumab increased the odds of clinical remission by 7.13× to 11.35× versus placebo, depending on the adapted Mayo definition used.',
+      'Vedolizumab also improved corticosteroid-free remission, Mayo endoscopic score ≤1, and health-related quality of life at one year.',
+      'Bottom line: one anti-TNF failure does not equal biologic failure as a concept. Vedolizumab remains a serious second-line option. Discuss sequencing with your gastroenterologist. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to real patients',
+        paragraphs: [
+          'UC treatment conversations are full of lazy shorthand. A patient fails infliximab or adalimumab, and suddenly everyone starts acting as if the disease has “become refractory” in some global sense. That is nonsense. It means that one mechanism, in one patient, at one moment, did not get the job done well enough. The next question is not whether you are doomed. The next question is whether the next mechanism actually has a credible signal in that exact second-line setting.',
+          'That is why this paper matters. It did not just repeat the generic statement that vedolizumab works in UC. We already knew that. It asked a narrower and more clinically useful question: how well does vedolizumab perform after exactly one anti-TNF has already been used? That is the sort of sequencing question patients actually face in the real world, usually while bleeding, exhausted, and trying not to panic.',
+        ],
+        callout: 'Failing one anti-TNF is not the same thing as failing biologics as a whole. Mechanism switching still matters.',
+      },
+      {
+        title: 'The number worth screenshotting: up to 11.35× higher odds of remission',
+        paragraphs: [
+          'The headline result was clinical remission at week 52. Depending on which adapted Mayo remission definition the authors used, second-line vedolizumab made patients 7.13 times to 11.35 times more likely to achieve remission than placebo. That is not a subtle signal. That is a very large relative effect in a population that had already proven they needed more than their first biologic strategy.',
+          'Now, use your brain and do not turn relative statistics into magic. This does not mean 11 out of 10 people get better. Relative effects can look enormous when placebo remission is low. But that does not make the result fake. In a harder-to-treat subgroup, a strong relative effect still matters because it tells you the drug is doing real clinical work rather than coasting on background noise.',
+          'Just as important, the benefit was not limited to symptom diaries. The analysis also found better Mayo endoscopic score outcomes, which means the colon looked better, not just the patient report form. That matters because UC symptoms can lie, but mucosal healing lies much less.',
+        ],
+        callout: 'This was not “I feel kind of better.” Vedolizumab improved remission and endoscopic outcomes one year after anti-TNF failure.',
+      },
+      {
+        title: 'Why vedolizumab makes sense after anti-TNF failure',
+        paragraphs: [
+          'Vedolizumab blocks alpha4beta7 integrin and reduces lymphocyte trafficking into the gut. That is a different play from anti-TNF therapy. Anti-TNFs try to neutralize a major inflammatory cytokine. Vedolizumab changes immune-cell homing into intestinal tissue. Different mechanism, different safety balance, different patient fit.',
+          'This is exactly why sequencing matters in UC. If one pathway fails, you do not just shrug and assume every other pathway will fail too. Some patients lose response to anti-TNF because of immunogenicity. Others never had the right inflammatory driver. Others cannot tolerate the drug. A gut-selective mechanism like vedolizumab can still make a great deal of sense after that.',
+          'The paper also found improvement in health-related quality of life, which is a polite research phrase for something patients care about more than your pathway diagram: can I leave the house, work normally, stop living around bathrooms, and get off steroids without immediately falling apart?',
+        ],
+      },
+      {
+        title: 'What this does and does not prove',
+        paragraphs: [
+          'This was a meta-analysis of patient-level data from two randomized trials, which is useful and stronger than another hand-wavy narrative review. But it still has limits. The subgroup was only 137 patients. That is not huge. And the comparator was placebo, not another active second-line drug like ustekinumab, mirikizumab, or upadacitinib. So this paper does not prove vedolizumab is the single best second-line option for every patient after anti-TNF failure.',
+          'What it does prove is narrower and still valuable: vedolizumab has a real, statistically credible, clinically meaningful second-line signal in exactly the scenario many UC patients face. That is enough to upgrade the conversation from “maybe” to “this should be seriously considered.”',
+          'It is also worth noting that vedolizumab is often chosen when safety nuance matters, because its action is relatively gut-selective. That does not mean risk-free. It means the safety tradeoff can look attractive for the right patient compared with broader systemic immunosuppression.',
+        ],
+        callout: 'This paper supports vedolizumab as a real second-line option. It does not settle every sequence debate in UC forever.',
+      },
+      {
+        title: 'What patients should actually do with this information',
+        paragraphs: [
+          'If your first anti-TNF has failed, the dumb question is “Am I out of options?” The better question is: “Which next mechanism fits my disease pattern, urgency, prior drug history, safety profile, and treatment goals?” This paper strengthens the case that vedolizumab belongs in that discussion, especially if you want a proven gut-selective option with one-year remission and endoscopic data in the post-anti-TNF setting.',
+          'Bring the paper to your gastroenterologist and ask directly: based on my prior anti-TNF failure, how would you compare vedolizumab with an IL-23 inhibitor, a JAK inhibitor, or an S1P modulator for me specifically? That is a grown-up sequencing conversation. Much better than doom-scrolling forums and assuming one failure means all biologics are interchangeable disappointments.',
+          'Bottom line: this meta-analysis says that after one anti-TNF fails, vedolizumab can still deliver meaningful remission, mucosal improvement, and better quality of life at one year. UC is a sequencing game as much as a drug game. Discuss your next step with your IBD specialist, use biomarkers and endoscopy instead of vibes, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does this mean vedolizumab is definitely the best second-line biologic after anti-TNF failure?',
+        answer: 'No. It means vedolizumab showed a strong and clinically meaningful signal versus placebo in this specific second-line setting. It does not prove superiority over every other active option because there were no head-to-head comparisons in this analysis.',
+      },
+      {
+        question: 'What kind of patients were included in this meta-analysis?',
+        answer: 'Patients had moderately to severely active ulcerative colitis and had previously received one anti-TNF as first-line biologic therapy before entering the vedolizumab trials. This is exactly the sort of sequencing problem many real-world patients face.',
+      },
+      {
+        question: 'Did vedolizumab improve only symptoms, or also objective inflammation?',
+        answer: 'It improved more than symptoms. The analysis found better week-52 endoscopic outcomes, including Mayo endoscopic score ≤1, which suggests the bowel lining was healing rather than symptoms just being temporarily masked.',
+      },
+      {
+        question: 'Why might vedolizumab still work after an anti-TNF failed?',
+        answer: 'Because vedolizumab works through a different mechanism. It blocks alpha4beta7-mediated lymphocyte trafficking into the gut rather than targeting TNF directly. A failure on one mechanism does not automatically predict failure on another.',
+      },
+    ],
+    references: [
+      { label: 'Lukas M et al. Efficacy and health-related quality of life associated with second-line vedolizumab after first-line treatment with one anti-TNF in patients with ulcerative colitis: a meta-analysis of the GEMINI-1 and VISIBLE-1 trials. Ther Adv Gastroenterol. 2026. PMID: 41883697', href: 'https://pubmed.ncbi.nlm.nih.gov/41883697/' },
+      { label: 'Feagan BG et al. Vedolizumab as induction and maintenance therapy for ulcerative colitis. N Engl J Med. 2013. PMID: 23964932', href: 'https://pubmed.ncbi.nlm.nih.gov/23964932/' },
+      { label: 'Sandborn WJ et al. Efficacy and safety of vedolizumab subcutaneous formulation in ulcerative colitis: VISIBLE 1. J Crohns Colitis. 2020. PMID: 31470005', href: 'https://pubmed.ncbi.nlm.nih.gov/31470005/' },
+    ],
+    relatedSlugs: ['biologics-for-uc-compared', 'jak-inhibitors-uc', 'understanding-ulcerative-colitis'],
+  },
+  {
     slug: 'mesalamine-withdrawal-relapse-meta-analysis-2026',
     title: 'Thinking of Stopping Mesalamine? New 2026 Meta-Analysis Says Oral Relapse Risk Jumps 60%, and Rectal Withdrawal Is Even Worse',
     description: 'A 2026 systematic review and meta-analysis of 29 studies found that stopping mesalamine monotherapy in quiescent ulcerative colitis raises relapse risk by 60% for oral 5-ASA and doubles relapse risk for rectal 5-ASA. The warning was strongest in patients still relying on mesalamine alone.',
