@@ -32,6 +32,100 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'mirikizumab-real-world-remission-insight-2026',
+    title: 'Mirikizumab Hit 55.3% Remission at 1 Year in Real-World UC, and Some Early “Nonresponders” Still Turned Around',
+    description: 'A 2026 multicenter real-world study found mirikizumab achieved 62.4% clinical remission at week 12 and 55.3% at week 52 in moderate-to-severe ulcerative colitis, including treatment-experienced patients. Even among early nonresponders given extended induction, 27.3% later reached remission by week 24.',
+    category: 'Biologics',
+    readTime: '8 min read',
+    datePublished: '2026-04-16',
+    intro: 'A lot of UC patients get trapped by a stupid timeline. They start a new biologic, stare at week-8 or week-12 numbers, and if the response is incomplete they assume the drug has already failed. Sometimes that is true. Sometimes it is just impatience dressed up as certainty. This new 2026 multicenter real-world mirikizumab study matters because it looked at what happened outside the polished fantasyland of a phase 3 trial. In 85 patients with moderate-to-severe ulcerative colitis, mirikizumab produced 62.4% clinical remission at week 12 and 55.3% remission at week 52. More importantly, among initial nonresponders who were given extended induction, 27.3% still reached remission by week 24. Translation: if mirikizumab is helping but has not fully closed the deal early, some patients may still improve with more runway rather than being written off too fast.',
+    keyPoints: [
+      'This was a multicenter real-world cohort of 85 patients with moderate-to-severe ulcerative colitis treated with mirikizumab across 12 Japanese centers.',
+      'Clinical remission reached 62.4% at week 12 and 55.3% at week 52.',
+      'Corticosteroid-free remission matched the overall remission rates at both time points.',
+      'Mirikizumab maintained effectiveness even in patients previously exposed to biologics or JAK inhibitors.',
+      'Among initial nonresponders who received extended induction, 27.3% still achieved remission by week 24.',
+      'Bottom line: an incomplete early response does not always mean mirikizumab is dead on arrival. Sequencing and timing need to be discussed with your gastroenterologist. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to actual patients',
+        paragraphs: [
+          'Trial results are useful, but real life is messier. Real patients miss doses, arrive steroid dependent, have failed half the therapeutic menu already, and do not show up as the clean, idealized version of ulcerative colitis that fits neatly into a regulatory slide deck. That is why real-world data matters. It tells you whether a drug still performs once it leaves the lab and meets the chaos of ordinary gastroenterology.',
+          'This INSIGHT study looked at mirikizumab in exactly that setting. The cohort included patients with moderate-to-severe UC, many of them treatment experienced, treated across 12 centers. That makes the findings more relevant to the person sitting at home wondering whether their disease is now “too complicated” for another biologic to work.',
+        ],
+        callout: 'Real-world data matters because UC patients are not clean trial avatars. They are complicated, tired, previously treated humans.',
+      },
+      {
+        title: 'The number worth screenshotting: 55.3% remission at 1 year',
+        paragraphs: [
+          'The headline is straightforward. Clinical remission was 62.4% at week 12 and 55.3% at week 52. That is a strong real-world durability signal, especially because it held up in a population that was not limited to easy first-line cases.',
+          'The steroid-free remission rate matched the overall remission rate at both time points. That part matters. A remission number means a lot less if it is being propped up by ongoing corticosteroids. Steroid-free control is what patients actually want, because prednisone is not treatment success. It is a temporary hostage negotiation with inflammation.',
+          'In plain English, this paper says mirikizumab did not just get patients briefly calmer. A substantial proportion stayed well over a year without hiding behind steroids.',
+        ],
+        callout: '55.3% remission at week 52, and it was steroid-free. That is the part patients should care about, not just the pretty marketing graph.',
+      },
+      {
+        title: 'The sneaky important finding: some early nonresponders still got there later',
+        paragraphs: [
+          'Here is the part that makes this paper genuinely useful. Among patients who did not respond initially and then received extended induction, 27.3% still achieved remission by week 24. That is not everybody, obviously. But it is enough to destroy the lazy assumption that an incomplete early response automatically means the drug is worthless.',
+          'UC treatment is full of premature declarations. Patients panic. Clinicians get pressured by symptoms, insurance, timelines, and understandable impatience. Sometimes switching fast is the right move. But this study suggests that when mirikizumab is showing partial movement, there may be a subset of patients who benefit from a little more time before being labeled failures.',
+          'That is especially relevant in biologic-experienced disease, where every drug change burns another option and increases the sense that the runway is shrinking. If nearly 1 in 4 early nonresponders can still salvage remission with extended induction, that is a real sequencing insight.',
+        ],
+        callout: 'Not all early “nonresponse” is true failure. In this study, 27.3% still reached remission after extended induction.',
+      },
+      {
+        title: 'Why mirikizumab may still work after other therapies have failed',
+        paragraphs: [
+          'Mirikizumab targets the p19 subunit of interleukin-23. That matters because it gives patients another mechanism beyond anti-TNF drugs, vedolizumab, and JAK inhibitors. If prior treatment failed because the inflammatory pathway was different, because antibodies developed, or because tolerability collapsed, switching to IL-23 blockade can still make biological sense.',
+          'This study reported maintained effectiveness regardless of prior exposure to biologics or JAK inhibitors. That does not mean prior failures suddenly do not matter. Harder-to-treat patients are still harder to treat. But it does mean mirikizumab retained a meaningful signal even after other advanced therapies had already entered the picture.',
+          'That is exactly the kind of thing patients need to hear after a previous biologic flop. One failed mechanism is not proof that the entire treatment ladder is over.',
+        ],
+      },
+      {
+        title: 'What this does and does not prove',
+        paragraphs: [
+          'This was a retrospective real-world cohort, not a head-to-head randomized trial. So no, it does not prove mirikizumab is better than every other IL-23 inhibitor, or better than upadacitinib, vedolizumab, or ustekinumab in every sequence slot. Real-world studies are useful, but they are also vulnerable to selection bias, treatment-center effects, and inconsistent follow-up.',
+          'The sample size was 85 patients, which is respectable for a multicenter real-world dataset but not massive. And the study came from 12 Japanese centers, so the exact remission rates may not transfer perfectly to every health system and every population.',
+          'Still, the strengths are obvious. The authors looked at one-year outcomes, steroid-free remission, treatment persistence, safety, and the practical question of whether extending induction can rescue some early nonresponders. That is more useful than another generic “drug works” abstract.',
+        ],
+        callout: 'Useful real-world evidence, yes. Final word on mirikizumab sequencing forever, no.',
+      },
+      {
+        title: 'What patients should do with this information',
+        paragraphs: [
+          'If you are currently on mirikizumab and not in clear remission yet, do not turn this paper into an excuse for denial. Ongoing bleeding, weight loss, severe urgency, nocturnal symptoms, rising calprotectin, or worsening labs still need action. But if you have a partial early response, this study gives you a smarter question to ask your gastroenterologist: am I showing enough movement that extended induction is reasonable before switching again?',
+          'If you are choosing between advanced therapies after prior failures, this paper strengthens the case that mirikizumab deserves a serious spot in the conversation, including in treatment-experienced patients. Ask your GI how they would compare it with vedolizumab, ustekinumab, and upadacitinib for your specific disease pattern, urgency, and safety profile.',
+          'Bottom line: mirikizumab produced strong real-world remission through 52 weeks, and some apparent early failures still converted with more time. Do not use vibes to decide a biologic is dead. Use symptoms, biomarkers, endoscopy, and an adult conversation with your IBD specialist. See a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does this mean mirikizumab is definitely better than other UC biologics?',
+        answer: 'No. This study shows mirikizumab performed well in a real-world cohort, including treatment-experienced patients, but it was not a randomized head-to-head comparison against other advanced therapies.',
+      },
+      {
+        question: 'What was the most useful practical finding in this study?',
+        answer: 'That 27.3% of initial nonresponders who received extended induction still reached remission by week 24. That suggests some patients may need more time before the drug is judged a true failure.',
+      },
+      {
+        question: 'Did the remission rates rely on steroids?',
+        answer: 'No. Corticosteroid-free remission was identical to the overall clinical remission rate at weeks 12 and 52, which strengthens the real-world credibility of the result.',
+      },
+      {
+        question: 'Can mirikizumab still work after prior biologic or JAK failure?',
+        answer: 'Potentially yes. This study found maintained effectiveness regardless of prior exposure to biologics or JAK inhibitors, which supports mirikizumab as a legitimate sequencing option after previous treatment failures.',
+      },
+    ],
+    references: [
+      { label: 'Sawada T et al. Short- and Long-Term Outcomes of Mirikizumab for Ulcerative Colitis: A Real-World Multicenter Retrospective Cohort Study from the INSIGHT study. Digestion. 2026. PMID: 41824618', href: 'https://pubmed.ncbi.nlm.nih.gov/41824618/' },
+      { label: 'Sands BE et al. Mirikizumab four-year sustained and durable efficacy and safety in ulcerative colitis: Final findings from the LUCENT-3 open-label extension study. Inflamm Bowel Dis. 2026. PMID: 41777218', href: 'https://pubmed.ncbi.nlm.nih.gov/41777218/' },
+      { label: 'D’Haens G et al. Mirikizumab as maintenance therapy in ulcerative colitis: LUCENT-2. Lancet. 2023.', href: 'https://pubmed.ncbi.nlm.nih.gov/36774166/' },
+    ],
+    relatedSlugs: ['mirikizumab-4-year-remission-lucent-3', 'biologics-for-uc-compared', 'jak-inhibitors-uc'],
+  },
+  {
     slug: 'vedolizumab-second-line-anti-tnf-meta-analysis-2026',
     title: 'Failed One Anti-TNF? This 2026 Meta-Analysis Says Vedolizumab Still Made UC Patients 7.13× to 11.35× More Likely to Hit Remission',
     description: 'A 2026 patient-level meta-analysis of GEMINI-1 and VISIBLE-1 found that after one anti-TNF failure, second-line vedolizumab significantly improved week-52 remission, steroid-free remission, endoscopic outcomes, and quality of life in ulcerative colitis.',
