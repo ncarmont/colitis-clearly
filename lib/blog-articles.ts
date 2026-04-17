@@ -32,6 +32,99 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'severe-uc-hospitalization-colectomy-risk-2026',
+    title: 'Severe UC Hospitalization Is a Bigger Cliff Than Most Patients Realize: 1 in 5 Lose Their Colon Within a Year, and Prior Advanced Therapy Makes It Worse',
+    description: 'A large 2026 real-world study of 9,716 adults hospitalized for severe ulcerative colitis found 12.2% underwent colectomy during the admission and 20.4% lost their colon within a year. In patients already exposed to advanced therapy, 1-year colectomy risk reached 32.7%, with 38.4% rehospitalized after discharge without colectomy.',
+    category: 'Severe UC',
+    readTime: '8 min read',
+    datePublished: '2026-04-17',
+    intro: 'A lot of ulcerative colitis content online treats hospitalization like a dramatic detour, then assumes the patient just goes home and gets back to normal life. That is fantasy. This large 2026 real-world study is useful precisely because it kills that fantasy. In 9,716 adults hospitalized for severe UC and treated with IV steroids, 12.2% underwent colectomy during the admission itself. Within a year, the cumulative colectomy risk rose to 20.4%. And if the patient had already been through advanced therapy before that hospitalization, the 1-year colectomy risk hit 32.7%. Translation: a severe UC hospitalization is not just a bad week. For many patients, it is the clearest signal yet that the disease has moved into a much more dangerous phase and needs aggressive, adult-level follow-up. See a professional.',
+    keyPoints: [
+      'This was a large real-world US cohort study using linked electronic health record and insurance-claims data, not a tiny single-center case series.',
+      'Among 9,716 adults hospitalized with severe UC who received IV corticosteroids, 12.2% underwent colectomy before discharge.',
+      'The cumulative colectomy risk within 1 year of that hospitalization was 20.4% overall.',
+      'The highest-risk subgroup was patients with prior advanced therapy exposure, where 1-year colectomy risk reached 32.7%.',
+      'Among patients discharged without colectomy, 38.4% had another UC-related hospitalization within a year.',
+      'Bottom line: hospitalization for severe UC is a major prognostic event, not a temporary inconvenience. It should trigger tighter monitoring, faster treatment decisions, and serious discussion with an IBD specialist. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to actual patients',
+        paragraphs: [
+          'Severe UC hospitalization changes the stakes. Once you are sick enough to need inpatient IV steroids, you are no longer in the ordinary outpatient cycle of symptoms, stool tests, and medication tweaks. You are in the part of the disease where colectomy, rescue therapy, malnutrition, anemia, and repeated admissions start becoming very real possibilities.',
+          'That is why this paper matters. It did not ask whether a single drug worked in a carefully selected trial population. It asked what actually happens to people hospitalized with severe UC in the real world. That is the question patients and families care about when they are sitting in a hospital bed wondering whether this flare is just temporary chaos or the beginning of a more serious decline.',
+        ],
+        callout: 'A severe UC admission is not just a bad flare. It is a warning that the disease may have crossed into a much more dangerous lane.',
+      },
+      {
+        title: 'The number worth screenshotting: 1 in 5 colectomy risk within a year',
+        paragraphs: [
+          'The headline figure was ugly and useful. Overall, 20.4% of patients underwent colectomy within a year of the index severe-UC hospitalization. That is roughly 1 in 5. During the hospitalization itself, 12.2% already lost their colon before discharge.',
+          'Those are not subtle numbers. They tell you that once UC is severe enough to put you in hospital and require IV steroids, the disease has stopped being a background problem. It is now threatening the organ. Patients need to hear that plainly, because false reassurance is how people drift into delayed rescue therapy, delayed biologic optimization, and delayed surgical referral.',
+          'This is also a useful reality check for the common fantasy that discharge equals safety. Plenty of patients survive the admission and still remain on a collision course afterward. The clock does not reset just because you went home.',
+        ],
+        callout: '12.2% colectomy during admission, 20.4% within a year. That is not a detour. That is a cliff edge.',
+      },
+      {
+        title: 'The most important subgroup finding: prior advanced therapy made the outlook much worse',
+        paragraphs: [
+          'The sickest subgroup was the one patients fear most: people who had already used advanced therapy before landing in the hospital. In that group, the 1-year colectomy risk reached 32.7%. That is basically 1 in 3.',
+          'Why does that matter? Because it tells you something important about treatment sequence and disease biology. If a patient is already advanced-therapy exposed and still ends up hospitalized with severe UC, the disease is signaling that it is harder to control, more refractory, or both. By that point, the usual casual optimism about “trying the next thing and seeing” starts looking less intelligent.',
+          'This does not mean colectomy is inevitable, and it does not mean every advanced-therapy-experienced patient is doomed. It means the margin for sloppy decision-making shrinks fast. Rescue strategy, biomarker follow-up, steroid exit plan, and surgical backup all need to be discussed early, not after the next crash.',
+        ],
+        callout: 'Already burned through advanced therapy and still got hospitalized? This study says your 1-year colectomy risk is 32.7%. That is the subgroup nobody should be sugarcoating.',
+      },
+      {
+        title: 'Discharge did not mean recovery: rehospitalization stayed common',
+        paragraphs: [
+          'Even among patients discharged without colectomy, the story stayed rough. In the nested discharge cohort, 38.4% had another UC-related hospitalization within a year. One-third received advanced therapy within 90 days after discharge.',
+          'In plain English, many patients did not leave the hospital and settle into stable remission. They left, then bounced back into the system. That matters because patients often interpret discharge as proof the crisis is over. Sometimes it is. Often it is just a brief pause before the next decision point.',
+          'This is exactly why discharge planning matters so much in severe UC. If follow-up is loose, insurance approval drags, biologic rescue is delayed, or objective monitoring never happens, the patient can easily slide from temporary improvement back into another admission or a delayed colectomy.',
+        ],
+      },
+      {
+        title: 'What this paper does and does not prove',
+        paragraphs: [
+          'This was a retrospective real-world cohort, so it cannot prove that any one treatment strategy caused the outcomes seen here. It also spans 2014 through 2022, which means treatment practice changed during the study years as newer advanced therapies became available. The paper is about prognosis and burden, not a head-to-head trial of the best rescue drug.',
+          'Still, the strengths are obvious. The sample size was huge, the setting was real-world, and the subgroup analysis was clinically relevant. Patients do not need another tidy regulatory abstract pretending all severe UC admissions are interchangeable. They need to know what usually happens after this kind of hospitalization, and this paper gives a much clearer answer than most.',
+        ],
+        callout: 'This paper does not tell you the single best next drug. It does tell you that severe UC hospitalization is a high-risk event that should change the seriousness of the entire conversation.',
+      },
+      {
+        title: 'What patients should do with this information',
+        paragraphs: [
+          'If you have been hospitalized for severe UC, stop treating that as a one-off inconvenience. Ask your gastroenterologist directly: what is my rescue plan, what is my biomarker monitoring plan, how soon are we reassessing, and under what conditions would surgery enter the conversation? Those are adult questions, and this paper says they are justified.',
+          'If you have already failed or cycled through advanced therapies, the message is even clearer. Do not let anyone manage you with vague optimism alone. You need specific timelines, specific endpoints, and backup plans. Severe UC can deteriorate faster than outpatient wishful thinking likes to admit.',
+          'Bottom line: this study says a severe UC hospitalization is one of the strongest real-world warning signs that the disease may be heading toward colectomy, especially after prior advanced therapy exposure. Use that information to get tighter follow-up, not to panic uselessly. Work with an experienced IBD team, monitor objectively, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does this mean everyone hospitalized with severe UC will eventually need colectomy?',
+        answer: 'No. Most patients in this cohort did not undergo colectomy within a year. But the risk was still high enough, especially after prior advanced therapy exposure, that hospitalization should be taken as a major warning sign rather than a routine setback.',
+      },
+      {
+        question: 'What was the highest-risk group in the study?',
+        answer: 'Patients who already had a UC diagnosis and had previously used advanced therapy had the worst outcomes, with a 32.7% cumulative colectomy risk within 1 year of severe-UC hospitalization.',
+      },
+      {
+        question: 'Did going home without colectomy mean patients were in the clear?',
+        answer: 'Not really. Among patients discharged without colectomy, 38.4% had a UC-related rehospitalization within a year, which shows discharge often did not equal durable control.',
+      },
+      {
+        question: 'What should a patient ask after a severe UC hospitalization?',
+        answer: 'Ask about your short-term rescue strategy, steroid exit plan, objective monitoring with biomarkers and follow-up visits, timing for treatment reassessment, and when surgical consultation should be part of the plan. Severe UC needs close specialist follow-up. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Raine T et al. Real-world patient characteristics, treatments, and outcomes during and after severe ulcerative colitis hospitalization. J Crohns Colitis. 2026 Apr 8;20(4):jjag040. PMID: 41978350', href: 'https://pubmed.ncbi.nlm.nih.gov/41978350/' },
+      { label: 'Lamb CA et al. British Society of Gastroenterology consensus guidelines on the management of inflammatory bowel disease in adults. Gut. 2019.', href: 'https://pubmed.ncbi.nlm.nih.gov/31562236/' },
+      { label: 'Spinelli A et al. ECCO guidelines on therapeutics in ulcerative colitis: surgical treatment. J Crohns Colitis. 2022.', href: 'https://pubmed.ncbi.nlm.nih.gov/34718688/' },
+    ],
+    relatedSlugs: ['uc-flare-management', 'understanding-ulcerative-colitis', 'jak-inhibitors-acute-severe-uc-meta-analysis-2026'],
+  },
+  {
     slug: 'mirikizumab-real-world-remission-insight-2026',
     title: 'Mirikizumab Hit 55.3% Remission at 1 Year in Real-World UC, and Some Early “Nonresponders” Still Turned Around',
     description: 'A 2026 multicenter real-world study found mirikizumab achieved 62.4% clinical remission at week 12 and 55.3% at week 52 in moderate-to-severe ulcerative colitis, including treatment-experienced patients. Even among early nonresponders given extended induction, 27.3% later reached remission by week 24.',

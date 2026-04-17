@@ -1,5 +1,15 @@
 [
   {
+    "stat": "32.7%",
+    "label": "colectomy within 1 year after severe UC hospitalization in patients already exposed to advanced therapy",
+    "source": "Raine T et al. J Crohns Colitis. 2026 Apr 8 (PMID: 41978350) — real-world US cohort of 9,716 adults hospitalized for severe UC; overall 12.2% colectomy during admission and 20.4% colectomy within 1 year"
+  },
+  {
+    "stat": "38.4%",
+    "label": "UC-related rehospitalization within 1 year after discharge without colectomy",
+    "source": "Raine T et al. J Crohns Colitis. 2026 Apr 8 (PMID: 41978350) — nested discharge cohort after severe UC hospitalization"
+  },
+  {
     "stat": "7.13× to 11.35×",
     "label": "higher odds of week-52 clinical remission with second-line vedolizumab after failure of one anti-TNF",
     "source": "Lukas M et al. Ther Adv Gastroenterol. 2026 (PMID: 41883697) — patient-level meta-analysis of GEMINI-1 and VISIBLE-1; also improved steroid-free remission, Mayo endoscopic score ≤1, and health-related quality of life"
