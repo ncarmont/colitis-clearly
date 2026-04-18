@@ -32,6 +32,98 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'guselkumab-subcutaneous-induction-astro-2026',
+    title: 'No IV Needed: Fully Subcutaneous Guselkumab Hit 28% Remission by Week 12 in UC Phase 3',
+    description: 'The phase 3 ASTRO trial found that a fully subcutaneous guselkumab regimen achieved 28% clinical remission at week 12 versus 6% with placebo in moderate-to-severe ulcerative colitis. By week 24, remission reached 35% to 36% with guselkumab versus 9% with placebo, without new safety concerns.',
+    category: 'Biologics',
+    readTime: '8 min read',
+    datePublished: '2026-04-18',
+    intro: 'Most UC patients do not dream about cytokines. They dream about not needing an infusion center, not losing half a workday to IV induction, and not getting told that the “good drug” comes with a more annoying delivery system. That is why the ASTRO phase 3 trial matters. Guselkumab, an IL-23 blocker already known from other immune diseases, was tested here as a fully subcutaneous regimen in moderate-to-severe ulcerative colitis. No IV induction. No bait-and-switch. And the result was not trivial: 28% clinical remission at week 12 versus 6% on placebo, then 35% to 36% remission at week 24 versus 9% on placebo. Translation: this is not just another biologic data point. It is evidence that a fully injectable, non-infusion IL-23 option can produce real remission in UC. See a professional.',
+    keyPoints: [
+      'ASTRO was a double-blind, randomized, placebo-controlled phase 3 trial in 418 adults with moderate-to-severe ulcerative colitis.',
+      'Participants received guselkumab entirely by subcutaneous injection, avoiding the IV induction used by other IL-23 biologics in UC.',
+      'Clinical remission at week 12 was 28% with guselkumab induction versus 6% with placebo.',
+      'By week 24, remission reached 35% to 36% with guselkumab versus 9% with placebo, depending on maintenance schedule.',
+      'Serious adverse events were lower with guselkumab than with placebo in this trial, and no new safety concerns appeared.',
+      'Bottom line: if you want an IL-23 biologic without IV induction, guselkumab just became a much more serious conversation. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to real patients',
+        paragraphs: [
+          'A lot of treatment news in UC is technically impressive and practically annoying. A drug may work, but it demands IV induction, infusion-center logistics, travel, insurance friction, and the usual administrative nonsense that makes chronic illness feel like a part-time job. So when a trial shows that a fully subcutaneous regimen works, that is not a minor convenience detail. It changes real life.',
+          'That is the point of ASTRO. Approved IL-23 inhibitors in UC have generally required IV induction up front. This trial tested guselkumab with subcutaneous dosing from the start. For patients, that means the treatment discussion is no longer only about efficacy and safety. It is also about whether control can be achieved without being tethered to an infusion chair.',
+        ],
+        callout: 'The hook is simple: guselkumab worked in UC without forcing patients through IV induction first.',
+      },
+      {
+        title: 'The number worth screenshotting: 28% remission vs 6% placebo at week 12',
+        paragraphs: [
+          'The primary endpoint was clinical remission at week 12. Guselkumab hit 28%. Placebo hit 6%. That is a 21 percentage-point adjusted treatment difference, which is exactly the kind of gap patients can understand without needing a statistics seminar.',
+          'Use your brain, though. This does not mean 72% of patients failed forever or that 28% is the ceiling. UC trials use strict remission definitions. In ASTRO, remission required low stool frequency, zero rectal bleeding, and endoscopic improvement serious enough that the bowel actually looked calmer, not just the symptom diary. So 28% here is a real remission signal, not a padded marketing number.',
+          'The placebo rate being only 6% also matters. It tells you this was not a soft study where everybody mysteriously improved because they entered a trial. Guselkumab had to do real work to separate from placebo, and it did.',
+        ],
+        callout: 'Week-12 remission was 28% vs 6%. That is the kind of separation that gets attention for a reason.',
+      },
+      {
+        title: 'The quieter but maybe more important number: 35% to 36% remission by week 24',
+        paragraphs: [
+          'UC treatment is not only about early response. It is about whether the signal holds once you keep going. In ASTRO, week-24 clinical remission was 35% in the guselkumab 400/100 mg group and 36% in the 400/200 mg group, compared with 9% on placebo.',
+          'That is useful because it shows this was not just a brief induction blip. Patients kept separating from placebo over time. In practical terms, that means guselkumab was not only calming disease early, it was sustaining the effect into the maintenance window.',
+          'And yes, the two active dosing strategies looked pretty similar by week 24. That matters for future real-world discussions about dose selection, convenience, payer behavior, and how aggressive maintenance really needs to be. The details will matter later. The current takeaway is easier: both active regimens clearly beat placebo.',
+        ],
+      },
+      {
+        title: 'Why guselkumab deserves attention even in a crowded IL-23 class',
+        paragraphs: [
+          'UC patients are not lacking for IL-23 headlines. Mirikizumab already has strong data. Risankizumab is in the conversation. So why should anyone care about another IL-23 biologic? Because route of administration is not cosmetic. It affects adherence, access, scheduling, and whether treatment feels like something you can live with for years.',
+          'A fully subcutaneous option may be especially attractive for patients who travel, work unpredictable hours, hate infusion logistics, or simply want fewer institutional touchpoints. That does not make guselkumab automatically better than every other IL-23 drug. It makes it different in a way patients actually care about.',
+          'It also strengthens the broader IL-23 story in UC. This class keeps producing real remission and mucosal-healing signals across multiple programs. At this point, pretending IL-23 blockade is a niche mechanism is just lazy.',
+        ],
+        callout: 'Different mechanism is good. Different delivery burden is also good. Patients live with both.',
+      },
+      {
+        title: 'Safety looked reassuring, but do not turn that into magical thinking',
+        paragraphs: [
+          'Adverse events were common in all groups, which is normal in UC trials because active disease itself causes problems. But the serious adverse event rate was lower with guselkumab than with placebo, and no new safety concerns appeared through 24 weeks. Worsening UC was also more frequent in placebo than in the active groups, which is exactly what you would expect when the drug is actually controlling disease.',
+          'That said, this is not a free pass to treat guselkumab like a vitamin. It is still an advanced immune therapy. Infections, screening, prior biologic history, and overall treatment strategy still matter. Good safety data means the therapy is credible, not consequence-free.',
+        ],
+      },
+      {
+        title: 'What patients should do with this information',
+        paragraphs: [
+          'If you are discussing biologics and the idea of infusion-based induction makes you want to scream, ASTRO gives you a smart question to ask: is a fully subcutaneous IL-23 strategy realistic for me? That is especially relevant if you are comparing guselkumab with mirikizumab, vedolizumab, or an oral option like upadacitinib or etrasimod.',
+          'If you have already failed other advanced therapies, this paper is still relevant. ASTRO enrolled a difficult moderate-to-severe population with prior inadequate response, intolerance, or steroid dependence. This was not a trial built only from easy first-line patients.',
+          'Bottom line: guselkumab just showed that you can get a meaningful phase 3 UC remission signal without IV induction. For patients who care about both efficacy and treatment burden, that is a real development, not a footnote. Bring it to your gastroenterologist, compare it honestly with your other options, use biomarkers and endoscopy instead of vibes, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the main practical takeaway from ASTRO?',
+        answer: 'That guselkumab produced meaningful remission in moderate-to-severe UC using a fully subcutaneous regimen from the start, avoiding IV induction. For many patients, that delivery difference is clinically and logistically important.',
+      },
+      {
+        question: 'How strong was the remission signal?',
+        answer: 'Clinical remission was 28% with guselkumab versus 6% with placebo at week 12. By week 24, remission was 35% to 36% with guselkumab versus 9% with placebo, which supports both induction and early maintenance benefit.',
+      },
+      {
+        question: 'Does this mean guselkumab is automatically better than mirikizumab or other IL-23 drugs?',
+        answer: 'No. ASTRO was not a head-to-head trial against other active therapies. What it does show is that guselkumab is a credible IL-23 option in UC with the extra practical advantage of a fully subcutaneous regimen.',
+      },
+      {
+        question: 'Was guselkumab safe in this trial?',
+        answer: 'The short-term safety profile looked reassuring, with no new safety concerns and fewer serious adverse events than placebo through 24 weeks. But it is still an advanced immune therapy and should be discussed with your gastroenterologist. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Peyrin-Biroulet L et al. Efficacy and safety of subcutaneous guselkumab induction therapy in participants with moderately to severely active ulcerative colitis (ASTRO): a double-blind, treat-through, randomised, placebo-controlled, phase 3 trial. Lancet Gastroenterol Hepatol. 2026. PMID: 41544637', href: 'https://pubmed.ncbi.nlm.nih.gov/41544637/' },
+      { label: 'Amin HM et al. IL-23 inhibitors meta-analysis in ulcerative colitis. Int J Colorectal Dis. 2025. PMID: 41467943', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },
+      { label: 'D’Haens G et al. Mirikizumab as maintenance therapy in ulcerative colitis: LUCENT-2. Lancet. 2023.', href: 'https://pubmed.ncbi.nlm.nih.gov/36774166/' },
+    ],
+    relatedSlugs: ['il23-inhibitors-meta-analysis-safety-efficacy-2026', 'mirikizumab-4-year-remission-lucent-3', 'biologics-for-uc-compared'],
+  },
+  {
     slug: 'severe-uc-hospitalization-colectomy-risk-2026',
     title: 'Severe UC Hospitalization Is a Bigger Cliff Than Most Patients Realize: 1 in 5 Lose Their Colon Within a Year, and Prior Advanced Therapy Makes It Worse',
     description: 'A large 2026 real-world study of 9,716 adults hospitalized for severe ulcerative colitis found 12.2% underwent colectomy during the admission and 20.4% lost their colon within a year. In patients already exposed to advanced therapy, 1-year colectomy risk reached 32.7%, with 38.4% rehospitalized after discharge without colectomy.',

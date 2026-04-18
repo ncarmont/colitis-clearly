@@ -1,5 +1,10 @@
 [
   {
+    "stat": "28% vs 6%",
+    "label": "clinical remission at week 12 with fully subcutaneous guselkumab induction vs placebo in moderate-to-severe UC",
+    "source": "Peyrin-Biroulet L et al. Lancet Gastroenterol Hepatol. 2026 (PMID: 41544637) — phase 3 ASTRO trial; week-24 clinical remission reached 35-36% with guselkumab vs 9% with placebo, with no new safety concerns"
+  },
+  {
     "stat": "32.7%",
     "label": "colectomy within 1 year after severe UC hospitalization in patients already exposed to advanced therapy",
     "source": "Raine T et al. J Crohns Colitis. 2026 Apr 8 (PMID: 41978350) — real-world US cohort of 9,716 adults hospitalized for severe UC; overall 12.2% colectomy during admission and 20.4% colectomy within 1 year"
