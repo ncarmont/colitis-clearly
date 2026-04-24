@@ -21,7 +21,7 @@ const evidencePills = [
   { value: '2.3×', label: 'more remissions, curcumin',      tone: 'good', cite: '8+ RCTs, ECCO 2025',     href: 'https://pubmed.ncbi.nlm.nih.gov/25688495/' },
   { value: '7.13×', label: 'more likely to hit remission, second-line vedolizumab', tone: 'good', cite: 'GEMINI-1 + VISIBLE-1, PMID 41883697', href: 'https://pubmed.ncbi.nlm.nih.gov/41883697/' },
   { value: '55.3%', label: 'remission at 52 wks, mirikizumab real-world', tone: 'good', cite: 'INSIGHT study, PMID 41824618', href: 'https://pubmed.ncbi.nlm.nih.gov/41824618/' },
-  { value: '4.28×', label: 'more remissions, etrasimod 40 wks', tone: 'good', cite: 'GRADE meta-analysis, PMID 41891290', href: 'https://pubmed.ncbi.nlm.nih.gov/41891290/' },
+  { value: '55.9%', label: 'remission at 1 year, ustekinumab real-world', tone: 'good', cite: 'CCAiD cohort, PMID 42002972', href: 'https://pubmed.ncbi.nlm.nih.gov/42002972/' },
   { value: '2.53×', label: 'more mucosal healing, IL-23 biologics',  tone: 'good', cite: '7 RCTs, 4203 pts, PMID 41467943', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },
   { value: '61%',  label: 'fewer serious AEs, IL-23 biologics vs placebo', tone: 'good', cite: 'Amin HM et al. 2025, PMID 41467943', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },
   { value: '5.2×', label: 'higher relapse risk, red meat',  tone: 'bad',  cite: 'Jowett et al. 2004',      href: 'https://pubmed.ncbi.nlm.nih.gov/14960471/' },

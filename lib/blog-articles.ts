@@ -32,6 +32,100 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
+    slug: 'ustekinumab-real-world-one-year-remission-2026',
+    title: 'Ustekinumab Hit 55.9% Remission at 1 Year in Real-World UC, and 84.9% of Patients Stayed on It',
+    description: 'A new 2026 Korean multicenter real-world cohort found ustekinumab achieved 55.9% clinical remission at 1 year in ulcerative colitis, with 84.9% treatment persistence and only one serious adverse event reported.',
+    category: 'Biologics',
+    readTime: '8 min read',
+    datePublished: '2026-04-20',
+    intro: 'Ustekinumab tends to get talked about like the quiet kid in the advanced-therapy classroom. It is not the flashy fastest oral drug. It is not the newest IL-23 darling. It is not the gut-selective favorite. But this new 2026 real-world study is a useful reminder that boring does not mean weak. In a Korean multicenter cohort of ulcerative colitis patients, ustekinumab delivered 49.2% clinical remission by week 8, 59.3% by weeks 16 to 20, and 55.9% at 1 year. Even more practical, 84.9% of patients were still on the drug at 12 months. Translation: ustekinumab may not generate the loudest headlines, but in actual clinic life it kept a lot of patients in remission and kept them on treatment. See a professional.',
+    keyPoints: [
+      'This was a multicenter real-world cohort of 60 Korean patients with ulcerative colitis treated with ustekinumab.',
+      'Clinical remission reached 49.2% at week 8, 59.3% at weeks 16 to 20, and 55.9% at weeks 52 to 56.',
+      'Treatment persistence at 12 months was 84.9%, which is a strong real-world durability signal.',
+      'Only one serious adverse event was reported, supporting an acceptable short-term safety profile.',
+      'Prior exposure to advanced therapies reduced the odds of week-52 remission, which fits what we already know about harder-to-treat UC.',
+      'Bottom line: ustekinumab looks more dependable in real-world UC than many patients probably assume. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to real patients',
+        paragraphs: [
+          'A lot of ulcerative colitis treatment coverage is built around phase 3 trial theater. That matters, obviously. But once a drug is approved, the more useful question becomes what happens when it leaves the carefully controlled trial bubble and runs into ordinary gastroenterology: treatment-experienced patients, imperfect adherence, steroid baggage, prior failures, and all the usual chaos of chronic disease.',
+          'That is why this paper matters. It did not ask whether ustekinumab could beat placebo in a registration trial. We already know it can work. It asked whether the drug still holds up across a real-world multicenter cohort over a full year. For patients trying to decide whether ustekinumab is a serious option or just a backup biologic, that is a much more practical question.',
+        ],
+        callout: 'Real-world data matters because UC patients are not tidy trial avatars. They are complicated, previously treated, and tired.',
+      },
+      {
+        title: 'The number worth screenshotting: 55.9% remission at 1 year',
+        paragraphs: [
+          'The main patient-facing number here is simple: 55.9% clinical remission at weeks 52 to 56. That is more than half the cohort in remission at roughly 1 year. For a drug that is often discussed as steady rather than spectacular, that is a stronger real-world signal than many people expect.',
+          'The early numbers were strong too. Clinical remission was already 49.2% at week 8, then actually climbed to 59.3% at weeks 16 to 20 before settling at 55.9% by 1 year. That pattern matters because it suggests ustekinumab is not only an induction drug or only a maintenance drug. It showed a meaningful signal across the timeline patients actually live through.',
+          'Do not be stupid with cross-trial comparisons, though. This was a retrospective cohort, not a head-to-head fight against mirikizumab, vedolizumab, upadacitinib, or guselkumab. But as a real-world credibility check, these numbers are good.',
+        ],
+        callout: '55.9% remission at 1 year is the kind of number that moves ustekinumab out of the maybe pile.',
+      },
+      {
+        title: 'The sneakily important number: 84.9% stayed on treatment',
+        paragraphs: [
+          'Patients obsess over remission percentages, but persistence may be just as clinically useful. In this study, 84.9% of patients remained on ustekinumab at 12 months. That is strong because drugs do not get persisted with in the real world unless they are doing enough to justify staying on them.',
+          'Persistence is a dirty but useful composite outcome. It indirectly captures effectiveness, tolerability, logistics, patient confidence, and physician willingness to continue. If a drug is underperforming badly or causing constant problems, persistence falls apart. Here, it did not.',
+          'That does not mean every patient loved ustekinumab or that persistence automatically equals remission. It means the treatment looked livable over a year, which matters a lot for a chronic disease where treatment burden can become its own problem.',
+        ],
+        callout: '84.9% persistence means ustekinumab was not just working on paper. It was workable in real life.',
+      },
+      {
+        title: 'Who did worse, and why that matters',
+        paragraphs: [
+          'The most clinically believable part of the paper is that prior advanced-therapy exposure lowered the odds of remission at 1 year. Good. That is what reality looks like. Harder-to-treat patients usually remain harder to treat. If a paper claims every subgroup does equally well, start smelling the marketing department.',
+          'The study also found that endoscopic improvement by weeks 16 to 20 strongly predicted week-52 remission. Again, useful. It reinforces the idea that early objective movement matters. If the bowel looks better by the mid-course checkpoint, long-term control becomes much more plausible.',
+          'There was also a signal for concomitant immunomodulator use and higher baseline BMI being associated with higher remission odds. Those findings are hypothesis-generating, not a reason to start improvising combination therapy on your own. Still, they are the kind of real-world clues clinicians may use when thinking through the full treatment context.',
+        ],
+      },
+      {
+        title: 'Safety looked acceptable, but keep your brain switched on',
+        paragraphs: [
+          'Adverse events occurred in 40% of patients, which sounds dramatic until you remember that adverse-event reporting in UC includes lots of ordinary disease and treatment noise. The detail that matters is serious harm. Only one serious adverse event was reported, about 1.7% of the cohort.',
+          'That fits the broader reputation of ustekinumab as a relatively well-tolerated biologic. It is not risk-free, and pretending otherwise would be idiotic. But compared with some broader immunosuppressive strategies, ustekinumab continues to look like a drug many patients can stay on without constant collateral damage.',
+          'Short version: the safety signal here was reassuring, not magical. You still need proper screening, clinical follow-up, and actual specialist oversight. See a professional.',
+        ],
+        callout: 'Acceptable safety means credible option, not harmless supplement.',
+      },
+      {
+        title: 'What patients should do with this information',
+        paragraphs: [
+          'If you are weighing advanced therapies and ustekinumab has been framed to you as a middling fallback, this paper pushes back on that. More than half the cohort achieved 1-year remission, and most stayed on treatment. That is not a weak signal.',
+          'If you are already on ustekinumab and seeing some early improvement, this study is reassuring because the remission curve remained strong through week 52. If you have already failed multiple advanced therapies, the paper is still relevant, but the warning is clear: prior treatment exposure makes remission harder, so monitoring has to be objective and honest.',
+          'Bottom line: ustekinumab still deserves a serious seat at the UC table. It may not have the loudest fan club, but this real-world study says it can deliver durable remission with high persistence and acceptable safety over a year. Bring that to your gastroenterologist, compare it with your other options like vedolizumab, mirikizumab, IL-23 drugs, JAK inhibitors, and S1P modulators, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How strong was ustekinumab in this real-world study?',
+        answer: 'Clinical remission was 49.2% at week 8, 59.3% at weeks 16 to 20, and 55.9% at weeks 52 to 56. Treatment persistence at 12 months was 84.9%, which supports real-world durability as well as symptom control.',
+      },
+      {
+        question: 'Does this prove ustekinumab is better than mirikizumab, vedolizumab, or upadacitinib?',
+        answer: 'No. This was not a head-to-head trial. It shows ustekinumab performed well in a real-world cohort, but cross-trial comparisons are messy and should not be treated like gospel.',
+      },
+      {
+        question: 'Who seemed less likely to do well on ustekinumab?',
+        answer: 'Patients with prior exposure to advanced therapies had lower odds of week-52 remission, which is consistent with the general rule that treatment-experienced UC is harder to control.',
+      },
+      {
+        question: 'Was ustekinumab safe in this study?',
+        answer: 'The short-term safety profile looked acceptable. Adverse events were reported in 40% of patients, but only one serious adverse event occurred. Ustekinumab still needs normal specialist monitoring and is not risk-free. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Baek JE et al. One-year effectiveness and safety of ustekinumab treatment in patients with ulcerative colitis: an Asan-Crohn\'s and Colitis Association in Daegu-Gyeongbuk (CCAiD) multicenter real-world cohort study. Intest Res. 2026 Apr 20. PMID: 42002972', href: 'https://pubmed.ncbi.nlm.nih.gov/42002972/' },
+      { label: 'Sands BE et al. Ustekinumab as induction and maintenance therapy for ulcerative colitis. N Engl J Med. 2019. PMID: 31553833', href: 'https://pubmed.ncbi.nlm.nih.gov/31553833/' },
+      { label: 'AGA Clinical Practice Guideline on pharmacological management of moderate to severe ulcerative colitis. Gastroenterology. 2024.', href: 'https://www.gastrojournal.org/article/S0016-5085(24)00899-3/fulltext' },
+    ],
+    relatedSlugs: ['biologics-for-uc-compared', 'vedolizumab-second-line-anti-tnf-meta-analysis-2026', 'mirikizumab-real-world-remission-insight-2026'],
+  },
+  {
     slug: 'guselkumab-subcutaneous-induction-astro-2026',
     title: 'No IV Needed: Fully Subcutaneous Guselkumab Hit 28% Remission by Week 12 in UC Phase 3',
     description: 'The phase 3 ASTRO trial found that a fully subcutaneous guselkumab regimen achieved 28% clinical remission at week 12 versus 6% with placebo in moderate-to-severe ulcerative colitis. By week 24, remission reached 35% to 36% with guselkumab versus 9% with placebo, without new safety concerns.',

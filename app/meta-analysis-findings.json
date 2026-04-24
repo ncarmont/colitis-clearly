@@ -1,5 +1,15 @@
 [
   {
+    "stat": "55.9%",
+    "label": "clinical remission at weeks 52-56 with ustekinumab in a multicenter real-world UC cohort",
+    "source": "Baek JE et al. Intestinal Research. 2026 Apr 20 (PMID: 42002972) — 60 Korean UC patients; remission was 49.2% at week 8, 59.3% at weeks 16-20, and treatment persistence reached 84.9% at 12 months"
+  },
+  {
+    "stat": "84.9%",
+    "label": "12-month ustekinumab treatment persistence in real-world UC",
+    "source": "Baek JE et al. Intestinal Research. 2026 Apr 20 (PMID: 42002972) — persistence remained high despite prior advanced therapy exposure in part of the cohort"
+  },
+  {
     "stat": "28% vs 6%",
     "label": "clinical remission at week 12 with fully subcutaneous guselkumab induction vs placebo in moderate-to-severe UC",
     "source": "Peyrin-Biroulet L et al. Lancet Gastroenterol Hepatol. 2026 (PMID: 41544637) — phase 3 ASTRO trial; week-24 clinical remission reached 35-36% with guselkumab vs 9% with placebo, with no new safety concerns"
