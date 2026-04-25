@@ -23,7 +23,7 @@ const evidencePills = [
   { value: '55.3%', label: 'remission at 52 wks, mirikizumab real-world', tone: 'good', cite: 'INSIGHT study, PMID 41824618', href: 'https://pubmed.ncbi.nlm.nih.gov/41824618/' },
   { value: '55.9%', label: 'remission at 1 year, ustekinumab real-world', tone: 'good', cite: 'CCAiD cohort, PMID 42002972', href: 'https://pubmed.ncbi.nlm.nih.gov/42002972/' },
   { value: '2.53×', label: 'more mucosal healing, IL-23 biologics',  tone: 'good', cite: '7 RCTs, 4203 pts, PMID 41467943', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },
-  { value: '61%',  label: 'fewer serious AEs, IL-23 biologics vs placebo', tone: 'good', cite: 'Amin HM et al. 2025, PMID 41467943', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },
+  { value: '6%',   label: '3-mo colectomy with upfront intensified infliximab in acute severe UC', tone: 'good', cite: 'Bayesian meta-analysis, PMID 42030468', href: 'https://pubmed.ncbi.nlm.nih.gov/42030468/' },
   { value: '5.2×', label: 'higher relapse risk, red meat',  tone: 'bad',  cite: 'Jowett et al. 2004',      href: 'https://pubmed.ncbi.nlm.nih.gov/14960471/' },
   { value: '32.7%', label: 'colectomy within 1 year after severe UC admission, if prior advanced therapy', tone: 'bad', cite: 'Real-world cohort, PMID 41978350', href: 'https://pubmed.ncbi.nlm.nih.gov/41978350/' },
   { value: '2.7×', label: 'more remissions, appendicectomy vs JAK', tone: 'good', cite: 'COSTA trial, Lancet GH 2026', href: 'https://pubmed.ncbi.nlm.nih.gov/41512889/' },

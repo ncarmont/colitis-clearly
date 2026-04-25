@@ -31,6 +31,100 @@ export type BlogArticle = {
 }
 
 export const BLOG_ARTICLES: BlogArticle[] = [
+
+  {
+    slug: 'infliximab-intensification-acute-severe-uc-meta-analysis-2026',
+    title: 'Acute Severe UC: Upfront Intensified Infliximab Cut Colectomy to 6% in New 2026 Bayesian Analysis',
+    description: 'A new 2026 Bayesian meta-analysis in acute severe ulcerative colitis found the expected 3-month colectomy rate with standard-dose infliximab was about 27%, while the PREDICT-UC trial observed 15% colectomy with rescue-dose infliximab and just 6% with upfront intensified dosing at 10 mg/kg.',
+    category: 'Severe UC',
+    readTime: '8 min read',
+    datePublished: '2026-04-24',
+    intro: 'If you are hospitalized with acute severe ulcerative colitis, you do not care about fashionable mechanism diagrams. You care about one brutal question: am I keeping my colon? That is why this new 2026 paper matters. A Bayesian meta-analysis in Inflammatory Bowel Diseases revisited infliximab dosing in acute severe UC and used prior randomized-trial data plus the newer PREDICT-UC trial to estimate what different dosing approaches actually mean for colectomy. The expected 3-month colectomy rate with standard-dose infliximab was about 27%. In PREDICT-UC, colectomy was 15% with rescue-dose infliximab at 5 mg/kg and 6% with upfront intensified dosing at 10 mg/kg. Translation: in the sickest hospitalized UC patients, hitting hard early may save more colons than waiting to escalate later. This is not a DIY dosing lesson. It is a specialist-level conversation for an IBD team. See a professional.',
+    keyPoints: [
+      'This paper focused on acute severe ulcerative colitis, the hospitalized steroid-refractory end of the disease where colectomy risk becomes immediate and real.',
+      'Using historical trial data, the authors estimated a 3-month colectomy rate of about 27% with standard-dose infliximab.',
+      'In the PREDICT-UC trial, observed colectomy rates were 15% with rescue-dose infliximab and 6% with upfront intensified dosing at 10 mg/kg.',
+      'The analysis used a Bayesian framework, which matters because there is only one randomized trial directly comparing intensified versus standard approaches in this setting.',
+      'This does not prove every patient with severe UC should automatically get 10 mg/kg infliximab, but it strongly supports discussing early intensified rescue in the right patient.',
+      'Bottom line: for hospitalized severe UC, delayed escalation may be too polite for a disease that is actively trying to take the colon. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters more than most UC headlines',
+        paragraphs: [
+          'Most ulcerative colitis treatment headlines are about outpatient moderate-to-severe disease. Important, sure. But acute severe ulcerative colitis is a different animal. This is the hospital-level version: IV steroids, frequent stools, bleeding, systemic inflammation, surgical consultations hovering in the background, and a colon that may not give you much time to make elegant incremental decisions.',
+          'That is why this paper is useful. It asked a brutally practical question: when infliximab is used as rescue therapy in acute severe UC, is standard dosing enough, or does intensified dosing lower the chance that the patient needs colectomy within the next few months? Patients in this situation are not trying to optimize convenience. They are trying to avoid losing the organ.',
+        ],
+        callout: 'Acute severe UC is not a tweak-the-dose-later disease. It is a stop-the-crash-now disease.',
+      },
+      {
+        title: 'The number worth screenshotting: 6% colectomy with upfront intensified infliximab',
+        paragraphs: [
+          'The headline figure is simple. The authors estimated that standard-dose infliximab carries about a 27% 3-month colectomy rate in acute severe UC. In the PREDICT-UC trial, patients treated with rescue-dose infliximab at 5 mg/kg had a 15% colectomy rate. Patients given upfront intensified infliximab at 10 mg/kg had a 6% colectomy rate.',
+          'That is the kind of gap patients instantly understand. Twenty-seven percent means roughly one in four. Six percent means roughly one in sixteen. In a setting where the colon is on the line, that difference is not academic. It is the difference between a strategy that looks merely reasonable and one that might actually change the short-term trajectory.',
+          'Do not flatten this into a fake certainty, though. The 6% figure came from one randomized trial arm, not a giant stack of head-to-head trials. But when the signal is that large, ignoring it would also be stupid.',
+        ],
+        callout: '27% expected colectomy on standard-dose reference, 15% on rescue-dose infliximab, 6% on upfront intensified dosing. That is why people are paying attention.',
+      },
+      {
+        title: 'Why the Bayesian design actually matters',
+        paragraphs: [
+          'Normally, one randomized trial is not enough to settle a major treatment question. The authors knew that. So instead of pretending otherwise, they used a Bayesian framework to combine the newer PREDICT-UC trial with historical randomized evidence for standard-dose infliximab in acute severe UC. That allowed them to estimate a more realistic reference risk and then ask whether the intensified strategies credibly outperformed it.',
+          'This is one of the few times the statistical method is not nerd decoration. Acute severe UC trials are hard to run, patient numbers stay limited, and waiting for a perfect mega-trial can mean clinicians keep making life-and-colon decisions with fuzzy evidence. A Bayesian approach is not magic, but here it is a smart way to integrate what we already know with the best newer data we have.',
+          'The key conclusion was that both intensified approaches looked credibly better than the standard-dose reference, with the strongest signal coming from upfront 10 mg/kg dosing.',
+        ],
+      },
+      {
+        title: 'Why standard dosing may fail in the sickest patients',
+        paragraphs: [
+          'Acute severe UC is notorious for chewing through biologic drug levels. Patients often have high inflammatory burden, low albumin, protein loss into the gut, and rapid infliximab clearance. In other words, the disease itself can make a standard dose behave like an underdose.',
+          'That is the mechanistic reason intensified dosing makes sense. If the body is clearing the drug faster and the inflammatory target load is higher, starting harder may be the only way to reach effective exposure fast enough to matter. By the time you wait for obvious failure and then escalate, the window for rescue may already be closing.',
+          'This is exactly why severe UC management should feel more like critical care than leisurely outpatient sequencing. The biology is different, the pace is different, and the cost of being slow is different.',
+        ],
+        callout: 'In acute severe UC, a normal dose may not stay normal for long. High inflammation can burn through infliximab exposure fast.',
+      },
+      {
+        title: 'What this does and does not prove',
+        paragraphs: [
+          'This paper does not prove every hospitalized severe-UC patient should receive upfront intensified infliximab. Some patients need cyclosporine instead. Some need surgery quickly. Some have infection, perforation risk, toxic megacolon, or other reasons why the rescue pathway changes. Acute severe UC is not a one-protocol disease.',
+          'It also does not prove 10 mg/kg is always superior forever in every subgroup. The evidence is still limited, and the authors themselves call for larger prospective trials to identify which patients benefit most.',
+          'What it does prove is narrower and still clinically important: the old assumption that standard-dose infliximab is automatically enough in acute severe UC looks increasingly shaky. For the right patient, early intensified rescue is no longer a fringe idea. It is a serious, evidence-backed conversation.',
+        ],
+      },
+      {
+        title: 'What patients and families should do with this information',
+        paragraphs: [
+          'If you or someone you care about is hospitalized with severe UC and infliximab rescue is on the table, the smart question is not just “Are we using infliximab?” The smarter question is “What dosing strategy are we using, and why?” Ask whether the team has considered accelerated or upfront intensified dosing, what the albumin and CRP look like, how fast the patient is deteriorating, and what the colectomy backup plan is if rescue fails.',
+          'This is also a reminder that severe UC needs an actual IBD team, not vague reassurance. When a colon is sick enough to put someone in hospital, you want objective monitoring, clear timelines, and a rescue plan that is aggressive enough for the biology in front of you.',
+          'Bottom line: this new analysis says early intensified infliximab may materially lower near-term colectomy risk in acute severe UC, with the strongest signal at upfront 10 mg/kg dosing. That does not replace clinical judgment. It does make passive standard dosing look a lot less untouchable. Bring it to your gastroenterologist, involve colorectal surgery early when appropriate, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What was the main result of this paper?',
+        answer: 'The authors estimated a 3-month colectomy rate of about 27% with standard-dose infliximab in acute severe ulcerative colitis. In the PREDICT-UC trial used in the analysis, colectomy was 15% with rescue-dose infliximab and 6% with upfront intensified dosing at 10 mg/kg.',
+      },
+      {
+        question: 'Does this mean every patient with severe UC should get 10 mg/kg infliximab right away?',
+        answer: 'No. Acute severe UC treatment still depends on the full clinical picture, including infection risk, surgical urgency, prior therapies, and local expertise. But this paper strongly supports discussing intensified infliximab early rather than assuming standard dosing is always enough.',
+      },
+      {
+        question: 'Why might intensified infliximab help in acute severe UC?',
+        answer: 'Because severe inflammation, low albumin, and protein loss through the inflamed gut can increase infliximab clearance. In some hospitalized patients, standard dosing may not achieve or maintain effective drug levels quickly enough.',
+      },
+      {
+        question: 'Was this a standard meta-analysis?',
+        answer: 'Not exactly. It used a Bayesian approach to combine the newer PREDICT-UC randomized trial with prior standard-dose infliximab trial data. That matters because direct head-to-head randomized data in acute severe UC remains limited.',
+      },
+    ],
+    references: [
+      { label: 'Goyal MK et al. Rethinking the dose: A Bayesian meta-analysis of infliximab intensification in acute severe ulcerative colitis. Inflamm Bowel Dis. 2026 Apr 24. PMID: 42030468', href: 'https://pubmed.ncbi.nlm.nih.gov/42030468/' },
+      { label: 'Sebastian S et al. PREDICT-UC trial. Lancet Gastroenterol Hepatol. 2024.', href: 'https://pubmed.ncbi.nlm.nih.gov/?term=PREDICT-UC+acute+severe+ulcerative+colitis' },
+      { label: 'Lamb CA et al. British Society of Gastroenterology consensus guidelines on the management of inflammatory bowel disease in adults. Gut. 2019.', href: 'https://pubmed.ncbi.nlm.nih.gov/31562236/' },
+    ],
+    relatedSlugs: ['severe-uc-hospitalization-colectomy-risk-2026', 'jak-inhibitors-acute-severe-uc-meta-analysis-2026', 'biologics-for-uc-compared'],
+  },
   {
     slug: 'ustekinumab-real-world-one-year-remission-2026',
     title: 'Ustekinumab Hit 55.9% Remission at 1 Year in Real-World UC, and 84.9% of Patients Stayed on It',

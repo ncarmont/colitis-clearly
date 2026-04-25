@@ -1,5 +1,10 @@
 [
   {
+    "stat": "6%",
+    "label": "3-month colectomy rate with upfront intensified infliximab (10 mg/kg) in acute severe UC, versus an estimated 27% standard-dose reference",
+    "source": "Goyal MK et al. Inflamm Bowel Dis. 2026 Apr 24 (PMID: 42030468) — Bayesian meta-analysis incorporating PREDICT-UC and historical standard-dose infliximab trials in acute severe ulcerative colitis"
+  },
+  {
     "stat": "55.9%",
     "label": "clinical remission at weeks 52-56 with ustekinumab in a multicenter real-world UC cohort",
     "source": "Baek JE et al. Intestinal Research. 2026 Apr 20 (PMID: 42002972) — 60 Korean UC patients; remission was 49.2% at week 8, 59.3% at weeks 16-20, and treatment persistence reached 84.9% at 12 months"
