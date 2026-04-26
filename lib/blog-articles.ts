@@ -33,6 +33,99 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
   {
+    slug: 'vedolizumab-switch-subcutaneous-japanese-uc-2026',
+    title: 'Stable on Vedolizumab? This 2026 UC Study Says You May Be Able to Leave the Infusion Center Without Losing Control',
+    description: 'A 2026 Japanese real-world UC cohort found that after switching from intravenous to subcutaneous vedolizumab, 98% of patients stayed on treatment at 12 months and fecal calprotectin remission remained high at 91% to 87%, suggesting many stable patients can move to home injections without losing disease control.',
+    category: 'Biologics',
+    readTime: '8 min read',
+    datePublished: '2026-04-21',
+    intro: 'A lot of ulcerative colitis treatment decisions get framed like this: do you want the effective drug, or do you want the convenient life? That framing is lazy. Patients on vedolizumab often end up chained to infusion-center logistics even after the drug is clearly working. The practical question is obvious: if vedolizumab is keeping you stable, can you switch from IV infusions to subcutaneous home injections without the bowel immediately starting a mutiny? This new 2026 Japanese real-world study gives a surprisingly reassuring answer. Over 12 months, treatment persistence after switching to subcutaneous vedolizumab was 98%. Median fecal calprotectin stayed exactly at 46 µg/g, and fecal calprotectin remission stayed high, shifting only from 91% to 87%. Translation: for many patients already doing well on vedolizumab, home injection may preserve control while cutting out infusion-center nonsense. See a professional.',
+    keyPoints: [
+      'This was a real-world Japanese retrospective study of 48 ulcerative colitis patients who switched from intravenous to subcutaneous vedolizumab.',
+      'Treatment persistence at 12 months was 98%, which is the kind of number patients instantly understand.',
+      'Median fecal calprotectin stayed flat at 46 µg/g from baseline to 12 months after the switch.',
+      'Fecal calprotectin remission stayed high at 91% before switching and 87% at 12 months after switching.',
+      'Injection-site reactions were common, affecting 60%, but most improved or resolved over time and no other likely drug-related adverse events were reported.',
+      'Bottom line: if vedolizumab is already working for you, switching to home injections may be much safer for disease control than many patients fear. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to actual UC patients',
+        paragraphs: [
+          'Plenty of ulcerative colitis papers focus on whether a drug can beat placebo. Fine. Necessary. But once a therapy is already working, patients care about something more practical: can I make this treatment less disruptive without paying for that convenience with another flare? That is exactly the question this paper addresses.',
+          'Vedolizumab is already an established biologic for moderate-to-severe UC. The subcutaneous formulation exists, but many patients and clinicians still worry that moving away from intravenous infusions could quietly weaken control. Those worries are not irrational. UC has a nasty habit of punishing overconfidence. So a real-world study looking at what actually happened after the switch is far more useful than another generic formulation announcement.',
+        ],
+        callout: 'Patients do not want a prettier delivery system if it means more blood, more urgency, and more excuses from the colon.',
+      },
+      {
+        title: 'The number worth screenshotting: 98% stayed on subcutaneous vedolizumab at 12 months',
+        paragraphs: [
+          'The headline result was treatment persistence: 98% at 12 months. That matters because patients do not stay on a new formulation for a year if it is obviously failing, intolerable, or creating constant problems. Persistence is not a perfect endpoint, but it is one of the most honest real-world outcomes we have. It quietly captures efficacy, tolerability, convenience, and whether doctors and patients both feel comfortable continuing.',
+          'In practical terms, 98% persistence says the switch did not trigger some hidden collapse in disease control. If that had happened, the persistence number would have cracked fast. Instead, it barely moved. For patients who are tired of building their lives around infusion appointments, that is a big deal.',
+        ],
+        callout: '98% persistence means almost nobody needed to abandon the switch. That is not subtle.',
+      },
+      {
+        title: 'The biomarker story was even better than the convenience story',
+        paragraphs: [
+          'Symptoms can lie in ulcerative colitis. Calprotectin lies much less. That is why the fecal calprotectin data here matters. Median fecal calprotectin stayed exactly the same, 46 µg/g before switching and 46 µg/g at 12 months. That is a strong signal that mucosal inflammation did not start creeping back just because the route changed.',
+          'The remission rate based on fecal calprotectin also stayed high, moving from 91% to 87%. That is the kind of tiny drift you would expect in ordinary real life, not the kind of deterioration you would expect if the subcutaneous formulation were meaningfully weaker. In other words, the bowel looked boringly stable, which in UC is exactly what you want.',
+          'This is the part smart patients should care about most. It is easy to get seduced by convenience. Biomarker stability tells you the convenience did not appear to be bought at the price of silent inflammation.',
+        ],
+        callout: 'Median fecal calprotectin stayed at 46 µg/g. That is the bowel equivalent of “nothing dramatic happened,” which is excellent news.',
+      },
+      {
+        title: 'Yes, injection-site reactions were common, but the nuance matters',
+        paragraphs: [
+          'Injection-site reactions happened in 60% of patients. At first glance that sounds ugly. Then you look closer and the panic fades. Most reactions appeared in the first 3 to 6 months, the median duration was 4 months, and more than half improved or resolved by 12 months. Only 23% had persistent injection-site reactions at the end of follow-up.',
+          'That is annoying, not trivial, but it is a very different story from “the switch was poorly tolerated.” The study also reported no other adverse events thought likely or probably related to subcutaneous vedolizumab. So the tradeoff looks like this: you may have local injection irritation, but most patients kept disease control and most reactions settled down over time.',
+          'That is a grown-up tradeoff conversation, not a reason to panic and run back to the infusion chair immediately.',
+        ],
+      },
+      {
+        title: 'What this does and does not prove',
+        paragraphs: [
+          'This was a retrospective study from Japan, not a randomized head-to-head trial of continuing IV versus switching to subcutaneous vedolizumab. The sample size was 48 patients, which is useful but not massive. And these were patients well enough to be considered for switching in the first place, so this is not automatically generalizable to every unstable or severe case.',
+          'Still, the paper is clinically useful because it asked a practical question in a real-world population and used a real biomarker, not just vibes. The persistence rate, calprotectin stability, and absence of major new safety problems all point in the same direction: for selected UC patients already controlled on vedolizumab, route change alone did not seem to wreck the outcome.',
+        ],
+        callout: 'This does not prove every vedolizumab patient should switch tomorrow. It does make the old fear of automatic loss of control look less convincing.',
+      },
+      {
+        title: 'What patients should actually do with this information',
+        paragraphs: [
+          'If you are doing well on IV vedolizumab and the infusion-center routine is chewing up your time, this paper gives you a smart question to ask: am I a good candidate to switch to the subcutaneous formulation? That discussion should include your disease stability, prior flare pattern, access, injection comfort, and how your team will monitor you after the switch.',
+          'If you do switch, do not do the stupid thing and assume symptoms alone are enough. Ask how your gastroenterologist wants to track the transition. Fecal calprotectin, symptom check-ins, and clear timelines matter, because “I felt okay” is not a serious monitoring strategy in UC.',
+          'Bottom line: this study suggests many stable vedolizumab patients can move from IV infusions to home injections without obvious loss of control, with 98% persistence and stable calprotectin over a year. That does not replace specialist judgment. It does make the switch conversation much more legitimate. Bring it to your GI, monitor objectively, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Did disease control actually stay stable after switching vedolizumab from IV to subcutaneous?',
+        answer: 'In this study, yes. Median fecal calprotectin stayed at 46 µg/g from baseline to 12 months, and fecal calprotectin remission remained high at 91% before switching and 87% at 12 months after switching.',
+      },
+      {
+        question: 'How many patients stayed on the subcutaneous formulation?',
+        answer: 'Treatment persistence was 98% at 12 months, which strongly suggests the switch was workable for most patients in this cohort.',
+      },
+      {
+        question: 'Were injection-site reactions a major problem?',
+        answer: 'They were common, occurring in 60% of patients, but most improved or resolved over time. Only 23% still had persistent injection-site reactions at 12 months, and no other likely drug-related adverse events were reported.',
+      },
+      {
+        question: 'Should every UC patient on vedolizumab switch to home injections?',
+        answer: 'No. This was a small retrospective real-world study, not a universal rule. But it supports discussing the switch if you are already stable on vedolizumab and want less infusion burden. That decision should be made with your gastroenterologist using objective monitoring. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Furuya M, Yoza K, Yonezawa T, Takeuchi K et al. Efficacy and Safety of Switching From Intravenous to Subcutaneous Vedolizumab in Japanese Patients With Ulcerative Colitis: A Study Focusing on Injection-Site Reactions. JGH Open. 2026 Apr 21. PMID: 42027776', href: 'https://pubmed.ncbi.nlm.nih.gov/42027776/' },
+      { label: 'Feagan BG et al. Vedolizumab as induction and maintenance therapy for ulcerative colitis. N Engl J Med. 2013. PMID: 23964932', href: 'https://pubmed.ncbi.nlm.nih.gov/23964932/' },
+      { label: 'Lukas M et al. Efficacy and health-related quality of life associated with second-line vedolizumab after first-line treatment with one anti-TNF in patients with ulcerative colitis: a meta-analysis of the GEMINI-1 and VISIBLE-1 trials. Ther Adv Gastroenterol. 2026. PMID: 41883697', href: 'https://pubmed.ncbi.nlm.nih.gov/41883697/' },
+    ],
+    relatedSlugs: ['vedolizumab-second-line-anti-tnf-meta-analysis-2026', 'biologics-for-uc-compared', 'fecal-calprotectin-explained'],
+  },
+
+  {
     slug: 'infliximab-intensification-acute-severe-uc-meta-analysis-2026',
     title: 'Acute Severe UC: Upfront Intensified Infliximab Cut Colectomy to 6% in New 2026 Bayesian Analysis',
     description: 'A new 2026 Bayesian meta-analysis in acute severe ulcerative colitis found the expected 3-month colectomy rate with standard-dose infliximab was about 27%, while the PREDICT-UC trial observed 15% colectomy with rescue-dose infliximab and just 6% with upfront intensified dosing at 10 mg/kg.',

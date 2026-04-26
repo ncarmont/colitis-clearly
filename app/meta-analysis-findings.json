@@ -1,5 +1,15 @@
 [
   {
+    "stat": "98%",
+    "label": "12-month treatment persistence after switching from IV to subcutaneous vedolizumab in UC",
+    "source": "Furuya M et al. JGH Open. 2026 Apr 21 (PMID: 42027776) — Japanese retrospective cohort; median fecal calprotectin stayed at 46 µg/g and fecal calprotectin remission stayed high at 91% to 87% over 12 months"
+  },
+  {
+    "stat": "91% → 87%",
+    "label": "fecal calprotectin remission remained stable over 12 months after switching vedolizumab from IV to subcutaneous",
+    "source": "Furuya M et al. JGH Open. 2026 Apr 21 (PMID: 42027776) — 48 Japanese UC patients; switching maintained disease control despite common but mostly self-limited injection-site reactions"
+  },
+  {
     "stat": "6%",
     "label": "3-month colectomy rate with upfront intensified infliximab (10 mg/kg) in acute severe UC, versus an estimated 27% standard-dose reference",
     "source": "Goyal MK et al. Inflamm Bowel Dis. 2026 Apr 24 (PMID: 42030468) — Bayesian meta-analysis incorporating PREDICT-UC and historical standard-dose infliximab trials in acute severe ulcerative colitis"
