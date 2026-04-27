@@ -1,5 +1,15 @@
 [
   {
+    "stat": "14.5%",
+    "label": "RDW cutoff that flagged objective active disease in a 1,000-patient real-world IBD cohort",
+    "source": "Özden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114) — routine CBC red cell distribution width identified active disease with 78.9% sensitivity and 76.3% specificity; adding RDW to CRP improved AUC from 0.845 to 0.880"
+  },
+  {
+    "stat": "OR 1.65",
+    "label": "higher odds of objective active disease for each 1% rise in RDW, even after adjusting for anemia and iron markers",
+    "source": "Özden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114) — large real-world cohort showing RDW independently tracked inflammatory activity, including in non-anemic patients"
+  },
+  {
     "stat": "98%",
     "label": "12-month treatment persistence after switching from IV to subcutaneous vedolizumab in UC",
     "source": "Furuya M et al. JGH Open. 2026 Apr 21 (PMID: 42027776) — Japanese retrospective cohort; median fecal calprotectin stayed at 46 µg/g and fecal calprotectin remission stayed high at 91% to 87% over 12 months"

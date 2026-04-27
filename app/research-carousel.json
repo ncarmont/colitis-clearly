@@ -1,6 +1,15 @@
 
 [
   {
+    "slug": "rdw-blood-test-uc-activity-2026",
+    "href": "/blog/rdw-blood-test-uc-activity-2026",
+    "title": "Your CBC may be snitching on hidden UC inflammation: RDW ≥14.5% flagged active disease",
+    "paper": "Özden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114)",
+    "finding": "In a real-world cohort of 1,000 IBD patients, a routine CBC marker called red cell distribution width independently tracked objective disease activity. An RDW cutoff of 14.5% identified active disease with 78.9% sensitivity and 76.3% specificity, and adding RDW to CRP improved discrimination from AUC 0.845 to 0.880, suggesting cheap routine bloodwork may help flag hidden ulcerative colitis inflammation earlier.",
+    "category": "Biomarkers",
+    "date": "2026-04-27"
+  },
+  {
     "slug": "vedolizumab-switch-subcutaneous-japanese-uc-2026",
     "href": "/blog/vedolizumab-switch-subcutaneous-japanese-uc-2026",
     "title": "Switched vedolizumab from IV to home injections? 98% stayed on it and calprotectin stayed quiet",

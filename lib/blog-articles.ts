@@ -33,6 +33,99 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
   {
+    slug: 'rdw-blood-test-uc-activity-2026',
+    title: 'A Cheap CBC Clue May Flag Hidden UC Inflammation: New 1,000-Patient Study Puts RDW on the Map',
+    description: 'A 2026 real-world cohort of 1,000 IBD patients found that a routine CBC marker, red cell distribution width (RDW), independently tracked objective disease activity. In ulcerative colitis, an RDW cutoff of 14.5% identified active disease with 78.9% sensitivity and 76.3% specificity, and adding RDW to CRP improved discrimination from AUC 0.845 to 0.880.',
+    category: 'Biomarkers',
+    readTime: '8 min read',
+    datePublished: '2026-04-27',
+    intro: 'Ulcerative colitis patients keep getting told to monitor objectively, which is correct, but the healthcare system often acts like the only options are expensive stool testing, endoscopy logistics, or waiting until the colon starts screaming. This new 2026 paper asks a smarter question: can a dirt-cheap number already sitting on a routine complete blood count help flag active inflammation? In a real-world cohort of 1,000 IBD patients, red cell distribution width, or RDW, independently tracked objective disease activity. A cutoff of 14.5% identified active disease with 78.9% sensitivity and 76.3% specificity, and adding RDW to CRP improved discrimination from AUC 0.845 to 0.880. Translation: your CBC may be carrying more signal than many patients realize. No, this does not replace fecal calprotectin or colonoscopy. Yes, it may help catch trouble earlier and more cheaply. See a professional.',
+    keyPoints: [
+      'This was a 2026 retrospective real-world cohort of 1,000 IBD patients, including 580 with ulcerative colitis.',
+      'RDW was significantly higher in active versus inactive disease: 15.6% vs 13.9% (p < 0.001).',
+      'An RDW cutoff of 14.5% identified active disease with 78.9% sensitivity and 76.3% specificity.',
+      'Adding RDW to CRP improved discrimination for objective disease activity from AUC 0.845 to 0.880 (p = 0.002).',
+      'Each 1% rise in RDW independently predicted active disease, with adjusted OR 1.65, even in non-anemic patients.',
+      'Bottom line: RDW is not a magic bullet, but as a low-cost adjunct it may help spot hidden inflammation before symptoms fully rat the colon out. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to patients, not just lab nerds',
+        paragraphs: [
+          'Most ulcerative colitis monitoring advice is technically correct and practically annoying. Track symptoms, check biomarkers, do stool tests, maybe get scoped, repeat forever. Fine. That is how serious disease should be followed. But patients live in the real world, where stool tests get delayed, endoscopy access is limited, and some doctors still wait for symptoms to become obvious before escalating concern.',
+          'That is why this paper matters. It looked at RDW, a routine number on the CBC that many patients have never even heard discussed, and asked whether it tracks real inflammatory activity rather than just vague fatigue or generic sickness. The answer was yes. Not perfectly, because nothing in ulcerative colitis is ever that polite, but strongly enough to matter.',
+        ],
+        callout: 'If a cheap blood test already sitting in your chart can help flag active inflammation, ignoring it would be lazy medicine.',
+      },
+      {
+        title: 'The screenshot number: RDW 14.5% was the cutoff that best flagged active disease',
+        paragraphs: [
+          'The headline result is simple. An RDW cutoff of 14.5% identified active disease with 78.9% sensitivity and 76.3% specificity. That means this was not some meaningless statistical whisper. It separated active from inactive disease reasonably well in a large real-world cohort.',
+          'Patients should understand what that does and does not mean. It does not mean every RDW above 14.5% proves your colon is inflamed, because RDW can rise for other reasons. It does mean that when a routine CBC comes back with RDW pushing above that range, especially alongside symptoms or other inflammatory hints, it should make clinicians pay attention instead of shrugging.',
+          'There is also a second number worth noticing: active disease patients had a mean RDW of 15.6%, compared with 13.9% in inactive disease. That is a clean enough separation to make this more than random noise.',
+        ],
+        callout: '14.5% is not a diagnosis. It is a practical tripwire.',
+      },
+      {
+        title: 'The sneaky important part: RDW added value beyond CRP',
+        paragraphs: [
+          'Here is where the paper gets more clinically interesting. CRP already exists. Everyone knows it. So the real question is whether RDW is just a redundant curiosity. Apparently not. Adding RDW to CRP improved the ability to discriminate objective disease activity from AUC 0.845 to 0.880, with p = 0.002.',
+          'That matters because ulcerative colitis monitoring should not rely on a single lab like it is an oracle. CRP can miss inflammation in some patients. Symptoms can lie. Stool markers are useful but not always immediately available. RDW looks like one more cheap piece of signal that can sharpen the picture, which is exactly what good treat-to-target care needs.',
+          'In plain English, RDW is not replacing CRP. It is helping CRP stop being asked to do the whole job alone.',
+        ],
+      },
+      {
+        title: 'Why the non-anemia finding matters so much',
+        paragraphs: [
+          'Many clinicians mentally file RDW under anemia and then stop thinking. This study deliberately tested whether the signal still mattered after adjusting for anemia, iron-related markers, inflammatory markers, medications, and disease extent. It did. Each 1% increase in RDW independently predicted active disease with an adjusted odds ratio of 1.65.',
+          'That matters because it means the signal is not just “sicker people are more anemic.” The association held even in non-anemic patients. That is the part that should make people sit up. It suggests RDW may be reflecting inflammatory stress, altered erythropoiesis, or broader physiologic disruption in ways that are clinically useful beyond simple iron deficiency.',
+          'And in ulcerative colitis specifically, RDW increased with histologic severity. That is a big deal. Symptoms are one thing. Endoscopic activity is better. Histologic activity gets even closer to what is actually happening in the tissue.',
+        ],
+        callout: 'If the marker still works in non-anemic patients, it is not just an anemia footnote anymore.',
+      },
+      {
+        title: 'What this does and does not replace',
+        paragraphs: [
+          'Do not get cute and decide a CBC means you no longer need fecal calprotectin, endoscopy, or specialist follow-up. That would be dumb. RDW is an adjunct marker, not a replacement for better-established objective monitoring tools. Fecal calprotectin remains far more directly tied to intestinal inflammation. Endoscopy still shows the actual mucosa. Histology still matters when the question is microscopic activity.',
+          'But adjunct does not mean trivial. Adjunct means useful. If you can get another signal from a test patients are already having anyway, at almost no added cost, that can help decide who needs faster stool testing, earlier follow-up, or more serious attention. That is real clinical value, especially in messy outpatient care where perfect monitoring rarely happens on schedule.',
+        ],
+      },
+      {
+        title: 'What patients should actually do with this information',
+        paragraphs: [
+          'If you have ulcerative colitis and get routine blood work, ask whether your RDW has been trending up, especially if symptoms, fatigue, bleeding, urgency, or CRP are also changing. Do not obsess over one isolated lab in a vacuum. Trends matter more than a single twitchy number. Context matters more than internet panic.',
+          'If your RDW is elevated, the smart move is not to self-diagnose a flare from a CBC screenshot. The smart move is to ask whether you need fecal calprotectin, medication review, iron studies, or closer follow-up. A good GI should be able to tell you whether the RDW rise looks like inflammation, deficiency, or something else entirely.',
+          'Bottom line: this 1,000-patient study says RDW is a legitimate low-cost clue for hidden inflammatory activity in ulcerative colitis, with a practical cutoff of 14.5% and added value beyond CRP. It is not sexy. It is useful. And useful wins. Bring it to your gastroenterologist, use it to ask better monitoring questions, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is RDW, and why should a UC patient care?',
+        answer: 'RDW stands for red cell distribution width, a routine CBC measure reflecting variation in red blood cell size. This study suggests it may also act as a cheap indirect clue to objective inflammatory activity in ulcerative colitis.',
+      },
+      {
+        question: 'What RDW level was linked to active disease in this paper?',
+        answer: 'The best-performing cutoff was 14.5%, which identified active disease with 78.9% sensitivity and 76.3% specificity in the overall IBD cohort.',
+      },
+      {
+        question: 'Does a high RDW prove I am flaring?',
+        answer: 'No. RDW can rise for other reasons, including anemia and nutritional issues. It is a clue, not a diagnosis. It should be interpreted alongside symptoms, CRP, fecal calprotectin, iron studies, and specialist assessment. See a professional.',
+      },
+      {
+        question: 'Is RDW better than fecal calprotectin?',
+        answer: 'No. Fecal calprotectin is still a much more established and gut-specific marker. RDW looks useful as a low-cost add-on, especially when combined with CRP and other monitoring tools, not as a replacement.',
+      },
+    ],
+    references: [
+      { label: 'Özden Y. Red Cell Distribution Width as an Independent Marker of Objective Disease Activity in Ulcerative Colitis and Crohn\'s Disease: A Large Real-World Cohort of 1000 Patients. Turk J Gastroenterol. 2026 Apr 8. PMID: 42027114', href: 'https://pubmed.ncbi.nlm.nih.gov/42027114/' },
+      { label: 'Raine T et al. PREdiCCt: Faecal calprotectin predicts flare in inflammatory bowel disease. Gut. 2025. PMID: 41554630', href: 'https://pubmed.ncbi.nlm.nih.gov/41554630/' },
+      { label: 'British Society of Gastroenterology adult IBD guideline with treat-to-target monitoring thresholds. Gut. 2025', href: 'https://gut.bmj.com/' },
+    ],
+    relatedSlugs: ['fecal-calprotectin-explained', 'understanding-ulcerative-colitis', 'severe-uc-hospitalization-colectomy-risk-2026'],
+  },
+
+  {
     slug: 'vedolizumab-switch-subcutaneous-japanese-uc-2026',
     title: 'Stable on Vedolizumab? This 2026 UC Study Says You May Be Able to Leave the Infusion Center Without Losing Control',
     description: 'A 2026 Japanese real-world UC cohort found that after switching from intravenous to subcutaneous vedolizumab, 98% of patients stayed on treatment at 12 months and fecal calprotectin remission remained high at 91% to 87%, suggesting many stable patients can move to home injections without losing disease control.',
