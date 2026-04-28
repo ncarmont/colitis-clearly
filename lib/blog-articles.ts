@@ -33,6 +33,101 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
   {
+    slug: 'anti-inflammatory-diet-dii-uc-prospective-study-2026',
+    title: 'A Pro-Inflammatory Diet Raised Short-Term UC Flare Odds 5.82×, and a Structured Anti-Inflammatory Plan Pushed the Risk Back Down',
+    description: 'A 2026 prospective study of 108 ulcerative colitis patients found that higher dietary inflammatory index scores were linked to 5.82× higher odds of relapse or persistent disease activity over 6 weeks. A UC-tailored anti-inflammatory diet delivered through a digital platform improved diet quality, increased butyrate-friendly intake patterns, and significantly reduced short-term adverse outcomes versus general dietary advice.',
+    category: 'Diet',
+    readTime: '8 min read',
+    datePublished: '2026-04-28',
+    intro: 'UC patients keep getting diet advice that is either uselessly vague or aggressively stupid. “Just eat clean.” Thanks, genius. This new prospective study did something more helpful. It followed 108 ulcerative colitis patients in remission or with mild disease, measured how inflammatory their real diets were over 6 weeks, and then tested a structured UC-tailored anti-inflammatory diet delivered through a digital management platform. The headline was not subtle: patients with higher dietary inflammatory index scores had 5.82 times higher odds of relapse or persistent disease activity. Then the intervention arm improved diet quality and significantly reduced short-term adverse outcomes compared with ordinary generic advice. Translation: diet is not a magical cure, but a more inflammatory eating pattern appears to make UC more likely to stay bad or get bad again. See a professional.',
+    keyPoints: [
+      'This was a prospective study of 108 ulcerative colitis patients in remission or with mild activity, not another retrospective food-memory mess.',
+      'Higher dietary inflammatory index scores were linked to 5.82× higher odds of relapse or persistent disease activity over 6 weeks (95% CI 1.75-19.39).',
+      'Most patients were under-eating key basics: 78.7% had inadequate staple-food intake and 69.4% had inadequate vegetable intake.',
+      'More inflammatory diets were also associated with lower abundance of butyrate-producing gut bacteria, which matters because butyrate helps support colonocyte health and barrier integrity.',
+      'The structured UC-specific anti-inflammatory diet lowered dietary inflammatory index scores by a median of 1.31 points and significantly reduced short-term adverse outcomes versus general dietary advice.',
+      'Bottom line: UC diet still is not one-size-fits-all, but this paper says inflammatory eating patterns are not neutral background noise. They predict worse short-term outcomes. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to actual patients',
+        paragraphs: [
+          'Diet advice in ulcerative colitis usually fails in one of two ways. It is either so soft and generic that it tells patients nothing, or it becomes full-blown food religion with rules nobody can actually live with. Both approaches are garbage. Patients want to know something much more practical: does the overall inflammatory quality of what I eat actually change my near-term odds of staying stable versus relapsing?',
+          'This study gives a useful answer. Instead of asking people to vaguely remember what they ate months ago, the authors prospectively tracked diet over 6 weeks in 108 UC patients who were either in remission or only mildly active. Then they looked at who stayed stable and who did not. That design is not perfect, because nothing in nutrition research ever is, but it is much more believable than the usual retrospective nonsense.',
+        ],
+        callout: 'The question is not whether diet can replace medication. It cannot. The question is whether a more inflammatory diet makes a fragile colon easier to destabilize. This paper says yes.',
+      },
+      {
+        title: 'The screenshot number: a more inflammatory diet carried 5.82× higher odds of relapse or persistent disease activity',
+        paragraphs: [
+          'The main result is the one patients will instantly understand. Higher dietary inflammatory index, or DII, scores were associated with 5.82 times higher odds of relapse or persistent disease activity over the short follow-up period. That is not a tiny signal buried in a multivariable footnote. That is a large effect size, even with the wide confidence interval you would expect from a modestly sized cohort.',
+          'Use your brain, though. This does not mean one burger causes a flare or one salad protects you forever. DII is a pattern-level measure. It estimates how pro-inflammatory the overall diet is based on nutrient and food characteristics. The message is broader and more useful: when the whole pattern skews inflammatory, short-term outcomes in UC look worse.',
+          'That matters because patients often obsess over single foods when the bigger problem is the total pattern. A colon that is already immunologically twitchy probably cares less about internet purity rules and more about the cumulative inflammatory load of the diet you actually live on.',
+        ],
+        callout: 'One “cheat meal” is not the story. The dietary pattern is the story.',
+      },
+      {
+        title: 'The embarrassing part: most patients were not even hitting the basics',
+        paragraphs: [
+          'The paper also exposed something less glamorous and probably more common than people want to admit. Most patients were not eating a high-quality baseline diet to begin with. Inadequate staple-food intake showed up in 78.7% of patients, and inadequate vegetable intake in 69.4%. In other words, many people were not failing because they missed some exotic superfood. They were failing the boring fundamentals.',
+          'That is clinically important because UC patients often restrict foods aggressively after bad experiences, then drift into nutritionally thin eating patterns that are low in diversity, low in fiber tolerance-adjusted plant intake, and generally bad for microbial resilience. The result is a colon that gets less butyrate support, worse substrate diversity, and possibly more inflammatory signaling.',
+          'This is where a lot of internet diet discourse falls apart. The problem is not always that patients are eating obviously terrible food. Sometimes the problem is that fear has pushed them into a narrow, underpowered diet that quietly stops supporting recovery.',
+        ],
+      },
+      {
+        title: 'Why the microbiome finding matters more than the usual diet hand-waving',
+        paragraphs: [
+          'The authors found that higher DII scores were associated with reduced abundance of butyrate-producing gut bacteria. That matters because butyrate is not wellness-influencer fairy dust. It is one of the main fuels colon cells use, and it helps support barrier integrity and anti-inflammatory regulation in the gut.',
+          'So the diet signal here is not just “people who eat better are healthier,” which is too lazy to be useful. There is a plausible biologic bridge. More inflammatory dietary patterns may help starve the microbial ecosystem that supports a calmer mucosa, while a better-structured diet may help restore some of that terrain.',
+          'No, this does not prove causality down to the last bacterial strain. But it makes the finding more believable. The food pattern was not only associated with symptoms or relapse risk. It tracked with a microbiome profile that makes mechanistic sense in UC.',
+        ],
+        callout: 'If the diet pattern lines up with butyrate-producer depletion, this is not just vibes. There is biology under it.',
+      },
+      {
+        title: 'The intervention result: structured diet support beat generic advice',
+        paragraphs: [
+          'Here is the part clinicians should stop ignoring. The study did not merely observe that worse diets tracked with worse outcomes. It also tested a modified anti-inflammatory dietary intervention delivered through a diet management platform. Compared with general dietary advice, the intervention group had a greater fall in DII score, a median change of -1.31, and significantly lower odds of short-term adverse outcomes.',
+          'That is important because “eat healthier” is not an intervention. It is a shrug disguised as medical advice. This study suggests that structured, disease-specific dietary support may actually move behavior enough to matter. Patients usually do better with concrete guidance, tracking, and feedback than with one forgettable handout thrown at them during a rushed clinic visit.',
+          'The odds ratio for adverse outcomes in the intervention group was extremely low, which is encouraging but should be interpreted cautiously because the study was not huge and the confidence interval was wide. Still, the direction of effect is clear enough to take seriously: targeted diet support looked better than usual vague counseling.',
+        ],
+      },
+      {
+        title: 'What patients should actually do with this information',
+        paragraphs: [
+          'First, stop asking whether diet matters in UC like it is an all-or-nothing religious referendum. Of course it matters. The better question is how much, in whom, and in what pattern. This study says that a more inflammatory overall diet predicts worse short-term outcomes even in patients who are not in a full-blown disaster flare.',
+          'Second, stop trying to solve UC nutrition with random elimination rules pulled from TikTok, Reddit, or whichever wellness goblin yelled loudest this week. If your diet has become extremely narrow, low in vegetables you can tolerate, low in diversity, or nutritionally thin, that may be part of the problem rather than the solution. Work with a gastroenterologist and, ideally, an IBD-savvy dietitian to build something structured and realistic.',
+          'Third, do not turn this into “food caused my disease and food alone will fix it.” That would be stupid. Medication still matters. Objective monitoring still matters. Fecal calprotectin still matters. But if your overall diet pattern is highly inflammatory, this paper says you are probably making the colon’s job harder, not easier.',
+          'Bottom line: the new prospective data says a pro-inflammatory diet is not background noise in UC. It is associated with 5.82× higher odds of relapse or persistent activity, while a structured anti-inflammatory approach appears to improve short-term prognosis. That is worth acting on intelligently, not obsessing over neurotically. Bring it to your GI, ask about diet quality and personalized nutrition support, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the dietary inflammatory index, or DII?',
+        answer: 'It is a scoring system that estimates how pro-inflammatory or anti-inflammatory a person’s overall diet is based on dietary components and nutrient patterns. In this study, a higher DII score was associated with markedly worse short-term UC outcomes.',
+      },
+      {
+        question: 'Does this prove diet alone can control ulcerative colitis?',
+        answer: 'No. This study supports diet as an important modifier of short-term prognosis, not a replacement for medical therapy. UC still needs specialist care, medication planning, and objective monitoring. See a professional.',
+      },
+      {
+        question: 'What was the biggest practical finding for patients?',
+        answer: 'That a more inflammatory diet pattern was linked to 5.82× higher odds of relapse or persistent disease activity over 6 weeks, and that a structured UC-specific anti-inflammatory diet performed better than generic diet advice.',
+      },
+      {
+        question: 'Should I start cutting out lots of foods right now?',
+        answer: 'Probably not blindly. Extreme restriction can backfire and worsen diet quality. The smarter move is to discuss a structured, tolerable, anti-inflammatory eating pattern with your gastroenterologist and an IBD-informed dietitian. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Xu Y et al. Effects of diet, dietary inflammatory index, modified antiinflammatory dietary intervention via diet management platform on short-term prognosis in patients with ulcerative colitis: A prospective study. Nutrition. 2026. PMID: 41916183', href: 'https://pubmed.ncbi.nlm.nih.gov/41916183/' },
+      { label: 'Rehmat M et al. Anti-inflammatory diet meta-analysis in ulcerative colitis. Dig Dis Sci. 2026. PMID: 40797000', href: 'https://pubmed.ncbi.nlm.nih.gov/40797000/' },
+      { label: 'Kedia S et al. FMT plus anti-inflammatory diet in mild to moderate UC. Gut. 2022. PMID: 35973787', href: 'https://pubmed.ncbi.nlm.nih.gov/35973787/' },
+    ],
+    relatedSlugs: ['anti-inflammatory-diet-uc-meta-analysis-2026', 'fmt-anti-inflammatory-diet-uc-remission', 'mediterranean-diet-curcumin-uc-rct-2024'],
+  },
+
+  {
     slug: 'rdw-blood-test-uc-activity-2026',
     title: 'A Cheap CBC Clue May Flag Hidden UC Inflammation: New 1,000-Patient Study Puts RDW on the Map',
     description: 'A 2026 real-world cohort of 1,000 IBD patients found that a routine CBC marker, red cell distribution width (RDW), independently tracked objective disease activity. In ulcerative colitis, an RDW cutoff of 14.5% identified active disease with 78.9% sensitivity and 76.3% specificity, and adding RDW to CRP improved discrimination from AUC 0.845 to 0.880.',

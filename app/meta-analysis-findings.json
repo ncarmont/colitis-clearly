@@ -1,5 +1,10 @@
 [
   {
+    "stat": "5.82× higher",
+    "label": "odds of relapse or persistent disease activity with a more inflammatory diet in UC",
+    "source": "Xu Y et al. Nutrition. 2026 (PMID: 41916183) — prospective study of 108 UC patients; higher dietary inflammatory index scores predicted worse 6-week outcomes, while a structured UC-tailored anti-inflammatory diet improved diet quality and reduced short-term adverse outcomes"
+  },
+  {
     "stat": "14.5%",
     "label": "RDW cutoff that flagged objective active disease in a 1,000-patient real-world IBD cohort",
     "source": "Özden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114) — routine CBC red cell distribution width identified active disease with 78.9% sensitivity and 76.3% specificity; adding RDW to CRP improved AUC from 0.845 to 0.880"
