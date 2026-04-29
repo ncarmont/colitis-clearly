@@ -33,6 +33,93 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
   {
+    slug: 'octn1-genotype-anti-tnf-response-uc-2026',
+    title: 'This Gene May Predict Who Actually Stays on Anti-TNF in UC, and That Is a Bigger Deal Than It Sounds',
+    description: 'A 2026 exploratory ulcerative colitis study found that the OCTN1 503F genotype was associated with better 1-year steroid-free remission, endoscopic response, and treatment persistence on anti-TNF therapy. In 105 UC patients, machine-learning models reached AUC 0.60 to 0.72, suggesting genotype-guided biologic selection may be getting closer to reality.',
+    category: 'Biomarkers',
+    readTime: '8 min read',
+    datePublished: '2026-04-29',
+    intro: 'One of the stupidest parts of ulcerative colitis treatment is that patients often get advanced therapy by trial, error, delay, and vibes. Anti-TNF drugs can be life-changing, but they can also burn months while the colon keeps bleeding and everyone pretends “we need to give it time” is a strategy. This new 2026 exploratory study asks a much smarter question: what if part of the answer is written in the patient’s genes before the first dose is even given? In 105 UC patients starting anti-TNF therapy, the OCTN1 503F genotype was associated with better 1-year steroid-free remission, better endoscopic response, and better treatment persistence. The prediction models were only moderately accurate, with AUC 0.60 to 0.72, so no, this is not a magic crystal ball. But it is a real signal that precision medicine in UC may finally be dragging itself out of the brochure stage. See a professional.',
+    keyPoints: [
+      'This was an exploratory pharmacogenetic study of 105 ulcerative colitis patients starting anti-TNF therapy, paired with lab work showing how OCTN1 variants change innate immune signaling.',
+      'The OCTN1 503F genotype was associated with higher 1-year steroid-free remission, endoscopic response, and treatment persistence on anti-TNF therapy.',
+      'In cell and monocyte experiments, the 503F variant amplified IL-1β release after bacterial stimulation, giving the clinical signal a biologic mechanism instead of pure statistical hand-waving.',
+      'Machine-learning models showed moderate predictive performance, with AUC 0.60 to 0.72, meaning this is promising but not ready to replace clinical judgment.',
+      'Bottom line: UC treatment still is not personalized enough, but this paper suggests a future where some patients may be matched to anti-TNF therapy more intelligently before losing months on guesswork.',
+      'This is not a direct-to-consumer test recommendation yet. It is an early but credible precision-medicine signal that deserves follow-up in larger prospective cohorts. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to actual patients',
+        paragraphs: [
+          'Most ulcerative colitis drug decisions still happen with embarrassing imprecision. A patient flares, the GI picks a mechanism based on disease severity, prior exposure, insurance nonsense, and educated instinct, then everyone waits to see if the bowel cooperates. Sometimes it does. Sometimes months disappear while symptoms, steroids, calprotectin, and anxiety all keep climbing. That is not precision medicine. That is expensive improvisation.',
+          'This paper matters because it tries to move the field one step away from that mess. The authors looked at OCTN1, a transporter linked to innate immune activation, and asked whether a common missense variant called 503F might help explain why some UC patients do better on anti-TNF therapy than others. That is a clinically useful question. Patients do not care about gene acronyms for their own sake. They care because every failed biologic costs time, mucosa, money, and trust.',
+        ],
+        callout: 'If a gene can tell you who is more likely to actually stay in remission on anti-TNF, that matters far more than another generic “drug works” headline.',
+      },
+      {
+        title: 'What the researchers actually found',
+        paragraphs: [
+          'The study enrolled 105 ulcerative colitis patients who were starting anti-TNF treatment and tracked the outcomes that patients and clinicians both care about: steroid-free clinical remission, endoscopic response, and whether people could actually stay on therapy over a year. The headline result was that the homozygous 503F OCTN1 genotype was associated with better outcomes across all three of those domains, with heterozygous carriers landing in the middle.',
+          'That pattern is important. It suggests this was not just one random endpoint twitching positive while everything else stayed flat. The signal moved in the same direction across remission, scope response, and persistence. That does not prove the genotype is destiny. It does make the finding harder to dismiss as noise.',
+          'The machine-learning part matters too, but keep your brain switched on. The models showed only moderate predictive performance, with area under the curve ranging from 0.60 to 0.72. In plain English, that is promising, not decisive. Good enough to say “pay attention.” Nowhere near good enough to say “this test alone should drive treatment.”',
+        ],
+        callout: 'AUC 0.72 is not prophecy. It is an early, usable signal that the biology may help with treatment matching.',
+      },
+      {
+        title: 'Why the biology makes this more believable',
+        paragraphs: [
+          'A lot of biomarker papers are intellectually annoying because they jump straight from association to implication without showing you the biology underneath. This one did more work than that. The authors used engineered THP-1 cells and primary monocytes to show that OCTN1 deficiency reduced IL-1β secretion, while the 503F variant increased cytokine release after bacterial stimulation.',
+          'That matters because it creates a mechanistic bridge between genotype and treatment response. If the 503F variant pushes innate immune activation harder, it may define a subtype of inflammation that is especially relevant to how anti-TNF therapy performs in that patient. That does not prove the whole pathway map. But it is much more convincing than a naked association sitting in a spreadsheet by itself.',
+          'Put differently, the paper is saying this may not just be a lucky genetic tag. It may reflect a real inflammatory wiring difference in the people whose colons respond better to TNF blockade.',
+        ],
+        callout: 'The best biomarker papers do not just say “we found a pattern.” They show why the pattern might exist. This one actually tried.',
+      },
+      {
+        title: 'What this does and does not change right now',
+        paragraphs: [
+          'Right now, this does not mean every ulcerative colitis patient should run out and buy genetic testing before starting infliximab, adalimumab, or golimumab. The cohort was only 105 patients. The study was exploratory. The prediction accuracy was moderate, not dominant. And the authors themselves say the findings need confirmation in larger prospective multicenter cohorts.',
+          'But do not make the opposite mistake and shrug this off as irrelevant. The current biologic-selection process in UC is still far too blunt. If a genotype can reliably enrich for patients more likely to hit steroid-free remission and persist on therapy, even as one component of a broader decision model, that would be a real upgrade over today’s approach. Precision medicine does not arrive all at once. It usually arrives like this, one credible but imperfect step at a time.',
+          'So the smart takeaway is not “this changes practice tomorrow.” The smart takeaway is “this is the kind of biomarker signal that could genuinely matter if it holds up.”',
+        ],
+      },
+      {
+        title: 'What patients should do with this information',
+        paragraphs: [
+          'If you are about to start an anti-TNF or you already failed one, this paper gives you a better class of question to ask your gastroenterologist. Ask whether your team uses any biomarkers, therapeutic drug monitoring, or emerging pharmacogenetic tools to personalize biologic choice, or whether the decision is still mostly based on disease pattern and sequence. That is a fair question, because the field is clearly trying to move beyond guesswork.',
+          'If you are already doing well on an anti-TNF, do not turn this into retroactive over-analysis. The point is not that genes matter more than outcomes. The point is that future patients may be matched more intelligently before they lose time. And if you are not doing well, do not read this as proof that the “wrong gene” doomed you. UC treatment response is still multifactorial, involving disease severity, immune pathway mix, drug exposure, antibodies, adherence, and plain bad luck.',
+          'Bottom line: this study suggests OCTN1 genotyping may eventually help identify UC patients more likely to do well on anti-TNF therapy, with better steroid-free remission, endoscopic response, and persistence over 1 year. It is not ready to run the show yet. But unlike a lot of biomarker fluff, this one comes with real mechanistic support and clinically relevant endpoints. Bring it to your GI if you want to discuss the future of personalized biologic selection, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is OCTN1 in plain English?',
+        answer: 'OCTN1 is a transporter protein encoded by the SLC22A4 gene. In this study, a common variant called 503F appeared to change innate immune behavior and was associated with better anti-TNF outcomes in ulcerative colitis.',
+      },
+      {
+        question: 'Does this mean a gene test can now tell me which biologic will work?',
+        answer: 'Not yet. This was an exploratory study with moderate predictive performance, not a practice-changing definitive test. It is a promising signal, not a finished precision-medicine tool. See a professional.',
+      },
+      {
+        question: 'What outcome was most important in the study?',
+        answer: 'The clinically meaningful pattern was that the OCTN1 503F genotype tracked with better steroid-free remission, better endoscopic response, and better one-year therapy persistence on anti-TNF treatment.',
+      },
+      {
+        question: 'Should patients ask about this now?',
+        answer: 'Yes, but intelligently. Ask your gastroenterologist how they personalize biologic choice and whether emerging pharmacogenetic tools are on the horizon. Do not treat this paper as a reason to self-order random tests or override specialist care. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Puca P, Masi L, Parello S, Poscia A, Tudor AM, Capobianco I, Pane C, Fidaleo M, Del Chierico F, Palucci I, Laterza L, Napolitano D, Putignani L, Papa A, Lopetuso LR, Petito V, Damiani A, Pani G, Scaldaferri F. OCTN1 variants shape innate immunity and predict individual response to anti-TNFα in ulcerative colitis patients: An exploratory study. Inflamm Bowel Dis. 2026 Apr 28. PMID: 42048252', href: 'https://pubmed.ncbi.nlm.nih.gov/42048252/' },
+      { label: 'Lukas M et al. Efficacy and health-related quality of life associated with second-line vedolizumab after first-line treatment with one anti-TNF in patients with ulcerative colitis: a meta-analysis of the GEMINI-1 and VISIBLE-1 trials. Ther Adv Gastroenterol. 2026. PMID: 41883697', href: 'https://pubmed.ncbi.nlm.nih.gov/41883697/' },
+      { label: 'Özden Y. Red Cell Distribution Width as an Independent Marker of Objective Disease Activity in Ulcerative Colitis and Crohn\'s Disease: A Large Real-World Cohort of 1000 Patients. Turk J Gastroenterol. 2026 Apr 8. PMID: 42027114', href: 'https://pubmed.ncbi.nlm.nih.gov/42027114/' },
+    ],
+    relatedSlugs: ['vedolizumab-second-line-anti-tnf-meta-analysis-2026', 'rdw-blood-test-uc-activity-2026', 'biologics-for-uc-compared'],
+  },
+
+
+  {
     slug: 'anti-inflammatory-diet-dii-uc-prospective-study-2026',
     title: 'A Pro-Inflammatory Diet Raised Short-Term UC Flare Odds 5.82×, and a Structured Anti-Inflammatory Plan Pushed the Risk Back Down',
     description: 'A 2026 prospective study of 108 ulcerative colitis patients found that higher dietary inflammatory index scores were linked to 5.82× higher odds of relapse or persistent disease activity over 6 weeks. A UC-tailored anti-inflammatory diet delivered through a digital platform improved diet quality, increased butyrate-friendly intake patterns, and significantly reduced short-term adverse outcomes versus general dietary advice.',

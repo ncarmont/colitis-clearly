@@ -1,5 +1,13 @@
-
 [
+  {
+    "slug": "octn1-genotype-anti-tnf-response-uc-2026",
+    "href": "/blog/octn1-genotype-anti-tnf-response-uc-2026",
+    "title": "This gene may predict who actually stays on anti-TNF in UC: new OCTN1 precision-medicine study",
+    "paper": "Puca P et al. Inflamm Bowel Dis. 2026 Apr 28 (PMID: 42048252)",
+    "finding": "In an exploratory study of 105 ulcerative colitis patients starting anti-TNF therapy, the OCTN1 503F genotype tracked with better 1-year steroid-free remission, endoscopic response, and treatment persistence. Machine-learning models showed moderate predictive performance (AUC 0.60-0.72), suggesting UC may be moving one step closer to genotype-guided biologic selection instead of guesswork.",
+    "category": "Biomarkers",
+    "date": "2026-04-29"
+  },
   {
     "slug": "anti-inflammatory-diet-dii-uc-prospective-study-2026",
     "href": "/blog/anti-inflammatory-diet-dii-uc-prospective-study-2026",

@@ -1,5 +1,10 @@
 [
   {
+    "stat": "AUC 0.72",
+    "label": "best machine-learning performance for predicting 1-year anti-TNF success in UC when OCTN1 genotype was included",
+    "source": "Puca P et al. Inflamm Bowel Dis. 2026 Apr 28 (PMID: 42048252) — exploratory pharmacogenetic study of 105 UC patients; the OCTN1 503F genotype was associated with better steroid-free remission, endoscopic response, and therapy persistence"
+  },
+  {
     "stat": "5.82× higher",
     "label": "odds of relapse or persistent disease activity with a more inflammatory diet in UC",
     "source": "Xu Y et al. Nutrition. 2026 (PMID: 41916183) — prospective study of 108 UC patients; higher dietary inflammatory index scores predicted worse 6-week outcomes, while a structured UC-tailored anti-inflammatory diet improved diet quality and reduced short-term adverse outcomes"
