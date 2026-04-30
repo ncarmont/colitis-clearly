@@ -1,5 +1,10 @@
 [
   {
+    "stat": "HR 0.97",
+    "label": "IBD-related hospitalization risk with prescription NSAID exposure in ulcerative colitis, showing no significant increase",
+    "source": "Mayer AS et al. Arthritis Care Res (Hoboken). 2026 Apr 20 (PMID: 42007777) — large administrative claims cohort of 348,095 adults with IBD; UC met non-inferiority with no significant increase in hospitalization risk, unlike Crohn's disease"
+  },
+  {
     "stat": "AUC 0.72",
     "label": "best machine-learning performance for predicting 1-year anti-TNF success in UC when OCTN1 genotype was included",
     "source": "Puca P et al. Inflamm Bowel Dis. 2026 Apr 28 (PMID: 42048252) — exploratory pharmacogenetic study of 105 UC patients; the OCTN1 503F genotype was associated with better steroid-free remission, endoscopic response, and therapy persistence"

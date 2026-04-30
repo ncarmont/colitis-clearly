@@ -33,6 +33,92 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
   {
+    slug: 'nsaids-uc-hospitalization-safety-2026',
+    title: 'You Were Probably Told NSAIDs Always Trigger UC Flares. This 348,095-Patient Study Says That Rule Is Too Dumb',
+    description: 'A 2026 large administrative claims cohort found that prescription NSAID exposure was not associated with a significantly increased risk of IBD-related hospitalization in ulcerative colitis, with HR 0.97. The finding challenges the blanket rule that all NSAID use is automatically unsafe in UC, although specialist-guided caution still matters.',
+    category: 'Lifestyle',
+    readTime: '8 min read',
+    datePublished: '2026-04-30',
+    intro: 'Ulcerative colitis patients keep hearing the same simplistic warning: never take NSAIDs, ever, because they will make your bowel explode. That advice is tidy, memorable, and often way too blunt for real life. This new 2026 claims-based cohort looked at 348,095 adults with inflammatory bowel disease and found that in ulcerative colitis specifically, prescription NSAID exposure was not associated with a significantly increased risk of IBD-related hospitalization. The hazard ratio was 0.97, with a 95% confidence interval of 0.93 to 1.02. Translation: the old blanket rule may be too stupidly rigid for every UC patient, especially those with serious musculoskeletal pain. This does not mean NSAIDs are magically harmless. It means the conversation should probably become more adult and less superstitious. See a professional.',
+    keyPoints: [
+      'This was a large retrospective administrative claims cohort including 348,095 adults with inflammatory bowel disease, not a tiny anecdotal series.',
+      'Among patients with ulcerative colitis, prescription NSAID exposure was not associated with a significantly increased risk of IBD-related hospitalization, with HR 0.97 (95% CI 0.93-1.02).',
+      'The study met its prespecified non-inferiority threshold for ulcerative colitis, which matters because the authors were explicitly testing whether the risk stayed acceptably close to unexposed patients.',
+      'The same reassurance did not cleanly extend to Crohn\'s disease, where non-inferiority was not established, so this is not an all-IBD free pass.',
+      'This paper does not prove every UC patient should casually use ibuprofen or naproxen. It does suggest that blanket fear of all prescription NSAID use in UC may be too simplistic.',
+      'Bottom line: for select ulcerative colitis patients with significant pain issues, the real question may be careful individualized use, not automatic prohibition. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to real patients',
+        paragraphs: [
+          'A lot of ulcerative colitis advice survives because it is easy to repeat, not because it is nuanced or especially accurate. The NSAID warning is a perfect example. Patients get told to avoid ibuprofen, naproxen, and similar drugs because they might trigger disease worsening. Then real life happens. Someone has joint pain, migraines, dental pain, period pain, or some other problem where acetaminophen does not do enough, and suddenly the patient is stuck between pain and dogma.',
+          'That is why this paper matters. It asks a practical question instead of reciting a ritual: when adults with IBD actually receive prescription NSAIDs in the real world, do they land in the hospital more often? In ulcerative colitis, the answer from this very large cohort was basically no significant increase. That is not the same as saying zero risk. It is much more useful than the usual cartoon version of the story.',
+        ],
+        callout: 'The old rule was simple: NSAIDs bad. The new data says the UC version of that rule may have been too lazy.',
+      },
+      {
+        title: 'The screenshot number: HR 0.97 in ulcerative colitis',
+        paragraphs: [
+          'Here is the headline number patients can actually use. In ulcerative colitis, prescription NSAID exposure carried a hazard ratio of 0.97 for IBD-related hospitalization, with a 95% confidence interval of 0.93 to 1.02. In plain English, that means hospitalization risk did not significantly increase in the exposed UC group compared with matched unexposed patients.',
+          'That matters because the study was huge. This was not a little single-center note with 80 patients and a shrug. It included 348,095 adults with IBD overall, with nearly a quarter exposed to prescription NSAIDs. When a dataset that large fails to show a meaningful hospitalization penalty in UC, the usual absolute prohibition starts looking less evidence-based and more like inherited clinical folklore.',
+          'The authors also used a prespecified non-inferiority margin of 1.2. UC met that bar. So this was not just “we did not detect disaster.” It was a formal test of whether the hospitalization risk stayed within an acceptable range, and ulcerative colitis passed.',
+        ],
+        callout: 'HR 0.97 is not just “probably fine.” It is a direct challenge to the reflexive idea that prescription NSAIDs automatically send UC patients toward hospitalization.',
+      },
+      {
+        title: 'Why the Crohn\'s disease contrast matters',
+        paragraphs: [
+          'The smartest part of the paper is that it did not flatten all inflammatory bowel disease into one blob. In Crohn\'s disease, non-inferiority was not established, and the hazard ratio moved the wrong way at 1.16. That difference matters because it tells you the reassuring signal may be more UC-specific than many clinicians assume.',
+          'This is exactly why patients should stop accepting lazy advice that treats all IBD as interchangeable. Ulcerative colitis is not Crohn\'s disease wearing different clothes. The tissue pattern, depth of inflammation, and complication profile differ. So it is entirely plausible that drug-risk patterns differ too.',
+          'In other words, this paper is not saying NSAIDs are universally safe in “IBD.” It is saying the ulcerative colitis subgroup looked much less fragile under prescription NSAID exposure than the old warning culture suggests.',
+        ],
+      },
+      {
+        title: 'What this study does and does not prove',
+        paragraphs: [
+          'Keep your brain on. This was an administrative claims study, not a randomized trial where patients were assigned to ibuprofen versus avoidance. Claims databases are useful for size and real-world behavior, but they are also messy. They cannot perfectly capture why a patient needed the NSAID, how consistently they took it, whether they also used over-the-counter NSAIDs, or what their objective inflammatory status looked like at the time.',
+          'The outcome was IBD-related hospitalization, which is important but not the whole story. A patient can have worsening symptoms, rising calprotectin, or a medication adjustment without being admitted. So this paper is best understood as reassurance against the most dramatic feared outcome, not proof that NSAIDs are invisible to the bowel.',
+          'It also studied prescription NSAIDs, not every casual over-the-counter use pattern. That nuance matters because prescription exposure is at least more visible to the healthcare system and may come with more structured follow-up than random self-medication.',
+        ],
+        callout: 'This paper weakens the blanket ban. It does not create a license for reckless self-treatment.',
+      },
+      {
+        title: 'What patients should actually do with this information',
+        paragraphs: [
+          'If you have ulcerative colitis and also deal with significant arthritis, back pain, menstrual pain, headaches, or other inflammatory pain problems, this paper gives you a much better question to ask your gastroenterologist: is selective, time-limited NSAID use reasonable for me, and what would we monitor if we try it? That is a grown-up clinical conversation. Much better than silently suffering or secretly taking the drug and hoping nobody notices.',
+          'If your disease is unstable, your calprotectin is rising, you are bleeding, or you recently needed steroids or hospitalization, obviously the risk tolerance changes. A bowel already behaving badly is not the time for improvisation. And if you have Crohn\'s disease instead of UC, this paper is a lot less reassuring. That distinction matters.',
+          'Bottom line: the best new evidence suggests prescription NSAID use may not meaningfully increase hospitalization risk in ulcerative colitis, with HR 0.97 in a massive real-world cohort. That does not make NSAIDs harmless, and it definitely does not make specialist input optional. It does make the old absolute rule look too crude. Bring the paper to your GI, talk through your pain needs and flare history, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does this mean UC patients can safely take ibuprofen whenever they want?',
+        answer: 'No. This study suggests prescription NSAID exposure was not associated with a significantly increased risk of IBD-related hospitalization in ulcerative colitis, but that is not the same as saying there is zero risk in every situation. Decisions should still be individualized with your gastroenterologist. See a professional.',
+      },
+      {
+        question: 'What was the main result for ulcerative colitis?',
+        answer: 'The main UC result was a hazard ratio of 0.97 for IBD-related hospitalization with prescription NSAID exposure, with a 95% confidence interval of 0.93 to 1.02. In other words, the study did not find a significant hospitalization penalty in UC.',
+      },
+      {
+        question: 'Did the same reassurance apply to Crohn\'s disease?',
+        answer: 'Not really. The Crohn\'s subgroup did not meet non-inferiority, with a hazard ratio of 1.16. So this paper is much more reassuring for ulcerative colitis than for Crohn\'s disease.',
+      },
+      {
+        question: 'What is the biggest limitation of this study?',
+        answer: 'It was a retrospective claims-based cohort, not a randomized trial. That means it is strong for scale and real-world outcomes, but weaker for proving causality and for capturing detailed disease activity, over-the-counter use, and symptom-level changes. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Mayer AS, Xiao R, Bewtra M, George MD, Weiss PF. Safety of Prescription Nonsteroidal Anti-inflammatory Drugs in Adults with Inflammatory Bowel Disease: Data from a Large Administrative Claims Cohort. Arthritis Care Res (Hoboken). 2026 Apr 20. PMID: 42007777', href: 'https://pubmed.ncbi.nlm.nih.gov/42007777/' },
+      { label: 'Lamb CA et al. British Society of Gastroenterology consensus guidelines on the management of inflammatory bowel disease in adults. Gut. 2019. PMID: 31562236', href: 'https://pubmed.ncbi.nlm.nih.gov/31562236/' },
+      { label: 'Raine T et al. PREdiCCt: Faecal calprotectin predicts flare in inflammatory bowel disease. Gut. 2025. PMID: 41554630', href: 'https://pubmed.ncbi.nlm.nih.gov/41554630/' },
+    ],
+    relatedSlugs: ['uc-flare-management', 'understanding-ulcerative-colitis', 'rdw-blood-test-uc-activity-2026'],
+  },
+
+  {
     slug: 'octn1-genotype-anti-tnf-response-uc-2026',
     title: 'This Gene May Predict Who Actually Stays on Anti-TNF in UC, and That Is a Bigger Deal Than It Sounds',
     description: 'A 2026 exploratory ulcerative colitis study found that the OCTN1 503F genotype was associated with better 1-year steroid-free remission, endoscopic response, and treatment persistence on anti-TNF therapy. In 105 UC patients, machine-learning models reached AUC 0.60 to 0.72, suggesting genotype-guided biologic selection may be getting closer to reality.',
