@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const evidencePills = [
   { value: '98%',  label: 'stayed on vedolizumab after switching to home injections', tone: 'good', cite: 'JGH Open 2026, PMID 42027776', href: 'https://pubmed.ncbi.nlm.nih.gov/42027776/' },
-  { value: '74%',  label: 'respond to upadacitinib',        tone: 'good', cite: 'U-ACHIEVE, NEJM 2023',  href: 'https://pubmed.ncbi.nlm.nih.gov/35644562/' },
+  { value: '85.7%',  label: 'steroid-free remission at 1 year, refractory UC on upadacitinib', tone: 'good', cite: 'Real-world cohort, PMID 41913733',  href: 'https://pubmed.ncbi.nlm.nih.gov/41913733/' },
   { value: '2.03×', label: 'higher relapse risk if rectal mesalamine is stopped', tone: 'bad', cite: 'Meta-analysis, PMID 41338243', href: 'https://pubmed.ncbi.nlm.nih.gov/41338243/' },
   { value: '2.39×', label: 'more remissions, FMT via colonoscopy + enemas', tone: 'good', cite: '16 RCTs, PMID 41945234', href: 'https://pubmed.ncbi.nlm.nih.gov/41945234/' },
   { value: '95%',  label: 'J-pouch long-term success',      tone: 'good', cite: 'IPAA outcome studies',   href: 'https://pubmed.ncbi.nlm.nih.gov/19169164/' },

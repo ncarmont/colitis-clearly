@@ -33,6 +33,93 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
   {
+    slug: 'upadacitinib-real-world-refractory-uc-2026',
+    title: 'Refractory UC Did Not Look Hopeless on Upadacitinib. This Real-World 2026 Study Hit 85.7% Steroid-Free Remission at 1 Year',
+    description: 'A 2026 multicenter real-world cohort found that refractory ulcerative colitis patients treated with upadacitinib achieved 67.9% steroid-free clinical remission during induction and 85.7% steroid-free clinical remission at 12 months, with 78.6% endoscopic remission. The signal is from a small cohort, but for patients burning through options it is still a serious headline.',
+    category: 'Small Molecules',
+    readTime: '8 min read',
+    datePublished: '2026-05-01',
+    intro: 'Ulcerative colitis gets especially ugly once the word refractory enters the conversation. That usually means the patient has already spent months or years cycling through failure, partial response, steroid dependence, and the kind of fake optimism that disappears the moment blood comes back. So when a real-world 2026 study reports 85.7% steroid-free clinical remission at 12 months with upadacitinib in refractory UC, patients are going to stare at that number for a reason. During induction, steroid-free clinical remission was already 67.9%, with 46.4% endoscopic remission. By 12 months, endoscopic remission reached 78.6%. This was not a giant randomized trial, so keep your brain switched on. But for patients who feel like the treatment runway is shrinking, this is exactly the kind of paper worth screenshotting and discussing with an IBD specialist. See a professional.',
+    keyPoints: [
+      'This was a multicenter real-world retrospective cohort, not another idealized registration trial, and it specifically looked at refractory inflammatory bowel disease patients treated in ordinary tertiary-care practice.',
+      'In the ulcerative colitis subgroup, steroid-free clinical remission reached 67.9% during induction and 85.7% at 12 months.',
+      'Endoscopic remission in ulcerative colitis was 46.4% during induction and 78.6% at 12 months, which matters because scopes lie much less than symptom diaries.',
+      'The UC subgroup was small, only 28 patients, so these results are exciting but not the final word on where upadacitinib belongs in every treatment sequence.',
+      'Adverse events occurred, but the overall safety profile in this cohort remained acceptable, with acne the most commonly reported event and UC discontinuation over 12 months at 21.5%.',
+      'Bottom line: if you have refractory UC and feel like the drug options are running out, this study says upadacitinib may still deliver a very real rescue signal. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters to actual UC patients',
+        paragraphs: [
+          'A lot of ulcerative colitis content becomes less useful exactly when the disease becomes more serious. Mild disease gets handouts. Moderate disease gets guideline summaries. Refractory disease gets a blur of mechanism names, insurance nonsense, and people pretending the next failure is just another routine adjustment. Patients know better. Once you are refractory, every failed drug feels like the walls moving in.',
+          'That is why this paper matters. It did not study easy first-line patients. It looked at difficult real-world inflammatory bowel disease cases in three tertiary hospitals, including a UC subgroup that had already become hard to control. In that setting, a steroid-free remission rate of 85.7% at 12 months is not just another abstract number. It is the kind of result that makes patients think maybe the colon is not out of road yet.',
+        ],
+        callout: 'If a refractory UC cohort still hits 85.7% steroid-free remission at 1 year, that is not background noise. That is a real signal.',
+      },
+      {
+        title: 'The screenshot number: 85.7% steroid-free remission at 12 months',
+        paragraphs: [
+          'Here is the headline patients will care about immediately. In the ulcerative colitis subgroup, steroid-free clinical remission was 67.9% during induction and climbed to 85.7% during the 12-month maintenance phase. That is a huge number, especially in refractory disease where expectations are usually much uglier.',
+          'Now, do not get stupid with it. This does not mean 85.7% is the universal upadacitinib truth for every UC patient everywhere. The subgroup was small. Real-world cohorts can be influenced by selection effects, follow-up patterns, and who actually stays on therapy long enough to be measured. But even after saying all of that, the signal is still strong enough to matter. Small studies can be noisy. They do not usually fake numbers this impressive across both symptoms and endoscopy for no reason.',
+          'This is also a much more emotionally relevant outcome than some polished “response” headline. Steroid-free remission is what patients actually want. Prednisone is not victory. It is borrowed stability with a bill attached.',
+        ],
+        callout: '85.7% steroid-free remission means the drug was not just muting symptoms. It was doing it without leaning on steroids.',
+      },
+      {
+        title: 'The quieter number may be just as important: 78.6% endoscopic remission',
+        paragraphs: [
+          'Symptoms are useful, but they are not trustworthy enough to run the whole show in ulcerative colitis. People can feel better while the mucosa still looks angry. That is why the endoscopic numbers here matter so much. In the UC subgroup, endoscopic remission was 46.4% during induction and 78.6% at 12 months.',
+          'That makes this paper harder to dismiss as a symptom-only mirage. If both steroid-free remission and scope healing are moving in the same direction, you are looking at a more believable treatment signal. The bowel itself appears to be calming down, not just the patient report form.',
+          'For refractory disease, that matters enormously. Patients who already failed other advanced therapies do not just need fewer bathroom trips. They need objective evidence that the colon is no longer marching toward another hospitalization, another steroid burst, or another surgery discussion.',
+        ],
+        callout: '78.6% endoscopic remission is the part that tells you this was not just a placebo-quality mood improvement.',
+      },
+      {
+        title: 'What this study does and does not prove',
+        paragraphs: [
+          'This was a retrospective multicenter cohort from Asia, not a giant randomized head-to-head trial against mirikizumab, ustekinumab, vedolizumab, or etrasimod. The UC sample was only 28 patients. That means you should treat these numbers as encouraging, not as holy scripture. Anyone who pretends otherwise is overselling the paper.',
+          'It also means you should be careful with ranking arguments. A small refractory cohort with spectacular results does not automatically erase larger phase 3 datasets from other therapies. What it does do is strengthen the case that upadacitinib deserves very serious attention when UC has already become difficult to control, especially if speed and depth of response matter.',
+          'Safety still matters too. The study reported adverse events, with acne the most common, and the UC discontinuation rate over 12 months was 21.5%. So no, this is not a harmless vitamin in tablet form. It is a potent JAK1 inhibitor that needs specialist oversight, infection screening, and real monitoring. See a professional.',
+        ],
+        callout: 'Promising does not mean proven forever. But this is much stronger than wishful thinking.',
+      },
+      {
+        title: 'What patients should actually do with this information',
+        paragraphs: [
+          'If you have refractory UC and are weighing advanced therapy options, this paper gives you a better question than “Is upadacitinib good?” Ask instead: given my prior failures, severity, urgency, and safety profile, is upadacitinib a strong rescue option for me, and how fast would you expect objective improvement? That is a serious conversation. Much better than doom-scrolling forum horror stories.',
+          'If you are already on upadacitinib and improving, this paper is reassuring because it suggests the signal can deepen over time rather than fade immediately. If you are not improving, do not use this study to deny reality. Refractory UC still needs biomarkers, calprotectin, labs, and sometimes endoscopy to show whether the bowel is actually settling down.',
+          'Bottom line: this 2026 real-world cohort says upadacitinib may be one of the strongest practical rescue signals we have seen recently in refractory UC, with 67.9% steroid-free remission during induction and 85.7% at 12 months, plus 78.6% endoscopic remission. The study is small, so do not worship it. But do not ignore it either. Bring it to your gastroenterologist, compare it honestly with your other advanced options, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Does this mean upadacitinib is definitely the best drug for refractory UC?',
+        answer: 'No. This was a small real-world cohort, not a definitive head-to-head trial against every other advanced therapy. It does show a very strong practical signal that upadacitinib deserves serious consideration in refractory UC. See a professional.',
+      },
+      {
+        question: 'What was the main result in the ulcerative colitis subgroup?',
+        answer: 'Steroid-free clinical remission reached 67.9% during induction and 85.7% at 12 months. Endoscopic remission was 46.4% during induction and 78.6% at 12 months.',
+      },
+      {
+        question: 'Why is steroid-free remission more meaningful than just response?',
+        answer: 'Because patients want real disease control without depending on corticosteroids. Steroids can temporarily suppress symptoms, but they come with major side effects and do not represent durable long-term success.',
+      },
+      {
+        question: 'What is the biggest limitation of this study?',
+        answer: 'The ulcerative colitis subgroup was small, only 28 patients, and the design was retrospective rather than randomized. That means the results are encouraging and clinically useful, but not the final word. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Mao Y, Hu Y, Sun S, Chen Y, Lyu W, Lv B, Fan Y. Efficacy and Safety of Upadacitinib for Refractory Inflammatory Bowel Disease: A Multicenter Real-World Observational Study. Drug Des Devel Ther. 2026 Mar 25;20:585709. PMID: 41913733', href: 'https://pubmed.ncbi.nlm.nih.gov/41913733/' },
+      { label: 'Danese S et al. Upadacitinib as induction and maintenance therapy for moderately to severely active ulcerative colitis. N Engl J Med. 2023. PMID: 35644562', href: 'https://pubmed.ncbi.nlm.nih.gov/35644562/' },
+      { label: 'AGA Clinical Practice Guideline on pharmacological management of moderate to severe ulcerative colitis. Gastroenterology. 2024.', href: 'https://www.gastrojournal.org/article/S0016-5085(24)00899-3/fulltext' },
+    ],
+    relatedSlugs: ['jak-inhibitors-uc', 'biologics-for-uc-compared', 'ustekinumab-real-world-one-year-remission-2026'],
+  },
+
+  {
     slug: 'nsaids-uc-hospitalization-safety-2026',
     title: 'You Were Probably Told NSAIDs Always Trigger UC Flares. This 348,095-Patient Study Says That Rule Is Too Dumb',
     description: 'A 2026 large administrative claims cohort found that prescription NSAID exposure was not associated with a significantly increased risk of IBD-related hospitalization in ulcerative colitis, with HR 0.97. The finding challenges the blanket rule that all NSAID use is automatically unsafe in UC, although specialist-guided caution still matters.',

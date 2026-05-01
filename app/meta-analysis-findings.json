@@ -1,5 +1,10 @@
 [
   {
+    "stat": "85.7%",
+    "label": "steroid-free clinical remission at 12 months with upadacitinib in refractory ulcerative colitis",
+    "source": "Mao Y et al. Drug Des Devel Ther. 2026 Mar 25 (PMID: 41913733) — multicenter real-world cohort of 28 UC patients within an 80-patient refractory IBD study; induction steroid-free remission was 67.9%, induction endoscopic remission 46.4%, and 12-month endoscopic remission 78.6%"
+  },
+  {
     "stat": "HR 0.97",
     "label": "IBD-related hospitalization risk with prescription NSAID exposure in ulcerative colitis, showing no significant increase",
     "source": "Mayer AS et al. Arthritis Care Res (Hoboken). 2026 Apr 20 (PMID: 42007777) — large administrative claims cohort of 348,095 adults with IBD; UC met non-inferiority with no significant increase in hospitalization risk, unlike Crohn's disease"
