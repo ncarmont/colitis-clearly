@@ -1,5 +1,14 @@
 [
   {
+    "slug": "guselkumab-week-92-quasar-uc-2026",
+    "href": "/blog/guselkumab-week-92-quasar-uc-2026",
+    "title": "Guselkumab held 71% to 74% remission through week 92 in UC, and nearly everyone still in remission was steroid-free",
+    "paper": "Sandborn WJ et al. Am J Gastroenterol. 2026 May 1 (PMID: 42065421)",
+    "finding": "In the QUASAR long-term extension, guselkumab maintained clinical remission through week 92 in 71% of patients on 100 mg every 8 weeks and 74% on 200 mg every 4 weeks using nonresponder imputation. Among patients with observed data, remission rates were 75% and 83%, nearly 100% of week-92 remitters were corticosteroid-free for at least 8 weeks, and 95% completed treatment through week 92.",
+    "category": "Biologics",
+    "date": "2026-05-02"
+  },
+  {
     "slug": "upadacitinib-real-world-refractory-uc-2026",
     "href": "/blog/upadacitinib-real-world-refractory-uc-2026",
     "title": "Refractory UC did not look hopeless on upadacitinib: 85.7% hit steroid-free remission at 12 months",
@@ -232,15 +241,6 @@
     "finding": "Therapeutic appendectomy + standard therapy reduced 12-month relapse to 33% vs >50% with standard therapy alone (RR 0.65). Earlier meta-analyses showed OR 0.31 for UC risk when appendectomy performed before age 20.",
     "category": "Surgery",
     "date": "2025-01-15"
-  },
-  {
-    "slug": "guselkumab-3-year-durability",
-    "href": "/research/clinical-trials",
-    "title": "Guselkumab (anti-IL-23): >80% sustained clinical remission at 3 years",
-    "paper": "QUASAR/ASTRO Extension. FDA approved Sept 2025",
-    "finding": "Guselkumab achieved 27.6% induction remission and >80% sustained remission at 3 years — the strongest durability signal among IL-23 inhibitors. Now FDA-approved for UC.",
-    "category": "Biologics",
-    "date": "2025-09-01"
   },
   {
     "slug": "2025-nma-upadacitinib-first",

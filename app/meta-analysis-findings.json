@@ -1,5 +1,10 @@
 [
   {
+    "stat": "74%",
+    "label": "clinical remission at week 92 with guselkumab 200 mg every 4 weeks in ulcerative colitis maintenance responders",
+    "source": "Sandborn WJ et al. Am J Gastroenterol. 2026 May 1 (PMID: 42065421) — QUASAR long-term extension; remission was 71% with 100 mg every 8 weeks and 74% with 200 mg every 4 weeks using nonresponder imputation, while nearly 100% of week-92 remitters were corticosteroid-free"
+  },
+  {
     "stat": "85.7%",
     "label": "steroid-free clinical remission at 12 months with upadacitinib in refractory ulcerative colitis",
     "source": "Mao Y et al. Drug Des Devel Ther. 2026 Mar 25 (PMID: 41913733) — multicenter real-world cohort of 28 UC patients within an 80-patient refractory IBD study; induction steroid-free remission was 67.9%, induction endoscopic remission 46.4%, and 12-month endoscopic remission 78.6%"
@@ -160,9 +165,9 @@
     "source": "VEGA trial"
   },
   {
-    "stat": ">80%",
-    "label": "sustained remission with guselkumab at 3 years",
-    "source": "QUASAR/ASTRO extension data"
+    "stat": "95%",
+    "label": "completed guselkumab treatment through week 92 without maintenance dose adjustment in the QUASAR long-term extension",
+    "source": "Sandborn WJ et al. Am J Gastroenterol. 2026 May 1 (PMID: 42065421) — among 303 participants who had not received a maintenance dose adjustment, 95% completed treatment through week 92"
   },
   {
     "stat": "32.8% vs 12.2%",

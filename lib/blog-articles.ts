@@ -33,6 +33,91 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
   {
+    slug: 'guselkumab-week-92-quasar-uc-2026',
+    title: 'Guselkumab Held 71% to 74% Remission Through Week 92 in UC. That Is the Kind of Durability Patients Actually Care About',
+    description: 'The QUASAR long-term extension reported that maintenance responders with ulcerative colitis stayed in clinical remission through week 92 at rates of 71% with guselkumab 100 mg every 8 weeks and 74% with 200 mg every 4 weeks by nonresponder imputation. Among those still evaluable at week 92, remission reached 75% and 83%, nearly every remitter was corticosteroid-free, and 95% completed treatment through week 92 without dose adjustment.',
+    category: 'Biologics',
+    readTime: '8 min read',
+    datePublished: '2026-05-02',
+    intro: 'Most ulcerative colitis drug headlines are annoyingly short-term. Week 8. Week 12. Maybe week 52 if you are lucky. That is useful, but it still leaves patients with the real question hanging in the air: fine, it worked early, but does it keep working once real life starts grinding on it? The new QUASAR long-term extension for guselkumab gives a much better answer. Through week 92, clinical remission held in 71% of patients on 100 mg every 8 weeks and 74% on 200 mg every 4 weeks using nonresponder imputation. Among patients with observed data at week 92, remission was 75% and 83%. Nearly 100% of patients still in remission at week 92 were corticosteroid-free for at least 8 weeks beforehand, and 95% completed treatment through week 92 without maintenance dose adjustment. Translation: this is not just a drug that can start strong. It may actually stay strong, which is the part scared patients care about most. See a professional.',
+    keyPoints: [
+      'This was long-term extension data from QUASAR, not another short induction snapshot, so it answers the durability question patients actually care about.',
+      'Clinical remission at week 92 was 71% with guselkumab 100 mg every 8 weeks and 74% with 200 mg every 4 weeks by nonresponder imputation.',
+      'Among patients with available week-92 data, remission was even higher at 75% and 83%, which tells you the durability signal was not flimsy.',
+      'Nearly 100% of patients in clinical remission at week 92 were corticosteroid-free for at least 8 weeks before that visit.',
+      'Among participants without maintenance dose adjustment, 95% completed treatment through week 92, which is a strong persistence signal in a disease where people quit drugs for all kinds of ugly reasons.',
+      'Bottom line: if you want an IL-23 biologic that looks built for the long haul, guselkumab just made a much louder case. See a professional.',
+    ],
+    sections: [
+      {
+        title: 'Why this paper matters more than another flashy week-12 result',
+        paragraphs: [
+          'Patients with ulcerative colitis do not just want to know whether a drug can produce a decent graph at three months. They want to know whether that same drug will still be saving their colon after birthdays, work stress, infections, delayed refills, and all the other nonsense that real life throws into chronic disease care.',
+          'That is why this paper is useful. It moves past the usual induction bragging and asks the adult question: after people respond and stay on guselkumab, how durable is the remission signal deep into maintenance? Through week 92, the answer was pretty hard to ignore. Seventy-one percent of patients on 100 mg every 8 weeks and 74% on 200 mg every 4 weeks remained in clinical remission by the stricter nonresponder imputation analysis. That is the kind of number patients screenshot because it sounds like life might stay livable, not just briefly improve.',
+        ],
+        callout: 'Short-term response is dating. Week-92 remission is marriage. Durability is what patients actually care about.',
+      },
+      {
+        title: 'The headline number: 74% remission at week 92',
+        paragraphs: [
+          'The cleanest headline from QUASAR LTE is this: at week 92, clinical remission was 71% with guselkumab 100 mg every 8 weeks and 74% with 200 mg every 4 weeks when counted with nonresponder imputation. That matters because nonresponder imputation is not a charity statistic. If a patient drops out or lacks evaluable data, they get counted against the drug. So the signal still looked strong even under a conservative lens.',
+          'The observed analysis looked even stronger, with week-92 remission of 75% and 83%. Do not be stupid and use the observed numbers alone as the whole truth, because patients who stay in long-term extension studies are often the ones doing better. But when both analyses point in the same direction, the core message becomes harder to dismiss: guselkumab appears capable of durable maintenance benefit in UC, not just a temporary honeymoon phase.',
+          'This also matters strategically inside the IL-23 class. Mirikizumab already had strong long-term credibility, and guselkumab already had the practical hook of fully subcutaneous induction from ASTRO. Now it also has a serious durability headline. That combination is clinically annoying for competitors, which is exactly why patients should pay attention.',
+        ],
+        callout: 'A remission number still holding in the low-to-mid 70s at week 92 is not random noise. That is durability.',
+      },
+      {
+        title: 'The steroid-free piece is the part that should make patients care',
+        paragraphs: [
+          'A lot of UC studies still let people feel better while quietly leaning on corticosteroids in the background. That is not the same as durable disease control. Prednisone is not remission. It is rented silence with side effects attached.',
+          'QUASAR LTE did something more meaningful. Nearly 100% of participants who were in clinical remission at week 92 had been corticosteroid-free for at least 8 weeks beforehand. That means the remission signal was not just propped up by steroids. For patients who have lived through moon face, insomnia, anxiety, acne, bone loss, and the whole steroid circus, this detail matters more than another generic response endpoint.',
+          'In practical terms, this is the difference between a drug merely suppressing symptoms and a drug potentially giving patients their life back without keeping them chemically taped together by steroids. That is a much more adult measure of success.',
+        ],
+        callout: 'If nearly every week-92 remitter is steroid-free, the drug is doing the work, not prednisone.',
+      },
+      {
+        title: 'Persistence matters because drugs do not help the patients who cannot stay on them',
+        paragraphs: [
+          'Efficacy numbers are nice, but persistence is where a lot of real-world UC therapy collapses. Side effects, loss of response, insurance friction, logistics, and plain old disappointment knock people off treatment all the time. So when 95% of participants without maintenance dose adjustment completed treatment through week 92, that is not a throwaway line. It means the therapy was sufficiently effective and tolerable for most people to actually remain on it.',
+          'That does not mean 95% of all UC patients on Earth will cruise through two years effortlessly. Long-term extension populations are selected. They already got through induction, then maintenance, and then kept going. So yes, this is a favorable subset. But that is also the clinically relevant subset for the question this study is asking: if guselkumab works for you, how often does it keep working and keep being livable? The answer looks reassuring.',
+        ],
+      },
+      {
+        title: 'What this changes, and what it does not',
+        paragraphs: [
+          'This paper does not prove guselkumab is automatically the best ulcerative colitis drug for every patient. It was not a head-to-head trial against upadacitinib, vedolizumab, mirikizumab, ustekinumab, or etrasimod. It also evaluated long-term outcomes in participants who had already responded well enough to remain in the maintenance program and then enter the extension. So you should not lazily compare week-92 extension remission against every week-52 registration number on the internet as if the populations were identical. That would be fake rigor.',
+          'What it does do is meaningfully strengthen the case for guselkumab as a long-haul IL-23 option. The earlier ASTRO result already told patients the drug could work without IV induction. QUASAR LTE now says that for maintenance responders, the benefit can stay durable, largely steroid-free, and operationally sustainable through week 92. That is real information a patient can use when choosing among advanced therapies.',
+          'Bottom line: guselkumab is becoming harder to dismiss as just another entrant in a crowded class. It now has practical convenience, serious phase 3 credibility, and a durable remission signal that scared UC patients will absolutely care about. Bring the paper to your gastroenterologist, ask how this compares with your other realistic options, and see a professional.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What was the main result from the QUASAR long-term extension?',
+        answer: 'Clinical remission at week 92 was 71% with guselkumab 100 mg every 8 weeks and 74% with 200 mg every 4 weeks by nonresponder imputation. In observed analysis, remission was 75% and 83%, and nearly 100% of week-92 remitters were corticosteroid-free for at least 8 weeks.',
+      },
+      {
+        question: 'Does this mean guselkumab is definitely better than mirikizumab or upadacitinib?',
+        answer: 'No. This was not a head-to-head trial, and the extension population was a selected group of maintenance responders. It does mean guselkumab now has a much stronger durability story than before. See a professional.',
+      },
+      {
+        question: 'Why is the steroid-free detail so important?',
+        answer: 'Because remission propped up by steroids is not the same as stable disease control. The fact that nearly all week-92 remitters were corticosteroid-free suggests the drug itself was carrying the result rather than prednisone masking the inflammation.',
+      },
+      {
+        question: 'What is the biggest limitation of this study?',
+        answer: 'It was a long-term extension of maintenance responders, not an all-comers head-to-head comparison across UC therapies. That means the results are very useful for durability but should not be used for lazy cross-trial ranking claims. See a professional.',
+      },
+    ],
+    references: [
+      { label: 'Sandborn WJ et al. Efficacy and Safety of Guselkumab for Ulcerative Colitis Through Week 92 of the QUASAR Long-Term Extension Study. Am J Gastroenterol. 2026 May 1. PMID: 42065421', href: 'https://pubmed.ncbi.nlm.nih.gov/42065421/' },
+      { label: 'Peyrin-Biroulet L et al. Efficacy and safety of subcutaneous guselkumab induction therapy in participants with moderately to severely active ulcerative colitis (ASTRO): a double-blind, treat-through, randomised, placebo-controlled, phase 3 trial. Lancet Gastroenterol Hepatol. 2026. PMID: 41544637', href: 'https://pubmed.ncbi.nlm.nih.gov/41544637/' },
+      { label: 'Amin HM et al. IL-23 inhibitors meta-analysis in ulcerative colitis. Int J Colorectal Dis. 2025. PMID: 41467943', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },
+    ],
+    relatedSlugs: ['guselkumab-subcutaneous-induction-astro-2026', 'il-23-biologics-meta-analysis-uc-2025', 'biologics-for-uc-compared'],
+  },
+
+  {
     slug: 'upadacitinib-real-world-refractory-uc-2026',
     title: 'Refractory UC Did Not Look Hopeless on Upadacitinib. This Real-World 2026 Study Hit 85.7% Steroid-Free Remission at 1 Year',
     description: 'A 2026 multicenter real-world cohort found that refractory ulcerative colitis patients treated with upadacitinib achieved 67.9% steroid-free clinical remission during induction and 85.7% steroid-free clinical remission at 12 months, with 78.6% endoscopic remission. The signal is from a small cohort, but for patients burning through options it is still a serious headline.',
