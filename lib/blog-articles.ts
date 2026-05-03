@@ -32,6 +32,101 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
 
+
+{
+  slug: 'stopping-thiopurines-after-anti-tnf-uc-2026',
+  title: "Stopped Azathioprine Too Early After Starting Anti-TNF? This 1,900-Patient UC Study Says Risk Rises About 20%",
+  description: "A 2026 Korean population-based cohort found that ulcerative colitis patients who stopped thiopurines within 90 days of starting anti-TNF therapy had a modest but meaningful increase in adverse outcomes. The composite risk of new steroids, IBD-related hospitalization, or surgery rose about 20% (aHR 1.20), and new steroid use rose 18% (aHR 1.18).",
+  category: 'Biologics',
+  readTime: '8 min read',
+  datePublished: '2026-05-03',
+  intro: "UC patients keep hearing a tempting story once an anti-TNF drug gets added: great, now you can probably drop the thiopurine and simplify the whole mess. Maybe. But this new 2026 population-based study says that in ulcerative colitis, stopping thiopurines too early after starting anti-TNF therapy may come with a real price. In 1,900 UC patients already on thiopurines who escalated to anti-TNF treatment, stopping the thiopurine within 90 days was linked to a 20% higher risk of the composite bad-outcome bucket: new steroid use, IBD-related hospitalization, or intestinal surgery. New steroid use alone rose 18%. That is not a dramatic apocalypse signal. It is worse in another way: it is a quiet reminder that some “simplify treatment” decisions may be happening before the bowel is actually ready. See a professional.",
+  keyPoints: [
+    'This was a population-based claims study, not a tiny single-center anecdote, and it specifically looked at what happened after UC patients on thiopurines escalated to anti-TNF therapy.',
+    'In ulcerative colitis, stopping thiopurines within 90 days of starting anti-TNF therapy was associated with a 20% higher risk of the composite outcome of new steroids, IBD-related hospitalization, or surgery (aHR 1.20).',
+    'New corticosteroid use alone also rose, with an adjusted hazard ratio of 1.18, which matters because steroids are usually the first sign that disease control is not actually secure.',
+    "The same signal was not seen independently in Crohn's disease, which is a useful reminder that lazy one-size-fits-all IBD rules are often wrong.",
+    'This paper does not prove every UC patient must stay on thiopurines indefinitely, but it does argue against casually stopping them right after anti-TNF escalation.',
+    'Bottom line: if your anti-TNF just started working, the bowel may not be ready for you to pull the thiopurine support beam yet. See a professional.',
+  ],
+  sections: [
+    {
+      title: 'Why this paper matters to actual patients',
+      paragraphs: [
+        'A lot of ulcerative colitis decisions happen in the space between two competing fears. On one side, patients want durable control. On the other, they want fewer drugs, fewer lab checks, fewer side-effect worries, and less immunosuppression hanging over every infection season. So once an anti-TNF drug like infliximab, adalimumab, or golimumab enters the picture, the obvious question becomes whether the older thiopurine can be dropped.',
+        'That is a reasonable question. Thiopurines are not vitamins. They come with monitoring burden, infection concerns, liver toxicity issues, and long-term malignancy discussions that nobody enjoys. But reasonable does not mean consequence-free. This study matters because it tested what actually happened in the real world when UC patients on thiopurines started anti-TNF therapy and then stopped the thiopurine quickly. The answer was not “nothing happened.”',
+      ],
+      callout: 'The tempting move is treatment simplification. The dangerous move is doing it before the bowel has earned that simplification.',
+    },
+    {
+      title: 'The screenshot number: risk rose about 20% when thiopurines were stopped early',
+      paragraphs: [
+        'The main result was simple enough for patients to understand without a statistics seminar. In the ulcerative colitis group, discontinuing thiopurines within 90 days of starting anti-TNF therapy was associated with a 20% higher risk of the composite outcome of new corticosteroid use, IBD-related hospitalization, or intestinal surgery. The adjusted hazard ratio was 1.20.',
+        'Now, do not get stupid with relative risk language. A 20% increase is not the same as everyone falling apart the moment azathioprine or mercaptopurine stops. This was a modest signal, not a catastrophe headline. But modest does not mean meaningless. In chronic disease, a steady increase in steroids, admissions, or surgery is exactly the kind of signal that separates stable control from fake control.',
+        'The other useful number was steroid use itself. Patients who stopped thiopurines had an 18% higher risk of needing new corticosteroids, with an adjusted hazard ratio of 1.18. That matters because steroids are often the clinical confession that remission was not as secure as everyone hoped.',
+      ],
+      callout: 'Not every bad treatment decision explodes immediately. Some just quietly push patients back toward prednisone, hospital beds, and regret.',
+    },
+    {
+      title: 'Why steroids matter more than patients are often told',
+      paragraphs: [
+        'A lot of patients still get sold the idea that needing another steroid course is just part of the normal UC shuffle. That is garbage. Prednisone is not a sign of control. It is usually a sign that the current plan is leaking. So when this paper shows more steroid re-use after early thiopurine withdrawal, that should not be treated like a minor footnote.',
+        'Steroids matter because they usually arrive before the bigger ugliness. First comes symptom drift, then labs or bleeding or urgency, then steroids, and only later do some patients end up hospitalized or pushed toward surgery. In that sense, the steroid-use signal in this paper may be the early warning light patients should care about most.',
+        'Put differently, stopping a thiopurine too early may not always cause an immediate disaster. It may simply make the disease easier to destabilize, which then shows up first as another steroid rescue. That is still bad medicine if it was avoidable.',
+      ],
+    },
+    {
+      title: "The Crohn's comparison is the part that kills lazy IBD advice",
+      paragraphs: [
+        "One of the smartest aspects of the study is that the same independent association was not seen in Crohn's disease. That is useful because it destroys the usual lazy move of blending all IBD together and pretending the same de-escalation rule applies everywhere.",
+        "Ulcerative colitis is not Crohn's disease wearing different clothes. The inflammatory pattern is different, the tissue injury pattern is different, and apparently the consequences of early thiopurine withdrawal under anti-TNF therapy may be different too. So when patients are told broad IBD rules without disease-specific nuance, they should be skeptical.",
+        "This does not mean every UC patient must stay on combination therapy forever while every Crohn's patient can stop with no worries. It means the data for ulcerative colitis deserves its own adult conversation rather than being flattened into a generic “IBD” slogan.",
+      ],
+      callout: 'IBD is not one disease. Anyone giving you one-size-fits-all de-escalation advice is probably oversimplifying.',
+    },
+    {
+      title: 'What this study does and does not prove',
+      paragraphs: [
+        'Keep your brain on. This was a retrospective population-based claims analysis, not a randomized trial where patients were assigned to continue or stop thiopurines under perfectly controlled conditions. That means residual confounding is possible. Doctors may have stopped thiopurines for reasons the database could not fully capture, including side effects, infection risk, age, blood-count issues, or signs that the patient was doing unusually well.',
+        'The outcomes were also practical health-system outcomes, not pristine biomarker or endoscopic endpoints. The study tracked a composite of new steroids, hospitalization, and surgery. Those are important, because patients care deeply about all three, but they do not tell you everything about mucosal inflammation or calprotectin trends.',
+        'Still, the study is clinically useful because it was large, it focused on a real-world treatment decision, and the signal held up in sensitivity analysis using a six-month landmark. In other words, this was not just one flimsy statistical wobble. It was a consistent warning against assuming early withdrawal is automatically harmless in UC.',
+      ],
+    },
+    {
+      title: 'What patients should actually do with this information',
+      paragraphs: [
+        'If you are on azathioprine or mercaptopurine and your gastroenterologist has just added an anti-TNF, the smart question is not “Can I stop the thiopurine now?” The smarter question is “What objective evidence would convince us that it is safe to de-escalate, and on what timeline?” That means asking about symptoms, fecal calprotectin, CRP, endoscopy when appropriate, infection history, and your personal risk tolerance.',
+        'If you desperately want off thiopurines because of side effects or risk concerns, fair enough. That may still be the right move for some patients. But this paper says the decision should be made with eyes open, not with fantasy that anti-TNF escalation automatically makes the partner drug irrelevant overnight.',
+        'Bottom line: this 2026 study says early thiopurine withdrawal after starting anti-TNF therapy in ulcerative colitis was associated with about 20% more bad outcomes and 18% more steroid re-use. Not huge. Not trivial. Exactly the kind of result that should sharpen the conversation instead of ending it. Bring the paper to your gastroenterologist, discuss whether combination therapy still serves a purpose in your case, and see a professional.',
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: 'Does this mean every UC patient on anti-TNF must stay on thiopurines forever?',
+      answer: 'No. This was an observational study, not a forever-rule trial. It does suggest that stopping thiopurines within 90 days of starting anti-TNF therapy may modestly worsen outcomes in ulcerative colitis, so the timing and rationale should be discussed carefully with your gastroenterologist. See a professional.',
+    },
+    {
+      question: 'What was the main number patients should remember?',
+      answer: 'The main UC result was an adjusted hazard ratio of 1.20 for the composite outcome of new steroids, IBD-related hospitalization, or surgery when thiopurines were stopped within 90 days of starting anti-TNF therapy.',
+    },
+    {
+      question: 'Why is the steroid signal important?',
+      answer: 'Because needing steroids again often means disease control was not actually stable. In this study, early thiopurine withdrawal increased the risk of new corticosteroid use with an adjusted hazard ratio of 1.18.',
+    },
+    {
+      question: "Did the same thing happen in Crohn's disease?",
+      answer: "Not independently in this study. The adverse association with early thiopurine withdrawal was seen in ulcerative colitis, but the same clear independent signal was not observed in Crohn's disease. That suggests disease-specific nuance matters. See a professional.",
+    },
+  ],
+  references: [
+    { label: 'Seo J, Kim S, Hong SW, Hwang SW, Park SH, Yang DH, Byeon JS, Myung SJ, Kim YJ, Ye BD. Impact of stopping thiopurines under anti-TNF therapy in inflammatory bowel disease: A population-based study. Clin Gastroenterol Hepatol. 2026 Apr 28. PMID: 42061483', href: 'https://pubmed.ncbi.nlm.nih.gov/42061483/' },
+    { label: 'Panaccione R et al. Combination therapy with infliximab and azathioprine is superior to monotherapy in ulcerative colitis. Gastroenterology. 2014. PMID: 24512909', href: 'https://pubmed.ncbi.nlm.nih.gov/24512909/' },
+    { label: 'AGA Clinical Practice Guideline on pharmacological management of moderate to severe ulcerative colitis. Gastroenterology. 2024.', href: 'https://www.gastrojournal.org/article/S0016-5085(24)00899-3/fulltext' },
+  ],
+  relatedSlugs: ['biologics-for-uc-compared', 'vedolizumab-second-line-anti-tnf-meta-analysis-2026', 'mesalamine-withdrawal-relapse-meta-analysis-2026'],
+},
+
   {
     slug: 'guselkumab-week-92-quasar-uc-2026',
     title: 'Guselkumab Held 71% to 74% Remission Through Week 92 in UC. That Is the Kind of Durability Patients Actually Care About',

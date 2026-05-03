@@ -1,5 +1,10 @@
 [
   {
+    "stat": "aHR 1.20",
+    "label": "higher risk of new steroids, hospitalization, or surgery after stopping thiopurines within 90 days of starting anti-TNF therapy in UC",
+    "source": "Seo J et al. Clin Gastroenterol Hepatol. 2026 Apr 28 (PMID: 42061483) — Korean population-based cohort of 1,900 UC patients; stopping thiopurines early after anti-TNF escalation also raised new steroid use (aHR 1.18), while the same signal was not seen in Crohn's disease"
+  },
+  {
     "stat": "74%",
     "label": "clinical remission at week 92 with guselkumab 200 mg every 4 weeks in ulcerative colitis maintenance responders",
     "source": "Sandborn WJ et al. Am J Gastroenterol. 2026 May 1 (PMID: 42065421) — QUASAR long-term extension; remission was 71% with 100 mg every 8 weeks and 74% with 200 mg every 4 weeks using nonresponder imputation, while nearly 100% of week-92 remitters were corticosteroid-free"
