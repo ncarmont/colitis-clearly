@@ -33,6 +33,102 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
 
+
+{
+  slug: 'upadacitinib-prolonged-induction-re-escalation-uc-2026',
+  title: "Standard Rinvoq Induction Failed? This New 2026 Study Says 70.9% Still Stayed on Therapy After a Longer or Repeated Push",
+  description: "A 2026 dual-center real-world study found that medically refractory IBD patients who did not do well enough on standard upadacitinib could still be rescued with prolonged induction or dose re-escalation. Overall, 70.9% stayed on therapy without surgery, steroids, or another advanced drug, while objective follow-up showed 62.5% endoscopic improvement, 100% CRP normalization, and an 83.3% rate of fecal calprotectin falling by more than 50%.",
+  category: 'Small Molecules',
+  readTime: '8 min read',
+  datePublished: '2026-05-05',
+  intro: "One of the ugliest moments in ulcerative colitis treatment is when a drug that was supposed to be the rescue plan does not look rescue-y enough. Upadacitinib, or Rinvoq, has a deserved reputation for speed and power, but some patients still limp through standard induction without enough control. The usual fear after that is simple and brutal: great, now what? This new 2026 dual-center real-world paper is useful because it looked at the thing patients and doctors actually do when the first run is not enough. They prolonged induction or re-escalated back to induction dosing. The headline result was that 70.9% of these medically refractory patients still stayed on upadacitinib without needing surgery, steroids, or another advanced therapy during follow-up. In the subset with objective follow-up data, 62.5% improved endoscopically, every patient with an elevated CRP normalized it, and 83.3% cut fecal calprotectin by more than half. Translation: a disappointing first stretch on Rinvoq does not automatically mean the drug is dead. See a professional.",
+  keyPoints: [
+    "This was a dual-center real-world salvage-dosing study, not another idealized phase 3 trial, so it speaks directly to what happens after standard upadacitinib treatment falls short.",
+    "Overall, 70.9% of patients stayed on upadacitinib without surgery, steroids, or another biologic or small molecule during follow-up after prolonged induction or dose re-escalation.",
+    "Among patients with comparative objective data, 62.5% showed endoscopic improvement, 100% normalized an elevated CRP, and 83.3% lowered fecal calprotectin by more than 50%.",
+    "The cohort included medically refractory inflammatory bowel disease, so this was not an easy first-line population getting spoon-fed flattering numbers.",
+    "There were no new safety signals reported, which matters because salvage intensification is only useful if it does not create fresh chaos.",
+    "Bottom line: if standard Rinvoq induction did not get you where you needed to be, this paper says a second push may still salvage control for a meaningful share of patients. See a professional.",
+  ],
+  sections: [
+    {
+      title: 'Why this paper matters to actual UC patients',
+      paragraphs: [
+        "A lot of ulcerative colitis drug coverage becomes useless the moment real life gets messy. Registration trials tell you what happens in carefully selected populations under fixed protocols. Fine. Necessary. But patients care about the much nastier question that shows up in clinic: what do you do when a strong drug starts strong-ish, not strong enough, and the bowel is still acting like it did not get the memo?",
+        "That is where this paper earns its keep. It looked at prolonged induction or dose re-escalation of upadacitinib in patients with inflammatory bowel disease who had an inadequate response to standard treatment. In plain English, these were not people cruising to remission on the first try. They were the people staring at an almost-working plan and wondering whether there was any point in pushing harder versus abandoning ship.",
+      ],
+      callout: "The important question is not whether Rinvoq can work. We already know it can. The important question is what happens when it almost works and you are not ready to give up.",
+    },
+    {
+      title: 'The headline number: 70.9% still stayed on therapy after the longer or repeated push',
+      paragraphs: [
+        "The main result was brutally practical. Of the 55 patients in the cohort, 39 stayed on upadacitinib therapy after prolonged induction or re-escalation, which comes out to 70.9%. The primary failure endpoint was not some fluffy symptom drift. Failure meant needing surgery, steroids, or another biologic or small molecule during follow-up. So the number actually reflects something patients care about: did the strategy keep them off the next treatment cliff?",
+        "Now use your brain. This is not the same thing as saying 70.9% of all ulcerative colitis patients will be saved by just extending Rinvoq. The cohort included both UC and Crohn's disease, it was retrospective, and it was built from patients who had already become difficult to manage. Still, that is exactly why the number matters. If more than two-thirds of a refractory group can avoid escalation failure after a salvage dosing strategy, that is not background noise.",
+        "Patients tend to hear one failed induction and assume the mechanism is finished. Sometimes it is. Sometimes the drug was simply not given enough runway. This study argues that those two scenarios are not always the same thing.",
+      ],
+      callout: "70.9% staying on therapy means the rescue maneuver was often good enough to stop the immediate scramble toward the next drug, the next steroid burst, or the operating room.",
+    },
+    {
+      title: 'The objective data is the part that makes this more believable',
+      paragraphs: [
+        "Symptom stories are cheap. Objective improvement is harder to fake. In the subset of patients with comparative follow-up data, 62.5% improved endoscopically, 100% of those with an elevated C-reactive protein normalized it, and 83.3% reduced fecal calprotectin by more than 50%. That is the part that makes this paper clinically interesting instead of just emotionally reassuring.",
+        "Do not get stupid and pretend those percentages came from the whole 55-patient cohort. They did not. These were smaller subsets with available before-and-after measurements. But the direction matters. Symptoms, inflammation, and mucosal appearance all moved the right way. That makes the salvage strategy look biologically credible, not just administratively convenient.",
+        "For patients, fecal calprotectin is especially relevant. A drop of more than 50% is not guaranteed remission, but it usually means the bowel is actually calming down rather than simply producing fewer complaints for a week or two.",
+      ],
+      callout: "When calprotectin falls, CRP normalizes, and scopes improve in the same paper, the result starts looking real instead of decorative.",
+    },
+    {
+      title: 'Why this is specifically useful in ulcerative colitis conversations',
+      paragraphs: [
+        "Upadacitinib already has one of the strongest reputations in UC for speed. That creates an awkward expectation problem. When a patient does not respond fast enough, everybody gets jumpy. Doctors worry about losing time. Patients worry they have already burned one of their biggest weapons. This study helps inject some adult nuance into that conversation.",
+        "A standard induction schedule is not always the whole story. Pharmacokinetics, baseline inflammatory burden, prior treatment failure, and disease severity all affect how quickly a patient gets where they need to go. In some people, the colon may need more exposure before it finally stops being dramatic. That does not mean drag every nonresponder forward forever. It means the first disappointing stretch should trigger a more thoughtful assessment, not automatic nihilism.",
+        "For ulcerative colitis patients specifically, that means asking whether the response was absent, partial, or delayed; what the biomarkers are doing; whether endoscopy or calprotectin shows movement; and whether a salvage-dosing strategy is a realistic bridge before calling the drug a failure. That is a smarter conversation than simple panic-switching.",
+      ],
+      callout: "Partial response is not the same thing as no response. Those two situations should not be treated with the same level of therapeutic panic.",
+    },
+    {
+      title: 'What this study does and does not prove',
+      paragraphs: [
+        "This was a retrospective dual-center study with only 55 patients total, and it combined ulcerative colitis with Crohn's disease. That means it is useful, but not clean enough to become holy scripture. There was no randomized control arm comparing prolonged induction or re-escalation against immediate switching. So we cannot say with certainty that the salvage approach was superior to every alternative in every patient.",
+        "The objective outcomes were also available only in subsets, which is common in real-world work but still a limitation. And because the population was medically refractory, the paper is more about rescue decision-making than first-pass treatment ranking. You should not lazily compare this 70.9% persistence result with standard phase 3 remission rates as if they measure the same thing. They do not.",
+        "What the paper does prove is more modest and still clinically valuable: when upadacitinib is not doing enough at the usual schedule, a longer or repeated induction push can still rescue a meaningful number of hard-case patients without obvious new safety trouble.",
+      ],
+    },
+    {
+      title: 'What patients should actually do with this information',
+      paragraphs: [
+        "If you are on upadacitinib and not where you want to be yet, the smart question is not ‘Is Rinvoq a failure, yes or no?’ The smart question is ‘Am I showing enough partial or objective improvement that a prolonged induction or re-escalation strategy is worth considering before we abandon this?’ That discussion should include symptoms, CRP, fecal calprotectin, endoscopy when appropriate, side effects, infection risk, and how many options you realistically have left.",
+        "If your biomarkers are flat or worse, or you are getting sicker fast, this paper is not permission to sit around while the colon self-destructs. Rescue strategies only make sense when there is a believable path to benefit and close specialist oversight. But if you are a partial responder, especially in refractory disease, this study says there may still be more runway than the first induction result suggests.",
+        "Bottom line: a disappointing first stretch on upadacitinib is not automatically the end of the story. In this 2026 real-world study, 70.9% of difficult IBD patients still stayed on therapy after prolonged induction or re-escalation, with encouraging biomarker and endoscopic signals in those who had objective follow-up. Bring the paper to your gastroenterologist, ask whether you are dealing with true failure or incomplete runway, and see a professional.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: 'Does this mean everyone who partially fails Rinvoq should just stay on it longer?',
+      answer: "No. This was a small retrospective salvage-dosing study, not a rule that applies to every patient. It suggests that selected patients with partial or inadequate response may still benefit from prolonged induction or dose re-escalation, but that decision needs specialist oversight and objective monitoring. See a professional.",
+    },
+    {
+      question: 'What was the main number in the study?',
+      answer: 'The headline result was that 70.9% of patients stayed on upadacitinib therapy without needing surgery, steroids, or another advanced therapy after prolonged induction or dose re-escalation.',
+    },
+    {
+      question: 'Why do the biomarker results matter so much?',
+      answer: 'Because symptoms can mislead. In patients with comparative objective data, 62.5% improved endoscopically, 100% normalized an elevated CRP, and 83.3% reduced fecal calprotectin by more than 50%, which makes the salvage effect look more believable.',
+    },
+    {
+      question: 'What is the biggest limitation of this paper?',
+      answer: 'It was a small retrospective dual-center cohort of mixed IBD patients, not a randomized ulcerative-colitis-only trial. That makes it encouraging and practical, but not definitive. See a professional.',
+    },
+  ],
+  references: [
+    { label: 'Axenfeld E, Chaudhary V, Clinton JW, Frohlinger M, George L, Cross RK, Axelrad JE. Treatment outcomes of prolonged induction or re-escalation dosing of upadacitinib in patients with inflammatory bowel disease. Crohns Colitis 360. 2026 Apr 29;8(2):otag021. PMID: 42079520', href: 'https://pubmed.ncbi.nlm.nih.gov/42079520/' },
+    { label: 'Panaccione R, Danese S, Zhou W, et al. Efficacy and safety of upadacitinib for 16-week extended induction and 52-week maintenance therapy in patients with moderately to severely active ulcerative colitis. Aliment Pharmacol Ther. 2024;59:393-408.', href: 'https://pubmed.ncbi.nlm.nih.gov/38475326/' },
+    { label: 'Danese S, Vermeire S, Zhou W, et al. Upadacitinib as induction and maintenance therapy for moderately to severely active ulcerative colitis: results from three phase 3 multicentre randomised trials. Lancet. 2022;399:2113-2128.', href: 'https://pubmed.ncbi.nlm.nih.gov/35644166/' },
+  ],
+  relatedSlugs: ['upadacitinib-real-world-refractory-uc-2026', 'jak-inhibitors-uc', 'biologics-for-uc-compared'],
+},
+
 {
   slug: 'stopping-thiopurines-after-anti-tnf-uc-2026',
   title: "Stopped Azathioprine Too Early After Starting Anti-TNF? This 1,900-Patient UC Study Says Risk Rises About 20%",

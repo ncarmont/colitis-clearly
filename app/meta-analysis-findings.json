@@ -1,5 +1,10 @@
 [
   {
+    "stat": "70.9%",
+    "label": "stayed on upadacitinib after prolonged induction or dose re-escalation in medically refractory IBD",
+    "source": "Axenfeld E et al. Crohns Colitis 360. 2026 Apr 29 (PMID: 42079520) — dual-center real-world salvage-dosing cohort; among patients with objective follow-up data, 62.5% improved endoscopically, 100% normalized elevated CRP, and 83.3% reduced fecal calprotectin by >50%"
+  },
+  {
     "stat": "aHR 1.20",
     "label": "higher risk of new steroids, hospitalization, or surgery after stopping thiopurines within 90 days of starting anti-TNF therapy in UC",
     "source": "Seo J et al. Clin Gastroenterol Hepatol. 2026 Apr 28 (PMID: 42061483) — Korean population-based cohort of 1,900 UC patients; stopping thiopurines early after anti-TNF escalation also raised new steroid use (aHR 1.18), while the same signal was not seen in Crohn's disease"
