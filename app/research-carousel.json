@@ -1,5 +1,14 @@
 [
   {
+    "slug": "fmt-endoscopic-response-meta-analysis-2026",
+    "href": "/blog/fmt-endoscopic-response-meta-analysis-2026",
+    "title": "FMT did not just calm symptoms: a new RCT meta-analysis found 6.80× higher endoscopic response",
+    "paper": "Ikram S et al. Inflammopharmacology. 2026 Apr (PMID: 41792366)",
+    "finding": "A 2026 systematic review and meta-analysis of randomized trials from 2020-2025 found fecal microbiota transplantation significantly improved induction clinical remission in IBD, especially UC (OR 3.24 vs controls), and produced a much stronger endoscopic response signal (OR 6.80, 95% CI 2.96-15.63). Maintenance data were still limited and serious adverse events were numerically higher but not statistically significant.",
+    "category": "Microbiome",
+    "date": "2026-05-06"
+  },
+  {
     "slug": "upadacitinib-prolonged-induction-re-escalation-uc-2026",
     "href": "/blog/upadacitinib-prolonged-induction-re-escalation-uc-2026",
     "title": "Did standard Rinvoq induction miss? New real-world data says 70.9% still stayed on therapy after a longer or repeated induction push",

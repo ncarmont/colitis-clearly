@@ -33,6 +33,92 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
 
+{
+  slug: 'fmt-endoscopic-response-meta-analysis-2026',
+  title: "FMT Was 6.80× More Likely to Improve the Scope Picture. That Matters More Than Symptom Hype",
+  description: "A 2026 systematic review and meta-analysis of randomized FMT trials found that microbiome therapy improved induction clinical remission and was associated with 6.80× higher odds of endoscopic response versus control. The signal is exciting, especially for ulcerative colitis, but maintenance data and safety uncertainty mean this belongs in specialist-supervised medicine, not DIY stool experiments.",
+  category: 'Microbiome',
+  readTime: '8 min read',
+  datePublished: '2026-05-06',
+  intro: "Microbiome therapy for ulcerative colitis has been stuck in the same annoying place for years: clearly biologically plausible, sometimes impressive, but inconsistent enough that nobody should treat it like magic poop soup. This 2026 systematic review and meta-analysis is useful because it narrows the question to recent randomized trials and asks whether fecal microbiota transplantation actually changes outcomes that matter. The answer: yes, especially for induction. FMT improved clinical remission versus control with an odds ratio of 3.24, and the endoscopic response signal was much louder: OR 6.80, with a 95% confidence interval from 2.96 to 15.63. Translation: patients receiving FMT were far more likely to show visible improvement on scope, not merely report a better bathroom week. That is the part worth paying attention to. See a professional.",
+  keyPoints: [
+    "This 2026 meta-analysis reviewed randomized controlled trials of microbiome-based therapy published from 2020 through 2025, with most participants coming from ulcerative colitis studies.",
+    "FMT improved induction clinical remission versus control with an odds ratio of 3.24 under the common-effect model.",
+    "The strongest headline was endoscopic response: OR 6.80, meaning the scope picture was far more likely to improve with FMT than with control treatment.",
+    "The authors warned that maintenance-of-remission evidence was limited and inconsistent, so this is not a proven long-term stand-alone strategy.",
+    "Serious adverse events were numerically more common in FMT arms but not statistically significant, which is exactly why this is specialist medicine, not a kitchen project.",
+    "Bottom line: FMT is looking less like internet folklore and more like a real UC tool, but only when delivered through controlled, screened, medically supervised protocols. See a professional.",
+  ],
+  sections: [
+    {
+      title: 'Why this paper matters to actual UC patients',
+      paragraphs: [
+        "Ulcerative colitis patients are drowning in microbiome claims. Probiotic ads, stool-test influencers, fermented-food sermons, and random supplement stacks all imply the same thing: fix the bugs, fix the bowel. Lovely slogan. Usually lazy science. The problem is not that the microbiome is irrelevant. The problem is that relevance is not the same as proven treatment.",
+        "That is why randomized FMT evidence matters. Fecal microbiota transplantation is not just another capsule with a pretty label. It attempts to replace or reshape a damaged microbial ecosystem using screened donor material. If it works, it should show up in hard outcomes, not just vibes. This meta-analysis found exactly the kind of signal patients should care about: better clinical remission and, more importantly, better endoscopic response.",
+      ],
+      callout: "Symptoms can lie. A colonoscope is harder to impress. That is why the 6.80× endoscopic response signal matters.",
+    },
+    {
+      title: 'The screenshot number: 6.80× higher endoscopic response',
+      paragraphs: [
+        "The headline finding was that FMT was associated with substantially higher endoscopic response versus control, with an odds ratio of 6.80 and a 95% confidence interval from 2.96 to 15.63. In normal human language, the bowel lining was much more likely to look improved after FMT than after placebo, autologous FMT, or standard comparator approaches used in the trials.",
+        "That matters because ulcerative colitis is not just a symptom disorder. A patient can feel somewhat better while inflammation keeps chewing through the mucosa. Conversely, real mucosal improvement is one of the best signs that the disease process itself is calming down. So an endoscopic response signal this large is not decorative. It is clinically meaningful.",
+        "Do not be an idiot and read this as a guaranteed remission ticket. Odds ratios are not personal probabilities. Trial protocols vary, donor selection varies, delivery route varies, and patients vary. But as a class signal, this is strong enough that FMT deserves serious attention instead of being dismissed as fringe medicine.",
+      ],
+      callout: "The important claim is not 'FMT makes people feel better.' The important claim is 'FMT may help the inflamed lining actually look better.' Big difference.",
+    },
+    {
+      title: 'Clinical remission improved too, but the statistics need adult supervision',
+      paragraphs: [
+        "For induction of clinical remission, FMT beat control with an odds ratio of 3.24 under the common-effect model. That is a useful remission signal, especially because most included participants were ulcerative colitis patients. The random-effects model pointed in a similar direction but had a wider confidence interval that overlapped no effect. Translation: the benefit signal is real-looking, but the evidence is still heterogeneous.",
+        "This is the part where medicine gets less Instagram-friendly. FMT is not one standardized drug. It is a procedure or product category with huge variability: donor microbiome composition, fresh versus frozen material, capsules versus colonoscopy versus enema, antibiotic pretreatment, diet background, and number of administrations. When the intervention itself is variable, pooled estimates become useful but messy.",
+        "Still, messy does not mean useless. It means the field needs better protocol standardization and better predictors of who responds. A therapy can be promising before it is fully optimized. That is where FMT appears to be right now.",
+      ],
+    },
+    {
+      title: 'The safety and maintenance caveats are not optional',
+      paragraphs: [
+        "The authors also found that serious adverse events were numerically more common in FMT arms, though the increase was not statistically significant. That does not prove FMT is dangerous, but it should kill the fantasy that microbiome therapy is automatically harmless because it sounds natural. Donor screening, pathogen testing, manufacturing standards, and medical monitoring are not bureaucratic fluff. They are the difference between therapy and reckless biology cosplay.",
+        "Maintenance data were also limited and inconsistent. That means the current evidence is stronger for induction than for keeping patients well long term. A patient may respond initially and still need a durable maintenance plan afterward. Anyone selling FMT as a one-and-done cure is either confused or selling something.",
+      ],
+      callout: "Natural does not mean safe. Stool is not a supplement. It is a biologic ecosystem with baggage.",
+    },
+    {
+      title: 'What patients should actually do with this information',
+      paragraphs: [
+        "If you have UC and are curious about FMT, the right move is not to Google a DIY protocol. The right move is to ask your gastroenterologist whether any regulated FMT trials, microbiome-based products, or specialist programs are appropriate for your disease severity and treatment history. The answer may be no. It may be not yet. It may be only inside a trial. That is frustrating, but it is also how adults avoid turning a promising therapy into a preventable infection story.",
+        "This study strengthens the case that microbiome therapy can produce real mucosal effects in UC. It does not replace mesalamine, biologics, JAK inhibitors, S1P modulators, steroids for rescue, or surgery when those are needed. It adds another serious research-backed tool to the conversation, especially for patients who want more than symptom masking.",
+        "Bottom line: the 2026 randomized-trial meta-analysis found FMT improved induction remission and delivered a striking 6.80× higher odds of endoscopic response. That is not magic. It is not a cure. It is a meaningful signal that the microbiome can be therapeutically manipulated in UC when the work is done properly. Bring the paper to your GI, ask about legitimate options, and see a professional.",
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: 'Does this mean FMT cures ulcerative colitis?',
+      answer: 'No. The meta-analysis showed improved induction remission and endoscopic response, not a cure. Maintenance evidence was limited and inconsistent, so long-term disease control still needs specialist planning. See a professional.',
+    },
+    {
+      question: 'What was the biggest number in the study?',
+      answer: 'The strongest result was endoscopic response: FMT was associated with OR 6.80 versus control, with a 95% confidence interval from 2.96 to 15.63.',
+    },
+    {
+      question: 'Is FMT something I can do myself?',
+      answer: 'Absolutely not. DIY FMT can transmit infections and other risks. Legitimate FMT requires donor screening, pathogen testing, controlled preparation, and medical supervision. See a professional.',
+    },
+    {
+      question: 'Why is endoscopic response more important than symptoms?',
+      answer: 'Because symptoms can improve while inflammation persists. Endoscopic response means the bowel lining itself looks better, which is much closer to the disease process UC patients are actually trying to control.',
+    },
+  ],
+  references: [
+    { label: 'Ikram S, et al. Fecal microbiota transplantation in inflammatory bowel disease: a systematic review and meta-analysis of randomized controlled trials (2020-2025). Inflammopharmacology. 2026 Apr;34(4):2593-2605. PMID: 41792366', href: 'https://pubmed.ncbi.nlm.nih.gov/41792366/' },
+    { label: 'Huang B et al. Efficacy and safety of fecal microbiota transplantation in ulcerative colitis: updated meta-analysis of randomized trials. Adv Ther. 2026 Apr 7. PMID: 41945234', href: 'https://pubmed.ncbi.nlm.nih.gov/41945234/' },
+    { label: 'Costello SP et al. Effect of fecal microbiota transplantation on 8-week remission in patients with ulcerative colitis: a randomized clinical trial. JAMA. 2019.', href: 'https://pubmed.ncbi.nlm.nih.gov/30644982/' },
+  ],
+  relatedSlugs: ['fmt-delivery-route-meta-analysis-2026', 'vsl3-probiotic-uc-remission', 'anti-inflammatory-diet-dii-uc-prospective-study-2026'],
+},
+
+
 
 {
   slug: 'upadacitinib-prolonged-induction-re-escalation-uc-2026',

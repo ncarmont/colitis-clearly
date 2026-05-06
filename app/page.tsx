@@ -16,7 +16,7 @@ const evidencePills = [
   { value: '98%',  label: 'stayed on vedolizumab after switching to home injections', tone: 'good', cite: 'JGH Open 2026, PMID 42027776', href: 'https://pubmed.ncbi.nlm.nih.gov/42027776/' },
   { value: '85.7%',  label: 'steroid-free remission at 1 year, refractory UC on upadacitinib', tone: 'good', cite: 'Real-world cohort, PMID 41913733',  href: 'https://pubmed.ncbi.nlm.nih.gov/41913733/' },
   { value: '2.03×', label: 'higher relapse risk if rectal mesalamine is stopped', tone: 'bad', cite: 'Meta-analysis, PMID 41338243', href: 'https://pubmed.ncbi.nlm.nih.gov/41338243/' },
-  { value: '2.39×', label: 'more remissions, FMT via colonoscopy + enemas', tone: 'good', cite: '16 RCTs, PMID 41945234', href: 'https://pubmed.ncbi.nlm.nih.gov/41945234/' },
+  { value: '6.80×', label: 'higher endoscopic response with FMT in recent RCTs', tone: 'good', cite: 'Meta-analysis, PMID 41792366', href: 'https://pubmed.ncbi.nlm.nih.gov/41792366/' },
   { value: '95%',  label: 'J-pouch long-term success',      tone: 'good', cite: 'IPAA outcome studies',   href: 'https://pubmed.ncbi.nlm.nih.gov/19169164/' },
   { value: '82%',  label: 'better outcomes, Med diet',      tone: 'good', cite: '6 RCTs, PMID 40797000',  href: 'https://pubmed.ncbi.nlm.nih.gov/40797000/' },
   { value: '2.3×', label: 'more remissions, curcumin',      tone: 'good', cite: '8+ RCTs, ECCO 2025',     href: 'https://pubmed.ncbi.nlm.nih.gov/25688495/' },

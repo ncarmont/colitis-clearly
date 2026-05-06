@@ -1,5 +1,10 @@
 [
   {
+    "stat": "6.80×",
+    "label": "higher endoscopic response with fecal microbiota transplantation vs control in recent randomized IBD trials, mostly ulcerative colitis",
+    "source": "Ikram S et al. Inflammopharmacology. 2026 Apr (PMID: 41792366) — systematic review/meta-analysis of six RCTs from 2020-2025; induction clinical remission also improved (OR 3.24, 95% CI 1.43-7.41), while maintenance evidence remained limited"
+  },
+  {
     "stat": "70.9%",
     "label": "stayed on upadacitinib after prolonged induction or dose re-escalation in medically refractory IBD",
     "source": "Axenfeld E et al. Crohns Colitis 360. 2026 Apr 29 (PMID: 42079520) — dual-center real-world salvage-dosing cohort; among patients with objective follow-up data, 62.5% improved endoscopically, 100% normalized elevated CRP, and 83.3% reduced fecal calprotectin by >50%"
