@@ -1,5 +1,15 @@
 [
   {
+    "stat": "43.2%",
+    "label": "steroid-free clinical remission by week 12 with mirikizumab in a real-world UC cohort",
+    "source": "Murgiano M et al. BMJ Open Gastroenterol. 2026 May 5 (PMID: 42086294) — five-center Italian Latium Net cohort of 95 UC patients; 61.1% achieved clinical response, 33.7% biochemical remission, and remission rates were similar in biologic-experienced and biologic-naïve patients"
+  },
+  {
+    "stat": "0 adverse events",
+    "label": "observed during early real-world mirikizumab follow-up in the Latium Net UC cohort",
+    "source": "Murgiano M et al. BMJ Open Gastroenterol. 2026 May 5 (PMID: 42086294) — only three patients discontinued for lack of efficacy; observational data, so this does not prove risk is zero"
+  },
+  {
     "stat": "6.80×",
     "label": "higher endoscopic response with fecal microbiota transplantation vs control in recent randomized IBD trials, mostly ulcerative colitis",
     "source": "Ikram S et al. Inflammopharmacology. 2026 Apr (PMID: 41792366) — systematic review/meta-analysis of six RCTs from 2020-2025; induction clinical remission also improved (OR 3.24, 95% CI 1.43-7.41), while maintenance evidence remained limited"

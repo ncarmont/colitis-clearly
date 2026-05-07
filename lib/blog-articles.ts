@@ -32,6 +32,104 @@ export type BlogArticle = {
 
 export const BLOG_ARTICLES: BlogArticle[] = [
 
+{
+  "slug": "mirikizumab-latium-net-real-world-uc-2026",
+  "title": "Mirikizumab Hit 43.2% Steroid-Free Remission by Week 12 in Real-World UC. That Is Not Trial-Polished Fantasyland",
+  "description": "A 2026 five-center Italian real-world cohort found mirikizumab delivered steroid-free clinical remission by week 12 in 43.2% of ulcerative colitis patients, with 61.1% clinical response, similar remission in biologic-experienced patients, only three discontinuations for lack of efficacy, and no observed adverse events.",
+  "category": "Biologics",
+  "readTime": "8 min read",
+  "datePublished": "2026-05-07",
+  "intro": "Mirikizumab already had phase 3 trial data. Lovely. Trials are necessary, but they are also polished rooms where messy patients get filtered, protocolled, and watched like lab orchids. What ulcerative colitis patients want to know is harsher: does this thing still work once it leaves the brochure and hits real clinics? The 2026 Latium Net cohort gives a useful answer. Across five Italian IBD centers, 95 UC patients starting mirikizumab were followed in routine practice. By week 12, 43.2% reached steroid-free clinical remission, 61.1% had clinical response, and 33.7% reached biochemical remission. The part that should make treatment-experienced patients pay attention: steroid-free remission was similar in biologic-experienced and biologic-naïve patients. Only three stopped for lack of efficacy, and no adverse events were observed. Translation: mirikizumab is looking less like a trial-only win and more like a real-world IL-23 option. See a professional.",
+  "keyPoints": [
+    "This was a five-center Italian real-world cohort, not another tightly controlled registration trial.",
+    "At week 12, 43.2% of UC patients achieved steroid-free clinical remission on mirikizumab.",
+    "Clinical response reached 61.1%, while 33.7% reached biochemical remission using fecal calprotectin and CRP normalization.",
+    "Steroid-free remission looked similar in biologic-experienced and biologic-naïve patients, which matters because many UC patients reach IL-23 therapy after other drugs have failed.",
+    "Only three patients discontinued for lack of efficacy, and no adverse events were observed during early follow-up.",
+    "Bottom line: mirikizumab has moved beyond clean trial slides. The early real-world signal is meaningful, but treatment decisions still belong with a gastroenterologist. See a professional."
+  ],
+  "sections": [
+    {
+      "title": "Why this paper matters to actual UC patients",
+      "paragraphs": [
+        "Ulcerative colitis patients do not live inside phase 3 eligibility criteria. They have prior biologic failures, steroid history, weird biomarker patterns, half-responses, insurance delays, and the charming psychological damage of watching one expensive mechanism after another underperform. So when a drug gets approved, the first serious question is not whether the trial was statistically significant. It is whether the drug survives contact with real life.",
+        "That is why this Latium Net study matters. Mirikizumab targets the p19 subunit of interleukin-23, a pathway increasingly central in UC treatment. The phase 3 LUCENT program already showed induction and maintenance benefit. But this new cohort asks a more practical question: when ordinary IBD centers start prescribing mirikizumab to real patients, how many are actually off steroids and clinically quiet by week 12?"
+      ],
+      "callout": "Trial data tells you a drug can work. Real-world data tells you whether it keeps working after the patient stops being conveniently trial-shaped."
+    },
+    {
+      "title": "The headline number: 43.2% steroid-free remission by week 12",
+      "paragraphs": [
+        "The primary endpoint was steroid-free clinical remission at 12 weeks, defined by no rectal bleeding and near-normal stool frequency without corticosteroids. That is not a cosmetic endpoint. Steroids are the fire extinguisher nobody should be living on. If a biologic gets symptoms controlled but the patient still needs steroids to hold the line, the colon has not exactly signed the peace treaty.",
+        "In this cohort, 41 of 95 patients hit steroid-free clinical remission by week 12, or 43.2%. Clinical response was broader at 61.1%, meaning nearly two-thirds had meaningful symptom improvement even if they did not all meet the stricter remission definition. Biochemical remission reached 33.7%, which is important because fecal calprotectin and CRP are harder to charm than a symptom diary.",
+        "Do not compare this lazily with every other UC drug number on the internet. Endpoints, populations, and timing differ. But as an early real-world signal, 43.2% steroid-free remission at week 12 is solid. It says the drug is not just preserving its dignity in trial reports. It is doing useful work in clinics."
+      ],
+      "callout": "The screenshot stat: 43.2% steroid-free remission by week 12, with 61.1% clinical response. Not magic. Not nothing. Clinically useful."
+    },
+    {
+      "title": "The biologic-experienced result is the part patients should notice",
+      "paragraphs": [
+        "The average UC patient reading about mirikizumab may not be biologic-naïve. Many are arriving after anti-TNF drugs, vedolizumab, ustekinumab, JAK inhibitors, or some miserable sequence of almost-working plans. Those patients need to know whether another biologic class still has a plausible shot, not whether it performs nicely in easier patients.",
+        "The study found steroid-free remission rates were similar between biologic-experienced and biologic-naïve patients: 42.6% versus 43.8%. That is not a license to promise equal benefit to everyone. The biologic-naïve subgroup was small, and observational cohorts can hide confounding in the furniture. But directionally, this is reassuring. Mirikizumab did not appear to collapse just because patients had prior advanced therapy exposure.",
+        "That matters because IL-23 inhibition is mechanistically different from anti-TNF and anti-integrin therapy. If your colon has ignored one pathway, that does not prove it will ignore this one. Medicine is annoying, but it is not always nihilistic."
+      ]
+    },
+    {
+      "title": "The safety signal looked clean, but do not be childish about it",
+      "paragraphs": [
+        "No adverse events were observed in this early follow-up cohort, and only three patients discontinued because of lack of efficacy. That is encouraging. It also does not mean mirikizumab has zero risk. A 95-patient observational cohort cannot detect every uncommon infection, hypersensitivity event, liver issue, or long-tail safety problem. Absence of observed harm is not the same as proof of harmlessness.",
+        "Still, the clean early tolerability picture fits the broader IL-23 story. Selective IL-23 inhibitors have generally looked safer than many patients fear when compared with older immunosuppressive framing. The bigger danger is not that patients discuss mirikizumab. The danger is that they either treat it like a miracle or dismiss it because another biologic already disappointed them. Both positions are lazy."
+      ],
+      "callout": "No observed adverse events is reassuring. It is not a force field. Keep the adult supervision."
+    },
+    {
+      "title": "What patients should actually do with this information",
+      "paragraphs": [
+        "If you have moderate-to-severe UC and are discussing next-line therapy, this paper gives you a useful question for your gastroenterologist: is IL-23 inhibition a rational next mechanism for my disease history? That conversation should include prior drug failures, fecal calprotectin, CRP, endoscopy, steroid dependence, infection risk, pregnancy plans when relevant, insurance access, and how quickly your inflammation needs to be controlled.",
+        "The study does not prove mirikizumab is the best drug for every UC patient. It does not replace head-to-head trials, therapeutic monitoring, or personalized decision-making. It does, however, strengthen the case that mirikizumab is not just a clean phase 3 story. In routine Italian IBD centers, 43.2% reached steroid-free remission by week 12, clinical response exceeded 60%, and biologic-experienced patients did not look doomed.",
+        "Bottom line: if your UC has been chewing through treatment options, mirikizumab deserves a serious conversation, not hype and not dismissal. Bring the data to your GI, ask whether the IL-23 pathway makes sense for your case, and see a professional."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does this mean mirikizumab works for everyone with ulcerative colitis?",
+      "answer": "No. In this real-world cohort, 43.2% reached steroid-free clinical remission by week 12 and 61.1% achieved clinical response. That is meaningful, but it still means many patients did not reach remission that quickly. See a professional."
+    },
+    {
+      "question": "Why is steroid-free remission such an important endpoint?",
+      "answer": "Because steroids can temporarily suppress symptoms while causing serious long-term problems. Steroid-free remission means the patient is clinically controlled without leaning on corticosteroids as the crutch."
+    },
+    {
+      "question": "Did prior biologic use ruin the response?",
+      "answer": "Not in this cohort. Steroid-free remission was similar in biologic-experienced and biologic-naïve patients, though the subgroup sizes and observational design mean this should be interpreted cautiously."
+    },
+    {
+      "question": "Were there safety problems?",
+      "answer": "No adverse events were observed during the study follow-up, and only three patients stopped for lack of efficacy. That is reassuring, but a 95-patient real-world cohort cannot prove rare risks are absent. See a professional."
+    }
+  ],
+  "references": [
+    {
+      "label": "Murgiano M, et al. Effectiveness and safety of mirikizumab in ulcerative colitis: real-world data from the Latium Net. BMJ Open Gastroenterol. 2026 May 5. PMID: 42086294",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/42086294/"
+    },
+    {
+      "label": "LUCENT phase 3 mirikizumab ulcerative colitis program",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=mirikizumab+LUCENT+ulcerative+colitis"
+    },
+    {
+      "label": "Selective IL-23 inhibitors in ulcerative colitis review",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/42068359/"
+    }
+  ],
+  "relatedSlugs": [
+    "mirikizumab-real-world-remission-insight-2026",
+    "il23-inhibitors-meta-analysis-safety-efficacy-2026",
+    "guselkumab-week-92-quasar-uc-2026"
+  ]
+},
+
 
 {
   slug: 'fmt-endoscopic-response-meta-analysis-2026',
