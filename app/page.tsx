@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 }
 
 const evidencePills = [
+  { value: '3,186', label: 'JAK inhibitor users: no higher matched MACE, cancer, VTE, or infection risk vs biologics', tone: 'good', cite: 'Intest Res 2026, PMID 42097599', href: 'https://pubmed.ncbi.nlm.nih.gov/42097599/' },
   { value: '43.2%', label: 'steroid-free remission by week 12 on real-world mirikizumab', tone: 'good', cite: 'Latium Net, PMID 42086294', href: 'https://pubmed.ncbi.nlm.nih.gov/42086294/' },
   { value: '98%',  label: 'stayed on vedolizumab after switching to home injections', tone: 'good', cite: 'JGH Open 2026, PMID 42027776', href: 'https://pubmed.ncbi.nlm.nih.gov/42027776/' },
   { value: '85.7%',  label: 'steroid-free remission at 1 year, refractory UC on upadacitinib', tone: 'good', cite: 'Real-world cohort, PMID 41913733',  href: 'https://pubmed.ncbi.nlm.nih.gov/41913733/' },

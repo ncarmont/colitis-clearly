@@ -1,5 +1,14 @@
 [
   {
+    "slug": "jak-inhibitor-safety-vs-biologics-ibd-2026",
+    "href": "/blog/jak-inhibitor-safety-vs-biologics-ibd-2026",
+    "title": "JAK inhibitor safety looked less terrifying in real-world IBD: no higher MACE, cancer, VTE, or infection risk vs biologics",
+    "paper": "Kochhar GS et al. Intest Res. 2026 May 7 (PMID: 42097599)",
+    "finding": "In a U.S. Collaborative Network real-world cohort, 3,186 IBD patients on JAK inhibitors were compared with 60,462 biologic-treated patients. After propensity matching, JAK inhibitors did not show higher odds of bacterial, viral, or fungal infections, major adverse cardiovascular events, malignancy, venous thromboembolism, or GI perforation versus biologics. The tradeoff was higher odds of LDL ≥190 mg/dL and grade 3+ lymphopenia, meaning monitoring still matters.",
+    "category": "Small Molecules",
+    "date": "2026-05-08"
+  },
+  {
     "slug": "mirikizumab-latium-net-real-world-uc-2026",
     "href": "/blog/mirikizumab-latium-net-real-world-uc-2026",
     "title": "Mirikizumab looked real outside trial fantasyland: 43.2% steroid-free remission by week 12",

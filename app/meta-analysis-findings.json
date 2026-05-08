@@ -1,5 +1,15 @@
 [
   {
+    "stat": "3,186",
+    "label": "IBD patients on JAK inhibitors showed no higher matched risk of infection, MACE, malignancy, VTE, or GI perforation versus biologic-treated patients",
+    "source": "Kochhar GS et al. Intest Res. 2026 May 7 (PMID: 42097599) — U.S. Collaborative Network real-world cohort comparing 3,186 JAK inhibitor users with 60,462 biologic-treated patients; 85.7% of JAK users had ulcerative colitis and 72% used tofacitinib"
+  },
+  {
+    "stat": "aOR 0.95",
+    "label": "venous thromboembolism risk with JAK inhibitors versus biologics after propensity matching in IBD",
+    "source": "Kochhar GS et al. Intest Res. 2026 May 7 (PMID: 42097599) — no significant increase in VTE (95% CI 0.67-1.34), MACE (aOR 0.72), malignancy (aOR 0.98), or bacterial/viral/fungal infections; higher LDL ≥190 mg/dL and grade 3+ lymphopenia still require monitoring"
+  },
+  {
     "stat": "43.2%",
     "label": "steroid-free clinical remission by week 12 with mirikizumab in a real-world UC cohort",
     "source": "Murgiano M et al. BMJ Open Gastroenterol. 2026 May 5 (PMID: 42086294) — five-center Italian Latium Net cohort of 95 UC patients; 61.1% achieved clinical response, 33.7% biochemical remission, and remission rates were similar in biologic-experienced and biologic-naïve patients"

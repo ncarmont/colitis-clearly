@@ -33,6 +33,95 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
 {
+  slug: 'jak-inhibitor-safety-vs-biologics-ibd-2026',
+  title: 'JAK Inhibitors Did Not Show Higher MACE, Cancer, VTE, or Infection Risk Versus Biologics. Yes, the Black Box Still Has Teeth',
+  description: 'A 2026 real-world U.S. Collaborative Network study compared 3,186 IBD patients on JAK inhibitors with 60,462 biologic-treated patients and found no matched increase in infections, major cardiovascular events, malignancy, venous thromboembolism, or GI perforation. LDL and lymphopenia signals still need monitoring.',
+  category: 'Small Molecules',
+  readTime: '8 min read',
+  datePublished: '2026-05-08',
+  intro: 'JAK inhibitors scare people. Fair. The label has enough black-box energy to make a normal patient wonder whether taking a pill for ulcerative colitis means casually volunteering for clots, heart attacks, cancer, and whatever else the internet decides to staple to the fear board. But panic is not analysis. This 2026 Intestinal Research study is useful because it looked at real-world IBD patients, not hypothetical risk memes. In the U.S. Collaborative Network, 3,186 patients on JAK inhibitors were compared with 60,462 biologic-treated patients. After propensity matching, JAK inhibitors did not show higher odds of bacterial, viral, or fungal infections, major adverse cardiovascular events, malignancy, venous thromboembolism, or GI perforation. The ugly little caveat: LDL ≥190 mg/dL and grade 3 or higher lymphopenia were more common on JAK inhibitors. Translation: JAKs may be less terrifying than their reputation, but they are not casual supplements in a lab coat. See a professional.',
+  keyPoints: [
+    'This was a large real-world comparative safety study using the U.S. Collaborative Network, not a tiny single-center vibes audit.',
+    'The JAK inhibitor cohort included 3,186 IBD patients; 85.7% had ulcerative colitis and 72% were on tofacitinib.',
+    'Compared with 60,462 biologic-treated patients, matched JAK inhibitor users did not have higher odds of bacterial, viral, or fungal infections.',
+    'Matched risks of major adverse cardiovascular events, malignancy, venous thromboembolism, and gastrointestinal perforation were also not significantly higher.',
+    'The real monitoring issue was metabolic and immune-lab noise: LDL ≥190 mg/dL and grade 3+ lymphopenia were more common with JAK inhibitors.',
+    'Bottom line: the safety story is more nuanced than “JAKs are dangerous.” They can be powerful UC tools, but only with proper risk screening and lab follow-up. See a professional.',
+  ],
+  sections: [
+    {
+      title: 'Why this paper matters to actual UC patients',
+      paragraphs: [
+        'Ulcerative colitis patients do not make treatment decisions in a calm academic vacuum. They make them while bleeding, exhausted, steroid-puffed, and mentally calculating whether the next drug is going to save their colon or ruin another organ system for sport. JAK inhibitors sit right in that fear zone because they are fast, oral, and effective, but also burdened by safety warnings that patients understandably do not ignore.',
+        'The problem is that black-box warnings often get translated into cartoon medicine: biologics safe, JAKs scary. That is not how risk works. Risk depends on age, cardiovascular history, smoking, clot history, lipid levels, prior infections, steroid exposure, disease severity, and whether the alternative is quietly letting inflammation keep chewing through the colon. This study gives patients and clinicians a more useful comparison: how did JAK inhibitor users actually do versus biologic-treated IBD patients in real-world data?'
+      ],
+      callout: 'The adult question is not “Are JAK inhibitors scary?” The adult question is “Compared with realistic alternatives, where is the actual excess risk?”'
+    },
+    {
+      title: 'The headline: no higher matched risk for the big feared outcomes',
+      paragraphs: [
+        'The study included 3,186 patients in the JAK inhibitor cohort and 60,462 in the biologic cohort. Most JAK users had ulcerative colitis, which matters because UC is where tofacitinib and upadacitinib have become major options. After 1:1 propensity score matching, the researchers found no significant increase in bacterial infections, viral infections, fungal infections, major adverse cardiovascular events, malignancy, venous thromboembolism, or gastrointestinal perforation compared with biologic therapy.',
+        'That is a mouthful, so here is the useful translation: in this matched real-world dataset, JAK inhibitor therapy did not look broadly more dangerous than biologic therapy across the outcomes patients fear most. Venous thromboembolism came in at a matched adjusted odds ratio of 0.95. Malignancy was 0.98. Major adverse cardiovascular events were 0.72. None of those supported a significant excess-risk signal versus biologics.',
+        'Do not be lazy and convert that into “JAKs are risk-free.” They are not. Observational studies can miss details, matching cannot erase every confounder, and the population was not the same as every patient sitting in a clinic. But this paper is a meaningful counterweight to simplistic fear. It says that in a large IBD dataset, the safety penalty many patients assume was not obvious for the biggest outcomes.'
+      ],
+      callout: 'The screenshot stat: 3,186 JAK inhibitor users, mostly UC, with no matched increase in MACE, cancer, VTE, GI perforation, or infection risk versus biologics.'
+    },
+    {
+      title: 'The catch: LDL and lymphocytes were not innocent bystanders',
+      paragraphs: [
+        'Now for the part where the pill does not get a halo. JAK inhibitor users had higher odds of severely elevated LDL cholesterol, defined as LDL ≥190 mg/dL, with an adjusted odds ratio of 1.78. They also had higher odds of grade 3 or higher lymphopenia, with an adjusted odds ratio of 2.28. That is not trivial. It is exactly why baseline labs and follow-up labs are not bureaucratic theater.',
+        'LDL matters because cardiovascular risk is not a theoretical lecture when you are using drugs that already require risk screening. Lymphopenia matters because immune suppression is only useful until it becomes an infection invitation. The reassuring part of the study is that these lab changes did not translate into a broad matched increase in major clinical events in the observed data. The responsible part is still to monitor them instead of pretending the warning label was written by nervous lawyers for entertainment.'
+      ],
+      callout: 'JAK inhibitors may not have shown higher major event risk here, but they still demand cholesterol and blood-count monitoring. Boring. Important. Welcome to medicine.'
+    },
+    {
+      title: 'How this should change the conversation with your GI',
+      paragraphs: [
+        'If your UC is moderate-to-severe and you are discussing tofacitinib or upadacitinib, this paper gives you better questions. Ask about your personal clot risk, heart risk, age-related risk, smoking status, infection history, shingles vaccination, baseline lipids, CBC, liver tests, and whether your disease needs a fast-acting oral option. Ask how your risk compares with staying on steroids, cycling ineffective biologics, or delaying control until the colon files another complaint.',
+        'That last comparison matters. Patients often compare drug risk with the fantasy of no risk. UC does not offer that deal. Active inflammation carries its own hazards: hospitalization, anemia, steroid dependence, thrombosis risk, malnutrition, cancer risk over time, and surgery. A treatment decision is not “dangerous drug versus perfect safety.” It is usually “which set of risks buys the best chance at durable control?”'
+      ]
+    },
+    {
+      title: 'Bottom line',
+      paragraphs: [
+        'This study does not erase the JAK inhibitor warnings. It does something more useful: it puts them into real-world context. In a large IBD cohort, JAK inhibitors did not show higher matched odds of the major feared events compared with biologics, including MACE, malignancy, VTE, GI perforation, or infections. The lab signals for high LDL and lymphopenia were real and need monitoring.',
+        'So no, JAK inhibitors are not candy. They are also not automatically the reckless option. For the right UC patient, especially someone who needs fast control or has failed other mechanisms, this paper supports a serious, data-driven conversation instead of reflexive panic. Bring the study to your gastroenterologist, ask about your individual risk profile, and see a professional.'
+      ],
+      callout: 'The no-BS read: less fear-meme, more monitored medicine.'
+    }
+  ],
+  faqs: [
+    {
+      question: 'Does this prove JAK inhibitors are safer than biologics?',
+      answer: 'No. It found no significant matched increase in several major adverse outcomes versus biologics in a real-world dataset. That is reassuring, not a universal safety guarantee. See a professional.'
+    },
+    {
+      question: 'Which risks were not higher in the matched analysis?',
+      answer: 'Bacterial, viral, and fungal infections, major adverse cardiovascular events, malignancy, venous thromboembolism, and gastrointestinal perforation were not significantly higher with JAK inhibitors compared with biologics.'
+    },
+    {
+      question: 'What safety problems were more common?',
+      answer: 'Severely elevated LDL cholesterol and grade 3 or higher lymphopenia were more common in the JAK inhibitor cohort, so lipid panels and blood counts still matter.'
+    },
+    {
+      question: 'Should a UC patient ask about JAK inhibitors?',
+      answer: 'If disease is moderate-to-severe, especially after other therapies fail or when fast symptom control matters, it is reasonable to ask a gastroenterologist whether a JAK inhibitor fits the individual risk profile. See a professional.'
+    }
+  ],
+  references: [
+    { label: 'Kochhar GS, Khataniar H, Dulai PS, et al. Safety of Janus kinase inhibitors compared to biologic therapy in patients with inflammatory bowel disease. Intest Res. 2026 May 7. PMID: 42097599', href: 'https://pubmed.ncbi.nlm.nih.gov/42097599/' },
+    { label: 'FDA safety communication on JAK inhibitors and serious heart-related events, cancer, blood clots, and death', href: 'https://www.fda.gov/drugs/drug-safety-and-availability/fda-requires-warnings-about-increased-risk-serious-heart-related-events-cancer-blood-clots-and-death' },
+    { label: 'Upadacitinib phase 3 ulcerative colitis program', href: 'https://pubmed.ncbi.nlm.nih.gov/?term=upadacitinib+ulcerative+colitis+phase+3' }
+  ],
+  relatedSlugs: [
+    'upadacitinib-prolonged-induction-re-escalation-uc-2026',
+    'upadacitinib-real-world-refractory-uc-2026',
+    's1p-modulators-maintenance-meta-analysis-2026'
+  ],
+},
+
+
+{
   "slug": "mirikizumab-latium-net-real-world-uc-2026",
   "title": "Mirikizumab Hit 43.2% Steroid-Free Remission by Week 12 in Real-World UC. That Is Not Trial-Polished Fantasyland",
   "description": "A 2026 five-center Italian real-world cohort found mirikizumab delivered steroid-free clinical remission by week 12 in 43.2% of ulcerative colitis patients, with 61.1% clinical response, similar remission in biologic-experienced patients, only three discontinuations for lack of efficacy, and no observed adverse events.",
