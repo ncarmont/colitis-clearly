@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 }
 
 const evidencePills = [
+  { value: '24 RCTs', label: 'dietary supplements compared in UC; probiotics, flaxseed, curcumin and butyrate showed adjunct signals', tone: 'good', cite: 'Front Med 2026, PMID 42100281', href: 'https://pubmed.ncbi.nlm.nih.gov/42100281/' },
   { value: '3,186', label: 'JAK inhibitor users: no higher matched MACE, cancer, VTE, or infection risk vs biologics', tone: 'good', cite: 'Intest Res 2026, PMID 42097599', href: 'https://pubmed.ncbi.nlm.nih.gov/42097599/' },
   { value: '43.2%', label: 'steroid-free remission by week 12 on real-world mirikizumab', tone: 'good', cite: 'Latium Net, PMID 42086294', href: 'https://pubmed.ncbi.nlm.nih.gov/42086294/' },
   { value: '98%',  label: 'stayed on vedolizumab after switching to home injections', tone: 'good', cite: 'JGH Open 2026, PMID 42027776', href: 'https://pubmed.ncbi.nlm.nih.gov/42027776/' },

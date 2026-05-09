@@ -81,7 +81,7 @@ export const RANKED_PROCEDURES: RankedProcedure[] = [
     filterCategory: 'Lifestyle',
     statDisplay: '43%',
     statLabel: 'remission vs 16% on placebo',
-    trialRef: 'Meta-analysis of 20 RCTs alongside standard therapy',
+    trialRef: 'Meta-analysis of 20 RCTs alongside standard therapy; 2026 supplement NMA found probiotics reduced clinical activity index (PMID 42100281)',
     evidenceLevel: 'High',
     imageUrl: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&h=450&fit=crop&q=80',
     href: '/shop',
@@ -165,7 +165,7 @@ export const RANKED_PROCEDURES: RankedProcedure[] = [
     filterCategory: 'Lifestyle',
     statDisplay: '2.3×',
     statLabel: 'more patients reach remission vs placebo — ECCO 2025 recognized adjunct',
-    trialRef: '8+ RCTs (Hanai et al. 2006; Lang et al. 2015); NF-κB, COX-2 & IL-1β inhibition — bioavailability form determines effectiveness',
+    trialRef: '8+ RCTs (Hanai et al. 2006; Lang et al. 2015); 2026 supplement NMA found curcumin improved IBDQ by +25.80 (PMID 42100281); bioavailability form determines effectiveness',
     evidenceLevel: 'High',
     subMethods: [
       '#1  Theracumin (nanoparticle) — 27× more bioavailable than standard powder',

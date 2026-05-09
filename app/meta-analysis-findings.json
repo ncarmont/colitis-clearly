@@ -1,168 +1,183 @@
 [
   {
+    "stat": "24 RCTs",
+    "label": "compared 14 dietary supplements as adjunct therapy for ulcerative colitis in a 2026 network meta-analysis",
+    "source": "Xu R et al. Front Med (Lausanne). 2026 Apr 22 (PMID: 42100281) \u2014 1,491 participants; probiotics and selenium improved clinical activity, flaxseed extract improved Mayo score and inflammatory markers, while curcumin and butyrate improved IBDQ quality-of-life scores"
+  },
+  {
+    "stat": "+25.80 IBDQ",
+    "label": "quality-of-life score improvement with curcumin versus conventional treatment or placebo in the UC supplement network meta-analysis",
+    "source": "Xu R et al. Front Med (Lausanne). 2026 (PMID: 42100281) \u2014 curcumin MD 25.80 (95% CI 2.00 to 49.60); butyrate MD 20.50, resveratrol MD 9.18, flaxseed extract MD 8.58, and probiotics MD 7.78 also improved IBDQ"
+  },
+  {
+    "stat": "-0.80 CRP",
+    "label": "C-reactive protein reduction with flaxseed extract versus conventional treatment or placebo in UC",
+    "source": "Xu R et al. Front Med (Lausanne). 2026 (PMID: 42100281) \u2014 flaxseed extract also improved Mayo score (MD -1.53) and IBDQ (MD 8.58), with authors flagging it as one of the broader adjunct signals needing larger RCT validation"
+  },
+  {
     "stat": "3,186",
     "label": "IBD patients on JAK inhibitors showed no higher matched risk of infection, MACE, malignancy, VTE, or GI perforation versus biologic-treated patients",
-    "source": "Kochhar GS et al. Intest Res. 2026 May 7 (PMID: 42097599) — U.S. Collaborative Network real-world cohort comparing 3,186 JAK inhibitor users with 60,462 biologic-treated patients; 85.7% of JAK users had ulcerative colitis and 72% used tofacitinib"
+    "source": "Kochhar GS et al. Intest Res. 2026 May 7 (PMID: 42097599) \u2014 U.S. Collaborative Network real-world cohort comparing 3,186 JAK inhibitor users with 60,462 biologic-treated patients; 85.7% of JAK users had ulcerative colitis and 72% used tofacitinib"
   },
   {
     "stat": "aOR 0.95",
     "label": "venous thromboembolism risk with JAK inhibitors versus biologics after propensity matching in IBD",
-    "source": "Kochhar GS et al. Intest Res. 2026 May 7 (PMID: 42097599) — no significant increase in VTE (95% CI 0.67-1.34), MACE (aOR 0.72), malignancy (aOR 0.98), or bacterial/viral/fungal infections; higher LDL ≥190 mg/dL and grade 3+ lymphopenia still require monitoring"
+    "source": "Kochhar GS et al. Intest Res. 2026 May 7 (PMID: 42097599) \u2014 no significant increase in VTE (95% CI 0.67-1.34), MACE (aOR 0.72), malignancy (aOR 0.98), or bacterial/viral/fungal infections; higher LDL \u2265190 mg/dL and grade 3+ lymphopenia still require monitoring"
   },
   {
     "stat": "43.2%",
     "label": "steroid-free clinical remission by week 12 with mirikizumab in a real-world UC cohort",
-    "source": "Murgiano M et al. BMJ Open Gastroenterol. 2026 May 5 (PMID: 42086294) — five-center Italian Latium Net cohort of 95 UC patients; 61.1% achieved clinical response, 33.7% biochemical remission, and remission rates were similar in biologic-experienced and biologic-naïve patients"
+    "source": "Murgiano M et al. BMJ Open Gastroenterol. 2026 May 5 (PMID: 42086294) \u2014 five-center Italian Latium Net cohort of 95 UC patients; 61.1% achieved clinical response, 33.7% biochemical remission, and remission rates were similar in biologic-experienced and biologic-na\u00efve patients"
   },
   {
     "stat": "0 adverse events",
     "label": "observed during early real-world mirikizumab follow-up in the Latium Net UC cohort",
-    "source": "Murgiano M et al. BMJ Open Gastroenterol. 2026 May 5 (PMID: 42086294) — only three patients discontinued for lack of efficacy; observational data, so this does not prove risk is zero"
+    "source": "Murgiano M et al. BMJ Open Gastroenterol. 2026 May 5 (PMID: 42086294) \u2014 only three patients discontinued for lack of efficacy; observational data, so this does not prove risk is zero"
   },
   {
-    "stat": "6.80×",
+    "stat": "6.80\u00d7",
     "label": "higher endoscopic response with fecal microbiota transplantation vs control in recent randomized IBD trials, mostly ulcerative colitis",
-    "source": "Ikram S et al. Inflammopharmacology. 2026 Apr (PMID: 41792366) — systematic review/meta-analysis of six RCTs from 2020-2025; induction clinical remission also improved (OR 3.24, 95% CI 1.43-7.41), while maintenance evidence remained limited"
+    "source": "Ikram S et al. Inflammopharmacology. 2026 Apr (PMID: 41792366) \u2014 systematic review/meta-analysis of six RCTs from 2020-2025; induction clinical remission also improved (OR 3.24, 95% CI 1.43-7.41), while maintenance evidence remained limited"
   },
   {
     "stat": "70.9%",
     "label": "stayed on upadacitinib after prolonged induction or dose re-escalation in medically refractory IBD",
-    "source": "Axenfeld E et al. Crohns Colitis 360. 2026 Apr 29 (PMID: 42079520) — dual-center real-world salvage-dosing cohort; among patients with objective follow-up data, 62.5% improved endoscopically, 100% normalized elevated CRP, and 83.3% reduced fecal calprotectin by >50%"
+    "source": "Axenfeld E et al. Crohns Colitis 360. 2026 Apr 29 (PMID: 42079520) \u2014 dual-center real-world salvage-dosing cohort; among patients with objective follow-up data, 62.5% improved endoscopically, 100% normalized elevated CRP, and 83.3% reduced fecal calprotectin by >50%"
   },
   {
     "stat": "aHR 1.20",
     "label": "higher risk of new steroids, hospitalization, or surgery after stopping thiopurines within 90 days of starting anti-TNF therapy in UC",
-    "source": "Seo J et al. Clin Gastroenterol Hepatol. 2026 Apr 28 (PMID: 42061483) — Korean population-based cohort of 1,900 UC patients; stopping thiopurines early after anti-TNF escalation also raised new steroid use (aHR 1.18), while the same signal was not seen in Crohn's disease"
+    "source": "Seo J et al. Clin Gastroenterol Hepatol. 2026 Apr 28 (PMID: 42061483) \u2014 Korean population-based cohort of 1,900 UC patients; stopping thiopurines early after anti-TNF escalation also raised new steroid use (aHR 1.18), while the same signal was not seen in Crohn's disease"
   },
   {
     "stat": "74%",
     "label": "clinical remission at week 92 with guselkumab 200 mg every 4 weeks in ulcerative colitis maintenance responders",
-    "source": "Sandborn WJ et al. Am J Gastroenterol. 2026 May 1 (PMID: 42065421) — QUASAR long-term extension; remission was 71% with 100 mg every 8 weeks and 74% with 200 mg every 4 weeks using nonresponder imputation, while nearly 100% of week-92 remitters were corticosteroid-free"
+    "source": "Sandborn WJ et al. Am J Gastroenterol. 2026 May 1 (PMID: 42065421) \u2014 QUASAR long-term extension; remission was 71% with 100 mg every 8 weeks and 74% with 200 mg every 4 weeks using nonresponder imputation, while nearly 100% of week-92 remitters were corticosteroid-free"
   },
   {
     "stat": "85.7%",
     "label": "steroid-free clinical remission at 12 months with upadacitinib in refractory ulcerative colitis",
-    "source": "Mao Y et al. Drug Des Devel Ther. 2026 Mar 25 (PMID: 41913733) — multicenter real-world cohort of 28 UC patients within an 80-patient refractory IBD study; induction steroid-free remission was 67.9%, induction endoscopic remission 46.4%, and 12-month endoscopic remission 78.6%"
+    "source": "Mao Y et al. Drug Des Devel Ther. 2026 Mar 25 (PMID: 41913733) \u2014 multicenter real-world cohort of 28 UC patients within an 80-patient refractory IBD study; induction steroid-free remission was 67.9%, induction endoscopic remission 46.4%, and 12-month endoscopic remission 78.6%"
   },
   {
     "stat": "HR 0.97",
     "label": "IBD-related hospitalization risk with prescription NSAID exposure in ulcerative colitis, showing no significant increase",
-    "source": "Mayer AS et al. Arthritis Care Res (Hoboken). 2026 Apr 20 (PMID: 42007777) — large administrative claims cohort of 348,095 adults with IBD; UC met non-inferiority with no significant increase in hospitalization risk, unlike Crohn's disease"
+    "source": "Mayer AS et al. Arthritis Care Res (Hoboken). 2026 Apr 20 (PMID: 42007777) \u2014 large administrative claims cohort of 348,095 adults with IBD; UC met non-inferiority with no significant increase in hospitalization risk, unlike Crohn's disease"
   },
   {
     "stat": "AUC 0.72",
     "label": "best machine-learning performance for predicting 1-year anti-TNF success in UC when OCTN1 genotype was included",
-    "source": "Puca P et al. Inflamm Bowel Dis. 2026 Apr 28 (PMID: 42048252) — exploratory pharmacogenetic study of 105 UC patients; the OCTN1 503F genotype was associated with better steroid-free remission, endoscopic response, and therapy persistence"
+    "source": "Puca P et al. Inflamm Bowel Dis. 2026 Apr 28 (PMID: 42048252) \u2014 exploratory pharmacogenetic study of 105 UC patients; the OCTN1 503F genotype was associated with better steroid-free remission, endoscopic response, and therapy persistence"
   },
   {
-    "stat": "5.82× higher",
+    "stat": "5.82\u00d7 higher",
     "label": "odds of relapse or persistent disease activity with a more inflammatory diet in UC",
-    "source": "Xu Y et al. Nutrition. 2026 (PMID: 41916183) — prospective study of 108 UC patients; higher dietary inflammatory index scores predicted worse 6-week outcomes, while a structured UC-tailored anti-inflammatory diet improved diet quality and reduced short-term adverse outcomes"
+    "source": "Xu Y et al. Nutrition. 2026 (PMID: 41916183) \u2014 prospective study of 108 UC patients; higher dietary inflammatory index scores predicted worse 6-week outcomes, while a structured UC-tailored anti-inflammatory diet improved diet quality and reduced short-term adverse outcomes"
   },
   {
     "stat": "14.5%",
     "label": "RDW cutoff that flagged objective active disease in a 1,000-patient real-world IBD cohort",
-    "source": "Özden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114) — routine CBC red cell distribution width identified active disease with 78.9% sensitivity and 76.3% specificity; adding RDW to CRP improved AUC from 0.845 to 0.880"
+    "source": "\u00d6zden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114) \u2014 routine CBC red cell distribution width identified active disease with 78.9% sensitivity and 76.3% specificity; adding RDW to CRP improved AUC from 0.845 to 0.880"
   },
   {
     "stat": "OR 1.65",
     "label": "higher odds of objective active disease for each 1% rise in RDW, even after adjusting for anemia and iron markers",
-    "source": "Özden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114) — large real-world cohort showing RDW independently tracked inflammatory activity, including in non-anemic patients"
+    "source": "\u00d6zden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114) \u2014 large real-world cohort showing RDW independently tracked inflammatory activity, including in non-anemic patients"
   },
   {
     "stat": "98%",
     "label": "12-month treatment persistence after switching from IV to subcutaneous vedolizumab in UC",
-    "source": "Furuya M et al. JGH Open. 2026 Apr 21 (PMID: 42027776) — Japanese retrospective cohort; median fecal calprotectin stayed at 46 µg/g and fecal calprotectin remission stayed high at 91% to 87% over 12 months"
+    "source": "Furuya M et al. JGH Open. 2026 Apr 21 (PMID: 42027776) \u2014 Japanese retrospective cohort; median fecal calprotectin stayed at 46 \u00b5g/g and fecal calprotectin remission stayed high at 91% to 87% over 12 months"
   },
   {
-    "stat": "91% → 87%",
+    "stat": "91% \u2192 87%",
     "label": "fecal calprotectin remission remained stable over 12 months after switching vedolizumab from IV to subcutaneous",
-    "source": "Furuya M et al. JGH Open. 2026 Apr 21 (PMID: 42027776) — 48 Japanese UC patients; switching maintained disease control despite common but mostly self-limited injection-site reactions"
+    "source": "Furuya M et al. JGH Open. 2026 Apr 21 (PMID: 42027776) \u2014 48 Japanese UC patients; switching maintained disease control despite common but mostly self-limited injection-site reactions"
   },
   {
     "stat": "6%",
     "label": "3-month colectomy rate with upfront intensified infliximab (10 mg/kg) in acute severe UC, versus an estimated 27% standard-dose reference",
-    "source": "Goyal MK et al. Inflamm Bowel Dis. 2026 Apr 24 (PMID: 42030468) — Bayesian meta-analysis incorporating PREDICT-UC and historical standard-dose infliximab trials in acute severe ulcerative colitis"
+    "source": "Goyal MK et al. Inflamm Bowel Dis. 2026 Apr 24 (PMID: 42030468) \u2014 Bayesian meta-analysis incorporating PREDICT-UC and historical standard-dose infliximab trials in acute severe ulcerative colitis"
   },
   {
     "stat": "55.9%",
     "label": "clinical remission at weeks 52-56 with ustekinumab in a multicenter real-world UC cohort",
-    "source": "Baek JE et al. Intestinal Research. 2026 Apr 20 (PMID: 42002972) — 60 Korean UC patients; remission was 49.2% at week 8, 59.3% at weeks 16-20, and treatment persistence reached 84.9% at 12 months"
+    "source": "Baek JE et al. Intestinal Research. 2026 Apr 20 (PMID: 42002972) \u2014 60 Korean UC patients; remission was 49.2% at week 8, 59.3% at weeks 16-20, and treatment persistence reached 84.9% at 12 months"
   },
   {
     "stat": "84.9%",
     "label": "12-month ustekinumab treatment persistence in real-world UC",
-    "source": "Baek JE et al. Intestinal Research. 2026 Apr 20 (PMID: 42002972) — persistence remained high despite prior advanced therapy exposure in part of the cohort"
+    "source": "Baek JE et al. Intestinal Research. 2026 Apr 20 (PMID: 42002972) \u2014 persistence remained high despite prior advanced therapy exposure in part of the cohort"
   },
   {
     "stat": "28% vs 6%",
     "label": "clinical remission at week 12 with fully subcutaneous guselkumab induction vs placebo in moderate-to-severe UC",
-    "source": "Peyrin-Biroulet L et al. Lancet Gastroenterol Hepatol. 2026 (PMID: 41544637) — phase 3 ASTRO trial; week-24 clinical remission reached 35-36% with guselkumab vs 9% with placebo, with no new safety concerns"
+    "source": "Peyrin-Biroulet L et al. Lancet Gastroenterol Hepatol. 2026 (PMID: 41544637) \u2014 phase 3 ASTRO trial; week-24 clinical remission reached 35-36% with guselkumab vs 9% with placebo, with no new safety concerns"
   },
   {
     "stat": "32.7%",
     "label": "colectomy within 1 year after severe UC hospitalization in patients already exposed to advanced therapy",
-    "source": "Raine T et al. J Crohns Colitis. 2026 Apr 8 (PMID: 41978350) — real-world US cohort of 9,716 adults hospitalized for severe UC; overall 12.2% colectomy during admission and 20.4% colectomy within 1 year"
+    "source": "Raine T et al. J Crohns Colitis. 2026 Apr 8 (PMID: 41978350) \u2014 real-world US cohort of 9,716 adults hospitalized for severe UC; overall 12.2% colectomy during admission and 20.4% colectomy within 1 year"
   },
   {
     "stat": "38.4%",
     "label": "UC-related rehospitalization within 1 year after discharge without colectomy",
-    "source": "Raine T et al. J Crohns Colitis. 2026 Apr 8 (PMID: 41978350) — nested discharge cohort after severe UC hospitalization"
+    "source": "Raine T et al. J Crohns Colitis. 2026 Apr 8 (PMID: 41978350) \u2014 nested discharge cohort after severe UC hospitalization"
   },
   {
-    "stat": "7.13× to 11.35×",
+    "stat": "7.13\u00d7 to 11.35\u00d7",
     "label": "higher odds of week-52 clinical remission with second-line vedolizumab after failure of one anti-TNF",
-    "source": "Lukas M et al. Ther Adv Gastroenterol. 2026 (PMID: 41883697) — patient-level meta-analysis of GEMINI-1 and VISIBLE-1; also improved steroid-free remission, Mayo endoscopic score ≤1, and health-related quality of life"
+    "source": "Lukas M et al. Ther Adv Gastroenterol. 2026 (PMID: 41883697) \u2014 patient-level meta-analysis of GEMINI-1 and VISIBLE-1; also improved steroid-free remission, Mayo endoscopic score \u22641, and health-related quality of life"
   },
   {
     "stat": "RR 2.03",
     "label": "relapse risk after stopping rectal 5-ASA monotherapy in quiescent UC",
-    "source": "Arzivian A et al. Inflamm Bowel Dis. 2026 Apr 1 (PMID: 41338243) — systematic review and meta-analysis of 29 studies"
+    "source": "Arzivian A et al. Inflamm Bowel Dis. 2026 Apr 1 (PMID: 41338243) \u2014 systematic review and meta-analysis of 29 studies"
   },
   {
     "stat": "RR 1.60",
     "label": "relapse risk after stopping oral 5-ASA monotherapy in quiescent UC",
-    "source": "Arzivian A et al. Inflamm Bowel Dis. 2026 Apr 1 (PMID: 41338243) — withdrawal signal confined to monotherapy, not clearly seen after escalation to biologics or immunomodulators"
+    "source": "Arzivian A et al. Inflamm Bowel Dis. 2026 Apr 1 (PMID: 41338243) \u2014 withdrawal signal confined to monotherapy, not clearly seen after escalation to biologics or immunomodulators"
   },
   {
     "stat": "RR 3.30",
     "label": "maintenance clinical response with oral S1P receptor modulators vs placebo in moderate-to-severe UC",
-    "source": "Gardezi SAA et al. Dig Dis Sci. 2026 Apr 13 (PMID: 41968221) — meta-analysis of 8 RCTs, 2,663 patients across etrasimod, ozanimod, tamuzimod, and KRP203"
+    "source": "Gardezi SAA et al. Dig Dis Sci. 2026 Apr 13 (PMID: 41968221) \u2014 meta-analysis of 8 RCTs, 2,663 patients across etrasimod, ozanimod, tamuzimod, and KRP203"
   },
   {
     "stat": "RR 2.60",
     "label": "maintenance histological remission with oral S1P receptor modulators vs placebo",
-    "source": "Gardezi SAA et al. Dig Dis Sci. 2026 Apr 13 (PMID: 41968221) — tissue-level healing signal across the S1P class"
+    "source": "Gardezi SAA et al. Dig Dis Sci. 2026 Apr 13 (PMID: 41968221) \u2014 tissue-level healing signal across the S1P class"
   },
   {
     "stat": "RR 2.39",
     "label": "clinical remission with FMT when delivered by colonoscopy + enema vs control",
-    "source": "Huang B et al. Adv Ther. 2026 Apr 7 (PMID: 41945234) — updated meta-analysis of 16 RCTs; strongest route-specific effect in UC"
+    "source": "Huang B et al. Adv Ther. 2026 Apr 7 (PMID: 41945234) \u2014 updated meta-analysis of 16 RCTs; strongest route-specific effect in UC"
   },
   {
-    "stat": "26× higher",
-    "label": "clinical remission rate — tulisokibart (anti-TL1A) vs placebo (26% vs 1%) in moderate-to-severe IBD, Phase 2 ARTEMIS-UC. Phase 3 now enrolling",
-    "source": "Goyal MK et al. Aliment Pharmacol Ther. 2026 Apr 6 (PMID: 41941212) — review of TL1A/DR3 clinical evidence; tulisokibart Phase 2 data"
+    "stat": "26\u00d7 higher",
+    "label": "clinical remission rate \u2014 tulisokibart (anti-TL1A) vs placebo (26% vs 1%) in moderate-to-severe IBD, Phase 2 ARTEMIS-UC. Phase 3 now enrolling",
+    "source": "Goyal MK et al. Aliment Pharmacol Ther. 2026 Apr 6 (PMID: 41941212) \u2014 review of TL1A/DR3 clinical evidence; tulisokibart Phase 2 data"
   },
   {
     "stat": "RR 2.53",
     "label": "histo-endoscopic mucosal healing at induction with IL-23 inhibitors vs placebo (7 RCTs, 4,203 patients)",
-    "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) — mirikizumab, risankizumab, guselkumab"
+    "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) \u2014 mirikizumab, risankizumab, guselkumab"
   },
   {
     "stat": "61% fewer",
-    "label": "serious adverse events with IL-23 inhibitors vs placebo during induction (RR 0.39) — active UC control reduces disease-driven harms",
-    "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) — 7 RCTs, 4,203 patients"
+    "label": "serious adverse events with IL-23 inhibitors vs placebo during induction (RR 0.39) \u2014 active UC control reduces disease-driven harms",
+    "source": "Amin HM et al. Int J Colorectal Dis. 2025 (PMID: 41467943) \u2014 7 RCTs, 4,203 patients"
   },
   {
     "stat": "RR 6.93",
-    "label": "mucosal healing at 40 weeks with etrasimod vs placebo (I²=0% — zero heterogeneity)",
-    "source": "GRADE meta-analysis, 4 RCTs, 1239 patients — Jha A et al. Ann Pharmacother. 2026 (PMID: 41891290)"
+    "label": "mucosal healing at 40 weeks with etrasimod vs placebo (I\u00b2=0% \u2014 zero heterogeneity)",
+    "source": "GRADE meta-analysis, 4 RCTs, 1239 patients \u2014 Jha A et al. Ann Pharmacother. 2026 (PMID: 41891290)"
   },
   {
     "stat": "77.7%",
     "label": "mirikizumab clinical remission sustained at 4 years (W52 remitters)",
-    "source": "LUCENT-3 OLE — Sands BE et al. Inflamm Bowel Dis. 2026 (PMID: 41777218)"
+    "source": "LUCENT-3 OLE \u2014 Sands BE et al. Inflamm Bowel Dis. 2026 (PMID: 41777218)"
   },
   {
     "stat": "OR 5.19",
@@ -176,7 +191,7 @@
   },
   {
     "stat": "aHR 3.25",
-    "label": "objective flare risk with FC ≥250 vs <50 µg/g",
+    "label": "objective flare risk with FC \u2265250 vs <50 \u00b5g/g",
     "source": "PREdiCCt cohort (PMID: 41554630)"
   },
   {
@@ -202,12 +217,12 @@
   {
     "stat": "95%",
     "label": "completed guselkumab treatment through week 92 without maintenance dose adjustment in the QUASAR long-term extension",
-    "source": "Sandborn WJ et al. Am J Gastroenterol. 2026 May 1 (PMID: 42065421) — among 303 participants who had not received a maintenance dose adjustment, 95% completed treatment through week 92"
+    "source": "Sandborn WJ et al. Am J Gastroenterol. 2026 May 1 (PMID: 42065421) \u2014 among 303 participants who had not received a maintenance dose adjustment, 95% completed treatment through week 92"
   },
   {
     "stat": "32.8% vs 12.2%",
     "label": "remission: appendicectomy vs JAK inhibitor in biologic-refractory UC (p=0.010)",
-    "source": "COSTA trial — Visser E et al. Lancet Gastroenterol Hepatol. 2026 (PMID: 41512889)"
+    "source": "COSTA trial \u2014 Visser E et al. Lancet Gastroenterol Hepatol. 2026 (PMID: 41512889)"
   },
   {
     "stat": "RR 2.33",
@@ -231,7 +246,7 @@
   },
   {
     "stat": "HR 1.82",
-    "label": "IBD risk from ultra-processed foods (≥5 servings/day)",
+    "label": "IBD risk from ultra-processed foods (\u22655 servings/day)",
     "source": "PURE study (116,087 adults)"
   },
   {
@@ -247,12 +262,12 @@
   {
     "stat": "74%",
     "label": "clinical response with upadacitinib at week 8",
-    "source": "U-ACHIEVE (NNT ≈ 3–5)"
+    "source": "U-ACHIEVE (NNT \u2248 3\u20135)"
   },
   {
     "stat": "49.9%",
     "label": "mirikizumab maintenance remission at week 40",
-    "source": "LUCENT (NNT ≈ 4)"
+    "source": "LUCENT (NNT \u2248 4)"
   },
   {
     "stat": "OR 0.31",

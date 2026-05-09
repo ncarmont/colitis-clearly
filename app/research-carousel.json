@@ -1,10 +1,19 @@
 [
   {
+    "slug": "dietary-supplements-network-meta-analysis-uc-2026",
+    "href": "/blog/dietary-supplements-network-meta-analysis-uc-2026",
+    "title": "A new 24-RCT UC supplement ranking found probiotics, flaxseed, curcumin, butyrate, and selenium did the useful jobs \u2014 not the entire supplement aisle",
+    "paper": "Xu R et al. Front Med (Lausanne). 2026 Apr 22 (PMID: 42100281)",
+    "finding": "A 2026 network meta-analysis of 24 randomized controlled trials including 1,491 UC patients compared 14 dietary supplements. Probiotics and selenium significantly reduced clinical activity index, flaxseed extract improved Mayo score and inflammatory markers, curcumin and butyrate produced large IBDQ quality-of-life gains, and synbiotics plus Achillea wilhelmsii lowered CRP. The adult caveat: these were adjuncts, not replacements for UC medication.",
+    "category": "Supplements",
+    "date": "2026-05-09"
+  },
+  {
     "slug": "jak-inhibitor-safety-vs-biologics-ibd-2026",
     "href": "/blog/jak-inhibitor-safety-vs-biologics-ibd-2026",
     "title": "JAK inhibitor safety looked less terrifying in real-world IBD: no higher MACE, cancer, VTE, or infection risk vs biologics",
     "paper": "Kochhar GS et al. Intest Res. 2026 May 7 (PMID: 42097599)",
-    "finding": "In a U.S. Collaborative Network real-world cohort, 3,186 IBD patients on JAK inhibitors were compared with 60,462 biologic-treated patients. After propensity matching, JAK inhibitors did not show higher odds of bacterial, viral, or fungal infections, major adverse cardiovascular events, malignancy, venous thromboembolism, or GI perforation versus biologics. The tradeoff was higher odds of LDL ≥190 mg/dL and grade 3+ lymphopenia, meaning monitoring still matters.",
+    "finding": "In a U.S. Collaborative Network real-world cohort, 3,186 IBD patients on JAK inhibitors were compared with 60,462 biologic-treated patients. After propensity matching, JAK inhibitors did not show higher odds of bacterial, viral, or fungal infections, major adverse cardiovascular events, malignancy, venous thromboembolism, or GI perforation versus biologics. The tradeoff was higher odds of LDL \u2265190 mg/dL and grade 3+ lymphopenia, meaning monitoring still matters.",
     "category": "Small Molecules",
     "date": "2026-05-08"
   },
@@ -13,14 +22,14 @@
     "href": "/blog/mirikizumab-latium-net-real-world-uc-2026",
     "title": "Mirikizumab looked real outside trial fantasyland: 43.2% steroid-free remission by week 12",
     "paper": "Murgiano M et al. BMJ Open Gastroenterol. 2026 May 5 (PMID: 42086294)",
-    "finding": "In the five-center Italian Latium Net real-world cohort of 95 ulcerative colitis patients starting mirikizumab, 43.2% achieved steroid-free clinical remission by week 12, 61.1% achieved clinical response, and 33.7% reached biochemical remission. Remission rates were similar in biologic-experienced and biologic-naïve patients, only three patients stopped for lack of efficacy, and no adverse events were observed.",
+    "finding": "In the five-center Italian Latium Net real-world cohort of 95 ulcerative colitis patients starting mirikizumab, 43.2% achieved steroid-free clinical remission by week 12, 61.1% achieved clinical response, and 33.7% reached biochemical remission. Remission rates were similar in biologic-experienced and biologic-na\u00efve patients, only three patients stopped for lack of efficacy, and no adverse events were observed.",
     "category": "Biologics",
     "date": "2026-05-07"
   },
   {
     "slug": "fmt-endoscopic-response-meta-analysis-2026",
     "href": "/blog/fmt-endoscopic-response-meta-analysis-2026",
-    "title": "FMT did not just calm symptoms: a new RCT meta-analysis found 6.80× higher endoscopic response",
+    "title": "FMT did not just calm symptoms: a new RCT meta-analysis found 6.80\u00d7 higher endoscopic response",
     "paper": "Ikram S et al. Inflammopharmacology. 2026 Apr (PMID: 41792366)",
     "finding": "A 2026 systematic review and meta-analysis of randomized trials from 2020-2025 found fecal microbiota transplantation significantly improved induction clinical remission in IBD, especially UC (OR 3.24 vs controls), and produced a much stronger endoscopic response signal (OR 6.80, 95% CI 2.96-15.63). Maintenance data were still limited and serious adverse events were numerically higher but not statistically significant.",
     "category": "Microbiome",
@@ -83,17 +92,17 @@
   {
     "slug": "anti-inflammatory-diet-dii-uc-prospective-study-2026",
     "href": "/blog/anti-inflammatory-diet-dii-uc-prospective-study-2026",
-    "title": "A pro-inflammatory diet raised short-term UC flare odds 5.82×, new prospective study finds",
+    "title": "A pro-inflammatory diet raised short-term UC flare odds 5.82\u00d7, new prospective study finds",
     "paper": "Xu Y et al. Nutrition. 2026 (PMID: 41916183)",
-    "finding": "In a prospective study of 108 UC patients in remission or with mild activity, higher dietary inflammatory index scores were linked to 5.82× higher odds of relapse or persistent disease activity over 6 weeks. A structured UC-tailored anti-inflammatory diet delivered through a digital platform improved diet quality, supported butyrate-producing gut bacteria, and significantly reduced short-term adverse outcomes versus general dietary advice.",
+    "finding": "In a prospective study of 108 UC patients in remission or with mild activity, higher dietary inflammatory index scores were linked to 5.82\u00d7 higher odds of relapse or persistent disease activity over 6 weeks. A structured UC-tailored anti-inflammatory diet delivered through a digital platform improved diet quality, supported butyrate-producing gut bacteria, and significantly reduced short-term adverse outcomes versus general dietary advice.",
     "category": "Diet",
     "date": "2026-04-28"
   },
   {
     "slug": "rdw-blood-test-uc-activity-2026",
     "href": "/blog/rdw-blood-test-uc-activity-2026",
-    "title": "Your CBC may be snitching on hidden UC inflammation: RDW ≥14.5% flagged active disease",
-    "paper": "Özden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114)",
+    "title": "Your CBC may be snitching on hidden UC inflammation: RDW \u226514.5% flagged active disease",
+    "paper": "\u00d6zden Y. Turk J Gastroenterol. 2026 Apr 8 (PMID: 42027114)",
     "finding": "In a real-world cohort of 1,000 IBD patients, a routine CBC marker called red cell distribution width independently tracked objective disease activity. An RDW cutoff of 14.5% identified active disease with 78.9% sensitivity and 76.3% specificity, and adding RDW to CRP improved discrimination from AUC 0.845 to 0.880, suggesting cheap routine bloodwork may help flag hidden ulcerative colitis inflammation earlier.",
     "category": "Biomarkers",
     "date": "2026-04-27"
@@ -103,7 +112,7 @@
     "href": "/blog/vedolizumab-switch-subcutaneous-japanese-uc-2026",
     "title": "Switched vedolizumab from IV to home injections? 98% stayed on it and calprotectin stayed quiet",
     "paper": "Furuya M et al. JGH Open. 2026 Apr 21 (PMID: 42027776)",
-    "finding": "In a Japanese UC cohort, switching from intravenous to subcutaneous vedolizumab maintained disease control over 12 months: median fecal calprotectin stayed at 46 µg/g, fecal calprotectin remission remained high at 91% to 87%, and treatment persistence reached 98%. Injection-site reactions were common but usually self-limited, suggesting many stable patients may be able to leave the infusion center without losing control.",
+    "finding": "In a Japanese UC cohort, switching from intravenous to subcutaneous vedolizumab maintained disease control over 12 months: median fecal calprotectin stayed at 46 \u00b5g/g, fecal calprotectin remission remained high at 91% to 87%, and treatment persistence reached 98%. Injection-site reactions were common but usually self-limited, suggesting many stable patients may be able to leave the infusion center without losing control.",
     "category": "Biologics",
     "date": "2026-04-21"
   },
@@ -155,9 +164,9 @@
   {
     "slug": "vedolizumab-second-line-anti-tnf-meta-analysis-2026",
     "href": "/blog/vedolizumab-second-line-anti-tnf-meta-analysis-2026",
-    "title": "Failed one anti-TNF? Second-line vedolizumab still made UC patients 7.13× to 11.35× more likely to hit remission",
+    "title": "Failed one anti-TNF? Second-line vedolizumab still made UC patients 7.13\u00d7 to 11.35\u00d7 more likely to hit remission",
     "paper": "Lukas M et al. Ther Adv Gastroenterol. 2026 (PMID: 41883697)",
-    "finding": "A meta-analysis of patient-level data from GEMINI-1 and VISIBLE-1 found that after failure of one anti-TNF, second-line vedolizumab significantly improved week-52 outcomes versus placebo. Patients were 7.13× to 11.35× more likely to achieve clinical remission, with better steroid-free remission, endoscopic improvement, and quality of life.",
+    "finding": "A meta-analysis of patient-level data from GEMINI-1 and VISIBLE-1 found that after failure of one anti-TNF, second-line vedolizumab significantly improved week-52 outcomes versus placebo. Patients were 7.13\u00d7 to 11.35\u00d7 more likely to achieve clinical remission, with better steroid-free remission, endoscopic improvement, and quality of life.",
     "category": "Biologics",
     "date": "2026-04-15"
   },
@@ -175,59 +184,59 @@
     "href": "/blog/s1p-modulators-uc-meta-analysis-2026",
     "title": "Oral S1P drugs more than tripled maintenance response in UC, new meta-analysis finds",
     "paper": "Gardezi SAA et al. Dig Dis Sci. 2026 Apr 13 (PMID: 41968221)",
-    "finding": "A systematic review and meta-analysis of 8 randomized trials (2,663 patients) found S1P receptor modulators significantly improved every major UC outcome versus placebo. Maintenance clinical response was 3.30× higher, clinical remission 2.20× higher, histological remission 2.60× higher, and mucosal healing 2.21× higher. Serious adverse events and discontinuations were not increased.",
+    "finding": "A systematic review and meta-analysis of 8 randomized trials (2,663 patients) found S1P receptor modulators significantly improved every major UC outcome versus placebo. Maintenance clinical response was 3.30\u00d7 higher, clinical remission 2.20\u00d7 higher, histological remission 2.60\u00d7 higher, and mucosal healing 2.21\u00d7 higher. Serious adverse events and discontinuations were not increased.",
     "category": "Small Molecules",
     "date": "2026-04-13"
   },
   {
     "slug": "fmt-delivery-route-meta-analysis-2026",
     "href": "/blog/fmt-delivery-route-meta-analysis-2026",
-    "title": "FMT works best by colonoscopy + enemas: 2.39× more remissions in UC, updated meta-analysis finds",
+    "title": "FMT works best by colonoscopy + enemas: 2.39\u00d7 more remissions in UC, updated meta-analysis finds",
     "paper": "Huang B et al. Adv Ther. 2026 Apr 7 (PMID: 41945234)",
-    "finding": "Updated meta-analysis of 16 RCTs found FMT improved clinical remission overall (RR 1.81) and endoscopic remission (RR 1.74) without increasing adverse events. The strongest signal was route-dependent: colonoscopy plus enema delivery produced 2.39× more clinical remissions and 2.19× more endoscopic remissions than control, outperforming single-route approaches.",
+    "finding": "Updated meta-analysis of 16 RCTs found FMT improved clinical remission overall (RR 1.81) and endoscopic remission (RR 1.74) without increasing adverse events. The strongest signal was route-dependent: colonoscopy plus enema delivery produced 2.39\u00d7 more clinical remissions and 2.19\u00d7 more endoscopic remissions than control, outperforming single-route approaches.",
     "category": "Microbiome",
     "date": "2026-04-07"
   },
   {
     "slug": "tl1a-inhibitors-uc-tulisokibart-duvakitug-2026",
     "href": "/blog/tl1a-inhibitors-uc-tulisokibart-duvakitug-2026",
-    "title": "TL1A inhibitors: the next biologic class that targets both UC inflammation AND intestinal scarring — Phase 3 programs now underway",
+    "title": "TL1A inhibitors: the next biologic class that targets both UC inflammation AND intestinal scarring \u2014 Phase 3 programs now underway",
     "paper": "Goyal MK et al. Aliment Pharmacol Ther. 2026 Apr 6 (PMID: 41941212)",
-    "finding": "A comprehensive narrative synthesis of TL1A/DR3 biology and clinical evidence confirms that TL1A inhibitors (tulisokibart, duvakitug, afimkibart) represent a mechanistically distinct biologic class uniquely capable of blocking both the inflammatory cascade AND intestinal fibrosis in IBD. Tulisokibart Phase 2 (ARTEMIS-UC) showed 26% clinical remission vs 1% placebo. Phase 3 programs are now actively enrolling. Unlike all existing UC biologics, TL1A inhibitors target the inflammation-fibrosis continuum — directly relevant to the ~30% of UC patients who develop intestinal strictures.",
+    "finding": "A comprehensive narrative synthesis of TL1A/DR3 biology and clinical evidence confirms that TL1A inhibitors (tulisokibart, duvakitug, afimkibart) represent a mechanistically distinct biologic class uniquely capable of blocking both the inflammatory cascade AND intestinal fibrosis in IBD. Tulisokibart Phase 2 (ARTEMIS-UC) showed 26% clinical remission vs 1% placebo. Phase 3 programs are now actively enrolling. Unlike all existing UC biologics, TL1A inhibitors target the inflammation-fibrosis continuum \u2014 directly relevant to the ~30% of UC patients who develop intestinal strictures.",
     "category": "Pipeline",
     "date": "2026-04-06"
   },
   {
     "slug": "il23-inhibitors-meta-analysis-safety-efficacy-2026",
     "href": "/blog/il23-inhibitors-meta-analysis-safety-efficacy-2026",
-    "title": "IL-23 inhibitors: 2.53× more mucosal healing AND 61% fewer serious side effects — meta-analysis of 7 RCTs settles the class debate",
+    "title": "IL-23 inhibitors: 2.53\u00d7 more mucosal healing AND 61% fewer serious side effects \u2014 meta-analysis of 7 RCTs settles the class debate",
     "paper": "Amin HM et al. Int J Colorectal Dis. 2025 Dec 30;41(1):1 (PMID: 41467943)",
-    "finding": "A systematic review and meta-analysis of 7 RCTs (4,203 patients) found IL-23 inhibitors (mirikizumab, risankizumab, guselkumab) deliver histo-endoscopic mucosal healing at 2.53× the rate of placebo during induction and 1.81× at maintenance, with clinical remission RR 1.52 (induction) and RR 1.62 (maintenance). Most striking: serious adverse events were 61% LOWER with IL-23 inhibitors vs placebo during induction (RR 0.39). Effective disease control reduces the disease-driven adverse events that dominate the placebo arm.",
+    "finding": "A systematic review and meta-analysis of 7 RCTs (4,203 patients) found IL-23 inhibitors (mirikizumab, risankizumab, guselkumab) deliver histo-endoscopic mucosal healing at 2.53\u00d7 the rate of placebo during induction and 1.81\u00d7 at maintenance, with clinical remission RR 1.52 (induction) and RR 1.62 (maintenance). Most striking: serious adverse events were 61% LOWER with IL-23 inhibitors vs placebo during induction (RR 0.39). Effective disease control reduces the disease-driven adverse events that dominate the placebo arm.",
     "category": "Biologics",
     "date": "2026-04-03"
   },
   {
     "slug": "etrasimod-meta-analysis-mucosal-healing-2026",
     "href": "/blog/etrasimod-meta-analysis-mucosal-healing-2026",
-    "title": "Etrasimod: 6.93× more mucosal healing at 40 weeks — first GRADE meta-analysis of the oral S1P pill for UC",
+    "title": "Etrasimod: 6.93\u00d7 more mucosal healing at 40 weeks \u2014 first GRADE meta-analysis of the oral S1P pill for UC",
     "paper": "Jha A et al. Ann Pharmacother. 2026 Mar 27 (PMID: 41891290)",
-    "finding": "GRADE-based meta-analysis of 4 RCTs (1239 patients) confirmed etrasimod's maintenance power: clinical remission RR 4.28 at 40+ weeks (I²=0%), endoscopic improvement RR 3.51, mucosal healing RR 6.93 (I²=0%), steroid-free remission RR 4.28 vs placebo. Induction: clinical remission RR 2.92, response RR 1.71, mucosal healing RR 3.11. No excess serious adverse events. Zero heterogeneity in all maintenance endpoints — exceptionally consistent signal.",
+    "finding": "GRADE-based meta-analysis of 4 RCTs (1239 patients) confirmed etrasimod's maintenance power: clinical remission RR 4.28 at 40+ weeks (I\u00b2=0%), endoscopic improvement RR 3.51, mucosal healing RR 6.93 (I\u00b2=0%), steroid-free remission RR 4.28 vs placebo. Induction: clinical remission RR 2.92, response RR 1.71, mucosal healing RR 3.11. No excess serious adverse events. Zero heterogeneity in all maintenance endpoints \u2014 exceptionally consistent signal.",
     "category": "Small Molecules",
     "date": "2026-03-31"
   },
   {
     "slug": "appendicectomy-vs-jak-inhibitor-biologic-refractory-uc-2026",
     "href": "/blog/appendicectomy-vs-jak-inhibitor-biologic-refractory-uc-2026",
-    "title": "Appendicectomy beat JAK inhibitors 3:1 in biologic-refractory UC — landmark Lancet 2026 trial",
+    "title": "Appendicectomy beat JAK inhibitors 3:1 in biologic-refractory UC \u2014 landmark Lancet 2026 trial",
     "paper": "Visser E et al. (COSTA Study Group). Lancet Gastroenterol Hepatol. 2026 Mar;11(3):190-203 (PMID: 41512889)",
-    "finding": "In the COSTA multicentre prospective cohort (116 biologic-exposed active UC patients), laparoscopic appendicectomy achieved 32.8% clinical remission at 12 months vs 12.2% with switching to a JAK inhibitor (p=0.010). Clinical response 73.1% vs 53.1%; endoscopic response 48.4% vs 25.6%. Colectomy rates were similar (9% vs 8.2%). Procedure was safe with only 3 grade ≤II complications.",
+    "finding": "In the COSTA multicentre prospective cohort (116 biologic-exposed active UC patients), laparoscopic appendicectomy achieved 32.8% clinical remission at 12 months vs 12.2% with switching to a JAK inhibitor (p=0.010). Clinical response 73.1% vs 53.1%; endoscopic response 48.4% vs 25.6%. Colectomy rates were similar (9% vs 8.2%). Procedure was safe with only 3 grade \u2264II complications.",
     "category": "Surgery",
     "date": "2026-03-30"
   },
   {
     "slug": "mirikizumab-4-year-remission-lucent-3",
     "href": "/blog/mirikizumab-4-year-remission-lucent-3",
-    "title": "Mirikizumab: 77.7% still in clinical remission at 4 years — longest IL-23 durability data in UC",
+    "title": "Mirikizumab: 77.7% still in clinical remission at 4 years \u2014 longest IL-23 durability data in UC",
     "paper": "Sands BE et al. Inflamm Bowel Dis. 2026 Mar (PMID: 41777218)",
     "finding": "In the LUCENT-3 open-label extension (868 patients, 835 patient-years), mirikizumab W52 remitters maintained 77.7% clinical remission, 81.3% endoscopic remission, and 94.3% symptomatic remission at 4 years (week 212). W52 responders showed 68.7% clinical and 70.2% endoscopic remission at 4 years. No new safety signals over 160+ weeks of long-term exposure.",
     "category": "Biologics",
@@ -245,43 +254,43 @@
   {
     "slug": "mediterranean-diet-curcumin-uc-rct-2024",
     "href": "/blog/mediterranean-diet-curcumin-uc-rct-2024",
-    "title": "Mediterranean diet + curcumin reduced active UC disease activity in 8 weeks — multicenter RCT",
-    "paper": "Erol Doğan Ö et al. Nutrients. 2024 (PMID: 38794742)",
-    "finding": "A 3-arm multicenter RCT (48 patients with confirmed mild-to-moderate active UC on mesalamine) found that Mediterranean diet alone, MD + 1,600 mg/day curcumin, and MD + resveratrol all significantly reduced Truelove–Witts disease activity scores, serum inflammatory markers, and improved quality of life (all p < 0.05) in 8 weeks. The diet alone matched supplemented arms on most endpoints.",
+    "title": "Mediterranean diet + curcumin reduced active UC disease activity in 8 weeks \u2014 multicenter RCT",
+    "paper": "Erol Do\u011fan \u00d6 et al. Nutrients. 2024 (PMID: 38794742)",
+    "finding": "A 3-arm multicenter RCT (48 patients with confirmed mild-to-moderate active UC on mesalamine) found that Mediterranean diet alone, MD + 1,600 mg/day curcumin, and MD + resveratrol all significantly reduced Truelove\u2013Witts disease activity scores, serum inflammatory markers, and improved quality of life (all p < 0.05) in 8 weeks. The diet alone matched supplemented arms on most endpoints.",
     "category": "Diet",
     "date": "2026-03-25"
   },
   {
     "slug": "fmt-remission-meta-analysis-2026",
     "href": "/blog/fmt-remission-meta-analysis-2026",
-    "title": "FMT nearly triples the odds of UC remission — meta-analysis of 15 RCTs confirms gut bacteria transplant works",
+    "title": "FMT nearly triples the odds of UC remission \u2014 meta-analysis of 15 RCTs confirms gut bacteria transplant works",
     "paper": "Doukas PG et al. Dig Dis (Basel). 2026 (PMID: 41078065)",
-    "finding": "Fecal microbiota transplantation achieved 62% clinical remission vs 50.5% in controls (OR 2.65; 95% CI 1.76–4.00) across 15 randomised trials. Endoscopic response nearly doubled: 42% FMT vs 22% placebo (OR 2.00). Low heterogeneity — a consistent, robust signal. Non-pharmacological, no systemic immunosuppression.",
+    "finding": "Fecal microbiota transplantation achieved 62% clinical remission vs 50.5% in controls (OR 2.65; 95% CI 1.76\u20134.00) across 15 randomised trials. Endoscopic response nearly doubled: 42% FMT vs 22% placebo (OR 2.00). Low heterogeneity \u2014 a consistent, robust signal. Non-pharmacological, no systemic immunosuppression.",
     "category": "Microbiome",
     "date": "2026-03-24"
   },
   {
     "slug": "jak-inhibitors-acute-severe-uc-meta-analysis-2026",
     "href": "/blog/jak-inhibitors-acute-severe-uc-meta-analysis-2026",
-    "title": "JAK inhibitors: 86.5% clinical response in the worst UC flares within 30 days — meta-analysis of 35 studies",
+    "title": "JAK inhibitors: 86.5% clinical response in the worst UC flares within 30 days \u2014 meta-analysis of 35 studies",
     "paper": "Jena A et al. Clin Gastroenterol Hepatol. 2026 (PMID: 41690364)",
-    "finding": "Upadacitinib achieved 86.5% short-term clinical response in acute severe UC hospitalised patients within 30 days (95% CI 72.3–94.1%), with colectomy rates of just 11.2%. Tofacitinib achieved 77.9% response. Meta-analysis of 35 studies, 664 patients. Both drugs outperform historical rescue therapy benchmarks.",
+    "finding": "Upadacitinib achieved 86.5% short-term clinical response in acute severe UC hospitalised patients within 30 days (95% CI 72.3\u201394.1%), with colectomy rates of just 11.2%. Tofacitinib achieved 77.9% response. Meta-analysis of 35 studies, 664 patients. Both drugs outperform historical rescue therapy benchmarks.",
     "category": "Biologics",
     "date": "2026-03-23"
   },
   {
     "slug": "anti-inflammatory-diet-uc-meta-analysis-2026",
     "href": "/blog/anti-inflammatory-diet-uc-meta-analysis-2026",
-    "title": "Anti-inflammatory diet: 82% better clinical response in active UC — meta-analysis of 6 RCTs",
+    "title": "Anti-inflammatory diet: 82% better clinical response in active UC \u2014 meta-analysis of 6 RCTs",
     "paper": "Rehmat et al. Dig Dis Sci. 2026 (PMID: 40797000)",
-    "finding": "Whole-food anti-inflammatory diets increased clinical response in active UC by 82% (RR 1.82, p=0.004, I²=0%) and reduced fecal calprotectin by 210 µg/g during remission (p=0.006). Effect was on top of standard medication across 359 patients in 6 RCTs.",
+    "finding": "Whole-food anti-inflammatory diets increased clinical response in active UC by 82% (RR 1.82, p=0.004, I\u00b2=0%) and reduced fecal calprotectin by 210 \u00b5g/g during remission (p=0.006). Effect was on top of standard medication across 359 patients in 6 RCTs.",
     "category": "Diet",
     "date": "2026-03-23"
   },
   {
     "slug": "accure-appendectomy-rct-2025",
     "href": "/research/clinical-trials",
-    "title": "ACCURE RCT: Appendectomy reduces UC relapse by 35% — first surgical RCT for UC",
+    "title": "ACCURE RCT: Appendectomy reduces UC relapse by 35% \u2014 first surgical RCT for UC",
     "paper": "ACCURE Trial. Lancet Gastro Hepatol. 2025",
     "finding": "Therapeutic appendectomy + standard therapy reduced 12-month relapse to 33% vs >50% with standard therapy alone (RR 0.65). Earlier meta-analyses showed OR 0.31 for UC risk when appendectomy performed before age 20.",
     "category": "Surgery",
@@ -308,7 +317,7 @@
   {
     "slug": "tulisokibart-anti-tl1a-artemis",
     "href": "/research/emerging",
-    "title": "Tulisokibart (anti-TL1A): 26% vs 1% remission — first precision medicine UC drug",
+    "title": "Tulisokibart (anti-TL1A): 26% vs 1% remission \u2014 first precision medicine UC drug",
     "paper": "ARTEMIS-UC Phase 2 (Merck). Phase 3 ATLAS-UC underway",
     "finding": "First UC therapy with a companion diagnostic to identify responders. TL1A regulates both inflammation and fibrosis, suggesting potential disease-modifying properties beyond symptom control.",
     "category": "Pipeline",
@@ -319,7 +328,7 @@
     "href": "/blog/uc-diet-guide",
     "title": "Red and processed meat: OR 5.19 for UC relapse in highest consumption tertile",
     "paper": "Prospective cohort + dose-response meta-analysis",
-    "finding": "The single most impactful dietary trigger. Sulfur amino acids metabolized into hydrogen sulfide — directly toxic to colonocytes and impairs butyrate oxidation. UC patients already have elevated colonic H2S.",
+    "finding": "The single most impactful dietary trigger. Sulfur amino acids metabolized into hydrogen sulfide \u2014 directly toxic to colonocytes and impairs butyrate oxidation. UC patients already have elevated colonic H2S.",
     "category": "Diet",
     "date": "2025-01-01"
   },
@@ -344,7 +353,7 @@
   {
     "slug": "fmt-anti-inflammatory-diet-uc-remission",
     "href": "/blog/fmt-anti-inflammatory-diet-uc-remission",
-    "title": "FMT + anti-inflammatory diet hit 3.5× higher clinical response than standard therapy in mild-moderate UC",
+    "title": "FMT + anti-inflammatory diet hit 3.5\u00d7 higher clinical response than standard therapy in mild-moderate UC",
     "paper": "Kedia et al. Gut. 2022 Dec;71(12):2401-2413. PMID: 35973787",
     "finding": "Combining multidonor FMT with an anti-inflammatory diet produced 60% remission and 36.4% deep remission at 8 weeks. Diet alone then maintained deep remission in 25% of patients at 48 weeks versus 0% in the standard-therapy group.",
     "category": "Diet & Microbiome",
@@ -353,18 +362,18 @@
   {
     "slug": "predicct-calprotectin-flare-prediction",
     "href": "/research/biomarkers",
-    "title": "PREdiCCt: Faecal calprotectin ≥250 predicts objective flare with aHR 3.25",
+    "title": "PREdiCCt: Faecal calprotectin \u2265250 predicts objective flare with aHR 3.25",
     "paper": "PREdiCCt cohort. Gut 2025. PMID: 41554630",
-    "finding": "In the largest prospective IBD flare-prediction cohort, FC ≥250 µg/g vs <50 predicted objective UC flare with aHR 3.25 — even in patients reporting remission.",
+    "finding": "In the largest prospective IBD flare-prediction cohort, FC \u2265250 \u00b5g/g vs <50 predicted objective UC flare with aHR 3.25 \u2014 even in patients reporting remission.",
     "category": "Biomarkers",
     "date": "2025-07-01"
   },
   {
     "slug": "mesalamine-adherence-hr-5-5",
     "href": "/blog/understanding-ulcerative-colitis",
-    "title": "Mesalamine non-adherence multiplies relapse risk by 5.5×",
+    "title": "Mesalamine non-adherence multiplies relapse risk by 5.5\u00d7",
     "paper": "Kane et al. Am J Med. 2003. PMID: 12543288",
-    "finding": "Prospective data showed non-adherent UC patients had HR 5.5 for relapse — making medication adherence the single highest-leverage modifiable factor.",
+    "finding": "Prospective data showed non-adherent UC patients had HR 5.5 for relapse \u2014 making medication adherence the single highest-leverage modifiable factor.",
     "category": "Treatment",
     "date": "2003-01-01"
   },
@@ -382,7 +391,7 @@
     "href": "/research/clinical-trials",
     "title": "BSG 2025: Comprehensive adult IBD guideline with treat-to-target monitoring",
     "paper": "British Society of Gastroenterology. Gut 2025",
-    "finding": "BSG pragmatic thresholds: FC <100 likely endoscopic remission; FC >200 low likelihood. Symptoms by 3 months, biomarkers 3–6 months, endoscopy 6–12 months.",
+    "finding": "BSG pragmatic thresholds: FC <100 likely endoscopic remission; FC >200 low likelihood. Symptoms by 3 months, biomarkers 3\u20136 months, endoscopy 6\u201312 months.",
     "category": "Guidelines",
     "date": "2025-01-01"
   },
@@ -391,16 +400,16 @@
     "href": "/blog/uc-diet-guide",
     "title": "PREdiCCt: Highest meat intake quartile doubles objective flare risk",
     "paper": "PREdiCCt cohort. Gut 2025. PMID: 41554630",
-    "finding": "Highest vs lowest quartile total meat intake in UC was associated with aHR 1.95 for objective flare — one of the strongest dietary signals.",
+    "finding": "Highest vs lowest quartile total meat intake in UC was associated with aHR 1.95 for objective flare \u2014 one of the strongest dietary signals.",
     "category": "Diet",
     "date": "2025-07-01"
   },
   {
     "slug": "stress-3-6x-flare-risk",
     "href": "/blog/uc-and-mental-health",
-    "title": "High perceived stress linked to 3.6× higher odds of UC flare",
+    "title": "High perceived stress linked to 3.6\u00d7 higher odds of UC flare",
     "paper": "Sauk et al. Clin Gastroenterol Hepatol. 2023",
-    "finding": "Stress was the #1 patient-reported flare trigger (37.9% of 27,000+ forum posts), and prospective data showed 3.6× flare odds with high perceived stress.",
+    "finding": "Stress was the #1 patient-reported flare trigger (37.9% of 27,000+ forum posts), and prospective data showed 3.6\u00d7 flare odds with high perceived stress.",
     "category": "Mental Health",
     "date": "2023-06-01"
   },
@@ -427,7 +436,7 @@
     "href": "/research/clinical-trials",
     "title": "Antivirals in CMV+ steroid-refractory UC reduce colectomy odds by 80%",
     "paper": "Meta-analysis. PMID: 29392650",
-    "finding": "Antiviral therapy in CMV-positive steroid-refractory UC associated with colectomy OR 0.20 — a dramatic reduction in surgical need.",
+    "finding": "Antiviral therapy in CMV-positive steroid-refractory UC associated with colectomy OR 0.20 \u2014 a dramatic reduction in surgical need.",
     "category": "Treatment",
     "date": "2018-02-01"
   },
@@ -443,9 +452,9 @@
   {
     "slug": "u-achieve-upadacitinib",
     "href": "/blog/jak-inhibitors-uc",
-    "title": "U-ACHIEVE: Upadacitinib delivers 26–34% remission at week 8 (NNT ≈ 3–5)",
+    "title": "U-ACHIEVE: Upadacitinib delivers 26\u201334% remission at week 8 (NNT \u2248 3\u20135)",
     "paper": "Danese et al. Lancet. 2022. PMID: 35644166",
-    "finding": "Upadacitinib reached 74% response and 26% remission at week 8, with maintenance at 42–52% vs 12% — one of the strongest oral signals in UC.",
+    "finding": "Upadacitinib reached 74% response and 26% remission at week 8, with maintenance at 42\u201352% vs 12% \u2014 one of the strongest oral signals in UC.",
     "category": "Small Molecules",
     "date": "2022-06-04"
   },
@@ -463,7 +472,7 @@
     "href": "/blog/biologics-for-uc-compared",
     "title": "LUCENT: Mirikizumab maintenance remission 49.9% at week 40",
     "paper": "D'Haens et al. Lancet. 2023",
-    "finding": "Mirikizumab produced about 63% response with 24% remission at week 12 and 49.9% maintenance remission — strongest IL-23 maintenance signal.",
+    "finding": "Mirikizumab produced about 63% response with 24% remission at week 12 and 49.9% maintenance remission \u2014 strongest IL-23 maintenance signal.",
     "category": "Biologics",
     "date": "2023-05-13"
   },
@@ -472,7 +481,7 @@
     "href": "/blog/jak-inhibitors-uc",
     "title": "OCTAVE: Tofacitinib oral JAK inhibitor with rapid symptom control",
     "paper": "Sandborn et al. N Engl J Med. 2017. PMID: 28467869",
-    "finding": "Tofacitinib reached about 59% response and 19% remission at week 8, with maintenance at 34–41% vs 11%.",
+    "finding": "Tofacitinib reached about 59% response and 19% remission at week 8, with maintenance at 34\u201341% vs 11%.",
     "category": "Small Molecules",
     "date": "2017-05-04"
   },
@@ -490,7 +499,7 @@
     "href": "/rankings",
     "title": "TRUE NORTH: Ozanimod S1P modulation for moderate-to-severe UC",
     "paper": "Sandborn et al. N Engl J Med. 2021. PMID: 34587385",
-    "finding": "Ozanimod delivered about 18% remission at week 10 and 37% maintenance among responders (NNT ≈ 5).",
+    "finding": "Ozanimod delivered about 18% remission at week 10 and 37% maintenance among responders (NNT \u2248 5).",
     "category": "Small Molecules",
     "date": "2021-10-14"
   },
@@ -499,16 +508,16 @@
     "href": "/rankings",
     "title": "ELEVATE: Etrasimod confirmed as second oral S1P option",
     "paper": "Sandborn et al. Lancet. 2023. PMID: 36871574",
-    "finding": "Etrasimod showed around 53% response at week 12 (NNT ≈ 10 induction) and expanded the S1P class after 2023 approval.",
+    "finding": "Etrasimod showed around 53% response at week 12 (NNT \u2248 10 induction) and expanded the S1P class after 2023 approval.",
     "category": "Small Molecules",
     "date": "2023-03-11"
   },
   {
     "slug": "vitamin-d-ibd-meta-analysis",
     "href": "/research/emerging",
-    "title": "Vitamin D supplementation reduces IBD relapse (RR 0.64) — UC subgroup needs more data",
+    "title": "Vitamin D supplementation reduces IBD relapse (RR 0.64) \u2014 UC subgroup needs more data",
     "paper": "RCT meta-analysis. PMID: 36579768",
-    "finding": "Across IBD, vitamin D supplementation reduced relapse RR to 0.64. UC-specific evidence remains underpowered but 45–50% of UC patients are deficient.",
+    "finding": "Across IBD, vitamin D supplementation reduced relapse RR to 0.64. UC-specific evidence remains underpowered but 45\u201350% of UC patients are deficient.",
     "category": "Supplements",
     "date": "2023-01-01"
   }

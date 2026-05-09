@@ -33,6 +33,102 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
 {
+  "slug": "dietary-supplements-network-meta-analysis-uc-2026",
+  "title": "A New UC Supplement Ranking Compared 14 Options. The Winners Were Useful \u2014 and the Hype Still Needs a Leash",
+  "description": "A 2026 network meta-analysis of 24 randomized trials and 1,491 ulcerative colitis patients compared 14 dietary supplements. Probiotics and selenium improved clinical activity, flaxseed extract improved Mayo score and inflammatory markers, and curcumin plus butyrate improved quality of life. Helpful? Yes. A replacement for real UC treatment? Absolutely not.",
+  "category": "Supplements",
+  "readTime": "8 min read",
+  "datePublished": "2026-05-09",
+  "intro": "Supplement advice for ulcerative colitis is usually where nuance goes to be beaten with a blender bottle. One influencer says probiotics fixed everything. Another sells turmeric like it personally negotiated peace with the immune system. Meanwhile actual patients are bleeding, exhausted, and trying to figure out what is evidence and what is just expensive yellow dust. This 2026 Frontiers in Medicine network meta-analysis is useful because it compared 14 dietary supplements across 24 randomized controlled trials with 1,491 UC patients. The signal was not one magic product. It was a pattern: probiotics and selenium improved clinical activity, flaxseed extract showed broad benefits across Mayo score and inflammatory markers, curcumin and butyrate improved IBDQ quality-of-life scores, and synbiotics lowered CRP. Translation: some adjuncts deserve a grown-up conversation. None deserve to cosplay as a replacement for a gastroenterologist. See a professional.",
+  "keyPoints": [
+    "The meta-analysis included 24 randomized controlled trials, 1,491 UC patients, and 14 dietary supplement interventions.",
+    "Probiotics reduced clinical activity index versus conventional treatment or placebo, with a mean difference of -1.64.",
+    "Selenium also reduced clinical activity index, while flaxseed extract improved Mayo score and lowered inflammatory markers including CRP.",
+    "Curcumin produced the largest reported IBDQ quality-of-life gain among listed supplements: MD +25.80 versus control.",
+    "Butyrate also improved IBDQ substantially, which fits the biology of colonic energy metabolism without proving every butyrate capsule is a miracle.",
+    "Bottom line: supplements may help as adjuncts, but the evidence is uneven and should not replace standard UC therapy. See a professional."
+  ],
+  "sections": [
+    {
+      "title": "Why this paper matters to actual UC patients",
+      "paragraphs": [
+        "UC patients do not ask about supplements because they love pill organizers. They ask because conventional treatment can be slow, scary, expensive, incomplete, or all four. When symptoms are controlling your life, the promise of something purchasable, natural, and immediately available is brutally attractive.",
+        "That is exactly why the supplement space needs less romance and more evidence. A network meta-analysis is helpful because it does not just ask whether one supplement beat placebo in one small trial. It tries to compare multiple interventions across a connected evidence network. In this case, the authors searched major databases through October 30, 2025 and pooled 24 randomized controlled trials covering 14 supplement strategies in UC."
+      ],
+      "callout": "The useful headline is not 'supplements cure UC.' The useful headline is 'some adjuncts have signals worth discussing, and many claims still deserve suspicion.'"
+    },
+    {
+      "title": "The headline: different supplements did different jobs",
+      "paragraphs": [
+        "The results were not a single clean winner. Probiotics reduced clinical activity index compared with conventional medical treatment or placebo, with a mean difference of -1.64. Selenium also improved clinical activity index, with a mean difference of -2.43, though that estimate had a confidence interval brushing the edge of statistical fragility.",
+        "Flaxseed extract was the broadest interesting signal. It improved Mayo score with a mean difference of -1.53, improved IBDQ by 8.58 points, and reduced CRP by -0.80. The authors also flagged benefits on ESR and fecal calprotectin. That does not mean every grocery-store flax product is now a UC drug. It means flaxseed extract has enough signal to stop being dismissed as mere wellness wallpaper.",
+        "Curcumin and butyrate looked strongest for quality of life. Curcumin improved IBDQ by 25.80 points versus control, while butyrate improved IBDQ by 20.50. Those are the kind of numbers patients care about because IBDQ captures life, not just lab theater: bowel symptoms, fatigue, emotional burden, and social function. Still, quality-of-life improvement is not the same as proven mucosal healing. Do not confuse feeling better with the colon being healed unless objective markers agree."
+      ],
+      "callout": "Screenshot stat: 24 RCTs, 1,491 UC patients, 14 supplements compared \u2014 curcumin showed a +25.80 IBDQ signal and flaxseed extract improved Mayo score plus CRP."
+    },
+    {
+      "title": "The ranking is useful, but do not turn it into supplement fan fiction",
+      "paragraphs": [
+        "The authors were appropriately cautious. Included studies varied in quality, sample size, supplement formulation, background medications, endpoints, and duration. That matters enormously. A probiotic is not just 'a probiotic.' Strain, dose, viability, and disease context matter. Curcumin is not just yellow powder. Bioavailability determines whether you bought an adjunct or expensive seasoning. Butyrate delivery is also not trivial because the target is the colon, not your wishful thinking.",
+        "This is where patients get misled. They read a meta-analysis headline and then buy the cheapest random product with the right word on the label. Medicine does not work that way. If the trial used a specific strain blend, extract, dose, or delivery method, a random substitute may not reproduce the result. Evidence belongs to the tested intervention, not the entire shelf category. Annoying? Yes. Also true."
+      ]
+    },
+    {
+      "title": "What this should change in the real conversation",
+      "paragraphs": [
+        "For a UC patient already on appropriate medical therapy, this study supports a better supplement conversation with a clinician. Probiotics may be reasonable to discuss, especially specific high-potency multi-strain products with UC data. Curcumin has enough adjunct evidence to discuss alongside mesalamine in mild-to-moderate disease. Flaxseed extract deserves attention as an emerging adjunct signal, but standardized products and larger trials matter. Butyrate is biologically plausible and showed quality-of-life benefit, but delivery and formulation still need adult supervision.",
+        "What this should not change: nobody should stop mesalamine, biologics, JAK inhibitors, S1P modulators, steroids prescribed for a flare, or any other real UC therapy because a supplement meta-analysis looked promising. Supplements are adjuncts. Adjunct means 'with,' not 'instead of.' If your colon is inflamed, the goal is objective control: symptoms, biomarkers, and eventually endoscopic healing when appropriate. The supplement aisle does not get to overrule fecal calprotectin."
+      ]
+    },
+    {
+      "title": "Bottom line",
+      "paragraphs": [
+        "This 2026 network meta-analysis gives UC patients a cleaner map of the supplement landscape. Probiotics, selenium, flaxseed extract, curcumin, butyrate, synbiotics, and a few botanicals showed signals on different outcomes. The most patient-relevant message is that supplements are not all equally fake and not all equally proven. Some are plausible adjuncts with randomized evidence. Others are marketing wearing a lab coat.",
+        "Use this paper to ask sharper questions, not to self-prescribe your way out of specialist care. Ask your gastroenterologist which adjuncts fit your disease severity, medications, labs, pregnancy plans, clot risk, liver tests, and flare history. Bring the evidence. Keep the skepticism. See a professional."
+      ],
+      "callout": "No-BS read: supplements can support UC care. They do not replace UC care. Your colon is not interested in ideology."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Which supplements looked most useful in this UC network meta-analysis?",
+      "answer": "Different supplements helped different outcomes. Probiotics and selenium improved clinical activity index, flaxseed extract improved Mayo score and inflammatory markers, curcumin and butyrate improved IBDQ quality-of-life scores, and synbiotics reduced CRP. See a professional."
+    },
+    {
+      "question": "Does this mean supplements can replace UC medications?",
+      "answer": "No. The study evaluated adjunct dietary supplements. It does not justify stopping mesalamine, biologics, JAK inhibitors, S1P modulators, steroids, or other prescribed UC treatment. See a professional."
+    },
+    {
+      "question": "Was curcumin the best supplement?",
+      "answer": "Curcumin had the largest reported IBDQ quality-of-life signal in the abstract, but that does not automatically make every turmeric product effective. Dose, formulation, bioavailability, and patient context matter."
+    },
+    {
+      "question": "Should patients buy flaxseed extract now?",
+      "answer": "Flaxseed extract showed a broad signal, including Mayo score and CRP improvement, but the evidence still needs larger high-quality trials. It is a discussion point with a clinician, not a solo treatment plan."
+    }
+  ],
+  "references": [
+    {
+      "label": "Xu R, Zhang Z, Li Y, Wu Z. Efficacy and safety of dietary supplements for the treatment of ulcerative colitis, a network meta-analysis. Front Med (Lausanne). 2026 Apr 22;13:1816535. PMID: 42100281",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/42100281/"
+    },
+    {
+      "label": "ACG clinical guideline update: ulcerative colitis in adults. Am J Gastroenterol. 2025. PMID: 40701556",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/40701556/"
+    },
+    {
+      "label": "Curcumin as adjunctive therapy in ulcerative colitis randomized trial literature",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=curcumin+ulcerative+colitis+randomized+trial"
+    }
+  ],
+  "relatedSlugs": [
+    "curcumin-qingdai-uc-remission",
+    "anti-inflammatory-diet-dii-uc-prospective-study-2026",
+    "fmt-endoscopic-response-meta-analysis-2026"
+  ]
+},
+
+{
   slug: 'jak-inhibitor-safety-vs-biologics-ibd-2026',
   title: 'JAK Inhibitors Did Not Show Higher MACE, Cancer, VTE, or Infection Risk Versus Biologics. Yes, the Black Box Still Has Teeth',
   description: 'A 2026 real-world U.S. Collaborative Network study compared 3,186 IBD patients on JAK inhibitors with 60,462 biologic-treated patients and found no matched increase in infections, major cardiovascular events, malignancy, venous thromboembolism, or GI perforation. LDL and lymphopenia signals still need monitoring.',
