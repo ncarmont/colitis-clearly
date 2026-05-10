@@ -1,5 +1,14 @@
 [
   {
+    "slug": "jak-inhibitors-comparative-effectiveness-uc-2026",
+    "href": "/blog/jak-inhibitors-comparative-effectiveness-uc-2026",
+    "title": "Three oral JAK options went head-to-head in real-world UC. Upadacitinib came out strongest for remission \u2014 with safety tradeoffs still doing safety-tradeoff things",
+    "paper": "Tursi A et al. Adv Ther. 2026 May 9 (PMID: 42105145)",
+    "finding": "In a multicenter real-world cohort weighted to 627 UC patients, upadacitinib produced the highest clinical remission probabilities at weeks 8, 24, and 52. By week 52, steroid-free clinical remission reached 59.8% with upadacitinib versus 50.8% with tofacitinib and 49.8% with filgotinib, while endoscopic remission was 36.6% versus about 19% for the other two. Serious adverse events and colectomy were uncommon and similar, but infections and herpes zoster were more frequent with tofacitinib.",
+    "category": "Small Molecules",
+    "date": "2026-05-10"
+  },
+  {
     "slug": "dietary-supplements-network-meta-analysis-uc-2026",
     "href": "/blog/dietary-supplements-network-meta-analysis-uc-2026",
     "title": "A new 24-RCT UC supplement ranking found probiotics, flaxseed, curcumin, butyrate, and selenium did the useful jobs \u2014 not the entire supplement aisle",

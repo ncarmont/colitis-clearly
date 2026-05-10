@@ -33,6 +33,103 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
 {
+  "slug": "jak-inhibitors-comparative-effectiveness-uc-2026",
+  "title": "Three Oral JAK Inhibitors Went Head-to-Head in Real-World UC. Upadacitinib Looked Strongest — Not Magically Risk-Free",
+  "description": "A 2026 multicenter real-world cohort compared tofacitinib, filgotinib, and upadacitinib in ulcerative colitis. After weighting to 627 patients, upadacitinib produced the highest remission probabilities, including 59.8% steroid-free clinical remission and 36.6% endoscopic remission at week 52. Tofacitinib had more infections and herpes zoster; serious events and colectomy were uncommon and similar.",
+  "category": "Small Molecules",
+  "readTime": "8 min read",
+  "datePublished": "2026-05-10",
+  "intro": "Patients love asking the wrong version of the JAK inhibitor question. They ask, 'Which one is best?' as if ulcerative colitis were a leaderboard and the colon cared about brand loyalty. The better question is nastier: in real clinics, after prior advanced therapy failure or intolerance, which oral JAK inhibitor gets more people into steroid-free control, and what does it cost in safety tradeoffs? This 2026 multicenter cohort gives a useful answer. Tursi and colleagues compared tofacitinib, filgotinib, and upadacitinib in adults with UC starting JAK therapy between 2020 and 2025. After inverse probability weighting, the pseudo-population included 627 patients. Upadacitinib had the strongest remission probabilities at weeks 8, 24, and 52, including 59.8% steroid-free clinical remission at one year. Endoscopic remission also favored upadacitinib at 36.6%. But the safety story was not a cartoon: infections and herpes zoster were more frequent with tofacitinib, filgotinib had fewer non-serious events, and serious adverse events plus colectomy were uncommon and similar across groups. Translation: upadacitinib looked like the efficacy heavy hitter here, but JAK positioning still belongs in a risk-screened, monitored conversation with a gastroenterologist. See a professional.",
+  "keyPoints": [
+    "This was a multicenter real-world UC cohort comparing the three available oral JAK inhibitors: tofacitinib, filgotinib, and upadacitinib.",
+    "After inverse probability treatment weighting, the analysis used a pseudo-population of 627 patients: 179 tofacitinib, 138 filgotinib, and 310 upadacitinib.",
+    "Upadacitinib had the highest clinical remission probabilities at weeks 8, 24, and 52: 17.5%, 40.7%, and 61.3%.",
+    "Steroid-free clinical remission at week 52 reached 59.8% with upadacitinib versus 50.8% with tofacitinib and 49.8% with filgotinib.",
+    "Week-52 endoscopic remission was 36.6% with upadacitinib, compared with 18.8% for tofacitinib and 19.5% for filgotinib.",
+    "Safety still matters: infections and herpes zoster were more frequent with tofacitinib, while serious adverse events and colectomy risk were uncommon and similar. See a professional."
+  ],
+  "sections": [
+    {
+      "title": "Why this paper matters to actual UC patients",
+      "paragraphs": [
+        "JAK inhibitors are the part of ulcerative colitis medicine where hope and anxiety sit at the same table. They are oral. They can work fast. They can rescue patients who have already burned through biologics. They also come with enough safety warnings to make anyone with internet access spiral into clot-and-cancer doom scrolling.",
+        "That is why comparative real-world data matters. Registration trials tell us whether each drug beats placebo under controlled conditions. They do not cleanly answer the clinic question: if a patient is choosing among oral JAK options after advanced therapy failure or intolerance, how do the drugs compare against each other in messy routine care? This study gets closer to that question than another isolated placebo comparison."
+      ],
+      "callout": "The grown-up question is not 'Are JAK inhibitors good or bad?' It is 'Which JAK fits this patient's disease urgency and risk profile best?'"
+    },
+    {
+      "title": "The headline: upadacitinib had the strongest remission signal",
+      "paragraphs": [
+        "The investigators included adults with UC who started tofacitinib, filgotinib, or upadacitinib from September 2020 through June 2025. Because patients receiving different drugs can start out different, the authors used inverse probability of treatment weighting to balance baseline differences. The weighted pseudo-population included 627 patients: 179 on tofacitinib, 138 on filgotinib, and 310 on upadacitinib.",
+        "Clinical remission probabilities favored upadacitinib at each measured time point: 17.5% at week 8, 40.7% at week 24, and 61.3% at week 52. Tofacitinib reached 11.8%, 33.8%, and 54.6%. Filgotinib reached 6.7%, 29.0%, and 52.0%. That is not a tiny vibes-based difference at induction; the early separation was statistically significant, and week 52 still favored upadacitinib.",
+        "The steroid-free remission numbers are the ones patients should screenshot. At week 52, 59.8% of weighted upadacitinib patients were in steroid-free clinical remission, compared with 50.8% on tofacitinib and 49.8% on filgotinib. Steroid-free matters because steroids are not maintenance therapy. They are a fire extinguisher. If the building is always on fire, you do not congratulate the extinguisher; you fix the building."
+      ],
+      "callout": "Screenshot stat: 59.8% steroid-free remission at week 52 with upadacitinib in this real-world JAK comparison. Useful. Not magic."
+    },
+    {
+      "title": "The harder endpoint also favored upadacitinib",
+      "paragraphs": [
+        "Symptoms matter, but the colon is a notorious liar. Someone can feel better while inflammation keeps quietly doing renovations nobody asked for. That is why endoscopic remission is a more demanding endpoint. In this study, week-52 endoscopic remission, defined as Mayo endoscopic score 0, reached 36.6% with upadacitinib. Tofacitinib was 18.8%, and filgotinib was 19.5%.",
+        "Do not compare those numbers lazily with every biologic trial ever published. Different populations, designs, endpoints, and follow-up patterns can make direct ranking sloppy. But within this study, using the authors' weighted comparison, the direction was clear: upadacitinib looked more potent for both clinical and endoscopic targets. For patients with aggressive UC, that matters."
+      ]
+    },
+    {
+      "title": "Safety: the boring caveat that keeps people alive",
+      "paragraphs": [
+        "The safety signal was not simply 'one drug good, one drug bad.' Overall adverse events, especially infections and herpes zoster, were more frequent with tofacitinib. Filgotinib had fewer non-serious events. Serious adverse events and colectomy risk were uncommon and similar across groups. That is reassuring, but it does not cancel the need for screening and monitoring.",
+        "JAK inhibitors are not supplements with better marketing. They require individualized risk assessment: age, smoking, clot history, cardiovascular risk, lipids, blood counts, infection history, shingles vaccination, liver tests, steroid exposure, and the risk of doing nothing while UC keeps chewing through the colon. The right choice may differ for a young steroid-dependent patient, an older patient with vascular risk, or someone who already had shingles. Medicine refuses to be a bumper sticker."
+      ],
+      "callout": "If a clinician offers a JAK without talking monitoring, that is not confidence. That is negligence wearing a white coat."
+    },
+    {
+      "title": "Bottom line",
+      "paragraphs": [
+        "This study strengthens the practical case for upadacitinib as the higher-efficacy oral JAK option in moderate-to-severe UC, at least in this real-world comparative dataset. It delivered the highest clinical remission probabilities, the highest steroid-free remission rate, and the strongest endoscopic remission signal at one year.",
+        "But the correct takeaway is not 'everyone should take upadacitinib.' The correct takeaway is that JAK inhibitor choice should be deliberate. Upadacitinib may be the potency play. Tofacitinib and filgotinib may still fit certain patients depending on access, prior history, and risk profile. Bring the data to your gastroenterologist. Ask about your personal risk, your monitoring plan, and what objective target you are aiming for. See a professional."
+      ],
+      "callout": "No-BS read: upadacitinib looked strongest here. The black box still deserves respect. Both things can be true."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Which JAK inhibitor looked most effective in this UC study?",
+      "answer": "Upadacitinib had the highest clinical remission, steroid-free remission, biochemical remission early on, and week-52 endoscopic remission in this weighted real-world cohort. That does not mean it is automatically right for every patient. See a professional."
+    },
+    {
+      "question": "What was the key patient-facing statistic?",
+      "answer": "At week 52, steroid-free clinical remission reached 59.8% with upadacitinib, 50.8% with tofacitinib, and 49.8% with filgotinib. Week-52 endoscopic remission was 36.6% with upadacitinib versus about 19% with the other two."
+    },
+    {
+      "question": "Were serious safety problems higher with upadacitinib?",
+      "answer": "In this study, serious adverse events and colectomy risk were uncommon and similar across groups. Overall adverse events, especially infections and herpes zoster, were more frequent with tofacitinib. Individual risk screening still matters."
+    },
+    {
+      "question": "Can patients switch JAK inhibitors based on this?",
+      "answer": "Do not self-switch or stop a UC medication because of one study. Use the data to ask a gastroenterologist whether your current drug, disease severity, risk factors, and monitoring plan still make sense. See a professional."
+    }
+  ],
+  "references": [
+    {
+      "label": "Tursi A, Pasta A, Elisei W, Barberio B, Mocci G, et al. Comparative Effectiveness and Safety of Tofacitinib, Filgotinib, and Upadacitinib in Ulcerative Colitis: A Multicenter Real-World Cohort Study. Adv Ther. 2026 May 9. PMID: 42105145",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/42105145/"
+    },
+    {
+      "label": "Upadacitinib phase 3 ulcerative colitis program",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=upadacitinib+ulcerative+colitis+phase+3"
+    },
+    {
+      "label": "FDA safety communication on JAK inhibitors and serious heart-related events, cancer, blood clots, and death",
+      "href": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requires-warnings-about-increased-risk-serious-heart-related-events-cancer-blood-clots-and-death"
+    }
+  ],
+  "relatedSlugs": [
+    "jak-inhibitor-safety-vs-biologics-ibd-2026",
+    "upadacitinib-real-world-refractory-uc-2026",
+    "upadacitinib-prolonged-induction-re-escalation-uc-2026"
+  ]
+},
+
+{
   "slug": "dietary-supplements-network-meta-analysis-uc-2026",
   "title": "A New UC Supplement Ranking Compared 14 Options. The Winners Were Useful \u2014 and the Hype Still Needs a Leash",
   "description": "A 2026 network meta-analysis of 24 randomized trials and 1,491 ulcerative colitis patients compared 14 dietary supplements. Probiotics and selenium improved clinical activity, flaxseed extract improved Mayo score and inflammatory markers, and curcumin plus butyrate improved quality of life. Helpful? Yes. A replacement for real UC treatment? Absolutely not.",

@@ -1,5 +1,15 @@
 [
   {
+    "stat": "59.8%",
+    "label": "steroid-free clinical remission at week 52 with upadacitinib in a weighted real-world UC comparison of oral JAK inhibitors",
+    "source": "Tursi A et al. Adv Ther. 2026 May 9 (PMID: 42105145) \u2014 multicenter cohort weighted to 627 UC patients; week-52 steroid-free remission was 59.8% with upadacitinib, 50.8% with tofacitinib, and 49.8% with filgotinib"
+  },
+  {
+    "stat": "36.6%",
+    "label": "endoscopic remission at week 52 with upadacitinib versus about 19% with tofacitinib or filgotinib",
+    "source": "Tursi A et al. Adv Ther. 2026 May 9 (PMID: 42105145) \u2014 Mayo endoscopic score 0 at week 52: 36.6% upadacitinib, 18.8% tofacitinib, 19.5% filgotinib; p=0.039"
+  },
+  {
     "stat": "24 RCTs",
     "label": "compared 14 dietary supplements as adjunct therapy for ulcerative colitis in a 2026 network meta-analysis",
     "source": "Xu R et al. Front Med (Lausanne). 2026 Apr 22 (PMID: 42100281) \u2014 1,491 participants; probiotics and selenium improved clinical activity, flaxseed extract improved Mayo score and inflammatory markers, while curcumin and butyrate improved IBDQ quality-of-life scores"
