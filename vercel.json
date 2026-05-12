@@ -1,4 +1,5 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "git": {
     "deploymentEnabled": {
       "*": false,
@@ -7,8 +8,8 @@
       "production": true,
       "prod": true,
       "demo": true,
+      "demo-*": true,
       "staging": true
     }
-  },
-  "$schema": "https://openapi.vercel.sh/vercel.json"
+  }
 }
