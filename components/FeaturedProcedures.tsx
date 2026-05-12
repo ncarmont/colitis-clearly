@@ -17,7 +17,7 @@ function rankBadge(rank: number) {
 }
 
 function ProcedureCard({ p, index }: { p: RankedProcedure; index: number }) {
-  const cardClass = 'spring-in card-lift group flex flex-col overflow-hidden rounded-[22px] border border-warm-200/70 bg-white shadow-card-warm hover:border-coral-300/60 hover:shadow-[0_16px_48px_rgba(244,132,95,0.12)]'
+  const cardClass = 'spring-in card-lift group flex flex-col overflow-hidden rounded-[14px] border border-warm-200/70 bg-white shadow-card-warm hover:border-coral-300/60 hover:shadow-[0_12px_36px_rgba(244,132,95,0.12)]'
   const isExternal = p.href.startsWith('http')
   const Wrapper = isExternal
     ? ({ children }: { children: React.ReactNode }) => (
@@ -28,24 +28,23 @@ function ProcedureCard({ p, index }: { p: RankedProcedure; index: number }) {
       )
   return (
     <Wrapper>
-      {/* Photo with overlaid rank + stat — exactly like the olive oil cards */}
-      <div className="relative aspect-video overflow-hidden">
+      {/* Photo with overlaid rank + stat */}
+      <div className="relative aspect-[16/7] overflow-hidden">
         <img
           src={p.imageUrl}
           alt={p.name}
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        {/* Dark gradient for legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/10" />
 
-        {/* Rank badge — top left, olive-oil style square */}
-        <div className={`absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-[10px] text-sm font-black shadow-lg ${rankBadge(p.rank)}`}>
+        {/* Rank badge */}
+        <div className={`absolute left-2 top-2 flex h-7 w-7 items-center justify-center rounded-[7px] text-xs font-black shadow-lg ${rankBadge(p.rank)}`}>
           {p.rank}
         </div>
 
-        {/* Filter category — top right */}
-        <div className={`absolute right-3 top-3 rounded-full border px-2.5 py-0.5 text-[0.58rem] font-bold uppercase tracking-[0.14em] backdrop-blur-sm ${
+        {/* Filter category */}
+        <div className={`absolute right-2 top-2 rounded-full border px-2 py-0.5 text-[0.52rem] font-bold uppercase tracking-[0.12em] backdrop-blur-sm ${
           p.filterCategory === 'Medical'
             ? 'border-blue-300/40 bg-blue-900/50 text-blue-100'
             : 'border-green-300/40 bg-green-900/50 text-green-100'
@@ -53,45 +52,45 @@ function ProcedureCard({ p, index }: { p: RankedProcedure; index: number }) {
           {p.filterCategory}
         </div>
 
-        {/* Main stat — large, over image, bottom left */}
-        <div className="absolute bottom-3 left-3">
-          <p className="font-display text-[2.4rem] font-black leading-none tracking-tight text-white drop-shadow-lg">
+        {/* Main stat */}
+        <div className="absolute bottom-2 left-2.5">
+          <p className="font-display text-[1.85rem] font-black leading-none tracking-tight text-white drop-shadow-lg">
             {p.statDisplay}
           </p>
-          <p className="mt-0.5 max-w-[180px] text-[0.67rem] leading-snug text-white/70">{p.statLabel}</p>
+          <p className="mt-0.5 max-w-[160px] text-[0.6rem] leading-snug text-white/70">{p.statLabel}</p>
         </div>
       </div>
 
-      {/* White content area below image */}
-      <div className="flex flex-1 flex-col p-4">
-        <p className="text-[0.6rem] font-bold uppercase tracking-[0.18em] text-coral-500">{p.type}</p>
-        <h3 className="mt-1 text-[0.95rem] font-bold leading-snug text-warm-900">{p.name}</h3>
+      {/* Content area */}
+      <div className="flex flex-1 flex-col p-3">
+        <p className="text-[0.55rem] font-bold uppercase tracking-[0.16em] text-coral-500">{p.type}</p>
+        <h3 className="mt-0.5 text-[0.85rem] font-bold leading-snug text-warm-900">{p.name}</h3>
         {p.brandName && (
-          <p className="mt-0.5 text-[0.7rem] text-warm-400">{p.brandName}</p>
+          <p className="mt-0.5 text-[0.65rem] text-warm-400 line-clamp-1">{p.brandName}</p>
         )}
-        <p className="mt-1.5 text-[0.68rem] leading-relaxed text-warm-500">{p.trialRef}</p>
+        <p className="mt-1 text-[0.62rem] leading-relaxed text-warm-500 line-clamp-2">{p.trialRef}</p>
 
         {p.subMethods && p.subMethods.length > 0 && (
-          <ul className="mt-2 space-y-0.5 rounded-lg bg-warm-50 px-2.5 py-1.5">
-            {p.subMethods.slice(0, 3).map((method, i) => (
-              <li key={i} className="flex items-start gap-1 text-[0.57rem] leading-snug text-warm-600">
+          <ul className="mt-1.5 space-y-0.5 rounded-md bg-warm-50 px-2 py-1.5">
+            {p.subMethods.slice(0, 2).map((method, i) => (
+              <li key={i} className="flex items-start gap-1 text-[0.55rem] leading-snug text-warm-600">
                 <span className="mt-px shrink-0 text-coral-400">›</span>
                 <span className="line-clamp-1">{method}</span>
               </li>
             ))}
-            {p.subMethods.length > 3 && (
-              <li className="pt-0.5 text-[0.52rem] font-semibold text-warm-400">
-                +{p.subMethods.length - 3} more on details page
+            {p.subMethods.length > 2 && (
+              <li className="pt-0.5 text-[0.5rem] font-semibold text-warm-400">
+                +{p.subMethods.length - 2} more
               </li>
             )}
           </ul>
         )}
 
-        <div className="mt-auto flex items-center justify-between pt-3">
-          <span className="rounded-full border border-coral-200 bg-coral-50 px-2 py-0.5 text-[0.58rem] font-bold uppercase tracking-[0.12em] text-coral-600">
-            {p.evidenceLevel} Evidence
+        <div className="mt-auto flex items-center justify-between pt-2">
+          <span className="rounded-full border border-coral-200 bg-coral-50 px-1.5 py-0.5 text-[0.52rem] font-bold uppercase tracking-[0.1em] text-coral-600">
+            {p.evidenceLevel}
           </span>
-          <span className="text-xs font-bold text-coral-400 transition-colors group-hover:text-coral-600">
+          <span className="text-[0.72rem] font-bold text-coral-400 transition-colors group-hover:text-coral-600">
             {p.ctaLabel ?? 'Details →'}
           </span>
         </div>
@@ -114,14 +113,14 @@ export default function FeaturedProcedures({ procedures }: { procedures: RankedP
   ]
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
+    <section className="mx-auto max-w-[1500px] px-4 py-6 md:px-6 md:py-10">
       {/* Section header */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="text-[0.65rem] font-bold uppercase tracking-[0.28em] text-coral-500">
             Trial-Verified · Ranked by % Achieving Remission
           </p>
-          <h2 className="font-display mt-2 text-3xl tracking-tight text-warm-900 md:text-4xl">
+          <h2 className="font-display mt-1.5 text-3xl tracking-tight text-warm-900 md:text-4xl">
             Top Remission Procedure Rankings
           </h2>
         </div>
@@ -131,7 +130,7 @@ export default function FeaturedProcedures({ procedures }: { procedures: RankedP
       </div>
 
       {/* Filter pills */}
-      <div className="mt-5 flex flex-wrap gap-2">
+      <div className="mt-3 flex flex-wrap gap-2">
         {filters.map(({ key, label, count }) => (
           <button
             key={key}
@@ -153,7 +152,7 @@ export default function FeaturedProcedures({ procedures }: { procedures: RankedP
       </div>
 
       {/* Card grid */}
-      <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="mt-4 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {filtered.map((p, i) => (
           <ProcedureCard key={p.rank} p={p} index={i} />
         ))}
