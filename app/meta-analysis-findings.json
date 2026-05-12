@@ -1,5 +1,15 @@
 [
   {
+    "stat": "6,449",
+    "label": "ulcerative colitis JAK inhibitor starts in a nationwide French serious-infection comparison",
+    "source": "Meyer A et al. J Crohns Colitis. 2026 May 8 (PMID: 42117185) \u2014 2,735 upadacitinib, 2,825 tofacitinib, and 889 filgotinib initiations; 237 serious infections occurred, with no significant adjusted difference between drugs"
+  },
+  {
+    "stat": "dose > brand",
+    "label": "serious infection risk with UC JAK inhibitors appeared driven mainly by higher dose rather than which JAK inhibitor was chosen",
+    "source": "Meyer A et al. J Crohns Colitis. 2026 May 8 (PMID: 42117185) \u2014 adjusted HR for serious infection vs upadacitinib was 0.93 for tofacitinib and 0.88 for filgotinib; higher doses of upadacitinib and tofacitinib increased risk"
+  },
+  {
     "stat": "59.8%",
     "label": "steroid-free clinical remission at week 52 with upadacitinib in a weighted real-world UC comparison of oral JAK inhibitors",
     "source": "Tursi A et al. Adv Ther. 2026 May 9 (PMID: 42105145) \u2014 multicenter cohort weighted to 627 UC patients; week-52 steroid-free remission was 59.8% with upadacitinib, 50.8% with tofacitinib, and 49.8% with filgotinib"

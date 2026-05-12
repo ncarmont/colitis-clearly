@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 }
 
 const evidencePills = [
+  { value: '6,449', label: 'UC JAK inhibitor starts: serious infection risk looked similar; dose mattered more than brand', tone: 'good', cite: 'JCC 2026, PMID 42117185', href: 'https://pubmed.ncbi.nlm.nih.gov/42117185/' },
   { value: '59.8%', label: 'steroid-free remission at week 52 on upadacitinib in real-world JAK comparison', tone: 'good', cite: 'Adv Ther 2026, PMID 42105145', href: 'https://pubmed.ncbi.nlm.nih.gov/42105145/' },
   { value: '24 RCTs', label: 'dietary supplements compared in UC; probiotics, flaxseed, curcumin and butyrate showed adjunct signals', tone: 'good', cite: 'Front Med 2026, PMID 42100281', href: 'https://pubmed.ncbi.nlm.nih.gov/42100281/' },
   { value: '3,186', label: 'JAK inhibitor users: no higher matched MACE, cancer, VTE, or infection risk vs biologics', tone: 'good', cite: 'Intest Res 2026, PMID 42097599', href: 'https://pubmed.ncbi.nlm.nih.gov/42097599/' },

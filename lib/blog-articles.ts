@@ -33,6 +33,103 @@ export type BlogArticle = {
 export const BLOG_ARTICLES: BlogArticle[] = [
 
 {
+  "slug": "jak-inhibitor-serious-infection-dose-risk-uc-2026",
+  "title": "JAK Infection Risk in UC Was Less About Brand Loyalty and More About Dose",
+  "description": "A nationwide French cohort compared serious infections across 6,449 ulcerative colitis starts on upadacitinib, tofacitinib, or filgotinib. Serious infection risk was similar after adjustment; higher dosing, not the specific JAK inhibitor, appeared to drive risk.",
+  "category": "Small Molecules",
+  "readTime": "8 min read",
+  "datePublished": "2026-05-12",
+  "intro": "JAK inhibitors sit in the ulcerative colitis anxiety zone: fast, oral, powerful, and wrapped in enough safety warnings to make a patient stare at the prescription bottle like it contains a small legal document. The obvious patient question is: which JAK is safer for serious infections? Meyer and colleagues just gave us a useful, boring-in-the-best-way answer from the French National Health Data System. They studied 6,449 UC JAK inhibitor initiations from 2019 through 2025: 2,735 upadacitinib, 2,825 tofacitinib, and 889 filgotinib. There were 237 serious infections requiring hospitalization. After propensity-score weighting, serious infection risk did not meaningfully differ across the three drugs. The adjusted hazard ratios versus upadacitinib were 0.93 for tofacitinib and 0.88 for filgotinib, with confidence intervals crossing no difference. The sharper message: dose mattered. Higher doses of upadacitinib and tofacitinib were linked to higher infection risk. Translation: the safety conversation should be less tribal brand-war nonsense and more precise dosing, vaccination, screening, monitoring, and steroid avoidance. See a professional.",
+  "keyPoints": [
+    "This nationwide French cohort included 6,449 ulcerative colitis JAK inhibitor initiations from 2019 to 2025.",
+    "The cohort included 2,735 upadacitinib starts, 2,825 tofacitinib starts, and 889 filgotinib starts.",
+    "Researchers observed 237 serious infections, defined as infections requiring hospitalization.",
+    "Serious infection incidence rates per 1,000 patient-years were 38.8 for upadacitinib, 30.6 for tofacitinib, and 28.4 for filgotinib.",
+    "After adjustment, serious infection risk was not significantly different: HR 0.93 for tofacitinib and HR 0.88 for filgotinib versus upadacitinib.",
+    "Higher doses of upadacitinib and tofacitinib increased infection risk; non-severe HSV/VZV infections were highest with upadacitinib and lowest with filgotinib. See a professional."
+  ],
+  "sections": [
+    {
+      "title": "Why this paper matters to actual UC patients",
+      "paragraphs": [
+        "Patients do not fear JAK inhibitors because they enjoy pharmacology. They fear them because the warning labels mention serious infections, shingles, clots, cardiovascular events, cancer, and other words that make a normal human quietly open twelve browser tabs at 2 a.m. That anxiety is not irrational. It is just incomplete without context.",
+        "This study matters because it compares the three JAK options used in UC in routine national data, not just against placebo inside trial choreography. Tofacitinib, upadacitinib, and filgotinib are not identical drugs, but patients and clinicians still have to choose among them. The useful question is not, 'Are JAK inhibitors scary?' The useful question is, 'When a JAK is appropriate, what actually changes serious infection risk?'"
+      ],
+      "callout": "The headline is not 'JAKs are harmless.' The headline is 'serious infection risk looked similar across drugs after adjustment, and dose did the dirty work.'"
+    },
+    {
+      "title": "The headline: serious infection risk was similar across JAK options",
+      "paragraphs": [
+        "Meyer and colleagues used the French National Health Data System to identify UC patients older than 15 who started tofacitinib, upadacitinib, or filgotinib between 2019 and 2025. They counted serious infections requiring hospitalization and used propensity-score weighting to reduce indication bias. That matters because sicker patients do not receive drugs randomly in real life. Doctors choose based on severity, prior failures, urgency, access, age, and risk profile.",
+        "Overall, the study included 6,449 JAK inhibitor initiations: 2,735 upadacitinib, 2,825 tofacitinib, and 889 filgotinib. Median age was 39 years, about half were women, and median UC duration was 7.1 years. The researchers observed 237 serious infections. Crude incidence rates per 1,000 patient-years were 38.8 for upadacitinib, 30.6 for tofacitinib, and 28.4 for filgotinib.",
+        "Crude numbers can mislead, so the adjusted comparison is the grown-up part. Compared with upadacitinib, the adjusted hazard ratio for serious infection was 0.93 for tofacitinib and 0.88 for filgotinib. Both confidence intervals crossed one. In plain English: after adjustment, the study did not show a statistically meaningful serious-infection difference between the three JAK inhibitors. Infection sites and pathogen types also did not differ across drugs."
+      ],
+      "callout": "Screenshot stat: 6,449 UC JAK starts, 237 serious infections, and no significant adjusted serious-infection difference between upadacitinib, tofacitinib, and filgotinib."
+    },
+    {
+      "title": "The real villain was dose, not just the logo on the box",
+      "paragraphs": [
+        "The more practical finding was that higher doses of upadacitinib and tofacitinib were associated with increased infection risk. That is exactly the kind of detail patients should care about because UC dosing is dynamic. Induction doses are often higher. Maintenance doses may be lower. Some patients need dose escalation because the disease is being a spectacular jerk. Others can step down after control is achieved.",
+        "This does not mean patients should randomly lower their dose. That is how you turn a manageable colon fire into a bigger colon fire. It means the dosing plan should be intentional: why this dose, for how long, what target, what labs, what vaccination status, and what is the exit strategy if remission is achieved? If the only explanation is 'because that's the prescription,' ask better questions. Politely, ideally."
+      ]
+    },
+    {
+      "title": "The shingles caveat still matters",
+      "paragraphs": [
+        "The study also found that non-severe infections, especially herpes simplex virus and varicella zoster virus, were highest with upadacitinib and lowest with filgotinib. That is not the same as hospitalized serious infection, but it is not irrelevant. Shingles can be miserable, recurrent, and sometimes complicated. For a patient considering a JAK inhibitor, vaccination status is not a decorative checkbox. It is part of the risk plan.",
+        "This is where internet discourse usually becomes useless. One camp screams that JAKs are dangerous and should be avoided. Another pretends safety warnings are just regulatory paperwork. Both are lazy. JAK inhibitors can be exactly the right tool for the right UC patient, especially when rapid control is needed or biologics have failed. They also require adult supervision: infection history, TB and hepatitis screening, blood counts, liver tests, lipids, shingles vaccination, age, cardiovascular risk, clot history, steroid exposure, and dose duration. See a professional."
+      ],
+      "callout": "Risk is not a vibe. It is dose, duration, patient factors, vaccines, monitoring, and the risk of leaving UC uncontrolled."
+    },
+    {
+      "title": "Bottom line",
+      "paragraphs": [
+        "This nationwide French study makes the JAK conversation more precise. In 6,449 UC JAK inhibitor starts, serious infection risk requiring hospitalization was similar across upadacitinib, tofacitinib, and filgotinib after adjustment. The signal that should change clinic conversations is dose: higher dosing appeared to drive infection risk more than the specific JAK selected.",
+        "For patients, the takeaway is not 'pick any JAK and relax.' The takeaway is: ask your gastroenterologist why that JAK, why that dose, how long the higher dose is planned, whether your shingles vaccination is handled, what monitoring you need, and what objective target defines success. JAKs are not candy. They are also not automatically villains. They are tools, and tools get safer when competent people use them correctly. See a professional."
+      ],
+      "callout": "No-BS read: dose discipline may matter more than JAK brand panic. Bring that question to the appointment."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Which JAK inhibitor had the lowest serious infection risk in this UC study?",
+      "answer": "After adjustment, serious infection risk was not significantly different across upadacitinib, tofacitinib, and filgotinib. Filgotinib had the lowest crude incidence rate, but the adjusted comparison did not prove it was safer for serious infections. See a professional."
+    },
+    {
+      "question": "What was the most important safety finding?",
+      "answer": "Higher doses of upadacitinib and tofacitinib were associated with increased infection risk, suggesting dose and duration may matter more than simply choosing one JAK brand over another."
+    },
+    {
+      "question": "Does this mean JAK inhibitors are safe?",
+      "answer": "It means serious infection risk was similar across these JAK inhibitors in this adjusted cohort. It does not remove the need for screening, vaccination, lab monitoring, and individualized risk assessment. See a professional."
+    },
+    {
+      "question": "Should patients lower their JAK dose to avoid infection?",
+      "answer": "No patient should change dose without a clinician. The correct move is to ask why the current dose is being used, how long it is planned, what targets are being monitored, and whether step-down is appropriate after disease control."
+    }
+  ],
+  "references": [
+    {
+      "label": "Meyer A, Bertrand A, Martin A, Carbonnel F, Amiot A. Comparative risk of serious infection in patients with ulcerative colitis treated with JAK inhibitors. J Crohns Colitis. 2026 May 8;20(5):jjag053. PMID: 42117185",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/42117185/"
+    },
+    {
+      "label": "Comparative effectiveness of tofacitinib, filgotinib, and upadacitinib in UC real-world cohort",
+      "href": "https://pubmed.ncbi.nlm.nih.gov/42105145/"
+    },
+    {
+      "label": "FDA safety communication on JAK inhibitors and serious heart-related events, cancer, blood clots, and death",
+      "href": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requires-warnings-about-increased-risk-serious-heart-related-events-cancer-blood-clots-and-death"
+    }
+  ],
+  "relatedSlugs": [
+    "jak-inhibitors-comparative-effectiveness-uc-2026",
+    "jak-inhibitor-safety-vs-biologics-ibd-2026",
+    "upadacitinib-real-world-refractory-uc-2026"
+  ]
+},
+
+{
   "slug": "jak-inhibitors-comparative-effectiveness-uc-2026",
   "title": "Three Oral JAK Inhibitors Went Head-to-Head in Real-World UC. Upadacitinib Looked Strongest — Not Magically Risk-Free",
   "description": "A 2026 multicenter real-world cohort compared tofacitinib, filgotinib, and upadacitinib in ulcerative colitis. After weighting to 627 patients, upadacitinib produced the highest remission probabilities, including 59.8% steroid-free clinical remission and 36.6% endoscopic remission at week 52. Tofacitinib had more infections and herpes zoster; serious events and colectomy were uncommon and similar.",
