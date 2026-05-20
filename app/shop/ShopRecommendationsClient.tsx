@@ -167,6 +167,56 @@ function ProofLadder() {
   )
 }
 
+function BuyerTrap() {
+  const trap = PRODUCTS.find((product) => product.id === 'lifeboost-grata-medium-claim-watch')
+
+  if (!trap) return null
+
+  return (
+    <ScrollReveal>
+      <section className="mt-8 overflow-hidden rounded-[30px] border border-coral-300/18 bg-[linear-gradient(135deg,rgba(248,113,113,0.10),rgba(255,255,255,0.03))] p-5 shadow-[0_22px_66px_rgba(0,0,0,0.18)] md:p-6">
+        <div className="grid gap-6 lg:grid-cols-[0.72fr,1.28fr] lg:items-center">
+          <div className="flex items-center gap-4">
+            <div className="flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-[24px] border border-white/10 bg-[#f8efe2] p-2">
+              <Image src={trap.imageUrl} alt={trap.name} width={220} height={220} className="h-full w-full object-contain drop-shadow-[0_18px_28px_rgba(0,0,0,0.22)]" />
+            </div>
+            <div>
+              <p className="text-[0.62rem] font-bold uppercase tracking-[0.24em] text-coral-200/85">Today’s proof trap</p>
+              <h3 className="font-display mt-2 text-3xl leading-none tracking-tight text-white md:text-4xl">A COA page is not a COA.</h3>
+              <p className="mt-2 text-sm font-bold text-slate-300">{trap.brand} · {trap.name}</p>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-sm leading-relaxed text-slate-300 md:text-base">
+              I checked Lifeboost’s public page titled “Certificate of Analysis.” It says 3rd-party tested and 450+ toxins, but the reviewed page did not expose a downloadable lab PDF or a numeric Pb/Cd/As/Hg + OTA/aflatoxin table with reporting limits. For my rankings, that is <span className="font-bold text-coral-100">Missing numbers</span> — not a safety claim, just not comparable proof.
+            </p>
+            <div className="mt-4 grid gap-2 md:grid-cols-3">
+              <div className="rounded-[18px] border border-white/8 bg-black/16 p-3">
+                <p className="text-[0.58rem] font-bold uppercase tracking-[0.18em] text-slate-400">Buyer sees</p>
+                <p className="mt-1 text-sm font-bold text-white">COA-sounding page</p>
+              </div>
+              <div className="rounded-[18px] border border-white/8 bg-black/16 p-3">
+                <p className="text-[0.58rem] font-bold uppercase tracking-[0.18em] text-slate-400">Proof needs</p>
+                <p className="mt-1 text-sm font-bold text-white">Lab/date/lot/values/limits</p>
+              </div>
+              <div className="rounded-[18px] border border-white/8 bg-black/16 p-3">
+                <p className="text-[0.58rem] font-bold uppercase tracking-[0.18em] text-slate-400">Verdict</p>
+                <p className="mt-1 text-sm font-bold text-coral-100">Checked, not promoted</p>
+              </div>
+            </div>
+            {trap.sourceUrl ? (
+              <a href={trap.sourceUrl} target="_blank" rel="noreferrer" className="mt-4 inline-flex rounded-full border border-coral-200/25 bg-coral-200/10 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-coral-100 hover:bg-coral-200/16">
+                Review the source page →
+              </a>
+            ) : null}
+          </div>
+        </div>
+      </section>
+    </ScrollReveal>
+  )
+}
+
 const researchQueue = [
   'Bulletproof Breakfast Blend / The Mentalist pods',
   'Fabula Dark Roast Pod',
@@ -428,6 +478,7 @@ export default function ShopRecommendationsClient() {
     <div>
       <LeaderPanel />
       <ProofLadder />
+      <BuyerTrap />
       <ComparisonTable />
       <ResearchQueue />
 
