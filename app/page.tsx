@@ -1,99 +1,129 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import { PRODUCTS } from '@/lib/products'
 
 export const metadata: Metadata = {
-  title: 'Cleanest Coffee | Mold-Toxin + Heavy-Metal Coffee Rankings',
+  title: 'Cleanest Coffee | Lab-Tested Coffee Purity Rankings',
   description:
     'Cleanest Coffee ranks coffee by public lab receipts: heavy metals, mold toxins, COAs, sourcing transparency, roast freshness, taste, and value.',
 }
 
-const proofPoints = [
-  { value: 'Heavy metals', label: 'Lead, cadmium, arsenic, and mercury numbers beat “trust us” labels.' },
-  { value: 'Mold toxins', label: 'Ochratoxin A and aflatoxin scope matters more than mold-free marketing.' },
-  { value: 'COA receipts', label: 'Lab, date, sample, units, and detection limits should be visible.' },
-  { value: 'Daily habit', label: 'Coffee is daily. Invisible traces deserve public numbers, not vibes.' },
+const exactCoaProducts = PRODUCTS.filter((product) => product.proofTier === 'Exact public COA')
+const topCoffee = exactCoaProducts[0]
+
+const heroStats = [
+  { value: `${PRODUCTS.length}`, label: 'PRODUCTS AUDITED' },
+  { value: `${exactCoaProducts.length}`, label: 'EXACT PUBLIC COAS' },
+  { value: topCoffee?.purityScore ? `${topCoffee.purityScore}` : '94', label: 'TOP PURITY SCORE' },
 ]
 
-const rankingCriteria = [
-  'Public numeric COAs before clean-sounding labels',
-  'Heavy-metal + mycotoxin scope shown clearly',
-  'Exact bag, lot, or harvest tied to the report',
-  'Roast freshness, sourcing, taste, and value still counted',
+const evidenceSnapshots = [
+  { value: 'Pb <5', label: 'ppb lead on the current #1 roasted/green receipt' },
+  { value: 'OTA <1', label: 'ppb ochratoxin A on Natural Force public COA' },
+  { value: 'Cd 5.58', label: 'ppb cadmium disclosed instead of hidden behind vibes' },
+  { value: '<10', label: 'CFU/g yeast + mould on roasted beans' },
+  { value: 'COA', label: 'lab, date, report ID, sample, units, detection limits' },
+  { value: '0', label: 'patience for “clean” claims with no public numbers' },
 ]
 
-const photoCards = [
-  { src: '/images/coffee/coffee-beans-close.jpg', label: 'Beans', note: 'Actual coffee photos, not text-only filler.' },
-  { src: '/images/coffee/espresso-pour.jpg', label: 'Brew', note: 'Readable buyer rules, not lab-person jargon.' },
-  { src: '/images/coffee/coffee-lab-cupping.jpg', label: 'Receipts', note: 'Rankings built around proof quality.' },
+const confidenceRules = [
+  { title: 'Lab score first', detail: 'Exact public numeric COAs outrank certifications and generic “third-party tested” claims.' },
+  { title: 'Lot matters', detail: 'A lab report only helps if the bag, harvest, sample, or batch is clear enough to verify.' },
+  { title: 'Scope matters', detail: 'Heavy metals plus OTA/aflatoxins beat a vague “mold-free” badge every time.' },
+]
+
+const featuredPhotos = [
+  '/images/coffee/coffee-beans-close.jpg',
+  '/images/coffee/espresso-pour.jpg',
+  '/images/coffee/coffee-lab-cupping.jpg',
 ]
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen overflow-hidden bg-[#fbf3e8]">
-      <section className="relative overflow-hidden border-b border-warm-200/60 px-4 py-16 md:py-24">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(244,132,95,0.22),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(241,181,68,0.22),transparent_28%),linear-gradient(180deg,#fff9f0_0%,#f7e6cf_100%)]" />
-        <div className="absolute inset-0 dot-grid-pattern opacity-35" />
-
-        <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.03fr,0.97fr] lg:items-center">
-          <div>
-            <div className="spring-up inline-flex rounded-full border border-coral-400/25 bg-white/70 px-4 py-1.5 text-[0.66rem] font-black uppercase tracking-[0.28em] text-coral-700 shadow-card-warm backdrop-blur">
-              Mold-toxin + heavy-metal coffee rankings
-            </div>
-
-            <h1 className="spring-up font-display mt-6 max-w-4xl text-5xl leading-[0.9] tracking-tight text-warm-950 sm:text-6xl md:text-7xl">
-              Cleanest Coffee ranks the bags with actual receipts.
-            </h1>
-
-            <p className="spring-up mt-6 max-w-2xl text-base leading-relaxed text-warm-700 md:text-lg">
-              Coffee is a daily habit. Heavy metals and mold toxins are invisible on the bag. So we rank public lab numbers — not wellness poetry, pretty packaging, or “third-party tested” fog.
-            </p>
-
-            <div className="spring-up mt-8 flex flex-wrap gap-3">
-              <Link href="/shop" className="btn-shimmer rounded-full bg-coral-500 px-6 py-3 text-sm font-black text-white shadow-[0_18px_42px_rgba(244,132,95,0.28)] hover:bg-coral-600">
-                See best coffees
-              </Link>
-              <Link href="/rankings" className="rounded-full border border-warm-300 bg-white/75 px-6 py-3 text-sm font-black text-warm-900 shadow-card-warm hover:border-coral-400/50 hover:bg-white">
-                How we rank proof
-              </Link>
-            </div>
-
-            <div className="spring-up mt-8 grid max-w-2xl gap-3 sm:grid-cols-2">
-              {proofPoints.map((point) => (
-                <div key={point.value} className="rounded-[1.4rem] border border-white/80 bg-white/70 p-4 shadow-card-warm backdrop-blur">
-                  <p className="font-display text-2xl tracking-tight text-warm-950">{point.value}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-warm-600">{point.label}</p>
-                </div>
-              ))}
-            </div>
+    <main className="min-h-screen overflow-hidden bg-[#f8efe2] text-[#21150d]">
+      <section className="relative overflow-hidden border-b border-[#e7d2b7] bg-[radial-gradient(circle_at_16%_8%,rgba(244,132,95,0.24),transparent_28%),radial-gradient(circle_at_82%_10%,rgba(241,181,68,0.22),transparent_30%),linear-gradient(180deg,#fff8ec_0%,#f5e2c7_100%)] px-4 pb-16 pt-8 md:pb-24 md:pt-10">
+        <div className="absolute inset-0 dot-grid-pattern opacity-30" />
+        <div className="relative mx-auto max-w-7xl">
+          <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-black uppercase tracking-[0.22em] text-[#7a4f2a]">
+            <span>best-coffee-ranked.com</span>
+            <span>Lab-verified coffee purity rankings</span>
           </div>
 
-          <div className="spring-up relative">
-            <div className="absolute -inset-5 rounded-[3rem] bg-gradient-to-br from-coral-300/35 via-amber-200/35 to-white blur-2xl" />
-            <div className="relative overflow-hidden rounded-[3rem] border border-white/75 bg-white/70 p-4 shadow-[0_34px_90px_rgba(77,45,18,0.22)] backdrop-blur-xl">
-              <div className="grid gap-4 sm:grid-cols-[0.9fr,1.1fr]">
-                <div className="flex flex-col gap-4">
-                  <div className="overflow-hidden rounded-[2rem] border border-warm-100 bg-[#f8efe2] p-5 text-center shadow-card-warm">
-                    <Image src="/images/brand/cleanest-coffee-logo.jpg" alt="Cleanest Coffee logo" width={900} height={900} className="mx-auto aspect-square w-full rounded-[1.4rem] object-cover" priority />
+          <div className="mt-12 grid gap-10 lg:grid-cols-[1.08fr,0.92fr] lg:items-center">
+            <div>
+              <div className="inline-flex rounded-full border border-[#d58a54]/30 bg-white/70 px-4 py-1.5 text-[0.68rem] font-black uppercase tracking-[0.28em] text-[#a0522d] shadow-sm backdrop-blur">
+                Updated 2026 · Mold-toxin + heavy-metal rankings
+              </div>
+
+              <h1 className="font-display mt-6 max-w-4xl text-5xl leading-[0.88] tracking-tight text-[#24150b] sm:text-6xl md:text-7xl">
+                Best Lab-Tested Coffees Ranked Scientifically
+              </h1>
+
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#6b4a31]">
+                Public COA PDFs first. Certification second. “Tested” with no numbers goes to the watchlist. We rank coffee by heavy metals, mold toxins, lot transparency, roast quality, taste, and value.
+              </p>
+
+              <div className="mt-7 flex flex-wrap gap-3">
+                <Link href="/shop" className="rounded-full bg-[#cf6f3d] px-6 py-3 text-sm font-black text-white shadow-[0_18px_40px_rgba(207,111,61,0.28)] transition hover:bg-[#b95e31]">
+                  See the top-ranked coffees
+                </Link>
+                <Link href="/rankings" className="rounded-full border border-[#d8b98f] bg-white/80 px-6 py-3 text-sm font-black text-[#3a2415] shadow-sm transition hover:border-[#c77947] hover:bg-white">
+                  How rankings work
+                </Link>
+              </div>
+
+              <div className="mt-9 grid max-w-2xl grid-cols-3 gap-3">
+                {heroStats.map((stat) => (
+                  <div key={stat.label} className="rounded-[1.35rem] border border-white/80 bg-white/72 p-4 text-center shadow-[0_18px_40px_rgba(86,50,20,0.08)] backdrop-blur">
+                    <p className="font-display text-4xl tracking-tight text-[#25160b]">{stat.value}</p>
+                    <p className="mt-1 text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#8a5a34]">{stat.label}</p>
                   </div>
-                  <div className="rounded-[2rem] bg-warm-950 p-5 text-white shadow-card-warm">
-                    <p className="text-[0.64rem] font-black uppercase tracking-[0.26em] text-amber-200/80">Buyer rule</p>
-                    <p className="font-display mt-2 text-3xl leading-tight">Pretty bag ≠ purity proof.</p>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="absolute -inset-5 rounded-[2.8rem] bg-gradient-to-br from-[#d87945]/25 via-[#efc980]/25 to-white blur-2xl" />
+              <div className="relative overflow-hidden rounded-[2.6rem] border border-white/80 bg-[#fffaf1]/86 p-5 shadow-[0_34px_90px_rgba(67,38,18,0.20)] backdrop-blur-xl">
+                <div className="grid gap-5 md:grid-cols-[0.88fr,1.12fr]">
+                  <div className="space-y-4">
+                    <div className="overflow-hidden rounded-[2rem] border border-[#ecd6b7] bg-white p-3 shadow-sm">
+                      <Image src="/images/brand/cleanest-coffee-logo.jpg" alt="Cleanest Coffee logo" width={900} height={900} className="aspect-square rounded-[1.5rem] object-cover" priority />
+                    </div>
+                    <div className="rounded-[1.8rem] bg-[#21150d] p-5 text-white shadow-[0_20px_44px_rgba(33,21,13,0.22)]">
+                      <p className="text-[0.62rem] font-black uppercase tracking-[0.25em] text-[#f3c274]">Recommended shortcut</p>
+                      <p className="mt-2 text-sm uppercase tracking-[0.2em] text-white/55">#1 overall</p>
+                      <h2 className="font-display mt-1 text-3xl leading-tight">{topCoffee?.brand ?? 'Natural Force'}</h2>
+                      <p className="mt-1 text-white/78">{topCoffee?.name ?? 'Clean Coffee Medium Roast'}</p>
+                    </div>
                   </div>
-                </div>
-                <div className="grid gap-4">
-                  {photoCards.map((card) => (
-                    <div key={card.src} className="group overflow-hidden rounded-[2rem] border border-white bg-white shadow-card-warm">
-                      <div className="relative h-44 overflow-hidden">
-                        <Image src={card.src} alt={card.label} width={1200} height={760} className="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
-                        <div className="absolute bottom-4 left-4 right-4">
-                          <p className="font-display text-2xl text-white">{card.label}</p>
-                          <p className="mt-1 text-xs leading-relaxed text-white/78">{card.note}</p>
-                        </div>
+
+                  <div className="flex flex-col justify-between rounded-[2rem] border border-[#ecd6b7] bg-white p-5 shadow-sm">
+                    <div>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="rounded-full bg-[#1f7a4d] px-3 py-1 text-[0.6rem] font-black uppercase tracking-[0.18em] text-white">Exact public COA</span>
+                        <span className="rounded-full bg-[#f3c274] px-3 py-1 text-[0.6rem] font-black uppercase tracking-[0.18em] text-[#2b1a0d]">Amazon-ready</span>
+                      </div>
+                      <p className="font-display mt-5 text-5xl tracking-tight text-[#24150b]">{topCoffee?.purityScore ?? 94}/100</p>
+                      <p className="mt-3 text-sm leading-relaxed text-[#6b4a31]">{topCoffee?.bestFor ?? 'Best balance of public COA proof, low mycotoxins/mould, and buyer usefulness.'}</p>
+                    </div>
+
+                    <div className="mt-5 grid gap-2">
+                      <div className="rounded-2xl bg-[#f8efe2] p-3">
+                        <p className="text-[0.58rem] font-black uppercase tracking-[0.2em] text-[#8a5a34]">Heavy metals</p>
+                        <p className="font-bold text-[#24150b]">{topCoffee?.heavyMetalSummary ?? 'Pb <5 ppb · Cd 5.58 ppb'}</p>
+                      </div>
+                      <div className="rounded-2xl bg-[#f8efe2] p-3">
+                        <p className="text-[0.58rem] font-black uppercase tracking-[0.2em] text-[#8a5a34]">Mold toxins</p>
+                        <p className="font-bold text-[#24150b]">{topCoffee?.mycotoxinSummary ?? 'OTA <1 ppb · aflatoxins <0.500 ppb'}</p>
                       </div>
                     </div>
-                  ))}
+
+                    <Link href="/shop" className="mt-5 inline-flex items-center justify-center rounded-full bg-[#cf6f3d] px-5 py-3 text-sm font-black text-white transition hover:bg-[#b95e31]">
+                      View best price →
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -101,43 +131,52 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-7 px-4 py-14 md:grid-cols-[0.85fr,1.15fr] md:py-20">
-        <div className="rounded-[2rem] border border-warm-200 bg-white/82 p-8 shadow-card-warm">
-          <p className="text-[0.7rem] font-black uppercase tracking-[0.28em] text-coral-600">What gets ranked</p>
-          <h2 className="font-display mt-3 text-4xl tracking-tight text-warm-950">Clean is not a flavor. It is a standard.</h2>
-          <p className="mt-4 leading-relaxed text-warm-700">
-            The cleanest coffee is the coffee that survives scrutiny: what was tested, where it came from, how it was processed, whether it tastes good, and whether the price makes sense.
-          </p>
+      <section className="border-y border-[#e7d2b7] bg-[#21150d] py-8 text-white">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-[0.68rem] font-black uppercase tracking-[0.3em] text-[#f3c274]/75">Proof snapshots</p>
+              <h2 className="font-display mt-2 text-3xl tracking-tight md:text-5xl">Plain-English lab receipts.</h2>
+            </div>
+            <Link href="/research" className="text-sm font-black text-[#f3c274] hover:text-white">All research →</Link>
+          </div>
+          <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+            {evidenceSnapshots.map((item) => (
+              <div key={item.value} className="rounded-[1.4rem] border border-white/10 bg-white/[0.055] p-4 shadow-[0_18px_44px_rgba(0,0,0,0.16)]">
+                <p className="font-display text-4xl tracking-tight text-[#f3c274]">{item.value}</p>
+                <p className="mt-2 text-xs leading-relaxed text-white/70">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto grid max-w-7xl gap-8 px-4 py-16 lg:grid-cols-[0.72fr,1.28fr] lg:items-start">
+        <div className="rounded-[2rem] border border-[#e7d2b7] bg-white p-7 shadow-[0_22px_54px_rgba(86,50,20,0.10)]">
+          <p className="text-[0.68rem] font-black uppercase tracking-[0.3em] text-[#a0522d]">How to choose with confidence</p>
+          <h2 className="font-display mt-3 text-4xl tracking-tight text-[#24150b]">Start with the highest proof score, then check the current bag.</h2>
+          <p className="mt-4 leading-relaxed text-[#6b4a31]">The trick is not finding a clean-sounding brand. The trick is finding the brand whose numbers are public enough to compare.</p>
+          <Link href="/shop" className="mt-6 inline-flex rounded-full bg-[#21150d] px-5 py-3 text-sm font-black text-white hover:bg-[#3a2415]">See ranking rules →</Link>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          {rankingCriteria.map((item, index) => (
-            <div key={item} className="rounded-[1.6rem] border border-warm-200 bg-white p-5 shadow-card-warm">
-              <p className="font-display text-3xl text-coral-500">0{index + 1}</p>
-              <p className="mt-2 text-sm font-bold leading-relaxed text-warm-900">{item}</p>
+        <div className="grid gap-4 md:grid-cols-3">
+          {confidenceRules.map((rule, index) => (
+            <div key={rule.title} className="rounded-[2rem] border border-[#e7d2b7] bg-white/84 p-5 shadow-[0_22px_54px_rgba(86,50,20,0.08)]">
+              <p className="font-display text-5xl text-[#cf6f3d]">0{index + 1}</p>
+              <h3 className="font-display mt-3 text-2xl tracking-tight text-[#24150b]">{rule.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-[#6b4a31]">{rule.detail}</p>
             </div>
           ))}
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-20">
-        <div className="overflow-hidden rounded-[2.4rem] border border-warm-200 bg-[linear-gradient(135deg,#1a1009,#3a2110)] shadow-[0_30px_90px_rgba(38,20,9,0.22)]">
-          <div className="grid gap-0 lg:grid-cols-[1fr,0.9fr]">
-            <div className="p-8 md:p-10">
-              <p className="text-[0.7rem] font-black uppercase tracking-[0.28em] text-amber-200/80">The diagnosis</p>
-              <h2 className="font-display mt-3 max-w-2xl text-4xl tracking-tight text-white md:text-5xl">Most coffee marketing is allergic to evidence.</h2>
-              <p className="mt-5 max-w-2xl leading-relaxed text-white/72">
-                So Cleanest Coffee is becoming a ranking machine: premium visuals, exact receipts, Amazon-ready buyer links, and zero patience for vague “clean” claims.
-              </p>
-              <p className="mt-5 rounded-2xl border border-white/10 bg-white/[0.06] p-4 text-sm leading-relaxed text-white/70">
-                Not medical advice. Coffee and caffeine can affect anxiety, reflux, sleep, blood pressure, palpitations, pregnancy, medications, and gut symptoms. See a professional when relevant.
-              </p>
+        <div className="grid gap-4 md:grid-cols-3">
+          {featuredPhotos.map((src, index) => (
+            <div key={src} className={`overflow-hidden rounded-[2rem] border border-white bg-white shadow-[0_24px_60px_rgba(86,50,20,0.12)] ${index === 1 ? 'md:-mt-8' : ''}`}>
+              <Image src={src} alt="Coffee purity ranking imagery" width={1400} height={950} className="h-72 w-full object-cover" />
             </div>
-            <div className="relative min-h-[320px] overflow-hidden">
-              <Image src="/images/coffee/beans-roast.jpg" alt="Roasted coffee beans" width={1400} height={1000} className="h-full w-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#3a2110] via-transparent to-transparent lg:bg-gradient-to-r" />
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </main>
