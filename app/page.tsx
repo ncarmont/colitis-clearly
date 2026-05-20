@@ -53,7 +53,7 @@ function ProductMiniCard({ product, index }: { product: typeof rankedCoffeeProdu
 export default function HomePage() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#f8efe2] text-[#21150d]">
-      <section className="relative overflow-hidden border-b border-[#e7d2b7] bg-[radial-gradient(circle_at_16%_8%,rgba(244,132,95,0.20),transparent_28%),radial-gradient(circle_at_82%_10%,rgba(241,181,68,0.20),transparent_30%),linear-gradient(180deg,#fff8ec_0%,#f5e2c7_100%)] px-4 pb-14 pt-8 md:pb-20 md:pt-10">
+      <section className="relative overflow-hidden border-b border-[#e7d2b7] bg-[radial-gradient(circle_at_16%_8%,rgba(244,132,95,0.20),transparent_28%),radial-gradient(circle_at_82%_10%,rgba(241,181,68,0.20),transparent_30%),linear-gradient(180deg,#fff8ec_0%,#f5e2c7_100%)] px-4 pb-10 pt-8 md:pb-12 md:pt-10">
         <div className="absolute inset-0 dot-grid-pattern opacity-28" />
         <div className="relative mx-auto max-w-7xl">
           <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-black uppercase tracking-[0.22em] text-[#7a4f2a]">
@@ -144,31 +144,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-[#e7d2b7] bg-[#21150d] py-8 text-white">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <p className="text-[0.68rem] font-black uppercase tracking-[0.3em] text-[#f3c274]/75">Proven coffee-purity receipts</p>
-              <h2 className="font-display mt-2 text-3xl tracking-tight md:text-5xl">Exact products. Plain-English lab numbers.</h2>
-            </div>
-            <Link href="/shop" className="text-sm font-black text-[#f3c274] hover:text-white">Full product table →</Link>
-          </div>
-          <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
-            {evidenceSnapshots.map((item) => (
-              <div key={item.value} className="rounded-[1.4rem] border border-white/10 bg-white/[0.055] p-4 shadow-[0_18px_44px_rgba(0,0,0,0.16)]">
-                <p className="font-display text-4xl tracking-tight text-[#f3c274]">{item.value}</p>
-                <p className="mt-2 text-xs leading-relaxed text-white/70">{item.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-4 py-16">
+      <section className="mx-auto max-w-7xl px-4 py-10 md:py-12">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-[0.68rem] font-black uppercase tracking-[0.3em] text-[#a0522d]">Current exact-COA leaderboard</p>
-            <h2 className="font-display mt-3 text-4xl tracking-tight text-[#24150b] md:text-5xl">Coffee products ranked by receipts, not reputation.</h2>
+            <p className="text-[0.68rem] font-black uppercase tracking-[0.3em] text-[#a0522d]">Top lab-tested coffee products</p>
+            <h2 className="font-display mt-3 text-4xl tracking-tight text-[#24150b] md:text-5xl">Ranked product cards first — just like the EVOO leaderboard.</h2>
           </div>
           <Link href="/shop" className="rounded-full bg-[#21150d] px-5 py-3 text-sm font-black text-white hover:bg-[#3a2415]">Shop all rankings →</Link>
         </div>
@@ -198,6 +178,26 @@ export default function HomePage() {
               </div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="border-y border-[#e7d2b7] bg-[#21150d] py-8 text-white">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-[0.68rem] font-black uppercase tracking-[0.3em] text-[#f3c274]/75">Proven coffee-purity receipts</p>
+              <h2 className="font-display mt-2 text-3xl tracking-tight md:text-5xl">Exact products. Plain-English lab numbers.</h2>
+            </div>
+            <Link href="/shop" className="text-sm font-black text-[#f3c274] hover:text-white">Full product table →</Link>
+          </div>
+          <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+            {evidenceSnapshots.map((item) => (
+              <div key={item.value} className="rounded-[1.4rem] border border-white/10 bg-white/[0.055] p-4 shadow-[0_18px_44px_rgba(0,0,0,0.16)]">
+                <p className="font-display text-4xl tracking-tight text-[#f3c274]">{item.value}</p>
+                <p className="mt-2 text-xs leading-relaxed text-white/70">{item.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
