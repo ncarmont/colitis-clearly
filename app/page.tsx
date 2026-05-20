@@ -34,26 +34,10 @@ const confidenceRules = [
   { title: 'Lot + scope matter', detail: 'Heavy metals plus OTA/aflatoxins, tied to a visible sample or lot, beat a vague “mold-free” badge.' },
 ]
 
-function ProductMiniCard({ product, index }: { product: typeof rankedCoffeeProducts[number]; index: number }) {
-  return (
-    <Link href="/shop" className="group grid grid-cols-[74px,1fr] gap-3 rounded-[1.35rem] border border-[#e6cfad] bg-white/90 p-3 shadow-[0_16px_40px_rgba(86,50,20,0.08)] transition hover:-translate-y-0.5 hover:shadow-[0_22px_52px_rgba(86,50,20,0.14)]">
-      <div className="flex h-[74px] w-[74px] items-center justify-center overflow-hidden rounded-[1rem] bg-[#f7ebd8] p-1.5">
-        <Image src={product.imageUrl} alt={product.name} width={240} height={240} className="h-full w-full object-contain drop-shadow-[0_10px_16px_rgba(0,0,0,0.18)]" />
-      </div>
-      <div className="min-w-0">
-        <p className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#a0522d]">#{index + 1} exact COA</p>
-        <p className="mt-1 truncate text-sm font-black text-[#24150b]">{product.brand}</p>
-        <p className="truncate text-sm text-[#6b4a31]">{product.name}</p>
-        <p className="mt-1 text-[0.68rem] font-bold text-[#1f7a4d]">{product.purityScore}/100 · {product.effectSize}</p>
-      </div>
-    </Link>
-  )
-}
-
 export default function HomePage() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#f8efe2] text-[#21150d]">
-      <section className="relative overflow-hidden border-b border-[#e7d2b7] bg-[radial-gradient(circle_at_16%_8%,rgba(244,132,95,0.20),transparent_28%),radial-gradient(circle_at_82%_10%,rgba(241,181,68,0.20),transparent_30%),linear-gradient(180deg,#fff8ec_0%,#f5e2c7_100%)] px-4 pb-10 pt-8 md:pb-12 md:pt-10">
+      <section className="relative overflow-hidden border-b border-[#e7d2b7] bg-[radial-gradient(circle_at_16%_8%,rgba(244,132,95,0.20),transparent_28%),radial-gradient(circle_at_82%_10%,rgba(241,181,68,0.20),transparent_30%),linear-gradient(180deg,#fff8ec_0%,#f5e2c7_100%)] px-4 pb-8 pt-8 md:pb-10 md:pt-10">
         <div className="absolute inset-0 dot-grid-pattern opacity-28" />
         <div className="relative mx-auto max-w-7xl">
           <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-black uppercase tracking-[0.22em] text-[#7a4f2a]">
@@ -61,94 +45,45 @@ export default function HomePage() {
             <span>Lab-verified coffee purity rankings</span>
           </div>
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[1.05fr,0.95fr] lg:items-center">
-            <div>
-              <div className="inline-flex rounded-full border border-[#d58a54]/30 bg-white/70 px-4 py-1.5 text-[0.68rem] font-black uppercase tracking-[0.28em] text-[#a0522d] shadow-sm backdrop-blur">
-                Updated 2026 · Exact product rankings
-              </div>
-
-              <h1 className="font-display mt-6 max-w-4xl text-5xl leading-[0.88] tracking-tight text-[#24150b] sm:text-6xl md:text-7xl">
-                Best Lab-Tested Coffees Ranked Scientifically
-              </h1>
-
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#6b4a31]">
-                Exact coffee products ranked by public COA receipts: lead, cadmium, arsenic, mercury, ochratoxin A, aflatoxins, lot transparency, roast quality, taste, and value.
-              </p>
-
-              <div className="mt-7 flex flex-wrap gap-3">
-                <Link href="/shop" className="rounded-full bg-[#cf6f3d] px-6 py-3 text-sm font-black text-white shadow-[0_18px_40px_rgba(207,111,61,0.28)] transition hover:bg-[#b95e31]">
-                  See the top-ranked coffees
-                </Link>
-                <Link href="/rankings" className="rounded-full border border-[#d8b98f] bg-white/80 px-6 py-3 text-sm font-black text-[#3a2415] shadow-sm transition hover:border-[#c77947] hover:bg-white">
-                  How rankings work
-                </Link>
-              </div>
-
-              <div className="mt-9 grid max-w-2xl grid-cols-3 gap-3">
-                {heroStats.map((stat) => (
-                  <div key={stat.label} className="rounded-[1.35rem] border border-white/80 bg-white/72 p-4 text-center shadow-[0_18px_40px_rgba(86,50,20,0.08)] backdrop-blur">
-                    <p className="font-display text-4xl tracking-tight text-[#25160b]">{stat.value}</p>
-                    <p className="mt-1 text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#8a5a34]">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
+          <div className="mt-10 max-w-4xl">
+            <div className="inline-flex rounded-full border border-[#d58a54]/30 bg-white/70 px-4 py-1.5 text-[0.68rem] font-black uppercase tracking-[0.28em] text-[#a0522d] shadow-sm backdrop-blur">
+              Updated 2026 · Exact product rankings
             </div>
 
-            <div className="relative">
-              <div className="absolute -inset-5 rounded-[2.8rem] bg-gradient-to-br from-[#d87945]/20 via-[#efc980]/20 to-white blur-2xl" />
-              <div className="relative overflow-hidden rounded-[2.6rem] border border-white/80 bg-[#fffaf1]/90 p-5 shadow-[0_34px_90px_rgba(67,38,18,0.20)] backdrop-blur-xl">
-                <div className="grid gap-5 md:grid-cols-[0.98fr,1.02fr]">
-                  <div className="rounded-[2rem] border border-[#ecd6b7] bg-white p-5 shadow-sm">
-                    <p className="text-[0.62rem] font-black uppercase tracking-[0.25em] text-[#a0522d]">Recommended shortcut</p>
-                    <p className="mt-2 text-sm font-black uppercase tracking-[0.2em] text-[#8a5a34]">#1 overall</p>
-                    <div className="mt-4 flex min-h-[250px] items-center justify-center rounded-[1.6rem] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.9),transparent_62%),linear-gradient(135deg,#f8efe2,#d8b274)] p-5">
-                      {topCoffee ? (
-                        <Image src={topCoffee.imageUrl} alt={topCoffee.name} width={900} height={800} className="max-h-[250px] w-full object-contain drop-shadow-[0_28px_44px_rgba(0,0,0,0.28)]" priority />
-                      ) : null}
-                    </div>
-                    <h2 className="font-display mt-4 text-3xl leading-tight text-[#24150b]">{topCoffee?.brand ?? 'Natural Force'}</h2>
-                    <p className="mt-1 font-bold text-[#6b4a31]">{topCoffee?.name ?? 'Clean Coffee Medium Roast'}</p>
-                    <p className="mt-3 text-sm leading-relaxed text-[#6b4a31]">{topCoffee?.bestFor}</p>
-                    <Link href="/shop" className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-[#cf6f3d] px-5 py-3 text-sm font-black text-white transition hover:bg-[#b95e31]">
-                      View best price →
-                    </Link>
-                  </div>
+            <h1 className="font-display mt-6 max-w-4xl text-5xl leading-[0.88] tracking-tight text-[#24150b] sm:text-6xl md:text-7xl">
+              Best Lab-Tested Coffees Ranked Scientifically
+            </h1>
 
-                  <div className="space-y-3">
-                    <div className="rounded-[2rem] border border-[#ecd6b7] bg-white p-5 shadow-sm">
-                      <div className="flex flex-wrap gap-2">
-                        <span className="rounded-full bg-[#1f7a4d] px-3 py-1 text-[0.6rem] font-black uppercase tracking-[0.18em] text-white">Exact public COA</span>
-                        <span className="rounded-full bg-[#f3c274] px-3 py-1 text-[0.6rem] font-black uppercase tracking-[0.18em] text-[#2b1a0d]">Amazon-ready</span>
-                      </div>
-                      <p className="font-display mt-4 text-5xl tracking-tight text-[#24150b]">{topCoffee?.purityScore ?? 94}/100</p>
-                      <div className="mt-4 grid gap-2">
-                        <div className="rounded-2xl bg-[#f8efe2] p-3">
-                          <p className="text-[0.58rem] font-black uppercase tracking-[0.2em] text-[#8a5a34]">Heavy metals</p>
-                          <p className="text-sm font-bold text-[#24150b]">{topCoffee?.heavyMetalSummary}</p>
-                        </div>
-                        <div className="rounded-2xl bg-[#f8efe2] p-3">
-                          <p className="text-[0.58rem] font-black uppercase tracking-[0.2em] text-[#8a5a34]">Mold toxins</p>
-                          <p className="text-sm font-bold text-[#24150b]">{topCoffee?.mycotoxinSummary}</p>
-                        </div>
-                      </div>
-                    </div>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#6b4a31]">
+              Exact coffee products ranked by public COA receipts: lead, cadmium, arsenic, mercury, ochratoxin A, aflatoxins, lot transparency, roast quality, taste, and value.
+            </p>
 
-                    {rankedCoffeeProducts.slice(1, 4).map((product, index) => (
-                      <ProductMiniCard key={product.id} product={product} index={index + 1} />
-                    ))}
-                  </div>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link href="/shop" className="rounded-full bg-[#cf6f3d] px-6 py-3 text-sm font-black text-white shadow-[0_18px_40px_rgba(207,111,61,0.28)] transition hover:bg-[#b95e31]">
+                See the top-ranked coffees
+              </Link>
+              <Link href="/rankings" className="rounded-full border border-[#d8b98f] bg-white/80 px-6 py-3 text-sm font-black text-[#3a2415] shadow-sm transition hover:border-[#c77947] hover:bg-white">
+                How rankings work
+              </Link>
+            </div>
+
+            <div className="mt-8 grid max-w-2xl grid-cols-3 gap-3">
+              {heroStats.map((stat) => (
+                <div key={stat.label} className="rounded-[1.35rem] border border-white/80 bg-white/72 p-4 text-center shadow-[0_18px_40px_rgba(86,50,20,0.08)] backdrop-blur">
+                  <p className="font-display text-4xl tracking-tight text-[#25160b]">{stat.value}</p>
+                  <p className="mt-1 text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#8a5a34]">{stat.label}</p>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-10 md:py-12">
+      <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-[0.68rem] font-black uppercase tracking-[0.3em] text-[#a0522d]">Top lab-tested coffee products</p>
-            <h2 className="font-display mt-3 text-4xl tracking-tight text-[#24150b] md:text-5xl">Ranked product cards first — just like the EVOO leaderboard.</h2>
+            <h2 className="font-display mt-3 text-4xl tracking-tight text-[#24150b] md:text-5xl">The clean-coffee leaderboard starts here.</h2>
           </div>
           <Link href="/shop" className="rounded-full bg-[#21150d] px-5 py-3 text-sm font-black text-white hover:bg-[#3a2415]">Shop all rankings →</Link>
         </div>
