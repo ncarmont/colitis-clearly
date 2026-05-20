@@ -276,29 +276,29 @@ function ProductCard({ product, index }: { product: RecommendedProduct; index: n
 
   return (
     <ScrollReveal key={product.name} delay={Math.min(index * 35, 180)}>
-      <article className="card-lift group relative h-full overflow-hidden rounded-[32px] border border-white/8 bg-[linear-gradient(180deg,rgba(20,18,14,0.9),rgba(8,17,28,0.94))] shadow-[0_18px_54px_rgba(0,0,0,0.22)]">
+      <article className={`card-lift group relative h-full overflow-hidden rounded-[34px] border bg-[linear-gradient(180deg,rgba(11,20,34,0.96),rgba(8,17,28,0.98))] shadow-[0_22px_66px_rgba(0,0,0,0.28)] ${index === 0 ? 'border-amber-accent/80 shadow-[0_24px_76px_rgba(241,181,68,0.18)]' : 'border-white/8'}`}>
         <div className="grid min-h-full grid-rows-[auto,1fr]">
-          <div className="relative flex h-64 items-center justify-center overflow-hidden border-b border-white/8 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.68),transparent_62%),linear-gradient(135deg,#fbf3e8,#d8b274)] p-4">
-            <Image src={product.imageUrl} alt={product.name} width={900} height={700} className="h-full w-full object-contain drop-shadow-[0_22px_34px_rgba(0,0,0,0.22)] transition duration-700 group-hover:scale-[1.035]" />
-            <div className="absolute left-4 top-4 flex flex-wrap gap-2">
+          <div className="relative flex h-[360px] items-center justify-center overflow-hidden border-b border-white/8 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.92),transparent_58%),linear-gradient(135deg,#fbf3e8,#caa36b)] p-6 md:h-[420px]">
+            <Image src={product.imageUrl} alt={product.name} width={1100} height={900} className="max-h-full w-full object-contain drop-shadow-[0_28px_46px_rgba(0,0,0,0.32)] transition duration-700 group-hover:scale-[1.045]" priority={index < 2} />
+            <div className="absolute left-4 top-4 flex items-center gap-2">
+              <span className={`flex h-14 w-14 items-center justify-center rounded-2xl border text-2xl font-black shadow-[0_12px_28px_rgba(0,0,0,0.22)] ${index === 0 ? 'border-amber-200 bg-amber-accent text-navy-950' : 'border-white/55 bg-white/80 text-slate-700 backdrop-blur-xl'}`}>{index + 1}</span>
               <span className={`rounded-full border px-3 py-1 text-[0.62rem] font-bold uppercase tracking-[0.18em] backdrop-blur-xl ${categoryTone[product.category]}`}>{product.category}</span>
-              <ProofBadge product={product} />
+            </div>
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950 via-navy-950/72 to-transparent px-5 pb-5 pt-24">
+              <div className="flex items-end justify-between gap-4">
+                <div>
+                  <p className="text-[0.62rem] font-black uppercase tracking-[0.22em] text-amber-100/80">{product.rankLabel ?? `#${index + 1} ranked`}</p>
+                  {product.purityScore ? <p className="font-display mt-1 text-6xl leading-none tracking-tight text-amber-accent">{product.purityScore}<span className="ml-1 text-base font-bold text-white/80">/100</span></p> : null}
+                </div>
+                <ProofBadge product={product} />
+              </div>
             </div>
           </div>
 
           <div className="flex flex-col p-5 md:p-6">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                {product.rankLabel ? <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-amber-100/75">{product.rankLabel}</p> : null}
-                <h3 className="font-display mt-1 text-3xl leading-none tracking-tight text-white">{product.name}</h3>
-                {product.brand ? <p className="mt-1 text-sm text-slate-300">{product.brand}</p> : null}
-              </div>
-              {product.purityScore ? (
-                <div className="shrink-0 rounded-[20px] border border-white/12 bg-black/30 px-4 py-3 text-right">
-                  <p className="text-[0.56rem] font-bold uppercase tracking-[0.18em] text-slate-400">Score</p>
-                  <p className="font-display text-3xl text-amber-accent">{product.purityScore}</p>
-                </div>
-              ) : null}
+            <div>
+              <h3 className="font-display text-3xl leading-none tracking-tight text-white md:text-4xl">{product.name}</h3>
+              {product.brand ? <p className="mt-2 text-sm font-bold uppercase tracking-[0.18em] text-slate-300">{product.brand}</p> : null}
             </div>
 
             <p className="mt-4 text-sm leading-relaxed text-slate-300">{product.description}</p>
@@ -454,7 +454,7 @@ export default function ShopRecommendationsClient() {
         </div>
       </div>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-2 2xl:grid-cols-3">
+      <div className="mt-8 grid gap-7 xl:grid-cols-2">
         {filteredProducts.map((product, index) => <ProductCard key={product.id} product={product} index={index} />)}
       </div>
     </div>

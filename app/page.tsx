@@ -173,20 +173,27 @@ export default function HomePage() {
           <Link href="/shop" className="rounded-full bg-[#21150d] px-5 py-3 text-sm font-black text-white hover:bg-[#3a2415]">Shop all rankings →</Link>
         </div>
 
-        <div className="mt-8 grid gap-4 lg:grid-cols-4">
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
           {rankedCoffeeProducts.map((product, index) => (
-            <Link href="/shop" key={product.id} className="group overflow-hidden rounded-[2rem] border border-[#e7d2b7] bg-white shadow-[0_22px_54px_rgba(86,50,20,0.10)] transition hover:-translate-y-1 hover:shadow-[0_30px_70px_rgba(86,50,20,0.16)]">
-              <div className="flex h-56 items-center justify-center bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.82),transparent_62%),linear-gradient(135deg,#fbf3e8,#d8b274)] p-5">
-                <Image src={product.imageUrl} alt={product.name} width={800} height={700} className="max-h-48 w-full object-contain drop-shadow-[0_20px_34px_rgba(0,0,0,0.24)] transition duration-700 group-hover:scale-[1.04]" />
+            <Link href="/shop" key={product.id} className={`group overflow-hidden rounded-[2rem] border bg-[#101b2e] shadow-[0_22px_54px_rgba(86,50,20,0.14)] transition hover:-translate-y-1 hover:shadow-[0_30px_70px_rgba(86,50,20,0.22)] ${index === 0 ? 'border-[#f3c274]' : 'border-[#e7d2b7]'}`}>
+              <div className="relative flex h-80 items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.92),transparent_60%),linear-gradient(135deg,#fbf3e8,#caa36b)] p-7">
+                <Image src={product.imageUrl} alt={product.name} width={1000} height={820} className="max-h-full w-full object-contain drop-shadow-[0_24px_40px_rgba(0,0,0,0.30)] transition duration-700 group-hover:scale-[1.04]" />
+                <span className={`absolute left-4 top-4 flex h-14 w-14 items-center justify-center rounded-2xl border text-2xl font-black shadow-[0_12px_28px_rgba(0,0,0,0.22)] ${index === 0 ? 'border-amber-200 bg-[#f3c274] text-[#24150b]' : 'border-white/60 bg-white/82 text-[#4b5563]'}`}>{index + 1}</span>
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#101b2e] via-[#101b2e]/78 to-transparent px-5 pb-5 pt-24">
+                  <p className="font-display text-5xl leading-none tracking-tight text-[#f3c274]">{product.purityScore}<span className="ml-1 text-sm font-bold text-white/80">/100</span></p>
+                  <p className="mt-1 text-[0.62rem] font-black uppercase tracking-[0.2em] text-white/70">#{index + 1} lab-verified · Exact COA</p>
+                </div>
               </div>
-              <div className="p-5">
-                <p className="text-[0.62rem] font-black uppercase tracking-[0.2em] text-[#a0522d]">#{index + 1} lab-verified</p>
-                <h3 className="font-display mt-2 text-2xl leading-tight text-[#24150b]">{product.name}</h3>
-                <p className="mt-1 text-sm font-bold text-[#6b4a31]">{product.brand}</p>
-                <p className="mt-3 text-sm leading-relaxed text-[#6b4a31]">{product.heavyMetalSummary}</p>
-                <div className="mt-4 flex items-center justify-between border-t border-[#efddc3] pt-4">
-                  <span className="font-display text-3xl text-[#cf6f3d]">{product.purityScore}</span>
-                  <span className="text-[0.58rem] font-black uppercase tracking-[0.18em] text-[#1f7a4d]">Exact COA</span>
+              <div className="p-5 text-white">
+                <h3 className="font-display text-3xl leading-tight">{product.name}</h3>
+                <p className="mt-1 text-sm font-bold uppercase tracking-[0.18em] text-white/60">{product.brand}</p>
+                <div className="mt-4 rounded-[1.2rem] border border-white/10 bg-white/[0.055] p-4">
+                  <p className="text-[0.62rem] font-black uppercase tracking-[0.2em] text-[#f3c274]/80">Heavy metals</p>
+                  <p className="mt-1 text-sm leading-relaxed text-white/84">{product.heavyMetalSummary}</p>
+                </div>
+                <div className="mt-3 flex flex-wrap items-center gap-2">
+                  <span className="rounded-full bg-[#1f7a4d] px-3 py-1 text-[0.6rem] font-black uppercase tracking-[0.16em] text-white">Lab verified</span>
+                  <span className="rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-[0.6rem] font-black uppercase tracking-[0.16em] text-white/70">View product →</span>
                 </div>
               </div>
             </Link>
