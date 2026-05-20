@@ -1,20 +1,11 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Ulcerative Colitis Research | Trials, Biomarkers, and Emerging Therapies",
-  description: "Evidence-based UC research covering pathophysiology, biomarkers, pivotal trials, and the next generation of ulcerative colitis therapies.",
-  keywords: "ulcerative colitis research, UC clinical trials, fecal calprotectin, vedolizumab, ustekinumab, JAK inhibitors, IL-23 ulcerative colitis",
-  openGraph: {
-    title: "Ulcerative Colitis Research",
-    description: "Evidence-based UC trials, biomarkers, and emerging treatment science",
-    type: "website",
-  },
+  title: 'Coffee Purity Research | Cleanest Coffee',
+  description: 'Evidence-aware coffee purity research covering heavy metals, mycotoxins, pesticide residues, decaf solvents, lab testing, sourcing, roast freshness, and brand transparency.',
+  keywords: 'coffee purity research, heavy metals coffee, mycotoxins coffee, pesticide tested coffee, decaf solvents, clean coffee COA',
 }
 
-export default function ResearchLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function ResearchLayout({ children }: { children: React.ReactNode }) {
   return children
 }

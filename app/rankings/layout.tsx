@@ -1,20 +1,16 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "UC Treatment Rankings | Evidence-Based Comparison of Therapies",
-  description: "Compare ulcerative colitis treatments by class, route, response data, remission rates, safety profile, and therapeutic role.",
-  keywords: "ulcerative colitis treatment rankings, mesalamine, vedolizumab, infliximab, upadacitinib, ulcerative colitis biologics, UC JAK inhibitors",
+  title: 'Clean Coffee Rankings | Cleanest Coffee',
+  description: 'Compare clean coffee buying patterns by heavy-metal testing, mycotoxin screening, pesticide transparency, decaf process, freshness, sourcing, taste, and value.',
+  keywords: 'clean coffee rankings, heavy metal tested coffee, mycotoxin tested coffee, organic coffee, Swiss Water decaf, low toxin coffee',
   openGraph: {
-    title: "UC Treatment Rankings",
-    description: "Evidence-based comparison of ulcerative colitis therapies",
-    type: "website",
+    title: 'Clean Coffee Rankings',
+    description: 'No-BS comparison of clean coffee buying signals and transparency standards.',
+    type: 'website',
   },
 }
 
-export default function RankingsLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RankingsLayout({ children }: { children: React.ReactNode }) {
   return children
 }

@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Use | Project Remission UC',
-  description: 'Terms of use for Project Remission UC.',
+  title: 'Terms of Use | Cleanest Coffee',
+  description: 'Terms of use for Cleanest Coffee.',
 }
 
 export default function TermsPage() {
@@ -17,11 +17,11 @@ export default function TermsPage() {
         <h1 className="mt-6 text-4xl font-black tracking-tight">Terms of Use</h1>
         <p className="mt-3 text-sm text-slate-400">Last updated: March 22, 2026</p>
         <div className="mt-8 space-y-5 text-sm leading-relaxed text-slate-300">
-          <p>Content on Project Remission UC is provided for educational and informational purposes only.</p>
-          <p>Nothing on this site is medical advice, diagnosis, or treatment. Treatment decisions should be made with a qualified clinician.</p>
-          <p>We aim for accuracy, but medical evidence evolves. We may update content, remove material, or revise interpretations without notice.</p>
+          <p>Content on Cleanest Coffee is provided for educational and informational purposes only.</p>
+          <p>Nothing on this site is medical advice, diagnosis, or a guarantee that any specific bag is contaminant-free. Coffee, caffeine, pregnancy, reflux, anxiety, sleep, blood pressure, and medication concerns should be discussed with a qualified professional.</p>
+          <p>We aim for accuracy, but food-safety evidence, lab reports, product formulas, sourcing, and prices change. We may update content, remove material, or revise interpretations without notice.</p>
           <p>External links are provided for context. We are not responsible for third-party content, pricing, availability, or policies.</p>
-          <p>By using this site, you agree that Project Remission UC is not liable for losses arising from reliance on website content.</p>
+          <p>By using this site, you agree that Cleanest Coffee is not liable for losses arising from reliance on website content.</p>
         </div>
       </section>
     </main>

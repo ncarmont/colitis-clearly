@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react'
 
 const links = [
   { href: '/rankings', label: 'Rankings' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/research', label: 'Research' },
+  { href: '/blog', label: 'Guides' },
+  { href: '/research', label: 'Testing' },
   { href: '/shop', label: 'Shop' },
   { href: '/about', label: 'About' },
 ]
@@ -68,10 +68,10 @@ export default function Navigation() {
             <BrandIcon />
             <div className="min-w-0 leading-tight">
               <p className="font-display text-[1.25rem] tracking-tight text-warm-900 md:text-[1.4rem]">
-                Project Remission <span className="text-coral-400">UC</span>
+                Cleanest <span className="text-coral-400">Coffee</span>
               </p>
               <p className="truncate text-[0.58rem] uppercase tracking-[0.26em] text-warm-500 md:text-[0.63rem]">
-                Finding what actually works
+                No chemical nonsense
               </p>
             </div>
           </Link>
@@ -118,7 +118,7 @@ export default function Navigation() {
               <div className="mb-2.5 rounded-[18px] border border-coral-400/15 bg-coral-50/60 px-4 py-2.5">
                 <p className="text-[0.6rem] uppercase tracking-[0.28em] text-coral-600/70">Navigation</p>
                 <p className="mt-1 text-xs text-warm-600">
-                  Evidence-guided rankings, articles, research summaries, and science-backed recommendations.
+                  Clean coffee rankings, testing explainers, sourcing notes, and buying recommendations.
                 </p>
               </div>
               <div className="space-y-1.5">

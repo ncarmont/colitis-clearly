@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Editorial Policy | Project Remission UC',
-  description: 'How Project Remission UC researches, reviews, updates, and corrects UC science content.',
+  title: 'Editorial Policy | Cleanest Coffee',
+  description: 'How Cleanest Coffee researches, reviews, updates, and corrects coffee purity science content.',
 }
 
 export default function EditorialPolicyPage() {
@@ -18,19 +18,19 @@ export default function EditorialPolicyPage() {
         <div className="mt-8 space-y-6">
           <PolicyCard
             title="Sources we prioritize"
-            body="We prefer primary trial publications, systematic reviews, major guideline statements, and reputable medical organizations. We avoid turning unreplicated claims into conclusions."
+            body="We prefer primary food-safety research, contaminant guidance, lab methods, systematic reviews, reputable agencies, and transparent certificates of analysis. We avoid turning unreplicated claims into conclusions."
           />
           <PolicyCard
             title="How pages are updated"
-            body="Treatment pages and research summaries are revised when pivotal data, approval status, or interpretation materially changes. We aim to keep publication and approval timing explicit when it affects understanding."
+            body="Coffee pages and research summaries are revised when heavy-metal guidance, mycotoxin evidence, pesticide standards, decaf-solvent rules, lab reports, or brand transparency materially changes."
           />
           <PolicyCard
             title="Corrections"
-            body="If you find an error, send the page URL, the disputed statement, and the source you think should replace it. Medically significant corrections are prioritized."
+            body="If you find an error, send the page URL, the disputed statement, and the source you think should replace it. Safety-relevant contaminant corrections are prioritized."
           />
           <PolicyCard
             title="Editorial independence"
-            body="Pages are written for educational clarity, not to sell a product or steer a patient toward a specific drug outside the context of evidence and clinician oversight."
+            body="Pages are written for buyer clarity, not to reward vague wellness marketing. Affiliate potential never outranks heavy-metal evidence, lab transparency, freshness, and value."
           />
         </div>
       </section>

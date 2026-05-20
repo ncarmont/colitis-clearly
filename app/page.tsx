@@ -1,140 +1,115 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import MedicalDisclaimer from '@/components/MedicalDisclaimer'
-import { TREATMENTS } from '@/lib/treatments'
-import { RANKED_PROCEDURES } from '@/lib/rankedProcedures'
-import FeaturedProcedures from '@/components/FeaturedProcedures'
-import PerfectDay from '@/components/PerfectDay'
 
 export const metadata: Metadata = {
-  title: 'Colitis Clearly | Best Ulcerative Colitis Treatments Ranked by Science',
+  title: 'Cleanest Coffee | Coffee Without the Chemical Nonsense',
   description:
-    'An evidence-first ulcerative colitis site with clinical-trial-ranked treatments, research snapshots, diet guidance, and science-backed recommendations.',
+    'A no-BS clean coffee guide ranking coffee by contaminant testing, sourcing transparency, roast quality, taste, and value.',
 }
 
-const evidencePills = [
-  { value: '6,449', label: 'UC JAK inhibitor starts: serious infection risk looked similar; dose mattered more than brand', tone: 'good', cite: 'JCC 2026, PMID 42117185', href: 'https://pubmed.ncbi.nlm.nih.gov/42117185/' },
-  { value: '59.8%', label: 'steroid-free remission at week 52 on upadacitinib in real-world JAK comparison', tone: 'good', cite: 'Adv Ther 2026, PMID 42105145', href: 'https://pubmed.ncbi.nlm.nih.gov/42105145/' },
-  { value: '24 RCTs', label: 'dietary supplements compared in UC; probiotics, flaxseed, curcumin and butyrate showed adjunct signals', tone: 'good', cite: 'Front Med 2026, PMID 42100281', href: 'https://pubmed.ncbi.nlm.nih.gov/42100281/' },
-  { value: '3,186', label: 'JAK inhibitor users: no higher matched MACE, cancer, VTE, or infection risk vs biologics', tone: 'good', cite: 'Intest Res 2026, PMID 42097599', href: 'https://pubmed.ncbi.nlm.nih.gov/42097599/' },
-  { value: '43.2%', label: 'steroid-free remission by week 12 on real-world mirikizumab', tone: 'good', cite: 'Latium Net, PMID 42086294', href: 'https://pubmed.ncbi.nlm.nih.gov/42086294/' },
-  { value: '98%',  label: 'stayed on vedolizumab after switching to home injections', tone: 'good', cite: 'JGH Open 2026, PMID 42027776', href: 'https://pubmed.ncbi.nlm.nih.gov/42027776/' },
-  { value: '85.7%',  label: 'steroid-free remission at 1 year, refractory UC on upadacitinib', tone: 'good', cite: 'Real-world cohort, PMID 41913733',  href: 'https://pubmed.ncbi.nlm.nih.gov/41913733/' },
-  { value: '2.03×', label: 'higher relapse risk if rectal mesalamine is stopped', tone: 'bad', cite: 'Meta-analysis, PMID 41338243', href: 'https://pubmed.ncbi.nlm.nih.gov/41338243/' },
-  { value: '6.80×', label: 'higher endoscopic response with FMT in recent RCTs', tone: 'good', cite: 'Meta-analysis, PMID 41792366', href: 'https://pubmed.ncbi.nlm.nih.gov/41792366/' },
-  { value: '95%',  label: 'J-pouch long-term success',      tone: 'good', cite: 'IPAA outcome studies',   href: 'https://pubmed.ncbi.nlm.nih.gov/19169164/' },
-  { value: '82%',  label: 'better outcomes, Med diet',      tone: 'good', cite: '6 RCTs, PMID 40797000',  href: 'https://pubmed.ncbi.nlm.nih.gov/40797000/' },
-  { value: '2.3×', label: 'more remissions, curcumin',      tone: 'good', cite: '8+ RCTs, ECCO 2025',     href: 'https://pubmed.ncbi.nlm.nih.gov/25688495/' },
-  { value: '7.13×', label: 'more likely to hit remission, second-line vedolizumab', tone: 'good', cite: 'GEMINI-1 + VISIBLE-1, PMID 41883697', href: 'https://pubmed.ncbi.nlm.nih.gov/41883697/' },
-  { value: '74%', label: 'remission at week 92 on guselkumab q4w, with nearly all remitters steroid-free', tone: 'good', cite: 'QUASAR LTE, PMID 42065421', href: 'https://pubmed.ncbi.nlm.nih.gov/42065421/' },
-  { value: '55.9%', label: 'remission at 1 year, ustekinumab real-world', tone: 'good', cite: 'CCAiD cohort, PMID 42002972', href: 'https://pubmed.ncbi.nlm.nih.gov/42002972/' },
-  { value: '2.53×', label: 'more mucosal healing, IL-23 biologics',  tone: 'good', cite: '7 RCTs, 4203 pts, PMID 41467943', href: 'https://pubmed.ncbi.nlm.nih.gov/41467943/' },
-  { value: '6%',   label: '3-mo colectomy with upfront intensified infliximab in acute severe UC', tone: 'good', cite: 'Bayesian meta-analysis, PMID 42030468', href: 'https://pubmed.ncbi.nlm.nih.gov/42030468/' },
-  { value: '5.82×', label: 'higher relapse/persistent activity with a pro-inflammatory diet', tone: 'bad', cite: 'Nutrition 2026, PMID 41916183', href: 'https://pubmed.ncbi.nlm.nih.gov/41916183/' },
-  { value: '32.7%', label: 'colectomy within 1 year after severe UC admission, if prior advanced therapy', tone: 'bad', cite: 'Real-world cohort, PMID 41978350', href: 'https://pubmed.ncbi.nlm.nih.gov/41978350/' },
-  { value: '2.7×', label: 'more remissions, appendicectomy vs JAK', tone: 'good', cite: 'COSTA trial, Lancet GH 2026', href: 'https://pubmed.ncbi.nlm.nih.gov/41512889/' },
-  { value: '60%', label: 'higher relapse risk if oral mesalamine is stopped', tone: 'bad', cite: 'Meta-analysis, PMID 41338243', href: 'https://pubmed.ncbi.nlm.nih.gov/41338243/' },
+const proofPoints = [
+  { value: 'Tested', label: 'Look for third-party testing, not marketing fog machines.' },
+  { value: 'Fresh', label: 'Stale beans are dead beans. Roast date beats “best by” theater.' },
+  { value: 'Transparent', label: 'Origin, process, and lab standards should not require detective work.' },
+  { value: 'No solvent BS', label: 'Decaf should disclose Swiss Water, CO₂, or the actual process.' },
+]
+
+const rankingCriteria = [
+  'Mycotoxin and heavy-metal testing',
+  'Pesticide and organic standards',
+  'Roast freshness and packaging integrity',
+  'Bean origin and supply-chain transparency',
+  'Taste, brew performance, and price per cup',
 ]
 
 export default function HomePage() {
   return (
     <main className="min-h-screen">
-
-      {/* ── COMPACT HERO ─────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden border-b border-warm-200/50 py-5 text-center md:py-6">
+      <section className="relative overflow-hidden border-b border-warm-200/50 px-4 py-16 text-center md:py-24">
         <div className="absolute inset-0 dot-grid-pattern opacity-40" />
-        <div className="relative mx-auto max-w-5xl px-4">
-
-          <div className="spring-up inline-flex rounded-full border border-coral-400/25 bg-coral-50 px-3.5 py-0.5 text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-coral-600" style={{ animationDelay: '0.05s' }}>
-            Clinical Evidence, Distilled
+        <div className="relative mx-auto max-w-5xl">
+          <div className="spring-up inline-flex rounded-full border border-coral-400/25 bg-coral-50 px-4 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-coral-600">
+            Clean Coffee, No Cult Nonsense
           </div>
 
-          <h1 className="spring-up font-display mt-2 text-[2rem] leading-[1.02] tracking-tight text-warm-950 sm:text-[2.5rem] md:text-[2.9rem] lg:text-[3.2rem]" style={{ animationDelay: '0.15s' }}>
-            Best UC Treatments{' '}
-            <span className="bg-gradient-to-r from-coral-500 via-coral-400 to-amber-500 bg-clip-text text-transparent">
-              Ranked by Science
+          <h1 className="spring-up font-display mt-5 text-5xl leading-[0.95] tracking-tight text-warm-950 sm:text-6xl md:text-7xl">
+            Cleanest{' '}
+            <span className="bg-gradient-to-r from-coral-500 via-amber-500 to-warm-800 bg-clip-text text-transparent">
+              Coffee
             </span>
           </h1>
 
-          <p className="spring-up mx-auto mt-1.5 max-w-lg text-[0.78rem] leading-relaxed text-warm-500" style={{ animationDelay: '0.25s' }}>
-            Trial-ranked therapies. No fake certainty — just what actually changes UC outcomes.
+          <p className="spring-up mx-auto mt-5 max-w-2xl text-base leading-relaxed text-warm-600 md:text-lg">
+            We rank coffee like adults: contaminant testing, transparent sourcing, roast freshness, taste, and value.
+            Not vibes. Not influencer dust. Not “mold-free” claims screamed into a ring light.
           </p>
 
-          <div className="spring-up mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1" style={{ animationDelay: '0.33s' }}>
-            <span className="text-[0.62rem] text-warm-500">
-              <strong className="font-semibold text-warm-800">{TREATMENTS.length}+</strong> ranked therapies
-            </span>
-            <span className="text-warm-300">·</span>
-            <span className="text-[0.62rem] text-warm-500">
-              <strong className="font-semibold text-warm-800">36</strong> clinical trials
-            </span>
-            <span className="text-warm-300">·</span>
-            <span className="text-[0.62rem] text-warm-500">
-              <strong className="font-semibold text-warm-800">62%</strong> FMT remission rate
-            </span>
-          </div>
-
-          <div className="spring-up mt-3 flex flex-wrap justify-center gap-2.5" style={{ animationDelay: '0.42s' }}>
-            <Link
-              href="/rankings"
-              className="btn-shimmer rounded-full bg-coral-400 px-4.5 py-1.5 text-xs font-bold text-white hover:bg-coral-500"
-            >
-              Explore rankings
+          <div className="spring-up mt-8 flex flex-wrap justify-center gap-3">
+            <Link href="/rankings" className="btn-shimmer rounded-full bg-coral-400 px-6 py-3 text-sm font-black text-white hover:bg-coral-500">
+              See the rankings
             </Link>
-            <Link
-              href="/shop"
-              className="rounded-full border border-warm-300 bg-white/80 px-4.5 py-1.5 text-xs font-bold text-warm-700 hover:border-coral-400/40 hover:bg-white"
-            >
-              Science picks
+            <Link href="/blog" className="rounded-full border border-warm-300 bg-white/80 px-6 py-3 text-sm font-black text-warm-800 hover:border-coral-400/40 hover:bg-white">
+              Read the no-BS guide
             </Link>
           </div>
-        </div>
-      </section>
 
-      {/* ── PROVEN CLINICAL SIGNALS — auto-rotating ticker ───────────────────── */}
-      <section className="spring-up border-b border-warm-200/50 bg-white/60 py-2" style={{ animationDelay: '0.52s' }}>
-        <div className="ticker-wrap">
-          <div className="ticker-track" style={{ gap: '8px', paddingInline: '8px' }}>
-            {[...evidencePills, ...evidencePills].map((pill, i) => (
-              <a
-                key={i}
-                href={pill.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex-none w-[118px] rounded-lg border px-2.5 py-2 transition-opacity hover:opacity-80 ${
-                  pill.tone === 'bad'
-                    ? 'border-rose-200 bg-rose-50'
-                    : 'border-warm-200 bg-white'
-                }`}
-              >
-                <p className={`font-display text-[1rem] font-black leading-none tracking-tight ${
-                  pill.tone === 'bad' ? 'text-rose-500' : 'text-warm-900'
-                }`}>
-                  {pill.value}
-                </p>
-                <p className="mt-0.5 text-[0.53rem] leading-snug text-warm-500">{pill.label}</p>
-                <p className={`mt-0.5 text-[0.47rem] leading-none ${
-                  pill.tone === 'bad' ? 'text-rose-400/70' : 'text-warm-400'
-                }`}>
-                  {pill.cite}
-                </p>
-              </a>
+          <div className="spring-up mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-3">
+            {['beans-roast.jpg', 'espresso-pour.jpg', 'coffee-cup.jpg'].map((photo, index) => (
+              <div key={photo} className={`overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-card-warm ${index === 1 ? 'sm:-mt-4' : ''}`}>
+                <Image
+                  src={`/images/coffee/${photo}`}
+                  alt="Actual coffee photography for Cleanest Coffee"
+                  width={1200}
+                  height={760}
+                  className="h-52 w-full object-cover"
+                  priority={index === 1}
+                />
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── FULL RANKED PROCEDURES — all 15 with photos + filter ─────────────── */}
-      <FeaturedProcedures procedures={RANKED_PROCEDURES} />
+      <section className="border-b border-warm-200/50 bg-white/65 py-4">
+        <div className="mx-auto grid max-w-6xl gap-3 px-4 sm:grid-cols-2 lg:grid-cols-4">
+          {proofPoints.map((point) => (
+            <div key={point.value} className="rounded-2xl border border-warm-200 bg-white p-5 shadow-card-warm">
+              <p className="font-display text-2xl font-black text-warm-950">{point.value}</p>
+              <p className="mt-2 text-sm leading-relaxed text-warm-600">{point.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      {/* ── PERFECT DAY LIFESTYLE STACK ──────────────────────────────────────── */}
-      <div className="border-t border-warm-200/50">
-        <PerfectDay />
-      </div>
+      <section className="mx-auto grid max-w-6xl gap-8 px-4 py-14 md:grid-cols-[1fr,0.9fr] md:py-20">
+        <div className="rounded-[2rem] border border-warm-200 bg-white/80 p-8 shadow-card-warm">
+          <p className="text-[0.7rem] font-bold uppercase tracking-[0.28em] text-coral-500">What gets ranked</p>
+          <h2 className="font-display mt-3 text-4xl tracking-tight text-warm-950">Clean is not a flavor. It is a standard.</h2>
+          <p className="mt-4 leading-relaxed text-warm-600">
+            The cleanest coffee is the stuff that survives scrutiny: what was tested, where it came from, how it was processed,
+            whether it tastes good, and whether the price makes sense. If a brand hides behind wellness poetry, it gets the side-eye.
+          </p>
+          <div className="mt-7 grid gap-3">
+            {rankingCriteria.map((item) => (
+              <div key={item} className="rounded-2xl border border-warm-200 bg-warm-50 px-4 py-3 text-sm font-semibold text-warm-800">
+                ✓ {item}
+              </div>
+            ))}
+          </div>
+        </div>
 
-      {/* ── DISCLAIMER ───────────────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-4xl px-4 pb-14 pt-2">
-        <MedicalDisclaimer />
+        <div className="rounded-[2rem] border border-coral-400/20 bg-gradient-to-br from-coral-50 to-amber-50 p-8 shadow-card-warm">
+          <p className="text-[0.7rem] font-bold uppercase tracking-[0.28em] text-coral-600">The diagnosis</p>
+          <h2 className="font-display mt-3 text-4xl tracking-tight text-warm-950">Most coffee marketing is allergic to evidence.</h2>
+          <p className="mt-4 leading-relaxed text-warm-700">
+            So we are rebuilding this into a coffee ranking machine: brutally clear, evidence-aware, affiliate-capable, and allergic to nonsense.
+          </p>
+          <p className="mt-5 rounded-2xl bg-white/75 p-4 text-sm leading-relaxed text-warm-700">
+            Medical footnote, because apparently lawyers also drink coffee: caffeine can worsen anxiety, reflux, sleep, palpitations,
+            blood pressure, and some gut symptoms. See a professional if that is you.
+          </p>
+        </div>
       </section>
     </main>
   )

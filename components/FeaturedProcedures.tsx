@@ -1,10 +1,11 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
 import type { RankedProcedure } from '@/lib/rankedProcedures'
 
-type Filter = 'All' | 'Medical' | 'Lifestyle'
+type Filter = 'All' | 'Testing' | 'Freshness'
 
 const RANK_BADGE_COLORS: Record<number, string> = {
   1: 'bg-amber-400 text-white',
@@ -30,10 +31,11 @@ function ProcedureCard({ p, index }: { p: RankedProcedure; index: number }) {
     <Wrapper>
       {/* Photo with overlaid rank + stat */}
       <div className="relative aspect-[16/7] overflow-hidden">
-        <img
+        <Image
           src={p.imageUrl}
           alt={p.name}
-          loading="lazy"
+          width={800}
+          height={450}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/10" />
@@ -45,9 +47,9 @@ function ProcedureCard({ p, index }: { p: RankedProcedure; index: number }) {
 
         {/* Filter category */}
         <div className={`absolute right-2 top-2 rounded-full border px-2 py-0.5 text-[0.52rem] font-bold uppercase tracking-[0.12em] backdrop-blur-sm ${
-          p.filterCategory === 'Medical'
-            ? 'border-blue-300/40 bg-blue-900/50 text-blue-100'
-            : 'border-green-300/40 bg-green-900/50 text-green-100'
+          p.filterCategory === 'Testing'
+            ? 'border-amber-300/40 bg-amber-900/50 text-amber-100'
+            : 'border-coral-300/40 bg-coral-900/50 text-coral-100'
         }`}>
           {p.filterCategory}
         </div>
@@ -107,9 +109,9 @@ export default function FeaturedProcedures({ procedures }: { procedures: RankedP
     : procedures.filter((p) => p.filterCategory === activeFilter)
 
   const filters: { key: Filter; label: string; count: number }[] = [
-    { key: 'All',      label: 'All Procedures',        count: procedures.length },
-    { key: 'Medical',  label: 'Medical Treatments',    count: procedures.filter(p => p.filterCategory === 'Medical').length },
-    { key: 'Lifestyle',label: 'Lifestyle & Diet',      count: procedures.filter(p => p.filterCategory === 'Lifestyle').length },
+    { key: 'All',       label: 'All Signals',       count: procedures.length },
+    { key: 'Testing',   label: 'Lab Testing',       count: procedures.filter(p => p.filterCategory === 'Testing').length },
+    { key: 'Freshness', label: 'Freshness & Origin', count: procedures.filter(p => p.filterCategory === 'Freshness').length },
   ]
 
   return (
@@ -118,10 +120,10 @@ export default function FeaturedProcedures({ procedures }: { procedures: RankedP
       <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="text-[0.65rem] font-bold uppercase tracking-[0.28em] text-coral-500">
-            Trial-Verified · Ranked by % Achieving Remission
+            COA-Verified · Ranked by Coffee Purity Weight
           </p>
           <h2 className="font-display mt-1.5 text-3xl tracking-tight text-warm-900 md:text-4xl">
-            Top Remission Procedure Rankings
+            Scientific Coffee Purity Ranking Signals
           </h2>
         </div>
         <Link href="/rankings" className="text-sm font-bold text-coral-500 hover:text-coral-600 whitespace-nowrap">
@@ -159,8 +161,7 @@ export default function FeaturedProcedures({ procedures }: { procedures: RankedP
       </div>
 
       <p className="mt-6 text-center text-xs text-warm-400">
-        Remission rates are from different trials and timepoints — always read the reference.
-        Consult your gastroenterologist for personal treatment decisions.
+        Scores are buyer-screening signals, not lab work on every bag. Current batch COAs beat old brand claims.
       </p>
     </section>
   )

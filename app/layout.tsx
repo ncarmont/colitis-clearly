@@ -24,11 +24,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: `${SITE_NAME} | Evidence-Based Ulcerative Colitis Science`,
+  title: `${SITE_NAME} | Coffee Without the Chemical Nonsense`,
   description:
-    'Evidence-based ulcerative colitis science, treatment rankings, flare management, biomarkers, and research summaries grounded in clinical trials and gastroenterology guidance.',
+    'A no-BS clean coffee guide ranking coffee by contaminant testing, sourcing transparency, roast quality, taste, and value.',
   keywords:
-    'ulcerative colitis, UC treatments, ulcerative colitis science, colitis flare management, fecal calprotectin, IBD biomarkers, biologics for ulcerative colitis, JAK inhibitors UC',
+    'clean coffee, mold free coffee, mycotoxin tested coffee, organic coffee, coffee rankings, best clean coffee, low toxin coffee, specialty coffee',
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     canonical: BASE_URL,
   },
   openGraph: {
-    title: `${SITE_NAME} | Evidence-Based UC Treatment Guide`,
+    title: `${SITE_NAME} | Clean Coffee Rankings`,
     description:
-      'Treatment rankings, research explainers, and evidence-based UC education built around pivotal trials and guideline-informed care.',
+      'Clean coffee rankings, testing explainers, sourcing notes, and no-BS coffee buying guidance.',
     type: 'website',
     locale: 'en_US',
     url: BASE_URL,
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_NAME} | UC Science and Treatment Rankings`,
-    description: 'Evidence-based ulcerative colitis science, treatment comparisons, and biomarker explainers.',
+    title: `${SITE_NAME} | Clean Coffee Rankings`,
+    description: 'Clean coffee rankings, contaminant testing explainers, sourcing notes, and brutally clear buying guidance.',
   },
   robots: {
     index: true,
@@ -105,11 +105,11 @@ export default function RootLayout({
               name: SITE_NAME,
               url: BASE_URL,
               logo: `${BASE_URL}/icon.svg`,
-              description: `${SITE_TAGLINE}. Educational treatment comparisons and UC research summaries.`,
+              description: `${SITE_TAGLINE}. Clean coffee rankings, testing explainers, and sourcing transparency.`,
               contactPoint: {
                 '@type': 'ContactPoint',
                 contactType: 'Editorial',
-                email: 'contact@colitisclearly.com',
+                email: 'contact@thecleanestcoffee.com',
               },
             })
           }}

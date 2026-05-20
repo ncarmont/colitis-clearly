@@ -13,7 +13,7 @@ export default function MedicalDisclaimer({ compact = false }: { compact?: boole
         </div>
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-100/75">
-            Medical Disclaimer
+            Coffee Safety Note
           </p>
           <p className="mt-1 leading-relaxed text-amber-50/90">{MEDICAL_DISCLAIMER}</p>
         </div>

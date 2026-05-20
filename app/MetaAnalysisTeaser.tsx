@@ -23,7 +23,7 @@ export default function MetaAnalysisTeaser({
             Meta-Analysis Teaser
           </p>
           <h2 className="font-display mt-3 text-3xl tracking-tight text-white md:text-4xl">
-            The short version of the UC evidence stack.
+            The short version of the coffee purity evidence stack.
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-300">
             Snapshot findings pulled from {studyCount} research summaries so visitors can move from headline numbers to the fuller trial context.

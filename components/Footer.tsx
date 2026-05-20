@@ -6,20 +6,20 @@ const footerColumns = [
   {
     title: 'Explore',
     links: [
-      { href: '/rankings', label: 'Treatment Rankings' },
-      { href: '/blog', label: 'Blog' },
-      { href: '/research', label: 'Research Library' },
-      { href: '/shop', label: 'Science-Backed Recommendations' },
+      { href: '/rankings', label: 'Coffee Rankings' },
+      { href: '/blog', label: 'Guides' },
+      { href: '/research', label: 'Testing Library' },
+      { href: '/shop', label: 'Clean Coffee Picks' },
       { href: '/about', label: 'About' },
     ],
   },
   {
-    title: 'Science Paths',
+    title: 'Coffee Paths',
     links: [
-      { href: '/research/clinical-trials', label: 'Clinical Trials' },
-      { href: '/research/biomarkers', label: 'Biomarkers' },
-      { href: '/research/pathophysiology', label: 'Pathophysiology' },
-      { href: '/research/emerging', label: 'Emerging Therapies' },
+      { href: '/research/testing-trials', label: 'Contaminant Testing' },
+      { href: '/research/biomarkers', label: 'Mycotoxins' },
+      { href: '/research/pathophysiology', label: 'Caffeine & Health' },
+      { href: '/research/emerging', label: 'Decaf Methods' },
     ],
   },
   {
@@ -43,10 +43,10 @@ export default function Footer() {
           <div className="space-y-5">
             <div>
               <p className="font-display text-3xl tracking-tight text-warm-900">
-                Colitis <span className="text-coral-400">Clearly</span>
+                Cleanest <span className="text-coral-400">Coffee</span>
               </p>
               <p className="mt-2 max-w-md text-sm leading-relaxed text-warm-600">
-                {SITE_TAGLINE}. Warm, evidence-first ulcerative colitis guidance for treatment choices, flare questions, diet decisions, and research literacy.
+                {SITE_TAGLINE}. Brutally clear coffee rankings for people who want cleaner beans, better sourcing, and fewer marketing hallucinations.
               </p>
             </div>
             <MedicalDisclaimer />
@@ -75,9 +75,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col gap-4 border-t border-warm-200/60 pt-6 text-sm text-warm-500 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 {SITE_NAME}. Educational medical science, not personal medical advice.</p>
+          <p>© 2026 {SITE_NAME}. Educational coffee science, not personal medical advice.</p>
           <p className="max-w-xl text-left md:text-right">
-            UC treatment choices still depend on disease severity, biomarkers, endoscopy, and your care team&apos;s judgement.
+            Coffee is not magic. If caffeine wrecks your sleep, reflux, anxiety, heart rhythm, or gut, see a professional.
           </p>
         </div>
       </div>

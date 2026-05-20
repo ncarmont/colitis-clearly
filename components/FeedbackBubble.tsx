@@ -45,7 +45,7 @@ export default function FeedbackBubble() {
       <button
         onClick={() => setIsOpen(true)}
         className="fixed bottom-4 right-4 z-50 bg-slate-700/80 backdrop-blur-sm text-white p-3 rounded-full shadow-lg hover:bg-slate-600/90 hover:scale-110 transition-all duration-300 border border-slate-600/50"
-        title="Submit feedback about Project Remission UC"
+        title="Submit feedback about Cleanest Coffee"
       >
         <span className="text-xl">❓</span>
       </button>
@@ -89,7 +89,7 @@ export default function FeedbackBubble() {
                     onChange={(e) => setComment(e.target.value)}
                     required
                     rows={5}
-                    placeholder="Flag an outdated trial result, a UC treatment error, a broken citation, or unclear wording..."
+                    placeholder="Flag an outdated test result, a coffee purity error, a broken citation, or unclear wording..."
                     className="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition-all resize-none"
                   />
                 </div>

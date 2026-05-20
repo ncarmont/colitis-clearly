@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 import type { RecommendedProduct } from '@/lib/products'
@@ -23,11 +24,12 @@ function ProductCard({ product, index }: { product: RecommendedProduct; index: n
       >
         {/* Product Image */}
         <div className="relative h-48 w-full overflow-hidden bg-navy-800/50">
-          <img
+          <Image
             src={product.imageUrl}
             alt={product.name}
+            width={1200}
+            height={760}
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/20 to-transparent" />
 
@@ -60,15 +62,32 @@ function ProductCard({ product, index }: { product: RecommendedProduct; index: n
 
           <div className="mt-3 rounded-[16px] border border-emerald-accent/10 bg-emerald-accent/[0.04] px-3 py-2.5">
             <p className="text-xs leading-relaxed text-emerald-100/80">
-              <span className="font-semibold text-emerald-accent">Science: </span>
+              <span className="font-semibold text-emerald-accent">Lab proof: </span>
               {product.why.split('.')[0]}.
             </p>
           </div>
 
+          {product.labResults?.length ? (
+            <div className="mt-3 grid grid-cols-2 gap-2">
+              {product.labResults.slice(0, 4).map((row) => (
+                <div key={row.label} className="rounded-[14px] border border-white/8 bg-white/[0.035] px-3 py-2">
+                  <p className="text-[0.58rem] font-semibold uppercase tracking-[0.18em] text-slate-500">{row.label}</p>
+                  <p className="mt-1 text-xs font-semibold text-white">{row.value}</p>
+                </div>
+              ))}
+            </div>
+          ) : null}
+
+          {product.reportDate ? (
+            <p className="mt-3 text-[0.68rem] leading-relaxed text-slate-500">
+              Source: {product.labName ?? 'Public source'} · {product.reportDate}
+            </p>
+          ) : null}
+
           <div className="mt-auto pt-4">
             <div className="flex items-center justify-between">
               <span className="text-sm font-semibold text-emerald-accent transition-all duration-300 group-hover:text-emerald-200">
-                View on Amazon →
+                View product/source →
               </span>
             </div>
           </div>
@@ -90,7 +109,7 @@ export default function FeaturedProducts({ products }: { products: RecommendedPr
             Top Ranked <span className="bg-gradient-to-r from-amber-200 to-amber-accent bg-clip-text text-transparent">Products</span>
           </h2>
           <p className="mt-5 text-base leading-relaxed text-slate-300">
-            Every recommendation backed by published clinical trial data. We only list products with real evidence behind them.
+            Every recommendation backed by published lab test data. We only list products with real evidence behind them.
           </p>
         </div>
       </ScrollReveal>

@@ -52,7 +52,7 @@ export default function BlogArticlePage({ article }: { article: BlogArticle }) {
             <div className="mt-6 flex flex-wrap gap-4 text-sm text-slate-400">
               <span>{new Date(article.datePublished).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
               <span>{article.readTime}</span>
-              <span>Evidence-first clinical explainer</span>
+              <span>Evidence-first testing explainer</span>
             </div>
           </div>
         </section>
@@ -155,9 +155,9 @@ export default function BlogArticlePage({ article }: { article: BlogArticle }) {
               <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-emerald-200/80">
                 Flagship Page
               </p>
-              <h2 className="mt-3 text-xl font-bold text-white">Compare UC treatments side by side.</h2>
+              <h2 className="mt-3 text-xl font-bold text-white">Compare clean coffee buying signals side by side.</h2>
               <p className="mt-2 text-sm leading-relaxed text-slate-300">
-                Use the treatment rankings to compare response rates, remission data, route, risks, and best-fit use cases.
+                Use the rankings to compare testing proof, sourcing, freshness, decaf process, tradeoffs, and best-fit buying use cases.
               </p>
               <Link
                 href="/rankings"

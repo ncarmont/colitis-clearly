@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact | Project Remission UC',
-  description: 'Contact Project Remission UC for correction requests, citation updates, and editorial questions.',
+  title: 'Contact | Cleanest Coffee',
+  description: 'Contact Cleanest Coffee for correction requests, citation updates, and editorial questions.',
 }
 
 export default function ContactPage() {
@@ -16,18 +16,18 @@ export default function ContactPage() {
         </Link>
         <h1 className="mt-6 text-4xl font-black tracking-tight">Contact</h1>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate-300">
-          Use the site feedback tool or email us for citation fixes, trial-data corrections, broken links, or editorial questions about ulcerative colitis coverage.
+          Use the site feedback tool or email us for citation fixes, COA/testing corrections, broken links, or editorial questions about clean coffee coverage.
         </p>
 
         <div className="mt-8 rounded-[28px] border border-white/8 bg-white/[0.03] p-6">
           <p className="text-sm leading-relaxed text-slate-300">
             <strong className="text-white">Email:</strong>{' '}
-            <a className="text-emerald-200 transition hover:text-emerald-100" href="mailto:contact@colitisclearly.com">
-              contact@colitisclearly.com
+            <a className="text-amber-200 transition hover:text-amber-100" href="mailto:contact@thecleanestcoffee.com">
+              contact@thecleanestcoffee.com
             </a>
           </p>
           <p className="mt-4 text-sm leading-relaxed text-slate-300">
-            <strong className="text-white">Best for:</strong> correction requests, editorial notes, or reports that a guideline, trial result, or approval date needs review.
+            <strong className="text-white">Best for:</strong> correction requests, editorial notes, or reports that a heavy-metal number, COA claim, lab source, product claim, or safety statement needs review.
           </p>
           <p className="mt-4 text-sm leading-relaxed text-slate-300">
             <strong className="text-white">Please include:</strong> the page URL, the specific sentence or number, and a source link when possible.

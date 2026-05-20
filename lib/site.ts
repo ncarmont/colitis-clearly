@@ -1,30 +1,30 @@
-export const BASE_URL = 'https://colitis-clearly.vercel.app'
+export const BASE_URL = 'https://best-coffee-ranked.vercel.app'
 
-export const SITE_NAME = 'Project Remission UC'
+export const SITE_NAME = 'Cleanest Coffee'
 
-export const SITE_TAGLINE = 'Finding what actually works for UC remission'
+export const SITE_TAGLINE = 'Coffee without the chemical nonsense'
 
 export const MEDICAL_DISCLAIMER =
-  'Educational science summaries only. Ulcerative colitis symptoms, medication changes, and flare decisions should be reviewed with your gastroenterologist or treating clinician.'
+  'Educational content only. Coffee, caffeine, pregnancy, reflux, anxiety, sleep, blood pressure, gut symptoms, and medication interactions should be discussed with a qualified professional when relevant.'
 
 export const HOME_STATS = [
   {
-    value: 22,
-    suffix: '+',
-    label: 'science-ranked treatments',
-    detail: 'From mesalamine and rectal therapy to biologics, small molecules, and surgery.',
-  },
-  {
-    value: 5,
+    value: 0,
     suffix: '',
-    label: 'decision categories',
-    detail: '5-ASA, biologics, small molecules, steroids, and other rescue or structural options.',
+    label: 'mold hype tolerated',
+    detail: 'Clean coffee means evidence, testing, and transparency — not wellness cosplay.',
   },
   {
-    value: 74,
-    suffix: '%',
-    label: 'top response rate (upadacitinib week 8)',
-    detail: 'The highest clinical response signal from a pivotal RCT in moderate-to-severe UC.',
+    value: 3,
+    suffix: '',
+    label: 'things that matter',
+    detail: 'Bean quality, contaminant testing, and roast freshness beat pretty bags.',
+  },
+  {
+    value: 1,
+    suffix: '',
+    label: 'simple mission',
+    detail: 'Find the cleanest coffee worth drinking and call out the garbage.',
   },
 ] as const
 
@@ -32,44 +32,44 @@ export const QUICK_NAV_CARDS = [
   {
     title: 'Rankings',
     href: '/rankings',
-    description: 'Compare 5-ASA drugs, biologics, JAK inhibitors, S1P modulators, steroids, and surgery in one evidence table.',
+    description: 'Coffee brands ranked by cleanliness, transparency, testing, taste, and value.',
   },
   {
     title: 'Blog',
     href: '/blog',
-    description: 'Read practical UC explainers on flare management, diet, biomarkers, and treatment decisions.',
+    description: 'No-BS explainers on mold, mycotoxins, pesticides, decaf solvents, caffeine, and roast quality.',
   },
   {
     title: 'Research',
     href: '/research',
-    description: 'Follow pivotal trials, biomarkers, pathophysiology, and the next wave of UC therapies.',
+    description: 'Scientific context behind contaminants, coffee chemistry, and what actually matters.',
   },
   {
     title: 'Shop',
     href: '/shop',
-    description: 'Browse science-backed diet, supplement, gut health, and lifestyle recommendations in one place.',
+    description: 'Shortlist of coffees and brewing gear that deserve your money.',
   },
 ] as const
 
 export const RESOURCE_LIBRARY = [
   {
-    title: 'Crohn’s & Colitis Foundation',
-    href: 'https://www.crohnscolitisfoundation.org',
-    description: 'Patient education, support resources, and practical medication guides.',
+    title: 'FDA Food Guidance',
+    href: 'https://www.fda.gov/food',
+    description: 'Food safety, contaminants, and consumer protection guidance.',
   },
   {
-    title: 'American Gastroenterological Association',
-    href: 'https://gastro.org',
-    description: 'Professional guidance and evidence summaries that shape modern UC care.',
+    title: 'EFSA Chemical Contaminants',
+    href: 'https://www.efsa.europa.eu/en/topics/topic/chemical-contaminants',
+    description: 'European scientific opinions on contaminants in food and drink.',
   },
   {
-    title: 'ECCO e-Guide',
-    href: 'https://www.e-guide.ecco-ibd.eu',
-    description: 'A clinician-oriented reference for IBD drugs, monitoring, and treatment sequencing.',
+    title: 'Specialty Coffee Association',
+    href: 'https://sca.coffee',
+    description: 'Coffee quality, brewing standards, and specialty coffee education.',
   },
   {
-    title: 'Mayo Clinic UC Overview',
-    href: 'https://www.mayoclinic.org/diseases-conditions/ulcerative-colitis',
-    description: 'A broad medical overview useful for newly diagnosed patients and families.',
+    title: 'PubMed Coffee Research',
+    href: 'https://pubmed.ncbi.nlm.nih.gov/?term=coffee',
+    description: 'Primary research on coffee, caffeine, contaminants, and health outcomes.',
   },
 ] as const

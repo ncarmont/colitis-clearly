@@ -1,8 +1,8 @@
-# Colitis Clearly
+# Cleanest Coffee
 
-Evidence-based ulcerative colitis information, treatment rankings, flare management, and remission strategies.
+No-BS clean coffee buyer guide and rankings: mold-toxin and heavy-metal transparency, public lab receipts, sourcing, roast freshness, taste, and value.
 
-Forked from the best-olive-oils ranking site architecture and rebranded for UC/IBD.
+Live site: https://best-coffee-ranked.vercel.app/
 
 ## Stack
 - Next.js 15 + TypeScript

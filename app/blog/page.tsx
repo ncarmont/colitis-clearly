@@ -5,13 +5,13 @@ import ScrollReveal from '@/components/ScrollReveal'
 import { BLOG_ARTICLES } from '@/lib/blog-articles'
 
 export const metadata: Metadata = {
-  title: 'UC Science Blog | Project Remission UC',
+  title: 'coffee purity Science Blog | Cleanest Coffee',
   description:
-    'Evidence-based ulcerative colitis explainers on diagnosis, flare management, diet, biomarkers, and treatment decisions.',
+    'Evidence-based clean coffee explainers on diagnosis, red flag management, diet, biomarkers, and coffee decisions.',
 }
 
 const categoryStyles = {
-  treatment: {
+  coffee: {
     badge: 'border-emerald-accent/30 bg-emerald-accent/12 text-emerald-100',
     glow: 'from-emerald-accent/35 via-emerald-accent/10 to-transparent',
   },
@@ -30,15 +30,15 @@ const categoryStyles = {
 }
 
 function resolveCategoryStyle(category: string) {
-  if (category === 'Treatments') {
-    return categoryStyles.treatment
+  if (category === 'Coffees') {
+    return categoryStyles.coffee
   }
 
   if (category.includes('Diet')) {
     return categoryStyles.diet
   }
 
-  if (category === 'Flare Management') {
+  if (category === 'Red Flag Management') {
     return categoryStyles.lifestyle
   }
 
@@ -74,13 +74,13 @@ export default function BlogIndexPage() {
 
               <div className="animate-fade-in-up" style={{ animationDelay: '120ms' }}>
                 <h1 className="font-display mt-6 text-4xl tracking-tight text-white md:text-6xl">
-                  Warm, readable UC explainers built from real clinical questions.
+                  Warm, readable coffee purity explainers built from real testing questions.
                 </h1>
               </div>
 
               <div className="animate-fade-in-up" style={{ animationDelay: '220ms' }}>
                 <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">
-                  Browse by flare management, diet, biomarkers, treatment comparisons, and the fundamentals patients usually need first.
+                  Browse by red flag management, diet, biomarkers, coffee comparisons, and the fundamentals buyers usually need first.
                 </p>
               </div>
 

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${article.title} | Project Remission UC`,
+    title: `${article.title} | Cleanest Coffee`,
     description: article.description,
     alternates: {
       canonical: `${BASE_URL}/blog/${article.slug}`,

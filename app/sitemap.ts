@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: `${BASE_URL}/research/clinical-trials`,
+      url: `${BASE_URL}/research/testing-trials`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,

@@ -14,7 +14,7 @@ type Paper = {
 }
 
 const categoryStyles: Record<string, string> = {
-  Biologics: 'border-emerald-accent/30 bg-emerald-accent/12 text-emerald-100',
+  Brands: 'border-emerald-accent/30 bg-emerald-accent/12 text-emerald-100',
   'Small Molecules': 'border-cyan-400/30 bg-cyan-400/12 text-cyan-100',
   Trials: 'border-violet-400/30 bg-violet-400/12 text-violet-100',
   Monitoring: 'border-amber-accent/30 bg-amber-accent/12 text-amber-100',
@@ -24,7 +24,7 @@ const categoryStyles: Record<string, string> = {
   Microbiome: 'border-teal-accent/30 bg-teal-accent/12 text-teal-100',
   Environment: 'border-sky-400/30 bg-sky-400/12 text-sky-100',
   Guidelines: 'border-white/15 bg-white/[0.06] text-slate-100',
-  Treatment: 'border-emerald-accent/30 bg-emerald-accent/12 text-emerald-100',
+  Coffee: 'border-emerald-accent/30 bg-emerald-accent/12 text-emerald-100',
   Surgery: 'border-rose-400/30 bg-rose-400/12 text-rose-100',
   Pipeline: 'border-fuchsia-400/30 bg-fuchsia-400/12 text-fuchsia-100',
   Emerging: 'border-violet-400/30 bg-violet-400/12 text-violet-100',
@@ -42,14 +42,14 @@ export default function ResearchCarousel({ papers }: { papers: Paper[] }) {
       <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div className="max-w-2xl">
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-emerald-100/70">
-            Latest UC Papers
+            Latest coffee purity Papers
           </p>
           <h2 className="font-display mt-3 text-3xl tracking-tight text-white md:text-4xl">
-            Grab and scroll the latest treatment, diet, and monitoring literature.
+            Grab and scroll the latest coffee, diet, and monitoring literature.
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-300">
-            A smooth snap-scrolling strip built from the live research carousel dataset so the most useful UC papers stay
-            close to the treatment conversation.
+            A smooth snap-scrolling strip built from the live research carousel dataset so the most useful coffee purity papers stay
+            close to the coffee conversation.
           </p>
         </div>
 
