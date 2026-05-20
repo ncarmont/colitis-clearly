@@ -20,6 +20,7 @@ export interface RecommendedProduct {
   description: string
   why: string
   amazonUrl: string
+  amazonUkUrl?: string
   sourceUrl?: string
   sourceLabel?: string
   imageUrl: string
@@ -46,6 +47,15 @@ export interface RecommendedProduct {
 
 export const PRODUCT_CATEGORIES: ProductCategory[] = ['Coffee', 'Decaf', 'Testing', 'Brewing', 'Watchlist']
 
+const AMAZON_US_TAG = 'bestoliveoilr-20'
+const AMAZON_UK_TAG = 'bestoliveoi08-21'
+
+function amazonSearch(query: string, market: 'us' | 'uk' = 'us') {
+  const host = market === 'uk' ? 'www.amazon.co.uk' : 'www.amazon.com'
+  const tag = market === 'uk' ? AMAZON_UK_TAG : AMAZON_US_TAG
+  return `https://${host}/s?k=${encodeURIComponent(query)}&tag=${tag}`
+}
+
 export const PRODUCTS: RecommendedProduct[] = [
   {
     id: 'natural-force-clean-coffee-medium-2025',
@@ -59,7 +69,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'The current clean-coffee benchmark: public Eurofins PDFs, exact numeric contaminant values, and a roasted-bean report instead of vague “tested” theater.',
     why:
       'Exact COA proof: 2025 Finca La Chirimoya green beans show arsenic <10.0 ppb, cadmium 5.58 ppb, lead <5.00 ppb, mercury <5.00 ppb, ochratoxin A <1.00 ppb, aflatoxins <0.500 ppb each, glyphosate 0.04 mg/kg, gluten <3.0 ppm; roasted beans show yeast/mould <10 CFU/g and acrylamide 185 mcg/kg.',
-    amazonUrl: 'https://naturalforce.com/products/clean-coffee-from-best-organic-whole-beans',
+    amazonUrl: amazonSearch('Natural Force Clean Coffee Medium Roast'),
+    amazonUkUrl: amazonSearch('Natural Force Clean Coffee Medium Roast', 'uk'),
     sourceUrl: 'https://support.naturalforce.com/hc/en-us/articles/360036582453-3rd-party-lab-test-results-for-Clean-Coffee-',
     sourceLabel: 'Eurofins 2025 COA PDFs',
     imageUrl: '/images/coffee-products/natural-force-clean-coffee-12oz.jpg',
@@ -107,7 +118,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'A darker roast with unusually transparent 2024 Eurofins results: very clean heavy-metal panel, clean mycotoxins, but a higher acrylamide tradeoff.',
     why:
       'Exact COA proof: 2024 Finca La Chirimoya green beans show arsenic <10.0 ppb, cadmium <5.00 ppb, lead <5.00 ppb, mercury <5.00 ppb, copper 15.2 ppm, ochratoxin A <1.00 ppb, aflatoxins <0.500 ppb each, gluten <3.0 ppm, glyphosate 0.01 mg/kg; roasted beans show yeast/mould <10 CFU/g and acrylamide 502 mcg/kg.',
-    amazonUrl: 'https://naturalforce.com/products/clean-coffee-from-best-organic-whole-beans',
+    amazonUrl: amazonSearch('Natural Force Founder Select Dark Roast'),
+    amazonUkUrl: amazonSearch('Natural Force Founder Select Dark Roast', 'uk'),
     sourceUrl:
       'https://support.naturalforce.com/hc/en-us/articles/360051304694-3rd-party-lab-test-results-for-Clean-Coffee-Founder-s-Select-Dark-Roast',
     sourceLabel: 'Eurofins 2024 dark-roast COA PDFs',
@@ -156,7 +168,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'A solvent-free decaf candidate with actual green-bean and roasted-bean Eurofins results. It wins on transparency, not on having the absolute lowest metals.',
     why:
       'Exact COA proof: 2025 Capucas Decaf green beans show arsenic 20.9 ppb, cadmium 8.04 ppb, lead <5.00 ppb, mercury <5.00 ppb, ochratoxin A <1.00 ppb, aflatoxins <0.500 ppb each, glyphosate 0.07 mg/kg, gluten <3.0 ppm; roasted beans show yeast/mould <10 CFU/g and acrylamide 302 mcg/kg.',
-    amazonUrl: 'https://naturalforce.com/products/clean-coffee-from-best-organic-whole-beans',
+    amazonUrl: amazonSearch('Natural Force Clean Decaf Coffee'),
+    amazonUkUrl: amazonSearch('Natural Force Clean Decaf Coffee', 'uk'),
     sourceUrl: 'https://support.naturalforce.com/hc/en-us/articles/360045176674-3rd-party-lab-test-results-for-Clean-Decaf-',
     sourceLabel: 'Eurofins 2025 decaf COA PDFs',
     imageUrl: '/images/coffee-products/natural-force-clean-decaf-12oz.jpg',
@@ -205,7 +218,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'A strong public-COA lead: Biodynamic Coffee publishes harvest-lot PDFs with heavy metals, mycotoxins, and microbiology. It earns exact-COA status, with a downgrade for no roasted acrylamide or yeast/mould count found in the latest PDFs.',
     why:
       'Exact COA proof: Dec 2025 Peru Biodynamic lot 030-1032-08160 PDFs show arsenic <0.02 mg/kg (<20 ppb), cadmium 0.015 mg/kg (15 ppb), mercury <0.01 mg/kg (<10 ppb), lead <0.017 mg/kg (<17 ppb), aflatoxins B1/B2/G1/G2 <1 ppb each, ochratoxin A <0.003 ppm (<3 ppb), mycophenolic acid 0.05 ppm, E. coli <10 CFU/g, and Listeria/Salmonella negative.',
-    amazonUrl: 'https://biodynamic.coffee/products/rise_and_shine-medium-roast',
+    amazonUrl: amazonSearch('Biodynamic Coffee Rise and Shine Medium Roast'),
+    amazonUkUrl: amazonSearch('Biodynamic Coffee Rise and Shine Medium Roast', 'uk'),
     sourceUrl: 'https://biodynamic.coffee/pages/lab-results',
     sourceLabel: 'Dec 2025 harvest-lot COA PDFs',
     imageUrl: '/images/coffee-products/biodynamic-rise-shine-medium.png',
@@ -253,7 +267,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'Clean Label Project lists this product in its coffee Clean 16 / certified products set — a stronger independent screen than brand-only “tested” copy, but still not a public numeric COA.',
     why:
       'Independent contaminant-screen proof: Clean Label Project says its Coffee Category study tested 57 products from 45 top-selling brands across 7,069 data points, including heavy metals, mycotoxins, pesticides, glyphosate/AMPA, phthalates, BPA/BPS, and more. Its Clean Sixteen highlights the 16 products with the lowest contaminant levels; Love Grown coffee products carry CLP certification. Exact lot-level Pb/Cd/As/Hg and mycotoxin values were not public in the CLP product page, so this ranks below public numeric COAs.',
-    amazonUrl: 'https://cleanlabelproject.org/clp-product/medium-roast-whole-bean-coffee/',
+    amazonUrl: amazonSearch('Love Grown Medium Roast Whole Bean Coffee'),
+    amazonUkUrl: amazonSearch('Love Grown Medium Roast Whole Bean Coffee', 'uk'),
     sourceUrl: 'https://cleanlabelproject.org/coffee-category-tested-products/',
     sourceLabel: 'Clean Label Project Clean 16 / certification',
     imageUrl: '/images/coffee-products/love-grown-medium-whole-bean.webp',
@@ -297,7 +312,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'A decaf Love Grown product in Clean Label Project’s certified coffee set. Better than claim-only decaf, weaker than exact public lab PDFs.',
     why:
       'Independent contaminant-screen proof: Clean Label Project lists Love Grown Decaf Medium Roast Whole Bean Coffee in its certified product set and says the Coffee Category study tested heavy metals, mycotoxins, pesticides, glyphosate/AMPA, phthalates, and bisphenols. Product-level numeric values were not public on the CLP page reviewed.',
-    amazonUrl: 'https://cleanlabelproject.org/clp-product/decaf-medium-roast-whole-bean-coffee/',
+    amazonUrl: amazonSearch('Love Grown Decaf Medium Roast Whole Bean Coffee'),
+    amazonUkUrl: amazonSearch('Love Grown Decaf Medium Roast Whole Bean Coffee', 'uk'),
     sourceUrl: 'https://cleanlabelproject.org/coffee-category-tested-products/',
     sourceLabel: 'Clean Label Project Clean 16 / certification',
     imageUrl: '/images/coffee-products/love-grown-decaf-whole-bean.webp',
@@ -340,7 +356,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'Clean Label Project certified Love Grown dark roast. It belongs above claim-only brands, but below products that publish exact lot-level lab PDFs.',
     why:
       'Independent contaminant-screen proof: Clean Label Project lists Love Grown Dark Roast Whole Bean Coffee with CLP certification. The study included heavy metals and mycotoxins, but product-level numeric values were not public on the reviewed listing.',
-    amazonUrl: 'https://cleanlabelproject.org/clp-product/dark-roast-whole-bean-coffee/',
+    amazonUrl: amazonSearch('Love Grown Dark Roast Whole Bean Coffee'),
+    amazonUkUrl: amazonSearch('Love Grown Dark Roast Whole Bean Coffee', 'uk'),
     sourceUrl: 'https://cleanlabelproject.org/coffee-category-tested-products/',
     sourceLabel: 'Clean Label Project certification',
     imageUrl: '/images/coffee-products/love-grown-dark-whole-bean.webp',
@@ -384,7 +401,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'Partners publicly says its Mainstay coffees were sent to a food-safety lab and that no heavy metals or mycotoxins were detected. Good signal, but still not a product-level COA with lab/date/limits.',
     why:
       'Disclosure check: Partners says all Mainstay coffees were lab-tested for lead, cadmium, arsenic, mercury, and certain mycotoxins, and reports “no heavy metals or mycotoxins were detected.” Public product-level PDFs, reporting limits, lab name, sample IDs, and dates were not found on the reviewed pages, so this stays in watchlist rather than the exact-COA tier.',
-    amazonUrl: 'https://www.partnerscoffee.com/products/brooklyn',
+    amazonUrl: amazonSearch('Partners Coffee Brooklyn Mainstay Blend'),
+    amazonUkUrl: amazonSearch('Partners Coffee Brooklyn Mainstay Blend', 'uk'),
     sourceUrl: 'https://www.partnerscoffee.com/blogs/education/heavy-metals-mycotoxins-in-coffee',
     sourceLabel: 'Partners lab-testing statement reviewed',
     imageUrl: '/images/coffee-products/partners-brooklyn.jpg',
@@ -427,7 +445,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'The product page claims third-party testing for mycotoxins, heavy metals, pesticides, glyphosate, and 450+ toxins — useful signal, but not the same as public numeric COAs.',
     why:
       'Disclosure check: Lifeboost Grata Medium Roast publicly claims third-party testing for mycotoxins, heavy metals, pesticides, glyphosate, and 450+ toxins, plus USDA organic, single-origin, shade-grown beans. Public exact lead/cadmium/arsenic/mercury or ochratoxin/aflatoxin numbers were not found on the product page reviewed.',
-    amazonUrl: 'https://lifeboostcoffee.com/products/medium-roast',
+    amazonUrl: amazonSearch('Lifeboost Grata Medium Roast Coffee'),
+    amazonUkUrl: amazonSearch('Lifeboost Grata Medium Roast Coffee', 'uk'),
     sourceUrl: 'https://lifeboostcoffee.com/products/medium-roast',
     sourceLabel: 'Public product claims reviewed',
     imageUrl: '/images/coffee-products/lifeboost-grata-medium.png',
@@ -466,7 +485,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'Purity publishes a useful independent-lab results page with numeric acrylamide, OTA, mould/yeast, lead, and cadmium context. That is stronger than vague “tested” copy — but still not the same as a downloadable current-lot COA.',
     why:
       'Disclosure check: Purity’s independent-laboratory-tests page says 14/25 roasted coffees in its survey were above 200 µg/kg acrylamide; its anonymized table includes 1053, 805, 718, 689, 374, 280, 260, and 220 µg/kg examples. The Purity row lists acrylamide 196 µg/kg, Agtron 59, ochratoxin A <0.2 µg/kg, mould/yeast <10/<10, lead 0.03 ppm, and cadmium 0.002 ppm. Useful public numbers, but competitors are anonymized and raw current batch PDFs were not public on the product page reviewed.',
-    amazonUrl: 'https://puritycoffee.com/products/original-roast-whole-bean-coffee',
+    amazonUrl: amazonSearch('Purity Coffee FLOW Medium Roast Whole Bean'),
+    amazonUkUrl: amazonSearch('Purity Coffee FLOW Medium Roast Whole Bean', 'uk'),
     sourceUrl: 'https://puritycoffee.com/pages/independent-laboratory-tests',
     sourceLabel: 'Public independent lab-results page reviewed',
     imageUrl: '/images/coffee-products/purity-flow-wholebean.png',
@@ -514,7 +534,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'Buddha Beans now claims an open COA archive and full contaminant panel, but the reviewed PDF links returned 404. That is not a verified receipt; it is a red-flag watchlist entry until fixed.',
     why:
       'Disclosure check: Buddha Beans says every batch is tested for heavy metals, pesticides, microbial contaminants, residual solvents, and mycotoxins, and lists public PDF links by batch. Verification problem: sampled PDF links such as coa-2026-05-costa-rica.pdf and coa-2026-04-colombia.pdf returned 404 during review, so the ranking treats the COA archive as unverified/broken rather than proven.',
-    amazonUrl: 'https://buddhabeanscoffee.com/products/colombia-cbd-coffee',
+    amazonUrl: amazonSearch('Buddha Beans Colombia CBD Coffee'),
+    amazonUkUrl: amazonSearch('Buddha Beans Colombia CBD Coffee', 'uk'),
     sourceUrl: 'https://buddhabeanscoffee.com/pages/lab-results',
     sourceLabel: 'Lab-results page reviewed; PDF links failed',
     imageUrl: '/images/coffee-products/buddha-beans-colombia.jpg',
@@ -571,7 +592,8 @@ export const PRODUCTS: RecommendedProduct[] = [
       'Not a purity lab test, but it protects freshness once you pick a clean, tested bag. Pre-ground coffee is where good beans go to fade.',
     why:
       'Freshness standard: buy whole bean, check roast date, grind before brewing, and keep the bag sealed. A perfect COA does not rescue stale coffee.',
-    amazonUrl: 'https://www.amazon.com/s?k=conical+burr+coffee+grinder',
+    amazonUrl: amazonSearch('conical burr coffee grinder'),
+    amazonUkUrl: amazonSearch('conical burr coffee grinder', 'uk'),
     imageUrl: '/images/coffee/espresso-pour.jpg',
     category: 'Brewing',
     priceRange: '$–$$',

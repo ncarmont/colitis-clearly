@@ -382,9 +382,22 @@ function ProductCard({ product, index }: { product: RecommendedProduct; index: n
                 <span className="text-xs uppercase tracking-[0.2em] text-slate-400">Approx. price range</span>
               </div>
 
-              <a href={product.amazonUrl} target={product.amazonUrl.startsWith('/') ? undefined : '_blank'} rel="noreferrer sponsored" className="inline-flex w-full items-center justify-center rounded-full bg-emerald-accent px-5 py-3 text-sm font-bold text-navy-950 shadow-[0_16px_36px_rgba(0,200,83,0.18)] hover:bg-[#2ed37a]">
-                View product/source
-              </a>
+              {product.amazonUrl.startsWith('/') ? (
+                <a href={product.amazonUrl} className="inline-flex w-full items-center justify-center rounded-full bg-emerald-accent px-5 py-3 text-sm font-bold text-navy-950 shadow-[0_16px_36px_rgba(0,200,83,0.18)] hover:bg-[#2ed37a]">
+                  Read buyer checklist
+                </a>
+              ) : (
+                <div className="grid gap-2 sm:grid-cols-2">
+                  <a href={product.amazonUrl} target="_blank" rel="noreferrer sponsored" className="inline-flex w-full items-center justify-center rounded-full bg-amber-accent px-5 py-3 text-sm font-black text-navy-950 shadow-[0_16px_36px_rgba(241,181,68,0.18)] hover:bg-[#f7c863]">
+                    Buy/Search Amazon US
+                  </a>
+                  {product.amazonUkUrl ? (
+                    <a href={product.amazonUkUrl} target="_blank" rel="noreferrer sponsored" className="inline-flex w-full items-center justify-center rounded-full border border-amber-accent/45 bg-amber-accent/10 px-5 py-3 text-sm font-black text-amber-100 hover:bg-amber-accent/16">
+                      Amazon UK
+                    </a>
+                  ) : null}
+                </div>
+              )}
 
               {product.sourceUrl ? (
                 <a href={product.sourceUrl} target="_blank" rel="noreferrer" className="mt-3 inline-flex w-full items-center justify-center rounded-full border border-white/10 bg-white/[0.04] px-5 py-3 text-sm font-bold text-white hover:border-cyan-300/30 hover:bg-white/[0.07]">
@@ -393,7 +406,7 @@ function ProductCard({ product, index }: { product: RecommendedProduct; index: n
               ) : null}
 
               <p className="mt-4 text-xs leading-relaxed text-slate-400">
-                Rankings favor public exact values over “tested” claims. Batch results can change; check the current lot before buying.
+                Rankings favor public exact values over “tested” claims. Amazon buttons use affiliate tags; batch results can change, so check the current lot before buying.
               </p>
             </div>
           </div>
